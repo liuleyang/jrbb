@@ -1,0 +1,681 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;MeiboBango&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtSatsu_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSatsu_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSatsu_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSatsu_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtPage_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtGyo_readOnly&quot;,&quot;editType&quot;:1}]},&quot;txtSatsu_displayNone&quot;:false,&quot;txtSatsu_readOnly&quot;:true,&quot;txtSatsu_labelLWidth&quot;:&quot;&quot;,&quot;txtSatsu_required&quot;:false,&quot;txtPage_readOnly&quot;:true,&quot;txtGyo_readOnly&quot;:true}" data-is-composite-control="true" data-control-name="AFA.MeiboBango"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="MeiboBango" style="margin: 0px; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;MeiboBango&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;MeiboBango&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;MeiboBango&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="MeiboBango_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="MeiboBango_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M UzCompositeChild" id="txtSatsu" style="width: 69px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtSatsu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtSatsu_core&quot;,&quot;readOnly&quot;:true,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;冊&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtSatsu_labelL"><span>冊</span></span><input tabindex="-1" class="UzTextBox CoreElement Width-XS text-align-left ime-mode-Hiragana ui-autocomplete-input readonlyColor" id="txtSatsu_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum FloatLeft JSControl controlMargin-M marginLeft-XL UzCompositeChild" id="txtPage" style="width: 93px; height: 21px; margin-right: 0em;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtPage&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;width&quot;:&quot;70px&quot;,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtPage_core&quot;,&quot;readOnly&quot;:true,&quot;maxLength&quot;:&quot;6&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;頁&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;maxValue&quot;:&quot;999999&quot;,&quot;minValue&quot;:&quot;1&quot;,&quot;isComma&quot;:true,&quot;permitCharactor&quot;:&quot;+-,.\\&quot;}"><span class="word-wrap-break-word Label-L Width- text-align-right" id="txtPage_labelL"><span>頁</span></span><input tabindex="-1" class="UzTextBox CoreElement text-align-right ime-mode-Off ui-autocomplete-input readonlyColor" id="txtPage_core" style="width: 70px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum FloatLeft JSControl controlMargin-M marginLeft-XL marginRight-XS UzCompositeChild" id="txtGyo" style="width: 53px; height: 21px;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtGyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;width&quot;:&quot;30px&quot;,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;txtGyo_core&quot;,&quot;readOnly&quot;:true,&quot;maxLength&quot;:&quot;2&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;行&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;maxValue&quot;:&quot;99&quot;,&quot;minValue&quot;:&quot;1&quot;,&quot;permitCharactor&quot;:&quot;+-,.\\&quot;}"><span class="word-wrap-break-word Label-L Width- text-align-right" id="txtGyo_labelL"><span>行</span></span><input tabindex="-1" class="UzTextBox CoreElement text-align-right ime-mode-Off ui-autocomplete-input readonlyColor" id="txtGyo_core" style="width: 30px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var MeiboBango_Design = (function (_super) {
+        __extends(MeiboBango_Design, _super);
+        function MeiboBango_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, MeiboBango_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(MeiboBango_Design.prototype, "txtSatsu_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[0]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(MeiboBango_Design.prototype, "txtSatsu_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[0]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(MeiboBango_Design.prototype, "txtSatsu_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(MeiboBango_Design.prototype, "txtPage_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[1]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(MeiboBango_Design.prototype, "txtGyo_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[2]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        MeiboBango_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtSatsu_displayNone");
+            Uz.JSControlUtil.registProperty("txtSatsu_readOnly");
+            Uz.JSControlUtil.registProperty("txtSatsu_labelLWidth");
+            Uz.JSControlUtil.registProperty("txtPage_readOnly");
+            Uz.JSControlUtil.registProperty("txtGyo_readOnly");
+        };
+
+        MeiboBango_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtSatsu_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtSatsu_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtSatsu_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["txtPage_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtGyo_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+
+            return editablePropertyInfo;
+        };
+        MeiboBango_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "MeiboBango",
+                    "items": [
+                        {
+                            "fieldName": "txtSatsu",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtSatsu_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "冊",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "txtPage",
+                            "items": [],
+                            "controlType": "TextBoxNum",
+                            "width": "70px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XL",
+                            "marginRight": "0em",
+                            "selectControlID": "txtPage_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": "6",
+                            "minLength": 0,
+                            "textAlign": 2,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "頁",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "+-,.\\",
+                            "maxValue": "999999",
+                            "minValue": "1",
+                            "isCurrency": false,
+                            "isComma": true,
+                            "decimalPointLength": 0
+                        },
+                        {
+                            "fieldName": "txtGyo",
+                            "items": [],
+                            "controlType": "TextBoxNum",
+                            "width": "30px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XL",
+                            "marginRight": "XS",
+                            "selectControlID": "txtGyo_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": "2",
+                            "minLength": 0,
+                            "textAlign": 2,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "行",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "+-,.\\",
+                            "maxValue": "99",
+                            "minValue": "1",
+                            "isCurrency": false,
+                            "isComma": false,
+                            "decimalPointLength": 0
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0px",
+                    "marginRight": "0px",
+                    "selectControlID": "MeiboBango",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0px",
+                    "marginBottom": "0px",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        }
+                    ],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": false
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0px",
+            "marginRight": "0px",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "MeiboBango",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildProperty": "displayNone",
+                    "publicChildFieldName": "txtSatsu",
+                    "newPropertyName": "txtSatsu_displayNone"
+                },
+                {
+                    "publicChildProperty": "readOnly",
+                    "publicChildFieldName": "txtSatsu",
+                    "newPropertyName": "txtSatsu_readOnly"
+                },
+                {
+                    "publicChildProperty": "labelLWidth",
+                    "publicChildFieldName": "txtSatsu",
+                    "newPropertyName": "txtSatsu_labelLWidth"
+                },
+                {
+                    "publicChildProperty": "readOnly",
+                    "publicChildFieldName": "txtPage",
+                    "newPropertyName": "txtPage_readOnly"
+                },
+                {
+                    "publicChildProperty": "readOnly",
+                    "publicChildFieldName": "txtGyo",
+                    "newPropertyName": "txtGyo_readOnly"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return MeiboBango_Design;
+    })(Uz.CommonChildDiv);
+    AFA.MeiboBango_Design = MeiboBango_Design;
+
+    (function (MeiboBango) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        MeiboBango.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "MeiboBango";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.MeiboBango.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.MeiboBango = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtSatsu = function () {
+                return new UZA.TextBox(this.convFiledName("txtSatsu"));
+            };
+
+            Controls.prototype.txtPage = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtPage"));
+            };
+
+            Controls.prototype.txtGyo = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyo"));
+            };
+            return Controls;
+        })();
+        MeiboBango.Controls = Controls;
+    })(AFA.MeiboBango || (AFA.MeiboBango = {}));
+    var MeiboBango = AFA.MeiboBango;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (MeiboBango) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new MeiboBango.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        MeiboBango.ModeController = ModeController;
+    })(AFA.MeiboBango || (AFA.MeiboBango = {}));
+    var MeiboBango = AFA.MeiboBango;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (MeiboBango) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new MeiboBango.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtSatsu_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSatsu_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSatsu_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtPage_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtGyo_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtSatsu_displayNone = function () {
+                return this.controls.txtSatsu().displayNone;
+            };
+
+            PublicProperties.prototype.settxtSatsu_displayNone = function (value) {
+                this.controls.txtSatsu().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSatsu_readOnly = function () {
+                return this.controls.txtSatsu().readOnly;
+            };
+
+            PublicProperties.prototype.settxtSatsu_readOnly = function (value) {
+                this.controls.txtSatsu().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtSatsu_labelLWidth = function () {
+                return this.controls.txtSatsu().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtSatsu_labelLWidth = function (value) {
+                this.controls.txtSatsu().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtPage_readOnly = function () {
+                return this.controls.txtPage().readOnly;
+            };
+
+            PublicProperties.prototype.settxtPage_readOnly = function (value) {
+                this.controls.txtPage().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtGyo_readOnly = function () {
+                return this.controls.txtGyo().readOnly;
+            };
+
+            PublicProperties.prototype.settxtGyo_readOnly = function (value) {
+                this.controls.txtGyo().readOnly = value;
+            };
+            return PublicProperties;
+        })();
+        MeiboBango.PublicProperties = PublicProperties;
+    })(AFA.MeiboBango || (AFA.MeiboBango = {}));
+    var MeiboBango = AFA.MeiboBango;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['MEIBOBANGO'] = {};
+AFA['MEIBOBANGO'].MeiboBangoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_MeiboBango').getProperty();parameter0.txtSatsu = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSatsu').getProperty();parameter0.txtPage = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtPage').getProperty();parameter0.txtGyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtGyo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (MeiboBango) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        MeiboBango.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "MeiboBango";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.MeiboBango.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.MeiboBango.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.MeiboBango = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtSatsu = function () {
+                return new UZA.TextBox(this.convFiledName("txtSatsu"));
+            };
+
+            Controls.prototype.txtPage = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtPage"));
+            };
+
+            Controls.prototype.txtGyo = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyo"));
+            };
+            return Controls;
+        })();
+        MeiboBango.Controls = Controls;
+    })(AFA.MeiboBango || (AFA.MeiboBango = {}));
+    var MeiboBango = AFA.MeiboBango;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (MeiboBango) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new MeiboBango.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        MeiboBango.ModeController = ModeController;
+    })(AFA.MeiboBango || (AFA.MeiboBango = {}));
+    var MeiboBango = AFA.MeiboBango;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (MeiboBango) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new MeiboBango.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtSatsu_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSatsu_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSatsu_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtSatsu_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtPage_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtPage_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtGyo_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtGyo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtSatsu_displayNone = function () {
+                return this.controls.txtSatsu().displayNone;
+            };
+
+            PublicProperties.prototype.settxtSatsu_displayNone = function (value) {
+                this.controls.txtSatsu().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSatsu_readOnly = function () {
+                return this.controls.txtSatsu().readOnly;
+            };
+
+            PublicProperties.prototype.settxtSatsu_readOnly = function (value) {
+                this.controls.txtSatsu().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtSatsu_labelLWidth = function () {
+                return this.controls.txtSatsu().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtSatsu_labelLWidth = function (value) {
+                this.controls.txtSatsu().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtSatsu_required = function () {
+                return this.controls.txtSatsu().required;
+            };
+
+            PublicProperties.prototype.settxtSatsu_required = function (value) {
+                this.controls.txtSatsu().required = value;
+            };
+
+            PublicProperties.prototype.gettxtPage_readOnly = function () {
+                return this.controls.txtPage().readOnly;
+            };
+
+            PublicProperties.prototype.settxtPage_readOnly = function (value) {
+                this.controls.txtPage().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtPage_required = function () {
+                return this.controls.txtPage().required;
+            };
+
+            PublicProperties.prototype.settxtPage_required = function (value) {
+                this.controls.txtPage().required = value;
+            };
+
+            PublicProperties.prototype.gettxtGyo_readOnly = function () {
+                return this.controls.txtGyo().readOnly;
+            };
+
+            PublicProperties.prototype.settxtGyo_readOnly = function (value) {
+                this.controls.txtGyo().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtGyo_displayNone = function () {
+                return this.controls.txtGyo().displayNone;
+            };
+
+            PublicProperties.prototype.settxtGyo_displayNone = function (value) {
+                this.controls.txtGyo().displayNone = value;
+            };
+            return PublicProperties;
+        })();
+        MeiboBango.PublicProperties = PublicProperties;
+    })(AFA.MeiboBango || (AFA.MeiboBango = {}));
+    var MeiboBango = AFA.MeiboBango;
+})(AFA || (AFA = {}));
+</script></div>

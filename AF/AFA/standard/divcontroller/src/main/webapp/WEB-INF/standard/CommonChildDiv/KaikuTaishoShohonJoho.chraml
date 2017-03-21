@@ -1,0 +1,308 @@
+<div class="JSControl UzCompositeControl FloatLeft Width-XS" id="defaultLayout" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;KaikuTaishoShohonJoho&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;100px&quot;,&quot;minHeight&quot;:&quot;200px&quot;,&quot;widthPercent&quot;:&quot;80&quot;,&quot;heightPercent&quot;:&quot;80&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;KaikuTaishoShohonJoho_title&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShiyoShohon_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;radShori_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ccdShohonNameList_wrap&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKijunYMD_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKijunYMD_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoYMD_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoYMD_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;chkMutohyo_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoKaishiYMD_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoKaishiYMD_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShohonName_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShohonName_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyoName_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyoName_required&quot;,&quot;editType&quot;:1}]},&quot;KaikuTaishoShohonJoho_title&quot;:&quot;対象抄本情報&quot;,&quot;txtShiyoShohon_displayNone&quot;:false,&quot;radShori_displayNone&quot;:false,&quot;ccdShohonNameList_disabled&quot;:false,&quot;ccdShohonNameList_required&quot;:false,&quot;ccdShohonNameList_labelLText&quot;:&quot;&quot;,&quot;ccdShohonNameList_wrap&quot;:false,&quot;ccdShohonNameList_displayNone&quot;:false,&quot;txtKijunYMD_readOnly&quot;:false,&quot;txtKijunYMD_required&quot;:false,&quot;txtTohyoYMD_readOnly&quot;:false,&quot;txtTohyoYMD_required&quot;:false,&quot;chkMutohyo_displayNone&quot;:false,&quot;txtTohyoKaishiYMD_readOnly&quot;:false,&quot;txtTohyoKaishiYMD_required&quot;:false,&quot;txtShohonName_readOnly&quot;:false,&quot;txtShohonName_required&quot;:false,&quot;txtSenkyoName_readOnly&quot;:false,&quot;txtSenkyoName_required&quot;:false}" data-is-composite-control="true" data-control-name="AFA.KaikuTaishoShohonJoho"><div class="StateChangable UzPanel JSControl FloatLeft marginTop-Default marginBottom-Default marginLeft-Default marginRight-Default UzCommonChildDivPanel UzPanelAndText Panel-Shadow Width-G9 UzCompositeChild" id="KaikuTaishoShohonJoho" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;KaikuTaishoShohonJoho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G9&quot;,&quot;marginLeft&quot;:&quot;Default&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;KaikuTaishoShohonJoho&quot;,&quot;title&quot;:&quot;対象抄本情報&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KaikuTaishoShohonJoho&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onChange_radShori&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/KaikuTaishoShohonJoho/onClick_radShori&quot;},{&quot;eventName&quot;:&quot;onChange_ccdShohonNameList&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/KaikuTaishoShohonJoho/onChange_ccdShohonNameList&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;hidMotoData&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KaikuTaishoShohonJoho_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">対象抄本情報</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content ui-droppable ui-sortable panelPadding-M" id="KaikuTaishoShohonJoho_panel_body_area"><div class="WithLabel TextBoxOuterDiv JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="txtShiyoShohon" style="width: 511px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtShiyoShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;txtShiyoShohon_core&quot;,&quot;readOnly&quot;:true,&quot;placeHolder&quot;:&quot;平成xx年 3月31日確定の名簿抄本から作成します。&quot;,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement text-align-left ime-mode-Hiragana Width-L readonlyColor" id="txtShiyoShohon_core" type="text" placeholder="平成xx年 3月31日確定の名簿抄本から作成します。"></div><div class="UzRadioButton JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M ClearFloat UzCompositeChild" id="radShori" style="width: 167px; height: 25px;" data-control-type="RadioButton" data-obj="{&quot;fieldName&quot;:&quot;radShori&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;RadioButton&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;radShori_core&quot;,&quot;onChange&quot;:&quot;onChange_radShori&quot;,&quot;selectedItem&quot;:&quot;1&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;新規処理&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;再処理&quot;}],&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="buttonSpan FloatLeft Width-" id="radShori_core"><input class="verticalSpace-M" id="radShori_1" type="radio" value="新規処理" data-key="1"><label for="radShori_1" data-key="1">新規処理</label><input class="spaceSize-M verticalSpace-M" id="radShori_2" type="radio" value="再処理" data-key="2"><label for="radShori_2" data-key="2">再処理</label></span></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XS" id="ccdShohonNameList" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShohonNameList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShohonNameList&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;,&quot;alias&quot;:&quot;onChange_ccdShohonNameList&quot;}],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlShohon_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;chkKakoShohon_displayNone&quot;,&quot;editType&quot;:1}]},&quot;ddlShohon_disabled&quot;:false,&quot;ddlShohon_required&quot;:false,&quot;ddlShohon_labelText&quot;:&quot;&quot;,&quot;ddlShohon_labelWidth&quot;:&quot;&quot;,&quot;ddlShohon_width&quot;:&quot;L&quot;,&quot;chkKakoShohon_displayNone&quot;:true}" data-is-composite-control="true" data-control-name="AFA.ShohonNameList"></div><div class="WithLabel TextBoxOuterDiv JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M ClearFloat UzCompositeChild" id="txtShohonName" style="width: 784px; height: 20px; display: block;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtShohonName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;660px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtShohonName_core&quot;,&quot;labelLText&quot;:&quot;抄本名&quot;,&quot;maxLength&quot;:&quot;40&quot;,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtShohonName_labelL"><span>抄本名</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Hiragana" id="txtShohonName_core" style="width: 660px;" type="text" placeholder=""></div><div title="" class="WithLabel TextBoxOuterDiv JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="txtSenkyoName" style="width: 784px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtSenkyoName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;660px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtSenkyoName_core&quot;,&quot;labelLText&quot;:&quot;選挙名&quot;,&quot;maxLength&quot;:&quot;40&quot;,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtSenkyoName_labelL"><span>選挙名</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtSenkyoName_core" style="width: 660px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div class="UzTextBoxDate TextBoxOuterDiv WithLabel JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M ClearFloat UzCompositeChild" id="txtKijunYMD" style="width: 230px; height: 23px;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtKijunYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;90px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtKijunYMD_core&quot;,&quot;labelLText&quot;:&quot;基準日&quot;,&quot;isShowCalendarOpenerIcon&quot;:true}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtKijunYMD_labelL"><span>基準日</span></span><input class="UzTextBox CoreElement" id="txtKijunYMD_core" style="width: 90px;" type="text" placeholder="" data-wareki-hirekijyou="" data-maxdate="" data-mindate="" data-orgtext="" data-seireki="" data-setcount="0" data-wareki="" data-fmt="0" data-ymd="2"><img class="UzCalendarOpenerIcon" src="/uz/uza/image/UzCalendar.png"></div><div class="UzTextBoxDate TextBoxOuterDiv WithLabel JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="txtTohyoYMD" style="width: 230px; height: 23px;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtTohyoYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;90px&quot;,&quot;selectControlID&quot;:&quot;txtTohyoYMD_core&quot;,&quot;labelLText&quot;:&quot;投票日&quot;,&quot;isShowCalendarOpenerIcon&quot;:true}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtTohyoYMD_labelL"><span>投票日</span></span><input class="UzTextBox CoreElement" id="txtTohyoYMD_core" style="width: 90px;" type="text" placeholder="" data-wareki-hirekijyou="" data-maxdate="" data-mindate="" data-orgtext="" data-seireki="" data-setcount="0" data-wareki="" data-fmt="0" data-ymd="2"><img class="UzCalendarOpenerIcon" src="/uz/uza/image/UzCalendar.png"></div><div class="UzTextBoxDate TextBoxOuterDiv WithLabel JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="txtTohyoUketsukeYMD" style="width: 230px; height: 23px;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtTohyoUketsukeYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;90px&quot;,&quot;selectControlID&quot;:&quot;txtTohyoUketsukeYMD_core&quot;,&quot;labelLText&quot;:&quot;受付開始日&quot;,&quot;isShowCalendarOpenerIcon&quot;:true}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtTohyoUketsukeYMD_labelL"><span>受付開始日</span></span><input class="UzTextBox CoreElement" id="txtTohyoUketsukeYMD_core" style="width: 90px;" type="text" placeholder="" data-wareki-hirekijyou="" data-maxdate="" data-mindate="" data-orgtext="" data-seireki="" data-setcount="0" data-wareki="" data-fmt="0" data-ymd="2"><img class="UzCalendarOpenerIcon" src="/uz/uza/image/UzCalendar.png"></div><div class="UzCheckBoxList JSControl FloatLeft marginRight-XS controlMargin-M marginLeft-L UzCompositeChild" id="chkMutohyo" style="width: 107px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkMutohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;marginLeft&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;chkMutohyo_core&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;無投票選挙&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkMutohyo_core"><input class="verticalSpace-M" id="chkMutohyo_0" type="checkbox" value="無投票選挙" data-key="0"><label for="chkMutohyo_0" data-key="0">無投票選挙</label></span></div></div></div>  
+     
+   
+   
+   
+     
+   
+   
+   
+   
+   
+     
+   
+   
+       <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['KAIKUTAISHOSHOHONJOHO'] = {};
+AFA['KAIKUTAISHOSHOHONJOHO'].KaikuTaishoShohonJohoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KaikuTaishoShohonJoho').getProperty();parameter0.txtShiyoShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtShiyoShohon').getProperty();parameter0.radShori = Uz.JSControlUtil.getJSControl(parentFieldName + '_radShori').getProperty();parameter0.ccdShohonNameList = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShohonNameList').getPostParameter();parameter0.txtShohonName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtShohonName').getProperty();parameter0.txtSenkyoName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSenkyoName').getProperty();parameter0.txtKijunYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtKijunYMD').getProperty();parameter0.txtTohyoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyoYMD').getProperty();parameter0.txtTohyoUketsukeYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyoUketsukeYMD').getProperty();parameter0.chkMutohyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMutohyo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (KaikuTaishoShohonJoho) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_radShori = function () {
+                return "onChange_radShori";
+            };
+            return Events;
+        })();
+        KaikuTaishoShohonJoho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KaikuTaishoShohonJoho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KaikuTaishoShohonJoho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.KaikuTaishoShohonJoho.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.KaikuTaishoShohonJoho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtShiyoShohon = function () {
+                return new UZA.TextBox(this.convFiledName("txtShiyoShohon"));
+            };
+
+            Controls.prototype.radShori = function () {
+                return new UZA.RadioButton(this.convFiledName("radShori"));
+            };
+
+            Controls.prototype.ccdShohonNameList = function () {
+                return new AFA.ShohonNameList.ModeController(this.convFiledName("ccdShohonNameList"));
+            };
+
+            Controls.prototype.txtShohonName = function () {
+                return new UZA.TextBox(this.convFiledName("txtShohonName"));
+            };
+
+            Controls.prototype.txtSenkyoName = function () {
+                return new UZA.TextBox(this.convFiledName("txtSenkyoName"));
+            };
+
+            Controls.prototype.txtKijunYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtKijunYMD"));
+            };
+
+            Controls.prototype.txtTohyoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoYMD"));
+            };
+
+            Controls.prototype.txtTohyoUketsukeYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoUketsukeYMD"));
+            };
+
+            Controls.prototype.chkMutohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMutohyo"));
+            };
+            return Controls;
+        })();
+        KaikuTaishoShohonJoho.Controls = Controls;
+    })(AFA.KaikuTaishoShohonJoho || (AFA.KaikuTaishoShohonJoho = {}));
+    var KaikuTaishoShohonJoho = AFA.KaikuTaishoShohonJoho;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (KaikuTaishoShohonJoho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KaikuTaishoShohonJoho.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new KaikuTaishoShohonJoho.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KaikuTaishoShohonJoho.ModeController = ModeController;
+    })(AFA.KaikuTaishoShohonJoho || (AFA.KaikuTaishoShohonJoho = {}));
+    var KaikuTaishoShohonJoho = AFA.KaikuTaishoShohonJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KaikuTaishoShohonJoho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KaikuTaishoShohonJoho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("KaikuTaishoShohonJoho_title", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtShiyoShohon_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("radShori_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_disabled", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ccdShohonNameList_wrap", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKijunYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKijunYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("chkMutohyo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoKaishiYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoKaishiYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShohonName_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShohonName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyoName_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyoName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getKaikuTaishoShohonJoho_title = function () {
+                return this.controls.KaikuTaishoShohonJoho().title;
+            };
+
+            PublicProperties.prototype.setKaikuTaishoShohonJoho_title = function (value) {
+                this.controls.KaikuTaishoShohonJoho().title = value;
+            };
+
+            PublicProperties.prototype.gettxtShiyoShohon_displayNone = function () {
+                return this.controls.txtShiyoShohon().displayNone;
+            };
+
+            PublicProperties.prototype.settxtShiyoShohon_displayNone = function (value) {
+                this.controls.txtShiyoShohon().displayNone = value;
+            };
+
+            PublicProperties.prototype.getradShori_displayNone = function () {
+                return this.controls.radShori().displayNone;
+            };
+
+            PublicProperties.prototype.setradShori_displayNone = function (value) {
+                this.controls.radShori().displayNone = value;
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_disabled = function () {
+                return this.controls.ccdShohonNameList().PublicProperties().getddlShohon_disabled();
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_disabled = function (value) {
+                this.controls.ccdShohonNameList().PublicProperties().setddlShohon_disabled(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_required = function () {
+                return this.controls.ccdShohonNameList().PublicProperties().getddlShohon_required();
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_required = function (value) {
+                this.controls.ccdShohonNameList().PublicProperties().setddlShohon_required(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_labelLText = function () {
+                return this.controls.ccdShohonNameList().PublicProperties().getddlShohon_labelText();
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_labelLText = function (value) {
+                this.controls.ccdShohonNameList().PublicProperties().setddlShohon_labelText(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_wrap = function () {
+                return this.controls.ccdShohonNameList().Properties().wrap;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_wrap = function (value) {
+                this.controls.ccdShohonNameList().Properties().wrap = value;
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_displayNone = function () {
+                return this.controls.ccdShohonNameList().Properties().displayNone;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_displayNone = function (value) {
+                this.controls.ccdShohonNameList().Properties().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtKijunYMD_readOnly = function () {
+                return this.controls.txtKijunYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtKijunYMD_readOnly = function (value) {
+                this.controls.txtKijunYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtKijunYMD_required = function () {
+                return this.controls.txtKijunYMD().required;
+            };
+
+            PublicProperties.prototype.settxtKijunYMD_required = function (value) {
+                this.controls.txtKijunYMD().required = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoYMD_readOnly = function () {
+                return this.controls.txtTohyoYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyoYMD_readOnly = function (value) {
+                this.controls.txtTohyoYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoYMD_required = function () {
+                return this.controls.txtTohyoYMD().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoYMD_required = function (value) {
+                this.controls.txtTohyoYMD().required = value;
+            };
+
+            PublicProperties.prototype.getchkMutohyo_displayNone = function () {
+                return this.controls.chkMutohyo().displayNone;
+            };
+
+            PublicProperties.prototype.setchkMutohyo_displayNone = function (value) {
+                this.controls.chkMutohyo().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoKaishiYMD_readOnly = function () {
+                return this.controls.txtTohyoUketsukeYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyoKaishiYMD_readOnly = function (value) {
+                this.controls.txtTohyoUketsukeYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoKaishiYMD_required = function () {
+                return this.controls.txtTohyoUketsukeYMD().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoKaishiYMD_required = function (value) {
+                this.controls.txtTohyoUketsukeYMD().required = value;
+            };
+
+            PublicProperties.prototype.gettxtShohonName_readOnly = function () {
+                return this.controls.txtShohonName().readOnly;
+            };
+
+            PublicProperties.prototype.settxtShohonName_readOnly = function (value) {
+                this.controls.txtShohonName().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtShohonName_required = function () {
+                return this.controls.txtShohonName().required;
+            };
+
+            PublicProperties.prototype.settxtShohonName_required = function (value) {
+                this.controls.txtShohonName().required = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyoName_readOnly = function () {
+                return this.controls.txtSenkyoName().readOnly;
+            };
+
+            PublicProperties.prototype.settxtSenkyoName_readOnly = function (value) {
+                this.controls.txtSenkyoName().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyoName_required = function () {
+                return this.controls.txtSenkyoName().required;
+            };
+
+            PublicProperties.prototype.settxtSenkyoName_required = function (value) {
+                this.controls.txtSenkyoName().required = value;
+            };
+            return PublicProperties;
+        })();
+        KaikuTaishoShohonJoho.PublicProperties = PublicProperties;
+    })(AFA.KaikuTaishoShohonJoho || (AFA.KaikuTaishoShohonJoho = {}));
+    var KaikuTaishoShohonJoho = AFA.KaikuTaishoShohonJoho;
+})(AFA || (AFA = {}));
+</script></div>

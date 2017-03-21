@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.ISenkyoShikakuMapper">
+
+    <select resultOrdered="true" id="select選挙資格ByKey" resultMap="resultMap_SenkyoShikakuEntity" fetchSize="500">
+        <include refid="selectSenkyoShikakuEntity" />
+    </select>
+
+    <select resultOrdered="true" id="select選挙資格リストBy主キー1" resultMap="resultMap_SenkyoShikakuEntity" fetchSize="500">
+        <include refid="selectSenkyoShikakuEntity" />
+    </select>
+
+    <sql id="selectSenkyoShikakuEntity">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku" />
+        ,"FuzaishaTohyoShikaku".*
+        FROM
+        rgaf."AfT113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        LEFT OUTER JOIN
+        (<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.IFuzaishaTohyoShikakuMapper.selectFuzaishaTohyoShikakuEntity"/>) AS "FuzaishaTohyoShikaku"
+        ON
+        "AfT113SenkyoShikaku"."shikibetsuCode" = "FuzaishaTohyoShikaku"."afT114FuzaishaTohyoShikaku_shikibetsuCode"
+
+    </sql>
+
+    <resultMap id="resultMap_SenkyoShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.senkyonin.senkyoshikaku.SenkyoShikakuEntity" autoMapping="true">
+        <association property="選挙資格Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.resultMap_AfT113SenkyoShikakuEntity"/>
+        <collection property="不在者投票資格Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.IFuzaishaTohyoShikakuMapper.resultMap_FuzaishaTohyoShikakuEntity"/>
+    </resultMap>
+
+</mapper>

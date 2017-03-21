@@ -1,0 +1,6 @@
+﻿senkyoShurui,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.選挙資格種類.getCodeShubetsu(),Description,,選挙種類,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A
+tohyokuName,varchar,RString,,,,,投票区名,A
+kanaTohyokuName,varchar,RString,,,,,カナ投票区名,A
+searchKanaTohyokuName,varchar,RString,,,,,検索用カナ投票区名,A
+hyojijun,int2,int,,,,,表示順,A

@@ -1,0 +1,42 @@
+﻿{
+ "uiContainerName": "AFAUCE7010",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "期日前投票（シミュレーション）",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGME1010",
+     "toLayoutTitle": "期日前投票",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME1010",
+     "layoutTitle": "期日前投票",
+     "eventName": "onClick_btnFinish",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "3",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME1010",
+     "layoutTitle": "期日前投票",
+     "eventName": "メニューに戻る",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

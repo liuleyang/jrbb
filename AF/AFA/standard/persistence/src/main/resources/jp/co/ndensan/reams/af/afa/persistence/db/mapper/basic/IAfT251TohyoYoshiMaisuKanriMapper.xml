@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT251TohyoYoshiMaisuKanriマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT251TohyoYoshiMaisuKanriMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT251TohyoYoshiMaisuKanri">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT251TohyoYoshiMaisuKanriMapper.allColumns_AfT251TohyoYoshiMaisuKanri" />
+     FROM
+         rgaf."AfT251TohyoYoshiMaisuKanri"
+     WHERE
+         rgaf."AfT251TohyoYoshiMaisuKanri"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT251TohyoYoshiMaisuKanri">
+         "AfT251TohyoYoshiMaisuKanri"."shohonNo" as "afT251TohyoYoshiMaisuKanri_shohonNo",
+         "AfT251TohyoYoshiMaisuKanri"."senkyoNo" as "afT251TohyoYoshiMaisuKanri_senkyoNo",
+         "AfT251TohyoYoshiMaisuKanri"."tohyokuCode" as "afT251TohyoYoshiMaisuKanri_tohyokuCode",
+         "AfT251TohyoYoshiMaisuKanri"."insertDantaiCd" as "afT251TohyoYoshiMaisuKanri_insertDantaiCd",
+         "AfT251TohyoYoshiMaisuKanri"."insertTimestamp" as "afT251TohyoYoshiMaisuKanri_insertTimestamp",
+         "AfT251TohyoYoshiMaisuKanri"."insertReamsLoginId" as "afT251TohyoYoshiMaisuKanri_insertReamsLoginId",
+         "AfT251TohyoYoshiMaisuKanri"."insertContextId" as "afT251TohyoYoshiMaisuKanri_insertContextId",
+         "AfT251TohyoYoshiMaisuKanri"."isDeleted" as "afT251TohyoYoshiMaisuKanri_isDeleted",
+         "AfT251TohyoYoshiMaisuKanri"."updateCount" as "afT251TohyoYoshiMaisuKanri_updateCount",
+         "AfT251TohyoYoshiMaisuKanri"."lastUpdateTimestamp" as "afT251TohyoYoshiMaisuKanri_lastUpdateTimestamp",
+         "AfT251TohyoYoshiMaisuKanri"."lastUpdateReamsLoginId" as "afT251TohyoYoshiMaisuKanri_lastUpdateReamsLoginId",
+         "AfT251TohyoYoshiMaisuKanri"."tohyoYoshiMaisu" as "afT251TohyoYoshiMaisuKanri_tohyoYoshiMaisu",
+         "AfT251TohyoYoshiMaisuKanri"."tenjiYoshiMaisu" as "afT251TohyoYoshiMaisuKanri_tenjiYoshiMaisu",
+         "AfT251TohyoYoshiMaisuKanri"."kariFutoMaisu" as "afT251TohyoYoshiMaisuKanri_kariFutoMaisu"
+    </sql>
+
+
+    <!--テーブルAfT251TohyoYoshiMaisuKanriの項目をAfT251TohyoYoshiMaisuKanriEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT251TohyoYoshiMaisuKanriEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT251TohyoYoshiMaisuKanriEntity" autoMapping="true">
+        <id property="shohonNo" column="afT251TohyoYoshiMaisuKanri_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="senkyoNo" column="afT251TohyoYoshiMaisuKanri_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id property="tohyokuCode" column="afT251TohyoYoshiMaisuKanri_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT251TohyoYoshiMaisuKanri_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT251TohyoYoshiMaisuKanri_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT251TohyoYoshiMaisuKanri_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT251TohyoYoshiMaisuKanri_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT251TohyoYoshiMaisuKanri_isDeleted" />
+        <result property="updateCount" column="afT251TohyoYoshiMaisuKanri_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT251TohyoYoshiMaisuKanri_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT251TohyoYoshiMaisuKanri_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyoYoshiMaisu" column="afT251TohyoYoshiMaisuKanri_tohyoYoshiMaisu" />
+        <result property="tenjiYoshiMaisu" column="afT251TohyoYoshiMaisuKanri_tenjiYoshiMaisu" />
+        <result property="kariFutoMaisu" column="afT251TohyoYoshiMaisuKanri_kariFutoMaisu" />
+    </resultMap>
+
+</mapper>

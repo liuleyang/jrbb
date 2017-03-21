@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0795-020 chenh -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.mochidashipcimportuketsukedata.IMochidashiPcImportUketsukeDataMapper">  
+    <select resultOrdered="true" id="select当日受付データ取込情報" 
+            parameterType="jp.co.ndensan.reams.af.afa.definition.processprm.mochidashipcimportuketsukedata.AFABTE803SelectProcessMyBatisParameter" 
+            resultMap="resultMap_MochidashiPcImportUketsukeDataEntity" fetchSize="500">
+        SELECT
+          "AFABTE803TempShohon"."tohyoJyokyo1" AS "tohyoJyokyo1",
+          "AFABTE803TempShohon"."tohyoJyokyo2" AS "tohyoJyokyo2",
+          "AFABTE803TempShohon"."tohyoJyokyo3" AS "tohyoJyokyo3",
+          "AFABTE803TempShohon"."tohyoJyokyo4" AS "tohyoJyokyo4",
+          "AFABTE803TempShohon"."tohyoJyokyo5" AS "tohyoJyokyo5",
+          "AFABTE803TempShohon"."tohyoJyokyo6" AS "tohyoJyokyo6",
+          "AFABTE803TempShohon"."tohyoJyokyo7" AS "tohyoJyokyo7",
+          "AFABTE803TempShohon"."tohyoJyokyo8" AS "tohyoJyokyo8",
+          "AFABTE803TempShohon"."tohyoJyokyo9" AS "tohyoJyokyo9",
+          "AFABTE803TempTohyoJokyo"."senkyoNo" AS "senkyoNo",
+          "AFABTE803TempTohyoJokyo"."juminCode" AS "juminCode",
+          "AFABTE803TempTohyoJokyo"."shohonNo" AS "shohonNo",
+          "AFABTE803TempTohyoJokyo"."seikyuJiyu" AS "seikyuJiyu",
+          "AFABTE803TempTohyoJokyo"."seikyuYMD" AS "seikyuYMD",
+          "AFABTE803TempTohyoJokyo"."seikyuHoho" AS "seikyuHoho",
+          "AFABTE803TempTohyoJokyo"."kofuUketsukeNo" AS "kofuUketsukeNo",
+          "AFABTE803TempTohyoJokyo"."kofuYMD" AS "kofuYMD",
+          "AFABTE803TempTohyoJokyo"."kofuTime" AS "kofuTime",
+          "AFABTE803TempTohyoJokyo"."kofuHoho" AS "kofuHoho",
+          "AFABTE803TempTohyoJokyo"."kofuShisetsuCode" AS "kofuShisetsuCode",
+          "AFABTE803TempTohyoJokyo"."juriYMD" AS "juriYMD",
+          "AFABTE803TempTohyoJokyo"."juriTime" AS "juriTime",
+          "AFABTE803TempTohyoJokyo"."juriHoho" AS "juriHoho",
+          "AFABTE803TempTohyoJokyo"."juriShisetsuShubetsu" AS "juriShisetsuShubetsu",
+          "AFABTE803TempTohyoJokyo"."henkanYMD" AS "henkanYMD",
+          "AFABTE803TempTohyoJokyo"."tenjiFlag" AS "tenjiFlag",
+          "AFABTE803TempTohyoJokyo"."dairiTohyoAriFlag" AS "dairiTohyoAriFlag",
+          "AFABTE803TempTohyoJokyo"."hojoshaShimei1" AS "hojoshaShimei1",
+          "AFABTE803TempTohyoJokyo"."hojoshaShimei2" AS "hojoshaShimei2",
+          "AFABTE803TempTohyoJokyo"."shomeishoPrintFlag" AS "shomeishoPrintFlag",
+          "AFABTE803TempTohyoJokyo"."isDeleted" AS "isDeleted",
+          "AFABTE803TempTohyoJokyo"."updateCount" AS "updateCount",
+          "AFABTE803TempTohyoJokyo"."insertDataTimestamp" AS "insertTimestamp",
+          "AFABTE803TempTohyoJokyo"."insertDataLoginId" AS "insertReamsLoginId",
+          "AFABTE803TempTohyoJokyo"."lastUpdateDataTimestamp" AS "lastUpdateTimestamp",
+          "AFABTE803TempTohyoJokyo"."lastUpdateDataLoginId" AS "lastUpdateReamsLoginId",
+          "AfT201TohyoJokyo"."shohonNo" AS "tohyoJokyoShohonNo",
+          "AfT201TohyoJokyo"."tohyoJokyo" AS "tohyoJokyo"
+        FROM 
+          "${table}" AS "AFABTE803TempShohon"
+        INNER JOIN 
+          "${table1}" AS "AFABTE803TempTohyoJokyo"
+        ON  
+           "AFABTE803TempShohon"."shohonNo" = "AFABTE803TempTohyoJokyo"."shohonNo"
+           AND "AFABTE803TempShohon"."juminCode" = "AFABTE803TempTohyoJokyo"."juminCode"
+        LEFT JOIN
+            rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON
+           "AfT201TohyoJokyo"."shohonNo" = "AFABTE803TempTohyoJokyo"."shohonNo"
+           AND "AfT201TohyoJokyo"."shikibetsuCode" = "AFABTE803TempTohyoJokyo"."juminCode"
+           AND "AfT201TohyoJokyo"."senkyoNo" = "AFABTE803TempTohyoJokyo"."senkyoNo"
+    </select>
+    <resultMap id="resultMap_MochidashiPcImportUketsukeDataEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.mochidashipcimportuketsukedata.MochidashiPcImportUketsukeDataEntity" autoMapping="true">
+        <result property="投票状況１" column="tohyoJyokyo1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況２" column="tohyoJyokyo2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況３" column="tohyoJyokyo3" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況４" column="tohyoJyokyo4" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況５" column="tohyoJyokyo5" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況６" column="tohyoJyokyo6" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況７" column="tohyoJyokyo7" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況８" column="tohyoJyokyo8" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票状況９" column="tohyoJyokyo9" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="選挙番号" column="senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>            
+        <result property="識別コード" column="juminCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="抄本番号" column="shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>   
+        <result property="投票事由コード" column="seikyuJiyu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>             
+        <result property="請求年月日" column="seikyuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>            
+        <result property="請求方法" column="seikyuHoho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="受付番号" column="kofuUketsukeNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="交付年月日" column="kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>            
+        <result property="交付時刻" column="kofuTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>            
+        <result property="交付方法" column="kofuHoho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="施設コード" column="kofuShisetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="受理年月日" column="juriYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>            
+        <result property="受理時刻" column="juriTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>            
+        <result property="受理方法" column="juriHoho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="受理施設種別" column="juriShisetsuShubetsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="返還年月日" column="henkanYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>            
+        <result property="点字フラグ" column="tenjiFlag" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="代理投票有フラグ" column="dairiTohyoAriFlag" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="補助者氏名1" column="hojoshaShimei1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="補助者氏名2" column="hojoshaShimei2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="証明書出力フラグ" column="shomeishoPrintFlag" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="論理削除行FLG" column="isDeleted" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="update回数" column="updateCount" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="行挿入日時" column="insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="行挿入ログインid" column="insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="最終Update日時" column="lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="最終Updateログインid" column="lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>            
+        <result property="投票状況抄本番号" column="tohyoJokyoShohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>            
+        <result property="投票状況" column="tohyoJokyo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+    </resultMap>
+ <select resultOrdered="true" id="select持出端末状態管理By投票年月日" 
+            parameterType="jp.co.ndensan.reams.af.afa.definition.processprm.mochidashipcimportuketsukedata.AFABTE803SelectProcessMyBatisParameter" 
+            resultMap="ResultMap_AfT252MochidashiPcJotaiKanriEntity"  fetchSize="500"> 
+    SELECT  
+        "AfT252MochidashiPcJotaiKanri"."insertDantaiCd" AS "insertDantaiCd",
+        "AfT252MochidashiPcJotaiKanri"."insertTimestamp" AS "insertTimestamp",
+        "AfT252MochidashiPcJotaiKanri"."insertReamsLoginId" AS "insertReamsLoginId",
+        "AfT252MochidashiPcJotaiKanri"."insertContextId" AS "insertContextId",
+        "AfT252MochidashiPcJotaiKanri"."isDeleted" AS "isDeleted",
+        "AfT252MochidashiPcJotaiKanri"."updateCount" AS "updateCount",
+        "AfT252MochidashiPcJotaiKanri"."lastUpdateTimestamp" AS "lastUpdateTimestamp",
+        "AfT252MochidashiPcJotaiKanri"."lastUpdateReamsLoginId" AS "lastUpdateReamsLoginId",
+        "AfT252MochidashiPcJotaiKanri"."shohonNo" AS "shohonNo",
+        "AfT252MochidashiPcJotaiKanri"."tohyokuCode" AS "tohyokuCode",
+        "AfT252MochidashiPcJotaiKanri"."dataCreateKubun" AS "dataCreateKubun",
+        "AfT252MochidashiPcJotaiKanri"."dataCreateYMD" AS "dataCreateYMD",
+        "AfT252MochidashiPcJotaiKanri"."systemSendKubun" AS "systemSendKubun",
+        "AfT252MochidashiPcJotaiKanri"."systemSendYMD" AS "systemSendYMD",
+        "AfT252MochidashiPcJotaiKanri"."dataSendKubun" AS "dataSendKubun",
+        "AfT252MochidashiPcJotaiKanri"."dataSendYMD" AS "dataSendYMD",
+        "AfT252MochidashiPcJotaiKanri"."dataImportKubun" AS "dataImportKubun",
+        "AfT252MochidashiPcJotaiKanri"."dataImportYMD" AS "dataImportYMD"
+      FROM 
+         rgaf."AfT252MochidashiPcJotaiKanri" as "AfT252MochidashiPcJotaiKanri"
+      WHERE
+         "AfT252MochidashiPcJotaiKanri"."shohonNo" 
+       IN (
+         SELECT 
+           "AfT100Shohon"."shohonNo" 
+          FROM 
+           rgaf."AfT100Shohon" as "AfT100Shohon" 
+         WHERE "AfT100Shohon"."tohyoYMD" = #{投票年月日} 
+         ) 
+         AND "AfT252MochidashiPcJotaiKanri"."tohyokuCode" = #{投票区コード} 
+    </select> 
+    <resultMap id="ResultMap_AfT252MochidashiPcJotaiKanriEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT252MochidashiPcJotaiKanriEntity" autoMapping="true">
+        <id property="shohonNo" column="shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="isDeleted" />
+        <result property="updateCount" column="updateCount" />
+        <result property="lastUpdateTimestamp" column="lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="dataCreateKubun" column="dataCreateKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="dataCreateYMD" column="dataCreateYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YMDHMSTypeHandler"/>
+        <result property="systemSendKubun" column="systemSendKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="systemSendYMD" column="systemSendYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YMDHMSTypeHandler"/>
+        <result property="dataSendKubun" column="dataSendKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="dataSendYMD" column="dataSendYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YMDHMSTypeHandler"/>
+        <result property="dataImportKubun" column="dataImportKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="dataImportYMD" column="dataImportYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YMDHMSTypeHandler"/>
+     </resultMap>
+</mapper>

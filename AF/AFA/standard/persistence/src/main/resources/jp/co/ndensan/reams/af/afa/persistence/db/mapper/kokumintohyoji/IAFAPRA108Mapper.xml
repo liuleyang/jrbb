@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0360-053 caijj2 -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.kokumintohyoji.IAFAPRA108Mapper">
+
+    <select resultOrdered="true" id="selectTeiseishaList" resultMap="ResultMap_TeiseishaMeiboEntity"
+            parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.kokumintohyoji.KokuminTohyojiMybatisParameter">
+        WITH
+        "AfT113Seq" AS (
+        SELECT
+        "AfT100Shohon"."shohonNo",
+        "AfT113SenkyoShikaku"."shikibetsuCode",
+        MAX("AfT113SenkyoShikaku"."seq") AS seq
+        FROM
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN rgaf."AfT113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        ON "AfT113SenkyoShikaku"."senkyoShurui" = '2'
+        AND "AfT113SenkyoShikaku"."dataTorokuYMD" <![CDATA[<]]> "AfT100Shohon"."shoriYMD"
+        AND "AfT100Shohon"."shohonNo" = #{抄本番号}
+        GROUP BY "AfT100Shohon"."shohonNo",
+        "AfT113SenkyoShikaku"."shikibetsuCode")
+        ,
+        master AS (
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon"/>
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.allColumns_AfT112SenkyoninMeibo"/>
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku"/>
+        ,
+        <include refid="allColumns_AfV113SenkyoShikaku"/>
+        FROM
+        rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        INNER JOIN rgaf."AfT100Shohon" AS "AfT100Shohon" 
+        ON "AfT100Shohon"."shohonNo" = "AfT112SenkyoninMeibo"."shohonNo" 
+        AND "AfT100Shohon"."shohonNo" = #{抄本番号}
+        INNER JOIN "AfT113Seq" AS "AfT113Seq"
+        ON "AfT113Seq"."shohonNo" = "AfT100Shohon"."shohonNo"
+        AND "AfT113Seq"."shikibetsuCode" = "AfT112SenkyoninMeibo"."shikibetsuCode"
+        INNER JOIN rgaf."AfT113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        ON "AfT113SenkyoShikaku"."shikibetsuCode" = "AfT112SenkyoninMeibo"."shikibetsuCode" 
+        AND "AfT113SenkyoShikaku"."senkyoShurui" = '2'
+        AND "AfT113Seq".seq = "AfT113SenkyoShikaku".seq
+        INNER JOIN rgaf."AfV113SenkyoShikaku" AS "AfV113SenkyoShikaku"
+        ON "AfV113SenkyoShikaku"."shikibetsuCode" = "AfT112SenkyoninMeibo"."shikibetsuCode" 
+        AND "AfV113SenkyoShikaku"."senkyoShurui" = '2'
+        )
+        ,
+        masterPSM as (
+        SELECT * FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (
+        SELECT
+        ARRAY_AGG(CAST ("afT112SenkyoninMeibo_shikibetsuCode" AS TEXT))
+        FROM
+        master
+        )
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        )
+        ,
+        "UaFt200RirekiNo" AS (
+        WITH "meiboTorokuYMDTable" AS (
+        SELECT
+        "AfT100Shohon"."shohonNo",
+        "AfT111Senkyo"."kijunYMD",
+        MIN("AfT111Senkyo"."meiboTorokuYMD") AS "meiboTorokuYMD"
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        AND "AfT100Shohon"."shohonNo" = #{抄本番号}
+        GROUP BY "AfT100Shohon"."shohonNo",
+        "AfT111Senkyo"."kijunYMD")
+        SELECT
+        "meiboTorokuYMDTable"."shohonNo",
+        "meiboTorokuYMDTable"."kijunYMD",
+        "ShikibetsuTaisho"."shikibetsuCode",
+        MAX("ShikibetsuTaisho"."rirekiNo") AS "rirekiNo"
+        FROM "meiboTorokuYMDTable"
+        INNER JOIN masterPSM AS "ShikibetsuTaisho"
+        ON "meiboTorokuYMDTable"."meiboTorokuYMD" <![CDATA[>]]> "ShikibetsuTaisho"."idoYMD"
+        GROUP BY "meiboTorokuYMDTable"."shohonNo",
+        "meiboTorokuYMDTable"."kijunYMD",
+        "ShikibetsuTaisho"."shikibetsuCode")
+        
+        SELECT
+        master.*
+        ,
+        "ShikibetsuTaisho"."idoJiyuCode" = '30' as "idoJiyuCode_tenKyo"
+        ,
+        "ShikibetsuTaisho2"."tohyokuCode" as "before_tohyokuCode"
+        ,
+        "UaFt200RirekiNo2"."kijunYMD" as "maxKijunYMD"
+        ,
+        "ShikibetsuTaisho2".*
+        ,
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+        FROM
+        master
+        INNER JOIN <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (
+        SELECT
+        ARRAY_AGG(CAST ("afT112SenkyoninMeibo_shikibetsuCode" AS TEXT))
+        FROM
+        master
+        )
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"
+        AND "ShikibetsuTaisho"."idoJiyuCode" IN
+        <foreach item="idoJiyuCode" index="index" collection="idoJiyuCodeList"
+                 open="(" separator="," close=")">
+            #{idoJiyuCode}
+        </foreach>
+
+        INNER JOIN "UaFt200RirekiNo" AS "UaFt200RirekiNo2"
+        ON "UaFt200RirekiNo2"."shohonNo" = master."afT100Shohon_shohonNo"
+        AND "UaFt200RirekiNo2"."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"
+        INNER JOIN masterPSM AS "ShikibetsuTaisho2"
+        ON "ShikibetsuTaisho2"."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"
+        AND "ShikibetsuTaisho2"."rirekiNo" = "UaFt200RirekiNo2"."rirekiNo"
+        
+        ${sort}
+    </select>
+
+
+    <sql id="allColumns_AfV113SenkyoShikaku">
+        "AfV113SenkyoShikaku"."senkyoShurui" as "afT113SenkyoShikaku2_senkyoShurui",
+        "AfV113SenkyoShikaku"."shikibetsuCode" as "afT113SenkyoShikaku2_shikibetsuCode",
+        "AfV113SenkyoShikaku"."seq" as "afT113SenkyoShikaku2_seq",
+        "AfV113SenkyoShikaku"."insertDantaiCd" as "afT113SenkyoShikaku2_insertDantaiCd",
+        "AfV113SenkyoShikaku"."insertTimestamp" as "afT113SenkyoShikaku2_insertTimestamp",
+        "AfV113SenkyoShikaku"."insertReamsLoginId" as "afT113SenkyoShikaku2_insertReamsLoginId",
+        "AfV113SenkyoShikaku"."insertContextId" as "afT113SenkyoShikaku2_insertContextId",
+        "AfV113SenkyoShikaku"."isDeleted" as "afT113SenkyoShikaku2_isDeleted",
+        "AfV113SenkyoShikaku"."updateCount" as "afT113SenkyoShikaku2_updateCount",
+        "AfV113SenkyoShikaku"."lastUpdateTimestamp" as "afT113SenkyoShikaku2_lastUpdateTimestamp",
+        "AfV113SenkyoShikaku"."lastUpdateReamsLoginId" as "afT113SenkyoShikaku2_lastUpdateReamsLoginId",
+        "AfV113SenkyoShikaku"."shikakuKubun" as "afT113SenkyoShikaku2_shikakuKubun",
+        "AfV113SenkyoShikaku"."tohyokuCode" as "afT113SenkyoShikaku2_tohyokuCode",
+        "AfV113SenkyoShikaku"."meiboTorokuYMD" as "afT113SenkyoShikaku2_meiboTorokuYMD",
+        "AfV113SenkyoShikaku"."torokuJiyuCode" as "afT113SenkyoShikaku2_torokuJiyuCode",
+        "AfV113SenkyoShikaku"."torokuTeishiYMD" as "afT113SenkyoShikaku2_torokuTeishiYMD",
+        "AfV113SenkyoShikaku"."torokuTeishiJiyuCode" as "afT113SenkyoShikaku2_torokuTeishiJiyuCode",
+        "AfV113SenkyoShikaku"."hyojiYMD" as "afT113SenkyoShikaku2_hyojiYMD",
+        "AfV113SenkyoShikaku"."hyojiJiyuCode" as "afT113SenkyoShikaku2_hyojiJiyuCode",
+        "AfV113SenkyoShikaku"."hyojiShojoYMD" as "afT113SenkyoShikaku2_hyojiShojoYMD",
+        "AfV113SenkyoShikaku"."hyojiShojoYoteiYMD" as "afT113SenkyoShikaku2_hyojiShojoYoteiYMD",
+        "AfV113SenkyoShikaku"."masshoYMD" as "afT113SenkyoShikaku2_masshoYMD",
+        "AfV113SenkyoShikaku"."masshoJiyuCode" as "afT113SenkyoShikaku2_masshoJiyuCode",
+        "AfV113SenkyoShikaku"."keikiShuryoYMD" as "afT113SenkyoShikaku2_keikiShuryoYMD",
+        "AfV113SenkyoShikaku"."nikeimochiFlag" as "afT113SenkyoShikaku2_nikeimochiFlag"
+    </sql>
+
+
+    <!--テーブルAfV113SenkyoShikakuの項目をAfT113SenkyoShikakuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfV113SenkyoShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT113SenkyoShikakuEntity" autoMapping="true">
+        <id property="senkyoShurui" column="afT113SenkyoShikaku2_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="shikibetsuCode" column="afT113SenkyoShikaku2_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="seq" column="afT113SenkyoShikaku2_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <result property="insertDantaiCd" column="afT113SenkyoShikaku2_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT113SenkyoShikaku2_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT113SenkyoShikaku2_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT113SenkyoShikaku2_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT113SenkyoShikaku2_isDeleted" />
+        <result property="updateCount" column="afT113SenkyoShikaku2_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT113SenkyoShikaku2_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT113SenkyoShikaku2_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shikakuKubun" column="afT113SenkyoShikaku2_shikakuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="tohyokuCode" column="afT113SenkyoShikaku2_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="meiboTorokuYMD" column="afT113SenkyoShikaku2_meiboTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="torokuJiyuCode" column="afT113SenkyoShikaku2_torokuJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="torokuTeishiYMD" column="afT113SenkyoShikaku2_torokuTeishiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="torokuTeishiJiyuCode" column="afT113SenkyoShikaku2_torokuTeishiJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="hyojiYMD" column="afT113SenkyoShikaku2_hyojiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiJiyuCode" column="afT113SenkyoShikaku2_hyojiJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="hyojiShojoYMD" column="afT113SenkyoShikaku2_hyojiShojoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiShojoYoteiYMD" column="afT113SenkyoShikaku2_hyojiShojoYoteiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="masshoYMD" column="afT113SenkyoShikaku2_masshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="masshoJiyuCode" column="afT113SenkyoShikaku2_masshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="keikiShuryoYMD" column="afT113SenkyoShikaku2_keikiShuryoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="nikeimochiFlag" column="afT113SenkyoShikaku2_nikeimochiFlag" />
+    </resultMap>
+
+    <resultMap id="ResultMap_TeiseishaMeiboEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.kokumintohyoji.TeiseishaMeiboEntity" autoMapping="true">
+        <id column="ShikibetsuTaisho_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler" />
+        <id column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="beforeTohyokuCode" column="before_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler" />
+        <result property="idoJiyuCodeIsTenKyo" column="idoJiyuCode_tenKyo"/>
+        <result property="maxKijunYMD" column="maxKijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <association property = "afT100Shohon" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <association property = "afT112SenkyoninMeibo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT112SenkyoninMeiboMapper.ResultMap_AfT112SenkyoninMeiboEntity"/>
+        <association property = "afT113SenkyoShikaku" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.ResultMap_AfT113SenkyoShikakuEntity"/>
+        <association property = "afterUaft200" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+        <association property = "beforeUaft200" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.UaFt200FindShikibetsuTaishoEntity_normal"/>
+        <association property = "afT113SenkyoShikakuAfter" resultMap = "ResultMap_AfV113SenkyoShikakuEntity"/>
+    </resultMap>
+
+</mapper>

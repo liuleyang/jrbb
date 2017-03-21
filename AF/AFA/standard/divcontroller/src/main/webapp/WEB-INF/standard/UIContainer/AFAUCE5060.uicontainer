@@ -1,0 +1,42 @@
+﻿{
+ "uiContainerName": "AFAUCE5060",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "投票用紙枚数管理",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGME5060",
+     "toLayoutTitle": "投票用紙枚数管理",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME5060",
+     "layoutTitle": "投票用紙枚数管理",
+     "eventName": "処理終了",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "3",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME5060",
+     "layoutTitle": "投票用紙枚数管理",
+     "eventName": "メニューへ戻る",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

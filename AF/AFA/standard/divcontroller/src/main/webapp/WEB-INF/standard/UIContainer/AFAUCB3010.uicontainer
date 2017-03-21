@@ -1,0 +1,98 @@
+﻿{
+ "uiContainerName": "AFAUCB3010",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "在外選挙人名簿登録",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "再検索状態"
+    },
+    {
+     "id": "2",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMC1000",
+     "layoutTitle": "住民検索（資格）",
+     "eventName": "決定",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMB3010",
+     "toLayoutTitle": "名簿登録",
+     "toState": "default"
+    },
+    {
+     "id": "3",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMC1000",
+     "layoutTitle": "住民検索（資格）",
+     "eventName": "完了",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "4",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMB3010",
+     "layoutTitle": "名簿登録",
+     "eventName": "更新",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGM01000",
+     "toLayoutTitle": "処理完了",
+     "toState": "default"
+    },
+    {
+     "id": "5",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMB3010",
+     "layoutTitle": "名簿登録",
+     "eventName": "戻る",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "再検索状態"
+    },
+    {
+     "id": "6",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "再検索",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "再検索状態"
+    },
+    {
+     "id": "7",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "完了",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

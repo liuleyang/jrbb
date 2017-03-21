@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0210-020 liuj -->
+
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.tohyoshikaku.ITohyoShikakuMapper">
+    <select resultOrdered="true" id="selectFuzaishaTohyoShikaku" resultMap="resultMap_FuzaishaTohyoShikakuEntity" fetchSize="500">
+        select
+        AfV114."shikibetsuCode" as shikibetsuCode,
+        AfV114."tohyoShikakuShurui" as tohyoShikakuShurui,
+        AfV114."seq" as seq,
+        AfV114."kofuYMD" as kofuYMD,
+        AfV114."kofuNo" as kofuNo,
+        AfV114."shikakuTorokuYMD" as shikakuTorokuYMD,
+        AfV114."shikakuManryoYMD" as shikakuManryoYMD,
+        AfV114."shikakuMasshoYMD" as shikakuMasshoYMD,
+        AfV114."shikakuMasshoJiyuCode" as shikakuMasshoJiyuCode
+        from rgaf."AfV114FuzaishaTohyoShikaku" as AfV114
+        where AfV114."shikibetsuCode" = #{shikibetsuCode}
+        and AfV114."tohyoShikakuShurui" = #{tohyoShikakuShurui}
+        ORDER BY AfV114."seq" DESC
+    </select>
+
+    <resultMap id="resultMap_FuzaishaTohyoShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT114FuzaishaTohyoShikakuEntity" autoMapping="true">
+        <result property="shikibetsuCode" column="shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="tohyoShikakuShurui" column="tohyoShikakuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="seq" column="seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <result property="kofuYMD" column="kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kofuNo" column="kofuNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shikakuTorokuYMD" column="shikakuTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shikakuManryoYMD" column="shikakuManryoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shikakuMasshoYMD" column="shikakuMasshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shikakuMasshoJiyuCode" column="shikakuMasshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+    </resultMap>
+</mapper>

@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCJ2010",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "入場券発行(一括)",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFA9000010",
+     "toLayoutTitle": "入場券発行（一括）",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFA9000010",
+     "layoutTitle": "入場券発行（一括）",
+     "eventName": "バッチ起動",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

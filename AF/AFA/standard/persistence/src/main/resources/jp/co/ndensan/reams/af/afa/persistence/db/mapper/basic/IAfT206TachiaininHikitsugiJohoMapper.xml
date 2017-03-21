@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT206TachiaininHikitsugiJohoマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT206TachiaininHikitsugiJohoMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT206TachiaininHikitsugiJoho">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT206TachiaininHikitsugiJohoMapper.allColumns_AfT206TachiaininHikitsugiJoho" />
+     FROM
+         rgaf."AfT206TachiaininHikitsugiJoho"
+     WHERE
+         rgaf."AfT206TachiaininHikitsugiJoho"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT206TachiaininHikitsugiJoho">
+         "AfT206TachiaininHikitsugiJoho"."shohonNo" as "afT206TachiaininHikitsugiJoho_shohonNo",
+         "AfT206TachiaininHikitsugiJoho"."senkyoNo" as "afT206TachiaininHikitsugiJoho_senkyoNo",
+         "AfT206TachiaininHikitsugiJoho"."hokokuYMD" as "afT206TachiaininHikitsugiJoho_hokokuYMD",
+         "AfT206TachiaininHikitsugiJoho"."shisetsuCode" as "afT206TachiaininHikitsugiJoho_shisetsuCode",
+         "AfT206TachiaininHikitsugiJoho"."tohyokuCode" as "afT206TachiaininHikitsugiJoho_tohyokuCode",
+         "AfT206TachiaininHikitsugiJoho"."tachiaininRenban" as "afT206TachiaininHikitsugiJoho_tachiaininRenban",
+         "AfT206TachiaininHikitsugiJoho"."komokuShurui" as "afT206TachiaininHikitsugiJoho_komokuShurui",
+         "AfT206TachiaininHikitsugiJoho"."renban" as "afT206TachiaininHikitsugiJoho_renban",
+         "AfT206TachiaininHikitsugiJoho"."insertDantaiCd" as "afT206TachiaininHikitsugiJoho_insertDantaiCd",
+         "AfT206TachiaininHikitsugiJoho"."insertTimestamp" as "afT206TachiaininHikitsugiJoho_insertTimestamp",
+         "AfT206TachiaininHikitsugiJoho"."insertReamsLoginId" as "afT206TachiaininHikitsugiJoho_insertReamsLoginId",
+         "AfT206TachiaininHikitsugiJoho"."insertContextId" as "afT206TachiaininHikitsugiJoho_insertContextId",
+         "AfT206TachiaininHikitsugiJoho"."isDeleted" as "afT206TachiaininHikitsugiJoho_isDeleted",
+         "AfT206TachiaininHikitsugiJoho"."updateCount" as "afT206TachiaininHikitsugiJoho_updateCount",
+         "AfT206TachiaininHikitsugiJoho"."lastUpdateTimestamp" as "afT206TachiaininHikitsugiJoho_lastUpdateTimestamp",
+         "AfT206TachiaininHikitsugiJoho"."lastUpdateReamsLoginId" as "afT206TachiaininHikitsugiJoho_lastUpdateReamsLoginId",
+         "AfT206TachiaininHikitsugiJoho"."shimei" as "afT206TachiaininHikitsugiJoho_shimei",
+         "AfT206TachiaininHikitsugiJoho"."toha" as "afT206TachiaininHikitsugiJoho_toha",
+         "AfT206TachiaininHikitsugiJoho"."tachiaiStartTime" as "afT206TachiaininHikitsugiJoho_tachiaiStartTime",
+         "AfT206TachiaininHikitsugiJoho"."tachiaiStopTime" as "afT206TachiaininHikitsugiJoho_tachiaiStopTime",
+         "AfT206TachiaininHikitsugiJoho"."ijoAriFlag" as "afT206TachiaininHikitsugiJoho_ijoAriFlag",
+         "AfT206TachiaininHikitsugiJoho"."ijoNaiyo" as "afT206TachiaininHikitsugiJoho_ijoNaiyo"
+    </sql>
+
+
+    <!--テーブルAfT206TachiaininHikitsugiJohoの項目をAfT206TachiaininHikitsugiJohoEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT206TachiaininHikitsugiJohoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT206TachiaininHikitsugiJohoEntity" autoMapping="true">
+        <id property="shohonNo" column="afT206TachiaininHikitsugiJoho_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="senkyoNo" column="afT206TachiaininHikitsugiJoho_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id property="hokokuYMD" column="afT206TachiaininHikitsugiJoho_hokokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <id property="shisetsuCode" column="afT206TachiaininHikitsugiJoho_shisetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyokuCode" column="afT206TachiaininHikitsugiJoho_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tachiaininRenban" column="afT206TachiaininHikitsugiJoho_tachiaininRenban" />
+        <id property="komokuShurui" column="afT206TachiaininHikitsugiJoho_komokuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="renban" column="afT206TachiaininHikitsugiJoho_renban" />
+        <result property="insertDantaiCd" column="afT206TachiaininHikitsugiJoho_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT206TachiaininHikitsugiJoho_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT206TachiaininHikitsugiJoho_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT206TachiaininHikitsugiJoho_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT206TachiaininHikitsugiJoho_isDeleted" />
+        <result property="updateCount" column="afT206TachiaininHikitsugiJoho_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT206TachiaininHikitsugiJoho_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT206TachiaininHikitsugiJoho_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shimei" column="afT206TachiaininHikitsugiJoho_shimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="toha" column="afT206TachiaininHikitsugiJoho_toha" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tachiaiStartTime" column="afT206TachiaininHikitsugiJoho_tachiaiStartTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="tachiaiStopTime" column="afT206TachiaininHikitsugiJoho_tachiaiStopTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="ijoAriFlag" column="afT206TachiaininHikitsugiJoho_ijoAriFlag" />
+        <result property="ijoNaiyo" column="afT206TachiaininHikitsugiJoho_ijoNaiyo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

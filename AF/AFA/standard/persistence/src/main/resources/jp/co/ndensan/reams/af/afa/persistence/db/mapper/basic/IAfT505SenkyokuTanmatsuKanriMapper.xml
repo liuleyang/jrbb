@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT505SenkyokuTanmatsuKanriマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT505SenkyokuTanmatsuKanriMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT505SenkyokuTanmatsuKanri">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT505SenkyokuTanmatsuKanriMapper.allColumns_AfT505SenkyokuTanmatsuKanri" />
+     FROM
+         rgaf."AfT505SenkyokuTanmatsuKanri"
+     WHERE
+         rgaf."AfT505SenkyokuTanmatsuKanri"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT505SenkyokuTanmatsuKanri">
+         "AfT505SenkyokuTanmatsuKanri"."senkyoShurui" as "afT505SenkyokuTanmatsuKanri_senkyoShurui",
+         "AfT505SenkyokuTanmatsuKanri"."senkyokuCode" as "afT505SenkyokuTanmatsuKanri_senkyokuCode",
+         "AfT505SenkyokuTanmatsuKanri"."tanmatsuID" as "afT505SenkyokuTanmatsuKanri_tanmatsuID",
+         "AfT505SenkyokuTanmatsuKanri"."insertDantaiCd" as "afT505SenkyokuTanmatsuKanri_insertDantaiCd",
+         "AfT505SenkyokuTanmatsuKanri"."insertTimestamp" as "afT505SenkyokuTanmatsuKanri_insertTimestamp",
+         "AfT505SenkyokuTanmatsuKanri"."insertReamsLoginId" as "afT505SenkyokuTanmatsuKanri_insertReamsLoginId",
+         "AfT505SenkyokuTanmatsuKanri"."insertContextId" as "afT505SenkyokuTanmatsuKanri_insertContextId",
+         "AfT505SenkyokuTanmatsuKanri"."isDeleted" as "afT505SenkyokuTanmatsuKanri_isDeleted",
+         "AfT505SenkyokuTanmatsuKanri"."updateCount" as "afT505SenkyokuTanmatsuKanri_updateCount",
+         "AfT505SenkyokuTanmatsuKanri"."lastUpdateTimestamp" as "afT505SenkyokuTanmatsuKanri_lastUpdateTimestamp",
+         "AfT505SenkyokuTanmatsuKanri"."lastUpdateReamsLoginId" as "afT505SenkyokuTanmatsuKanri_lastUpdateReamsLoginId"
+    </sql>
+
+
+    <!--テーブルAfT505SenkyokuTanmatsuKanriの項目をAfT505SenkyokuTanmatsuKanriEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT505SenkyokuTanmatsuKanriEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT505SenkyokuTanmatsuKanriEntity" autoMapping="true">
+        <id property="senkyoShurui" column="afT505SenkyokuTanmatsuKanri_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="senkyokuCode" column="afT505SenkyokuTanmatsuKanri_senkyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tanmatsuID" column="afT505SenkyokuTanmatsuKanri_tanmatsuID" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT505SenkyokuTanmatsuKanri_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT505SenkyokuTanmatsuKanri_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT505SenkyokuTanmatsuKanri_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT505SenkyokuTanmatsuKanri_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT505SenkyokuTanmatsuKanri_isDeleted" />
+        <result property="updateCount" column="afT505SenkyokuTanmatsuKanri_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT505SenkyokuTanmatsuKanri_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT505SenkyokuTanmatsuKanri_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

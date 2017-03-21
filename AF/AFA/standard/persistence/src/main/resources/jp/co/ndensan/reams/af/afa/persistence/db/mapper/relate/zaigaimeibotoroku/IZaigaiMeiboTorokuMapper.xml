@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0320-010 lis -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zaigaimeibotoroku.IZaigaiMeiboTorokuMapper">
+    <select resultOrdered="false" id="get抄本番号リスト" resultType="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT100ShohonEntity" fetchSize="500">
+        ( SELECT
+           AfT100Temp."shohonNo" AS "shohonNo",
+           AfT100Temp."shohonName" AS "shohonName",
+           AfT100Temp."shoriYMD" AS "shoriYMD"
+        FROM  
+            (
+            SELECT
+                AfT100."shohonNo" AS "shohonNo",
+                AfT100."shohonName" AS "shohonName",
+                AfT100."shoriYMD" AS "shoriYMD"
+            FROM
+                rgaf."AfT100Shohon" AfT100
+            WHERE
+                AfT100."senkyoShurui" = '0'
+            AND AfT100."tohyoYMD" &lt;= #{torokuYMD}
+            ORDER BY
+                AfT100."tohyoYMD" DESC
+            ) AfT100Temp
+        limit 1 )
+        UNION
+        ( SELECT
+            AfT100."shohonNo" AS "shohonNo",
+            AfT100."shohonName" AS "shohonName",
+            AfT100."shoriYMD" AS "shoriYMD"
+        FROM
+            rgaf."AfT100Shohon" AfT100
+        INNER JOIN
+            rgaf."AfT111Senkyo" AfT111
+        ON  AfT111."shohonNo" = AfT100."shohonNo"
+        AND AfT111."kokujiYMD" &gt; #{torokuYMD}
+        WHERE
+            AfT100."senkyoShurui" = '1' )
+    </select>
+    
+</mapper>

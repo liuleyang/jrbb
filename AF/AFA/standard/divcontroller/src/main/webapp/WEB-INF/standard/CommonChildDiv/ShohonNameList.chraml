@@ -1,0 +1,750 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;ddlShohon_disabled&quot;:false,&quot;ddlShohon_required&quot;:false,&quot;ddlShohon_labelText&quot;:&quot;抄本名&quot;,&quot;ddlShohon_labelWidth&quot;:&quot;&quot;,&quot;ddlShohon_width&quot;:&quot;L&quot;,&quot;chkKakoShohon_displayNone&quot;:false,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlShohon_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;chkKakoShohon_displayNone&quot;,&quot;editType&quot;:1}]}}" data-control-name="AFA.ShohonNameList" data-is-composite-control="true"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="ShohonNameList" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;ShohonNameList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ShohonNameList&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;ShohonNameList&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onclick_chkKakoShohon&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/ShohonNameList/onclick_chkKakoShohon&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnShohonName&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnSenkyoShurui&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnTohyoYMD&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnKiteiNenreiTotatsuYMD&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnShohonNo&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdn一番近い未来&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdn一番近い過去&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnInitialSenkyoShurui&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ShohonNameList_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="ShohonNameList_panel_body_area"><div title="" class="UzDropDownList WithLabel FloatLeft JSControl controlMargin-M marginRight-XS UzCompositeChild" id="ddlShohon" style="width: 565px; height: 20px; margin-left: 0em; display: block;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;L&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ddlShohon_core&quot;,&quot;onChange&quot;:&quot;onChange_ddlShohon&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[],&quot;labelLText&quot;:&quot;抄本名&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;disabledItem&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="ddlShohon_labelL"><span>抄本名</span></span><select class="CoreElement Width-L" id="ddlShohon_core"></select></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="chkKakoShohon" style="width: 138px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkKakoShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;selectControlID&quot;:&quot;chkKakoShohon_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;過去分も含める&quot;}],&quot;onClick&quot;:&quot;onclick_chkKakoShohon&quot;,&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkKakoShohon_core"><input id="chkKakoShohon_key0" type="checkbox" value="過去分も含める" data-key="key0"><label for="chkKakoShohon_key0" data-key="key0">過去分も含める</label></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var ShohonNameList_Design = (function (_super) {
+        __extends(ShohonNameList_Design, _super);
+        function ShohonNameList_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, ShohonNameList_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(ShohonNameList_Design.prototype, "ddlShohon_disabled", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["disabled"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["disabled"] = value;
+                } else {
+                    this.layout.items[0].items[0]["disabled"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShohonNameList_Design.prototype, "ddlShohon_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[0]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShohonNameList_Design.prototype, "ddlShohon_labelText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShohonNameList_Design.prototype, "ddlShohon_labelWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShohonNameList_Design.prototype, "ddlShohon_width", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["width"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["width"] = value;
+                } else {
+                    this.layout.items[0].items[0]["width"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShohonNameList_Design.prototype, "chkKakoShohon_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[1]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShohonNameList_Design.prototype, "chkKakoShohon_selectedItems", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["selectedItems"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["selectedItems"] = value;
+                } else {
+                    this.layout.items[0].items[1]["selectedItems"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        ShohonNameList_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("ddlShohon_disabled");
+            Uz.JSControlUtil.registProperty("ddlShohon_required");
+            Uz.JSControlUtil.registProperty("ddlShohon_labelText");
+            Uz.JSControlUtil.registProperty("ddlShohon_labelWidth");
+            Uz.JSControlUtil.registProperty("ddlShohon_width");
+            Uz.JSControlUtil.registProperty("chkKakoShohon_displayNone");
+            Uz.JSControlUtil.registProperty("chkKakoShohon_selectedItems");
+        };
+
+        ShohonNameList_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["ddlShohon_disabled"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["disabled"];
+            editablePropertyInfo["ddlShohon_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["ddlShohon_labelText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLText"];
+            editablePropertyInfo["ddlShohon_labelWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["ddlShohon_width"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["width"];
+            editablePropertyInfo["chkKakoShohon_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["chkKakoShohon_selectedItems"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["selectedItems"];
+
+            return editablePropertyInfo;
+        };
+        ShohonNameList_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "ShohonNameList",
+                    "items": [
+                        {
+                            "fieldName": "ddlShohon",
+                            "items": [],
+                            "controlType": "DropDownList",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "XS",
+                            "selectControlID": "ddlShohon_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "onChange_ddlShohon",
+                            "labelLText": "抄本名",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "selectedItem": "key0",
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "value0"
+                                },
+                                {
+                                    "key": "key1",
+                                    "value": "value1"
+                                }
+                            ],
+                            "isBlankLine": false,
+                            "disabledItem": []
+                        },
+                        {
+                            "fieldName": "chkKakoShohon",
+                            "items": [],
+                            "controlType": "CheckBoxList",
+                            "width": "",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "chkKakoShohon_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "onChange": "",
+                            "labelLText": "",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "onClick": "",
+                            "icon": [],
+                            "selectedItem": null,
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "過去分も含める"
+                                }
+                            ],
+                            "selectedItems": [],
+                            "newLineItemNumber": 1,
+                            "minCheckedItem": 0,
+                            "maxCheckedItem": "1",
+                            "spaceSize": "M",
+                            "isAllSelectable": false,
+                            "isAllSelectableBreakLine": false,
+                            "disabledItem": []
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "ShohonNameList",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "ShohonNameList"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "txtHdnShohonName",
+                            "value": ""
+                        },
+                        {
+                            "propertyName": "txtHdnSenkyoShurui",
+                            "value": ""
+                        },
+                        {
+                            "propertyName": "txtHdnTohyoYMD",
+                            "value": ""
+                        },
+                        {
+                            "propertyName": "txtHdnKiteiNenreiTotatsuYMD",
+                            "value": ""
+                        },
+                        {
+                            "propertyName": "txtHdnShohonNo",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "ShohonNameList",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "ddlShohon",
+                    "publicChildProperty": "disabled",
+                    "newPropertyName": "ddlShohon_disabled"
+                },
+                {
+                    "publicChildFieldName": "ddlShohon",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "ddlShohon_required"
+                },
+                {
+                    "publicChildFieldName": "ddlShohon",
+                    "publicChildProperty": "labelLText",
+                    "newPropertyName": "ddlShohon_labelText"
+                },
+                {
+                    "publicChildFieldName": "ddlShohon",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "ddlShohon_labelWidth"
+                },
+                {
+                    "publicChildFieldName": "ddlShohon",
+                    "publicChildProperty": "width",
+                    "newPropertyName": "ddlShohon_width"
+                },
+                {
+                    "publicChildFieldName": "chkKakoShohon",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "chkKakoShohon_displayNone"
+                },
+                {
+                    "publicChildFieldName": "chkKakoShohon",
+                    "publicChildProperty": "selectedItems",
+                    "newPropertyName": "chkKakoShohon_selectedItems"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [
+                {
+                    "eventName": "onChange_ddlShohon"
+                }
+            ],
+            "publicEventsAlias": []
+        };
+        return ShohonNameList_Design;
+    })(Uz.CommonChildDiv);
+    AFA.ShohonNameList_Design = ShohonNameList_Design;
+
+    (function (ShohonNameList) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_ddlShohon = function () {
+                return "onChange_ddlShohon";
+            };
+            return Events;
+        })();
+        ShohonNameList.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ShohonNameList";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ShohonNameList.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.ShohonNameList = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ddlShohon = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlShohon"));
+            };
+
+            Controls.prototype.chkKakoShohon = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKakoShohon"));
+            };
+            return Controls;
+        })();
+        ShohonNameList.Controls = Controls;
+    })(AFA.ShohonNameList || (AFA.ShohonNameList = {}));
+    var ShohonNameList = AFA.ShohonNameList;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShohonNameList) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ShohonNameList.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.KakoHyojiCheckBoxSelected = function () {
+                return new Modes.KakoHyojiCheckBoxSelected(this.controls);
+            };
+            return ModeController;
+        })();
+        ShohonNameList.ModeController = ModeController;
+
+        (function (Modes) {
+            var KakoHyojiCheckBoxSelected = (function () {
+                function KakoHyojiCheckBoxSelected(controls) {
+                    this.controls = controls;
+                }
+                KakoHyojiCheckBoxSelected.prototype.選択する = function () {
+                    this.controls.chkKakoShohon().selectedItem = "key0";
+                };
+
+                KakoHyojiCheckBoxSelected.prototype.選択しない = function () {
+                    this.controls.chkKakoShohon().selectedItem = "";
+                };
+                return KakoHyojiCheckBoxSelected;
+            })();
+            Modes.KakoHyojiCheckBoxSelected = KakoHyojiCheckBoxSelected;
+        })(ShohonNameList.Modes || (ShohonNameList.Modes = {}));
+        var Modes = ShohonNameList.Modes;
+    })(AFA.ShohonNameList || (AFA.ShohonNameList = {}));
+    var ShohonNameList = AFA.ShohonNameList;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShohonNameList) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ShohonNameList.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("ddlShohon_disabled", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlShohon_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlShohon_labelText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlShohon_labelWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlShohon_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("chkKakoShohon_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getddlShohon_disabled = function () {
+                return this.controls.ddlShohon().disabled;
+            };
+
+            PublicProperties.prototype.setddlShohon_disabled = function (value) {
+                this.controls.ddlShohon().disabled = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_required = function () {
+                return this.controls.ddlShohon().required;
+            };
+
+            PublicProperties.prototype.setddlShohon_required = function (value) {
+                this.controls.ddlShohon().required = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_labelText = function () {
+                return this.controls.ddlShohon().labelLText;
+            };
+
+            PublicProperties.prototype.setddlShohon_labelText = function (value) {
+                this.controls.ddlShohon().labelLText = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_labelWidth = function () {
+                return this.controls.ddlShohon().labelLWidth;
+            };
+
+            PublicProperties.prototype.setddlShohon_labelWidth = function (value) {
+                this.controls.ddlShohon().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_width = function () {
+                return this.controls.ddlShohon().width;
+            };
+
+            PublicProperties.prototype.setddlShohon_width = function (value) {
+                this.controls.ddlShohon().width = value;
+            };
+
+            PublicProperties.prototype.getchkKakoShohon_displayNone = function () {
+                return this.controls.chkKakoShohon().displayNone;
+            };
+
+            PublicProperties.prototype.setchkKakoShohon_displayNone = function (value) {
+                this.controls.chkKakoShohon().displayNone = value;
+            };
+            return PublicProperties;
+        })();
+        ShohonNameList.PublicProperties = PublicProperties;
+    })(AFA.ShohonNameList || (AFA.ShohonNameList = {}));
+    var ShohonNameList = AFA.ShohonNameList;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+   
+   
+               
+   
+   
+   
+     
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['SHOHONNAMELIST'] = {};
+AFA['SHOHONNAMELIST'].ShohonNameListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_ShohonNameList').getProperty();parameter0.ddlShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlShohon').getProperty();parameter0.chkKakoShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkKakoShohon').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (ShohonNameList) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_ddlShohon = function () {
+                return "onChange_ddlShohon";
+            };
+
+            Events.onclick_chkKakoShohon = function () {
+                return "onclick_chkKakoShohon";
+            };
+            return Events;
+        })();
+        ShohonNameList.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ShohonNameList";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ShohonNameList.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.ShohonNameList.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.ShohonNameList = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ddlShohon = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlShohon"));
+            };
+
+            Controls.prototype.chkKakoShohon = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKakoShohon"));
+            };
+            return Controls;
+        })();
+        ShohonNameList.Controls = Controls;
+    })(AFA.ShohonNameList || (AFA.ShohonNameList = {}));
+    var ShohonNameList = AFA.ShohonNameList;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (ShohonNameList) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ShohonNameList.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new AFA.ShohonNameList.PublicProperties(this.fieldName);
+            };
+
+            ModeController.prototype.KakoHyojiCheckBoxSelected = function () {
+                return new Modes.KakoHyojiCheckBoxSelected(this.controls);
+            };
+            return ModeController;
+        })();
+        ShohonNameList.ModeController = ModeController;
+
+        (function (Modes) {
+            var KakoHyojiCheckBoxSelected = (function () {
+                function KakoHyojiCheckBoxSelected(controls) {
+                    this.controls = controls;
+                }
+                KakoHyojiCheckBoxSelected.prototype.選択する = function () {
+                    this.controls.chkKakoShohon().selectedItem = "key0";
+                };
+
+                KakoHyojiCheckBoxSelected.prototype.選択しない = function () {
+                    this.controls.chkKakoShohon().selectedItem = "";
+                };
+                return KakoHyojiCheckBoxSelected;
+            })();
+            Modes.KakoHyojiCheckBoxSelected = KakoHyojiCheckBoxSelected;
+        })(ShohonNameList.Modes || (ShohonNameList.Modes = {}));
+        var Modes = ShohonNameList.Modes;
+    })(AFA.ShohonNameList || (AFA.ShohonNameList = {}));
+    var ShohonNameList = AFA.ShohonNameList;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShohonNameList) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ShohonNameList.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("ddlShohon_disabled", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlShohon_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlShohon_labelText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlShohon_labelWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlShohon_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("chkKakoShohon_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getddlShohon_disabled = function () {
+                return this.controls.ddlShohon().disabled;
+            };
+
+            PublicProperties.prototype.setddlShohon_disabled = function (value) {
+                this.controls.ddlShohon().disabled = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_required = function () {
+                return this.controls.ddlShohon().required;
+            };
+
+            PublicProperties.prototype.setddlShohon_required = function (value) {
+                this.controls.ddlShohon().required = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_labelText = function () {
+                return this.controls.ddlShohon().labelLText;
+            };
+
+            PublicProperties.prototype.setddlShohon_labelText = function (value) {
+                this.controls.ddlShohon().labelLText = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_labelWidth = function () {
+                return this.controls.ddlShohon().labelLWidth;
+            };
+
+            PublicProperties.prototype.setddlShohon_labelWidth = function (value) {
+                this.controls.ddlShohon().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.getddlShohon_width = function () {
+                return this.controls.ddlShohon().width;
+            };
+
+            PublicProperties.prototype.setddlShohon_width = function (value) {
+                this.controls.ddlShohon().width = value;
+            };
+
+            PublicProperties.prototype.getchkKakoShohon_displayNone = function () {
+                return this.controls.chkKakoShohon().displayNone;
+            };
+
+            PublicProperties.prototype.setchkKakoShohon_displayNone = function (value) {
+                this.controls.chkKakoShohon().displayNone = value;
+            };
+            return PublicProperties;
+        })();
+        ShohonNameList.PublicProperties = PublicProperties;
+    })(AFA.ShohonNameList || (AFA.ShohonNameList = {}));
+    var ShohonNameList = AFA.ShohonNameList;
+})(AFA || (AFA = {}));
+</script></div>

@@ -1,0 +1,1946 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;KokuminSakuseiChohyo&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-control-name="AFA.KokuminSakuseiChohyo" data-is-composite-control="true"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginTop-M panelMarginBottom-M StateChangable marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G11 UzCompositeChild" id="KokuminSakuseiChohyo" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G11&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyo&quot;,&quot;title&quot;:&quot;作成帳票&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">作成帳票</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyo_panel_body_area"><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginTop-XS marginBottom-XS EmptyPanel Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoMeiboShohon" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoMeiboShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoMeiboShohon&quot;,&quot;title&quot;:&quot;投票人名簿抄本&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyoMeiboShohon&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoMeiboShohon_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">投票人名簿抄本</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoMeiboShohon_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoMeiboShohon_panel_body_area" style="display: none;"></div></div><div title="" class="StateChangable UzPanel UzPanelPublish JSControl FloatLeft UzPanelAndText Panel-Shadow marginLeft-XS marginRight-XS marginBottom-XS ClearFloat Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoTorokushasuList" style="margin-top: 0em; margin-bottom: 0px; display: block; position: relative;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoTorokushasuList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoTorokushasuList&quot;,&quot;title&quot;:&quot;投票人名簿登録者数リスト&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyoIdoMasshoshaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoTorokushasuList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">投票人名簿登録者数リスト</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoTorokushasuList_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoTorokushasuList_panel_body_area" style="display: block;"><div class="UzTextBoxDate TextBoxOuterDiv WithLabel JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="txtTorokushasuListKijunYmd" style="width: 126px; height: 23px; position: relative;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtTorokushasuListKijunYmd&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;90px&quot;,&quot;selectControlID&quot;:&quot;txtTorokushasuListKijunYmd_core&quot;,&quot;labelLText&quot;:&quot; &quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;isShowCalendarOpenerIcon&quot;:true}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtTorokushasuListKijunYmd_labelL"><span> </span></span><input class="UzTextBox CoreElement" id="txtTorokushasuListKijunYmd_core" style="width: 90px;" type="text" placeholder="" data-wareki="" data-setcount="0" data-seireki="" data-orgtext="" data-mindate="" data-maxdate="" data-wareki-hirekijyou="" data-ymd="2" data-fmt="0"><img class="UzCalendarOpenerIcon" src="/uz/uza/image/UzCalendar.png"></div><span class="UzLabel word-wrap-break-word JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M text-align-right Width- UzCompositeChild" id="lblTorokushasuList" data-control-type="Label" data-obj="{&quot;fieldName&quot;:&quot;lblTorokushasuList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Label&quot;,&quot;width&quot;:&quot;&quot;,&quot;selectControlID&quot;:&quot;lblTorokushasuList&quot;,&quot;text&quot;:&quot;時点で出力する&quot;}"><span>時点で出力する</span></span><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="chkTorokuListFuzaishabun" style="width: 251px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkTorokuListFuzaishabun&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkTorokuListFuzaishabun_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;不在者投票資格者分も作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkTorokuListFuzaishabun_core"><input id="chkTorokuListFuzaishabun_key0" style="margin-bottom: 0px;" type="checkbox" value="不在者投票資格者分も作成する" data-key="key0"><label for="chkTorokuListFuzaishabun_key0" data-key="key0">不在者投票資格者分も作成する</label></span></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="chkFuzaiTohyoMeibo" style="width: 251px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkFuzaiTohyoMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkFuzaiTohyoMeibo_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;不在資格対象者名簿も作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkFuzaiTohyoMeibo_core"><input id="chkFuzaiTohyoMeibo_key0" style="margin-bottom: 0px;" type="checkbox" value="不在資格対象者名簿も作成する" data-key="key0"><label for="chkFuzaiTohyoMeibo_key0" data-key="key0">不在資格対象者名簿も作成する</label></span></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="KokuminSakuseiChohyo1goShikakuTsuchi" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyo1goShikakuTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyo1goShikakuTsuchi&quot;,&quot;title&quot;:&quot;1号資格登録通知&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyo1goShikakuTsuchi&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyo1goShikakuTsuchi_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">1号資格登録通知</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyo1goShikakuTsuchi_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyo1goShikakuTsuchi_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyo1goTsuchi" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyo1goTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyo1goTsuchi&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:true}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkSeal1goTsuchi" style="width: 235px; height: 21px; margin-left: 7.7em; display: block;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSeal1goTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkSeal1goTsuchi_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;送付先宛名シールも作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSeal1goTsuchi_core"><input id="chkSeal1goTsuchi_key0" style="margin-bottom: 0px;" type="checkbox" value="送付先宛名シールも作成する" data-key="key0"><label for="chkSeal1goTsuchi_key0" data-key="key0">送付先宛名シールも作成する</label></span></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chk1goTsuchiIchiran" style="width: 195px; height: 19px; margin-left: 7.7em;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chk1goTsuchiIchiran&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chk1goTsuchiIchiran_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;1号資格登録通知一覧表&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chk1goTsuchiIchiran_core"><input id="chk1goTsuchiIchiran_key0" style="margin-bottom: 0px;" type="checkbox" value="1号資格登録通知一覧表" data-key="key0"><label for="chk1goTsuchiIchiran_key0" data-key="key0">1号資格登録通知一覧表</label></span></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="KokuminSakuseiChohyo2goShikakuChosahyo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyo2goShikakuChosahyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyo2goShikakuChosahyo&quot;,&quot;title&quot;:&quot;2号資格調査票&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyo2goShikakuChosahyo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyo2goShikakuChosahyo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">2号資格調査票</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyo2goShikakuChosahyo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyo2goShikakuChosahyo_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyo2goChosahyo" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyo2goChosahyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyo2goChosahyo&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:true}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkSeal2goChosahyo" style="width: 235px; height: 19px; margin-left: 7.7em; display: block;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSeal2goChosahyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkSeal2goChosahyo_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;送付先宛名シールも作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;送付先宛名シールも作成する&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSeal2goChosahyo_core"><input id="chkSeal2goChosahyo_key0" style="margin-bottom: 0px;" type="checkbox" value="送付先宛名シールも作成する" data-key="key0"><label for="chkSeal2goChosahyo_key0" data-key="key0">送付先宛名シールも作成する</label></span></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chk2goChosaIchiran" style="width: 163px; height: 19px; margin-left: 7.7em;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chk2goChosaIchiran&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chk2goChosaIchiran_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;2号資格調査一覧表&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chk2goChosaIchiran_core"><input id="chk2goChosaIchiran_key0" style="margin-bottom: 0px;" type="checkbox" value="2号資格調査一覧表" data-key="key0"><label for="chk2goChosaIchiran_key0" data-key="key0">2号資格調査一覧表</label></span></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G5 UzCompositeChild" id="KokuminSakuseiChohyo2goKohoList" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyo2goKohoList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyo2goKohoList&quot;,&quot;title&quot;:&quot;2号資格候補者一覧表&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyo2goKohoList&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyo2goKohoList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">2号資格候補者一覧表</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyo2goKohoList_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyo2goKohoList_panel_body_area" style="display: none;"></div></div><div title="" class="StateChangable UzPanel UzPanelPublish JSControl FloatLeft UzPanelAndText Panel-Shadow ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoIdoTorokushaMeibo" style="margin-top: 0em; margin-bottom: 0px; display: block; position: relative;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoIdoTorokushaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoIdoTorokushaMeibo&quot;,&quot;title&quot;:&quot;補正登録者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyoIdoMasshoshaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoIdoTorokushaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">補正登録者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoIdoTorokushaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoIdoTorokushaMeibo_panel_body_area" style="display: block;"><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="chkTorokushaMeiboJuran" style="width: 155px; height: 19px; display: block;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkTorokushaMeiboJuran&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkTorokushaMeiboJuran_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;縦覧用も作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkTorokushaMeiboJuran_core"><input id="chkTorokushaMeiboJuran_key0" style="margin-bottom: 0px;" type="checkbox" value="縦覧用も作成する" data-key="key0"><label for="chkTorokushaMeiboJuran_key0" data-key="key0">縦覧用も作成する</label></span></div><div class="UzCheckBoxList JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M ClearFloat UzCompositeChild" id="chkSealTorokushaMeibo" style="width: 267px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSealTorokushaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkSealTorokushaMeibo_core&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;補正登録者宛名シールも作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSealTorokushaMeibo_core"><input id="chkSealTorokushaMeibo_key0" style="margin-bottom: 0px;" type="checkbox" value="補正登録者宛名シールも作成する" data-key="key0"><label for="chkSealTorokushaMeibo_key0" data-key="key0">補正登録者宛名シールも作成する</label></span></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoIdoMasshoshaMeibo" style="margin-top: 0em; margin-bottom: 0px; display: block; position: relative;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoIdoMasshoshaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoIdoMasshoshaMeibo&quot;,&quot;title&quot;:&quot;抹消者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyoIdoMasshoshaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoIdoMasshoshaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">抹消者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoIdoMasshoshaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoIdoMasshoshaMeibo_panel_body_area" style="display: block;"><div class="UzTextBoxDate TextBoxOuterDiv WithLabel JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="txtMasshoYMD" style="width: 111px; height: 23px; position: relative;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtMasshoYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;90px&quot;,&quot;selectControlID&quot;:&quot;txtMasshoYMD_core&quot;,&quot;isShowCalendarOpenerIcon&quot;:true}"><input class="UzTextBox CoreElement" id="txtMasshoYMD_core" style="width: 90px;" type="text" placeholder="" data-wareki="" data-setcount="0" data-seireki="" data-orgtext="" data-mindate="" data-maxdate="" data-wareki-hirekijyou="" data-ymd="2" data-fmt="0"><img class="UzCalendarOpenerIcon" src="/uz/uza/image/UzCalendar.png"></div><span class="UzLabel word-wrap-break-word JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M text-align-right Width- UzCompositeChild" id="lblMasshoshaMeibo" data-control-type="Label" data-obj="{&quot;fieldName&quot;:&quot;lblMasshoshaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Label&quot;,&quot;width&quot;:&quot;&quot;,&quot;selectControlID&quot;:&quot;lblMasshoshaMeibo&quot;,&quot;text&quot;:&quot;以降の抹消者を出力対象とする&quot;}"><span>以降の抹消者を出力対象とする</span></span><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="chkMasshoshaMeiboJuran" style="width: 155px; height: 21px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkMasshoshaMeiboJuran&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkMasshoshaMeiboJuran_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;縦覧用も作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;S&quot;,&quot;verticalSpace&quot;:&quot;S&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkMasshoshaMeiboJuran_core"><input class="verticalSpace-S" id="chkMasshoshaMeiboJuran_key0" type="checkbox" value="縦覧用も作成する" data-key="key0"><label for="chkMasshoshaMeiboJuran_key0" data-key="key0">縦覧用も作成する</label></span></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoIdoTeiseishaMeibo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoIdoTeiseishaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoIdoTeiseishaMeibo&quot;,&quot;title&quot;:&quot;訂正者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyoIdoTeiseishaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoIdoTeiseishaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">訂正者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoIdoTeiseishaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoIdoTeiseishaMeibo_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoMasshoTsuchi" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoMasshoTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoMasshoTsuchi&quot;,&quot;title&quot;:&quot;未登録者抹消通知&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyo1goShikakuTsuchi&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoMasshoTsuchi_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">未登録者抹消通知</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoMasshoTsuchi_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoMasshoTsuchi_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoMasshoTsuchi" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoMasshoTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoMasshoTsuchi&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:true}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkSealMasshoTsuchi" style="width: 235px; height: 19px; margin-left: 7.7em; display: block;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSealMasshoTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkSealMasshoTsuchi_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;送付先宛名シールも作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSealMasshoTsuchi_core"><input id="chkSealMasshoTsuchi_key0" style="margin-bottom: 0px;" type="checkbox" value="送付先宛名シールも作成する" data-key="key0"><label for="chkSealMasshoTsuchi_key0" data-key="key0">送付先宛名シールも作成する</label></span></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkMasshoTsuchiIchiran" style="width: 255px; height: 19px; margin-left: 7.7em;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkMasshoTsuchiIchiran&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;M&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkMasshoTsuchiIchiran_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;未登録者抹消通知一覧&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;未登録者抹消通知一覧&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-M" id="chkMasshoTsuchiIchiran_core"><input id="chkMasshoTsuchiIchiran_key1" style="margin-bottom: 0px;" type="checkbox" value="未登録者抹消通知一覧" data-key="key1"><label for="chkMasshoTsuchiIchiran_key1" data-key="key1">未登録者抹消通知一覧</label></span></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoKokunaiChosahyo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoKokunaiChosahyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoKokunaiChosahyo&quot;,&quot;title&quot;:&quot;国内転入者調査票&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyo2goShikakuChosahyo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoKokunaiChosahyo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">国内転入者調査票</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoKokunaiChosahyo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoKokunaiChosahyo_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoKokunaiChosa" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoKokunaiChosa&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoKokunaiChosa&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:true}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkSealKokunaiChosa" style="width: 235px; height: 19px; margin-left: 7.7em;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSealKokunaiChosa&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkSealKokunaiChosa_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;送付先宛名シールも作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSealKokunaiChosa_core"><input id="chkSealKokunaiChosa_key0" style="margin-bottom: 0px;" type="checkbox" value="送付先宛名シールも作成する" data-key="key0"><label for="chkSealKokunaiChosa_key0" data-key="key0">送付先宛名シールも作成する</label></span></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkKokunaiChosaIchiran" style="width: 187px; height: 19px; margin-left: 7.7em;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkKokunaiChosaIchiran&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkKokunaiChosaIchiran_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;国内転入者調査一覧表&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkKokunaiChosaIchiran_core"><input id="chkKokunaiChosaIchiran_key0" style="margin-bottom: 0px;" type="checkbox" value="国内転入者調査一覧表" data-key="key0"><label for="chkKokunaiChosaIchiran_key0" data-key="key0">国内転入者調査一覧表</label></span></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoKokugaiChosahyo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoKokugaiChosahyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoKokugaiChosahyo&quot;,&quot;title&quot;:&quot;国外転入者調査票&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyo2goShikakuChosahyo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoKokugaiChosahyo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">国外転入者調査票</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoKokugaiChosahyo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoKokugaiChosahyo_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoKokugaiChosa" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoKokugaiChosa&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoKokugaiChosa&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:true}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkSealKokugaiChosa" style="width: 235px; height: 19px; margin-left: 7.7em;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSealKokugaiChosa&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkSealKokugaiChosa_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;送付先宛名シールも作成する&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSealKokugaiChosa_core"><input id="chkSealKokugaiChosa_key0" style="margin-bottom: 0px;" type="checkbox" value="送付先宛名シールも作成する" data-key="key0"><label for="chkSealKokugaiChosa_key0" data-key="key0">送付先宛名シールも作成する</label></span></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkKokugaiChosaIchiran" style="width: 187px; height: 19px; margin-left: 7.7em;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkKokugaiChosaIchiran&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;7.7em&quot;,&quot;selectControlID&quot;:&quot;chkKokugaiChosaIchiran_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;国外転入者調査一覧表&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;spaceSize&quot;:&quot;0px&quot;,&quot;verticalSpace&quot;:&quot;0px&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkKokugaiChosaIchiran_core"><input id="chkKokugaiChosaIchiran_key0" style="margin-bottom: 0px;" type="checkbox" value="国外転入者調査一覧表" data-key="key0"><label for="chkKokugaiChosaIchiran_key0" data-key="key0">国外転入者調査一覧表</label></span></div></div></div><div title="" class="UzPanel FloatLeft JSControl Panel UzPanelAndText StateChangable ClearFloat marginLeft-XS marginRight-XS marginTop-XS marginBottom-XS Width-G11 UzCompositeChild" id="KokuminSakuseiChohyoZaigai" style="width: auto; margin-top: 0px; margin-bottom: 0px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoZaigai&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G11&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoZaigai&quot;,&quot;title&quot;:&quot;在外投票関連&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KokuminSakuseiChohyoZaigai&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;panelDisplay&quot;:1,&quot;canPost&quot;:true}"><div class="UzPanelHeader clearBackground" id="KokuminSakuseiChohyoZaigai_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n iconSpan-GroupBox" style="visibility: hidden;"></span><span class="textSpan textSpan-GroupBox textSpan-GroupBoxWithoutIcon">在外投票関連</span><div class="groupBoxBorder" style="display: block;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M Panel-GroupBox ui-droppable ui-sortable" id="KokuminSakuseiChohyoZaigai_panel_body_area"><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginTop-XS marginBottom-XS EmptyPanel Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon&quot;,&quot;title&quot;:&quot;在外投票人名簿抄本&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">在外投票人名簿抄本</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon_panel_body_area" style="display: none;"></div></div><div title="" class="StateChangable UzPanel UzPanelPublish JSControl FloatLeft UzPanelAndText Panel-Shadow marginLeft-XS marginRight-XS marginTop-XS marginBottom-XS EmptyPanel Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoZaigaiShikakushaMeibo" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoZaigaiShikakushaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoZaigaiShikakushaMeibo&quot;,&quot;title&quot;:&quot;在外投票資格者名簿&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoZaigaiShikakushaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s ui-icon-circle-close" style="visibility: hidden;"></span><span class="textSpan">在外投票資格者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoZaigaiShikakushaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoZaigaiShikakushaMeibo_panel_body_area" style="display: none;"></div></div><div title="" class="StateChangable UzPanel UzPanelPublish JSControl FloatLeft UzPanelAndText Panel-Shadow marginLeft-XS marginRight-XS marginTop-XS marginBottom-XS EmptyPanel Width-G5 UzCompositeChild" id="KokuminSakuseiChohyoZaigaiTohyoKanrihyo" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;KokuminSakuseiChohyoZaigaiTohyoKanrihyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;KokuminSakuseiChohyoZaigaiTohyoKanrihyo&quot;,&quot;title&quot;:&quot;在外投票管理表&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="KokuminSakuseiChohyoZaigaiTohyoKanrihyo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s ui-icon-circle-close" style="visibility: hidden;"></span><span class="textSpan">在外投票管理表</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="KokuminSakuseiChohyoZaigaiTohyoKanrihyo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KokuminSakuseiChohyoZaigaiTohyoKanrihyo_panel_body_area" style="display: none;"></div></div></div></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var KokuminSakuseiChohyo_Design = (function (_super) {
+        __extends(KokuminSakuseiChohyo_Design, _super);
+        function KokuminSakuseiChohyo_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, KokuminSakuseiChohyo_Design.myLayout, fieldName);
+        }
+        KokuminSakuseiChohyo_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        KokuminSakuseiChohyo_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        KokuminSakuseiChohyo_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "KokuminSakuseiChohyo",
+                    "items": [
+                        {
+                            "fieldName": "KokuminSakuseiChohyoMeiboShohon",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoMeiboShohon",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "投票人名簿抄本",
+                            "marginTop": "XS",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoMeiboShohon"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoTorokushasuList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoTorokushasuList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "投票人名簿登録者数リスト",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoTorokushasuList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoYukenshasuList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoYukenshasuList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "国民投票有権者数リスト",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoYukenshasuList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyo1goShikakuTsuchi",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyo1goTsuchi",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyo1goTsuchi",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": true
+                                },
+                                {
+                                    "fieldName": "chk1goTsuchi",
+                                    "items": [],
+                                    "controlType": "CheckBoxList",
+                                    "width": "",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "8em",
+                                    "marginRight": "XS",
+                                    "selectControlID": "chk1goTsuchi_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": false,
+                                    "onChange": "",
+                                    "labelLText": "",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": null,
+                                    "dataSource": [
+                                        {
+                                            "key": "key0",
+                                            "value": "送付先宛名シール"
+                                        },
+                                        {
+                                            "key": "key1",
+                                            "value": "1号資格登録通知一覧表"
+                                        }
+                                    ],
+                                    "onClick": "",
+                                    "selectedItems": [
+                                        {
+                                            "key": "key0"
+                                        },
+                                        {
+                                            "key": "key1"
+                                        }
+                                    ],
+                                    "newLineItemNumber": 1,
+                                    "minCheckedItem": 0,
+                                    "maxCheckedItem": 2,
+                                    "spaceSize": "1px",
+                                    "isAllSelectable": false,
+                                    "isAllSelectableBreakLine": false,
+                                    "disabledItem": [],
+                                    "icon": []
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyo1goShikakuTsuchi",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "1号資格登録通知",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyo1goShikakuTsuchi"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyo2goShikakuChosahyo",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyo2goChosahyo",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyo2goChosahyo",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": true
+                                },
+                                {
+                                    "fieldName": "chk2goChosahyo",
+                                    "items": [],
+                                    "controlType": "CheckBoxList",
+                                    "width": "",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "8em",
+                                    "marginRight": "XS",
+                                    "selectControlID": "chk2goChosahyo_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": false,
+                                    "onChange": "",
+                                    "labelLText": "",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": null,
+                                    "dataSource": [
+                                        {
+                                            "key": "key0",
+                                            "value": "送付先宛名シール"
+                                        },
+                                        {
+                                            "key": "key1",
+                                            "value": "2号資格調査一覧表"
+                                        }
+                                    ],
+                                    "onClick": "",
+                                    "selectedItems": [
+                                        {
+                                            "key": "key0"
+                                        },
+                                        {
+                                            "key": "key1"
+                                        }
+                                    ],
+                                    "newLineItemNumber": 1,
+                                    "minCheckedItem": 0,
+                                    "maxCheckedItem": 2,
+                                    "spaceSize": "1px",
+                                    "isAllSelectable": false,
+                                    "isAllSelectableBreakLine": false,
+                                    "disabledItem": [],
+                                    "icon": []
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyo2goShikakuChosahyo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "2号資格調査票",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyo2goShikakuChosahyo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyo2goKohoList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyo2goKohoList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "2号資格候補者一覧表",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyo2goKohoList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoIdoMasshoshaMeibo",
+                            "items": [
+                                {
+                                    "fieldName": "txtMasshoYMD",
+                                    "items": [],
+                                    "controlType": "TextBoxDate",
+                                    "width": "S",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "txtMasshoYMD_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": false,
+                                    "placeHolder": "",
+                                    "isPrivateInfo": false,
+                                    "isPassword": false,
+                                    "onFocus": "",
+                                    "onBlur": "",
+                                    "onChange": "",
+                                    "onKeyPress": "",
+                                    "text": "",
+                                    "labelLText": "抹消日",
+                                    "labelRText": "以降の抹消者を出力対象とする",
+                                    "labelLWidth": "XS",
+                                    "labelRWidth": "M",
+                                    "labelLAlign": 2,
+                                    "labelRAlign": 0,
+                                    "ymdKubun": 2,
+                                    "displayFormat": 0,
+                                    "value": "",
+                                    "decorationClass": "",
+                                    "textKind": 0
+                                },
+                                {
+                                    "fieldName": "chkMasshoshaMeiboJuran",
+                                    "items": [],
+                                    "controlType": "CheckBoxList",
+                                    "width": "",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "chkMasshoshaMeiboJuran_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": false,
+                                    "onChange": "",
+                                    "labelLText": "",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": null,
+                                    "dataSource": [
+                                        {
+                                            "key": "key0",
+                                            "value": "縦覧用も作成する"
+                                        }
+                                    ],
+                                    "onClick": "",
+                                    "selectedItems": [
+                                        {
+                                            "key": "key0"
+                                        }
+                                    ],
+                                    "newLineItemNumber": 1,
+                                    "minCheckedItem": 0,
+                                    "maxCheckedItem": "1",
+                                    "spaceSize": "M",
+                                    "isAllSelectable": false,
+                                    "isAllSelectableBreakLine": false,
+                                    "disabledItem": [],
+                                    "icon": []
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoIdoMasshoshaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "抹消者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoIdoMasshoshaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoIdoTeiseishaMeibo",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoIdoTeiseishaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "訂正者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoIdoTeiseishaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoIdoHyojishaMeibo",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoIdoHyojishaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "表示者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoIdoHyojishaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoMasshoTsuchi",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoMasshoTsuchi",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoMasshoTsuchi",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": true
+                                },
+                                {
+                                    "fieldName": "chkMasshoTsuchi",
+                                    "items": [],
+                                    "controlType": "CheckBoxList",
+                                    "width": "M",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "8em",
+                                    "marginRight": "XS",
+                                    "selectControlID": "chkMasshoTsuchi_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": false,
+                                    "onChange": "",
+                                    "labelLText": "",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": null,
+                                    "dataSource": [
+                                        {
+                                            "key": "key0",
+                                            "value": "送付先宛名シール"
+                                        },
+                                        {
+                                            "key": "key1",
+                                            "value": "未登録者抹消通知一覧"
+                                        }
+                                    ],
+                                    "onClick": "",
+                                    "selectedItems": [
+                                        {
+                                            "key": "key0"
+                                        },
+                                        {
+                                            "key": "key1"
+                                        }
+                                    ],
+                                    "newLineItemNumber": 1,
+                                    "minCheckedItem": 0,
+                                    "maxCheckedItem": 2,
+                                    "spaceSize": "1px",
+                                    "isAllSelectable": false,
+                                    "isAllSelectableBreakLine": false,
+                                    "disabledItem": [],
+                                    "icon": []
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoMasshoTsuchi",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "未登録者抹消通知",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyo1goShikakuTsuchi"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoKokunaiChosahyo",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoKokunaiChosa",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoKokunaiChosa",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": true
+                                },
+                                {
+                                    "fieldName": "chkKokunaiChosa",
+                                    "items": [],
+                                    "controlType": "CheckBoxList",
+                                    "width": "",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "8em",
+                                    "marginRight": "XS",
+                                    "selectControlID": "chkKokunaiChosa_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": false,
+                                    "onChange": "",
+                                    "labelLText": "",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": null,
+                                    "dataSource": [
+                                        {
+                                            "key": "key0",
+                                            "value": "送付先宛名シール"
+                                        },
+                                        {
+                                            "key": "key1",
+                                            "value": "国内転入者調査一覧表"
+                                        }
+                                    ],
+                                    "onClick": "",
+                                    "selectedItems": [
+                                        {
+                                            "key": "key0"
+                                        },
+                                        {
+                                            "key": "key1"
+                                        }
+                                    ],
+                                    "newLineItemNumber": 1,
+                                    "minCheckedItem": 0,
+                                    "maxCheckedItem": 2,
+                                    "spaceSize": "1px",
+                                    "isAllSelectable": false,
+                                    "isAllSelectableBreakLine": false,
+                                    "disabledItem": [],
+                                    "icon": []
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoKokunaiChosahyo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "国内転入者調査票",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyo2goShikakuChosahyo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoKokugaiChosahyo",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoKokugaiChosa",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoKokugaiChosa",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": true
+                                },
+                                {
+                                    "fieldName": "chkKokugaiChosa",
+                                    "items": [],
+                                    "controlType": "CheckBoxList",
+                                    "width": "",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "8em",
+                                    "marginRight": "XS",
+                                    "selectControlID": "chkKokugaiChosa_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": false,
+                                    "onChange": "",
+                                    "labelLText": "",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": null,
+                                    "dataSource": [
+                                        {
+                                            "key": "key0",
+                                            "value": "送付先宛名シール"
+                                        },
+                                        {
+                                            "key": "key1",
+                                            "value": "国外転入者調査一覧表"
+                                        }
+                                    ],
+                                    "onClick": "",
+                                    "selectedItems": [
+                                        {
+                                            "key": "key0"
+                                        },
+                                        {
+                                            "key": "key1"
+                                        }
+                                    ],
+                                    "newLineItemNumber": 1,
+                                    "minCheckedItem": 0,
+                                    "maxCheckedItem": 2,
+                                    "spaceSize": "1px",
+                                    "isAllSelectable": false,
+                                    "isAllSelectableBreakLine": false,
+                                    "disabledItem": [],
+                                    "icon": []
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoKokugaiChosahyo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "国外転入者調査票",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyo2goShikakuChosahyo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoKokugaiChosaList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoKokugaiChosaList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "国外転入者調査一覧表",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyo2goKohoList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoTorokushasuListYubin",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoTorokushasuListYubin",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "郵便等投票登録者数リスト",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoTorokushasuListYubin"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "KokuminSakuseiChohyoZaigai",
+                            "items": [
+                                {
+                                    "fieldName": "KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon",
+                                    "items": [],
+                                    "controlType": "PanelPublish",
+                                    "width": "G5",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "onLoad": "",
+                                    "title": "在外投票人名簿抄本",
+                                    "marginTop": "XS",
+                                    "marginBottom": "XS",
+                                    "isOpen": false,
+                                    "canOpenAndClose": false,
+                                    "postParameterPanelNames": [],
+                                    "requestSettings": [],
+                                    "hiddenInput": [],
+                                    "onOpen": "",
+                                    "onClose": "",
+                                    "session": {},
+                                    "eraseBorder": false,
+                                    "backgroundColor": 0,
+                                    "widthAuto": false,
+                                    "panelDisplay": 0,
+                                    "isGroupBox": false,
+                                    "readOnly": false,
+                                    "height": "Auto",
+                                    "canPost": true,
+                                    "isPublish": true,
+                                    "isEmptyControl": true
+                                },
+                                {
+                                    "fieldName": "KokuminSakuseiChohyoZaigaiShinseishaIchiran",
+                                    "items": [],
+                                    "controlType": "PanelPublish",
+                                    "width": "G5",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "KokuminSakuseiChohyoZaigaiShinseishaIchiran",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "onLoad": "",
+                                    "title": "申請者一覧",
+                                    "marginTop": "XS",
+                                    "marginBottom": "XS",
+                                    "isOpen": false,
+                                    "canOpenAndClose": false,
+                                    "postParameterPanelNames": [],
+                                    "requestSettings": [],
+                                    "hiddenInput": [],
+                                    "onOpen": "",
+                                    "onClose": "",
+                                    "session": {},
+                                    "eraseBorder": false,
+                                    "backgroundColor": 0,
+                                    "widthAuto": false,
+                                    "panelDisplay": 0,
+                                    "isGroupBox": false,
+                                    "readOnly": false,
+                                    "height": "Auto",
+                                    "canPost": true,
+                                    "isPublish": true,
+                                    "isEmptyControl": true
+                                }
+                            ],
+                            "controlType": "Panel",
+                            "width": "G11",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "KokuminSakuseiChohyoZaigai",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "在外投票関連",
+                            "marginTop": "XS",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "KokuminSakuseiChohyoZaigai"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": true,
+                            "panelDisplay": 1,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G11",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "KokuminSakuseiChohyo",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "作成帳票",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "KokuminSakuseiChohyo"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "KokuminSakuseiChohyo",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return KokuminSakuseiChohyo_Design;
+    })(Uz.CommonChildDiv);
+    AFA.KokuminSakuseiChohyo_Design = KokuminSakuseiChohyo_Design;
+
+    (function (KokuminSakuseiChohyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        KokuminSakuseiChohyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KokuminSakuseiChohyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KokuminSakuseiChohyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoMeiboShohon = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoMeiboShohon"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoTorokushasuList = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoTorokushasuList"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoYukenshasuList = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoYukenshasuList"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo1goShikakuTsuchi = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyo1goShikakuTsuchi"));
+            };
+
+            Controls.prototype.chk1goTsuchi = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chk1goTsuchi"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo2goShikakuChosahyo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyo2goShikakuChosahyo"));
+            };
+
+            Controls.prototype.chk2goChosahyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chk2goChosahyo"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo2goKohoList = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyo2goKohoList"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoIdoMasshoshaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoIdoMasshoshaMeibo"));
+            };
+
+            Controls.prototype.txtMasshoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtMasshoYMD"));
+            };
+
+            Controls.prototype.chkMasshoshaMeiboJuran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMasshoshaMeiboJuran"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoIdoTeiseishaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoIdoTeiseishaMeibo"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoIdoHyojishaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoIdoHyojishaMeibo"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoMasshoTsuchi = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoMasshoTsuchi"));
+            };
+
+            Controls.prototype.chkMasshoTsuchi = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMasshoTsuchi"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoKokunaiChosahyo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoKokunaiChosahyo"));
+            };
+
+            Controls.prototype.chkKokunaiChosa = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKokunaiChosa"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoKokugaiChosahyo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoKokugaiChosahyo"));
+            };
+
+            Controls.prototype.chkKokugaiChosa = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKokugaiChosa"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoKokugaiChosaList = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoKokugaiChosaList"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoTorokushasuListYubin = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoTorokushasuListYubin"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoZaigai = function () {
+                return new UZA.Panel(this.convFiledName("KokuminSakuseiChohyoZaigai"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoZaigaiShinseishaIchiran = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoZaigaiShinseishaIchiran"));
+            };
+            return Controls;
+        })();
+        KokuminSakuseiChohyo.Controls = Controls;
+    })(AFA.KokuminSakuseiChohyo || (AFA.KokuminSakuseiChohyo = {}));
+    var KokuminSakuseiChohyo = AFA.KokuminSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KokuminSakuseiChohyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KokuminSakuseiChohyo.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KokuminSakuseiChohyo.ModeController = ModeController;
+    })(AFA.KokuminSakuseiChohyo || (AFA.KokuminSakuseiChohyo = {}));
+    var KokuminSakuseiChohyo = AFA.KokuminSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KokuminSakuseiChohyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new KokuminSakuseiChohyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        KokuminSakuseiChohyo.PublicProperties = PublicProperties;
+    })(AFA.KokuminSakuseiChohyo || (AFA.KokuminSakuseiChohyo = {}));
+    var KokuminSakuseiChohyo = AFA.KokuminSakuseiChohyo;
+})(AFA || (AFA = {}));
+</script>
+    
+   
+       
+       
+   
+   
+   
+     
+     
+     
+   
+                   
+   
+   
+     
+     
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['KOKUMINSAKUSEICHOHYO'] = {};
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo').getProperty();parameter0.KokuminSakuseiChohyoMeiboShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoMeiboShohon').getProperty();parameter0.KokuminSakuseiChohyoTorokushasuList = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoTorokushasuList').getProperty();parameter0.KokuminSakuseiChohyoTorokushasuList.txtTorokushasuListKijunYmd = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTorokushasuListKijunYmd').getProperty();parameter0.KokuminSakuseiChohyoTorokushasuList.lblTorokushasuList = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblTorokushasuList').getProperty();parameter0.KokuminSakuseiChohyoTorokushasuList.chkTorokuListFuzaishabun = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkTorokuListFuzaishabun').getProperty();parameter0.KokuminSakuseiChohyoTorokushasuList.chkFuzaiTohyoMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkFuzaiTohyoMeibo').getProperty();parameter0.KokuminSakuseiChohyo1goShikakuTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo1goShikakuTsuchi').getProperty();parameter0.KokuminSakuseiChohyo1goShikakuTsuchi.ccdPrintNaiyo1goTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyo1goTsuchi').getPostParameter();parameter0.KokuminSakuseiChohyo1goShikakuTsuchi.chkSeal1goTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSeal1goTsuchi').getProperty();parameter0.KokuminSakuseiChohyo1goShikakuTsuchi.chk1goTsuchiIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chk1goTsuchiIchiran').getProperty();parameter0.KokuminSakuseiChohyo2goShikakuChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo2goShikakuChosahyo').getProperty();parameter0.KokuminSakuseiChohyo2goShikakuChosahyo.ccdPrintNaiyo2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyo2goChosahyo').getPostParameter();parameter0.KokuminSakuseiChohyo2goShikakuChosahyo.chkSeal2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSeal2goChosahyo').getProperty();parameter0.KokuminSakuseiChohyo2goShikakuChosahyo.chk2goChosaIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chk2goChosaIchiran').getProperty();parameter0.KokuminSakuseiChohyo2goKohoList = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo2goKohoList').getProperty();parameter0.KokuminSakuseiChohyoIdoTorokushaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoIdoTorokushaMeibo').getProperty();parameter0.KokuminSakuseiChohyoIdoTorokushaMeibo.chkTorokushaMeiboJuran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkTorokushaMeiboJuran').getProperty();parameter0.KokuminSakuseiChohyoIdoTorokushaMeibo.chkSealTorokushaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSealTorokushaMeibo').getProperty();parameter0.KokuminSakuseiChohyoIdoMasshoshaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoIdoMasshoshaMeibo').getProperty();parameter0.KokuminSakuseiChohyoIdoMasshoshaMeibo.txtMasshoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMasshoYMD').getProperty();parameter0.KokuminSakuseiChohyoIdoMasshoshaMeibo.lblMasshoshaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblMasshoshaMeibo').getProperty();parameter0.KokuminSakuseiChohyoIdoMasshoshaMeibo.chkMasshoshaMeiboJuran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMasshoshaMeiboJuran').getProperty();parameter0.KokuminSakuseiChohyoIdoTeiseishaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoIdoTeiseishaMeibo').getProperty();parameter0.KokuminSakuseiChohyoMasshoTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoMasshoTsuchi').getProperty();parameter0.KokuminSakuseiChohyoMasshoTsuchi.ccdPrintNaiyoMasshoTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoMasshoTsuchi').getPostParameter();parameter0.KokuminSakuseiChohyoMasshoTsuchi.chkSealMasshoTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSealMasshoTsuchi').getProperty();parameter0.KokuminSakuseiChohyoMasshoTsuchi.chkMasshoTsuchiIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMasshoTsuchiIchiran').getProperty();parameter0.KokuminSakuseiChohyoKokunaiChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoKokunaiChosahyo').getProperty();parameter0.KokuminSakuseiChohyoKokunaiChosahyo.ccdPrintNaiyoKokunaiChosa = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoKokunaiChosa').getPostParameter();parameter0.KokuminSakuseiChohyoKokunaiChosahyo.chkSealKokunaiChosa = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSealKokunaiChosa').getProperty();parameter0.KokuminSakuseiChohyoKokunaiChosahyo.chkKokunaiChosaIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkKokunaiChosaIchiran').getProperty();parameter0.KokuminSakuseiChohyoKokugaiChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoKokugaiChosahyo').getProperty();parameter0.KokuminSakuseiChohyoKokugaiChosahyo.ccdPrintNaiyoKokugaiChosa = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoKokugaiChosa').getPostParameter();parameter0.KokuminSakuseiChohyoKokugaiChosahyo.chkSealKokugaiChosa = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSealKokugaiChosa').getProperty();parameter0.KokuminSakuseiChohyoKokugaiChosahyo.chkKokugaiChosaIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkKokugaiChosaIchiran').getProperty();parameter0.KokuminSakuseiChohyoZaigai = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigai').getProperty();parameter0.KokuminSakuseiChohyoZaigai.KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon').getProperty();parameter0.KokuminSakuseiChohyoZaigai.KokuminSakuseiChohyoZaigaiShikakushaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigaiShikakushaMeibo').getProperty();parameter0.KokuminSakuseiChohyoZaigai.KokuminSakuseiChohyoZaigaiTohyoKanrihyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigaiTohyoKanrihyo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoMeiboShohonRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoMeiboShohon').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoTorokushasuListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoIdoMasshoshaMeibo').getProperty();parameter0.txtMasshoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMasshoYMD').getProperty();parameter0.lblMasshoshaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblMasshoshaMeibo').getProperty();parameter0.chkMasshoshaMeiboJuran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMasshoshaMeiboJuran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyo1goShikakuTsuchiRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo1goShikakuTsuchi').getProperty();parameter0.ccdPrintNaiyo1goTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyo1goTsuchi').getPostParameter();parameter0.chkSeal1goTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSeal1goTsuchi').getProperty();parameter0.chk1goTsuchiIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chk1goTsuchiIchiran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyo2goShikakuChosahyoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo2goShikakuChosahyo').getProperty();parameter0.ccdPrintNaiyo2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyo2goChosahyo').getPostParameter();parameter0.chkSeal2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSeal2goChosahyo').getProperty();parameter0.chk2goChosaIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chk2goChosaIchiran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyo2goKohoListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo2goKohoList').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoIdoTorokushaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoIdoMasshoshaMeibo').getProperty();parameter0.txtMasshoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMasshoYMD').getProperty();parameter0.lblMasshoshaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblMasshoshaMeibo').getProperty();parameter0.chkMasshoshaMeiboJuran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMasshoshaMeiboJuran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoIdoMasshoshaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoIdoMasshoshaMeibo').getProperty();parameter0.txtMasshoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMasshoYMD').getProperty();parameter0.lblMasshoshaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblMasshoshaMeibo').getProperty();parameter0.chkMasshoshaMeiboJuran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMasshoshaMeiboJuran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoIdoTeiseishaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoIdoTeiseishaMeibo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoMasshoTsuchiRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo1goShikakuTsuchi').getProperty();parameter0.ccdPrintNaiyo1goTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyo1goTsuchi').getPostParameter();parameter0.chkSeal1goTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSeal1goTsuchi').getProperty();parameter0.chk1goTsuchiIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chk1goTsuchiIchiran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoKokunaiChosahyoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo2goShikakuChosahyo').getProperty();parameter0.ccdPrintNaiyo2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyo2goChosahyo').getPostParameter();parameter0.chkSeal2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSeal2goChosahyo').getProperty();parameter0.chk2goChosaIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chk2goChosaIchiran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoKokugaiChosahyoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyo2goShikakuChosahyo').getProperty();parameter0.ccdPrintNaiyo2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyo2goChosahyo').getPostParameter();parameter0.chkSeal2goChosahyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSeal2goChosahyo').getProperty();parameter0.chk2goChosaIchiran = Uz.JSControlUtil.getJSControl(parentFieldName + '_chk2goChosaIchiran').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoZaigaiRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigai').getProperty();parameter0.KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon').getProperty();parameter0.KokuminSakuseiChohyoZaigaiShikakushaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigaiShikakushaMeibo').getProperty();parameter0.KokuminSakuseiChohyoZaigaiTohyoKanrihyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_KokuminSakuseiChohyoZaigaiTohyoKanrihyo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohonRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoZaigaiShikakushaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['KOKUMINSAKUSEICHOHYO'].KokuminSakuseiChohyoZaigaiTohyoKanrihyoRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (KokuminSakuseiChohyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        KokuminSakuseiChohyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KokuminSakuseiChohyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KokuminSakuseiChohyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.KokuminSakuseiChohyo.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoMeiboShohon = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoMeiboShohon"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoTorokushasuList = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoTorokushasuList"));
+            };
+
+            Controls.prototype.txtTorokushasuListKijunYmd = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTorokushasuListKijunYmd"));
+            };
+
+            Controls.prototype.lblTorokushasuList = function () {
+                return new UZA.Label(this.convFiledName("lblTorokushasuList"));
+            };
+
+            Controls.prototype.chkTorokuListFuzaishabun = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkTorokuListFuzaishabun"));
+            };
+
+            Controls.prototype.chkFuzaiTohyoMeibo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkFuzaiTohyoMeibo"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo1goShikakuTsuchi = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyo1goShikakuTsuchi"));
+            };
+
+            Controls.prototype.ccdPrintNaiyo1goTsuchi = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyo1goTsuchi"));
+            };
+
+            Controls.prototype.chkSeal1goTsuchi = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSeal1goTsuchi"));
+            };
+
+            Controls.prototype.chk1goTsuchiIchiran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chk1goTsuchiIchiran"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo2goShikakuChosahyo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyo2goShikakuChosahyo"));
+            };
+
+            Controls.prototype.ccdPrintNaiyo2goChosahyo = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyo2goChosahyo"));
+            };
+
+            Controls.prototype.chkSeal2goChosahyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSeal2goChosahyo"));
+            };
+
+            Controls.prototype.chk2goChosaIchiran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chk2goChosaIchiran"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyo2goKohoList = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyo2goKohoList"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoIdoTorokushaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoIdoTorokushaMeibo"));
+            };
+
+            Controls.prototype.chkTorokushaMeiboJuran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkTorokushaMeiboJuran"));
+            };
+
+            Controls.prototype.chkSealTorokushaMeibo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSealTorokushaMeibo"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoIdoMasshoshaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoIdoMasshoshaMeibo"));
+            };
+
+            Controls.prototype.txtMasshoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtMasshoYMD"));
+            };
+
+            Controls.prototype.lblMasshoshaMeibo = function () {
+                return new UZA.Label(this.convFiledName("lblMasshoshaMeibo"));
+            };
+
+            Controls.prototype.chkMasshoshaMeiboJuran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMasshoshaMeiboJuran"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoIdoTeiseishaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoIdoTeiseishaMeibo"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoMasshoTsuchi = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoMasshoTsuchi"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoMasshoTsuchi = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoMasshoTsuchi"));
+            };
+
+            Controls.prototype.chkSealMasshoTsuchi = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSealMasshoTsuchi"));
+            };
+
+            Controls.prototype.chkMasshoTsuchiIchiran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMasshoTsuchiIchiran"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoKokunaiChosahyo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoKokunaiChosahyo"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoKokunaiChosa = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoKokunaiChosa"));
+            };
+
+            Controls.prototype.chkSealKokunaiChosa = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSealKokunaiChosa"));
+            };
+
+            Controls.prototype.chkKokunaiChosaIchiran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKokunaiChosaIchiran"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoKokugaiChosahyo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoKokugaiChosahyo"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoKokugaiChosa = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoKokugaiChosa"));
+            };
+
+            Controls.prototype.chkSealKokugaiChosa = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSealKokugaiChosa"));
+            };
+
+            Controls.prototype.chkKokugaiChosaIchiran = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKokugaiChosaIchiran"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoZaigai = function () {
+                return new UZA.Panel(this.convFiledName("KokuminSakuseiChohyoZaigai"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoZaigaiSenkyoninMeiboShohon"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoZaigaiShikakushaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoZaigaiShikakushaMeibo"));
+            };
+
+            Controls.prototype.KokuminSakuseiChohyoZaigaiTohyoKanrihyo = function () {
+                return new UZA.PanelPublish(this.convFiledName("KokuminSakuseiChohyoZaigaiTohyoKanrihyo"));
+            };
+            return Controls;
+        })();
+        KokuminSakuseiChohyo.Controls = Controls;
+    })(AFA.KokuminSakuseiChohyo || (AFA.KokuminSakuseiChohyo = {}));
+    var KokuminSakuseiChohyo = AFA.KokuminSakuseiChohyo;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (KokuminSakuseiChohyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KokuminSakuseiChohyo.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KokuminSakuseiChohyo.ModeController = ModeController;
+    })(AFA.KokuminSakuseiChohyo || (AFA.KokuminSakuseiChohyo = {}));
+    var KokuminSakuseiChohyo = AFA.KokuminSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KokuminSakuseiChohyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new KokuminSakuseiChohyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        KokuminSakuseiChohyo.PublicProperties = PublicProperties;
+    })(AFA.KokuminSakuseiChohyo || (AFA.KokuminSakuseiChohyo = {}));
+    var KokuminSakuseiChohyo = AFA.KokuminSakuseiChohyo;
+})(AFA || (AFA = {}));
+</script></div>

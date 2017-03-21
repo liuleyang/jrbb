@@ -1,0 +1,555 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;JiyuNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlJiyuName&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlJiyuName_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlJiyuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlJiyuName_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlJiyuName_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlJiyuName_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlJiyuName_isBlankLine&quot;,&quot;editType&quot;:1}]},&quot;ddlJiyuName_disabled&quot;:false,&quot;ddlJiyuName_width&quot;:&quot;M&quot;,&quot;ddlJiyuName_required&quot;:false,&quot;ddlJiyuName_labelLText&quot;:&quot;事由&quot;,&quot;ddlJiyuName_labelLWidth&quot;:&quot;&quot;,&quot;ddlJiyuName_isBlankLine&quot;:false}" data-is-composite-control="true" data-control-name="AFA.JiyuNameList"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="JiyuNameList" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;JiyuNameList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;JiyuNameList&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;JiyuNameList&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="JiyuNameList_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="JiyuNameList_panel_body_area"><div title="" class="UzDropDownList WithLabel FloatLeft JSControl controlMargin-M marginRight-XS UzCompositeChild" id="ddlJiyuName" style="width: 285px; height: 20px; margin-left: 0em;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlJiyuName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;M&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ddlJiyuName_core&quot;,&quot;onChange&quot;:&quot;onChange_ddlJiyuName&quot;,&quot;selectedItem&quot;:&quot;key0&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;value0&quot;},{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;value1&quot;}],&quot;labelLText&quot;:&quot;事由&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;disabledItem&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="ddlJiyuName_labelL"><span>事由</span></span><select class="CoreElement Width-M" id="ddlJiyuName_core"><option value="key0">value0</option><option value="key1">value1</option></select></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var JiyuNameList_Design = (function (_super) {
+        __extends(JiyuNameList_Design, _super);
+        function JiyuNameList_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, JiyuNameList_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(JiyuNameList_Design.prototype, "ddlJiyuName_disabled", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["disabled"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["disabled"] = value;
+                } else {
+                    this.layout.items[0].items[0]["disabled"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(JiyuNameList_Design.prototype, "ddlJiyuName_width", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["width"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["width"] = value;
+                } else {
+                    this.layout.items[0].items[0]["width"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(JiyuNameList_Design.prototype, "ddlJiyuName_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[0]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(JiyuNameList_Design.prototype, "ddlJiyuName_labelLText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(JiyuNameList_Design.prototype, "ddlJiyuName_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        JiyuNameList_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("ddlJiyuName_disabled");
+            Uz.JSControlUtil.registProperty("ddlJiyuName_width");
+            Uz.JSControlUtil.registProperty("ddlJiyuName_required");
+            Uz.JSControlUtil.registProperty("ddlJiyuName_labelLText");
+            Uz.JSControlUtil.registProperty("ddlJiyuName_labelLWidth");
+        };
+
+        JiyuNameList_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["ddlJiyuName_disabled"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["disabled"];
+            editablePropertyInfo["ddlJiyuName_width"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["width"];
+            editablePropertyInfo["ddlJiyuName_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["ddlJiyuName_labelLText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLText"];
+            editablePropertyInfo["ddlJiyuName_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+
+            return editablePropertyInfo;
+        };
+        JiyuNameList_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "JiyuNameList",
+                    "items": [
+                        {
+                            "fieldName": "ddlJiyuName",
+                            "items": [],
+                            "controlType": "DropDownList",
+                            "width": "M",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "XS",
+                            "selectControlID": "ddlJiyuName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "onChange_ddlJiyuName",
+                            "labelLText": "事由",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "selectedItem": "key0",
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "value0"
+                                },
+                                {
+                                    "key": "key1",
+                                    "value": "value1"
+                                }
+                            ],
+                            "isBlankLine": false
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "JiyuNameList",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "JiyuNameList"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "JiyuNameList",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "ddlJiyuName",
+                    "publicChildProperty": "disabled",
+                    "newPropertyName": "ddlJiyuName_disabled"
+                },
+                {
+                    "publicChildFieldName": "ddlJiyuName",
+                    "publicChildProperty": "width",
+                    "newPropertyName": "ddlJiyuName_width"
+                },
+                {
+                    "publicChildFieldName": "ddlJiyuName",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "ddlJiyuName_required"
+                },
+                {
+                    "publicChildFieldName": "ddlJiyuName",
+                    "publicChildProperty": "labelLText",
+                    "newPropertyName": "ddlJiyuName_labelLText"
+                },
+                {
+                    "publicChildFieldName": "ddlJiyuName",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "ddlJiyuName_labelLWidth"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return JiyuNameList_Design;
+    })(Uz.CommonChildDiv);
+    AFA.JiyuNameList_Design = JiyuNameList_Design;
+
+    (function (JiyuNameList) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_ddlJiyuName = function () {
+                return "onChange_ddlJiyuName";
+            };
+            return Events;
+        })();
+        JiyuNameList.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "JiyuNameList";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.JiyuNameList.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.JiyuNameList = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ddlJiyuName = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlJiyuName"));
+            };
+            return Controls;
+        })();
+        JiyuNameList.Controls = Controls;
+    })(AFA.JiyuNameList || (AFA.JiyuNameList = {}));
+    var JiyuNameList = AFA.JiyuNameList;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (JiyuNameList) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new JiyuNameList.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        JiyuNameList.ModeController = ModeController;
+    })(AFA.JiyuNameList || (AFA.JiyuNameList = {}));
+    var JiyuNameList = AFA.JiyuNameList;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (JiyuNameList) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new JiyuNameList.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("ddlJiyuName_disabled", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlJiyuName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlJiyuName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlJiyuName_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlJiyuName_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_disabled = function () {
+                return this.controls.ddlJiyuName().disabled;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_disabled = function (value) {
+                this.controls.ddlJiyuName().disabled = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_width = function () {
+                return this.controls.ddlJiyuName().width;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_width = function (value) {
+                this.controls.ddlJiyuName().width = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_required = function () {
+                return this.controls.ddlJiyuName().required;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_required = function (value) {
+                this.controls.ddlJiyuName().required = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_labelLText = function () {
+                return this.controls.ddlJiyuName().labelLText;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_labelLText = function (value) {
+                this.controls.ddlJiyuName().labelLText = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_labelLWidth = function () {
+                return this.controls.ddlJiyuName().labelLWidth;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_labelLWidth = function (value) {
+                this.controls.ddlJiyuName().labelLWidth = value;
+            };
+            return PublicProperties;
+        })();
+        JiyuNameList.PublicProperties = PublicProperties;
+    })(AFA.JiyuNameList || (AFA.JiyuNameList = {}));
+    var JiyuNameList = AFA.JiyuNameList;
+})(AFA || (AFA = {}));
+</script>
+    
+   
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['JIYUNAMELIST'] = {};
+AFA['JIYUNAMELIST'].JiyuNameListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_JiyuNameList').getProperty();parameter0.ddlJiyuName = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlJiyuName').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (JiyuNameList) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_ddlJiyuName = function () {
+                return "onChange_ddlJiyuName";
+            };
+            return Events;
+        })();
+        JiyuNameList.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "JiyuNameList";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.JiyuNameList.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.JiyuNameList.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.JiyuNameList = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ddlJiyuName = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlJiyuName"));
+            };
+            return Controls;
+        })();
+        JiyuNameList.Controls = Controls;
+    })(AFA.JiyuNameList || (AFA.JiyuNameList = {}));
+    var JiyuNameList = AFA.JiyuNameList;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (JiyuNameList) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new JiyuNameList.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        JiyuNameList.ModeController = ModeController;
+    })(AFA.JiyuNameList || (AFA.JiyuNameList = {}));
+    var JiyuNameList = AFA.JiyuNameList;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (JiyuNameList) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new JiyuNameList.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("ddlJiyuName_disabled", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlJiyuName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlJiyuName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlJiyuName_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlJiyuName_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlJiyuName_isBlankLine", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_disabled = function () {
+                return this.controls.ddlJiyuName().disabled;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_disabled = function (value) {
+                this.controls.ddlJiyuName().disabled = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_width = function () {
+                return this.controls.ddlJiyuName().width;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_width = function (value) {
+                this.controls.ddlJiyuName().width = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_required = function () {
+                return this.controls.ddlJiyuName().required;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_required = function (value) {
+                this.controls.ddlJiyuName().required = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_labelLText = function () {
+                return this.controls.ddlJiyuName().labelLText;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_labelLText = function (value) {
+                this.controls.ddlJiyuName().labelLText = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_labelLWidth = function () {
+                return this.controls.ddlJiyuName().labelLWidth;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_labelLWidth = function (value) {
+                this.controls.ddlJiyuName().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.getddlJiyuName_isBlankLine = function () {
+                return this.controls.ddlJiyuName().isBlankLine;
+            };
+
+            PublicProperties.prototype.setddlJiyuName_isBlankLine = function (value) {
+                this.controls.ddlJiyuName().isBlankLine = value;
+            };
+            return PublicProperties;
+        })();
+        JiyuNameList.PublicProperties = PublicProperties;
+    })(AFA.JiyuNameList || (AFA.JiyuNameList = {}));
+    var JiyuNameList = AFA.JiyuNameList;
+})(AFA || (AFA = {}));
+</script></div>

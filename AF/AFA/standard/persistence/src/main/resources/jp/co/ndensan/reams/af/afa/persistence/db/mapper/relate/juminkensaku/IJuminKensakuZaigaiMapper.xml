@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 住民検索用のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+
+<!-- @reamsid_L AF-0230-020 qiuxy -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.juminkensaku.IJuminKensakuZaigaiMapper">
+
+    <select resultOrdered="true" id="select検索結果一覧" resultMap="ResultMap_JuminKensakuEntity" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.juminkensaku.JuminKensakuMapperParameter" fetchSize="500">
+        <if test="is宛名情報あり">
+            <include refid="masterPSM" />
+            select
+            distinct
+            master.*,
+            <include refid="columnsAF" />
+            FROM
+            <include refid="masterPSMJoinAF" />
+        </if>
+        <if test="!is宛名情報あり">
+            <if test="is選挙情報あり">
+                <include refid="masterAF" />
+                ,masterCodes AS (
+                SELECT
+                ARRAY_AGG(DISTINCT master."shikibetsuCode"::text) AS codeList
+                FROM
+                master
+                )
+                select
+                distinct
+                master.*,
+                <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+                FROM
+                <include refid="masterAFJoinPSM" />
+            </if>
+        </if>
+        <!--        limit
+        #{最大表示件数}-->
+    </select>
+
+    <sql id="masterAF">
+        WITH master AS (
+        SELECT
+        <include refid="columnsAF" />
+        FROM
+        <include refid="joinAF" />
+        <include refid="whereAF" />
+        )
+    </sql>
+
+    <sql id="masterPSM">
+        WITH master AS (
+        SELECT
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+        FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />
+        AS "ShikibetsuTaisho"
+        )
+    </sql>
+
+    <sql id="masterAFJoinPSM">
+        master
+        INNER JOIN <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (
+        <!--        SELECT
+        ARRAY_AGG(CAST (master."shikibetsuCode" AS TEXT))
+        FROM
+        master-->
+        select codeList from masterCodes
+        )
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON master."shikibetsuCode" = "ShikibetsuTaisho"."shikibetsuCode"
+        WHERE CARDINALITY( (select codeList from masterCodes) ) > 0
+    </sql>
+
+
+    <sql id="masterPSMJoinAF">
+        master
+        INNER JOIN
+        <include refid="joinAF" />
+        <include refid="whereAF" />
+    </sql>
+
+    <sql id="columnsAF">
+        <if test="is在外">
+            "AfT121ZaigaiSenkyoninMeibo"."shikibetsuCode" as "shikibetsuCode",
+            "AfT121ZaigaiSenkyoninMeibo"."satsu" as "satsu",
+            "AfT121ZaigaiSenkyoninMeibo"."page" as "page",
+            "AfT121ZaigaiSenkyoninMeibo"."gyo" as "gyo",
+            "AfT121ZaigaiSenkyoninMeibo"."tohyokuCode" as "tohyokuCode",
+            "AfT122ZaigaiSenkyoShikaku"."shikakuKubun" as "shikakuKubun",
+            "AfT122ZaigaiSenkyoShikaku"."meiboTorokuYMD" as "meiboTorokuYMD",
+            "AfT122ZaigaiSenkyoShikaku"."hyojiYMD" as "hyojiYMD",
+            "AfT122ZaigaiSenkyoShikaku"."hyojiJiyuCode" as "hyojiJiyuCode",
+            "AfT122ZaigaiSenkyoShikaku"."masshoYMD" as "masshoYMD",
+            "AfT122ZaigaiSenkyoShikaku"."masshoJiyuCode" as "masshoJiyuCode",
+            "AfT122ZaigaiSenkyoShikaku"."shinseiNo" as "shinseiNo"
+        </if>
+        <if test="!is在外">
+            "AfV112SenkyoninMeibo"."shikibetsuCode" as "shikibetsuCode",
+            "AfV112SenkyoninMeibo"."satsu" as "satsu",
+            "AfV112SenkyoninMeibo"."page" as "page",
+            "AfV112SenkyoninMeibo"."gyo" as "gyo",
+            "AfV112SenkyoninMeibo"."tohyokuCode" as "tohyokuCode",
+            "AfV113SenkyoShikaku"."senkyoShurui" as "senkyoShurui",
+            "AfV113SenkyoShikaku"."shikakuKubun" as "shikakuKubun",
+            "AfV113SenkyoShikaku"."meiboTorokuYMD" as "meiboTorokuYMD",
+            "AfV113SenkyoShikaku"."hyojiYMD" as "hyojiYMD",
+            "AfV113SenkyoShikaku"."hyojiJiyuCode" as "hyojiJiyuCode",
+            "AfV113SenkyoShikaku"."masshoYMD" as "masshoYMD",
+            "AfV113SenkyoShikaku"."masshoJiyuCode" as "masshoJiyuCode",
+            "AfV114FuzaishaTohyoShikaku"."tohyoShikakuShurui" as "tohyoShikakuShurui"
+        </if>
+    </sql>
+
+    <sql id="joinAF">
+        <if test="!is在外">
+            rgaf."AfV112SenkyoninMeibo" as "AfV112SenkyoninMeibo"
+            <if test="is宛名情報あり">
+                on master."ShikibetsuTaisho_shikibetsuCode" = "AfV112SenkyoninMeibo"."shikibetsuCode"
+            </if>
+        </if>
+        <if test="is在外">
+            rgaf."AfT121ZaigaiSenkyoninMeibo" as "AfT121ZaigaiSenkyoninMeibo"
+            <if test="is宛名情報あり">
+                on master."ShikibetsuTaisho_shikibetsuCode" = "AfT121ZaigaiSenkyoninMeibo"."shikibetsuCode"
+            </if>
+        </if>
+        <if test="is投票状況情報あり">
+            <!--left outer join-->
+            inner join
+            rgaf."AfT201TohyoJokyo" as "AfT201TohyoJokyo"
+            <if test="is在外">
+                on "AfT121ZaigaiSenkyoninMeibo"."shikibetsuCode" = "AfT201TohyoJokyo"."shikibetsuCode"
+            </if>
+            <if test="!is在外">
+                on "AfV112SenkyoninMeibo"."shikibetsuCode" = "AfT201TohyoJokyo"."shikibetsuCode"
+            </if>
+            <!--        and "AfT201TohyoJokyo"."shikibetsuCode" = #{識別コード}-->
+            and "AfT201TohyoJokyo"."shohonNo" = #{抄本番号}
+            <if test="isUsing冊">
+                and "AfT201TohyoJokyo"."satsu" = #{冊}
+            </if>
+            <if test="isUsing頁">
+                and "AfT201TohyoJokyo"."page" = #{頁}
+            </if>
+            <if test="isUsing行">
+                and "AfT201TohyoJokyo"."gyo" = #{行}
+            </if>
+            <if test="is投票状況リスト1件以上">
+                and "AfT201TohyoJokyo"."tohyoJokyo" in
+                <foreach collection="投票状況リスト" item="投票状況" open="(" separator="," close=")">
+                    #{投票状況}
+                </foreach>
+            </if>
+            <if test="isUsing受付日From">
+                and "AfT201TohyoJokyo"."juriYMD" <![CDATA[>=]]> #{受付日From}
+            </if>
+            <if test="isUsing受付日To">
+                and "AfT201TohyoJokyo"."juriYMD" <![CDATA[<=]]> #{受付日To}
+            </if>
+            <if test="isUsing受付時刻From">
+                and "AfT201TohyoJokyo"."juriTime" <![CDATA[>=]]> #{受付時刻From}
+            </if>
+            <if test="isUsing受付時刻To">
+                and "AfT201TohyoJokyo"."juriTime" <![CDATA[<=]]> #{受付時刻To}
+            </if>
+            <if test="isUsing受付番号">
+                and "AfT201TohyoJokyo"."uketsukeNo" = #{受付番号}
+            </if>
+            <if test="isUsing施設コード">
+                and "AfT201TohyoJokyo"."shisetsuCode" = #{施設コード}
+            </if>
+            <if test="isUsing識別コード">
+                and "AfT201TohyoJokyo"."shikibetsuCode" = #{識別コード}
+            </if>
+        </if>
+        <if test="is在外">
+            left outer join
+            (<include refid="select1" />) as "AfT122ZaigaiSenkyoShikaku"
+            on "AfT121ZaigaiSenkyoninMeibo"."shikibetsuCode" = "AfT122ZaigaiSenkyoShikaku"."shikibetsuCode"
+        </if>
+        <if test="!is在外">
+            <!--left outer join-->
+            INNER JOIN
+            rgaf."AfV113SenkyoShikaku" as "AfV113SenkyoShikaku"
+            on "AfV112SenkyoninMeibo"."shikibetsuCode" = "AfV113SenkyoShikaku"."shikibetsuCode"
+            and "AfV113SenkyoShikaku"."senkyoShurui" = #{選挙種類}
+            left outer join
+            rgaf."AfV114FuzaishaTohyoShikaku" as "AfV114FuzaishaTohyoShikaku"
+            on "AfV112SenkyoninMeibo"."shikibetsuCode" = "AfV114FuzaishaTohyoShikaku"."shikibetsuCode"
+        </if>
+    </sql>
+
+    <sql id="whereAF">
+        WHERE
+        <if test="!is在外">
+            "AfV112SenkyoninMeibo"."shohonNo" = #{抄本番号}
+            <if test="isUsing識別コード">
+                and "AfV112SenkyoninMeibo"."shikibetsuCode" = #{識別コード}
+            </if>
+            and "AfV113SenkyoShikaku"."senkyoShurui" = #{選挙種類}
+            <if test="isUsing投票区コード">
+                and "AfV112SenkyoninMeibo"."tohyokuCode" = #{投票区コード}
+            </if>
+            <if test="is選挙資格リスト1件以上">
+                and "AfV113SenkyoShikaku"."shikakuKubun" in
+                <foreach collection="選挙資格リスト" item="選挙資格" open="(" separator="," close=")">
+                    #{選挙資格}
+                </foreach>
+            </if>
+            <if test="is投票資格リスト1件以上">
+                and "AfV114FuzaishaTohyoShikaku"."tohyoShikakuShurui" in
+                <foreach collection="投票資格リスト" item="投票資格" open="(" separator="," close=")">
+                    #{投票資格}
+                </foreach>
+            </if>
+            <if test="isUsing名簿登録日From">
+                and "AfV113SenkyoShikaku"."meiboTorokuYMD" <![CDATA[>=]]> #{名簿登録日From}
+            </if>
+            <if test="isUsing名簿登録日To">
+                and "AfV113SenkyoShikaku"."meiboTorokuYMD" <![CDATA[<=]]> #{名簿登録日To}
+            </if>
+            <if test="isUsing登録事由コード">
+                and "AfV113SenkyoShikaku"."torokuJiyuCode" <![CDATA[=]]> #{登録事由コード}
+            </if>
+            <if test="isUsing登録停止日From">
+                and "AfV113SenkyoShikaku"."torokuTeishiYMD" <![CDATA[>=]]> #{登録停止日From}
+            </if>
+            <if test="isUsing登録停止日To">
+                and "AfV113SenkyoShikaku"."torokuTeishiYMD" <![CDATA[<=]]> #{登録停止日To}
+            </if>
+            <if test="isUsing登録停止事由コード">
+                and "AfV113SenkyoShikaku"."torokuTeishiJiyuCode" <![CDATA[=]]> #{登録停止事由コード}
+            </if>
+            <if test="isUsing抹消日From">
+                and "AfV113SenkyoShikaku"."masshoYMD" <![CDATA[>=]]> #{抹消日From}
+            </if>
+            <if test="isUsing抹消日To">
+                and "AfV113SenkyoShikaku"."masshoYMD" <![CDATA[<=]]> #{抹消日To}
+            </if>
+            <if test="isUsing抹消事由コード">
+                and "AfV113SenkyoShikaku"."masshoJiyuCode" <![CDATA[=]]> #{抹消事由コード}
+            </if>
+            <if test="isUsing表示日From">
+                and "AfV113SenkyoShikaku"."hyojiYMD" <![CDATA[>=]]> #{表示日From}
+            </if>
+            <if test="isUsing表示日To">
+                and "AfV113SenkyoShikaku"."hyojiYMD" <![CDATA[<=]]> #{表示日To}
+            </if>
+            <if test="isUsing表示事由コード">
+                and "AfV113SenkyoShikaku"."hyojiJiyuCode" <![CDATA[=]]> #{表示事由コード}
+            </if>
+            <if test="isUsing消除予定日From">
+                and "AfV113SenkyoShikaku"."hyojiShojoYoteiYMD" <![CDATA[>=]]> #{消除予定日From}
+            </if>
+            <if test="isUsing消除予定日To">
+                and "AfV113SenkyoShikaku"."hyojiShojoYoteiYMD" <![CDATA[<=]]> #{消除予定日To}
+            </if>
+            <if test="isUsing表示消除日From">
+                and "AfV113SenkyoShikaku"."hyojiShojoYMD" <![CDATA[>=]]> #{表示消除日From}
+            </if>
+            <if test="isUsing表示消除日To">
+                and "AfV113SenkyoShikaku"."hyojiShojoYMD" <![CDATA[<=]]> #{表示消除日To}
+            </if>
+            <if test="isUsing刑期終了日From">
+                and "AfV113SenkyoShikaku"."keikiShuryoYMD" <![CDATA[>=]]> #{刑期終了日From}
+            </if>
+            <if test="isUsing刑期終了日To">
+                and "AfV113SenkyoShikaku"."keikiShuryoYMD" <![CDATA[<=]]> #{刑期終了日To}
+            </if>
+            <if test="is2刑持ち">
+                and "AfV113SenkyoShikaku"."nikeimochiFlag" = TRUE
+            </if>
+            <if test="isUsing冊">
+                and "AfV112SenkyoninMeibo"."satsu" = #{冊}
+            </if>
+            <if test="isUsing頁">
+                and "AfV112SenkyoninMeibo"."page" = #{頁}
+            </if>
+            <if test="isUsing行">
+                and "AfV112SenkyoninMeibo"."gyo" = #{行}
+            </if>
+        </if>
+        <if test="is在外">
+            "AfT121ZaigaiSenkyoninMeibo"."shohonNo" = #{抄本番号}
+            <if test="isUsing識別コード">
+                and "AfT121ZaigaiSenkyoninMeibo"."shikibetsuCode" = #{識別コード}
+            </if>
+            <if test="isUsing投票区コード">
+                and "AfT121ZaigaiSenkyoninMeibo"."tohyokuCode" = #{投票区コード}
+            </if>
+            <if test="is選挙資格リスト1件以上">
+                and "AfT122ZaigaiSenkyoShikaku"."shikakuKubun" in
+                <foreach collection="選挙資格リスト" item="選挙資格" open="(" separator="," close=")">
+                    #{選挙資格}
+                </foreach>
+            </if>
+            <if test="isUsing名簿登録日From">
+                and "AfT122ZaigaiSenkyoShikaku"."meiboTorokuYMD" <![CDATA[>=]]> #{名簿登録日From}
+            </if>
+            <if test="isUsing名簿登録日To">
+                and "AfT122ZaigaiSenkyoShikaku"."meiboTorokuYMD" <![CDATA[<=]]> #{名簿登録日To}
+            </if>
+            <if test="isUsing抹消日From">
+                and "AfT122ZaigaiSenkyoShikaku"."masshoYMD" <![CDATA[>=]]> #{抹消日From}
+            </if>
+            <if test="isUsing抹消日To">
+                and "AfT122ZaigaiSenkyoShikaku"."masshoYMD" <![CDATA[<=]]> #{抹消日To}
+            </if>
+            <if test="isUsing抹消事由コード">
+                and "AfT122ZaigaiSenkyoShikaku"."masshoJiyuCode" <![CDATA[=]]> #{抹消事由コード}
+            </if>
+            <if test="isUsing表示日From">
+                and "AfT122ZaigaiSenkyoShikaku"."hyojiYMD" <![CDATA[>=]]> #{表示日From}
+            </if>
+            <if test="isUsing表示日To">
+                and "AfT122ZaigaiSenkyoShikaku"."hyojiYMD" <![CDATA[<=]]> #{表示日To}
+            </if>
+            <if test="isUsing表示事由コード">
+                and "AfT122ZaigaiSenkyoShikaku"."hyojiJiyuCode" <![CDATA[=]]> #{表示事由コード}
+            </if>
+            <if test="isUsing冊">
+                and "AfT121ZaigaiSenkyoninMeibo"."satsu" = #{冊}
+            </if>
+            <if test="isUsing頁">
+                and "AfT121ZaigaiSenkyoninMeibo"."page" = #{頁}
+            </if>
+            <if test="isUsing行">
+                and "AfT121ZaigaiSenkyoninMeibo"."gyo" = #{行}
+            </if>
+        </if>
+    </sql>
+
+    <select resultOrdered="true" id="select総件数" resultType="int" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.juminkensaku.JuminKensakuMapperParameter" >
+        <if test="is宛名情報あり">
+            <include refid="masterPSM" />
+            select
+            count(distinct master."ShikibetsuTaisho_shikibetsuCode")
+            FROM
+            <include refid="masterPSMJoinAF" />
+        </if>
+        <if test="!is宛名情報あり">
+            <if test="is選挙情報あり">
+                <include refid="masterAF" />
+                select
+                count(distinct "ShikibetsuTaisho"."shikibetsuCode")
+                FROM
+                <include refid="masterAFJoinPSM" />
+            </if>
+        </if>
+    </select>
+
+    <sql id="select1">
+        select
+        "T1".*
+        from
+        rgaf."AfT122ZaigaiSenkyoShikaku" as "T1"
+        where
+        not exists (
+        select 'X'
+        from rgaf."AfT122ZaigaiSenkyoShikaku" as "T2"
+        where "T1"."shikibetsuCode" = "T2"."shikibetsuCode" and "T1"."shinseiNo" <![CDATA[<]]> "T2"."shinseiNo"
+        )
+    </sql>
+
+    <resultMap id="ResultMap_JuminKensakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.JuminKensakuEntity" autoMapping="true">
+        <id property="shikibetsuTaisho.shikibetsuCode" column="ShikibetsuTaisho_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="page" column="page"/>
+        <result property="gyo" column="gyo"/>
+        <result property="senkyoShurui" column="senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shikakuKubun" column="shikakuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="meiboTorokuYMD" column="meiboTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiYMD" column="hyojiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiJiyuCode" column="hyojiJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="masshoYMD" column="masshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="masshoJiyuCode" column="masshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shinseiNo" column="shinseiNo"/>
+        <result property="tohyoShikakuShurui" column="tohyoShikakuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <association property = "shikibetsuTaisho" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+    </resultMap>
+</mapper>

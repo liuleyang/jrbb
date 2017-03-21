@@ -1,0 +1,14 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+senkyoNo,AfUDD002SenkyoNo,SenkyoNo,,,,,選挙番号,A
+hokokuYMD,UDD015YMD,FlexibleDate,,,,,報告年月日,A
+shisetsuCode,varchar,RString,,,,,施設コード,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A
+secchiJokyo,varchar,RString,,,,,投票所設置状況,A
+kaisetsuBasho,varchar,RString,,,,,投票所開設場所,A
+secchiFirstYMD,UDD015YMD,FlexibleDate,,,,,設置期間（開始年月日）,A
+secchiLastYMD,UDD015YMD,FlexibleDate,,,,,設置期間（終了年月日）,A
+kaiheiStartTime,time,RTime,,,,,開閉時刻（開始）,A
+kaiheiStopTime,time,RTime,,,,,開閉時刻（終了）,A
+shokiNinzu,int2,int,,,,,選管書記人数,A
+shokuinNinzu,int2,int,,,,,職員人数,A
+sonotaNinzu,int2,int,,,,,sonotaNinzu,A

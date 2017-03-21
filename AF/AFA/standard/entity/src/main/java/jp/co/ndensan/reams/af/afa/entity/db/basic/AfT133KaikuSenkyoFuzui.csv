@@ -1,0 +1,10 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A
+gyogyoshaNo,varchar,RString,,,,,漁業者番号,A
+kumiaiCode,varchar,RString,,,,,組合コード,A
+nissuGyogyosha,int2,int,,,,,漁業日数（漁業者）,A
+nissuJujisha,int2,int,,,,,漁業日数（漁業従事者）,A
+gyogyoShurui,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.漁業種類.getCodeShubetsu(),Description,,漁業種類,A
+gyosenShubetsu,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.漁船種別.getCodeShubetsu(),Description,,使用漁船種別,A
+senmei,varchar,RString,,,,,船名,A
+torokuNo,varchar,RString,,,,,登録番号,A

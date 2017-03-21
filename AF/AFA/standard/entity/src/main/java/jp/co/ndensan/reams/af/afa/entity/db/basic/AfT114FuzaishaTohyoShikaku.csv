@@ -1,0 +1,9 @@
+﻿shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A
+tohyoShikakuShurui,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.投票資格種類.getCodeShubetsu(),Description,,投票資格種類,A
+seq,bigserial,BigSerial,,,,,履歴番号,A
+kofuYMD,UDD015YMD,FlexibleDate,,,,,交付年月日,A
+kofuNo,varchar,RString,,,,,交付番号,A
+shikakuTorokuYMD,UDD015YMD,FlexibleDate,,,,,資格登録年月日,A
+shikakuManryoYMD,UDD015YMD,FlexibleDate,,,,,資格満了年月日,A
+shikakuMasshoYMD,UDD015YMD,FlexibleDate,,,,,資格抹消年月日,A
+shikakuMasshoJiyuCode,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.抹消事由コード_投票資格別.getCodeShubetsu(),Description,,資格抹消事由コード,A

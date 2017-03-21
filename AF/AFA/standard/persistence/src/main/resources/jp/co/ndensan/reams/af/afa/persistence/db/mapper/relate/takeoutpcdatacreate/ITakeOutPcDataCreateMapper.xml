@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0790-010 wanghj-->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.takeoutpcdatacreate.ITakeOutPcDataCreateMapper">
+ <select resultOrdered="false" id="select端末用データBy投票日" resultMap="resultMap_TakeOutPcDataEntity"  fetchSize="500">
+        <include refid="selectTakeOutPcDataEntity" />
+    </select>
+
+    <sql id="selectTakeOutPcDataEntity">
+        SELECT
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />
+           ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />
+        FROM
+           rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+           rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON
+         "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        WHERE
+        "AfT100Shohon"."tohyoYMD" = #{投票日}
+        ORDER BY
+         "AfT100Shohon"."shohonNo" ,"AfT111Senkyo"."senkyoNo"
+    </sql>
+    
+    <resultMap id="resultMap_TakeOutPcDataEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.takeoutpcdatacreate.TakeOutPcDataEntity" autoMapping="true">
+        <id property="抄本Entity.shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <association property="抄本Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <collection property="選挙Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+    </resultMap>
+</mapper>

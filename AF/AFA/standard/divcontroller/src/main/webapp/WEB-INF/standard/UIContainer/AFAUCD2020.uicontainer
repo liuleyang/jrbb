@@ -1,0 +1,84 @@
+﻿{
+ "uiContainerName": "AFAUCD2020",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "抄本照会(選挙時登録)",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMA1000",
+     "toLayoutTitle": "住民検索",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMA1000",
+     "layoutTitle": "住民検索",
+     "eventName": "検索",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMD2010",
+     "toLayoutTitle": "名簿照会",
+     "toState": "default"
+    },
+    {
+     "id": "3",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMD2010",
+     "layoutTitle": "名簿照会",
+     "eventName": "戻る",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMA1000",
+     "toLayoutTitle": "住民検索",
+     "toState": "検索結果状態"
+    },
+    {
+     "id": "4",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMD2010",
+     "layoutTitle": "名簿照会",
+     "eventName": "ダミー終了処理",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "5",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMA1000",
+     "layoutTitle": "住民検索",
+     "eventName": "メニューへ戻る",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "6",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMD2010",
+     "layoutTitle": "名簿照会",
+     "eventName": "再検索",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMA1000",
+     "toLayoutTitle": "住民検索",
+     "toState": "再検索状態"
+    }
+   ]
+  }
+ ]
+}

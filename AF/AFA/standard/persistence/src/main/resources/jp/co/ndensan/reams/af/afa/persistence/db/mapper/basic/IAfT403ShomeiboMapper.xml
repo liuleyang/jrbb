@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT403Shomeiboマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT403ShomeiboMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT403Shomeibo">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT403ShomeiboMapper.allColumns_AfT403Shomeibo" />
+     FROM
+         rgaf."AfT403Shomeibo"
+     WHERE
+         rgaf."AfT403Shomeibo"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT403Shomeibo">
+         "AfT403Shomeibo"."seikyuNo" as "afT403Shomeibo_seikyuNo",
+         "AfT403Shomeibo"."satsu" as "afT403Shomeibo_satsu",
+         "AfT403Shomeibo"."page" as "afT403Shomeibo_page",
+         "AfT403Shomeibo"."gyo" as "afT403Shomeibo_gyo",
+         "AfT403Shomeibo"."insertDantaiCd" as "afT403Shomeibo_insertDantaiCd",
+         "AfT403Shomeibo"."insertTimestamp" as "afT403Shomeibo_insertTimestamp",
+         "AfT403Shomeibo"."insertReamsLoginId" as "afT403Shomeibo_insertReamsLoginId",
+         "AfT403Shomeibo"."insertContextId" as "afT403Shomeibo_insertContextId",
+         "AfT403Shomeibo"."isDeleted" as "afT403Shomeibo_isDeleted",
+         "AfT403Shomeibo"."updateCount" as "afT403Shomeibo_updateCount",
+         "AfT403Shomeibo"."lastUpdateTimestamp" as "afT403Shomeibo_lastUpdateTimestamp",
+         "AfT403Shomeibo"."lastUpdateReamsLoginId" as "afT403Shomeibo_lastUpdateReamsLoginId",
+         "AfT403Shomeibo"."shinsaKubun" as "afT403Shomeibo_shinsaKubun",
+         "AfT403Shomeibo"."mukoJiyuCode" as "afT403Shomeibo_mukoJiyuCode",
+         "AfT403Shomeibo"."shomeiYMD" as "afT403Shomeibo_shomeiYMD",
+         "AfT403Shomeibo"."shomeishaShikibetsuCode" as "afT403Shomeibo_shomeishaShikibetsuCode",
+         "AfT403Shomeibo"."kanjiShimei" as "afT403Shomeibo_kanjiShimei",
+         "AfT403Shomeibo"."kanaShimei" as "afT403Shomeibo_kanaShimei",
+         "AfT403Shomeibo"."searchKanaShimei" as "afT403Shomeibo_searchKanaShimei",
+         "AfT403Shomeibo"."seinengappiYMD" as "afT403Shomeibo_seinengappiYMD",
+         "AfT403Shomeibo"."seibetsuCode" as "afT403Shomeibo_seibetsuCode",
+         "AfT403Shomeibo"."jusho" as "afT403Shomeibo_jusho",
+         "AfT403Shomeibo"."daihitsushaShikibetsuCode" as "afT403Shomeibo_daihitsushaShikibetsuCode",
+         "AfT403Shomeibo"."daihitsushaKanjiShimei" as "afT403Shomeibo_daihitsushaKanjiShimei",
+         "AfT403Shomeibo"."daihitsushaSeinengappiYMD" as "afT403Shomeibo_daihitsushaSeinengappiYMD",
+         "AfT403Shomeibo"."daihitsushaSeibetsuCode" as "afT403Shomeibo_daihitsushaSeibetsuCode",
+         "AfT403Shomeibo"."daihitsushaJusho" as "afT403Shomeibo_daihitsushaJusho"
+    </sql>
+
+
+    <!--テーブルAfT403Shomeiboの項目をAfT403ShomeiboEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT403ShomeiboEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT403ShomeiboEntity" autoMapping="true">
+        <id property="seikyuNo" column="afT403Shomeibo_seikyuNo" />
+        <id property="satsu" column="afT403Shomeibo_satsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="page" column="afT403Shomeibo_page" />
+        <id property="gyo" column="afT403Shomeibo_gyo" />
+        <result property="insertDantaiCd" column="afT403Shomeibo_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT403Shomeibo_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT403Shomeibo_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT403Shomeibo_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT403Shomeibo_isDeleted" />
+        <result property="updateCount" column="afT403Shomeibo_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT403Shomeibo_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT403Shomeibo_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shinsaKubun" column="afT403Shomeibo_shinsaKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="mukoJiyuCode" column="afT403Shomeibo_mukoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shomeiYMD" column="afT403Shomeibo_shomeiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shomeishaShikibetsuCode" column="afT403Shomeibo_shomeishaShikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="kanjiShimei" column="afT403Shomeibo_kanjiShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="kanaShimei" column="afT403Shomeibo_kanaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaKanaMeishoTypeHandler"/>
+        <result property="searchKanaShimei" column="afT403Shomeibo_searchKanaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaKanaMeishoTypeHandler"/>
+        <result property="seinengappiYMD" column="afT403Shomeibo_seinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="seibetsuCode" column="afT403Shomeibo_seibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="jusho" column="afT403Shomeibo_jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="daihitsushaShikibetsuCode" column="afT403Shomeibo_daihitsushaShikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="daihitsushaKanjiShimei" column="afT403Shomeibo_daihitsushaKanjiShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="daihitsushaSeinengappiYMD" column="afT403Shomeibo_daihitsushaSeinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="daihitsushaSeibetsuCode" column="afT403Shomeibo_daihitsushaSeibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="daihitsushaJusho" column="afT403Shomeibo_daihitsushaJusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+    </resultMap>
+
+</mapper>

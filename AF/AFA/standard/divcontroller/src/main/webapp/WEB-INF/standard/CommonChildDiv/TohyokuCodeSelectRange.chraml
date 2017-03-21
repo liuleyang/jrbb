@@ -1,0 +1,400 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyokuCodeSelectRange&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtTohyokuCodeFrom_DisplayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuCodeTo_DisplayNone&quot;,&quot;editType&quot;:1}]},&quot;txtTohyokuCodeFrom_DisplayNone&quot;:false,&quot;txtTohyokuCodeTo_DisplayNone&quot;:false}" data-is-composite-control="true" data-control-name="AFA.TohyokuCodeSelectRange"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="TohyokuCodeSelectRange" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;TohyokuCodeSelectRange&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;TohyokuCodeSelectRange&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;TohyokuCodeSelectRange&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;focusPositionID&quot;:&quot;createFile&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="TohyokuCodeSelectRange_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="TohyokuCodeSelectRange_panel_body_area"><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="ccdTohyokuCodeFrom" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdTohyokuCodeFrom&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdTohyokuCodeFrom&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyokuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnTohyokuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLAlign&quot;,&quot;editType&quot;:0}]},&quot;txtTohyokuCode_labelLText&quot;:&quot;投票区&quot;,&quot;txtTohyokuCode_labelLWidth&quot;:&quot;&quot;,&quot;txtTohyokuCode_required&quot;:false,&quot;btnTohyokuCode_displayNone&quot;:false,&quot;txtTohyokuName_displayNone&quot;:false,&quot;txtTohyokuName_width&quot;:&quot;M&quot;,&quot;txtTohyokuCode_readOnly&quot;:false,&quot;txtTohyokuCode_labelLAlign&quot;:2}" data-is-composite-control="true" data-control-name="AFA.TohyokuCodeSelect"></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XL" id="ccdTohyokuCodeTo" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdTohyokuCodeTo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdTohyokuCodeTo&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyokuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnTohyokuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLAlign&quot;,&quot;editType&quot;:0}]},&quot;txtTohyokuCode_labelLText&quot;:&quot;～&quot;,&quot;txtTohyokuCode_labelLWidth&quot;:&quot;40px&quot;,&quot;txtTohyokuCode_required&quot;:false,&quot;btnTohyokuCode_displayNone&quot;:false,&quot;txtTohyokuName_displayNone&quot;:false,&quot;txtTohyokuName_width&quot;:&quot;M&quot;,&quot;txtTohyokuCode_readOnly&quot;:false,&quot;txtTohyokuCode_labelLAlign&quot;:&quot;0&quot;}" data-is-composite-control="true" data-control-name="AFA.TohyokuCodeSelect"></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var TohyokuCodeSelectRange_Design = (function (_super) {
+        __extends(TohyokuCodeSelectRange_Design, _super);
+        function TohyokuCodeSelectRange_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, TohyokuCodeSelectRange_Design.myLayout, fieldName);
+        }
+        TohyokuCodeSelectRange_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        TohyokuCodeSelectRange_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        TohyokuCodeSelectRange_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "TohyokuCodeSelectRange",
+                    "items": [
+                        {
+                            "fieldName": "ccdTohyokuCodeFrom",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdTohyokuCodeFrom",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "TohyokuCodeSelect",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtTohyokuCode_labelLText": "投票区",
+                            "txtTohyokuCode_labelLWidth": "",
+                            "txtTohyokuCode_required": false,
+                            "btnTohyokuCode_displayNone": false,
+                            "txtTohyokuName_displayNone": false,
+                            "txtTohyokuName_width": "M",
+                            "txtTohyokuCode_readOnly": false,
+                            "txtTohyokuCode_labelLAlign": 2
+                        },
+                        {
+                            "fieldName": "ccdTohyokuCodeTo",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XL",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdTohyokuCodeTo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "TohyokuCodeSelect",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtTohyokuCode_labelLText": "～",
+                            "txtTohyokuCode_labelLWidth": "40px",
+                            "txtTohyokuCode_required": false,
+                            "btnTohyokuCode_displayNone": false,
+                            "txtTohyokuName_displayNone": false,
+                            "txtTohyokuName_width": "M",
+                            "txtTohyokuCode_readOnly": false,
+                            "txtTohyokuCode_labelLAlign": 0
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "TohyokuCodeSelectRange",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "TohyokuCodeSelectRange"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "focusPositionID": "createFile",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "TohyokuCodeSelectRange",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return TohyokuCodeSelectRange_Design;
+    })(Uz.CommonChildDiv);
+    AFA.TohyokuCodeSelectRange_Design = TohyokuCodeSelectRange_Design;
+
+    (function (TohyokuCodeSelectRange) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        TohyokuCodeSelectRange.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyokuCodeSelectRange";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyokuCodeSelectRange.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyokuCodeSelectRange = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdTohyokuCodeFrom = function () {
+                return new AFA.TohyokuCodeSelect.ModeController("ccdTohyokuCodeFrom");
+            };
+
+            Controls.prototype.ccdTohyokuCodeTo = function () {
+                return new AFA.TohyokuCodeSelect.ModeController("ccdTohyokuCodeTo");
+            };
+            return Controls;
+        })();
+        TohyokuCodeSelectRange.Controls = Controls;
+    })(AFA.TohyokuCodeSelectRange || (AFA.TohyokuCodeSelectRange = {}));
+    var TohyokuCodeSelectRange = AFA.TohyokuCodeSelectRange;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelectRange) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyokuCodeSelectRange.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyokuCodeSelectRange.ModeController = ModeController;
+    })(AFA.TohyokuCodeSelectRange || (AFA.TohyokuCodeSelectRange = {}));
+    var TohyokuCodeSelectRange = AFA.TohyokuCodeSelectRange;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelectRange) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TohyokuCodeSelectRange.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        TohyokuCodeSelectRange.PublicProperties = PublicProperties;
+    })(AFA.TohyokuCodeSelectRange || (AFA.TohyokuCodeSelectRange = {}));
+    var TohyokuCodeSelectRange = AFA.TohyokuCodeSelectRange;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['TOHYOKUCODESELECTRANGE'] = {};
+AFA['TOHYOKUCODESELECTRANGE'].TohyokuCodeSelectRangeRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_TohyokuCodeSelectRange').getProperty();parameter0.ccdTohyokuCodeFrom = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdTohyokuCodeFrom').getPostParameter();parameter0.ccdTohyokuCodeTo = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdTohyokuCodeTo').getPostParameter();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelectRange) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        TohyokuCodeSelectRange.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyokuCodeSelectRange";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyokuCodeSelectRange.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.TohyokuCodeSelectRange.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyokuCodeSelectRange = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdTohyokuCodeFrom = function () {
+                return new AFA.TohyokuCodeSelect.ModeController(this.convFiledName("ccdTohyokuCodeFrom"));
+            };
+
+            Controls.prototype.ccdTohyokuCodeTo = function () {
+                return new AFA.TohyokuCodeSelect.ModeController(this.convFiledName("ccdTohyokuCodeTo"));
+            };
+            return Controls;
+        })();
+        TohyokuCodeSelectRange.Controls = Controls;
+    })(AFA.TohyokuCodeSelectRange || (AFA.TohyokuCodeSelectRange = {}));
+    var TohyokuCodeSelectRange = AFA.TohyokuCodeSelectRange;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelectRange) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyokuCodeSelectRange.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyokuCodeSelectRange.ModeController = ModeController;
+    })(AFA.TohyokuCodeSelectRange || (AFA.TohyokuCodeSelectRange = {}));
+    var TohyokuCodeSelectRange = AFA.TohyokuCodeSelectRange;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelectRange) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TohyokuCodeSelectRange.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtTohyokuCodeFrom_DisplayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyokuCodeTo_DisplayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCodeFrom_DisplayNone = function () {
+                return this.controls.ccdTohyokuCodeFrom().PublicProperties().gettxtTohyokuName_displayNone();
+            };
+
+            PublicProperties.prototype.settxtTohyokuCodeFrom_DisplayNone = function (value) {
+                this.controls.ccdTohyokuCodeFrom().PublicProperties().settxtTohyokuName_displayNone(value);
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCodeTo_DisplayNone = function () {
+                return this.controls.ccdTohyokuCodeTo().PublicProperties().gettxtTohyokuName_displayNone();
+            };
+
+            PublicProperties.prototype.settxtTohyokuCodeTo_DisplayNone = function (value) {
+                this.controls.ccdTohyokuCodeTo().PublicProperties().settxtTohyokuName_displayNone(value);
+            };
+            return PublicProperties;
+        })();
+        TohyokuCodeSelectRange.PublicProperties = PublicProperties;
+    })(AFA.TohyokuCodeSelectRange || (AFA.TohyokuCodeSelectRange = {}));
+    var TohyokuCodeSelectRange = AFA.TohyokuCodeSelectRange;
+})(AFA || (AFA = {}));
+</script></div>

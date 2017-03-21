@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT302SaibaninYoteishaマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT302SaibaninYoteishaMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT302SaibaninYoteisha">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT302SaibaninYoteishaMapper.allColumns_AfT302SaibaninYoteisha" />
+     FROM
+         rgaf."AfT302SaibaninYoteisha"
+     WHERE
+         rgaf."AfT302SaibaninYoteisha"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT302SaibaninYoteisha">
+         "AfT302SaibaninYoteisha"."nendo" as "afT302SaibaninYoteisha_nendo",
+         "AfT302SaibaninYoteisha"."senkanRenban" as "afT302SaibaninYoteisha_senkanRenban",
+         "AfT302SaibaninYoteisha"."shikibetsuCode" as "afT302SaibaninYoteisha_shikibetsuCode",
+         "AfT302SaibaninYoteisha"."insertDantaiCd" as "afT302SaibaninYoteisha_insertDantaiCd",
+         "AfT302SaibaninYoteisha"."insertTimestamp" as "afT302SaibaninYoteisha_insertTimestamp",
+         "AfT302SaibaninYoteisha"."insertReamsLoginId" as "afT302SaibaninYoteisha_insertReamsLoginId",
+         "AfT302SaibaninYoteisha"."insertContextId" as "afT302SaibaninYoteisha_insertContextId",
+         "AfT302SaibaninYoteisha"."isDeleted" as "afT302SaibaninYoteisha_isDeleted",
+         "AfT302SaibaninYoteisha"."updateCount" as "afT302SaibaninYoteisha_updateCount",
+         "AfT302SaibaninYoteisha"."lastUpdateTimestamp" as "afT302SaibaninYoteisha_lastUpdateTimestamp",
+         "AfT302SaibaninYoteisha"."lastUpdateReamsLoginId" as "afT302SaibaninYoteisha_lastUpdateReamsLoginId",
+         "AfT302SaibaninYoteisha"."shimei" as "afT302SaibaninYoteisha_shimei",
+         "AfT302SaibaninYoteisha"."seinengappiYMD" as "afT302SaibaninYoteisha_seinengappiYMD",
+         "AfT302SaibaninYoteisha"."yubinNo" as "afT302SaibaninYoteisha_yubinNo",
+         "AfT302SaibaninYoteisha"."jusho" as "afT302SaibaninYoteisha_jusho",
+         "AfT302SaibaninYoteisha"."honsekichi" as "afT302SaibaninYoteisha_honsekichi"
+    </sql>
+
+
+    <!--テーブルAfT302SaibaninYoteishaの項目をAfT302SaibaninYoteishaEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT302SaibaninYoteishaEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT302SaibaninYoteishaEntity" autoMapping="true">
+        <id property="nendo" column="afT302SaibaninYoteisha_nendo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RYearTypeHandler"/>
+        <id property="senkanRenban" column="afT302SaibaninYoteisha_senkanRenban" />
+        <id property="shikibetsuCode" column="afT302SaibaninYoteisha_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="insertDantaiCd" column="afT302SaibaninYoteisha_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT302SaibaninYoteisha_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT302SaibaninYoteisha_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT302SaibaninYoteisha_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT302SaibaninYoteisha_isDeleted" />
+        <result property="updateCount" column="afT302SaibaninYoteisha_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT302SaibaninYoteisha_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT302SaibaninYoteisha_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shimei" column="afT302SaibaninYoteisha_shimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="seinengappiYMD" column="afT302SaibaninYoteisha_seinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="yubinNo" column="afT302SaibaninYoteisha_yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="jusho" column="afT302SaibaninYoteisha_jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="honsekichi" column="afT302SaibaninYoteisha_honsekichi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

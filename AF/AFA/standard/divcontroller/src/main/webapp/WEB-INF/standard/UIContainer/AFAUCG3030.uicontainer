@@ -1,0 +1,98 @@
+﻿{
+ "uiContainerName": "AFAUCG3030",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "在外投票人証明書再交付",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "再検索状態"
+    },
+    {
+     "id": "2",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMC1000",
+     "layoutTitle": "住民検索（資格）",
+     "eventName": "決定",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMB3020",
+     "toLayoutTitle": "証明書記載事項変更",
+     "toState": "default"
+    },
+    {
+     "id": "3",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMB3020",
+     "layoutTitle": "証明書記載事項変更",
+     "eventName": "更新",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGM01000",
+     "toLayoutTitle": "処理完了",
+     "toState": "default"
+    },
+    {
+     "id": "4",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMB3020",
+     "layoutTitle": "証明書記載事項変更",
+     "eventName": "戻る",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "再検索状態"
+    },
+    {
+     "id": "5",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "再検索",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "再検索状態"
+    },
+    {
+     "id": "6",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "完了",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "7",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMC1000",
+     "layoutTitle": "住民検索（資格）",
+     "eventName": "完了",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

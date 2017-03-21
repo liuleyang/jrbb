@@ -1,0 +1,70 @@
+﻿{
+ "uiContainerName": "AFAUCE2040",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "施設バーコード一括受理",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGME2040",
+     "toLayoutTitle": "施設バーコード一括受理",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME2040",
+     "layoutTitle": "施設バーコード一括受理",
+     "eventName": "受理",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGM01000",
+     "toLayoutTitle": "処理完了",
+     "toState": "default"
+    },
+    {
+     "id": "3",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "再検索",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGME2040",
+     "toLayoutTitle": "施設バーコード一括受理",
+     "toState": "default"
+    },
+    {
+     "id": "4",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "完了",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "5",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME2040",
+     "layoutTitle": "施設バーコード一括受理",
+     "eventName": "メニューへ戻る",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

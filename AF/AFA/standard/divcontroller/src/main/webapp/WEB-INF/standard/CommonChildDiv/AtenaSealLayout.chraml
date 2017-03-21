@@ -1,0 +1,147 @@
+<div class="JSControl UzCompositeControl FloatLeft Width-XS" id="defaultLayout" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;AtenaSealLayout&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;100px&quot;,&quot;minHeight&quot;:&quot;200px&quot;,&quot;widthPercent&quot;:&quot;80&quot;,&quot;heightPercent&quot;:&quot;80&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.AtenaSealLayout"><div class="StateChangable UzPanel JSControl FloatLeft Panel-Shadow UzCommonChildDivPanel UzCompositeChild" id="AtenaSealLayout" style="margin: 0px; width: 480px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;AtenaSealLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;480px&quot;,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;AtenaSealLayout&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;AtenaSealLayout&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onChange_ddlJusho&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/AtenaSealLayout/onChange_ddlJusho&quot;},{&quot;eventName&quot;:&quot;onChange_ddlAtena&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/AtenaSealLayout/onChange_ddlAtena&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="AtenaSealLayout_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content ui-droppable ui-sortable panelPaddingDelete" id="AtenaSealLayout_panel_body_area"><span title="" class="UzLabel word-wrap-break-word JSControl FloatLeft controlMargin-M Width- marginLeft-XS marginRight-XS text-align-left UzCompositeChild" id="lblYubinNo" data-control-type="Label" data-obj="{&quot;fieldName&quot;:&quot;lblYubinNo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Label&quot;,&quot;width&quot;:&quot;&quot;,&quot;selectControlID&quot;:&quot;lblYubinNo&quot;,&quot;text&quot;:&quot;〒□□□－□□□□&quot;,&quot;align&quot;:0}"><span>〒□□□－□□□□</span></span><div title="" class="UzDropDownList WithLabel JSControl controlMargin-M FloatRight marginLeft-XS marginRight-XS UzCompositeChild" id="ddlRightUp" style="width: 203px; height: 20px;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlRightUp&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;200px&quot;,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;ddlRightUp_core&quot;,&quot;selectedItem&quot;:&quot;key0&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;value0&quot;},{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;value1&quot;}]}"><select class="CoreElement" id="ddlRightUp_core" style="width: 200px;"><option value="key0">value0</option><option value="key1">value1</option></select></div><div title="" class="UzDropDownList WithLabel JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="ddlJusho" style="width: 442px; height: 20px;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlJusho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;400px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ddlJusho_core&quot;,&quot;onChange&quot;:&quot;onChange_ddlJusho&quot;,&quot;selectedItem&quot;:&quot;key0&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;value0&quot;},{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;value1&quot;}],&quot;required&quot;:true,&quot;labelLText&quot;:&quot;住所&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L Width- text-align-right" id="ddlJusho_labelL"><span class="requireMark">*</span><span>住所</span></span><select class="CoreElement required" id="ddlJusho_core" style="width: 400px;"><option value="key0">value0</option><option value="key1">value1</option></select></div><div title="" class="WithLabel TextBoxOuterDiv JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="txtJusho1" style="width: 405px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtJusho1&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;400px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;txtJusho1_core&quot;,&quot;readOnly&quot;:true,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement readonlyColor text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtJusho1_core" style="width: 400px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="txtJusho2" style="width: 405px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtJusho2&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;400px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;txtJusho2_core&quot;,&quot;readOnly&quot;:true,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement readonlyColor text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtJusho2_core" style="width: 400px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="txtJusho3" style="width: 405px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtJusho3&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;400px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;txtJusho3_core&quot;,&quot;readOnly&quot;:true,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement readonlyColor text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtJusho3_core" style="width: 400px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzDropDownList WithLabel JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="ddlAtena" style="width: 345px; height: 20px; position: relative;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlAtena&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;303px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ddlAtena_core&quot;,&quot;onChange&quot;:&quot;onChange_ddlAtena&quot;,&quot;selectedItem&quot;:&quot;key0&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;value0&quot;},{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;value1&quot;}],&quot;required&quot;:true,&quot;labelLText&quot;:&quot;宛名&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L Width- text-align-right" id="ddlAtena_labelL"><span class="requireMark">*</span><span>宛名</span></span><select class="CoreElement required" id="ddlAtena_core" style="width: 303px;"><option value="key0">value0</option><option value="key1">value1</option></select></div><div title="" class="WithLabel TextBoxOuterDiv JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="txtAtena1" style="width: 305px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtAtena1&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;300px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;txtAtena1_core&quot;,&quot;readOnly&quot;:true,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement readonlyColor text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtAtena1_core" style="width: 300px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzDropDownList WithLabel JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="ddlKeisho1" style="width: 83px; height: 20px;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlKeisho1&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;80px&quot;,&quot;selectControlID&quot;:&quot;ddlKeisho1_core&quot;,&quot;selectedItem&quot;:&quot;0&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;なし&quot;},{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;様&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;殿&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;御中&quot;}]}"><select class="CoreElement" id="ddlKeisho1_core" style="width: 80px;"><option value="0">なし</option><option value="1">様</option><option value="2">殿</option><option value="3">御中</option></select></div><div title="" class="WithLabel TextBoxOuterDiv JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="txtAtena2" style="width: 305px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtAtena2&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;300px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;txtAtena2_core&quot;,&quot;readOnly&quot;:true,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement readonlyColor text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtAtena2_core" style="width: 300px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzDropDownList WithLabel JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="ddlKeisho2" style="width: 83px; height: 20px;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlKeisho2&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;80px&quot;,&quot;selectControlID&quot;:&quot;ddlKeisho2_core&quot;,&quot;selectedItem&quot;:&quot;1&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;なし&quot;},{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;様&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;殿&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;御中&quot;}]}"><select class="CoreElement" id="ddlKeisho2_core" style="width: 80px;"><option value="0">なし</option><option value="1">様</option><option value="2">殿</option><option value="3">御中</option></select></div><div title="" class="UzDropDownList WithLabel JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="ddlLeftDown" style="width: 203px; height: 20px;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlLeftDown&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;200px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ddlLeftDown_core&quot;,&quot;selectedItem&quot;:&quot;key0&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;value0&quot;},{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;value1&quot;}]}"><select class="CoreElement" id="ddlLeftDown_core" style="width: 200px;"><option value="key0">value0</option><option value="key1">value1</option></select></div><div title="" class="UzDropDownList WithLabel JSControl controlMargin-M FloatRight marginLeft-XS marginRight-XS UzCompositeChild" id="ddlRightDown" style="width: 203px; height: 20px;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlRightDown&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;200px&quot;,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;ddlRightDown_core&quot;,&quot;selectedItem&quot;:&quot;key0&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;value0&quot;},{&quot;key&quot;:&quot;key1&quot;,&quot;value&quot;:&quot;value1&quot;}]}"><select class="CoreElement" id="ddlRightDown_core" style="width: 200px;"><option value="key0">value0</option><option value="key1">value1</option></select></div></div></div>  
+     
+     
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['ATENASEALLAYOUT'] = {};
+AFA['ATENASEALLAYOUT'].AtenaSealLayoutRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_AtenaSealLayout').getProperty();parameter0.lblYubinNo = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblYubinNo').getProperty();parameter0.ddlRightUp = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlRightUp').getProperty();parameter0.ddlJusho = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlJusho').getProperty();parameter0.txtJusho1 = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtJusho1').getProperty();parameter0.txtJusho2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtJusho2').getProperty();parameter0.txtJusho3 = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtJusho3').getProperty();parameter0.ddlAtena = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlAtena').getProperty();parameter0.txtAtena1 = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtAtena1').getProperty();parameter0.ddlKeisho1 = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlKeisho1').getProperty();parameter0.txtAtena2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtAtena2').getProperty();parameter0.ddlKeisho2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlKeisho2').getProperty();parameter0.ddlLeftDown = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlLeftDown').getProperty();parameter0.ddlRightDown = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlRightDown').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (AtenaSealLayout) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_ddlJusho = function () {
+                return "onChange_ddlJusho";
+            };
+
+            Events.onChange_ddlAtena = function () {
+                return "onChange_ddlAtena";
+            };
+            return Events;
+        })();
+        AtenaSealLayout.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "AtenaSealLayout";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.AtenaSealLayout.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.AtenaSealLayout.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.AtenaSealLayout = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.lblYubinNo = function () {
+                return new UZA.Label(this.convFiledName("lblYubinNo"));
+            };
+
+            Controls.prototype.ddlRightUp = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlRightUp"));
+            };
+
+            Controls.prototype.ddlJusho = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlJusho"));
+            };
+
+            Controls.prototype.txtJusho1 = function () {
+                return new UZA.TextBox(this.convFiledName("txtJusho1"));
+            };
+
+            Controls.prototype.txtJusho2 = function () {
+                return new UZA.TextBox(this.convFiledName("txtJusho2"));
+            };
+
+            Controls.prototype.txtJusho3 = function () {
+                return new UZA.TextBox(this.convFiledName("txtJusho3"));
+            };
+
+            Controls.prototype.ddlAtena = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlAtena"));
+            };
+
+            Controls.prototype.txtAtena1 = function () {
+                return new UZA.TextBox(this.convFiledName("txtAtena1"));
+            };
+
+            Controls.prototype.ddlKeisho1 = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlKeisho1"));
+            };
+
+            Controls.prototype.txtAtena2 = function () {
+                return new UZA.TextBox(this.convFiledName("txtAtena2"));
+            };
+
+            Controls.prototype.ddlKeisho2 = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlKeisho2"));
+            };
+
+            Controls.prototype.ddlLeftDown = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlLeftDown"));
+            };
+
+            Controls.prototype.ddlRightDown = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlRightDown"));
+            };
+            return Controls;
+        })();
+        AtenaSealLayout.Controls = Controls;
+    })(AFA.AtenaSealLayout || (AFA.AtenaSealLayout = {}));
+    var AtenaSealLayout = AFA.AtenaSealLayout;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (AtenaSealLayout) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new AtenaSealLayout.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new AtenaSealLayout.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        AtenaSealLayout.ModeController = ModeController;
+    })(AFA.AtenaSealLayout || (AFA.AtenaSealLayout = {}));
+    var AtenaSealLayout = AFA.AtenaSealLayout;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (AtenaSealLayout) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new AtenaSealLayout.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        AtenaSealLayout.PublicProperties = PublicProperties;
+    })(AFA.AtenaSealLayout || (AFA.AtenaSealLayout = {}));
+    var AtenaSealLayout = AFA.AtenaSealLayout;
+})(AFA || (AFA = {}));
+</script></div>

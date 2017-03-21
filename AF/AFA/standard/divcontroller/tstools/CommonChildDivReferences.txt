@@ -1,0 +1,3 @@
+/// <reference path="../d.ts/URZCommonChildDiv.d.ts" />
+/// <reference path="../d.ts/URACommonChildDiv.d.ts" />
+/// <reference path="../d.ts/UAXCommonChildDiv.d.ts" />

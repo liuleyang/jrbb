@@ -1,0 +1,42 @@
+﻿{
+ "uiContainerName": "AFAUCF1010",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "裁判員候補者予定者抽選対象者出力",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMF1010",
+     "toLayoutTitle": "名簿調製用連携ファイル作成",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMF1010",
+     "layoutTitle": "名簿調製用連携ファイル作成",
+     "eventName": "バッチ起動",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "3",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMF1010",
+     "layoutTitle": "名簿調製用連携ファイル作成",
+     "eventName": "メニューへ戻る",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

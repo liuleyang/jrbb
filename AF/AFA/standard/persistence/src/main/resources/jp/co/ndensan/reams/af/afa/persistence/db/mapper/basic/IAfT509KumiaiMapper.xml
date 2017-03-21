@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT509Kumiaiマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者： @reamsid_L AF-0790-020 wanghj-->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT509KumiaiMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT509Kumiai">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT509KumiaiMapper.allColumns_AfT509Kumiai" />
+     FROM
+         rgaf."AfT509Kumiai"
+     WHERE
+         rgaf."AfT509Kumiai"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT509Kumiai">
+         "AfT509Kumiai"."kumiaiCode" as "afT509Kumiai_kumiaiCode",
+         "AfT509Kumiai"."insertDantaiCd" as "afT509Kumiai_insertDantaiCd",
+         "AfT509Kumiai"."insertTimestamp" as "afT509Kumiai_insertTimestamp",
+         "AfT509Kumiai"."insertReamsLoginId" as "afT509Kumiai_insertReamsLoginId",
+         "AfT509Kumiai"."insertContextId" as "afT509Kumiai_insertContextId",
+         "AfT509Kumiai"."isDeleted" as "afT509Kumiai_isDeleted",
+         "AfT509Kumiai"."updateCount" as "afT509Kumiai_updateCount",
+         "AfT509Kumiai"."lastUpdateTimestamp" as "afT509Kumiai_lastUpdateTimestamp",
+         "AfT509Kumiai"."lastUpdateReamsLoginId" as "afT509Kumiai_lastUpdateReamsLoginId",
+         "AfT509Kumiai"."kumiaiName" as "afT509Kumiai_kumiaiName",
+         "AfT509Kumiai"."kanaKumiaiName" as "afT509Kumiai_kanaKumiaiName",
+         "AfT509Kumiai"."searchKumiaiName" as "afT509Kumiai_searchKumiaiName",
+         "AfT509Kumiai"."jusho" as "afT509Kumiai_jusho"
+    </sql>
+
+
+    <!--テーブルAfT509Kumiaiの項目をAfT509KumiaiEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT509KumiaiEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT509KumiaiEntity" autoMapping="true">
+        <id property="kumiaiCode" column="afT509Kumiai_kumiaiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT509Kumiai_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT509Kumiai_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT509Kumiai_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT509Kumiai_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT509Kumiai_isDeleted" />
+        <result property="updateCount" column="afT509Kumiai_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT509Kumiai_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT509Kumiai_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kumiaiName" column="afT509Kumiai_kumiaiName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kanaKumiaiName" column="afT509Kumiai_kanaKumiaiName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="searchKumiaiName" column="afT509Kumiai_searchKumiaiName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="jusho" column="afT509Kumiai_jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+    </resultMap>
+
+</mapper>

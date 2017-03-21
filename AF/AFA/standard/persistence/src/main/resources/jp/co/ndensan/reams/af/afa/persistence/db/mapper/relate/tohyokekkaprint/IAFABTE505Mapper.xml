@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @reamsid_L AF-0280-010 lit -->
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.tohyokekkaprint.IAFABTE505Mapper">
+    <select resultOrdered="true" id="selectTohyokekkaPrintList" resultMap="resultMap_TohyokekkaPrintEntity"
+            parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.tohyokekkaprint.TohyokekkaPrintMybatisParameter">
+        WITH master AS (
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.allColumns_AfT112SenkyoninMeibo"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo"/>
+        FROM
+        rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        INNER JOIN rgaf."AfT100Shohon" AS "AfT100Shohon"
+        ON "AfT100Shohon"."shohonNo" = "AfT112SenkyoninMeibo"."shohonNo"
+        INNER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        <if test="!無投票選挙出力FLG">
+            AND "AfT111Senkyo"."mutohyoSenkyoFlag" IS FALSE
+        </if>
+        INNER JOIN rgaf."AfV113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        ON "AfT113SenkyoShikaku"."senkyoShurui" = (CASE WHEN "AfT100Shohon"."senkyoShurui" = '1' THEN '0' ELSE "AfT100Shohon"."senkyoShurui" END)
+        AND "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT113SenkyoShikaku"."shikibetsuCode"
+        LEFT OUTER JOIN rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON "AfT112SenkyoninMeibo"."shohonNo" = "AfT201TohyoJokyo"."shohonNo"
+        AND "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT201TohyoJokyo"."shikibetsuCode"
+        AND "AfT111Senkyo"."senkyoNo" = "AfT201TohyoJokyo"."senkyoNo"
+        LEFT OUTER JOIN rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+        ON "AfT100Shohon"."senkyoShurui" = "AfT504TohyokuRelation"."senkyoShurui"
+        AND "AfT112SenkyoninMeibo"."tohyokuCode" = "AfT504TohyokuRelation"."tohyokuCode"
+        LEFT OUTER JOIN rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+        ON "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"
+
+        WHERE "AfT112SenkyoninMeibo"."shohonNo" = #{抄本番号}
+        <if test="投票区コードTO.toString() != ''">
+            AND "AfT112SenkyoninMeibo"."tohyokuCode" <![CDATA[ <= ]]> #{投票区コードTO}
+        </if>
+        <if test="投票区コードFROM.toString() != ''">
+            AND "AfT112SenkyoninMeibo"."tohyokuCode" <![CDATA[ >= ]]> #{投票区コードFROM}
+        </if>
+        )
+        ,masterCodes AS (
+        SELECT
+        ARRAY_AGG(DISTINCT master."afT112SenkyoninMeibo_shikibetsuCode"::text) AS codeList
+        FROM
+        master
+        )
+        SELECT master.*
+        ,<include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+        ,'' AS "dummy"
+        FROM
+        master
+        INNER JOIN
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (select codeList from masterCodes)
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"
+        WHERE CARDINALITY( (select codeList from masterCodes) ) > 0
+        ${order順}
+    </select>
+
+    <resultMap id="resultMap_TohyokekkaPrintEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.tohyokekkaprint.TohyokekkaPrintEntity" autoMapping="true">
+        <id property="抄本Entity.shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="選挙Entity.shohonNo" column="afT111Senkyo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="選挙Entity.senkyoNo" column="afT111Senkyo_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id property="選挙人名簿Entity.shohonNo" column="afT112SenkyoninMeibo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="選挙人名簿Entity.groupCode" column="afT112SenkyoninMeibo_groupCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="選挙人名簿Entity.tohyokuCode" column="afT112SenkyoninMeibo_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="選挙人名簿Entity.satsu" column="afT112SenkyoninMeibo_satsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="選挙人名簿Entity.page" column="afT112SenkyoninMeibo_page" />
+        <id property="選挙人名簿Entity.gyo" column="afT112SenkyoninMeibo_gyo" />
+        <id property="選挙人名簿Entity.seq" column="afT112SenkyoninMeibo_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <id property="選挙資格Entity.senkyoShurui" column="afT113SenkyoShikaku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="選挙資格Entity.shikibetsuCode" column="afT113SenkyoShikaku_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="選挙資格Entity.seq" column="afT113SenkyoShikaku_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <id property="投票状況Entity.shohonNo" column="afT201TohyoJokyo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="投票状況Entity.shikibetsuCode" column="afT201TohyoJokyo_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="投票状況Entity.senkyoNo" column="afT201TohyoJokyo_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <association property="抄本Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <association property="選挙Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property="選挙人名簿Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.ResultMap_AfT112SenkyoninMeiboEntity"/>
+        <association property="選挙資格Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV113SenkyoShikakuMapper.ResultMap_AfT113SenkyoShikakuEntity"/>
+        <association property="投票状況Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.ResultMap_AfT201TohyoJokyoEntity"/>
+        <association property="宛名情報Entity" resultMap="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+        <association property="投票所Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"/>
+    </resultMap>
+</mapper>

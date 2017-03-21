@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 住民検索用のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+
+<!-- @reamsid_L AF-0230-020 qiuxy -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.juminkensaku.IJuminKensakuMapper">
+
+    <select resultOrdered="true" id="select検索結果一覧" resultMap="ResultMap_JuminKensakuEntity" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.juminkensaku.JuminKensakuMapperParameter" fetchSize="500">
+        <if test="is宛名情報あり">
+            <include refid="masterPSM" />
+            <include refid="senkyoninMeiboCTM" />
+            <include refid="tohyoJokyoCTM" />
+            <include refid="senkyoShikakuCTM" />
+            <include refid="fuzaishaTohyoShikakuCTM" />
+            select
+            distinct
+            master.*,
+            <include refid="columnsAF" />
+            FROM
+            <include refid="masterPSMJoinAF" />
+            ORDER BY
+            master."ShikibetsuTaisho_kanaMeisho",
+            "senkyonin_meibo"."tohyokuCode",
+            master."ShikibetsuTaisho_shikibetsuCode"
+        </if>
+
+        <if test="!is宛名情報あり">
+            <if test="is選挙情報あり">
+                <include refid="masterAF" />
+                ,masterCodes AS (
+                SELECT
+                ARRAY_AGG(DISTINCT master."shikibetsuCode"::text) AS codeList
+                FROM
+                master
+                )
+                select
+                distinct
+                master.*,
+                <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+                <!--<include refid="columnsAF" />-->
+                FROM
+                <include refid="masterAFJoinPSM" />
+
+                ORDER BY
+                <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."kanaMeisho",
+                "master"."tohyokuCode",
+                <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode"
+            </if>
+        </if>
+        <!--        limit
+        #{最大表示件数}-->
+    </select>
+
+    <sql id="masterAF">
+        <!--        WITH master AS (
+        <include refid="selectFromAfv112sForCTM" />
+        <include refid="whereAfv112sForSearch" />
+        <include refid="whereAfv112sForCTM" />
+        )
+        <include refid="senkyoShikakuCTM" />
+        <include refid="fuzaishaTohyoShikakuCTM" />
+        <include refid="tohyoJokyoCTM" />-->
+        WITH master AS (
+        SELECT
+        senkyonin_meibo.*
+        <include refid="columnsAF" />
+        FROM (
+        <include refid="selectFromAfv112sForCTM" />
+        <include refid="whereAfv112sForSearch" />
+        <include refid="whereAfv112sForCTM" />
+        ) AS senkyonin_meibo
+
+        INNER JOIN (
+        <include refid="selectFromAfv113sForCTM" />
+        <include refid="whereAfv113sForSearch" />
+        <include refid="whereAfv113sForCTM" />
+        ) AS senkyo_shikaku
+        ON senkyonin_meibo."shikibetsuCode" = senkyo_shikaku."shikibetsuCode"
+
+        <if test="is投票資格リスト1件以上">
+            INNER JOIN
+        </if>
+        <if test="!is投票資格リスト1件以上">
+            LEFT OUTER JOIN
+        </if>
+        (
+        <include refid="selectFromAfv114sForCTM" />
+        <include refid="whereAfv114sForSearch" />
+        <include refid="whereAfv114sForCTM" />
+        ) AS fuzaisha_tohyo_shikaku
+        ON senkyonin_meibo."shikibetsuCode" = fuzaisha_tohyo_shikaku."shikibetsuCode"
+
+        <if test="is投票状況情報あり">
+            INNER JOIN
+        </if>
+        <if test="!is投票状況情報あり">
+            LEFT JOIN
+        </if>
+        (
+        <include refid="selectFromWhereAfT201sForCTM" />
+        ) AS tohyo_jokyo
+        ON senkyonin_meibo."shikibetsuCode" = "tohyo_jokyo"."shikibetsuCode"
+
+        )
+    </sql>
+
+    <sql id="masterPSM">
+        WITH master AS (
+        SELECT
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+        FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />
+        AS "ShikibetsuTaisho"
+        )
+    </sql>
+
+    <sql id="masterAFJoinPSM">
+        master
+        INNER JOIN <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (select codeList from masterCodes)
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON master."shikibetsuCode" = "ShikibetsuTaisho"."shikibetsuCode"
+        <!--        INNER JOIN senkyo_shikaku
+        ON master."shikibetsuCode" = senkyo_shikaku."shikibetsuCode"
+        <if test="is投票資格リスト1件以上">
+            INNER JOIN fuzaisha_tohyo_shikaku
+        </if>
+        <if test="!is投票資格リスト1件以上">
+            LEFT OUTER JOIN fuzaisha_tohyo_shikaku
+        </if>
+        ON master."shikibetsuCode" = fuzaisha_tohyo_shikaku."shikibetsuCode"
+        <if test="is投票状況情報あり">
+            INNER JOIN tohyo_jokyo
+        </if>
+        <if test="!is投票状況情報あり">
+            LEFT JOIN tohyo_jokyo
+        </if>
+        ON master."shikibetsuCode" = "tohyo_jokyo"."shikibetsuCode"-->
+        WHERE CARDINALITY( (select codeList from masterCodes) ) > 0
+    </sql>
+
+
+    <sql id="masterPSMJoinAF">
+        master
+        INNER JOIN senkyonin_meibo
+        ON master."ShikibetsuTaisho_shikibetsuCode" = senkyonin_meibo."shikibetsuCode"
+        INNER JOIN senkyo_shikaku
+        ON master."ShikibetsuTaisho_shikibetsuCode" = senkyo_shikaku."shikibetsuCode"
+        <if test="is投票資格リスト1件以上">
+            INNER JOIN fuzaisha_tohyo_shikaku
+        </if>
+        <if test="!is投票資格リスト1件以上">
+            LEFT OUTER JOIN fuzaisha_tohyo_shikaku
+        </if>
+        ON master."ShikibetsuTaisho_shikibetsuCode" = fuzaisha_tohyo_shikaku."shikibetsuCode"
+        <if test="is投票状況情報あり">
+            INNER JOIN tohyo_jokyo
+        </if>
+        <if test="!is投票状況情報あり">
+            LEFT JOIN tohyo_jokyo
+        </if>
+        ON master."ShikibetsuTaisho_shikibetsuCode" = "tohyo_jokyo"."shikibetsuCode"
+    </sql>
+
+    <sql id="columnsAF">
+        <if test="is宛名情報あり">
+            "senkyonin_meibo"."shikibetsuCode" as "shikibetsuCode"
+            , "senkyonin_meibo"."satsu" as "satsu"
+            , "senkyonin_meibo"."page" as "page"
+            , "senkyonin_meibo"."gyo" as "gyo"
+            , "senkyonin_meibo"."tohyokuCode" as "tohyokuCode"
+        </if>
+        , "senkyo_shikaku"."senkyoShurui" as "senkyoShurui"
+        , "senkyo_shikaku"."shikakuKubun" as "shikakuKubun"
+        , "senkyo_shikaku"."meiboTorokuYMD" as "meiboTorokuYMD"
+        , "senkyo_shikaku"."hyojiYMD" as "hyojiYMD"
+        , "senkyo_shikaku"."hyojiJiyuCode" as "hyojiJiyuCode"
+        , "senkyo_shikaku"."masshoYMD" as "masshoYMD"
+        , "senkyo_shikaku"."masshoJiyuCode" as "masshoJiyuCode"
+        , "fuzaisha_tohyo_shikaku"."tohyoShikakuShurui" as "tohyoShikakuShurui"
+    </sql>
+
+    <!--選挙人名簿テーブル取得用-->
+    <sql id="senkyoninMeiboCTM">
+        , senkyonin_meibo AS (
+        <include refid="selectFromAfv112sForCTM" />
+        <include refid="whereAfv112sForSearch" />
+        <include refid="whereAfv112sForCTM" />
+        )
+    </sql>
+
+    <sql id="whereAfv112sForSearch">
+        WHERE
+        "afv112s"."shohonNo" = #{抄本番号}
+        <if test="isUsing識別コード">
+            and "afv112s"."shikibetsuCode" = #{識別コード}
+        </if>
+        <if test="isUsing投票区コード">
+            and "afv112s"."tohyokuCode" = #{投票区コード}
+        </if>
+        <if test="isUsing冊">
+            and "afv112s"."satsu" = #{冊}
+        </if>
+        <if test="isUsing頁">
+            and "afv112s"."page" = #{頁}
+        </if>
+        <if test="isUsing行">
+            and "afv112s"."gyo" = #{行}
+        </if>
+        <if test="is宛名情報あり">
+            AND  EXISTS (SELECT 1 FROM master WHERE master."ShikibetsuTaisho_shikibetsuCode" = afv112s."shikibetsuCode")
+        </if>
+    </sql>
+
+    <sql id="selectFromAfv112sForCTM">
+        SELECT
+        ivafv112s."insertDantaiCd",
+        ivafv112s."insertTimestamp",
+        ivafv112s."insertReamsLoginId",
+        ivafv112s."insertContextId",
+        ivafv112s."isDeleted",
+        ivafv112s."updateCount",
+        ivafv112s."lastUpdateTimestamp",
+        ivafv112s."lastUpdateReamsLoginId",
+        ivafv112s."shohonNo",
+        ivafv112s."groupCode",
+        ivafv112s."tohyokuCode",
+        ivafv112s.satsu,
+        ivafv112s.page,
+        ivafv112s.gyo,
+        ivafv112s.seq,
+        ivafv112s."shikibetsuCode",
+        ivafv112s."tohyokuHenkoMasshoFlag",
+        ivafv112s.renban,
+        ivafv112s.edaban
+        FROM ( SELECT afv112s."insertDantaiCd",
+        afv112s."insertTimestamp",
+        afv112s."insertReamsLoginId",
+        afv112s."insertContextId",
+        afv112s."isDeleted",
+        afv112s."updateCount",
+        afv112s."lastUpdateTimestamp",
+        afv112s."lastUpdateReamsLoginId",
+        afv112s."shohonNo",
+        afv112s."groupCode",
+        afv112s."tohyokuCode",
+        afv112s.satsu,
+        afv112s.page,
+        afv112s.gyo,
+        afv112s.seq,
+        afv112s."shikibetsuCode",
+        afv112s."tohyokuHenkoMasshoFlag",
+        afv112s.renban,
+        afv112s.edaban,
+        row_number() OVER (PARTITION BY afv112s."shohonNo", afv112s."groupCode", afv112s."tohyokuCode", afv112s.satsu, afv112s.page, afv112s.gyo ORDER BY afv112s.seq DESC) AS rrkno
+        FROM rgaf."AfT112SenkyoninMeibo" afv112s
+    </sql>
+
+    <sql id="whereAfv112sForCTM">
+        ) ivafv112s
+        WHERE ivafv112s.rrkno = 1 AND ivafv112s."isDeleted" = false
+    </sql>
+
+    <!--投票状況テーブル取得用-->
+    <sql id="tohyoJokyoCTM">
+        , tohyo_jokyo AS (
+        <include refid="selectFromWhereAfT201sForCTM" />
+        )
+    </sql>
+
+    <sql id="selectFromWhereAfT201sForCTM">
+        SELECT
+        <!--        "insertDantaiCd", "insertTimestamp", "insertReamsLoginId", "insertContextId",
+        "isDeleted", "updateCount", "lastUpdateTimestamp", "lastUpdateReamsLoginId",-->
+        "shohonNo", "shikibetsuCode", "senkyoNo", "tohyoJokyo", "tohyoJiyuCode",
+        "seikyuYMD", "seikyuHoho", "uketsukeNo", "kofuYMD", "kofuTime",
+        "kofuHoho", "shisetsuCode", "uketoriYMD", "juriYMD", "juriTime",
+        "juriHoho", "juriShisetsuShubetsu", "kikenYMD", "henkanYMD",
+        "tenjiFlag", "dairiTohyoAriFlag", "hojoshaShikibetsuCode1", "hojoshaShimei1",
+        "hojoshaShikibetsuCode2", "hojoshaShimei2", "kyohiJiyu", "shomeishoPrintFlag",
+        "sochiZumiFlag", "kijitsuFuzaiKubun", "reamsClientId"
+        FROM rgaf."AfT201TohyoJokyo"
+        WHERE
+        "AfT201TohyoJokyo"."shohonNo" = #{抄本番号}
+        <if test="isUsing冊">
+            and "AfT201TohyoJokyo"."satsu" = #{冊}
+        </if>
+        <if test="isUsing頁">
+            and "AfT201TohyoJokyo"."page" = #{頁}
+        </if>
+        <if test="isUsing行">
+            and "AfT201TohyoJokyo"."gyo" = #{行}
+        </if>
+        <if test="is投票状況リスト1件以上">
+            and "AfT201TohyoJokyo"."tohyoJokyo" in
+            <foreach collection="投票状況リスト" item="投票状況" open="(" separator="," close=")">
+                #{投票状況}
+            </foreach>
+        </if>
+        <if test="isUsing受付日From">
+            and "AfT201TohyoJokyo"."juriYMD" <![CDATA[>=]]> #{受付日From}
+        </if>
+        <if test="isUsing受付日To">
+            and "AfT201TohyoJokyo"."juriYMD" <![CDATA[<=]]> #{受付日To}
+        </if>
+        <if test="isUsing受付時刻From">
+            and "AfT201TohyoJokyo"."juriTime" <![CDATA[>=]]> #{受付時刻From}
+        </if>
+        <if test="isUsing受付時刻To">
+            and "AfT201TohyoJokyo"."juriTime" <![CDATA[<=]]> #{受付時刻To}
+        </if>
+        <if test="isUsing受付番号">
+            and "AfT201TohyoJokyo"."uketsukeNo" = #{受付番号}
+        </if>
+        <if test="isUsing施設コード">
+            and "AfT201TohyoJokyo"."shisetsuCode" = #{施設コード}
+        </if>
+        <if test="isUsing識別コード">
+            and "AfT201TohyoJokyo"."shikibetsuCode" = #{識別コード}
+        </if>
+        <if test="is宛名情報あり">
+            AND  EXISTS (SELECT 1 FROM master WHERE master."ShikibetsuTaisho_shikibetsuCode" =  "AfT201TohyoJokyo"."shikibetsuCode")
+        </if>
+        <!--        <if test="!is宛名情報あり">
+            <if test="is選挙情報あり">
+                AND  EXISTS (SELECT 1 FROM master WHERE master."shikibetsuCode" =  "AfT201TohyoJokyo"."shikibetsuCode")
+            </if>
+        </if>-->
+    </sql>
+
+    <!--選挙資格テーブル取得用-->
+    <sql id="senkyoShikakuCTM">
+        , senkyo_shikaku AS (
+        <include refid="selectFromAfv113sForCTM" />
+        <include refid="whereAfv113sForSearch" />
+        <include refid="whereAfv113sForCTM" />
+        )
+    </sql>
+
+    <sql id="whereAfv113sForSearch">
+        WHERE
+        "afv113s"."senkyoShurui" = #{選挙種類}
+        <if test="is選挙資格リスト1件以上">
+            and "afv113s"."shikakuKubun" in
+            <foreach collection="選挙資格リスト" item="選挙資格" open="(" separator="," close=")">
+                #{選挙資格}
+            </foreach>
+        </if>
+        <if test="isUsing名簿登録日From">
+            and "afv113s"."meiboTorokuYMD" <![CDATA[>=]]> #{名簿登録日From}
+        </if>
+        <if test="isUsing名簿登録日To">
+            and "afv113s"."meiboTorokuYMD" <![CDATA[<=]]> #{名簿登録日To}
+        </if>
+        <if test="isUsing登録事由コード">
+            and "afv113s"."torokuJiyuCode" <![CDATA[=]]> #{登録事由コード}
+        </if>
+        <if test="isUsing登録停止日From">
+            and "afv113s"."torokuTeishiYMD" <![CDATA[>=]]> #{登録停止日From}
+        </if>
+        <if test="isUsing登録停止日To">
+            and "afv113s"."torokuTeishiYMD" <![CDATA[<=]]> #{登録停止日To}
+        </if>
+        <if test="isUsing登録停止事由コード">
+            and "afv113s"."torokuTeishiJiyuCode" <![CDATA[=]]> #{登録停止事由コード}
+        </if>
+        <if test="isUsing抹消日From">
+            and "afv113s"."masshoYMD" <![CDATA[>=]]> #{抹消日From}
+        </if>
+        <if test="isUsing抹消日To">
+            and "afv113s"."masshoYMD" <![CDATA[<=]]> #{抹消日To}
+        </if>
+        <if test="isUsing抹消事由コード">
+            and "afv113s"."masshoJiyuCode" <![CDATA[=]]> #{抹消事由コード}
+        </if>
+        <if test="isUsing表示日From">
+            and "afv113s"."hyojiYMD" <![CDATA[>=]]> #{表示日From}
+        </if>
+        <if test="isUsing表示日To">
+            and "afv113s"."hyojiYMD" <![CDATA[<=]]> #{表示日To}
+        </if>
+        <if test="isUsing表示事由コード">
+            and "afv113s"."hyojiJiyuCode" <![CDATA[=]]> #{表示事由コード}
+        </if>
+        <if test="isUsing消除予定日From">
+            and "afv113s"."hyojiShojoYoteiYMD" <![CDATA[>=]]> #{消除予定日From}
+        </if>
+        <if test="isUsing消除予定日To">
+            and "afv113s"."hyojiShojoYoteiYMD" <![CDATA[<=]]> #{消除予定日To}
+        </if>
+        <if test="isUsing表示消除日From">
+            and "afv113s"."hyojiShojoYMD" <![CDATA[>=]]> #{表示消除日From}
+        </if>
+        <if test="isUsing表示消除日To">
+            and "afv113s"."hyojiShojoYMD" <![CDATA[<=]]> #{表示消除日To}
+        </if>
+        <if test="isUsing刑期終了日From">
+            and "afv113s"."keikiShuryoYMD" <![CDATA[>=]]> #{刑期終了日From}
+        </if>
+        <if test="isUsing刑期終了日To">
+            and "afv113s"."keikiShuryoYMD" <![CDATA[<=]]> #{刑期終了日To}
+        </if>
+        <if test="is2刑持ち">
+            and "afv113s"."nikeimochiFlag" = TRUE
+        </if>
+        <if test="is宛名情報あり">
+            AND EXISTS (SELECT 1 FROM master WHERE master."ShikibetsuTaisho_shikibetsuCode" =  afv113s."shikibetsuCode")
+        </if>
+        <!--        <if test="!is宛名情報あり">
+            <if test="is選挙情報あり">
+                AND EXISTS (SELECT 1 FROM master WHERE master."shikibetsuCode" =  afv113s."shikibetsuCode")
+            </if>
+        </if>-->
+    </sql>
+
+    <sql id="selectFromAfv113sForCTM">
+        SELECT
+        ivafv113s."insertDantaiCd",
+        ivafv113s."insertTimestamp",
+        ivafv113s."insertReamsLoginId",
+        ivafv113s."insertContextId",
+        ivafv113s."isDeleted",
+        ivafv113s."updateCount",
+        ivafv113s."lastUpdateTimestamp",
+        ivafv113s."lastUpdateReamsLoginId",
+        ivafv113s."senkyoShurui",
+        ivafv113s."shikibetsuCode",
+        ivafv113s.seq,
+        ivafv113s."shikakuKubun",
+        ivafv113s."tohyokuCode",
+        ivafv113s."meiboTorokuYMD",
+        ivafv113s."torokuJiyuCode",
+        ivafv113s."torokuTeishiYMD",
+        ivafv113s."torokuTeishiJiyuCode",
+        ivafv113s."hyojiYMD",
+        ivafv113s."hyojiJiyuCode",
+        ivafv113s."hyojiShojoYMD",
+        ivafv113s."hyojiShojoYoteiYMD",
+        ivafv113s."masshoYMD",
+        ivafv113s."masshoJiyuCode",
+        ivafv113s."keikiShuryoYMD",
+        ivafv113s."nikeimochiFlag",
+        ivafv113s."dataTorokuYMD"
+        FROM ( SELECT
+        afv113s."insertDantaiCd",
+        afv113s."insertTimestamp",
+        afv113s."insertReamsLoginId",
+        afv113s."insertContextId",
+        afv113s."isDeleted",
+        afv113s."updateCount",
+        afv113s."lastUpdateTimestamp",
+        afv113s."lastUpdateReamsLoginId",
+        afv113s."senkyoShurui",
+        afv113s."shikibetsuCode",
+        afv113s.seq,
+        afv113s."shikakuKubun",
+        afv113s."tohyokuCode",
+        afv113s."meiboTorokuYMD",
+        afv113s."torokuJiyuCode",
+        afv113s."torokuTeishiYMD",
+        afv113s."torokuTeishiJiyuCode",
+        afv113s."hyojiYMD",
+        afv113s."hyojiJiyuCode",
+        afv113s."hyojiShojoYMD",
+        afv113s."hyojiShojoYoteiYMD",
+        afv113s."masshoYMD",
+        afv113s."masshoJiyuCode",
+        afv113s."keikiShuryoYMD",
+        afv113s."nikeimochiFlag",
+        afv113s."dataTorokuYMD",
+        row_number() OVER (PARTITION BY afv113s."senkyoShurui", afv113s."shikibetsuCode" ORDER BY afv113s.seq DESC) AS rrkno
+        FROM rgaf."AfT113SenkyoShikaku" afv113s
+    </sql>
+
+    <sql id="whereAfv113sForCTM">
+        ) ivafv113s
+        WHERE ivafv113s.rrkno = 1 AND ivafv113s."isDeleted" = false
+    </sql>
+
+    <!--不在者投票資格テーブル取得用-->
+    <sql id="fuzaishaTohyoShikakuCTM">
+        , fuzaisha_tohyo_shikaku AS (
+        <include refid="selectFromAfv114sForCTM" />
+        <include refid="whereAfv114sForSearch" />
+        <include refid="whereAfv114sForCTM" />
+        )
+    </sql>
+
+    <sql id="whereAfv114sForSearch">
+        WHERE 1=1
+        <if test="is宛名情報あり">
+            AND EXISTS (SELECT 1 FROM master WHERE master."ShikibetsuTaisho_shikibetsuCode" =  afv114f."shikibetsuCode")
+        </if>
+        <!--        <if test="!is宛名情報あり">
+            <if test="is選挙情報あり">
+                EXISTS (SELECT 1 FROM master WHERE master."shikibetsuCode" =  afv114f."shikibetsuCode")
+            </if>
+        </if>-->
+        <if test="is投票資格リスト1件以上">
+            and "afv114f"."tohyoShikakuShurui" in
+            <foreach collection="投票資格リスト" item="投票資格" open="(" separator="," close=")">
+                #{投票資格}
+            </foreach>
+        </if>
+    </sql>
+
+    <sql id="selectFromAfv114sForCTM">
+        SELECT
+        ivafv114f."insertDantaiCd",
+        ivafv114f."insertTimestamp",
+        ivafv114f."insertReamsLoginId",
+        ivafv114f."insertContextId",
+        ivafv114f."isDeleted",
+        ivafv114f."updateCount",
+        ivafv114f."lastUpdateTimestamp",
+        ivafv114f."lastUpdateReamsLoginId",
+        ivafv114f."shikibetsuCode",
+        ivafv114f."tohyoShikakuShurui",
+        ivafv114f.seq,
+        ivafv114f."kofuYMD",
+        ivafv114f."kofuNo",
+        ivafv114f."shikakuTorokuYMD",
+        ivafv114f."shikakuManryoYMD",
+        ivafv114f."shikakuMasshoYMD",
+        ivafv114f."shikakuMasshoJiyuCode"
+        FROM ( SELECT afv114f."insertDantaiCd",
+        afv114f."insertTimestamp",
+        afv114f."insertReamsLoginId",
+        afv114f."insertContextId",
+        afv114f."isDeleted",
+        afv114f."updateCount",
+        afv114f."lastUpdateTimestamp",
+        afv114f."lastUpdateReamsLoginId",
+        afv114f."shikibetsuCode",
+        afv114f."tohyoShikakuShurui",
+        afv114f.seq,
+        afv114f."kofuYMD",
+        afv114f."kofuNo",
+        afv114f."shikakuTorokuYMD",
+        afv114f."shikakuManryoYMD",
+        afv114f."shikakuMasshoYMD",
+        afv114f."shikakuMasshoJiyuCode",
+        row_number() OVER (PARTITION BY afv114f."shikibetsuCode", afv114f."tohyoShikakuShurui" ORDER BY afv114f.seq DESC) AS rrkno
+        FROM rgaf."AfT114FuzaishaTohyoShikaku" afv114f
+    </sql>
+
+    <sql id="whereAfv114sForCTM">
+        ) ivafv114f
+        WHERE ivafv114f.rrkno = 1 AND ivafv114f."isDeleted" = false
+    </sql>
+
+    <resultMap id="ResultMap_JuminKensakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.JuminKensakuEntity" autoMapping="true">
+        <id property="shikibetsuTaisho.shikibetsuCode" column="ShikibetsuTaisho_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="page" column="page"/>
+        <result property="gyo" column="gyo"/>
+        <result property="senkyoShurui" column="senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shikakuKubun" column="shikakuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="meiboTorokuYMD" column="meiboTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiYMD" column="hyojiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiJiyuCode" column="hyojiJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="masshoYMD" column="masshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="masshoJiyuCode" column="masshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shinseiNo" column="shinseiNo"/>
+        <result property="tohyoShikakuShurui" column="tohyoShikakuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <association property = "shikibetsuTaisho" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+    </resultMap>
+</mapper>

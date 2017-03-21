@@ -1,0 +1,111 @@
+<div class="JSControl UzCompositeControl FloatLeft Width-XS" id="defaultLayout" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;LabelSealSelectDialog&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;labelSealSelectDialogModel&quot;,&quot;controlName&quot;:&quot;LabelSealSelectDialog.LabelSealSelectDialogModel&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;100px&quot;,&quot;minHeight&quot;:&quot;200px&quot;,&quot;widthPercent&quot;:&quot;80&quot;,&quot;heightPercent&quot;:&quot;80&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-control-name="AFA.LabelSealSelectDialog" data-is-composite-control="true"><div class="StateChangable UzPanel JSControl FloatLeft UzPanelAndText marginTop-Default panelMarginTop-M marginBottom-Default panelMarginBottom-M marginLeft-Default marginRight-Default Panel-Shadow UzCommonChildDivPanel Width-G1 UzCompositeChild" id="LabelSealSelectDialog" style="width: auto; margin-top: 0px; margin-bottom: 0px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;LabelSealSelectDialog&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G1&quot;,&quot;marginLeft&quot;:&quot;Default&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;LabelSealSelectDialog&quot;,&quot;title&quot;:&quot;ラベルシール印刷確認&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;LabelSealSelectDialog&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/LabelSealSelectDialog/onLoad&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onClick_btnCancel&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/LabelSealSelectDialog/onClick_btnCancel&quot;},{&quot;eventName&quot;:&quot;onClick_btnPrint&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/LabelSealSelectDialog/onClick_btnPrint&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;LabelSealSelectDialogModel&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;focusPositionID&quot;:&quot;createFile&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="LabelSealSelectDialog_panel_header_area" style="display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">ラベルシール印刷確認</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="LabelSealSelectDialog_panel_body_area"><div class="JSControl UzCompositeControl FloatLeft Width-XS marginLeft-XS marginTop-XS marginRight-XS marginBottom-0px" id="ccdLabelSealPrintTaisho" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdLabelSealPrintTaisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;XS&quot;,&quot;selectControlID&quot;:&quot;ccdLabelSealPrintTaisho&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;LabelSealPrintTaisho&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;100px&quot;,&quot;minHeight&quot;:&quot;200px&quot;,&quot;widthPercent&quot;:&quot;80&quot;,&quot;heightPercent&quot;:&quot;80&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-control-name="AFA.LabelSealPrintTaisho" data-is-composite-control="true"></div><div class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdSealPosition" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdSealPosition&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdSealPosition&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;UAX&quot;,&quot;controlName&quot;:&quot;AtenaSealPositionGuide&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;key_Mensu&quot;,&quot;controlName&quot;:&quot;AtenaSealPositionGuide.txtHdnMensu&quot;},{&quot;key&quot;:&quot;key_StartPosition&quot;,&quot;controlName&quot;:&quot;AtenaSealPositionGuide.txtHdnPosition&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;CloseOk&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;CloseCancel&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;330px&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[{&quot;modeKey&quot;:&quot;ScreenMode&quot;,&quot;modeValue&quot;:&quot;UsedAsDiv&quot;}],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;AtenaSealGuide_title&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;AtenaSealGuide_canOpenAndClose&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;AtenaSealGuide_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;AtenaSealGuide_eraseBorder&quot;,&quot;editType&quot;:1}]},&quot;AtenaSealGuide_title&quot;:&quot;印字位置の設定&quot;,&quot;AtenaSealGuide_canOpenAndClose&quot;:false,&quot;AtenaSealGuide_width&quot;:&quot;G3&quot;,&quot;AtenaSealGuide_eraseBorder&quot;:false}" data-control-name="UAX.AtenaSealPositionGuide" data-is-composite-control="true"></div><button class="UzButton JSControl controlMargin-M Width-S ClearFloat FloatRight marginLeft-XS marginRight-XS UzCompositeChild" id="btnPrint" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnPrint&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;wrap&quot;:true,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;btnPrint&quot;,&quot;onClick&quot;:&quot;onClick_btnPrint&quot;,&quot;text&quot;:&quot;印刷する&quot;}"><span>印刷する</span></button><button class="UzButton JSControl controlMargin-M Width-S FloatRight marginLeft-XS marginRight-XS UzCompositeChild" id="btnCancel" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnCancel&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;btnCancel&quot;,&quot;onClick&quot;:&quot;onClick_btnCancel&quot;,&quot;text&quot;:&quot;取り消す&quot;}"><span>取り消す</span></button></div></div>    
+   
+     
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['LABELSEALSELECTDIALOG'] = {};
+AFA['LABELSEALSELECTDIALOG'].LabelSealSelectDialogRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_LabelSealSelectDialog').getProperty();parameter0.ccdLabelSealPrintTaisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdLabelSealPrintTaisho').getPostParameter();parameter0.ccdSealPosition = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdSealPosition').getPostParameter();parameter0.btnPrint = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnPrint').getProperty();parameter0.btnCancel = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnCancel').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (LabelSealSelectDialog) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClick_btnPrint = function () {
+                return "onClick_btnPrint";
+            };
+
+            Events.onClick_btnCancel = function () {
+                return "onClick_btnCancel";
+            };
+            return Events;
+        })();
+        LabelSealSelectDialog.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "LabelSealSelectDialog";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.LabelSealSelectDialog.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.LabelSealSelectDialog.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.LabelSealSelectDialog = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdLabelSealPrintTaisho = function () {
+                return new AFA.LabelSealPrintTaisho.ModeController(this.convFiledName("ccdLabelSealPrintTaisho"));
+            };
+
+            Controls.prototype.ccdSealPosition = function () {
+                return new UAX.AtenaSealPositionGuide.ModeController(this.convFiledName("ccdSealPosition"));
+            };
+
+            Controls.prototype.btnPrint = function () {
+                return new UZA.Button(this.convFiledName("btnPrint"));
+            };
+
+            Controls.prototype.btnCancel = function () {
+                return new UZA.Button(this.convFiledName("btnCancel"));
+            };
+            return Controls;
+        })();
+        LabelSealSelectDialog.Controls = Controls;
+    })(AFA.LabelSealSelectDialog || (AFA.LabelSealSelectDialog = {}));
+    var LabelSealSelectDialog = AFA.LabelSealSelectDialog;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (LabelSealSelectDialog) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new LabelSealSelectDialog.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new LabelSealSelectDialog.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        LabelSealSelectDialog.ModeController = ModeController;
+    })(AFA.LabelSealSelectDialog || (AFA.LabelSealSelectDialog = {}));
+    var LabelSealSelectDialog = AFA.LabelSealSelectDialog;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (LabelSealSelectDialog) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new LabelSealSelectDialog.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        LabelSealSelectDialog.PublicProperties = PublicProperties;
+    })(AFA.LabelSealSelectDialog || (AFA.LabelSealSelectDialog = {}));
+    var LabelSealSelectDialog = AFA.LabelSealSelectDialog;
+})(AFA || (AFA = {}));
+</script></div>

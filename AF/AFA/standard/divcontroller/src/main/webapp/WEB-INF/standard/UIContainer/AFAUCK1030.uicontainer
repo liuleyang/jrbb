@@ -1,0 +1,42 @@
+﻿{
+ "uiContainerName": "AFAUCK1030",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "海区漁業調整委員会委員選挙時登録",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMK1030",
+     "toLayoutTitle": "海区漁業調整委員会委員選挙時登録",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMK1030",
+     "layoutTitle": "海区漁業調整委員会委員選挙時登録",
+     "eventName": "バッチ起動",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "3",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMK1030",
+     "layoutTitle": "海区漁業調整委員会委員選挙時登録",
+     "eventName": "メニューへ戻る",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

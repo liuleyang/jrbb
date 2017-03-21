@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jp.co.ndensan.reams.af.afx.persistence.mapper.IKobetsuJikoSenkyoMapper">
+
+    <select resultOrdered="true" id="select" resultMap="KobetsuJikoSenkyoEntity"
+            parameterType="jp.co.ndensan.reams.af.afx.definition.mybatis.KobetsuJikoSenkyoFinderParameter"   fetchSize="1000">
+        SELECT
+        "SenkyoShikaku"."shikibetsuCode" as "shikibetsuCode",
+        "SenkyoShikaku"."shikakuKubun" as "shikakuKubun"
+        FROM  rgaf."AfT113SenkyoShikaku" as "SenkyoShikaku"
+        WHERE
+        NOT EXISTS (
+        SELECT 'X'
+        FROM rgaf."AfT113SenkyoShikaku" as "AfT113"
+        WHERE
+        "SenkyoShikaku"."senkyoShurui" = "AfT113"."senkyoShurui"
+        AND "SenkyoShikaku"."shikibetsuCode" = "AfT113"."shikibetsuCode"
+        AND "SenkyoShikaku"."seq" <![CDATA[<]]> "AfT113"."seq"
+        AND (#{kijunbi} <![CDATA[>=]]> "AfT113"."dataTorokuYMD")
+        )
+        AND "SenkyoShikaku"."isDeleted" = FALSE
+        AND "SenkyoShikaku"."senkyoShurui" = '0'
+        AND "SenkyoShikaku"."shikibetsuCode" IN ${shikibetsuCodes}
+        AND (#{kijunbi} <![CDATA[>=]]> "SenkyoShikaku"."dataTorokuYMD")
+        ORDER BY "SenkyoShikaku"."shikibetsuCode"
+    </select>
+
+    <resultMap id="KobetsuJikoSenkyoEntity" type="jp.co.ndensan.reams.af.afx.entity.renkeijuki.KobetsuJikoSenkyoEntity" >
+        <id property="shikibetsuCode"   column="shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler" />
+        <result property="shikakuKubun" column="shikakuKubun"   typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler" />
+    </resultMap>
+
+</mapper>

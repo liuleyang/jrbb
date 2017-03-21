@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT401ChokusetsuSeikyuマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT401ChokusetsuSeikyuMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT401ChokusetsuSeikyu">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT401ChokusetsuSeikyuMapper.allColumns_AfT401ChokusetsuSeikyu" />
+     FROM
+         rgaf."AfT401ChokusetsuSeikyu"
+     WHERE
+         rgaf."AfT401ChokusetsuSeikyu"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT401ChokusetsuSeikyu">
+         "AfT401ChokusetsuSeikyu"."seikyuNo" as "afT401ChokusetsuSeikyu_seikyuNo",
+         "AfT401ChokusetsuSeikyu"."insertDantaiCd" as "afT401ChokusetsuSeikyu_insertDantaiCd",
+         "AfT401ChokusetsuSeikyu"."insertTimestamp" as "afT401ChokusetsuSeikyu_insertTimestamp",
+         "AfT401ChokusetsuSeikyu"."insertReamsLoginId" as "afT401ChokusetsuSeikyu_insertReamsLoginId",
+         "AfT401ChokusetsuSeikyu"."insertContextId" as "afT401ChokusetsuSeikyu_insertContextId",
+         "AfT401ChokusetsuSeikyu"."isDeleted" as "afT401ChokusetsuSeikyu_isDeleted",
+         "AfT401ChokusetsuSeikyu"."updateCount" as "afT401ChokusetsuSeikyu_updateCount",
+         "AfT401ChokusetsuSeikyu"."lastUpdateTimestamp" as "afT401ChokusetsuSeikyu_lastUpdateTimestamp",
+         "AfT401ChokusetsuSeikyu"."lastUpdateReamsLoginId" as "afT401ChokusetsuSeikyu_lastUpdateReamsLoginId",
+         "AfT401ChokusetsuSeikyu"."seikyuYMD" as "afT401ChokusetsuSeikyu_seikyuYMD",
+         "AfT401ChokusetsuSeikyu"."seikyuMei" as "afT401ChokusetsuSeikyu_seikyuMei",
+         "AfT401ChokusetsuSeikyu"."seikyuNaiyo" as "afT401ChokusetsuSeikyu_seikyuNaiyo",
+         "AfT401ChokusetsuSeikyu"."kofuYMD" as "afT401ChokusetsuSeikyu_kofuYMD",
+         "AfT401ChokusetsuSeikyu"."teishutsuKigenYMD" as "afT401ChokusetsuSeikyu_teishutsuKigenYMD",
+         "AfT401ChokusetsuSeikyu"."kofuSoshikiCode" as "afT401ChokusetsuSeikyu_kofuSoshikiCode",
+         "AfT401ChokusetsuSeikyu"."torokuZumiFlag" as "afT401ChokusetsuSeikyu_torokuZumiFlag",
+         "AfT401ChokusetsuSeikyu"."shohonNo" as "afT401ChokusetsuSeikyu_shohonNo"
+    </sql>
+
+
+    <!--テーブルAfT401ChokusetsuSeikyuの項目をAfT401ChokusetsuSeikyuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT401ChokusetsuSeikyuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT401ChokusetsuSeikyuEntity" autoMapping="true">
+        <id property="seikyuNo" column="afT401ChokusetsuSeikyu_seikyuNo" />
+        <result property="insertDantaiCd" column="afT401ChokusetsuSeikyu_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT401ChokusetsuSeikyu_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT401ChokusetsuSeikyu_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT401ChokusetsuSeikyu_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT401ChokusetsuSeikyu_isDeleted" />
+        <result property="updateCount" column="afT401ChokusetsuSeikyu_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT401ChokusetsuSeikyu_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT401ChokusetsuSeikyu_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="seikyuYMD" column="afT401ChokusetsuSeikyu_seikyuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="seikyuMei" column="afT401ChokusetsuSeikyu_seikyuMei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="seikyuNaiyo" column="afT401ChokusetsuSeikyu_seikyuNaiyo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kofuYMD" column="afT401ChokusetsuSeikyu_kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="teishutsuKigenYMD" column="afT401ChokusetsuSeikyu_teishutsuKigenYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kofuSoshikiCode" column="afT401ChokusetsuSeikyu_kofuSoshikiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="torokuZumiFlag" column="afT401ChokusetsuSeikyu_torokuZumiFlag" />
+        <result property="shohonNo" column="afT401ChokusetsuSeikyu_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,70 @@
+﻿{
+ "uiContainerName": "AFAUCE4020",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "バーコード一括当日投票入力",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGME4020",
+     "toLayoutTitle": "バーコード一括当日投票入力",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME4020",
+     "layoutTitle": "バーコード一括当日投票入力",
+     "eventName": "処理終了",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGM01000",
+     "toLayoutTitle": "処理完了",
+     "toState": "default"
+    },
+    {
+     "id": "3",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "再検索",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGME4020",
+     "toLayoutTitle": "バーコード一括当日投票入力",
+     "toState": "default"
+    },
+    {
+     "id": "4",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGM01000",
+     "layoutTitle": "処理完了",
+     "eventName": "完了",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "5",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME4020",
+     "layoutTitle": "バーコード一括当日投票入力",
+     "eventName": "メニューへ戻る",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

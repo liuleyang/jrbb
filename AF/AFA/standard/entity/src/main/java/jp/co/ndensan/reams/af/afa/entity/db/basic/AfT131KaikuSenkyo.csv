@@ -1,0 +1,6 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+nendo,UDD053Year,RYear,,,,,年度,A
+sakuseiYMD,UDD015YMD,FlexibleDate,,,,,名簿作成年月日,A
+kakuteiYMD,UDD015YMD,FlexibleDate,,,,,名簿確定年月日,A
+saishinkaYMD,UDD015YMD,FlexibleDate,,,,,名簿最新化年月日,A
+senkyojiTorokuFlag,bool,boolean,,,,,選挙時登録フラグ,A

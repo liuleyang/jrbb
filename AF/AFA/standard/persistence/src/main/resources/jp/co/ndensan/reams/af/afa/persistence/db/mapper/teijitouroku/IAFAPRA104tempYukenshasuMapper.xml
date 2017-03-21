@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0010-020 wangm -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFAPRA104tempYukenshasuMapper">
+
+
+    <!--有権者数調べのデータを取得 -->
+    <select resultOrdered="true" id="selectDataForYukenshasuList"  resultMap="ResultMap_AFAPRA104tempEntity">
+        SELECT
+        *
+        FROM
+        (
+        SELECT
+        <include refid="head_column"/>,
+        "地区コード",
+        "地区名称",
+        false as "合計ページ",
+        <include refid="sum_sql"/>
+        FROM "TempAFAPRA104"
+        GROUP BY
+        <include refid="head_column"/>,
+        "地区コード"  ,
+        "地区名称"
+        UNION
+        SELECT
+        <include refid="head_column"/>,
+        '' AS "地区コード",
+        '' AS "地区名称",
+        true as "合計ページ",
+        <include refid="sum_sql"/>
+        FROM "TempAFAPRA104"
+        GROUP BY
+        <include refid="head_column"/>
+        ) as "foo"
+        ORDER BY
+        "選挙番号" ASC,
+        "合計ページ" ASC,
+        "投票区コード" ASC,
+        "地区コード" ASC
+    </select>
+
+    <sql id="head_column">
+        "選挙種類",
+        "投票年月日",
+        "選挙番号",
+        "選挙名称",
+        "名簿基準年月日",
+        "投票区コード",
+        "投票区名称"
+    </sql>
+
+    <sql id="sum_sql">
+        SUM (CASE WHEN    <include refid="select_登録者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "登録者_男",
+        SUM (CASE WHEN    <include refid="select_登録者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "登録者_女",
+        SUM (CASE WHEN    <include refid="select_追加登録者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "追加登録者_男",
+        SUM (CASE WHEN    <include refid="select_追加登録者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "追加登録者_女",
+        SUM (CASE WHEN    <include refid="select_死亡"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "死亡_男",
+        SUM (CASE WHEN    <include refid="select_死亡"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "死亡_女",
+        SUM (CASE WHEN    <include refid="select_四ヶ月抹消"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "四ヶ月抹消_男",
+        SUM (CASE WHEN    <include refid="select_四ヶ月抹消"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "四ヶ月抹消_女",
+        SUM (CASE WHEN    <include refid="select_当日四ヶ月抹消"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "当日四ヶ月抹消_男",
+        SUM (CASE WHEN    <include refid="select_当日四ヶ月抹消"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "当日四ヶ月抹消_女",
+        SUM (CASE WHEN    <include refid="select_誤載"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "誤載_男",
+        SUM (CASE WHEN    <include refid="select_誤載"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "誤載_女",
+        SUM (CASE WHEN    <include refid="select_国籍喪失"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "国籍喪失_男",
+        SUM (CASE WHEN    <include refid="select_国籍喪失"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "国籍喪失_女",
+        SUM (CASE WHEN    <include refid="select_その他抹消"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "その他抹消_男",
+        SUM (CASE WHEN    <include refid="select_その他抹消"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "その他抹消_女",
+        SUM (CASE WHEN    <include refid="select_法11条関連"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "法11条関連_男",
+        SUM (CASE WHEN    <include refid="select_法11条関連"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "法11条関連_女",
+        SUM (CASE WHEN    <include refid="select_二重登録"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "二重登録_男",
+        SUM (CASE WHEN    <include refid="select_二重登録"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "二重登録_女",
+        SUM (CASE WHEN    <include refid="select_抹消者総"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "抹消者総_男",
+        SUM (CASE WHEN    <include refid="select_抹消者総"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "抹消者総_女",
+        SUM (CASE WHEN    <include refid="select_失権失格者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "失権失格者_男",
+        SUM (CASE WHEN    <include refid="select_失権失格者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "失権失格者_女",
+        SUM (CASE WHEN    <include refid="select_選挙期日登録者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "選挙期日登録者_男",
+        SUM (CASE WHEN    <include refid="select_選挙期日登録者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "選挙期日登録者_女",
+        SUM (CASE WHEN    <include refid="select_n内転出者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "n内転出者_男",
+        SUM (CASE WHEN    <include refid="select_n内転出者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "n内転出者_女",
+        SUM (CASE WHEN    <include refid="select_n外転出者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "n外転出者_男",
+        SUM (CASE WHEN    <include refid="select_n外転出者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "n外転出者_女",
+        SUM (CASE WHEN    <include refid="select_国外転出者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "国外転出者_男",
+        SUM (CASE WHEN    <include refid="select_国外転出者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "国外転出者_女",
+        SUM (CASE WHEN    <include refid="select_職権削除者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "職権削除者_男",
+        SUM (CASE WHEN    <include refid="select_職権削除者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "職権削除者_女",
+        SUM (CASE WHEN    <include refid="select_加算有権者_抹消者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "加算有権者_抹消者_男",
+        SUM (CASE WHEN    <include refid="select_加算有権者_抹消者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "加算有権者_抹消者_女",
+        SUM (CASE WHEN    <include refid="select_加算有権者_失権者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "加算有権者_失権者_男",
+        SUM (CASE WHEN    <include refid="select_加算有権者_失権者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "加算有権者_失権者_女",
+        SUM (CASE WHEN    <include refid="select_加算有権者_計"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "加算有権者_計_男",
+        SUM (CASE WHEN    <include refid="select_加算有権者_計"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "加算有権者_計_女",
+        SUM (CASE WHEN    <include refid="select_当日有権者"/> AND    <include refid="select_male"/> THEN 1 ELSE 0 END) AS "当日有権者_男",
+        SUM (CASE WHEN    <include refid="select_当日有権者"/> AND    <include refid="select_female"/> THEN 1 ELSE 0 END) AS "当日有権者_女"
+    </sql>
+
+    <!--登録者の判定-->
+    <sql id="select_登録者">
+        "登録者区分"=true
+    </sql>
+    <!--追加登録者の判定-->
+    <sql id="select_追加登録者">
+        "追加登録者区分"=true
+    </sql>
+    <!--死亡の判定-->
+    <sql id="select_死亡">
+        "死亡区分"=true
+    </sql>
+    <!--四ヶ月抹消の判定-->
+    <sql id="select_四ヶ月抹消">
+        "四ヶ月抹消区分"=true
+    </sql>
+    <!--当日四ヶ月抹消の判定-->
+    <sql id="select_当日四ヶ月抹消">
+        "当日四ヶ月抹消区分"=true
+    </sql>
+    <!--誤載の判定-->
+    <sql id="select_誤載">
+        "誤載区分"=true
+    </sql>
+    <!--国籍喪失の判定-->
+    <sql id="select_国籍喪失">
+        "国籍喪失区分"=true
+    </sql>
+    <!--その他抹消の判定-->
+    <sql id="select_その他抹消">
+        "その他抹消区分"=true
+    </sql>
+    <!--法11条関連の判定-->
+    <sql id="select_法11条関連">
+        "法11条関連区分"=true
+    </sql>
+    <!--二重登録の判定-->
+    <sql id="select_二重登録">
+        "二重登録区分"=true
+    </sql>
+    <!--抹消者総の判定-->
+    <sql id="select_抹消者総">
+        "抹消者総区分"=true
+    </sql>
+    <!--失権失格者の判定-->
+    <sql id="select_失権失格者">
+        "失権失格者区分"=true
+    </sql>
+    <!--選挙期日登録者の判定-->
+    <sql id="select_選挙期日登録者">
+        "選挙期日登録者区分"=true
+    </sql>
+    <!--n内転出者の判定-->
+    <sql id="select_n内転出者">
+        "n内転出者区分"=true
+    </sql>
+    <!--n外転出者の判定-->
+    <sql id="select_n外転出者">
+        "n外転出者区分"=true
+    </sql>
+    <!--国外転出者の判定-->
+    <sql id="select_国外転出者">
+        "国外転出者区分"=true
+    </sql>
+    <!--職権削除者の判定-->
+    <sql id="select_職権削除者">
+        "職権削除者区分"=true
+    </sql>
+    <!--加算有権者_抹消者の判定-->
+    <sql id="select_加算有権者_抹消者">
+        "加算有権者_抹消者区分"=true
+    </sql>
+    <!--加算有権者_失権者の判定-->
+    <sql id="select_加算有権者_失権者">
+        "加算有権者_失権者区分"=true
+    </sql>
+    <!--加算有権者_計の判定-->
+    <sql id="select_加算有権者_計">
+        "加算有権者_計区分"=true
+    </sql>
+    <!--当日有権者の判定-->
+    <sql id="select_当日有権者">
+        "当日有権者区分"=true
+    </sql>
+
+    <!--男の判定-->
+    <sql id="select_male">
+        "性別"='1'
+    </sql>
+    <!--女の判定-->
+    <sql id="select_female">
+        "性別"='2'
+    </sql>
+
+
+
+    <resultMap id="ResultMap_AFAPRA104tempEntity" type="jp.co.ndensan.reams.af.afa.entity.xml.teijitouroku.AFAPRA104Entity" autoMapping="true">
+        <id property="選挙番号"                   column="選挙番号"          typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="投票区コード"               column="投票区コード"      typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler" />
+        <id property="地区コード"                 column="地区コード"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"  />
+        <id property="合計ページ"                 column="合計ページ" />
+        <result property="選挙名称"                   column="選挙名称"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票区名称"                 column="投票区名称"      typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"  />
+        <result property="地区名称"                   column="地区名称"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="選挙種類"                   column="選挙種類"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票年月日"                   column="投票年月日"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="名簿基準年月日"                   column="名簿基準年月日"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="登録者_男"                column="登録者_男"            typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="登録者_女"                column="登録者_女"            typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="追加登録者_男"            column="追加登録者_男"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="追加登録者_女"            column="追加登録者_女"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="死亡_男"                    column="死亡_男"            typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"        />
+        <result property="死亡_女"                    column="死亡_女"            typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"        />
+        <result property="四ヶ月抹消_男"              column="四ヶ月抹消_男"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="四ヶ月抹消_女"              column="四ヶ月抹消_女"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="当日四ヶ月抹消_男"          column="当日四ヶ月抹消_男"    typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="当日四ヶ月抹消_女"          column="当日四ヶ月抹消_女"    typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="誤載_男"                    column="誤載_男"            typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"        />
+        <result property="誤載_女"                    column="誤載_女"            typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"        />
+        <result property="国籍喪失_男"                column="国籍喪失_男"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="国籍喪失_女"                column="国籍喪失_女"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="その他抹消_男"              column="その他抹消_男"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="その他抹消_女"              column="その他抹消_女"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="法11条関連_男"              column="法11条関連_男"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="法11条関連_女"              column="法11条関連_女"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="二重登録_男"                column="二重登録_男"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="二重登録_女"                column="二重登録_女"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="抹消者総_男"              column="抹消者総_男"           typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="抹消者総_女"              column="抹消者総_女"           typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="失権失格者_男"            column="失権失格者_男"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="失権失格者_女"            column="失権失格者_女"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="選挙期日登録者_男"        column="選挙期日登録者_男"      typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"  />
+        <result property="選挙期日登録者_女"        column="選挙期日登録者_女"      typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"  />
+        <result property="n内転出者_男"               column="n内転出者_男"        typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="n内転出者_女"               column="n内転出者_女"        typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="n外転出者_男"               column="n外転出者_男"        typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="n外転出者_女"               column="n外転出者_女"        typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="国外転出者_男"              column="国外転出者_男"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="国外転出者_女"              column="国外転出者_女"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="職権削除者_男"              column="職権削除者_男"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="職権削除者_女"              column="職権削除者_女"       typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"       />
+        <result property="加算有権者_抹消者_男"       column="加算有権者_抹消者_男" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="加算有権者_抹消者_女"       column="加算有権者_抹消者_女" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="加算有権者_失権者_男"       column="加算有権者_失権者_男" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="加算有権者_失権者_女"       column="加算有権者_失権者_女" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="加算有権者_計_男"           column="加算有権者_計_男"    typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="加算有権者_計_女"           column="加算有権者_計_女"    typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"      />
+        <result property="当日有権者_男"            column="当日有権者_男"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+        <result property="当日有権者_女"            column="当日有権者_女"         typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"   />
+    </resultMap>
+</mapper>

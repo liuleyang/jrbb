@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT122ZaigaiSenkyoShikakuマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT122ZaigaiSenkyoShikakuMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT122ZaigaiSenkyoShikaku">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT122ZaigaiSenkyoShikakuMapper.allColumns_AfT122ZaigaiSenkyoShikaku" />
+     FROM
+         rgaf."AfT122ZaigaiSenkyoShikaku"
+     WHERE
+         rgaf."AfT122ZaigaiSenkyoShikaku"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT122ZaigaiSenkyoShikaku">
+         "AfT122ZaigaiSenkyoShikaku"."shikibetsuCode" as "afT122ZaigaiSenkyoShikaku_shikibetsuCode",
+         "AfT122ZaigaiSenkyoShikaku"."shinseiNo" as "afT122ZaigaiSenkyoShikaku_shinseiNo",
+         "AfT122ZaigaiSenkyoShikaku"."insertDantaiCd" as "afT122ZaigaiSenkyoShikaku_insertDantaiCd",
+         "AfT122ZaigaiSenkyoShikaku"."insertTimestamp" as "afT122ZaigaiSenkyoShikaku_insertTimestamp",
+         "AfT122ZaigaiSenkyoShikaku"."insertReamsLoginId" as "afT122ZaigaiSenkyoShikaku_insertReamsLoginId",
+         "AfT122ZaigaiSenkyoShikaku"."insertContextId" as "afT122ZaigaiSenkyoShikaku_insertContextId",
+         "AfT122ZaigaiSenkyoShikaku"."isDeleted" as "afT122ZaigaiSenkyoShikaku_isDeleted",
+         "AfT122ZaigaiSenkyoShikaku"."updateCount" as "afT122ZaigaiSenkyoShikaku_updateCount",
+         "AfT122ZaigaiSenkyoShikaku"."lastUpdateTimestamp" as "afT122ZaigaiSenkyoShikaku_lastUpdateTimestamp",
+         "AfT122ZaigaiSenkyoShikaku"."lastUpdateReamsLoginId" as "afT122ZaigaiSenkyoShikaku_lastUpdateReamsLoginId",
+         "AfT122ZaigaiSenkyoShikaku"."kokuminTohyoKubun" as "afT122ZaigaiSenkyoShikaku_kokuminTohyoKubun",
+         "AfT122ZaigaiSenkyoShikaku"."kokuminShohonNo" as "afT122ZaigaiSenkyoShikaku_kokuminShohonNo",
+         "AfT122ZaigaiSenkyoShikaku"."honsekiTorokuKubun" as "afT122ZaigaiSenkyoShikaku_honsekiTorokuKubun",
+         "AfT122ZaigaiSenkyoShikaku"."kofuNo" as "afT122ZaigaiSenkyoShikaku_kofuNo",
+         "AfT122ZaigaiSenkyoShikaku"."kofuYMD" as "afT122ZaigaiSenkyoShikaku_kofuYMD",
+         "AfT122ZaigaiSenkyoShikaku"."shikakuKubun" as "afT122ZaigaiSenkyoShikaku_shikakuKubun",
+         "AfT122ZaigaiSenkyoShikaku"."tohyokuCode" as "afT122ZaigaiSenkyoShikaku_tohyokuCode",
+         "AfT122ZaigaiSenkyoShikaku"."meiboTorokuYMD" as "afT122ZaigaiSenkyoShikaku_meiboTorokuYMD",
+         "AfT122ZaigaiSenkyoShikaku"."hyojiYMD" as "afT122ZaigaiSenkyoShikaku_hyojiYMD",
+         "AfT122ZaigaiSenkyoShikaku"."hyojiJiyuCode" as "afT122ZaigaiSenkyoShikaku_hyojiJiyuCode",
+         "AfT122ZaigaiSenkyoShikaku"."masshoYMD" as "afT122ZaigaiSenkyoShikaku_masshoYMD",
+         "AfT122ZaigaiSenkyoShikaku"."masshoJiyuCode" as "afT122ZaigaiSenkyoShikaku_masshoJiyuCode",
+         "AfT122ZaigaiSenkyoShikaku"."shuseiKubun" as "afT122ZaigaiSenkyoShikaku_shuseiKubun",
+         "AfT122ZaigaiSenkyoShikaku"."shuseiYMD" as "afT122ZaigaiSenkyoShikaku_shuseiYMD",
+         "AfT122ZaigaiSenkyoShikaku"."saiKofuJiyuCode" as "afT122ZaigaiSenkyoShikaku_saiKofuJiyuCode",
+         "AfT122ZaigaiSenkyoShikaku"."henkoJiyuCode" as "afT122ZaigaiSenkyoShikaku_henkoJiyuCode",
+         "AfT122ZaigaiSenkyoShikaku"."tokkiJiko" as "afT122ZaigaiSenkyoShikaku_tokkiJiko"
+    </sql>
+
+
+    <!--テーブルAfT122ZaigaiSenkyoShikakuの項目をAfT122ZaigaiSenkyoShikakuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT122ZaigaiSenkyoShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT122ZaigaiSenkyoShikakuEntity" autoMapping="true">
+        <id property="shikibetsuCode" column="afT122ZaigaiSenkyoShikaku_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="shinseiNo" column="afT122ZaigaiSenkyoShikaku_shinseiNo"/>
+        <result property="insertDantaiCd" column="afT122ZaigaiSenkyoShikaku_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT122ZaigaiSenkyoShikaku_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT122ZaigaiSenkyoShikaku_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT122ZaigaiSenkyoShikaku_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT122ZaigaiSenkyoShikaku_isDeleted" />
+        <result property="updateCount" column="afT122ZaigaiSenkyoShikaku_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT122ZaigaiSenkyoShikaku_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT122ZaigaiSenkyoShikaku_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kokuminTohyoKubun" column="afT122ZaigaiSenkyoShikaku_kokuminTohyoKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="kokuminShohonNo" column="afT122ZaigaiSenkyoShikaku_kokuminShohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="honsekiTorokuKubun" column="afT122ZaigaiSenkyoShikaku_honsekiTorokuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="kofuNo" column="afT122ZaigaiSenkyoShikaku_kofuNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kofuYMD" column="afT122ZaigaiSenkyoShikaku_kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shikakuKubun" column="afT122ZaigaiSenkyoShikaku_shikakuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="tohyokuCode" column="afT122ZaigaiSenkyoShikaku_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="meiboTorokuYMD" column="afT122ZaigaiSenkyoShikaku_meiboTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiYMD" column="afT122ZaigaiSenkyoShikaku_hyojiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiJiyuCode" column="afT122ZaigaiSenkyoShikaku_hyojiJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="masshoYMD" column="afT122ZaigaiSenkyoShikaku_masshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="masshoJiyuCode" column="afT122ZaigaiSenkyoShikaku_masshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shuseiKubun" column="afT122ZaigaiSenkyoShikaku_shuseiKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shuseiYMD" column="afT122ZaigaiSenkyoShikaku_shuseiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="saiKofuJiyuCode" column="afT122ZaigaiSenkyoShikaku_saiKofuJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="henkoJiyuCode" column="afT122ZaigaiSenkyoShikaku_henkoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="tokkiJiko" column="afT122ZaigaiSenkyoShikaku_tokkiJiko" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

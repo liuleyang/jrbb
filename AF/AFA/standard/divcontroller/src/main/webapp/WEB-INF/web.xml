@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+
+    <!-- past from uz web.xml-->
+    <listener>
+        <listener-class>jp.co.ndensan.reams.uz.uza.ui.contextlistener._ServletContextListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>UzLoginServlet</servlet-name>
+        <servlet-class>jp.co.ndensan.reams.uz.uza.ui.servlets._LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UzDispatcherServlet</servlet-name>
+        <servlet-class>jp.co.ndensan.reams.uz.uza.ui.servlets._DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>UzStaticResourceServlet</servlet-name>
+        <servlet-class>jp.co.ndensan.reams.uz.uza.ui.servlets._StaticResourceServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>UzFileDownLoadServlet</servlet-name>
+        <servlet-class>jp.co.ndensan.reams.uz.uza.ui.servlets._FileDownLoadServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewDesigner</servlet-name>
+        <jsp-file>/WEB-INF/jsp/UzViewDesigner.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewDesigner</servlet-name>
+        <url-pattern>/ViewDesigner</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UzFileDownLoadServlet</servlet-name>
+        <url-pattern>*.download</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UzDispatcherServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UzStaticResourceServlet</servlet-name>
+        <url-pattern>*.html</url-pattern>
+        <url-pattern>*.jpg</url-pattern>
+        <url-pattern>*.png</url-pattern>
+        <url-pattern>*.gif</url-pattern>
+        <url-pattern>*.css</url-pattern>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+
+    <jsp-config>
+    </jsp-config>
+    <welcome-file-list>
+        <welcome-file>redirect.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

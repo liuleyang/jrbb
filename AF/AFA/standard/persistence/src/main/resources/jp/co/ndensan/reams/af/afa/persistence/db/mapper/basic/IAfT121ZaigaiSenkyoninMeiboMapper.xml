@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT121ZaigaiSenkyoninMeiboマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT121ZaigaiSenkyoninMeiboMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT121ZaigaiSenkyoninMeibo">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT121ZaigaiSenkyoninMeiboMapper.allColumns_AfT121ZaigaiSenkyoninMeibo" />
+     FROM
+         rgaf."AfT121ZaigaiSenkyoninMeibo"
+     WHERE
+         rgaf."AfT121ZaigaiSenkyoninMeibo"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT121ZaigaiSenkyoninMeibo">
+         "AfT121ZaigaiSenkyoninMeibo"."shohonNo" as "afT121ZaigaiSenkyoninMeibo_shohonNo",
+         "AfT121ZaigaiSenkyoninMeibo"."groupCode" as "afT121ZaigaiSenkyoninMeibo_groupCode",
+         "AfT121ZaigaiSenkyoninMeibo"."tohyokuCode" as "afT121ZaigaiSenkyoninMeibo_tohyokuCode",
+         "AfT121ZaigaiSenkyoninMeibo"."kokugaiBunruiCode" as "afT121ZaigaiSenkyoninMeibo_kokugaiBunruiCode",
+         "AfT121ZaigaiSenkyoninMeibo"."satsu" as "afT121ZaigaiSenkyoninMeibo_satsu",
+         "AfT121ZaigaiSenkyoninMeibo"."page" as "afT121ZaigaiSenkyoninMeibo_page",
+         "AfT121ZaigaiSenkyoninMeibo"."gyo" as "afT121ZaigaiSenkyoninMeibo_gyo",
+         "AfT121ZaigaiSenkyoninMeibo"."insertDantaiCd" as "afT121ZaigaiSenkyoninMeibo_insertDantaiCd",
+         "AfT121ZaigaiSenkyoninMeibo"."insertTimestamp" as "afT121ZaigaiSenkyoninMeibo_insertTimestamp",
+         "AfT121ZaigaiSenkyoninMeibo"."insertReamsLoginId" as "afT121ZaigaiSenkyoninMeibo_insertReamsLoginId",
+         "AfT121ZaigaiSenkyoninMeibo"."insertContextId" as "afT121ZaigaiSenkyoninMeibo_insertContextId",
+         "AfT121ZaigaiSenkyoninMeibo"."isDeleted" as "afT121ZaigaiSenkyoninMeibo_isDeleted",
+         "AfT121ZaigaiSenkyoninMeibo"."updateCount" as "afT121ZaigaiSenkyoninMeibo_updateCount",
+         "AfT121ZaigaiSenkyoninMeibo"."lastUpdateTimestamp" as "afT121ZaigaiSenkyoninMeibo_lastUpdateTimestamp",
+         "AfT121ZaigaiSenkyoninMeibo"."lastUpdateReamsLoginId" as "afT121ZaigaiSenkyoninMeibo_lastUpdateReamsLoginId",
+         "AfT121ZaigaiSenkyoninMeibo"."shikibetsuCode" as "afT121ZaigaiSenkyoninMeibo_shikibetsuCode"
+    </sql>
+
+
+    <!--テーブルAfT121ZaigaiSenkyoninMeiboの項目をAfT121ZaigaiSenkyoninMeiboEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT121ZaigaiSenkyoninMeiboEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT121ZaigaiSenkyoninMeiboEntity" autoMapping="true">
+        <id property="shohonNo" column="afT121ZaigaiSenkyoninMeibo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="groupCode" column="afT121ZaigaiSenkyoninMeibo_groupCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyokuCode" column="afT121ZaigaiSenkyoninMeibo_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="kokugaiBunruiCode" column="afT121ZaigaiSenkyoninMeibo_kokugaiBunruiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="satsu" column="afT121ZaigaiSenkyoninMeibo_satsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="page" column="afT121ZaigaiSenkyoninMeibo_page" />
+        <id property="gyo" column="afT121ZaigaiSenkyoninMeibo_gyo" />
+        <result property="insertDantaiCd" column="afT121ZaigaiSenkyoninMeibo_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT121ZaigaiSenkyoninMeibo_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT121ZaigaiSenkyoninMeibo_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT121ZaigaiSenkyoninMeibo_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT121ZaigaiSenkyoninMeibo_isDeleted" />
+        <result property="updateCount" column="afT121ZaigaiSenkyoninMeibo_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT121ZaigaiSenkyoninMeibo_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT121ZaigaiSenkyoninMeibo_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shikibetsuCode" column="afT121ZaigaiSenkyoninMeibo_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+    </resultMap>
+
+</mapper>

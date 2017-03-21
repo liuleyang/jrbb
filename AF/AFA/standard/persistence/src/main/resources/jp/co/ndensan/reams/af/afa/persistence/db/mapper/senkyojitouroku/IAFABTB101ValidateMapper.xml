@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0030-010 liss -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.senkyojitouroku.IAFABTB101ValidateMapper">
+    <!-- 定時登録データ件数を取得-->
+    <select resultOrdered="true" id="selectTeijitourokuCount" resultType="int" >
+        SELECT COUNT(rgaf."AfT111Senkyo"."shohonNo")
+        FROM rgaf."AfT111Senkyo",rgaf."AfT100Shohon"
+        WHERE rgaf."AfT111Senkyo"."kijunYMD" <![CDATA[>=]]> #{kijunbiFrom}
+        AND rgaf."AfT111Senkyo"."kijunYMD" <![CDATA[<=]]> #{kijunbiTo}
+        AND rgaf."AfT111Senkyo"."shohonNo"=rgaf."AfT100Shohon"."shohonNo"
+        AND rgaf."AfT100Shohon"."senkyoShurui" = '0'
+    </select>
+
+    <!-- 投票日と同じ抄本データ件数を取得-->
+    <select resultOrdered="true" id="selectShohonCount" resultType="int" >
+        SELECT COUNT("AfT100Shohon"."shohonNo")
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+        WHERE "AfT100Shohon"."tohyoYMD"=#{tohyoYMD}
+        AND "AfT100Shohon"."senkyoShurui" = '1'
+    </select>
+
+</mapper>

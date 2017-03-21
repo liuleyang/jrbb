@@ -1,0 +1,440 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShisetsuCodeSelectRange&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onClick_txtShisetsuCodeFrom&quot;},{&quot;eventName&quot;:&quot;onClick_txtShisetsuCodeTo&quot;},{&quot;eventName&quot;:&quot;onBlur_txtShisetsuCode&quot;},{&quot;eventName&quot;:&quot;onBlur_txtShisetsuCode&quot;},{&quot;eventName&quot;:&quot;onClick_OKCloseFrom&quot;},{&quot;eventName&quot;:&quot;onClick_OKCloseTo&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.ShisetsuCodeSelectRange"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="ShisetsuCodeSelectRange" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;ShisetsuCodeSelectRange&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ShisetsuCodeSelectRange&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;ShisetsuCodeSelectRange&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txthidShisetsuNameFrom&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txthidShisetsuNameTo&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ShisetsuCodeSelectRange_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="ShisetsuCodeSelectRange_panel_body_area"><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="ccdShisetsuCodeFrom" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShisetsuCodeFrom&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShisetsuCodeFrom&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShisetsuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onOKClose_btnShisetsuCode&quot;}],&quot;publicEventsAlias&quot;:[{&quot;eventName&quot;:&quot;onOKClose_btnShisetsuCode&quot;,&quot;alias&quot;:&quot;onOKClose_btnShisetsuCodeFrom&quot;}],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;txtShsietsuCode_labelLText&quot;:&quot;施設&quot;,&quot;txtShisetsuCode_labelLWidth&quot;:&quot;&quot;,&quot;txtShisetsuCode_required&quot;:false,&quot;btnShisetsuCode_displayNone&quot;:false,&quot;txtShisetsuName_displayNone&quot;:false,&quot;txtShisetsuName_width&quot;:&quot;M&quot;,&quot;txtShisetsuCode_labelLAlign&quot;:2,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtShsietsuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnShisetsuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShisetsuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShisetsuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_labelLAlign&quot;,&quot;editType&quot;:0}]}}" data-is-composite-control="true" data-control-name="AFA.ShisetsuCodeSelect"></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XL" id="ccdShisetsuCodeTo" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShisetsuCodeTo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShisetsuCodeTo&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShisetsuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onOKClose_btnShisetsuCode&quot;}],&quot;publicEventsAlias&quot;:[{&quot;eventName&quot;:&quot;onOKClose_btnShisetsuCode&quot;,&quot;alias&quot;:&quot;onOKClose_btnShisetsuCodeTo&quot;}],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;txtShsietsuCode_labelLText&quot;:&quot;～&quot;,&quot;txtShisetsuCode_labelLWidth&quot;:&quot;40px&quot;,&quot;txtShisetsuCode_required&quot;:false,&quot;btnShisetsuCode_displayNone&quot;:false,&quot;txtShisetsuName_displayNone&quot;:false,&quot;txtShisetsuName_width&quot;:&quot;M&quot;,&quot;txtShisetsuCode_labelLAlign&quot;:&quot;0&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtShsietsuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnShisetsuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShisetsuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShisetsuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_labelLAlign&quot;,&quot;editType&quot;:0}]}}" data-is-composite-control="true" data-control-name="AFA.ShisetsuCodeSelect"></div><button class="UzButton JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnHiddenFrom" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnHiddenFrom&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;btnHiddenFrom&quot;,&quot;onClick&quot;:&quot;onClick_txtShisetsuCodeFrom&quot;,&quot;text&quot;:&quot;onChange_From&quot;}"><span>onChange_From</span></button><button class="UzButton JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnHiddenTo" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnHiddenTo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;btnHiddenTo&quot;,&quot;onClick&quot;:&quot;onClick_txtShisetsuCodeTo&quot;,&quot;text&quot;:&quot;onChange_To&quot;}"><span>onChange_To</span></button><button class="UzButton JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnHiddenOKCloseFrom" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnHiddenOKCloseFrom&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;btnHiddenOKCloseFrom&quot;,&quot;onClick&quot;:&quot;onClick_OKCloseFrom&quot;,&quot;text&quot;:&quot;OKCloasFrom&quot;}"><span>OKCloasFrom</span></button><button class="UzButton JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnHiddenOKCloseTo" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnHiddenOKCloseTo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;btnHiddenOKCloseTo&quot;,&quot;onClick&quot;:&quot;onClick_OKCloseTo&quot;,&quot;text&quot;:&quot;OKCloasTo&quot;}"><span>OKCloasTo</span></button></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var ShisetsuCodeSelectRange_Design = (function (_super) {
+        __extends(ShisetsuCodeSelectRange_Design, _super);
+        function ShisetsuCodeSelectRange_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, ShisetsuCodeSelectRange_Design.myLayout, fieldName);
+        }
+        ShisetsuCodeSelectRange_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        ShisetsuCodeSelectRange_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        ShisetsuCodeSelectRange_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "ShisetsuCodeSelectRange",
+                    "items": [
+                        {
+                            "fieldName": "ccdShisetsuCodeFrom",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdShisetsuCodeFrom",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "ShisetsuCodeSelect",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtShsietsuCode_labelLText": "施設",
+                            "txtShisetsuCode_labelLWidth": "",
+                            "txtShisetsuCode_required": false,
+                            "btnShisetsuCode_displayNone": false,
+                            "txtShisetsuName_displayNone": false,
+                            "txtShisetsuName_width": "M",
+                            "txtShisetsuCode_labelLAlign": 2
+                        },
+                        {
+                            "fieldName": "ccdShisetsuCodeTo",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XL",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdShisetsuCodeTo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "ShisetsuCodeSelect",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtShsietsuCode_labelLText": "～",
+                            "txtShisetsuCode_labelLWidth": "40px",
+                            "txtShisetsuCode_required": false,
+                            "btnShisetsuCode_displayNone": false,
+                            "txtShisetsuName_displayNone": false,
+                            "txtShisetsuName_width": "M",
+                            "txtShisetsuCode_labelLAlign": 0
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "ShisetsuCodeSelectRange",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "ShisetsuCodeSelectRange"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "ShisetsuCodeSelectRange",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return ShisetsuCodeSelectRange_Design;
+    })(Uz.CommonChildDiv);
+    AFA.ShisetsuCodeSelectRange_Design = ShisetsuCodeSelectRange_Design;
+
+    (function (ShisetsuCodeSelectRange) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        ShisetsuCodeSelectRange.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ShisetsuCodeSelectRange";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ShisetsuCodeSelectRange.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.ShisetsuCodeSelectRange = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdShisetsuCodeFrom = function () {
+                return new AFA.ShisetsuCodeSelect.ModeController("ccdShisetsuCodeFrom");
+            };
+
+            Controls.prototype.ccdShisetsuCodeTo = function () {
+                return new AFA.ShisetsuCodeSelect.ModeController("ccdShisetsuCodeTo");
+            };
+            return Controls;
+        })();
+        ShisetsuCodeSelectRange.Controls = Controls;
+    })(AFA.ShisetsuCodeSelectRange || (AFA.ShisetsuCodeSelectRange = {}));
+    var ShisetsuCodeSelectRange = AFA.ShisetsuCodeSelectRange;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShisetsuCodeSelectRange) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ShisetsuCodeSelectRange.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        ShisetsuCodeSelectRange.ModeController = ModeController;
+    })(AFA.ShisetsuCodeSelectRange || (AFA.ShisetsuCodeSelectRange = {}));
+    var ShisetsuCodeSelectRange = AFA.ShisetsuCodeSelectRange;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShisetsuCodeSelectRange) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ShisetsuCodeSelectRange.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        ShisetsuCodeSelectRange.PublicProperties = PublicProperties;
+    })(AFA.ShisetsuCodeSelectRange || (AFA.ShisetsuCodeSelectRange = {}));
+    var ShisetsuCodeSelectRange = AFA.ShisetsuCodeSelectRange;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+   
+   
+   
+   
+     
+       
+       
+     
+   
+   
+   
+   
+         
+       
+     <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['SHISETSUCODESELECTRANGE'] = {};
+AFA['SHISETSUCODESELECTRANGE'].ShisetsuCodeSelectRangeRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_ShisetsuCodeSelectRange').getProperty();parameter0.ccdShisetsuCodeFrom = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShisetsuCodeFrom').getPostParameter();parameter0.ccdShisetsuCodeTo = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShisetsuCodeTo').getPostParameter();parameter0.btnHiddenFrom = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnHiddenFrom').getProperty();parameter0.btnHiddenTo = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnHiddenTo').getProperty();parameter0.btnHiddenOKCloseFrom = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnHiddenOKCloseFrom').getProperty();parameter0.btnHiddenOKCloseTo = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnHiddenOKCloseTo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (ShisetsuCodeSelectRange) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClick_txtShisetsuCodeFrom = function () {
+                return "onClick_txtShisetsuCodeFrom";
+            };
+
+            Events.onClick_txtShisetsuCodeTo = function () {
+                return "onClick_txtShisetsuCodeTo";
+            };
+
+            Events.onClick_OKCloseFrom = function () {
+                return "onClick_OKCloseFrom";
+            };
+
+            Events.onClick_OKCloseTo = function () {
+                return "onClick_OKCloseTo";
+            };
+            return Events;
+        })();
+        ShisetsuCodeSelectRange.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ShisetsuCodeSelectRange";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ShisetsuCodeSelectRange.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.ShisetsuCodeSelectRange.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.ShisetsuCodeSelectRange = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.btnHiddenFrom = function () {
+                return new UZA.Button(this.convFiledName("btnHiddenFrom"));
+            };
+
+            Controls.prototype.btnHiddenTo = function () {
+                return new UZA.Button(this.convFiledName("btnHiddenTo"));
+            };
+
+            Controls.prototype.btnHiddenOKCloseFrom = function () {
+                return new UZA.Button(this.convFiledName("btnHiddenOKCloseFrom"));
+            };
+
+            Controls.prototype.btnHiddenOKCloseTo = function () {
+                return new UZA.Button(this.convFiledName("btnHiddenOKCloseTo"));
+            };
+            return Controls;
+        })();
+        ShisetsuCodeSelectRange.Controls = Controls;
+    })(AFA.ShisetsuCodeSelectRange || (AFA.ShisetsuCodeSelectRange = {}));
+    var ShisetsuCodeSelectRange = AFA.ShisetsuCodeSelectRange;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (ShisetsuCodeSelectRange) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ShisetsuCodeSelectRange.Controls(fieldName);
+                this.registerEvents();
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            ModeController.prototype.registerEvents = function () {
+                var _this = this;
+                var fromText = Uz.JSControlUtil.getJSControl("ccdShisetsuCodeFrom_txtShisetsuCode");
+                fromText.onChange = "onChange_txtShisetsuCodeFrom";
+
+                Uz.GyomuJSHelper.registOriginalEvent("onChange_txtShisetsuCodeFrom", function () {
+                    (_this.controls.btnHiddenFrom()._control).fireEvent("onClick_txtShisetsuCodeFrom");
+                });
+
+                var toText = Uz.JSControlUtil.getJSControl("ccdShisetsuCodeTo_txtShisetsuCode");
+                toText.onChange = "onChange_txtShisetsuCodeTo";
+
+                Uz.GyomuJSHelper.registOriginalEvent("onChange_txtShisetsuCodeTo", function () {
+                    (_this.controls.btnHiddenTo()._control).fireEvent("onClick_txtShisetsuCodeTo");
+                });
+
+                var fromBtnShisetsuCode = Uz.JSControlUtil.getJSControl("ccdShisetsuCodeFrom_btnShisetsuCode");
+                fromBtnShisetsuCode.onOkClose = "onOKClose_btnShisetsuCodeFrom";
+
+                Uz.GyomuJSHelper.registOriginalEvent("onOKClose_btnShisetsuCodeFrom", function () {
+                    (_this.controls.btnHiddenOKCloseFrom()._control).fireEvent("onClick_OKCloseFrom");
+                });
+
+                var toBtnShisetsuCode = Uz.JSControlUtil.getJSControl("ccdShisetsuCodeTo_btnShisetsuCode");
+                toBtnShisetsuCode.onOkClose = "onOKClose_btnShisetsuCodeTo";
+
+                Uz.GyomuJSHelper.registOriginalEvent("onOKClose_btnShisetsuCodeTo", function () {
+                    (_this.controls.btnHiddenOKCloseTo()._control).fireEvent("onClick_OKCloseTo");
+                });
+            };
+            return ModeController;
+        })();
+        ShisetsuCodeSelectRange.ModeController = ModeController;
+    })(AFA.ShisetsuCodeSelectRange || (AFA.ShisetsuCodeSelectRange = {}));
+    var ShisetsuCodeSelectRange = AFA.ShisetsuCodeSelectRange;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShisetsuCodeSelectRange) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ShisetsuCodeSelectRange.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        ShisetsuCodeSelectRange.PublicProperties = PublicProperties;
+    })(AFA.ShisetsuCodeSelectRange || (AFA.ShisetsuCodeSelectRange = {}));
+    var ShisetsuCodeSelectRange = AFA.ShisetsuCodeSelectRange;
+})(AFA || (AFA = {}));
+</script></div>

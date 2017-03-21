@@ -1,0 +1,13 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+senkyoNo,AfUDD002SenkyoNo,SenkyoNo,,,,,選挙番号,A
+senkyoLevel,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.選挙レベル.getCodeShubetsu(),Description,,選挙レベル,A
+senkyoName,varchar,RString,,,,,選挙名称,A
+senkyoRyakusho,varchar,RString,,,,,選挙略称,A
+senkyoMark,varchar,RString,,,,,選挙マーク,A
+kijunYMD,UDD015YMD,FlexibleDate,,,,,名簿基準年月日,A
+meiboTorokuYMD,UDD015YMD,FlexibleDate,,,,,名簿登録年月日,A
+kokujiYMD,UDD015YMD,FlexibleDate,,,,,告示（公示）年月日,A
+tenshutsuKigenYMD,UDD015YMD,FlexibleDate,,,,,転出期限年月日,A
+tennyuKigenYMD,UDD015YMD,FlexibleDate,,,,,転入期限年月日,A
+tohyoUketsukeYMD,UDD015YMD,FlexibleDate,,,,,投票受付開始年月日,A
+mutohyoSenkyoFlag,bool,boolean,,,,,無投票選挙フラグ,A

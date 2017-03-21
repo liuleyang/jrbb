@@ -1,0 +1,15 @@
+﻿shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A
+shinseiNo,int4,int,,,,,申請番号,A
+jushoShuruiKubun,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.住所種類区分.getCodeShubetsu(),Description,,住所種類区分,A
+yubinNo,UDD003YubinNo,YubinNo,,,,,郵便番号,A
+zenkokuJushoCode,UDD004ZenkokuJushoCode,ZenkokuJushoCode,,,,,全国住所コード,A
+jusho,UDD046AtenaJusho,AtenaJusho,,,,,住所,A
+banchi,UDD047AtenaBanchi,AtenaBanchi,,,,,番地,A
+katagakiCode,UDD009KatagakiCode,KatagakiCode,,,,,方書コード,A
+katagaki,UDD010Katagaki,Katagaki,,,,,方書,A
+dokyoKazokuShimei,varchar,RString,,,,,同居家族氏名,A
+tel,varchar,RString,,,,,電話番号,A
+fax,varchar,RString,,,,,FAX番号,A
+mail,UDD027MailAddress,MailAddress,,,,,メールアドレス,A
+kokugaiTenshutsuYMD,UDD015YMD,FlexibleDate,,,,,国外転出年月日,A
+kokunaiTennyuYMD,UDD015YMD,FlexibleDate,,,,,国内転入年月日,A

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0010-020 wangm -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFAPRA103tempTorokushasuListMapper">
+
+
+    <!-- 登録者数リストのデータを取得-->
+    <select resultOrdered="true" id="selectDataForTorokushasuList"  resultMap="ResultMap_AFAPRA103tempEntity">
+        SELECT
+        *
+        FROM
+        (
+        SELECT
+        "senkyoNo" AS "senkyoNo"
+        ,'1' AS "sumType"
+        ,"tohyokuCode" AS "tohyokuCode"
+        ,"orderCode" AS "orderCode"
+        ,'' AS "tohyokuMeisho"
+        ,"kijunYMD" AS "kijunYMD"
+        ,"tohyoYMD" AS "tohyoYMD"
+        ,"senkyoName" AS "senkyoName"
+        ,<include refid="sum_sql"/>
+        FROM
+        "outTempAFAPRA103"
+        GROUP BY
+        "senkyoNo"
+        ,"tohyokuCode"
+        ,"orderCode"
+        ,"kijunYMD"
+        ,"tohyoYMD"
+        ,"senkyoName"
+        UNION
+        SELECT
+        "senkyoNo" AS "senkyoNo"
+        ,'2' AS "sumType"
+        ,"tohyokuCode" AS "tohyokuCode"
+        ,'' AS "orderCode"
+        ,"tohyokuMeisho" AS "tohyokuMeisho"
+        ,"kijunYMD" AS "kijunYMD"
+        ,"tohyoYMD" AS "tohyoYMD"
+        ,"senkyoName" AS "senkyoName"
+        ,<include refid="sum_sql"/>
+        FROM
+        "outTempAFAPRA103"
+        GROUP BY
+        "senkyoNo"
+        ,"tohyokuCode"
+        ,"tohyokuMeisho"
+        ,"kijunYMD"
+        ,"tohyoYMD"
+        ,"senkyoName"
+        ) as "foo"
+        ORDER BY
+        "senkyoNo" ASC,
+        "sumType" ASC,
+        "tohyokuCode" ASC,
+        "orderCode" ASC
+    </select>
+
+
+    <!--集計-->
+    <sql id="sum_sql">
+        SUM (CASE WHEN  <include refid="select_ukesha"/> AND  <include refid="select_male"/>
+        THEN 1 ELSE 0 END ) AS "ukeshaMale"  ,
+        SUM (CASE WHEN  <include refid="select_ukesha"/> AND  <include refid="select_female"/>
+        THEN 1 ELSE 0 END ) AS "ukeshaFemale"  ,
+        SUM (CASE WHEN  <include refid="select_hyojisha"/> AND  <include refid="select_male"/>
+        THEN 1 ELSE 0 END ) AS "hyojishaMale"  ,
+        SUM (CASE WHEN  <include refid="select_hyojisha"/> AND  <include refid="select_female"/>
+        THEN 1 ELSE 0 END ) AS "hyojishaFemale"  ,
+        SUM (CASE WHEN  <include refid="select_kominkenTeshisha"/> AND  <include refid="select_male"/>
+        THEN 1 ELSE 0 END ) AS "kominkenTeshishaMale"  ,
+        SUM (CASE WHEN  <include refid="select_kominkenTeshisha"/> AND  <include refid="select_female"/>
+        THEN 1 ELSE 0 END ) AS "kominkenTeshishaFemale"  ,
+        SUM (CASE WHEN  <include refid="select_ukesha"/> AND  <include refid="select_male"/> AND  <include refid="select_kenaiTenshutsusha"/>
+        THEN 1 ELSE 0 END ) AS "tenshuUkeshaMale"  ,
+        SUM (CASE WHEN  <include refid="select_ukesha"/> AND  <include refid="select_female"/>  AND  <include refid="select_kenaiTenshutsusha"/>
+        THEN 1 ELSE 0 END ) AS "tenshuUkeshaFemale"  ,
+        SUM (CASE WHEN  <include refid="select_hyojisha"/> AND  <include refid="select_male"/>  AND  <include refid="select_kenaiTenshutsusha"/>
+        THEN 1 ELSE 0 END ) AS "tenshuHyojishaMale"  ,
+        SUM (CASE WHEN  <include refid="select_hyojisha"/> AND  <include refid="select_female"/>  AND  <include refid="select_kenaiTenshutsusha"/>
+        THEN 1 ELSE 0 END ) AS "tenshuHyojishaFemale"  ,
+        SUM (CASE WHEN  <include refid="select_kominkenTeshisha"/> AND  <include refid="select_male"/>  AND  <include refid="select_kenaiTenshutsusha"/>
+        THEN 1 ELSE 0 END ) AS "tenshuKominkenTeshishaMale"  ,
+        SUM (CASE WHEN  <include refid="select_kominkenTeshisha"/> AND  <include refid="select_female"/>  AND  <include refid="select_kenaiTenshutsusha"/>
+        THEN 1 ELSE 0 END ) AS "tenshuKominkenTeshishaFemale"
+    </sql>
+
+    <!--有権者の判定-->
+    <sql id="select_ukesha">
+        "ukeshaKubun"=true
+    </sql>
+    <!--うち県内転出者の判定-->
+    <sql id="select_kenaiTenshutsusha">
+        "kenaiTenshutsushaKubun" = true
+    </sql>
+    <!--表示者の判定-->
+    <sql id="select_hyojisha">
+        "hyojishaKubun"=true
+    </sql>
+    <!--公民権停止者の判定-->
+    <sql id="select_kominkenTeshisha">
+        "kominkenTeshishaKubun"=true
+    </sql>
+    <!--男の判定-->
+    <sql id="select_male">
+        "seibetsuCode"='1'
+    </sql>
+    <!--女の判定-->
+    <sql id="select_female">
+        "seibetsuCode"='2'
+    </sql>
+
+    <resultMap id="ResultMap_AFAPRA103tempEntity" type="jp.co.ndensan.reams.af.afa.entity.xml.teijitouroku.AFAPRA103Entity" autoMapping="true">
+        <id property="senkyoNo" column="senkyoNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="sumType" column="sumType" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler" />
+        <id property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler" />
+        <id property="orderCode" column="orderCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler" />
+        <result property="senkyoName" column="senkyoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler" />
+        <result property="tohyokuMeisho" column="tohyokuMeisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler" />
+        <result property="kijunYMD" column="kijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler" />
+        <result property="tohyoYMD" column="tohyoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler" />
+        <result property="ukeshaMale" column="ukeshaMale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="ukeshaFemale" column="ukeshaFemale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="hyojishaMale" column="hyojishaMale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="hyojishaFemale" column="hyojishaFemale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="kominkenTeshishaMale" column="kominkenTeshishaMale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="kominkenTeshishaFemale" column="kominkenTeshishaFemale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="tenshuUkeshaMale" column="tenshuUkeshaMale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="tenshuHyojishaMale" column="tenshuHyojishaMale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="tenshuKominkenTeshishaMale" column="tenshuKominkenTeshishaMale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="tenshuUkeshaFemale" column="tenshuUkeshaFemale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="tenshuHyojishaFemale" column="tenshuHyojishaFemale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+        <result property="tenshuKominkenTeshishaFemale" column="tenshuKominkenTeshishaFemale" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler" />
+    </resultMap>
+</mapper>

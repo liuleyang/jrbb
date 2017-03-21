@@ -1,0 +1,537 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonSenkyoList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onClick_btnHdnChangeShohon&quot;},{&quot;eventName&quot;:&quot;onChange_checkbox&quot;},{&quot;eventName&quot;:&quot;onclick_chkKakoShohon&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.ShohonSenkyoList"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginBottom-M StateChangable marginRight-Default marginBottom-Default UzCommonChildDivPanel Width-G8 UzCompositeChild" id="ShohonSenkyoList" style="margin-top: 0em; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;ShohonSenkyoList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G8&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;ShohonSenkyoList&quot;,&quot;title&quot;:&quot;対象抄本&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;ShohonSenkyoList&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ShohonSenkyoList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">対象抄本</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ShohonSenkyoList_panel_body_area"><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XS" id="ccdShohonNameList" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShohonNameList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShohonNameList&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;ddlShohon_disabled&quot;:false,&quot;ddlShohon_required&quot;:false,&quot;ddlShohon_labelText&quot;:&quot;抄本名&quot;,&quot;ddlShohon_labelWidth&quot;:&quot;&quot;,&quot;ddlShohon_width&quot;:&quot;L&quot;,&quot;chkKakoShohon_displayNone&quot;:false,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlShohon_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;chkKakoShohon_displayNone&quot;,&quot;editType&quot;:1}]}}" data-is-composite-control="true" data-control-name="AFA.ShohonNameList"></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="chkMutohyo" style="width: 255px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkMutohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;M&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkMutohyo_core&quot;,&quot;onChange&quot;:&quot;onChange_checkbox&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;無投票選挙も出力する&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-M" id="chkMutohyo_core"><input id="chkMutohyo_key0" type="checkbox" value="無投票選挙も出力する" data-key="key0"><label for="chkMutohyo_key0" data-key="key0">無投票選挙も出力する</label></span></div><button class="UzButton JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnHdnChangeShohon" style="opacity: 0.8;" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnHdnChangeShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;btnHdnChangeShohon&quot;,&quot;onClick&quot;:&quot;onClick_btnHdnChangeShohon&quot;,&quot;text&quot;:&quot;隠抄本変更時&quot;}"><span>隠抄本変更時</span></button><div title="" class="UzDataGrid FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS Height-Auto UzCompositeChild" id="dgSenkyoList" style="width: 658px;" data-control-type="DataGrid" data-obj="{&quot;fieldName&quot;:&quot;dgSenkyoList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DataGrid&quot;,&quot;width&quot;:&quot;658px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;dgSenkyoList&quot;,&quot;height&quot;:&quot;Auto&quot;,&quot;dataSource&quot;:[],&quot;gridSetting&quot;:{&quot;rowHeight&quot;:25,&quot;isMultiSelectable&quot;:false,&quot;isShowHeader&quot;:true,&quot;isShowFooter&quot;:false,&quot;isShowFilter&quot;:false,&quot;isShowFilterButton&quot;:false,&quot;isShowRowState&quot;:false,&quot;isShowSelectButtonColumn&quot;:false,&quot;isShowModifyButtonColumn&quot;:false,&quot;isShowDeleteButtonColumn&quot;:false,&quot;limitRowCount&quot;:0,&quot;selectedRowCount&quot;:0,&quot;header&quot;:{&quot;combineColumns&quot;:[],&quot;frozenColumn&quot;:&quot;&quot;,&quot;headerHeight&quot;:0},&quot;columns&quot;:[{&quot;columnName&quot;:&quot;No&quot;,&quot;dataName&quot;:&quot;txtNo&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:40,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;sortKey&quot;:&quot;&quot;},{&quot;columnName&quot;:&quot;選挙名&quot;,&quot;dataName&quot;:&quot;txtSenkyoName&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:600,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;sortKey&quot;:&quot;&quot;},{&quot;columnName&quot;:&quot;無投票&quot;,&quot;dataName&quot;:&quot;chkMutohyoSenkyoFlag&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:50,&quot;visible&quot;:false,&quot;cellType&quot;:2,&quot;cellDetails&quot;:{&quot;cellType&quot;:2,&quot;disabled&quot;:true,&quot;onChange&quot;:&quot;&quot;},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;sortKey&quot;:&quot;&quot;}]},&quot;confirmDialog&quot;:[{&quot;button&quot;:&quot;selectButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;modifyButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;deleteButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;cancelButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;}],&quot;filterList&quot;:[],&quot;gridAction&quot;:[]}"><div id="dgSenkyoList_grid_table" role="" style="width: 658px; height: 292px; position: relative;"></div><div id="dgSenkyoList_footer" style="width: 658px; height: 0px;"></div></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFB;
+(function (AFB) {
+    var ShohonSenkyoList_Design = (function (_super) {
+        __extends(ShohonSenkyoList_Design, _super);
+        function ShohonSenkyoList_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, ShohonSenkyoList_Design.myLayout, fieldName);
+        }
+        ShohonSenkyoList_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        ShohonSenkyoList_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        ShohonSenkyoList_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "ShohonSenkyoList",
+                    "items": [
+                        {
+                            "fieldName": "ccdShohonNameList",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdShohonNameList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "ShohonNameList",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [
+                                {
+                                    "eventName": "onChange_ddlShohon"
+                                }
+                            ],
+                            "publicEventsAlias": [
+                                {
+                                    "eventName": "onChange_ddlShohon",
+                                    "alias": "onChange_ccdShohonNameList"
+                                }
+                            ],
+                            "ddlShohon_disabled": false,
+                            "ddlShohon_labelText": "抄本名",
+                            "ddlShohon_labelWidth": "",
+                            "ddlShohon_width": "L",
+                            "chkKakoShohon_displayNone": false,
+                            "chkKakoShohon_selectedItems": []
+                        },
+                        {
+                            "fieldName": "chkMutohyo",
+                            "items": [],
+                            "controlType": "CheckBoxList",
+                            "width": "M",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "chkMutohyo_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "onChange": "",
+                            "labelLText": "",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "selectedItem": null,
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "無投票選挙も出力する"
+                                }
+                            ],
+                            "onClick": "",
+                            "selectedItems": [],
+                            "newLineItemNumber": 1,
+                            "minCheckedItem": 0,
+                            "maxCheckedItem": "1",
+                            "spaceSize": "M",
+                            "isAllSelectable": false,
+                            "isAllSelectableBreakLine": false,
+                            "disabledItem": [],
+                            "icon": []
+                        },
+                        {
+                            "fieldName": "dgSenkyoList",
+                            "items": [],
+                            "controlType": "DataGrid",
+                            "width": "640px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "dgSenkyoList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "height": "Auto",
+                            "dataSource": [],
+                            "gridSetting": {
+                                "rowHeight": 25,
+                                "isMultiSelectable": false,
+                                "isShowHeader": true,
+                                "isShowFooter": false,
+                                "isShowFilter": false,
+                                "isShowFilterButton": false,
+                                "isShowRowState": false,
+                                "isShowSelectButtonColumn": false,
+                                "isShowModifyButtonColumn": false,
+                                "isShowDeleteButtonColumn": false,
+                                "limitRowCount": 0,
+                                "selectedRowCount": 0,
+                                "header": {
+                                    "combineColumns": [],
+                                    "frozenColumn": "",
+                                    "headerHeight": 0
+                                },
+                                "columns": [
+                                    {
+                                        "columnName": "No",
+                                        "dataName": "txtNo",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 40,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "選挙名",
+                                        "dataName": "txtSenkyoName",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 600,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "無投票",
+                                        "dataName": "chkMutohyoSenkyoFlag",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 50,
+                                        "visible": false,
+                                        "cellType": 2,
+                                        "cellDetails": {
+                                            "cellType": 2,
+                                            "disabled": true,
+                                            "onChange": ""
+                                        },
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    }
+                                ]
+                            },
+                            "onSort": "",
+                            "onSelect": "",
+                            "onSelectByDblClick": "",
+                            "onSelectBySelectButton": "",
+                            "onSelectByModifyButton": "",
+                            "onSelectByDeleteButton": "",
+                            "onAfterRequest": "",
+                            "onAfterRequestByDblClick": "",
+                            "onAfterRequestBySelectButton": "",
+                            "onAfterRequestByModifyButton": "",
+                            "onAfterRequestByDeleteButton": "",
+                            "onOnlyRow": "",
+                            "onNoRow": "",
+                            "onMultiRows": "",
+                            "sortOrder": "",
+                            "isAscending": true,
+                            "filterList": [],
+                            "activeRowId": -1,
+                            "gridAction": []
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G8",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "ShohonSenkyoList",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "対象抄本",
+                    "marginTop": "0em",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "ShohonSenkyoList"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFB",
+            "controlName": "ShohonSenkyoList",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return ShohonSenkyoList_Design;
+    })(Uz.CommonChildDiv);
+    AFB.ShohonSenkyoList_Design = ShohonSenkyoList_Design;
+
+    (function (ShohonSenkyoList) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        ShohonSenkyoList.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ShohonSenkyoList";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFB.ShohonSenkyoList.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.ShohonSenkyoList = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdShohonNameList = function () {
+                return new AFA.ShohonNameList.ModeController("ccdShohonNameList");
+            };
+
+            Controls.prototype.chkMutohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMutohyo"));
+            };
+
+            Controls.prototype.dgSenkyoList = function () {
+                return new UZA.DataGrid(this.convFiledName("dgSenkyoList"));
+            };
+            return Controls;
+        })();
+        ShohonSenkyoList.Controls = Controls;
+    })(AFB.ShohonSenkyoList || (AFB.ShohonSenkyoList = {}));
+    var ShohonSenkyoList = AFB.ShohonSenkyoList;
+})(AFB || (AFB = {}));
+
+var AFB;
+(function (AFB) {
+    (function (ShohonSenkyoList) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ShohonSenkyoList.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        ShohonSenkyoList.ModeController = ModeController;
+    })(AFB.ShohonSenkyoList || (AFB.ShohonSenkyoList = {}));
+    var ShohonSenkyoList = AFB.ShohonSenkyoList;
+})(AFB || (AFB = {}));
+
+var AFB;
+(function (AFB) {
+    (function (ShohonSenkyoList) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ShohonSenkyoList.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        ShohonSenkyoList.PublicProperties = PublicProperties;
+    })(AFB.ShohonSenkyoList || (AFB.ShohonSenkyoList = {}));
+    var ShohonSenkyoList = AFB.ShohonSenkyoList;
+})(AFB || (AFB = {}));
+</script>
+  
+  
+  
+  
+  
+   
+   
+   
+   
+   
+   
+       
+   
+   
+         
+   
+   
+       <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['SHOHONSENKYOLIST'] = {};
+AFA['SHOHONSENKYOLIST'].ShohonSenkyoListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_ShohonSenkyoList').getProperty();parameter0.ccdShohonNameList = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShohonNameList').getPostParameter();parameter0.chkMutohyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMutohyo').getProperty();parameter0.btnHdnChangeShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnHdnChangeShohon').getProperty();parameter0.dgSenkyoList = Uz.JSControlUtil.getJSControl(parentFieldName + '_dgSenkyoList').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (ShohonSenkyoList) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_checkbox = function () {
+                return "onChange_checkbox";
+            };
+
+            Events.onClick_btnHdnChangeShohon = function () {
+                return "onClick_btnHdnChangeShohon";
+            };
+            return Events;
+        })();
+        ShohonSenkyoList.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ShohonSenkyoList";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ShohonSenkyoList.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.ShohonSenkyoList.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.ShohonSenkyoList = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdShohonNameList = function () {
+                return new AFA.ShohonNameList.ModeController(this.convFiledName("ccdShohonNameList"));
+            };
+
+            Controls.prototype.chkMutohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMutohyo"));
+            };
+
+            Controls.prototype.btnHdnChangeShohon = function () {
+                return new UZA.Button(this.convFiledName("btnHdnChangeShohon"));
+            };
+
+            Controls.prototype.dgSenkyoList = function () {
+                return new UZA.DataGrid(this.convFiledName("dgSenkyoList"));
+            };
+            return Controls;
+        })();
+        ShohonSenkyoList.Controls = Controls;
+    })(AFA.ShohonSenkyoList || (AFA.ShohonSenkyoList = {}));
+    var ShohonSenkyoList = AFA.ShohonSenkyoList;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (ShohonSenkyoList) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                var _this = this;
+                this.fieldName = fieldName;
+                this.controls = new ShohonSenkyoList.Controls(fieldName);
+
+                Uz.GyomuJSHelper.registOriginalEvent("onChange_ddlShohon", function () {
+                    (_this.controls.btnHdnChangeShohon()._control).fireEvent("onClick_btnHdnChangeShohon");
+                });
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        ShohonSenkyoList.ModeController = ModeController;
+    })(AFA.ShohonSenkyoList || (AFA.ShohonSenkyoList = {}));
+    var ShohonSenkyoList = AFA.ShohonSenkyoList;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShohonSenkyoList) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ShohonSenkyoList.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        ShohonSenkyoList.PublicProperties = PublicProperties;
+    })(AFA.ShohonSenkyoList || (AFA.ShohonSenkyoList = {}));
+    var ShohonSenkyoList = AFA.ShohonSenkyoList;
+})(AFA || (AFA = {}));
+</script></div>

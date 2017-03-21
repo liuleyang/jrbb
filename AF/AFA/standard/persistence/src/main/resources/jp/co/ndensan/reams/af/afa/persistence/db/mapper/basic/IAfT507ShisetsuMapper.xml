@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT507Shisetsuマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT507ShisetsuMapper">
+
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT507Shisetsu">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT507ShisetsuMapper.allColumns_AfT507Shisetsu" />
+        FROM
+        rgaf."AfT507Shisetsu"
+        WHERE
+        rgaf."AfT507Shisetsu"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT507Shisetsu">
+        "AfT507Shisetsu"."shisetsuCode" as "afT507Shisetsu_shisetsuCode",
+        "AfT507Shisetsu"."insertDantaiCd" as "afT507Shisetsu_insertDantaiCd",
+        "AfT507Shisetsu"."insertTimestamp" as "afT507Shisetsu_insertTimestamp",
+        "AfT507Shisetsu"."insertReamsLoginId" as "afT507Shisetsu_insertReamsLoginId",
+        "AfT507Shisetsu"."insertContextId" as "afT507Shisetsu_insertContextId",
+        "AfT507Shisetsu"."isDeleted" as "afT507Shisetsu_isDeleted",
+        "AfT507Shisetsu"."updateCount" as "afT507Shisetsu_updateCount",
+        "AfT507Shisetsu"."lastUpdateTimestamp" as "afT507Shisetsu_lastUpdateTimestamp",
+        "AfT507Shisetsu"."lastUpdateReamsLoginId" as "afT507Shisetsu_lastUpdateReamsLoginId",
+        "AfT507Shisetsu"."shisetsuShubetsu" as "afT507Shisetsu_shisetsuShubetsu",
+        "AfT507Shisetsu"."shisetsuName" as "afT507Shisetsu_shisetsuName",
+        "AfT507Shisetsu"."kanaShisetsuName" as "afT507Shisetsu_kanaShisetsuName",
+        "AfT507Shisetsu"."searchKanaShisetsuName" as "afT507Shisetsu_searchKanaShisetsuName",
+        "AfT507Shisetsu"."yubinNo" as "afT507Shisetsu_yubinNo",
+        "AfT507Shisetsu"."jusho" as "afT507Shisetsu_jusho",
+        "AfT507Shisetsu"."shisetsuAtena" as "afT507Shisetsu_shisetsuAtena",
+        "AfT507Shisetsu"."telNo" as "afT507Shisetsu_telNo",
+        "AfT507Shisetsu"."faxNo" as "afT507Shisetsu_faxNo"
+    </sql>
+
+
+    <!--テーブルAfT507Shisetsuの項目をAfT507ShisetsuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT507ShisetsuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT507ShisetsuEntity" autoMapping="true">
+        <id property="shisetsuCode" column="afT507Shisetsu_shisetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT507Shisetsu_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT507Shisetsu_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT507Shisetsu_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT507Shisetsu_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT507Shisetsu_isDeleted" />
+        <result property="updateCount" column="afT507Shisetsu_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT507Shisetsu_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT507Shisetsu_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shisetsuShubetsu" column="afT507Shisetsu_shisetsuShubetsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shisetsuName" column="afT507Shisetsu_shisetsuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kanaShisetsuName" column="afT507Shisetsu_kanaShisetsuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="searchKanaShisetsuName" column="afT507Shisetsu_searchKanaShisetsuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="yubinNo" column="afT507Shisetsu_yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="jusho" column="afT507Shisetsu_jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="shisetsuAtena" column="afT507Shisetsu_shisetsuAtena" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="telNo" column="afT507Shisetsu_telNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.TelNoTypeHandler"/>
+        <result property="faxNo" column="afT507Shisetsu_faxNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.TelNoTypeHandler"/>
+    </resultMap>
+
+</mapper>

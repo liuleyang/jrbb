@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCE6030",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "施設宛名シール作成",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGME6030",
+     "toLayoutTitle": "施設宛名シール作成",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGME6030",
+     "layoutTitle": "施設宛名シール作成",
+     "eventName": "処理終了",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

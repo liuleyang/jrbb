@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.ISenkyoRelateMapper">
+
+    <select resultOrdered="true" id="getMeiboTorokuYMD" resultType="jp.co.ndensan.reams.uz.uza.lang.FlexibleDate"
+            parameterType="jp.co.ndensan.reams.uz.uza.lang.FlexibleDate">
+        SELECT MAX("kijunYMD")
+        FROM rgaf."AfT111Senkyo",rgaf."AfT100Shohon"
+        WHERE <![CDATA["kijunYMD" < #{kijunbi}]]>
+        AND rgaf."AfT111Senkyo"."shohonNo"=rgaf."AfT100Shohon"."shohonNo"
+        AND (rgaf."AfT100Shohon"."senkyoShurui" = '0' OR rgaf."AfT100Shohon"."senkyoShurui" = '1')
+    </select>
+
+</mapper>

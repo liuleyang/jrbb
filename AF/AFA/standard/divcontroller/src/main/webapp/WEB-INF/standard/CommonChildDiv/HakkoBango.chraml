@@ -1,0 +1,472 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;HakkoBango&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtHakkoNoDai_labelLWidth&quot;,&quot;editType&quot;:0}]},&quot;txtHakkoNoDai_labelLWidth&quot;:&quot;&quot;}" data-is-composite-control="true" data-control-name="AFA.HakkoBango"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="HakkoBango" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;HakkoBango&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;HakkoBango&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;HakkoBango&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="HakkoBango_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="HakkoBango_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M UzCompositeChild" id="txtHakkoNoDai" style="width: 183px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtHakkoNoDai&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;S&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtHakkoNoDai_core&quot;,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;発行番号&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtHakkoNoDai_labelL"><span>発行番号</span></span><input class="UzTextBox CoreElement Width-S text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtHakkoNoDai_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XS UzCompositeChild" id="txtHakkoNoBango" style="width: 52px; height: 21px; margin-right: 0em;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtHakkoNoBango&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtHakkoNoBango_core&quot;,&quot;suggest&quot;:[]}"><input class="UzTextBox CoreElement Width-XS text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtHakkoNoBango_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtHakkoNoGo" style="width: 52px; height: 21px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtHakkoNoGo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;selectControlID&quot;:&quot;txtHakkoNoGo_core&quot;,&quot;suggest&quot;:[]}"><input class="UzTextBox CoreElement Width-XS text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtHakkoNoGo_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var HakkoBango_Design = (function (_super) {
+        __extends(HakkoBango_Design, _super);
+        function HakkoBango_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, HakkoBango_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(HakkoBango_Design.prototype, "txtHakkoNoDai_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        HakkoBango_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtHakkoNoDai_labelLWidth");
+        };
+
+        HakkoBango_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtHakkoNoDai_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+
+            return editablePropertyInfo;
+        };
+        HakkoBango_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "HakkoBango",
+                    "items": [
+                        {
+                            "fieldName": "txtHakkoNoDai",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "S",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtHakkoNoDai_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "第",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "発行番号",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": ""
+                        },
+                        {
+                            "fieldName": "txtHakkoNoBango",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "txtHakkoNoBango_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "番号",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": ""
+                        },
+                        {
+                            "fieldName": "txtHakkoNoGo",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtHakkoNoGo_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "号",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": ""
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "HakkoBango",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        }
+                    ],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": false
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "HakkoBango",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildProperty": "labelLWidth",
+                    "publicChildFieldName": "txtHakkoNoDai",
+                    "newPropertyName": "txtHakkoNoDai_labelLWidth"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return HakkoBango_Design;
+    })(Uz.CommonChildDiv);
+    AFA.HakkoBango_Design = HakkoBango_Design;
+
+    (function (HakkoBango) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        HakkoBango.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "HakkoBango";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.HakkoBango.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.HakkoBango = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtHakkoNoDai = function () {
+                return new UZA.TextBox(this.convFiledName("txtHakkoNoDai"));
+            };
+
+            Controls.prototype.txtHakkoNoBango = function () {
+                return new UZA.TextBox(this.convFiledName("txtHakkoNoBango"));
+            };
+
+            Controls.prototype.txtHakkoNoGo = function () {
+                return new UZA.TextBox(this.convFiledName("txtHakkoNoGo"));
+            };
+            return Controls;
+        })();
+        HakkoBango.Controls = Controls;
+    })(AFA.HakkoBango || (AFA.HakkoBango = {}));
+    var HakkoBango = AFA.HakkoBango;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (HakkoBango) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new HakkoBango.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        HakkoBango.ModeController = ModeController;
+    })(AFA.HakkoBango || (AFA.HakkoBango = {}));
+    var HakkoBango = AFA.HakkoBango;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (HakkoBango) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new HakkoBango.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtHakkoNoDai_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtHakkoNoDai_labelLWidth = function () {
+                return this.controls.txtHakkoNoDai().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtHakkoNoDai_labelLWidth = function (value) {
+                this.controls.txtHakkoNoDai().labelLWidth = value;
+            };
+            return PublicProperties;
+        })();
+        HakkoBango.PublicProperties = PublicProperties;
+    })(AFA.HakkoBango || (AFA.HakkoBango = {}));
+    var HakkoBango = AFA.HakkoBango;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+   
+     
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['HAKKOBANGO'] = {};
+AFA['HAKKOBANGO'].HakkoBangoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_HakkoBango').getProperty();parameter0.txtHakkoNoDai = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHakkoNoDai').getProperty();parameter0.txtHakkoNoBango = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHakkoNoBango').getProperty();parameter0.txtHakkoNoGo = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHakkoNoGo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (HakkoBango) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        HakkoBango.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "HakkoBango";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.HakkoBango.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.HakkoBango.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.HakkoBango = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtHakkoNoDai = function () {
+                return new UZA.TextBox(this.convFiledName("txtHakkoNoDai"));
+            };
+
+            Controls.prototype.txtHakkoNoBango = function () {
+                return new UZA.TextBox(this.convFiledName("txtHakkoNoBango"));
+            };
+
+            Controls.prototype.txtHakkoNoGo = function () {
+                return new UZA.TextBox(this.convFiledName("txtHakkoNoGo"));
+            };
+            return Controls;
+        })();
+        HakkoBango.Controls = Controls;
+    })(AFA.HakkoBango || (AFA.HakkoBango = {}));
+    var HakkoBango = AFA.HakkoBango;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (HakkoBango) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new HakkoBango.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        HakkoBango.ModeController = ModeController;
+    })(AFA.HakkoBango || (AFA.HakkoBango = {}));
+    var HakkoBango = AFA.HakkoBango;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (HakkoBango) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new HakkoBango.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtHakkoNoDai_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtHakkoNoDai_labelLWidth = function () {
+                return this.controls.txtHakkoNoDai().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtHakkoNoDai_labelLWidth = function (value) {
+                this.controls.txtHakkoNoDai().labelLWidth = value;
+            };
+            return PublicProperties;
+        })();
+        HakkoBango.PublicProperties = PublicProperties;
+    })(AFA.HakkoBango || (AFA.HakkoBango = {}));
+    var HakkoBango = AFA.HakkoBango;
+})(AFA || (AFA = {}));
+</script></div>

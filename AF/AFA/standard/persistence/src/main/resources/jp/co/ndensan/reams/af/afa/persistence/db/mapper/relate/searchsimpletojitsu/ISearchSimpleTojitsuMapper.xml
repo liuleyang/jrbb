@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 住民検索用のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+
+<!-- @reamsid_L AF-0260-020 lis -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.searchsimpletojitsu.ISearchSimpleTojitsuMapper">
+    
+    <select resultOrdered="false" id="select検索結果一覧" resultMap="ResultMap_IdoSearchJuminShikakuEntity" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.searchsimpletojitsu.SearchSimpleTojitsuMapperParameter" fetchSize="500">
+        WITH master AS ( 
+            select
+                "AfV112SenkyoninMeibo"."shikibetsuCode" 
+            from
+            rgaf."AfV112SenkyoninMeibo" as "AfV112SenkyoninMeibo"
+            inner join
+            rgaf."AfV113SenkyoShikaku" as "AfV113SenkyoShikaku"
+            on "AfV113SenkyoShikaku"."senkyoShurui" = #{選挙種類}
+            and "AfV112SenkyoninMeibo"."shikibetsuCode" = "AfV113SenkyoShikaku"."shikibetsuCode" 
+           left join
+           rgaf."AfV114FuzaishaTohyoShikaku" AS "AfT114FuzaishaTohyoShikaku"
+           on "AfV112SenkyoninMeibo"."shikibetsuCode"  = "AfT114FuzaishaTohyoShikaku"."shikibetsuCode"
+            where            
+            "AfV112SenkyoninMeibo"."shohonNo" = #{抄本番号}
+            and "AfV113SenkyoShikaku"."senkyoShurui" = #{選挙種類}
+            
+                <if test="isUsing投票区コード">
+                    and "AfV112SenkyoninMeibo"."tohyokuCode" = #{投票区コード}
+                </if>
+                <if test="isUsing冊">
+                    and "AfV112SenkyoninMeibo"."satsu" = #{冊}
+                </if>
+                <if test="isUsing頁">
+                    and "AfV112SenkyoninMeibo"."page" = #{頁}
+                </if>
+                <if test="isUsing行">
+                    and "AfV112SenkyoninMeibo"."gyo" = #{行}
+                </if>
+        )
+        
+        select
+        distinct
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />,
+            "AfV112SenkyoninMeibo"."tohyokuCode",
+            "AfV112SenkyoninMeibo"."satsu" as "satsu",
+            "AfV112SenkyoninMeibo"."page" as "page",
+            "AfV112SenkyoninMeibo"."gyo" as "gyo",
+            "AfV113SenkyoShikaku"."shikakuKubun" as "shikakuKubun",
+            "AfV113SenkyoShikaku"."meiboTorokuYMD" as "meiboTorokuYMD",
+            "AfV113SenkyoShikaku"."hyojiYMD" as "hyojiYMD",
+            "AfV113SenkyoShikaku"."hyojiJiyuCode" as "hyojiJiyuCode",
+            "AfV113SenkyoShikaku"."masshoYMD" as "masshoYMD",
+            "AfV113SenkyoShikaku"."masshoJiyuCode" as "masshoJiyuCode",
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.allColumns_AfT114FuzaishaTohyoShikaku" />
+        from
+        rgaf."AfV112SenkyoninMeibo" as "AfV112SenkyoninMeibo"
+        inner join
+        rgaf."AfV113SenkyoShikaku" as "AfV113SenkyoShikaku"
+        on "AfV113SenkyoShikaku"."senkyoShurui" = #{選挙種類}
+        and "AfV112SenkyoninMeibo"."shikibetsuCode" = "AfV113SenkyoShikaku"."shikibetsuCode" 
+        inner join
+            <include refid="tableName_PsmParamClassWithoutShikibetsuCodeList_First" />  
+                ( 
+                SELECT
+                  ARRAY_AGG(CAST ("shikibetsuCode" AS TEXT)) 
+                FROM
+                  master
+                )
+            <include refid="tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        as
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        on <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" =
+        "AfV112SenkyoninMeibo"."shikibetsuCode"
+       left join
+       rgaf."AfV114FuzaishaTohyoShikaku" AS "AfT114FuzaishaTohyoShikaku"
+       on "AfV112SenkyoninMeibo"."shikibetsuCode"  = "AfT114FuzaishaTohyoShikaku"."shikibetsuCode"
+        where            
+        "AfV112SenkyoninMeibo"."shohonNo" = #{抄本番号}
+        and "AfV113SenkyoShikaku"."senkyoShurui" = #{選挙種類}
+        <if test="isUsing氏名">
+            <if test="is氏名前方一致">
+            and <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."meisho" like concat(#{氏名},'%')
+            </if>
+            <if test="is氏名後方一致">
+            and  <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."meisho" like concat('%',#{氏名})
+            </if>
+            <if test="is氏名部分一致">
+            and  <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."meisho" like concat('%',#{氏名},'%')
+            </if>
+        </if>
+            <if test="isUsing投票区コード">
+                and "AfV112SenkyoninMeibo"."tohyokuCode" = #{投票区コード}
+            </if>
+            <if test="isUsing冊">
+                and "AfV112SenkyoninMeibo"."satsu" = #{冊}
+            </if>
+            <if test="isUsing頁">
+                and "AfV112SenkyoninMeibo"."page" = #{頁}
+            </if>
+            <if test="isUsing行">
+                and "AfV112SenkyoninMeibo"."gyo" = #{行}
+            </if>
+        limit
+        #{最大表示件数}
+    </select>
+    
+    <resultMap id="ResultMap_IdoSearchJuminShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.IdoSearchJuminShikakuEntity" autoMapping="true">
+        <id property="shikibetsuTaisho.shikibetsuCode" column="ShikibetsuTaisho_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="shikakuKubun" column="shikakuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="meiboTorokuYMD" column="meiboTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiYMD" column="hyojiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="hyojiJiyuCode" column="hyojiJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="masshoYMD" column="masshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="masshoJiyuCode" column="masshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <association property = "shikibetsuTaisho" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+        <collection property="fuzaishaTohyoShikakuEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.ResultMap_AfT114FuzaishaTohyoShikakuEntity">
+        </collection>
+    </resultMap>
+    
+    <sql id="tableName_PsmParamClassWithoutShikibetsuCodeList_First">
+        rgua."UaFt200FindShikibetsuTaisho"(
+        #{uaft200_dataShutokuKubun},
+        #{uaft200_kijunYMD},
+        #{uaft200_jutogaiYusenFlag},
+        #{uaft200_gyomuCode},
+        #{uaft200_setaiinShutoku},
+        <if test="uaft200_isUseTableColumn">
+            ${uaft200_shikibetsuCode},
+        </if>
+        <if test="!uaft200_isUseTableColumn">
+            #{uaft200_shikibetsuCode},
+        </if>
+        #{uaft200_setaiCode},
+        #{uaft200_kojinNo},
+        #{uaft200_hojinNo},
+        #{uaft200_juminhyoCode},
+        #{uaft200_zairyuCardtoNo},
+        #{uaft200_shimei},
+        #{uaft200_shimeiBunkatsu1},
+        #{uaft200_shimeiBunkatsu2},
+        #{uaft200_shimeiBunkatsu3},
+        #{uaft200_shimei_joken},
+        #{uaft200_shimei_rirekiumu},
+        #{uaft200_seinengappiYmd},
+        #{uaft200_seibetsuCode},
+        #{uaft200_choikiCode},
+        #{uaft200_choiki},
+        #{uaft200_zenkokuJushoCode},
+        #{uaft200_zenkokuJusho},
+        #{uaft200_jushoMeisho_Joken},
+        #{uaft200_jusho_rirekiumu},
+        #{uaft200_gyoseikuCode},
+        #{uaft200_chikuCode1},
+        #{uaft200_chikuCode2},
+        #{uaft200_chikuCode3},
+        #{uaft200_banchiCode1},
+        #{uaft200_banchiCode2},
+        #{uaft200_banchiCode3},
+        #{uaft200_banchiCode4},
+        #{uaft200_katagakiMeisho},
+        #{uaft200_katagaki_Joken},
+        #{uaft200_yubinNo},
+        #{uaft200_juminJutonaiNihonjin},
+        #{uaft200_juminJutonaiGaikokujin},
+        #{uaft200_juminJutogaiNihonjin},
+        #{uaft200_juminJutogaiGaikokujin},
+        #{uaft200_jumin_Hojin},
+        #{uaft200_jumin_Kyoyusha},
+        #{uaft200_juminJotaiJumin},
+        #{uaft200_juminJotaiJutogai},
+        #{uaft200_juminJotaiShojosha},
+        #{uaft200_juminJotaiTenshutsusha},
+        #{uaft200_juminJotaiShibosha},
+        #{uaft200_renrakusaki},
+        #{uaft200_hojinKeitaiCode},
+        #{uaft200_daihyoShikibetsuCode},
+        #{uaft200_daihyoShimei},
+        #{uaft200_daihyoShimeiBunkatsu1},
+        #{uaft200_daihyoShimeiBunkatsu2},
+        #{uaft200_daihyoShimeiBunkatsu3},
+        #{uaft200_daihyoShimei_joken},
+        #{uaft200_daihyoShimei_rirekiumu},
+        #{uaft200_kokusekiChiikiCode},
+        #{uaft200_lasdecCode},
+        #{uaft200_sakujoShutoku},
+        #{uaft200_doitsuninYusen},
+        #{uaft200_kosekiShutoku},
+        #{uaft200_choikiCode_ST},
+        #{uaft200_choikiCode_ED},
+        #{uaft200_zenkokuJushoCode_ST},
+        #{uaft200_zenkokuJushoCode_ED},
+        #{uaft200_gyoseikuCode_ST},
+        #{uaft200_gyoseikuCode_ED},
+        #{uaft200_chikuCode1_ST},
+        #{uaft200_chikuCode1_ED},
+        #{uaft200_chikuCode2_ST},
+        #{uaft200_chikuCode2_ED},
+        #{uaft200_chikuCode3_ST},
+        #{uaft200_chikuCode3_ED},
+        #{uaft200_shikibetsuCode_ST},
+        #{uaft200_shikibetsuCode_ED},
+        #{uaft200_setaiCode_ST},
+        #{uaft200_setaiCode_ED},
+        #{uaft200_yubinNo_ST},
+        #{uaft200_yubinNo_ED},
+    </sql>
+    
+    <sql id="tableName_PsmParamClassWithoutShikibetsuCodeList_Second">
+        )
+    </sql>
+</mapper>

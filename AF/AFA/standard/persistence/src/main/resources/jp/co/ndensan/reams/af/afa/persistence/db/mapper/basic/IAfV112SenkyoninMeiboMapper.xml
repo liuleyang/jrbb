@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT112SenkyoninMeiboマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT112SenkyoninMeibo">
+        SELECT
+        <include refid="allColumns_AfT112SenkyoninMeibo" />
+        FROM
+        rgaf."AfT112SenkyoninMeibo"
+        WHERE
+        rgaf."AfT112SenkyoninMeibo"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT112SenkyoninMeibo">
+        "AfT112SenkyoninMeibo"."shohonNo" as "afT112SenkyoninMeibo_shohonNo",
+        "AfT112SenkyoninMeibo"."groupCode" as "afT112SenkyoninMeibo_groupCode",
+        "AfT112SenkyoninMeibo"."tohyokuCode" as "afT112SenkyoninMeibo_tohyokuCode",
+        "AfT112SenkyoninMeibo"."satsu" as "afT112SenkyoninMeibo_satsu",
+        "AfT112SenkyoninMeibo"."page" as "afT112SenkyoninMeibo_page",
+        "AfT112SenkyoninMeibo"."gyo" as "afT112SenkyoninMeibo_gyo",
+        "AfT112SenkyoninMeibo"."seq" as "afT112SenkyoninMeibo_seq",
+        "AfT112SenkyoninMeibo"."insertDantaiCd" as "afT112SenkyoninMeibo_insertDantaiCd",
+        "AfT112SenkyoninMeibo"."insertTimestamp" as "afT112SenkyoninMeibo_insertTimestamp",
+        "AfT112SenkyoninMeibo"."insertReamsLoginId" as "afT112SenkyoninMeibo_insertReamsLoginId",
+        "AfT112SenkyoninMeibo"."insertContextId" as "afT112SenkyoninMeibo_insertContextId",
+        "AfT112SenkyoninMeibo"."isDeleted" as "afT112SenkyoninMeibo_isDeleted",
+        "AfT112SenkyoninMeibo"."updateCount" as "afT112SenkyoninMeibo_updateCount",
+        "AfT112SenkyoninMeibo"."lastUpdateTimestamp" as "afT112SenkyoninMeibo_lastUpdateTimestamp",
+        "AfT112SenkyoninMeibo"."lastUpdateReamsLoginId" as "afT112SenkyoninMeibo_lastUpdateReamsLoginId",
+        "AfT112SenkyoninMeibo"."shikibetsuCode" as "afT112SenkyoninMeibo_shikibetsuCode",
+        "AfT112SenkyoninMeibo"."tohyokuHenkoMasshoFlag" as "afT112SenkyoninMeibo_tohyokuHenkoMasshoFlag",
+        "AfT112SenkyoninMeibo"."renban" as "afT112SenkyoninMeibo_renban",
+        "AfT112SenkyoninMeibo"."edaban" as "afT112SenkyoninMeibo_edaban"
+    </sql>
+
+
+    <!--テーブルAfT112SenkyoninMeiboの項目をAfT112SenkyoninMeiboEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT112SenkyoninMeiboEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT112SenkyoninMeiboEntity" autoMapping="true">
+        <id property="shohonNo" column="afT112SenkyoninMeibo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="groupCode" column="afT112SenkyoninMeibo_groupCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyokuCode" column="afT112SenkyoninMeibo_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="satsu" column="afT112SenkyoninMeibo_satsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="page" column="afT112SenkyoninMeibo_page" />
+        <id property="gyo" column="afT112SenkyoninMeibo_gyo" />
+        <id property="seq" column="afT112SenkyoninMeibo_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <result property="insertDantaiCd" column="afT112SenkyoninMeibo_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT112SenkyoninMeibo_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT112SenkyoninMeibo_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT112SenkyoninMeibo_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT112SenkyoninMeibo_isDeleted" />
+        <result property="updateCount" column="afT112SenkyoninMeibo_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT112SenkyoninMeibo_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT112SenkyoninMeibo_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shikibetsuCode" column="afT112SenkyoninMeibo_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="tohyokuHenkoMasshoFlag" column="afT112SenkyoninMeibo_tohyokuHenkoMasshoFlag" />
+        <result property="renban" column="afT112SenkyoninMeibo_renban" />
+        <result property="edaban" column="afT112SenkyoninMeibo_edaban" />
+    </resultMap>
+
+</mapper>

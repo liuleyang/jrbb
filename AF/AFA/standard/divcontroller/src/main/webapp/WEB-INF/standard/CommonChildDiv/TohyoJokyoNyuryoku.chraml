@@ -1,0 +1,1155 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyoJokyoNyuryoku&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.TohyoJokyoNyuryoku"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginTop-M panelMarginBottom-M StateChangable marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G11 UzCompositeChild" id="TohyoJokyoNyuryoku" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;TohyoJokyoNyuryoku&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G11&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;TohyoJokyoNyuryoku&quot;,&quot;title&quot;:&quot;選挙人の投票状況&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;TohyoJokyoNyuryoku&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onClick_radTohyoJokyo&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/TohyoJokyoNyuryoku/onClick_radTohyoJokyo&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnShikibetsuCode&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnShohonNo&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="TohyoJokyoNyuryoku_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">選挙人の投票状況</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="TohyoJokyoNyuryoku_panel_body_area"><div title="" class="UzPanel FloatLeft JSControl Panel UzPanelAndText StateChangable ClearFloat marginLeft-XS marginRight-XS marginTop-S marginBottom-S Width-G2 UzCompositeChild" id="TohyoJokyoSelect" style="width: auto; margin-top: 0px; margin-bottom: 0px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;TohyoJokyoSelect&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;TohyoJokyoSelect&quot;,&quot;title&quot;:&quot;投票区分&quot;,&quot;marginTop&quot;:&quot;S&quot;,&quot;marginBottom&quot;:&quot;S&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;TohyoJokyoSelect&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;panelDisplay&quot;:1,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader clearBackground" id="TohyoJokyoSelect_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n iconSpan-GroupBox" style="visibility: hidden;"></span><span class="textSpan textSpan-GroupBox textSpan-GroupBoxWithoutIcon">投票区分</span><div class="groupBoxBorder" style="display: block;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M Panel-GroupBox ui-droppable ui-sortable" id="TohyoJokyoSelect_panel_body_area"><div title="" class="UzRadioButton FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="radTohyoJokyo" style="width: 399px; height: 19px;" data-control-type="RadioButton" data-obj="{&quot;fieldName&quot;:&quot;radTohyoJokyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;RadioButton&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;radTohyoJokyo_core&quot;,&quot;selectedItem&quot;:&quot;6&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;投票&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;棄権&quot;},{&quot;key&quot;:&quot;8&quot;,&quot;value&quot;:&quot;受付拒否　　　　　&quot;},{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;投票取消&quot;}],&quot;required&quot;:true,&quot;onClick&quot;:&quot;onClick_radTohyoJokyo&quot;,&quot;newLineItemNumber&quot;:4,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="buttonSpan FloatLeft Width- required" id="radTohyoJokyo_core"><input name="radTohyoJokyo_group" id="radTohyoJokyo_6" type="radio" value="投票" data-key="6"><label for="radTohyoJokyo_6" data-key="6">投票</label><input name="radTohyoJokyo_group" class="spaceSize-M" id="radTohyoJokyo_5" type="radio" value="棄権" data-key="5"><label for="radTohyoJokyo_5" data-key="5">棄権</label><input name="radTohyoJokyo_group" class="spaceSize-M" id="radTohyoJokyo_8" type="radio" value="受付拒否　　　　　" data-key="8"><label for="radTohyoJokyo_8" data-key="8">受付拒否　　　　　</label><input name="radTohyoJokyo_group" class="spaceSize-M" id="radTohyoJokyo_0" type="radio" value="投票取消" data-key="0"><label for="radTohyoJokyo_0" data-key="0">投票取消</label></span></div></div></div><div title="" class="UzDataGrid FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS Height-Auto UzCompositeChild" id="dgTohyoJokyo" style="width: 1125px;" data-control-type="DataGrid" data-obj="{&quot;fieldName&quot;:&quot;dgTohyoJokyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DataGrid&quot;,&quot;width&quot;:&quot;1125px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;dgTohyoJokyo&quot;,&quot;height&quot;:&quot;Auto&quot;,&quot;dataSource&quot;:[],&quot;selectedItems&quot;:[],&quot;gridSetting&quot;:{&quot;rowHeight&quot;:25,&quot;isMultiSelectable&quot;:true,&quot;isShowHeader&quot;:true,&quot;isShowFilter&quot;:false,&quot;isShowFilterButton&quot;:false,&quot;isShowClearSortButton&quot;:false,&quot;isShowSelectedRowCount&quot;:false,&quot;isShowFooter&quot;:false,&quot;isShowRowState&quot;:false,&quot;columns&quot;:[{&quot;columnName&quot;:&quot;状態&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:80,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtTohyoJokyo&quot;},{&quot;columnName&quot;:&quot;選挙略称&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:80,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSenkyoRyakusho&quot;},{&quot;columnName&quot;:&quot;受付番号&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:70,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0,&quot;isSetValueToToolTip&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtUketsukeNo&quot;},{&quot;columnName&quot;:&quot;投票日&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:90,&quot;visible&quot;:true,&quot;cellType&quot;:7,&quot;cellDetails&quot;:{&quot;cellType&quot;:7,&quot;disabled&quot;:false,&quot;readOnly&quot;:true,&quot;required&quot;:false,&quot;ymdKubun&quot;:2,&quot;displayFormat&quot;:0,&quot;onChange&quot;:&quot;&quot;,&quot;onFocus&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;&quot;,&quot;placeHolder&quot;:&quot;&quot;,&quot;decorationClass&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false,&quot;isShowCalendarOpenerIcon&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtUketsukeYMD&quot;},{&quot;columnName&quot;:&quot;投票時刻&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:70,&quot;visible&quot;:true,&quot;cellType&quot;:13,&quot;cellDetails&quot;:{&quot;cellType&quot;:13,&quot;required&quot;:false,&quot;timeKubun&quot;:1,&quot;displayFormat&quot;:1,&quot;onChange&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false,&quot;readOnly&quot;:true},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtUketsukeTime&quot;},{&quot;columnName&quot;:&quot;投票事由&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:140,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtTohyoJiyu&quot;},{&quot;columnName&quot;:&quot;交付施設&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:145,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtShisetsu&quot;},{&quot;columnName&quot;:&quot;請求方法&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:100,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSeikyuHoho&quot;},{&quot;columnName&quot;:&quot;点字&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:50,&quot;visible&quot;:true,&quot;cellType&quot;:2,&quot;cellDetails&quot;:{&quot;cellType&quot;:2,&quot;disabled&quot;:true},&quot;align&quot;:1,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;chkTenjiFlag&quot;},{&quot;columnName&quot;:&quot;代理&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:50,&quot;visible&quot;:true,&quot;cellType&quot;:2,&quot;cellDetails&quot;:{&quot;cellType&quot;:2,&quot;disabled&quot;:true},&quot;align&quot;:1,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;chkDairiFlag&quot;},{&quot;columnName&quot;:&quot;補助者氏名1&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:100,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHojoshaShimei1&quot;},{&quot;columnName&quot;:&quot;補助者氏名2&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:100,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHojoshaShimei2&quot;},{&quot;columnName&quot;:&quot;拒否事由&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtKyohiJiyu&quot;},{&quot;columnName&quot;:&quot;選挙番号&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:70,&quot;visible&quot;:false,&quot;cellType&quot;:5,&quot;cellDetails&quot;:{&quot;cellType&quot;:5,&quot;disabled&quot;:false,&quot;readOnly&quot;:true,&quot;required&quot;:false,&quot;maxLength&quot;:&quot;1&quot;,&quot;minLength&quot;:&quot;0&quot;,&quot;maxValue&quot;:&quot;9&quot;,&quot;minValue&quot;:&quot;0&quot;,&quot;isCurrency&quot;:false,&quot;isComma&quot;:false,&quot;decimalPointLength&quot;:&quot;0&quot;,&quot;onChange&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSenkyoNo&quot;},{&quot;columnName&quot;:&quot;投票事由コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtTohyoJiyuCode&quot;},{&quot;columnName&quot;:&quot;交付施設コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtShisetsuCode&quot;},{&quot;columnName&quot;:&quot;請求方法コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSeikyuHohoCode&quot;},{&quot;columnName&quot;:&quot;補助者識別コード1&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHojoshaShikibetsuCode1&quot;},{&quot;columnName&quot;:&quot;補助者識別コード2&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHojoshaShikibetsuCode2&quot;},{&quot;columnName&quot;:&quot;選挙種類コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSenkyoShuruiCode&quot;},{&quot;columnName&quot;:&quot;無投票フラグ&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:2,&quot;cellDetails&quot;:{&quot;cellType&quot;:2,&quot;disabled&quot;:false,&quot;onChange&quot;:&quot;&quot;},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;chkMutohyo&quot;},{&quot;columnName&quot;:&quot;投票資格フラグ&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:2,&quot;cellDetails&quot;:{&quot;cellType&quot;:2,&quot;disabled&quot;:false,&quot;readOnly&quot;:false,&quot;onChange&quot;:&quot;&quot;},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;senkyoShikakuFlg&quot;},{&quot;columnName&quot;:&quot;投票状況フラグ&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:2,&quot;cellDetails&quot;:{&quot;cellType&quot;:2,&quot;disabled&quot;:false,&quot;readOnly&quot;:false,&quot;onChange&quot;:&quot;&quot;},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;tohyoJokyoFlg&quot;},{&quot;columnName&quot;:&quot;投票状況コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;tohyoJokyoCode&quot;},{&quot;columnName&quot;:&quot;投票受付開始年月日&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:7,&quot;cellDetails&quot;:{&quot;cellType&quot;:7,&quot;disabled&quot;:false,&quot;readOnly&quot;:false,&quot;required&quot;:false,&quot;ymdKubun&quot;:2,&quot;displayFormat&quot;:0,&quot;onChange&quot;:&quot;&quot;,&quot;onFocus&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;&quot;,&quot;placeHolder&quot;:&quot;&quot;,&quot;decorationClass&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false,&quot;isShowCalendarOpenerIcon&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtTohyoUketsukeYMD&quot;},{&quot;columnName&quot;:&quot;データ&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;rowData&quot;},{&quot;columnName&quot;:&quot;使用端末ID&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;reamsClientId&quot;}],&quot;header&quot;:{&quot;combineColumns&quot;:[],&quot;frozenColumn&quot;:&quot;txtSenkyoRyakusho&quot;,&quot;headerHeight&quot;:0,&quot;groupHeaderHeight&quot;:0},&quot;isShowSelectButtonColumn&quot;:false,&quot;isShowModifyButtonColumn&quot;:false,&quot;isShowDeleteButtonColumn&quot;:false,&quot;isShowCancelButtonColumn&quot;:false,&quot;isErrorAndWarningColumn&quot;:false,&quot;limitRowCount&quot;:0,&quot;selectedRowCount&quot;:0,&quot;selectLimitRowCount&quot;:0},&quot;confirmDialog&quot;:[{&quot;button&quot;:&quot;selectButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;modifyButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;deleteButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;cancelButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;}],&quot;filterList&quot;:[],&quot;gridAction&quot;:[]}"><div id="dgTohyoJokyo_grid_table" role="" style="width: 1125px; height: 292px; position: relative;"></div><div id="dgTohyoJokyo_footer" style="width: 1125px; height: 0px;"></div></div><div title="" class="UzRadioButton FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="radSeikyusha" style="width: 252px; height: 19px;" data-control-type="RadioButton" data-obj="{&quot;fieldName&quot;:&quot;radSeikyusha&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;RadioButton&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;radSeikyusha_core&quot;,&quot;selectedItem&quot;:&quot;1&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;本人&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;代理人&quot;}],&quot;required&quot;:true,&quot;labelLText&quot;:&quot;請求者&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="word-wrap-break-word Label-L FloatLeft text-align-right Width-S" id="radSeikyusha_labelL"><span class="requireMark">*</span><span>請求者</span></span><span class="buttonSpan FloatLeft Width- required" id="radSeikyusha_core"><input id="radSeikyusha_1" type="radio" value="本人" data-key="1"><label for="radSeikyusha_1" data-key="1">本人</label><input class="spaceSize-M" id="radSeikyusha_2" type="radio" value="代理人" data-key="2"><label for="radSeikyusha_2" data-key="2">代理人</label></span></div><div title="" class="UzTextBoxDate TextBoxOuterDiv WithLabel FloatLeft JSControl controlMargin-M marginLeft-XS UzCompositeChild" id="txtTohyoYMD" style="width: 225px; height: 23px; margin-right: 0em;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtTohyoYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;85px&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtTohyoYMD_core&quot;,&quot;required&quot;:true,&quot;labelLText&quot;:&quot;投票日時&quot;,&quot;textKind&quot;:2,&quot;displayFormat&quot;:1,&quot;isShowCalendarOpenerIcon&quot;:true}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtTohyoYMD_labelL"><span class="requireMark">*</span><span>投票日時</span></span><input class="UzTextBox CoreElement required" id="txtTohyoYMD_core" style="width: 85px;" type="text" placeholder="" data-wareki="" data-setcount="0" data-seireki="" data-orgtext="" data-mindate="" data-maxdate=""><img class="UzCalendarOpenerIcon" src="/uz/uza/image/UzCalendar.png"></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxTime FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XL UzCompositeChild" id="txtTohyoTime" style="width: 52px; height: 21px;" data-control-type="TextBoxTime" data-obj="{&quot;fieldName&quot;:&quot;txtTohyoTime&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxTime&quot;,&quot;marginRight&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;txtTohyoTime_core&quot;,&quot;required&quot;:true,&quot;suggest&quot;:[]}"><input class="UzTextBox CoreElement Width-XS required text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtTohyoTime_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft ClearFloat marginLeft-XS marginRight-XL" id="ccdTohyoJiyu" style="margin-top: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdTohyoJiyu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;ccdTohyoJiyu&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyoJiyuCode&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtTohyoJiyuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoJiyuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlTohyoJiyu_required&quot;,&quot;editType&quot;:1}]},&quot;txtTohyoJiyuCode_required&quot;:true,&quot;txtTohyoJiyuCode_labelLWidth&quot;:&quot;S&quot;,&quot;ddlTohyoJiyu_required&quot;:true}" data-is-composite-control="true" data-control-name="AFA.TohyoJiyuCode"></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M marginLeft-XL marginRight-XS UzCompositeChild" id="chkTenjiYoshi" style="width: 170px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkTenjiYoshi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;chkTenjiYoshi_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;点字投票用紙を使用&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkTenjiYoshi_core"><input id="chkTenjiYoshi_key0" type="checkbox" value="点字投票用紙を使用" data-key="key0"><label for="chkTenjiYoshi_key0" data-key="key0">点字投票用紙を使用</label></span></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft ClearFloat marginLeft-XS" id="ccdKofuShisetsu" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdKofuShisetsu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdKofuShisetsu&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShisetsuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtShsietsuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnShisetsuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShisetsuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShisetsuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShisetsuCode_labelLAlign&quot;,&quot;editType&quot;:0}]},&quot;txtShsietsuCode_labelLText&quot;:&quot;交付施設&quot;,&quot;txtShisetsuCode_labelLWidth&quot;:&quot;S&quot;,&quot;txtShisetsuCode_required&quot;:true,&quot;btnShisetsuCode_displayNone&quot;:false,&quot;txtShisetsuName_displayNone&quot;:false,&quot;txtShisetsuName_width&quot;:&quot;L&quot;,&quot;txtShisetsuCode_labelLAlign&quot;:2}" data-is-composite-control="true" data-control-name="AFA.ShisetsuCodeSelect"></div><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS ClearFloat" id="ccdDairiTohyo" style="margin: 0em 0em 0em 3.2em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdDairiTohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;3.2em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdDairiTohyo&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;HojoshaNyuryoku&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;dairiTohyoUmu&quot;,&quot;controlName&quot;:&quot;chkDairiTohyo&quot;},{&quot;key&quot;:&quot;hojoshaShimei1&quot;,&quot;controlName&quot;:&quot;txtHojoshaShimei1&quot;},{&quot;key&quot;:&quot;hojoshaShikibetsuCode1&quot;,&quot;controlName&quot;:&quot;txtHojosha1ShikibetsuCode&quot;},{&quot;key&quot;:&quot;hojoshaShimei2&quot;,&quot;controlName&quot;:&quot;txtHojoshaShimei2&quot;},{&quot;key&quot;:&quot;hojoshaShikibetsuCode2&quot;,&quot;controlName&quot;:&quot;txtHojosha2ShikibetsuCode&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;CloseOK&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;CloseCancel&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.HojoshaNyuryoku"></div><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS ClearFloat marginLeft-XS marginRight-XS marginTop-XS marginBottom-0px" id="ccdKyohiJiyuNyuryoku" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdKyohiJiyuNyuryoku&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;XS&quot;,&quot;selectControlID&quot;:&quot;ccdKyohiJiyuNyuryoku&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;KyohiJiyuNyuryoku&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlKyohiJiyu_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlKyohiJiyu_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtKyohiJiyu_readOnly&quot;,&quot;editType&quot;:1}]},&quot;ddlKyohiJiyu_disabled&quot;:true,&quot;ddlKyohiJiyu_labelLWidth&quot;:&quot;S&quot;,&quot;txtKyohiJiyu_readOnly&quot;:true}" data-is-composite-control="true" data-control-name="AFA.KyohiJiyuNyuryoku"></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="chkKariTohyo" style="width: 122px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkKariTohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;disabled&quot;:true,&quot;selectControlID&quot;:&quot;chkKariTohyo_core&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;仮投票させる&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span tabindex="-1" class="checkBoxSpan FloatLeft Width-" id="chkKariTohyo_core"><input disabled="disabled" class="AsIfDisabled" id="chkKariTohyo_key0" type="checkbox" value="仮投票させる" data-key="key0"><label for="chkKariTohyo_key0" data-key="key0">仮投票させる</label></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var TohyoJokyoNyuryoku_Design = (function (_super) {
+        __extends(TohyoJokyoNyuryoku_Design, _super);
+        function TohyoJokyoNyuryoku_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, TohyoJokyoNyuryoku_Design.myLayout, fieldName);
+        }
+        TohyoJokyoNyuryoku_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        TohyoJokyoNyuryoku_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        TohyoJokyoNyuryoku_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "TohyoJokyoNyuryoku",
+                    "items": [
+                        {
+                            "fieldName": "TohyoJokyoSelect",
+                            "items": [
+                                {
+                                    "fieldName": "radTohyoJokyo",
+                                    "items": [],
+                                    "controlType": "RadioButton",
+                                    "width": "",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "radTohyoJokyo_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "required": true,
+                                    "onChange": "",
+                                    "labelLText": "",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": "6",
+                                    "dataSource": [
+                                        {
+                                            "key": "6",
+                                            "value": "投票"
+                                        },
+                                        {
+                                            "key": "5",
+                                            "value": "棄権"
+                                        },
+                                        {
+                                            "key": "8",
+                                            "value": "受付拒否　　　　　"
+                                        },
+                                        {
+                                            "key": "0",
+                                            "value": "投票取消"
+                                        }
+                                    ],
+                                    "onClick": "onClick_radTohyoJokyo",
+                                    "newLineItemNumber": 4,
+                                    "spaceSize": "M",
+                                    "disabledItem": [],
+                                    "icon": []
+                                }
+                            ],
+                            "controlType": "Panel",
+                            "width": "G2",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "TohyoJokyoSelect",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "投票区分",
+                            "marginTop": "S",
+                            "marginBottom": "S",
+                            "isOpen": true,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "TohyoJokyoSelect"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": true,
+                            "panelDisplay": 1,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true
+                        },
+                        {
+                            "fieldName": "dgTohyoJokyo",
+                            "items": [],
+                            "controlType": "DataGrid",
+                            "width": "1098px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "dgTohyoJokyo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "height": "Auto",
+                            "dataSource": [],
+                            "selectedItems": [],
+                            "gridSetting": {
+                                "rowHeight": 25,
+                                "isMultiSelectable": true,
+                                "isShowHeader": true,
+                                "isShowFooter": false,
+                                "isShowFilter": false,
+                                "isShowFilterButton": false,
+                                "isShowRowState": false,
+                                "isShowSelectButtonColumn": false,
+                                "isShowModifyButtonColumn": false,
+                                "isShowDeleteButtonColumn": false,
+                                "limitRowCount": 0,
+                                "selectedRowCount": 0,
+                                "header": {
+                                    "combineColumns": [],
+                                    "frozenColumn": "txtSenkyoRyakusho",
+                                    "headerHeight": 0
+                                },
+                                "columns": [
+                                    {
+                                        "columnName": "状態",
+                                        "dataName": "txtTohyoJokyo",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 50,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "選挙略称",
+                                        "dataName": "txtSenkyoRyakusho",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 100,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "受付番号",
+                                        "dataName": "txtUketsukeNo",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 70,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "投票日",
+                                        "dataName": "txtUketsukeYMD",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 90,
+                                        "visible": true,
+                                        "cellType": 6,
+                                        "cellDetails": {
+                                            "cellType": 6,
+                                            "ymdKubun": 2,
+                                            "displayFormat": 0,
+                                            "onChange": "",
+                                            "isSetValueToToolTip": false,
+                                            "readOnly": true
+                                        },
+                                        "align": 0,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "投票時刻",
+                                        "dataName": "txtUketsukeTime",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 70,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "投票事由",
+                                        "dataName": "txtTohyoJiyu",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 140,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": null,
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "交付施設",
+                                        "dataName": "txtShisetsu",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 145,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": null,
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "請求方法",
+                                        "dataName": "txtSeikyuHoho",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 100,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": null,
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "点字",
+                                        "dataName": "chkTenjiFlag",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 50,
+                                        "visible": true,
+                                        "cellType": 2,
+                                        "cellDetails": {
+                                            "cellType": 2,
+                                            "disabled": true
+                                        },
+                                        "align": 1,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "代理",
+                                        "dataName": "chkDairiFlag",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 50,
+                                        "visible": true,
+                                        "cellType": 2,
+                                        "cellDetails": {
+                                            "cellType": 2,
+                                            "disabled": true
+                                        },
+                                        "align": 1,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "補助者氏名1",
+                                        "dataName": "txtHojoshaShimei1",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 100,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": null,
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "補助者氏名2",
+                                        "dataName": "txtHojoshaShimei2",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 100,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": null,
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    }
+                                ]
+                            },
+                            "onSort": "",
+                            "onSelect": "",
+                            "onSelectByDblClick": "",
+                            "onSelectBySelectButton": "",
+                            "onSelectByModifyButton": "",
+                            "onSelectByDeleteButton": "",
+                            "onAfterRequest": "",
+                            "onAfterRequestByDblClick": "",
+                            "onAfterRequestBySelectButton": "",
+                            "onAfterRequestByModifyButton": "",
+                            "onAfterRequestByDeleteButton": "",
+                            "onOnlyRow": "",
+                            "onNoRow": "",
+                            "onMultiRows": "",
+                            "sortOrder": "defaultDataName3",
+                            "isAscending": true,
+                            "filterList": [],
+                            "activeRowId": -1,
+                            "gridAction": []
+                        },
+                        {
+                            "fieldName": "radSeikyusha",
+                            "items": [],
+                            "controlType": "RadioButton",
+                            "width": "",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "radSeikyusha_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": true,
+                            "onChange": "",
+                            "labelLText": "請求者",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "selectedItem": "key0",
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "本人"
+                                },
+                                {
+                                    "key": "key1",
+                                    "value": "代理人"
+                                }
+                            ],
+                            "onClick": "",
+                            "newLineItemNumber": 2,
+                            "spaceSize": "M",
+                            "disabledItem": [],
+                            "icon": []
+                        },
+                        {
+                            "fieldName": "txtTohyoYMD",
+                            "items": [],
+                            "controlType": "TextBoxDate",
+                            "width": "S",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "txtTohyoYMD_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": true,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "value": "",
+                            "labelLText": "投票日時",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "./_-",
+                            "ymdKubun": 2,
+                            "displayFormat": 1
+                        },
+                        {
+                            "fieldName": "txtTohyoTime",
+                            "items": [],
+                            "controlType": "TextBoxTime",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XL",
+                            "selectControlID": "txtTohyoTime_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": true,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "displayFormat": 1,
+                            "timeKubun": 1
+                        },
+                        {
+                            "fieldName": "ccdTohyoJiyu",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XL",
+                            "selectControlID": "ccdTohyoJiyu",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "TohyoJiyuCode",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtTohyoJiyuCode_required": true,
+                            "txtTohyoJiyuCode_labelLWidth": "S",
+                            "ddlTohyoJiyu_required": true
+                        },
+                        {
+                            "fieldName": "chkTenjiYoshi",
+                            "items": [],
+                            "controlType": "CheckBoxList",
+                            "width": "",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XL",
+                            "marginRight": "XS",
+                            "selectControlID": "chkTenjiYoshi_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "onChange": "",
+                            "labelLText": "",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "selectedItem": null,
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "点字投票用紙を使用"
+                                }
+                            ],
+                            "onClick": "",
+                            "selectedItems": [],
+                            "newLineItemNumber": 1,
+                            "minCheckedItem": 0,
+                            "maxCheckedItem": "1",
+                            "spaceSize": "M",
+                            "isAllSelectable": false,
+                            "isAllSelectableBreakLine": false,
+                            "disabledItem": [],
+                            "icon": []
+                        },
+                        {
+                            "fieldName": "ccdKofuShisetsu",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdKofuShisetsu",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "ShisetsuCodeSelect",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtShsietsuCode_labelLText": "交付施設",
+                            "txtShisetsuCode_labelLWidth": "S",
+                            "txtShisetsuCode_required": true,
+                            "btnShisetsuCode_displayNone": false,
+                            "txtShisetsuName_displayNone": false,
+                            "txtShisetsuName_width": "L",
+                            "txtShisetsuCode_labelLAlign": 2
+                        },
+                        {
+                            "fieldName": "ccdDairiTohyo",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "3.2em",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdDairiTohyo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "HojoshaNyuryoku",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [
+                                {
+                                    "key": "dairiTohyoUmu",
+                                    "controlName": "chkDairiTohyo"
+                                },
+                                {
+                                    "key": "hojoshaShimei1",
+                                    "controlName": "txtHojoshaShimei1"
+                                },
+                                {
+                                    "key": "hojoshaShikibetsuCode1",
+                                    "controlName": "txtHojosha1ShikibetsuCode"
+                                },
+                                {
+                                    "key": "hojoshaShimei2",
+                                    "controlName": "txtHojoshaShimei2"
+                                },
+                                {
+                                    "key": "hojoshaShikibetsuCode2",
+                                    "controlName": "txtHojosha2ShikibetsuCode"
+                                }
+                            ],
+                            "dialogOkEventNameForDialog": "CloseOK",
+                            "dialogCancelEventNameForDialog": "CloseCancel",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": []
+                        },
+                        {
+                            "fieldName": "ccdKyohiJiyuNyuryoku",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ccdKyohiJiyuNyuryoku",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "KyohiJiyuNyuryoku",
+                            "marginTop": "0px",
+                            "marginBottom": "0px",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "ddlKyohiJiyu_disabled": true,
+                            "ddlKyohiJiyu_labelLWidth": "S",
+                            "txtKyohiJiyu_readOnly": true
+                        },
+                        {
+                            "fieldName": "chkKariTohyo",
+                            "items": [],
+                            "controlType": "CheckBoxList",
+                            "width": "",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": true,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "chkKariTohyo_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "onChange": "",
+                            "labelLText": "",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "selectedItem": null,
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "仮投票させる"
+                                }
+                            ],
+                            "onClick": "",
+                            "selectedItems": [],
+                            "newLineItemNumber": 1,
+                            "minCheckedItem": 0,
+                            "maxCheckedItem": "1",
+                            "spaceSize": "M",
+                            "isAllSelectable": false,
+                            "isAllSelectableBreakLine": false,
+                            "disabledItem": [],
+                            "icon": []
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G12",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "TohyoJokyoNyuryoku",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "選挙人の投票状況",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "TohyoJokyoNyuryoku"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        },
+                        {
+                            "eventName": "onClick_radTohyoJokyo",
+                            "requestUrl": "AFA/af/AFA/TohyoJokyoNyuryoku/onClick_radTohyoJokyo"
+                        }
+                    ],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "focusPositionID": "restoreLayoutButton",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "TohyoJokyoNyuryoku",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return TohyoJokyoNyuryoku_Design;
+    })(Uz.CommonChildDiv);
+    AFA.TohyoJokyoNyuryoku_Design = TohyoJokyoNyuryoku_Design;
+
+    (function (TohyoJokyoNyuryoku) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClick_radTohyoJokyo = function () {
+                return "onClick_radTohyoJokyo";
+            };
+            return Events;
+        })();
+        TohyoJokyoNyuryoku.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyoJokyoNyuryoku";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyoJokyoNyuryoku.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyoJokyoNyuryoku = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.TohyoJokyoSelect = function () {
+                return new UZA.Panel(this.convFiledName("TohyoJokyoSelect"));
+            };
+
+            Controls.prototype.radTohyoJokyo = function () {
+                return new UZA.RadioButton(this.convFiledName("radTohyoJokyo"));
+            };
+
+            Controls.prototype.dgTohyoJokyo = function () {
+                return new UZA.DataGrid(this.convFiledName("dgTohyoJokyo"));
+            };
+
+            Controls.prototype.radSeikyusha = function () {
+                return new UZA.RadioButton(this.convFiledName("radSeikyusha"));
+            };
+
+            Controls.prototype.txtTohyoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoYMD"));
+            };
+
+            Controls.prototype.txtTohyoTime = function () {
+                return new UZA.TextBoxTime(this.convFiledName("txtTohyoTime"));
+            };
+
+            Controls.prototype.chkTenjiYoshi = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkTenjiYoshi"));
+            };
+
+            Controls.prototype.chkKariTohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKariTohyo"));
+            };
+            return Controls;
+        })();
+        TohyoJokyoNyuryoku.Controls = Controls;
+    })(AFA.TohyoJokyoNyuryoku || (AFA.TohyoJokyoNyuryoku = {}));
+    var TohyoJokyoNyuryoku = AFA.TohyoJokyoNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyoJokyoNyuryoku) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyoJokyoNyuryoku.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyoJokyoNyuryoku.ModeController = ModeController;
+    })(AFA.TohyoJokyoNyuryoku || (AFA.TohyoJokyoNyuryoku = {}));
+    var TohyoJokyoNyuryoku = AFA.TohyoJokyoNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyoJokyoNyuryoku) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TohyoJokyoNyuryoku.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        TohyoJokyoNyuryoku.PublicProperties = PublicProperties;
+    })(AFA.TohyoJokyoNyuryoku || (AFA.TohyoJokyoNyuryoku = {}));
+    var TohyoJokyoNyuryoku = AFA.TohyoJokyoNyuryoku;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+  
+   
+     
+     
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     
+   
+   
+   
+     
+   
+   
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['TOHYOJOKYONYURYOKU'] = {};
+AFA['TOHYOJOKYONYURYOKU'].TohyoJokyoNyuryokuRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_TohyoJokyoNyuryoku').getProperty();parameter0.TohyoJokyoSelect = Uz.JSControlUtil.getJSControl(parentFieldName + '_TohyoJokyoSelect').getProperty();parameter0.TohyoJokyoSelect.radTohyoJokyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_radTohyoJokyo').getProperty();parameter0.dgTohyoJokyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_dgTohyoJokyo').getProperty();parameter0.radSeikyusha = Uz.JSControlUtil.getJSControl(parentFieldName + '_radSeikyusha').getProperty();parameter0.txtTohyoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyoYMD').getProperty();parameter0.txtTohyoTime = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyoTime').getProperty();parameter0.ccdTohyoJiyu = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdTohyoJiyu').getPostParameter();parameter0.chkTenjiYoshi = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkTenjiYoshi').getProperty();parameter0.ccdKofuShisetsu = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdKofuShisetsu').getPostParameter();parameter0.ccdDairiTohyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdDairiTohyo').getPostParameter();parameter0.ccdKyohiJiyuNyuryoku = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdKyohiJiyuNyuryoku').getPostParameter();parameter0.chkKariTohyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkKariTohyo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['TOHYOJOKYONYURYOKU'].TohyoJokyoSelectRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_TohyoJokyoSelect').getProperty();parameter0.radTohyoJokyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_radTohyoJokyo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (TohyoJokyoNyuryoku) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClick_radTohyoJokyo = function () {
+                return "onClick_radTohyoJokyo";
+            };
+            return Events;
+        })();
+        TohyoJokyoNyuryoku.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyoJokyoNyuryoku";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyoJokyoNyuryoku.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.TohyoJokyoNyuryoku.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyoJokyoNyuryoku = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.TohyoJokyoSelect = function () {
+                return new UZA.Panel(this.convFiledName("TohyoJokyoSelect"));
+            };
+
+            Controls.prototype.radTohyoJokyo = function () {
+                return new UZA.RadioButton(this.convFiledName("radTohyoJokyo"));
+            };
+
+            Controls.prototype.dgTohyoJokyo = function () {
+                return new UZA.DataGrid(this.convFiledName("dgTohyoJokyo"));
+            };
+
+            Controls.prototype.radSeikyusha = function () {
+                return new UZA.RadioButton(this.convFiledName("radSeikyusha"));
+            };
+
+            Controls.prototype.txtTohyoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoYMD"));
+            };
+
+            Controls.prototype.txtTohyoTime = function () {
+                return new UZA.TextBoxTime(this.convFiledName("txtTohyoTime"));
+            };
+
+            Controls.prototype.ccdTohyoJiyu = function () {
+                return new AFA.TohyoJiyuCode.ModeController(this.convFiledName("ccdTohyoJiyu"));
+            };
+
+            Controls.prototype.chkTenjiYoshi = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkTenjiYoshi"));
+            };
+
+            Controls.prototype.ccdKofuShisetsu = function () {
+                return new AFA.ShisetsuCodeSelect.ModeController(this.convFiledName("ccdKofuShisetsu"));
+            };
+
+            Controls.prototype.ccdDairiTohyo = function () {
+                return new AFA.HojoshaNyuryoku.ModeController(this.convFiledName("ccdDairiTohyo"));
+            };
+
+            Controls.prototype.ccdKyohiJiyuNyuryoku = function () {
+                return new AFA.KyohiJiyuNyuryoku.ModeController(this.convFiledName("ccdKyohiJiyuNyuryoku"));
+            };
+
+            Controls.prototype.chkKariTohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkKariTohyo"));
+            };
+            return Controls;
+        })();
+        TohyoJokyoNyuryoku.Controls = Controls;
+    })(AFA.TohyoJokyoNyuryoku || (AFA.TohyoJokyoNyuryoku = {}));
+    var TohyoJokyoNyuryoku = AFA.TohyoJokyoNyuryoku;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (TohyoJokyoNyuryoku) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyoJokyoNyuryoku.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new TohyoJokyoNyuryoku.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyoJokyoNyuryoku.ModeController = ModeController;
+    })(AFA.TohyoJokyoNyuryoku || (AFA.TohyoJokyoNyuryoku = {}));
+    var TohyoJokyoNyuryoku = AFA.TohyoJokyoNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyoJokyoNyuryoku) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyoJokyoNyuryoku.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        TohyoJokyoNyuryoku.PublicProperties = PublicProperties;
+    })(AFA.TohyoJokyoNyuryoku || (AFA.TohyoJokyoNyuryoku = {}));
+    var TohyoJokyoNyuryoku = AFA.TohyoJokyoNyuryoku;
+})(AFA || (AFA = {}));
+</script></div>

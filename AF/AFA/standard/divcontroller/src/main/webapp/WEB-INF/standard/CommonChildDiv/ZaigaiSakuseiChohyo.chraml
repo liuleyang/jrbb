@@ -1,0 +1,1265 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ZaigaiSakuseiChohyo&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-control-name="AFA.ZaigaiSakuseiChohyo" data-is-composite-control="true"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginTop-M panelMarginBottom-M StateChangable marginLeft-Default marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G11 UzCompositeChild" id="ZaigaiSakuseiChohyo" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G11&quot;,&quot;marginLeft&quot;:&quot;Default&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyo&quot;,&quot;title&quot;:&quot;作成帳票&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;ZaigaiSakuseiChohyo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">作成帳票</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyo_panel_body_area"><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi&quot;,&quot;title&quot;:&quot;本籍地照会回答通知&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">本籍地照会回答通知</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoTorikeshiHonnin" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoTorikeshiHonnin&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoTorikeshiHonnin&quot;,&quot;title&quot;:&quot;申請取消通知（本人）&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoTorikeshiHonnin_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">申請取消通知（本人）</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoTorikeshiHonnin_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoTorikeshiHonnin_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoTorikeshiHonnin" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoTorikeshiHonnin&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoTorikeshiHonnin&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoTorikeshiRyojikan" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoTorikeshiRyojikan&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoTorikeshiRyojikan&quot;,&quot;title&quot;:&quot;申請取消通知（領事官）&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoTorikeshiRyojikan_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">申請取消通知（領事官）</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoTorikeshiRyojikan_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoTorikeshiRyojikan_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoTorikeshiRyojikan" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoTorikeshiRyojikan&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoTorikeshiRyojikan&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoToroku" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoToroku&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoToroku&quot;,&quot;title&quot;:&quot;登録通知&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoToroku_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">登録通知</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoToroku_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoToroku_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoTorokuTsuchi" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoTorokuTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoTorokuTsuchi&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoHenkoHonnin" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoHenkoHonnin&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoHenkoHonnin&quot;,&quot;title&quot;:&quot;記載事項変更通知（本人）&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoHenkoHonnin_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">記載事項変更通知（本人）</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoHenkoHonnin_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoHenkoHonnin_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoHenkoHonnin" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoHenkoHonnin&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoHenkoHonnin&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoHenkoRyojikan" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoHenkoRyojikan&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoHenkoRyojikan&quot;,&quot;title&quot;:&quot;記載事項変更通知（領事官）&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoHenkoRyojikan_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">記載事項変更通知（領事官）</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoHenkoRyojikan_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoHenkoRyojikan_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoHenkoRyojikan" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoHenkoRyojikan&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoHenkoRyojikan&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoSaiKofu" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoSaiKofu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoSaiKofu&quot;,&quot;title&quot;:&quot;再交付通知&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoSaiKofu_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">再交付通知</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoSaiKofu_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoSaiKofu_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoSaiKofuTsuchi" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoSaiKofuTsuchi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoSaiKofuTsuchi&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoMasshoHonsekichi" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoMasshoHonsekichi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoMasshoHonsekichi&quot;,&quot;title&quot;:&quot;抹消通知（本籍地）&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoMasshoHonsekichi_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">抹消通知（本籍地）</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoMasshoHonsekichi_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoMasshoHonsekichi_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoMasshoHonsekichi" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoMasshoHonsekichi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoMasshoHonsekichi&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS Width-G5 UzCompositeChild" id="ZaigaiSakuseiChohyoMasshoRyojikan" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;ZaigaiSakuseiChohyoMasshoRyojikan&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G5&quot;,&quot;selectControlID&quot;:&quot;ZaigaiSakuseiChohyoMasshoRyojikan&quot;,&quot;title&quot;:&quot;抹消通知（領事官）&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;postParameterPanelNames&quot;:[],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="ZaigaiSakuseiChohyoMasshoRyojikan_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">抹消通知（領事官）</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="ZaigaiSakuseiChohyoMasshoRyojikan_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="ZaigaiSakuseiChohyoMasshoRyojikan_panel_body_area" style="display: block;"><div title="" class="JSControl UzCompositeControl FloatLeft Width-XS" id="ccdPrintNaiyoMasshoRyojikan" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdPrintNaiyoMasshoRyojikan&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdPrintNaiyoMasshoRyojikan&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-control-name="AFA.SakuseiChohyoPrintNaiyo" data-is-composite-control="true"></div></div></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var ZaigaiSakuseiChohyo_Design = (function (_super) {
+        __extends(ZaigaiSakuseiChohyo_Design, _super);
+        function ZaigaiSakuseiChohyo_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, ZaigaiSakuseiChohyo_Design.myLayout, fieldName);
+        }
+        ZaigaiSakuseiChohyo_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        ZaigaiSakuseiChohyo_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        ZaigaiSakuseiChohyo_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "ZaigaiSakuseiChohyo",
+                    "items": [
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoSenkyoninMeiboShohon",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoSenkyoninMeiboShohon",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "在外選挙人名簿抄本",
+                            "marginTop": "XS",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": false,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoShinseishaIchiran",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoShinseishaIchiran",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "申請者一覧",
+                            "marginTop": "XS",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "本籍地照会回答通知",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoTorikeshiHonnin",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoTorikeshiHonnin",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoTorikeshiHonnin",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoTorikeshiHonnin",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "申請取消通知（本人）",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoTorikeshiRyojikan",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoTorikeshiRyojikan",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoTorikeshiRyojikan",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoTorikeshiRyojikan",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "申請取消通知（領事官）",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoToroku",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoTorokuTsuchi",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoTorokuTsuchi",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoToroku",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "登録通知",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoHenkoHonnin",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoHenkoHonnin",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoHenkoHonnin",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoHenkoHonnin",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "記載事項変更通知（本人）",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoHenkoRyojikan",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoHenkoRyojikan",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoHenkoRyojikan",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoHenkoRyojikan",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "記載事項変更通知（領事官）",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoSaiKofu",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoSaiKofuTsuchi",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoSaiKofuTsuchi",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoSaiKofu",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "再交付通知",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoMasshoHonsekichi",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoMasshoHonsekichi",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoMasshoHonsekichi",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoMasshoHonsekichi",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "抹消通知（本籍地）",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        },
+                        {
+                            "fieldName": "ZaigaiSakuseiChohyoMasshoRyojikan",
+                            "items": [
+                                {
+                                    "fieldName": "ccdPrintNaiyoMasshoRyojikan",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0px",
+                                    "marginRight": "0px",
+                                    "selectControlID": "ccdPrintNaiyoMasshoRyojikan",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "SakuseiChohyoPrintNaiyo",
+                                    "marginTop": "0px",
+                                    "marginBottom": "0px",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtIinchoName_displayNone": false
+                                }
+                            ],
+                            "controlType": "PanelPublish",
+                            "width": "G5",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ZaigaiSakuseiChohyoMasshoRyojikan",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "抹消通知（領事官）",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": true,
+                            "canOpenAndClose": true,
+                            "postParameterPanelNames": [],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": false
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G11",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "Default",
+                    "marginRight": "Default",
+                    "selectControlID": "ZaigaiSakuseiChohyo",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "作成帳票",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "ZaigaiSakuseiChohyo"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "focusPositionID": "restoreLayoutButton",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "ZaigaiSakuseiChohyo",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return ZaigaiSakuseiChohyo_Design;
+    })(Uz.CommonChildDiv);
+    AFA.ZaigaiSakuseiChohyo_Design = ZaigaiSakuseiChohyo_Design;
+
+    (function (ZaigaiSakuseiChohyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        ZaigaiSakuseiChohyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ZaigaiSakuseiChohyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ZaigaiSakuseiChohyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoSenkyoninMeiboShohon = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoSenkyoninMeiboShohon"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoShinseishaIchiran = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoShinseishaIchiran"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoTorikeshiHonnin = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoTorikeshiHonnin"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoTorikeshiRyojikan = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoTorikeshiRyojikan"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoToroku = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoToroku"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoHenkoHonnin = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoHenkoHonnin"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoHenkoRyojikan = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoHenkoRyojikan"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoSaiKofu = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoSaiKofu"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoMasshoHonsekichi = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoMasshoHonsekichi"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoMasshoRyojikan = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoMasshoRyojikan"));
+            };
+            return Controls;
+        })();
+        ZaigaiSakuseiChohyo.Controls = Controls;
+    })(AFA.ZaigaiSakuseiChohyo || (AFA.ZaigaiSakuseiChohyo = {}));
+    var ZaigaiSakuseiChohyo = AFA.ZaigaiSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ZaigaiSakuseiChohyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ZaigaiSakuseiChohyo.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        ZaigaiSakuseiChohyo.ModeController = ModeController;
+    })(AFA.ZaigaiSakuseiChohyo || (AFA.ZaigaiSakuseiChohyo = {}));
+    var ZaigaiSakuseiChohyo = AFA.ZaigaiSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ZaigaiSakuseiChohyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ZaigaiSakuseiChohyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        ZaigaiSakuseiChohyo.PublicProperties = PublicProperties;
+    })(AFA.ZaigaiSakuseiChohyo || (AFA.ZaigaiSakuseiChohyo = {}));
+    var ZaigaiSakuseiChohyo = AFA.ZaigaiSakuseiChohyo;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+     
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['ZAIGAISAKUSEICHOHYO'] = {};
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyo').getProperty();parameter0.ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi').getProperty();parameter0.ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi.ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi').getPostParameter();parameter0.ZaigaiSakuseiChohyoTorikeshiHonnin = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoTorikeshiHonnin').getProperty();parameter0.ZaigaiSakuseiChohyoTorikeshiHonnin.ccdPrintNaiyoTorikeshiHonnin = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoTorikeshiHonnin').getPostParameter();parameter0.ZaigaiSakuseiChohyoTorikeshiRyojikan = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoTorikeshiRyojikan').getProperty();parameter0.ZaigaiSakuseiChohyoTorikeshiRyojikan.ccdPrintNaiyoTorikeshiRyojikan = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoTorikeshiRyojikan').getPostParameter();parameter0.ZaigaiSakuseiChohyoToroku = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoToroku').getProperty();parameter0.ZaigaiSakuseiChohyoToroku.ccdPrintNaiyoTorokuTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoTorokuTsuchi').getPostParameter();parameter0.ZaigaiSakuseiChohyoHenkoHonnin = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoHenkoHonnin').getProperty();parameter0.ZaigaiSakuseiChohyoHenkoHonnin.ccdPrintNaiyoHenkoHonnin = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoHenkoHonnin').getPostParameter();parameter0.ZaigaiSakuseiChohyoHenkoRyojikan = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoHenkoRyojikan').getProperty();parameter0.ZaigaiSakuseiChohyoHenkoRyojikan.ccdPrintNaiyoHenkoRyojikan = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoHenkoRyojikan').getPostParameter();parameter0.ZaigaiSakuseiChohyoSaiKofu = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoSaiKofu').getProperty();parameter0.ZaigaiSakuseiChohyoSaiKofu.ccdPrintNaiyoSaiKofuTsuchi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoSaiKofuTsuchi').getPostParameter();parameter0.ZaigaiSakuseiChohyoMasshoHonsekichi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoMasshoHonsekichi').getProperty();parameter0.ZaigaiSakuseiChohyoMasshoHonsekichi.ccdPrintNaiyoMasshoHonsekichi = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoMasshoHonsekichi').getPostParameter();parameter0.ZaigaiSakuseiChohyoMasshoRyojikan = Uz.JSControlUtil.getJSControl(parentFieldName + '_ZaigaiSakuseiChohyoMasshoRyojikan').getProperty();parameter0.ZaigaiSakuseiChohyoMasshoRyojikan.ccdPrintNaiyoMasshoRyojikan = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdPrintNaiyoMasshoRyojikan').getPostParameter();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchiRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoTorikeshiHonninRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoTorikeshiRyojikanRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoTorokuRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoHenkoHonninRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoHenkoRyojikanRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoSaiKofuRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoMasshoHonsekichiRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+AFA['ZAIGAISAKUSEICHOHYO'].ZaigaiSakuseiChohyoMasshoRyojikanRequest = function(parentFieldName){ 
+var paramArray = [];
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (ZaigaiSakuseiChohyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        ZaigaiSakuseiChohyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ZaigaiSakuseiChohyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ZaigaiSakuseiChohyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.ZaigaiSakuseiChohyo.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoHonsekichiShokaiKaitoTsuchi"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoHonsekichiShokaiKaitoTsuchi"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoTorikeshiHonnin = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoTorikeshiHonnin"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoTorikeshiHonnin = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoTorikeshiHonnin"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoTorikeshiRyojikan = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoTorikeshiRyojikan"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoTorikeshiRyojikan = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoTorikeshiRyojikan"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoToroku = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoToroku"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoTorokuTsuchi = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoTorokuTsuchi"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoHenkoHonnin = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoHenkoHonnin"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoHenkoHonnin = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoHenkoHonnin"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoHenkoRyojikan = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoHenkoRyojikan"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoHenkoRyojikan = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoHenkoRyojikan"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoSaiKofu = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoSaiKofu"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoSaiKofuTsuchi = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoSaiKofuTsuchi"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoMasshoHonsekichi = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoMasshoHonsekichi"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoMasshoHonsekichi = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoMasshoHonsekichi"));
+            };
+
+            Controls.prototype.ZaigaiSakuseiChohyoMasshoRyojikan = function () {
+                return new UZA.PanelPublish(this.convFiledName("ZaigaiSakuseiChohyoMasshoRyojikan"));
+            };
+
+            Controls.prototype.ccdPrintNaiyoMasshoRyojikan = function () {
+                return new AFA.SakuseiChohyoPrintNaiyo.ModeController(this.convFiledName("ccdPrintNaiyoMasshoRyojikan"));
+            };
+            return Controls;
+        })();
+        ZaigaiSakuseiChohyo.Controls = Controls;
+    })(AFA.ZaigaiSakuseiChohyo || (AFA.ZaigaiSakuseiChohyo = {}));
+    var ZaigaiSakuseiChohyo = AFA.ZaigaiSakuseiChohyo;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (ZaigaiSakuseiChohyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ZaigaiSakuseiChohyo.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        ZaigaiSakuseiChohyo.ModeController = ModeController;
+    })(AFA.ZaigaiSakuseiChohyo || (AFA.ZaigaiSakuseiChohyo = {}));
+    var ZaigaiSakuseiChohyo = AFA.ZaigaiSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ZaigaiSakuseiChohyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ZaigaiSakuseiChohyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        ZaigaiSakuseiChohyo.PublicProperties = PublicProperties;
+    })(AFA.ZaigaiSakuseiChohyo || (AFA.ZaigaiSakuseiChohyo = {}));
+    var ZaigaiSakuseiChohyo = AFA.ZaigaiSakuseiChohyo;
+})(AFA || (AFA = {}));
+</script></div>

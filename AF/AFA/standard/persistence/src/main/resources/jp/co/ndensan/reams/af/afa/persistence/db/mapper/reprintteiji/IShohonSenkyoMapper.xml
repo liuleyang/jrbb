@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.reprintteiji.IShohonSenkyoMapper">
+    <select resultOrdered="true" id="selectShohonSenkyoList"
+            resultType="jp.co.ndensan.reams.af.afa.entity.db.relate.reprintteiji.shohonsenkyo.ShohonSenkyoEntity"
+            fetchSize="500">
+        SELECT
+        "AfT100Shohon"."shohonNo",
+        "AfT100Shohon"."senkyoShurui",
+        "AfT100Shohon"."shohonName",
+        "AfT100Shohon"."tohyoYMD",
+        "AfT100Shohon"."kiteiNenreiTotatsuYMD",
+        "AfT100Shohon"."shoriYMD",
+        "AfT111Senkyo"."kijunYMD",
+        "AfT111Senkyo"."meiboTorokuYMD",
+        "AfT111Senkyo"."tenshutsuKigenYMD",
+        "AfT111Senkyo"."tennyuKigenYMD"
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        WHERE "AfT100Shohon"."senkyoShurui"= '0'
+        AND "AfT100Shohon"."shohonNo" <![CDATA[<]]> 10000
+        ORDER BY "AfT111Senkyo"."kijunYMD" DESC
+    </select>
+</mapper>

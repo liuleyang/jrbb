@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0320-020 zhanggs -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.meibotorokuzaigai.IMeibotorokuZaigaiMapper">
+    <select resultOrdered="false" id="select在外選挙異動累積情報" resultMap="resultMap_MeibotorokuZaigaiEntity" fetchSize="500">
+        SELECT
+            AfT123_1."zenkokuJushoCode" AS "zenkokuJushoCode1",
+            AfT123_1."jusho" AS "jusho1",
+            AfT123_1."banchi" AS "banchi1",
+            AfT123_2."jusho" AS "jusho2",
+            AfT123_2."banchi" AS "banchi2",
+            AfT123_2."katagaki" AS "katagaki2",
+            AfT123_4."jusho" AS "jusho4",
+            AfT123_5."jusho" AS "jusho5",
+            AfT122."meiboTorokuYMD" AS "meiboTorokuYMD",
+            AfT122."tohyokuCode" AS "tohyokuCode",
+            AfT122."hyojiYMD" AS "hyojiYMD",
+            AfT122."hyojiJiyuCode" AS "hyojiJiyuCode",
+            AfT122."masshoYMD" AS "masshoYMD",
+            AfT122."masshoJiyuCode" AS "masshoJiyuCode",
+            AfT122."henkoJiyuCode" AS "henkoJiyuCode",
+            AfT122."honsekiTorokuKubun" AS "honsekiTorokuKubun",
+            AfT122."shikakuKubun" AS "shikakuKubun",
+            AfT122."kofuNo" AS "kofuNo",
+            AfT122."kofuYMD" AS "kofuYMD",
+            AfT124."shinseiNo" AS "shinseiNo",
+            AfT124."shinseiKubun" AS "shinseiKubun",
+            AfT124."shinseishaShimei" AS "shinseishaShimei",
+            AfT124."shinseishaKanaShimei" AS "shinseishaKanaShimei",
+            AfT124."seinengappiYMD" AS "seinengappiYMD",
+            AfT124."seibetsuCode" AS "seibetsuCode",
+            AfT124."shinseiYMD" AS "shinseiYMD",
+            AfT122."shuseiYMD" AS "shuseiYMD",
+            AfT124."honsekiShokaiYMD" AS "honsekiShokaiYMD",
+            AfT124."honsekiKaitoYMD" AS "honsekiKaitoYMD",
+            AfT124."honsekiTsuchiYMD" AS "honsekiTsuchiYMD",
+            AfT124."ryojikanCode" AS "ryojikanCode",
+            AfT124."kyakkaJiyuCode" AS "kyakkaJiyuCode"
+        FROM
+            rgaf."AfT122ZaigaiSenkyoShikaku" AfT122
+        INNER JOIN
+            rgaf."AfT124ZaigaiSenkyoninShinsei" AfT124
+        ON
+            AfT124."shikibetsuCode" = AfT122."shikibetsuCode"
+        AND AfT124."shinseiNo" = AfT122."shinseiNo"
+        LEFT JOIN
+            rgaf."AfT123ZaigaiSenkyoninJusho" AfT123_1
+        ON
+            AfT123_1."shikibetsuCode" = AfT122."shikibetsuCode"
+        AND AfT123_1."shinseiNo" = AfT122."shinseiNo"
+        AND AfT123_1."jushoShuruiKubun" = '1'
+        LEFT JOIN
+            rgaf."AfT123ZaigaiSenkyoninJusho" AfT123_2
+        ON
+            AfT123_2."shikibetsuCode" = AfT122."shikibetsuCode"
+        AND AfT123_2."shinseiNo" = AfT122."shinseiNo"
+        AND AfT123_2."jushoShuruiKubun" = '2'
+        LEFT JOIN
+            rgaf."AfT123ZaigaiSenkyoninJusho" AfT123_4
+        ON
+            AfT123_4."shikibetsuCode" = AfT122."shikibetsuCode"
+        AND AfT123_4."shinseiNo" = AfT122."shinseiNo"
+        AND AfT123_4."jushoShuruiKubun" = '4'
+        LEFT JOIN
+            rgaf."AfT123ZaigaiSenkyoninJusho" AfT123_5
+        ON
+            AfT123_5."shikibetsuCode" = AfT122."shikibetsuCode"
+        AND AfT123_5."shinseiNo" = AfT122."shinseiNo"
+        AND AfT123_5."jushoShuruiKubun" = '5'
+        WHERE AfT122."shinseiNo" = (
+            SELECT
+                MAX(AfT122Temp."shinseiNo")
+            FROM
+                rgaf."AfT122ZaigaiSenkyoShikaku" AfT122Temp
+            WHERE
+                AfT122Temp."shikibetsuCode" = #{shikibetsuCode}
+            )
+    </select>
+    
+    <select resultOrdered="false" id="select在外選挙人申請情報" resultMap="resultMap_ZaigaiSenkyoninShinseiJohoEntity" fetchSize="500">
+        SELECT
+            AfT124."shinseiNo" AS shinseiNo,
+            AfT124."shikibetsuCode" AS shikibetsuCode,
+            AfT124."juteiYMD" AS juteiYMD,
+            AfT124."ryojikanCode" AS ryojikanCode,
+            AfT124."kokusekiCode" AS kokusekiCode,
+            AfT124."shinseishaShimei" AS shinseishaShimei,
+            AfT124."shinseishaKanaShimei" AS shinseishaKanaShimei,
+            AfT124."seinengappiYMD" AS seinengappiYMD,
+            AfT124."seibetsuCode" AS seibetsuCode,
+            AfT124."shinseiKubun" AS shinseiKubun,
+            AfT124."shinseiYMD" AS shinseiYMD,
+            AfT124."torisageYMD" AS torisageYMD,
+            AfT124."torisageJiyuCode" AS torisageJiyuCode,
+            AfT124."kyakkaYMD" AS kyakkaYMD,
+            AfT124."kyakkaJiyuCode" AS kyakkaJiyuCode,
+            AfT124."honsekiShokaiYMD" AS honsekiShokaiYMD,
+            AfT124."honsekiKaitoYMD" AS honsekiKaitoYMD,
+            AfT124."honsekiTsuchiYMD" AS "honsekiTsuchiYMD",
+            AfT510."ryojikanName" AS "ryojikanName"
+        FROM
+            rgaf."AfT124ZaigaiSenkyoninShinsei" AfT124
+        LEFT JOIN
+            rgaf."AfT510Ryojikan" AfT510
+        ON  AfT510."ryojikanCode" = AfT124."ryojikanCode"
+        WHERE
+            AfT124."shinseiNo" = ${shinseiNo}
+        AND AfT124."shikibetsuCode" = #{shikibetsuCode}
+    </select>
+
+    <select resultOrdered="false" id="select選挙情報" resultMap="resultMap_SenkyoJohoEntity" fetchSize="500">
+        SELECT
+            AfT503."senkyokuName" AS "senkyokuName"
+        FROM
+            rgaf."AfT122ZaigaiSenkyoShikaku" AfT122
+        INNER JOIN
+            rgaf."AfT504TohyokuRelation" AfT504
+        ON  AfT504."tohyokuCode" = AfT122."tohyokuCode"
+        AND AfT504."senkyoShurui" = '0'
+        INNER JOIN
+            rgaf."AfT503Senkyoku" AfT503
+        ON  AfT503."senkyoShurui" = AfT504."senkyoShurui"
+        AND AfT503."senkyokuCode" = AfT504."senkyokuCode"
+        WHERE
+            AfT122."shinseiNo" = ${shinseiNo}
+        AND AfT122."shikibetsuCode" = #{shikibetsuCode}
+    </select>
+    
+    <resultMap id="resultMap_SenkyoJohoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT503SenkyokuEntity" autoMapping="true">
+        <result property="senkyokuName" column="senkyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+    <resultMap id="resultMap_ZaigaiSenkyoninShinseiJohoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.meibotorokuzaigai.ZaigaiSenkyoninShinseiJohoEntity" autoMapping="true">
+        <result property="申請情報.shinseiNo" column="shinseiNo"/>
+        <result property="申請情報.shikibetsuCode" column="shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="申請情報.juteiYMD" column="juteiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="申請情報.ryojikanCode" column="ryojikanCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="申請情報.kokusekiCode" column="kokusekiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="申請情報.shinseishaShimei" column="shinseishaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="申請情報.shinseishaKanaShimei" column="shinseishaKanaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaKanaMeishoTypeHandler"/>
+        <result property="申請情報.seinengappiYMD" column="seinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="申請情報.seibetsuCode" column="seibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="申請情報.shinseiKubun" column="shinseiKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="申請情報.shinseiYMD" column="shinseiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="申請情報.torisageYMD" column="torisageYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="申請情報.torisageJiyuCode" column="torisageJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="申請情報.kyakkaYMD" column="kyakkaYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="申請情報.kyakkaJiyuCode" column="kyakkaJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="申請情報.honsekiShokaiYMD" column="honsekiShokaiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="申請情報.honsekiKaitoYMD" column="honsekiKaitoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="申請情報.honsekiTsuchiYMD" column="honsekiTsuchiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="領事官.ryojikanName" column="ryojikanName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+    <resultMap id="resultMap_MeibotorokuZaigaiEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.meibotorokuzaigai.ZaigaiSenkyoIdouRuisekiEntity" autoMapping="true">
+        <result property="本籍全国住所コード" column="zenkokuJushoCode1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ZenkokuJushoCodeTypeHandler"/>
+        <result property="本籍住所" column="jusho1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="本籍番地" column="banchi1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="最終住所" column="jusho2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="最終番地" column="banchi2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="最終方書" column="katagaki2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="現住所" column="jusho4" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="送付先" column="jusho5" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="在外選挙資格.meiboTorokuYMD" column="meiboTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙資格.tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="在外選挙資格.hyojiYMD" column="hyojiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙資格.hyojiJiyuCode" column="hyojiJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="在外選挙資格.masshoYMD" column="masshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙資格.masshoJiyuCode" column="masshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="在外選挙資格.henkoJiyuCode" column="henkoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="在外選挙資格.honsekiTorokuKubun" column="honsekiTorokuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="在外選挙資格.shikakuKubun" column="shikakuKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="在外選挙資格.kofuNo" column="kofuNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="在外選挙資格.kofuYMD" column="kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.shinseiNo" column="shinseiNo"/>
+        <result property="在外選挙人申請情報.shinseiKubun" column="shinseiKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="在外選挙人申請情報.shinseishaShimei" column="shinseishaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="在外選挙人申請情報.shinseishaKanaShimei" column="shinseishaKanaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaKanaMeishoTypeHandler"/>
+        <result property="在外選挙人申請情報.seinengappiYMD" column="seinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.seibetsuCode" column="seibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="在外選挙人申請情報.shinseiYMD" column="shinseiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙資格.shuseiYMD" column="shuseiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.honsekiShokaiYMD" column="honsekiShokaiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.honsekiKaitoYMD" column="honsekiKaitoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.honsekiTsuchiYMD" column="honsekiTsuchiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.ryojikanCode" column="ryojikanCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="在外選挙人申請情報.kyakkaJiyuCode" column="kyakkaJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+    </resultMap>
+
+</mapper>

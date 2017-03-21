@@ -1,0 +1,13 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+nenreiKeisanKijunYMD,UDD015YMD,FlexibleDate,,,,,年齢計算基準年月日,A
+nenrei,int2,int,,,,,年齢,A
+birthdayFukumuFlag,bool,boolean,,,,,誕生日含フラグ,A
+kyojuNensu,int2,int,,,,,居住年数,A
+juteiFirstYMD,UDD015YMD,FlexibleDate,,,,,住定開始年月日,A
+juteiLastYMD,UDD015YMD,FlexibleDate,,,,,住定終了年月日,A
+japaneseFlag,bool,boolean,,,,,日本人フラグ,A
+foreignerFlag,bool,boolean,,,,,外国人フラグ,A
+juminFlag,bool,boolean,,,,,住民フラグ,A
+tenshutsushaFlag,bool,boolean,,,,,転出者フラグ,A
+tennyushaFlag,bool,boolean,,,,,転入者フラグ,A
+teishishaFukumuFlag,bool,boolean,,,,,公民権停止者含フラグ,A

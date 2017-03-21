@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT205TohyorokuFuzuiマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT205TohyorokuFuzuiMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT205TohyorokuFuzui">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT205TohyorokuFuzuiMapper.allColumns_AfT205TohyorokuFuzui" />
+     FROM
+         rgaf."AfT205TohyorokuFuzui"
+     WHERE
+         rgaf."AfT205TohyorokuFuzui"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT205TohyorokuFuzui">
+         "AfT205TohyorokuFuzui"."shohonNo" as "afT205TohyorokuFuzui_shohonNo",
+         "AfT205TohyorokuFuzui"."senkyoNo" as "afT205TohyorokuFuzui_senkyoNo",
+         "AfT205TohyorokuFuzui"."hokokuYMD" as "afT205TohyorokuFuzui_hokokuYMD",
+         "AfT205TohyorokuFuzui"."shisetsuCode" as "afT205TohyorokuFuzui_shisetsuCode",
+         "AfT205TohyorokuFuzui"."tohyokuCode" as "afT205TohyorokuFuzui_tohyokuCode",
+         "AfT205TohyorokuFuzui"."komokuShurui" as "afT205TohyorokuFuzui_komokuShurui",
+         "AfT205TohyorokuFuzui"."renban" as "afT205TohyorokuFuzui_renban",
+         "AfT205TohyorokuFuzui"."insertDantaiCd" as "afT205TohyorokuFuzui_insertDantaiCd",
+         "AfT205TohyorokuFuzui"."insertTimestamp" as "afT205TohyorokuFuzui_insertTimestamp",
+         "AfT205TohyorokuFuzui"."insertReamsLoginId" as "afT205TohyorokuFuzui_insertReamsLoginId",
+         "AfT205TohyorokuFuzui"."insertContextId" as "afT205TohyorokuFuzui_insertContextId",
+         "AfT205TohyorokuFuzui"."isDeleted" as "afT205TohyorokuFuzui_isDeleted",
+         "AfT205TohyorokuFuzui"."updateCount" as "afT205TohyorokuFuzui_updateCount",
+         "AfT205TohyorokuFuzui"."lastUpdateTimestamp" as "afT205TohyorokuFuzui_lastUpdateTimestamp",
+         "AfT205TohyorokuFuzui"."lastUpdateReamsLoginId" as "afT205TohyorokuFuzui_lastUpdateReamsLoginId",
+         "AfT205TohyorokuFuzui"."toha" as "afT205TohyorokuFuzui_toha",
+         "AfT205TohyorokuFuzui"."shimei" as "afT205TohyorokuFuzui_shimei",
+         "AfT205TohyorokuFuzui"."sennninYMD" as "afT205TohyorokuFuzui_sennninYMD",
+         "AfT205TohyorokuFuzui"."tachiaiStartTime" as "afT205TohyorokuFuzui_tachiaiStartTime",
+         "AfT205TohyorokuFuzui"."tachiaiStopTime" as "afT205TohyorokuFuzui_tachiaiStopTime",
+         "AfT205TohyorokuFuzui"."sankaiTime" as "afT205TohyorokuFuzui_sankaiTime",
+         "AfT205TohyorokuFuzui"."jishokuTime" as "afT205TohyorokuFuzui_jishokuTime",
+         "AfT205TohyorokuFuzui"."jiyu" as "afT205TohyorokuFuzui_jiyu"
+    </sql>
+
+
+    <!--テーブルAfT205TohyorokuFuzuiの項目をAfT205TohyorokuFuzuiEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT205TohyorokuFuzuiEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT205TohyorokuFuzuiEntity" autoMapping="true">
+        <id property="shohonNo" column="afT205TohyorokuFuzui_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="senkyoNo" column="afT205TohyorokuFuzui_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id property="hokokuYMD" column="afT205TohyorokuFuzui_hokokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <id property="shisetsuCode" column="afT205TohyorokuFuzui_shisetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyokuCode" column="afT205TohyorokuFuzui_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="komokuShurui" column="afT205TohyorokuFuzui_komokuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="renban" column="afT205TohyorokuFuzui_renban" />
+        <result property="insertDantaiCd" column="afT205TohyorokuFuzui_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT205TohyorokuFuzui_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT205TohyorokuFuzui_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT205TohyorokuFuzui_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT205TohyorokuFuzui_isDeleted" />
+        <result property="updateCount" column="afT205TohyorokuFuzui_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT205TohyorokuFuzui_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT205TohyorokuFuzui_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="toha" column="afT205TohyorokuFuzui_toha" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shimei" column="afT205TohyorokuFuzui_shimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="sennninYMD" column="afT205TohyorokuFuzui_sennninYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="tachiaiStartTime" column="afT205TohyorokuFuzui_tachiaiStartTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="tachiaiStopTime" column="afT205TohyorokuFuzui_tachiaiStopTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="sankaiTime" column="afT205TohyorokuFuzui_sankaiTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="jishokuTime" column="afT205TohyorokuFuzui_jishokuTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="jiyu" column="afT205TohyorokuFuzui_jiyu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

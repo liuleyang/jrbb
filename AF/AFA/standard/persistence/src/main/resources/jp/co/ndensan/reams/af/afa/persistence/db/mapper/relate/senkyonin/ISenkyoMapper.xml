@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 選挙のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.ISenkyoMapper">
+
+    <select resultOrdered="true" id="select選挙ByKey" resultMap="resultMap_SenkyoEntity" fetchSize="500">
+        <include refid="selectSenkyoEntity" />
+    </select>
+
+    <select resultOrdered="true" id="select選挙リストBy主キー1" resultMap="resultMap_SenkyoEntity" fetchSize="500">
+        <include refid="selectSenkyoEntity" />
+    </select>
+
+    <sql id="selectSenkyoEntity">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo" />
+        FROM
+        rgaf."AfT111Senkyo" AS AfT111Senkyo
+        LEFT OUTER JOIN
+        rgaf."AfT201TohyoJokyo" AS AfT201TohyoJokyo
+        ON
+        AfT111Senkyo."senkyoNo" = AfT201TohyoJokyo."senkyoNo"
+
+    </sql>
+
+    <resultMap id="resultMap_SenkyoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.senkyonin.senkyo.SenkyoEntity" autoMapping="true">
+        <association property="選挙Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.resultMap_IAfT111SenkyoEntity"/>
+        <collection property="投票状況Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.resultMap_IAfT201TohyoJokyoEntity"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 補助者入力用のマッピング用XMLです。 -->
+<!-- @reamsid_L AF-0080-030 qiuxy -->
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.hojoshanyuryoku.IHojoshaNyuryokuMapper">
+    <select resultOrdered="true" id="selectHojoshaNyuryokuList" resultType="jp.co.ndensan.reams.af.afa.entity.db.relate.hojoshanyuryoku.HojoshaNyuryokuEntity" fetchSize="500">
+        WITH master AS (
+        SELECT
+        "AfT508Hojosha"."shikibetsuCode",
+        "AfT508Hojosha"."tohyojoCode",
+        "AfT502Tohyojo"."tohyojoName"
+        FROM
+        rgaf."AfT508Hojosha" AS "AfT508Hojosha"
+        INNER JOIN
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        ON  "AfT508Hojosha"."shohonNo" = "AfT100Shohon"."shohonNo"
+        INNER JOIN
+        rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+        ON "AfT504TohyokuRelation"."senkyoShurui" = "AfT100Shohon"."senkyoShurui"
+        AND "AfT508Hojosha"."tohyojoCode" = "AfT504TohyokuRelation"."tohyojoCode"
+        AND "AfT504TohyokuRelation"."tohyokuCode" = #{tohyokuCode}
+        LEFT OUTER JOIN
+        rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+        ON "AfT502Tohyojo"."tohyojoCode" = "AfT504TohyokuRelation"."tohyojoCode"
+        WHERE "AfT508Hojosha"."shohonNo" = #{shohonNo}
+        )
+        ,masterCodes AS (
+        SELECT
+        ARRAY_AGG(DISTINCT master."shikibetsuCode"::text) AS codeList
+        FROM
+        master
+        )
+        SELECT DISTINCT
+        master.*,
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."meisho"
+        FROM
+        master
+        INNER JOIN
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (select codeList from masterCodes)
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = master."shikibetsuCode"
+        WHERE CARDINALITY( (select codeList from masterCodes) ) > 0
+    </select>
+</mapper>

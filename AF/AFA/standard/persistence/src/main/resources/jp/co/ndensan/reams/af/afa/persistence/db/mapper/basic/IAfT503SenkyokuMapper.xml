@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT503Senkyokuマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT503Senkyoku">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper.allColumns_AfT503Senkyoku" />
+     FROM
+         rgaf."AfT503Senkyoku"
+     WHERE
+         rgaf."AfT503Senkyoku"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT503Senkyoku">
+         "AfT503Senkyoku"."senkyoShurui" as "afT503Senkyoku_senkyoShurui",
+         "AfT503Senkyoku"."senkyokuCode" as "afT503Senkyoku_senkyokuCode",
+         "AfT503Senkyoku"."insertDantaiCd" as "afT503Senkyoku_insertDantaiCd",
+         "AfT503Senkyoku"."insertTimestamp" as "afT503Senkyoku_insertTimestamp",
+         "AfT503Senkyoku"."insertReamsLoginId" as "afT503Senkyoku_insertReamsLoginId",
+         "AfT503Senkyoku"."insertContextId" as "afT503Senkyoku_insertContextId",
+         "AfT503Senkyoku"."isDeleted" as "afT503Senkyoku_isDeleted",
+         "AfT503Senkyoku"."updateCount" as "afT503Senkyoku_updateCount",
+         "AfT503Senkyoku"."lastUpdateTimestamp" as "afT503Senkyoku_lastUpdateTimestamp",
+         "AfT503Senkyoku"."lastUpdateReamsLoginId" as "afT503Senkyoku_lastUpdateReamsLoginId",
+         "AfT503Senkyoku"."senkyokuName" as "afT503Senkyoku_senkyokuName"
+    </sql>
+
+
+    <!--テーブルAfT503Senkyokuの項目をAfT503SenkyokuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT503SenkyokuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT503SenkyokuEntity" autoMapping="true">
+        <id property="senkyoShurui" column="afT503Senkyoku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="senkyokuCode" column="afT503Senkyoku_senkyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT503Senkyoku_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT503Senkyoku_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT503Senkyoku_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT503Senkyoku_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT503Senkyoku_isDeleted" />
+        <result property="updateCount" column="afT503Senkyoku_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT503Senkyoku_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT503Senkyoku_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="senkyokuName" column="afT503Senkyoku_senkyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

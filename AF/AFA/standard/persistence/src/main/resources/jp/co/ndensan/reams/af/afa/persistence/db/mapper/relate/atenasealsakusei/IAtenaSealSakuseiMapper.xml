@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0620-020 guancy -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.atenasealsakusei.IAtenaSealSakuseiMapper"> 
+    <select resultOrdered="true" id="select施設宛名シール情報" resultMap="resultMap_AtenaSealSakuseiShisetsuMybatis" 
+             parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.atenasealsakusei.AtenaSealSakuseiMybatisParameter"  fetchSize="1000" >
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT507ShisetsuMapper.allColumns_AfT507Shisetsu"/>
+        FROM  rgaf."AfT507Shisetsu" AS "AfT507Shisetsu" 
+        WHERE 1=1
+        <if test='施設種別 != null and 施設種別.toString() != ""'>
+            AND "AfT507Shisetsu"."shisetsuShubetsu" = #{施設種別}
+        </if>
+        <if test='施設コードFROM != null and 施設コードFROM.toString() != ""'>
+            AND "AfT507Shisetsu"."shisetsuCode"  <![CDATA[>=]]>  #{施設コードFROM}
+        </if>
+        <if test='施設コードTO != null and 施設コードTO.toString() != ""'>
+            AND "AfT507Shisetsu"."shisetsuCode"  <![CDATA[<=]]>  #{施設コードTO}
+        </if>
+        ${出力順}
+    </select> 
+    <resultMap id="resultMap_AtenaSealSakuseiShisetsuMybatis" type="jp.co.ndensan.reams.af.afa.entity.db.relate.atenasealsakusei.AtenaSealSakuseiJyohouEntity" autoMapping="true">      
+        <association property="施設情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT507ShisetsuMapper.ResultMap_AfT507ShisetsuEntity"/>
+    </resultMap>
+    <select  resultOrdered="true" id="select選挙人宛名シール情報" resultMap="resultMap_AtenaSealSakuseiEntity"
+              parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.atenasealsakusei.AtenaSealSakuseiMybatisParameter"   fetchSize="1000">
+        SELECT
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />,
+        <if test='世帯主のみ印刷対象とする有無'>
+            "AaT108Setai"."setainushiShikibetsuCode" AS "setainushiShikibetsuCode", 
+        </if>
+        "AfT112SenkyoninMeibo"."tohyokuCode" AS "tohyokuCode",
+        "AfT112SenkyoninMeibo"."satsu" AS "satsu",
+        "AfT112SenkyoninMeibo"."page" AS "page",
+        "AfT112SenkyoninMeibo"."gyo" AS "gyo"
+        FROM  
+        rgaf."AfT112SenkyoninMeibo" as "AfT112SenkyoninMeibo"         
+        INNER JOIN  
+        <include refid="tableName_PsmParamClassShikibetsuTaisho_Label" />  AS "ShikibetsuTaisho" 
+        ON "AfT112SenkyoninMeibo"."shikibetsuCode" ="ShikibetsuTaisho"."shikibetsuCode"
+        AND  "AfT112SenkyoninMeibo"."shohonNo" = #{抄本番号}
+        <if test='住所条件 !=null and 住所条件.toString() == "1"'>
+            <if test="住所一覧リスト.size()>0">
+                AND "AfT112SenkyoninMeibo"."tohyokuCode" IN
+                <foreach item="コード"  collection="住所一覧リスト" open="(" separator="," close=")">
+                    #{コード}
+                </foreach>  
+            </if>           
+        </if> 
+        INNER JOIN  (
+        <include refid="tableName_AfT112SenkyoninMeiboNew" />
+        ) AS  "AfT112SenkyoninMeiboNew"    
+        ON  "AfT112SenkyoninMeiboNew"."shikibetsuCode" ="AfT112SenkyoninMeibo"."shikibetsuCode"
+        AND "AfT112SenkyoninMeiboNew"."shohonNo" = #{抄本番号}
+        AND "AfT112SenkyoninMeiboNew"."seq" = "AfT112SenkyoninMeibo"."seq"  
+        <if test='世帯主のみ印刷対象とする有無'>
+            INNER JOIN  (
+            <include refid="tableName_AaT108SetaiNew" />
+            ) AS  "AaT108SetaiNew" ON   
+            "ShikibetsuTaisho"."setaiCode" ="AaT108SetaiNew"."setaiCode"
+            INNER JOIN  rgaa."AaT108Setai" AS "AaT108Setai" ON
+            "AaT108SetaiNew"."setaiCode" ="AaT108Setai"."setaiCode"
+            AND "AaT108SetaiNew"."torokuNo" ="AaT108Setai"."torokuNo"
+        </if>  
+        WHERE  1=1
+        <if test="住所一覧リスト.size() > 0">
+            <if test='住所条件 !=null and 住所条件.toString() == "2"'>
+                AND "ShikibetsuTaisho"."gyoseikuCode" IN
+                <foreach item="コード"  collection="住所一覧リスト" open="(" separator="," close=")">
+                    #{コード}
+                </foreach>               
+            </if>            
+            <if test='住所条件 !=null and 住所条件.toString() == "3"'>
+                AND "ShikibetsuTaisho"."jutonaiChoikiCode" IN
+                <foreach item="コード"  collection="住所一覧リスト" open="(" separator="," close=")">
+                    #{コード}
+                </foreach>               
+            </if> 
+            <if test='住所条件 !=null and 住所条件.toString() == "4"'>
+                AND "ShikibetsuTaisho"."chikuCode1" IN
+                <foreach item="コード"  collection="住所一覧リスト" open="(" separator="," close=")">
+                    #{コード}
+                </foreach>               
+            </if> 
+            <if test='住所条件 !=null and  住所条件.toString()=="5"'>
+                AND "ShikibetsuTaisho"."chikuCode2" IN
+                <foreach item="コード"  collection="住所一覧リスト" open="(" separator="," close=")">
+                    #{コード}
+                </foreach>               
+            </if>
+            <if test='住所条件 !=null  and 住所条件.toString() =="6"'>
+                AND "ShikibetsuTaisho"."chikuCode3" IN
+                <foreach item="コード"  collection="住所一覧リスト" open="(" separator="," close=")">
+                    #{コード}
+                </foreach>               
+            </if> 
+        </if> 
+        ${出力順} 
+    </select> 
+    <select  resultOrdered="true" id="select転出者宛名シール情報" resultMap="resultMap_AtenaSealSakuseiEntity"
+              parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.atenasealsakusei.AtenaSealSakuseiMybatisParameter"   fetchSize="1000">
+        SELECT 
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />,     
+        "AfT112SenkyoninMeibo"."tohyokuCode" AS "tohyokuCode",
+        "AfT112SenkyoninMeibo"."satsu" AS "satsu",
+        "AfT112SenkyoninMeibo"."page" AS "page",
+        "AfT112SenkyoninMeibo"."gyo" AS "gyo",
+        "AfT111Senkyo"."senkyoNo" AS "senkyoNo",
+        "AfT111Senkyo"."senkyoLevel" AS "senkyoLevel",
+        "AfT111Senkyo"."senkyoName" AS "senkyoName",
+        "AfT111Senkyo"."tenshutsuKigenYMD" AS "tenshutsuKigenYMD"
+        FROM   rgaf."AfT112SenkyoninMeibo" as "AfT112SenkyoninMeibo"        
+        INNER JOIN  
+        <include refid="tableName_PsmParamClassShikibetsuTaisho_Label" />   AS"ShikibetsuTaisho"
+        ON "AfT112SenkyoninMeibo"."shikibetsuCode" ="ShikibetsuTaisho"."shikibetsuCode"
+        AND  "AfT112SenkyoninMeibo"."shohonNo" = #{抄本番号}
+        INNER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"    
+        ON  "AfT112SenkyoninMeibo"."shohonNo" =  "AfT111Senkyo"."shohonNo"    
+        AND "AfT111Senkyo"."senkyoNo" =  #{選挙番号} 
+        WHERE "ShikibetsuTaisho"."zenkokuJushoCode" not like '98%' 
+        AND "ShikibetsuTaisho"."zenkokuJushoCode" not like '99%' 
+        <if test='転出期限日検索基準 !=null and 転出期限日検索基準.toString() == "1"'>
+            <if test='対象期間FROM != null'>
+                AND "ShikibetsuTaisho"."shojoTodokedeYMD"<![CDATA[>=]]>#{対象期間FROM}
+            </if>
+            <if test='対象期間TO != null'> 
+                AND "ShikibetsuTaisho"."shojoTodokedeYMD"<![CDATA[<=]]>#{対象期間TO}
+            </if>
+        </if> 
+        <if test='転出期限日検索基準 !=null and 転出期限日検索基準.toString() == "2"'>
+            <if test='対象期間FROM != null'>
+                AND "ShikibetsuTaisho"."shojoIdoYMD"<![CDATA[>=]]>#{対象期間FROM}
+            </if>
+            <if test='対象期間TO != null'> 
+                AND "ShikibetsuTaisho"."shojoIdoYMD"<![CDATA[<=]]>#{対象期間TO}
+            </if>
+        </if>                
+        ${出力順} 
+    </select>
+    <sql id="tableName_AaT108SetaiNew">
+        SELECT  
+            "AaT108SetaiTemp"."setaiCode" AS "setaiCode",
+            MAX("AaT108SetaiTemp"."torokuNo") AS "torokuNo"
+        FROM  rgaa."AaT108Setai" AS "AaT108SetaiTemp"
+        LEFT JOIN <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />  
+        AS        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON        "AaT108SetaiTemp"."setaiCode"  =
+                  <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."setaiCode"
+    </sql>
+    <sql id="tableName_AfT112SenkyoninMeiboNew">
+         WITH "AfV112SenkyoninMeiboTemp" AS (
+                                        SELECT
+                                            *
+                                        FROM
+                                            rgaf."AfV112SenkyoninMeibo" "AfV112"
+                                        WHERE
+                                            "AfV112"."shohonNo" = #{抄本番号}
+                                    )
+        SELECT
+          "AfV112SenkyoninMeiboTemp"."shikibetsuCode" AS "shikibetsuCode"
+        , "AfV112SenkyoninMeiboTemp"."shohonNo" AS "shohonNo"
+        , MAX( "AfV112SenkyoninMeiboTemp"."seq") AS "seq"
+        FROM
+        "AfV112SenkyoninMeiboTemp"
+        LEFT OUTER JOIN
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+            ( 
+            SELECT
+              ARRAY_AGG(CAST ("shikibetsuCode" AS TEXT)) 
+            FROM
+              "AfV112SenkyoninMeiboTemp"
+            )
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+       AS "ShikibetsuTaishoTemp" 
+       ON "AfV112SenkyoninMeiboTemp"."shikibetsuCode" = "ShikibetsuTaishoTemp"."shikibetsuCode"
+       GROUP BY 
+        "AfV112SenkyoninMeiboTemp"."shikibetsuCode"
+      , "AfV112SenkyoninMeiboTemp"."shohonNo"
+    </sql> 
+    <sql id="tableName_PsmParamClassShikibetsuTaisho_Label">
+        (
+        WITH "AfT112SenkyoninMeibo" AS (
+        SELECT
+            *
+        FROM
+        rgaf."AfT112SenkyoninMeibo" "AfT112"
+        WHERE
+        "AfT112"."shohonNo" = #{抄本番号}
+        )
+        SELECT
+            "ShikibetsuTaishoTemp".*
+        FROM
+        "AfT112SenkyoninMeibo"
+        LEFT OUTER JOIN
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+            ( 
+            SELECT
+              ARRAY_AGG(CAST ("shikibetsuCode" AS TEXT)) 
+            FROM
+              "AfT112SenkyoninMeibo"
+            )
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+       AS "ShikibetsuTaishoTemp" 
+       ON "AfT112SenkyoninMeibo"."shikibetsuCode" = "ShikibetsuTaishoTemp"."shikibetsuCode")
+    </sql>
+    <resultMap id="resultMap_AtenaSealSakuseiEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.atenasealsakusei.AtenaSealSakuseiJyohouEntity" autoMapping="true">                                
+        <id property="世帯主の識別コード"                    column="setainushiShikibetsuCode"                  typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="選挙人名簿情報.tohyokuCode"                      column="tohyokuCode"                    typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="選挙人名簿情報.satsu"                            column="satsu"                          typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="選挙人名簿情報.page"                             column="page" />
+        <id property="選挙人名簿情報.gyo"                              column="gyo" />
+        <id property="選挙情報.senkyoNo"                              column="senkyoNo"                            typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id property="選挙情報.senkyoLevel"                      column="senkyoLevel"                    typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="選挙情報.senkyoName"                    column="senkyoName"                  typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="選挙情報.tenshutsuKigenYMD"             column="tenshutsuKigenYMD"                             typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>       
+        <association property="宛名PSM情報" resultMap="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+    </resultMap>
+    
+</mapper>

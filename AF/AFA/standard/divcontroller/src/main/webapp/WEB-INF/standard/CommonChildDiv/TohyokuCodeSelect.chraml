@@ -1,0 +1,873 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyokuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onBlur_txtTohyokuCode&quot;},{&quot;eventName&quot;:&quot;onOkClose_txtTohyokuCode&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnTohyokuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLAlign&quot;,&quot;editType&quot;:0}]},&quot;txtTohyokuCode_labelLText&quot;:&quot;投票区&quot;,&quot;txtTohyokuCode_labelLWidth&quot;:&quot;&quot;,&quot;txtTohyokuCode_required&quot;:false,&quot;btnTohyokuCode_displayNone&quot;:false,&quot;txtTohyokuName_displayNone&quot;:false,&quot;txtTohyokuName_width&quot;:&quot;L&quot;,&quot;txtTohyokuCode_readOnly&quot;:false,&quot;txtTohyokuCode_labelLAlign&quot;:2}" data-is-composite-control="true" data-control-name="AFA.TohyokuCodeSelect"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="TohyokuCodeSelect" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;TohyokuCodeSelect&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;TohyokuCodeSelect&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;TohyokuCodeSelect&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onBlur_txtTohyokuCode&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/TohyokuCodeSelect/onBlur_txtTohyokuCode&quot;},{&quot;eventName&quot;:&quot;onBeforeOpenDialog_btnTohyokuCode&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/TohyokuCodeSelect/onBeforeOpenDialog_btnTohyokuCode&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnSenkyoShurui&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;isNyuryokuCheckByCommonChildDiv&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;tohyokuCodeSelectModel&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="TohyokuCodeSelect_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="TohyokuCodeSelect_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M UzCompositeChild" id="txtTohyokuCode" style="width: 90px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBoxCode" data-obj="{&quot;fieldName&quot;:&quot;txtTohyokuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxCode&quot;,&quot;width&quot;:&quot;35px&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtTohyokuCode_core&quot;,&quot;maxLength&quot;:&quot;4&quot;,&quot;textKind&quot;:2,&quot;onBlur&quot;:&quot;onBlur_txtTohyokuCode&quot;,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;投票区&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L Width- text-align-right" id="txtTohyokuCode_labelL"><span>投票区</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Off ui-autocomplete-input" id="txtTohyokuCode_core" style="width: 35px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><input title="" class="UzButtonDialog FloatLeft JSControl controlMargin-M marginLeft-XS heightTextBoxMatchesFlag HeightTextBoxMatchesForImage UzCompositeChild" id="btnTohyokuCode" style="margin-right: 0em;" type="image" alt="image" src="/ur/urz/image/UR_InputGuide.png" data-control-type="ButtonDialog" data-obj="{&quot;fieldName&quot;:&quot;btnTohyokuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;ButtonDialog&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;btnTohyokuCode&quot;,&quot;appearance&quot;:2,&quot;imageFileUrl&quot;:&quot;/ur/urz/image/UR_InputGuide.png&quot;,&quot;heightTextBoxMatches&quot;:true,&quot;displayChildDivName&quot;:&quot;AFA.TohyokuSelectDialog&quot;,&quot;dataPassing&quot;:[{&quot;key&quot;:&quot;selectedCode&quot;,&quot;controlName&quot;:&quot;txtTohyokuCode&quot;},{&quot;key&quot;:&quot;selectedName&quot;,&quot;controlName&quot;:&quot;txtTohyokuName&quot;},{&quot;key&quot;:&quot;tohyokuCodeSelectModel&quot;,&quot;controlName&quot;:&quot;TohyokuCodeSelect.tohyokuCodeSelectModel&quot;}],&quot;onOkClose&quot;:&quot;onOkClose_txtTohyokuCode&quot;,&quot;onBeforeOpenDialog&quot;:&quot;onBeforeOpenDialog_btnTohyokuCode&quot;}"><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtTohyokuName" style="width: 511px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtTohyokuName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;txtTohyokuName_core&quot;,&quot;readOnly&quot;:true,&quot;maxLength&quot;:&quot;40&quot;,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input readonlyColor Width-L" id="txtTohyokuName_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtTohyokuCodeDomain" style="width: 90px; height: 21px;" data-control-type="TextBoxTohyokuCode" data-obj="{&quot;fieldName&quot;:&quot;txtTohyokuCodeDomain&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxTohyokuCode&quot;,&quot;width&quot;:&quot;32px&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;txtTohyokuCodeDomain_core&quot;,&quot;maxLength&quot;:4,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;投票区&quot;,&quot;labelLWidth&quot;:&quot;XS&quot;}"><span class="word-wrap-break-word Label-L Width-XS text-align-right" id="txtTohyokuCodeDomain_labelL"><span>投票区</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Off ui-autocomplete-input" id="txtTohyokuCodeDomain_core" style="width: 32px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var TohyokuCodeSelect_Design = (function (_super) {
+        __extends(TohyokuCodeSelect_Design, _super);
+        function TohyokuCodeSelect_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, TohyokuCodeSelect_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "txtTohyokuCode_labelLText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "txtTohyokuCode_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "txtTohyokuCode_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[0]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "btnTohyokuCode_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[1]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "txtTohyokuName_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[2]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "txtTohyokuName_width", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"] = value;
+                } else {
+                    this.layout.items[0].items[2]["width"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "txtTohyokuCode_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[0]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyokuCodeSelect_Design.prototype, "txtTohyokuCode_labelLAlign", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLAlign"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLAlign"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLAlign"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        TohyokuCodeSelect_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtTohyokuCode_labelLText");
+            Uz.JSControlUtil.registProperty("txtTohyokuCode_labelLWidth");
+            Uz.JSControlUtil.registProperty("txtTohyokuCode_required");
+            Uz.JSControlUtil.registProperty("btnTohyokuCode_displayNone");
+            Uz.JSControlUtil.registProperty("txtTohyokuName_displayNone");
+            Uz.JSControlUtil.registProperty("txtTohyokuName_width");
+            Uz.JSControlUtil.registProperty("txtTohyokuCode_readOnly");
+            Uz.JSControlUtil.registProperty("txtTohyokuCode_labelLAlign");
+        };
+
+        TohyokuCodeSelect_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtTohyokuCode_labelLText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLText"];
+            editablePropertyInfo["txtTohyokuCode_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["txtTohyokuCode_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["btnTohyokuCode_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtTohyokuName_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtTohyokuName_width"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["width"];
+            editablePropertyInfo["txtTohyokuCode_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtTohyokuCode_labelLAlign"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLAlign"];
+
+            return editablePropertyInfo;
+        };
+        TohyokuCodeSelect_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "TohyokuCodeSelect",
+                    "items": [
+                        {
+                            "fieldName": "txtTohyokuCode",
+                            "items": [],
+                            "controlType": "TextBoxCode",
+                            "width": "35px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtTohyokuCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": "4",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "onBlur_txtTohyokuCode",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "投票区",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": "4"
+                        },
+                        {
+                            "fieldName": "btnTohyokuCode",
+                            "items": [],
+                            "controlType": "ButtonDialog",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "btnTohyokuCode",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "onClick": "",
+                            "appearance": 2,
+                            "imageFileUrl": "/ur/urz/image/UR_InputGuide.png",
+                            "icon": 0,
+                            "heightTextBoxMatches": true,
+                            "displayChildDivName": "AFA.TohyokuSelectDialog",
+                            "dataPassing": [
+                                {
+                                    "key": "selectedCode",
+                                    "controlName": "txtTohyokuCode"
+                                },
+                                {
+                                    "key": "selectedName",
+                                    "controlName": "txtTohyokuName"
+                                },
+                                {
+                                    "key": "selectedSenkyoShurui",
+                                    "controlName": "TohyokuCodeSelect.txtHdnSenkyoShurui"
+                                }
+                            ],
+                            "visibleCloseButton": true,
+                            "onOkClose": "",
+                            "onBeforeOpenDialog": ""
+                        },
+                        {
+                            "fieldName": "txtTohyokuName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtTohyokuName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": "40",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "txtTohyokuCodeDomain",
+                            "items": [],
+                            "controlType": "TextBoxTohyokuCode",
+                            "width": "32px",
+                            "visible": true,
+                            "displayNone": true,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtTohyokuCodeDomain_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 4,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "投票区",
+                            "labelRText": "",
+                            "labelLWidth": "XS",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": 4
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "TohyokuCodeSelect",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "TohyokuCodeSelect"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        }
+                    ],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "txtHdnSenkyoShurui",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "TohyokuCodeSelect",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtTohyokuCode",
+                    "publicChildProperty": "labelLText",
+                    "newPropertyName": "txtTohyokuCode_labelLText"
+                },
+                {
+                    "publicChildFieldName": "txtTohyokuCode",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "txtTohyokuCode_labelLWidth"
+                },
+                {
+                    "publicChildFieldName": "txtTohyokuCode",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtTohyokuCode_required"
+                },
+                {
+                    "publicChildFieldName": "btnTohyokuCode",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "btnTohyokuCode_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtTohyokuName",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "txtTohyokuName_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtTohyokuName",
+                    "publicChildProperty": "width",
+                    "newPropertyName": "txtTohyokuName_width"
+                },
+                {
+                    "publicChildFieldName": "txtTohyokuCode",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtTohyokuCode_readOnly"
+                },
+                {
+                    "publicChildFieldName": "txtTohyokuCode",
+                    "publicChildProperty": "labelLAlign",
+                    "newPropertyName": "txtTohyokuCode_labelLAlign"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return TohyokuCodeSelect_Design;
+    })(Uz.CommonChildDiv);
+    AFA.TohyokuCodeSelect_Design = TohyokuCodeSelect_Design;
+
+    (function (TohyokuCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtTohyokuCode = function () {
+                return "onBlur_txtTohyokuCode";
+            };
+            return Events;
+        })();
+        TohyokuCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyokuCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyokuCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyokuCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtTohyokuCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtTohyokuCode"));
+            };
+
+            Controls.prototype.btnTohyokuCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnTohyokuCode"));
+            };
+
+            Controls.prototype.txtTohyokuName = function () {
+                return new UZA.TextBox(this.convFiledName("txtTohyokuName"));
+            };
+
+            Controls.prototype.txtTohyokuCodeDomain = function () {
+                return new UZA.TextBoxTohyokuCode(this.convFiledName("txtTohyokuCodeDomain"));
+            };
+            return Controls;
+        })();
+        TohyokuCodeSelect.Controls = Controls;
+    })(AFA.TohyokuCodeSelect || (AFA.TohyokuCodeSelect = {}));
+    var TohyokuCodeSelect = AFA.TohyokuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyokuCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyokuCodeSelect.ModeController = ModeController;
+    })(AFA.TohyokuCodeSelect || (AFA.TohyokuCodeSelect = {}));
+    var TohyokuCodeSelect = AFA.TohyokuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TohyokuCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtTohyokuCode_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyokuCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyokuCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("btnTohyokuCode_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyokuName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyokuName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyokuCode_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyokuCode_labelLAlign", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_labelLText = function () {
+                return this.controls.txtTohyokuCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_labelLText = function (value) {
+                this.controls.txtTohyokuCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_labelLWidth = function () {
+                return this.controls.txtTohyokuCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_labelLWidth = function (value) {
+                this.controls.txtTohyokuCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_required = function () {
+                return this.controls.txtTohyokuCode().required;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_required = function (value) {
+                this.controls.txtTohyokuCode().required = value;
+            };
+
+            PublicProperties.prototype.getbtnTohyokuCode_displayNone = function () {
+                return this.controls.btnTohyokuCode().displayNone;
+            };
+
+            PublicProperties.prototype.setbtnTohyokuCode_displayNone = function (value) {
+                this.controls.btnTohyokuCode().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuName_displayNone = function () {
+                return this.controls.txtTohyokuName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtTohyokuName_displayNone = function (value) {
+                this.controls.txtTohyokuName().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuName_width = function () {
+                return this.controls.txtTohyokuName().width;
+            };
+
+            PublicProperties.prototype.settxtTohyokuName_width = function (value) {
+                this.controls.txtTohyokuName().width = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_readOnly = function () {
+                return this.controls.txtTohyokuCode().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_readOnly = function (value) {
+                this.controls.txtTohyokuCode().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_labelLAlign = function () {
+                return this.controls.txtTohyokuCode().labelLAlign;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_labelLAlign = function (value) {
+                this.controls.txtTohyokuCode().labelLAlign = value;
+            };
+            return PublicProperties;
+        })();
+        TohyokuCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.TohyokuCodeSelect || (AFA.TohyokuCodeSelect = {}));
+    var TohyokuCodeSelect = AFA.TohyokuCodeSelect;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+   
+   
+   
+   
+     
+   
+   
+   
+   
+   
+   
+     
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['TOHYOKUCODESELECT'] = {};
+AFA['TOHYOKUCODESELECT'].TohyokuCodeSelectRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_TohyokuCodeSelect').getProperty();parameter0.txtTohyokuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyokuCode').getProperty();parameter0.btnTohyokuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnTohyokuCode').getProperty();parameter0.txtTohyokuName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyokuName').getProperty();parameter0.txtTohyokuCodeDomain = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyokuCodeDomain').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtTohyokuCode = function () {
+                return "onBlur_txtTohyokuCode";
+            };
+
+            Events.onOkClose_txtTohyokuCode = function () {
+                return "onOkClose_txtTohyokuCode";
+            };
+
+            Events.onBeforeOpenDialog_btnTohyokuCode = function () {
+                return "onBeforeOpenDialog_btnTohyokuCode";
+            };
+            return Events;
+        })();
+        TohyokuCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyokuCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyokuCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.TohyokuCodeSelect.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyokuCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtTohyokuCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtTohyokuCode"));
+            };
+
+            Controls.prototype.btnTohyokuCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnTohyokuCode"));
+            };
+
+            Controls.prototype.txtTohyokuName = function () {
+                return new UZA.TextBox(this.convFiledName("txtTohyokuName"));
+            };
+
+            Controls.prototype.txtTohyokuCodeDomain = function () {
+                return new UZA.TextBoxTohyokuCode(this.convFiledName("txtTohyokuCodeDomain"));
+            };
+            return Controls;
+        })();
+        TohyokuCodeSelect.Controls = Controls;
+    })(AFA.TohyokuCodeSelect || (AFA.TohyokuCodeSelect = {}));
+    var TohyokuCodeSelect = AFA.TohyokuCodeSelect;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyokuCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            ModeController.prototype.PublicProperties = function () {
+                return new AFA.TohyokuCodeSelect.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyokuCodeSelect.ModeController = ModeController;
+    })(AFA.TohyokuCodeSelect || (AFA.TohyokuCodeSelect = {}));
+    var TohyokuCodeSelect = AFA.TohyokuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyokuCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TohyokuCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtTohyokuCode_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyokuCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyokuCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("btnTohyokuCode_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyokuName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyokuName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyokuCode_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyokuCode_labelLAlign", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_labelLText = function () {
+                return this.controls.txtTohyokuCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_labelLText = function (value) {
+                this.controls.txtTohyokuCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_labelLWidth = function () {
+                return this.controls.txtTohyokuCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_labelLWidth = function (value) {
+                this.controls.txtTohyokuCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_required = function () {
+                return this.controls.txtTohyokuCode().required;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_required = function (value) {
+                this.controls.txtTohyokuCode().required = value;
+            };
+
+            PublicProperties.prototype.getbtnTohyokuCode_displayNone = function () {
+                return this.controls.btnTohyokuCode().displayNone;
+            };
+
+            PublicProperties.prototype.setbtnTohyokuCode_displayNone = function (value) {
+                this.controls.btnTohyokuCode().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuName_displayNone = function () {
+                return this.controls.txtTohyokuName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtTohyokuName_displayNone = function (value) {
+                this.controls.txtTohyokuName().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuName_width = function () {
+                return this.controls.txtTohyokuName().width;
+            };
+
+            PublicProperties.prototype.settxtTohyokuName_width = function (value) {
+                this.controls.txtTohyokuName().width = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_readOnly = function () {
+                return this.controls.txtTohyokuCode().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_readOnly = function (value) {
+                this.controls.txtTohyokuCode().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyokuCode_labelLAlign = function () {
+                return this.controls.txtTohyokuCode().labelLAlign;
+            };
+
+            PublicProperties.prototype.settxtTohyokuCode_labelLAlign = function (value) {
+                this.controls.txtTohyokuCode().labelLAlign = value;
+            };
+            return PublicProperties;
+        })();
+        TohyokuCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.TohyokuCodeSelect || (AFA.TohyokuCodeSelect = {}));
+    var TohyokuCodeSelect = AFA.TohyokuCodeSelect;
+})(AFA || (AFA = {}));
+</script></div>

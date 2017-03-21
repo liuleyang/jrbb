@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT147Chiku3Conditionマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT147Chiku3ConditionMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT147Chiku3Condition">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT147Chiku3ConditionMapper.allColumns_AfT147Chiku3Condition" />
+     FROM
+         rgaf."AfT147Chiku3Condition"
+     WHERE
+         rgaf."AfT147Chiku3Condition"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT147Chiku3Condition">
+         "AfT147Chiku3Condition"."shohonNo" as "afT147Chiku3Condition_shohonNo",
+         "AfT147Chiku3Condition"."chikuCode3" as "afT147Chiku3Condition_chikuCode3",
+         "AfT147Chiku3Condition"."insertDantaiCd" as "afT147Chiku3Condition_insertDantaiCd",
+         "AfT147Chiku3Condition"."insertTimestamp" as "afT147Chiku3Condition_insertTimestamp",
+         "AfT147Chiku3Condition"."insertReamsLoginId" as "afT147Chiku3Condition_insertReamsLoginId",
+         "AfT147Chiku3Condition"."insertContextId" as "afT147Chiku3Condition_insertContextId",
+         "AfT147Chiku3Condition"."isDeleted" as "afT147Chiku3Condition_isDeleted",
+         "AfT147Chiku3Condition"."updateCount" as "afT147Chiku3Condition_updateCount",
+         "AfT147Chiku3Condition"."lastUpdateTimestamp" as "afT147Chiku3Condition_lastUpdateTimestamp",
+         "AfT147Chiku3Condition"."lastUpdateReamsLoginId" as "afT147Chiku3Condition_lastUpdateReamsLoginId"
+    </sql>
+
+
+    <!--テーブルAfT147Chiku3Conditionの項目をAfT147Chiku3ConditionEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT147Chiku3ConditionEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT147Chiku3ConditionEntity" autoMapping="true">
+        <id property="shohonNo" column="afT147Chiku3Condition_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="chikuCode3" column="afT147Chiku3Condition_chikuCode3" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="insertDantaiCd" column="afT147Chiku3Condition_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT147Chiku3Condition_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT147Chiku3Condition_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT147Chiku3Condition_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT147Chiku3Condition_isDeleted" />
+        <result property="updateCount" column="afT147Chiku3Condition_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT147Chiku3Condition_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT147Chiku3Condition_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

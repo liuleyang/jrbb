@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0720-010 liuyj -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.ISenkyokuMapper">
+    <select resultOrdered="false" id="select選挙区情報を検索" resultMap="resultMap_Senkyoku" fetchSize="500">
+        SELECT 
+            "AfT503Senkyoku"."senkyoShurui" AS "senkyoShurui",
+            "AfT503Senkyoku"."senkyokuCode" AS "senkyokuCode",
+            "AfT503Senkyoku"."senkyokuName" AS "senkyokuName",
+            "SenkyokuTanmatsuKanri"."登録端末数" AS "登録端末数",
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper.allColumns_AfT503Senkyoku" />
+        FROM rgaf."AfT503Senkyoku" AS "AfT503Senkyoku"
+        LEFT JOIN (
+                    SELECT 
+                        "AfT505SenkyokuTanmatsuKanri"."senkyoShurui" AS "senkyoShurui",
+                        "AfT505SenkyokuTanmatsuKanri"."senkyokuCode" AS "senkyokuCode",
+                        count(*) AS "登録端末数"
+                    FROM rgaf."AfT505SenkyokuTanmatsuKanri" AS "AfT505SenkyokuTanmatsuKanri"
+                    GROUP BY 
+                        "AfT505SenkyokuTanmatsuKanri"."senkyoShurui",
+                        "AfT505SenkyokuTanmatsuKanri"."senkyokuCode") AS "SenkyokuTanmatsuKanri"
+        ON "AfT503Senkyoku"."senkyoShurui" = "SenkyokuTanmatsuKanri"."senkyoShurui"
+        AND "AfT503Senkyoku"."senkyokuCode" = "SenkyokuTanmatsuKanri"."senkyokuCode"
+        WHERE 
+            "AfT503Senkyoku"."senkyoShurui" = #{選挙種類}
+        ORDER BY 
+            "AfT503Senkyoku"."senkyokuCode" 
+    </select>
+
+    <resultMap id="resultMap_Senkyoku" type="jp.co.ndensan.reams.af.afa.entity.db.relate.senkyonin.senkyo.SenkyokuJoho" autoMapping="true">
+         <result property="選挙種類" column="senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+         <result property="選挙区コード" column="senkyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+         <result property="選挙区名" column="senkyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+         <result property="登録端末数" column="登録端末数" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+         <association property="選挙区Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper.ResultMap_AfT503SenkyokuEntity"/>
+    </resultMap>
+
+</mapper>

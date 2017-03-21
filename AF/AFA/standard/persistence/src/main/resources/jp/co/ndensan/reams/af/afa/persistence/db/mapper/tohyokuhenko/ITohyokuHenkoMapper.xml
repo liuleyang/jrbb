@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @reamsid_L AF-0050-010 wangxt2 -->
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.tohyokuhenko.ITohyokuHenkoMapper">
+    <select resultOrdered="true" id = "getTohyokuCode" parameterType = "jp.co.ndensan.reams.af.afa.definition.mybatisprm.tohyokuhenko.TohyokuHenkoMyBatisParameter" resultMap="tohyokuCodelistResult" fetchSize="500">
+        SELECT
+        "AfT506JushoRelation"."tohyokuCode" as "afT506JushoRelation_tohyokuCode"
+        FROM  rgaf."AfT506JushoRelation"   as "AfT506JushoRelation"
+        INNER JOIN <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON "AfT506JushoRelation"."choikiCode" = <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."choikiCode"
+        AND "AfT506JushoRelation"."kaishiBanchi1BanchiCode" <![CDATA[<=]]> <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."banchiCode1"
+        AND <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."banchiCode1" <![CDATA[<=]]> "AfT506JushoRelation"."shuiryoBanchi1BanchiCode"
+        AND "AfT506JushoRelation"."kaishiBanchi2BanchiCode" <![CDATA[<=]]> <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."banchiCode2"
+        AND <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."banchiCode2" <![CDATA[<=]]> "AfT506JushoRelation"."shuiryoBanchi2BanchiCode"
+        AND "AfT506JushoRelation"."kaishiBanchi3BanchiCode" <![CDATA[<=]]> <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."banchiCode3"
+        AND <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."banchiCode3" <![CDATA[<=]]> "AfT506JushoRelation"."shuiryoBanchi3BanchiCode"
+        AND "AfT506JushoRelation"."kaishiBanchi4BanchiCode" <![CDATA[<=]]> <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."banchiCode4"
+        WHERE <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" =  #{shikibetsuCode}
+        AND "AfT506JushoRelation"."senkyoShurui" = '2'
+    </select>
+    <resultMap id="tohyokuCodelistResult" type="jp.co.ndensan.reams.af.afa.entity.db.relate.tohyokuhenko.TohyokuHenkoEntity">
+        <result property= "tohyokuCode" column= "afT506JushoRelation_tohyokuCode" typeHandler = "jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+
+</mapper>

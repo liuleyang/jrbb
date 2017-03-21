@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @reamsid_L AF-0110-010 wangxt2 -->
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--概要： 無投票入力のマッピング用XMLです。 -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.mutohyonyuryoku.IMutohyoNyuryokuRelateMapper">
+    <resultMap id="mutohyoNyuryokuResult" type="jp.co.ndensan.reams.af.afa.entity.db.relate.mutohyonyuryoku.MutohyoNyuryokuEntity">
+        <id property="shohonNo" column="ID_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="tohyokuCode" column="ID_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id column="afT112SenkyoninMeibo_satsu"/>
+        <id property="page" column="ID_page"/>
+        <id property="gyo" column="ID_gyo"/>
+        <id property="senkyoNo" column="afT111Senkyo_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <association property = "senkyoninMeiboEntity" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.ResultMap_AfT112SenkyoninMeiboEntity"/>
+        <association property = "atenaPSMEntity" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+        <association property = "shohonEntity" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <association property = "senkyoEntity" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property = "senkyoShikakuEntity" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.ResultMap_AfT113SenkyoShikakuEntity"/>
+        <association property = "tohyoJokyoEntity" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.ResultMap_AfT201TohyoJokyoEntity"/>
+    </resultMap>
+
+
+    <select resultOrdered="true" id = "getTohyoJokyoJoho" parameterType = "jp.co.ndensan.reams.af.afa.definition.mybatisprm.mutohyonyuryoku.MutohyoNyuryokuMybatisParameter" resultMap="mutohyoNyuryokuResult" fetchSize="500">
+        WITH master AS (
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.allColumns_AfT112SenkyoninMeibo"/>,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon"/>,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo"/>,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku"/>,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo"/>
+        FROM
+        rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        INNER JOIN rgaf."AfT100Shohon" AS "AfT100Shohon"
+        ON "AfT100Shohon"."shohonNo" = "AfT112SenkyoninMeibo"."shohonNo"
+        INNER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        INNER JOIN rgaf."AfV113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        ON "AfT113SenkyoShikaku"."shikibetsuCode" = "AfT112SenkyoninMeibo"."shikibetsuCode"
+        AND   "AfT113SenkyoShikaku"."senkyoShurui" = (CASE WHEN "AfT100Shohon"."senkyoShurui" = '1' THEN '0' ELSE "AfT100Shohon"."senkyoShurui" END)
+        LEFT JOIN rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT201TohyoJokyo"."shikibetsuCode"
+        AND "AfT111Senkyo"."senkyoNo" = "AfT201TohyoJokyo"."senkyoNo"
+        AND "AfT100Shohon"."shohonNo" = "AfT201TohyoJokyo"."shohonNo"
+        WHERE "AfT112SenkyoninMeibo"."shohonNo" = #{shohonNo}
+        <if test = "groupCode != null">
+            AND "AfT112SenkyoninMeibo"."groupCode" = #{groupCode}
+        </if>
+        AND TRIM("AfT112SenkyoninMeibo"."tohyokuCode") = #{tohyokuCode}
+        <if test = "satsu != null">
+            AND "AfT112SenkyoninMeibo"."satsu" = #{satsu}
+        </if>
+        <if test = "page == null">
+            AND "AfT112SenkyoninMeibo"."page" = '1'
+        </if>
+        <if test = "page != null">
+            AND "AfT112SenkyoninMeibo"."page" = #{page}
+        </if>
+        )
+        ,masterCodes AS (
+        SELECT
+        ARRAY_AGG(DISTINCT master."afT112SenkyoninMeibo_shikibetsuCode"::text) AS codeList
+        FROM
+        master
+        )
+        SELECT
+        master."afT112SenkyoninMeibo_shohonNo" as "ID_shohonNo",
+        master."afT112SenkyoninMeibo_tohyokuCode" as "ID_tohyokuCode",
+        master."afT112SenkyoninMeibo_page" as "ID_page",
+        master."afT112SenkyoninMeibo_gyo" as "ID_gyo",
+        master."afT111Senkyo_senkyoNo" as "afT111Senkyo_senkyoNo",
+        master.*,
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+        FROM
+        master
+        INNER JOIN <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (
+        select codeList from masterCodes
+        )
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON master."afT112SenkyoninMeibo_shikibetsuCode" = "ShikibetsuTaisho"."shikibetsuCode"
+        WHERE CARDINALITY( (select codeList from masterCodes) ) > 0
+        ORDER BY
+        master."afT112SenkyoninMeibo_groupCode" ASC,
+        master."afT112SenkyoninMeibo_tohyokuCode" ASC,
+        master."afT112SenkyoninMeibo_satsu" ASC,
+        master."afT112SenkyoninMeibo_page" ASC,
+        master."afT112SenkyoninMeibo_gyo" ASC,
+        master."afT111Senkyo_senkyoNo" ASC
+
+    </select>
+
+    <resultMap id="jotaiHenkoResult" type="jp.co.ndensan.reams.af.afa.entity.db.relate.mutohyonyuryoku.JotaiHenkoEntity">
+        <id property="shohonNo" column="ID_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="senkyoNo" column="ID_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <association property = "senkyoEntity" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property = "tohyoJokyoEntity" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.ResultMap_AfT201TohyoJokyoEntity"/>
+    </resultMap>
+
+    <select resultOrdered="true" id = "getJotaiHenkoJoho" parameterType = "jp.co.ndensan.reams.af.afa.definition.mybatisprm.mutohyonyuryoku.JotaiHenkoMybatisParameter" resultMap="jotaiHenkoResult" fetchSize="500">
+        SELECT
+        "AfT111Senkyo"."shohonNo" as "ID_shohonNo",
+        "AfT111Senkyo"."senkyoNo" as "ID_senkyoNo",
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo"/>,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo"/>
+
+        FROM rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        LEFT JOIN rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON "AfT111Senkyo"."senkyoNo" = "AfT201TohyoJokyo"."senkyoNo"
+        AND "AfT111Senkyo"."shohonNo" = "AfT201TohyoJokyo"."shohonNo"
+        AND "AfT201TohyoJokyo"."shikibetsuCode" = #{shikibetsuCode}
+        WHERE "AfT111Senkyo"."shohonNo" = #{shohonNo}
+        ORDER BY
+        "AfT111Senkyo"."senkyoNo" ASC
+
+    </select>
+</mapper>
+

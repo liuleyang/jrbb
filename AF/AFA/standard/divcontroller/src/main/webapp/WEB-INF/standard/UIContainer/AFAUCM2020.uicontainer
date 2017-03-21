@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCM2020",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "投票所保守",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMM2020",
+     "toLayoutTitle": "投票所保守",
+     "toState": ""
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMM2020",
+     "layoutTitle": "投票所保守",
+     "eventName": "complete",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

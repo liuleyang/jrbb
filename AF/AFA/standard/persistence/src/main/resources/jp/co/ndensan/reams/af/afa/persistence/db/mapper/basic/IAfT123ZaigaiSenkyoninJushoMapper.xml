@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT123ZaigaiSenkyoninJushoマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT123ZaigaiSenkyoninJushoMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT123ZaigaiSenkyoninJusho">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT123ZaigaiSenkyoninJushoMapper.allColumns_AfT123ZaigaiSenkyoninJusho" />
+     FROM
+         rgaf."AfT123ZaigaiSenkyoninJusho"
+     WHERE
+         rgaf."AfT123ZaigaiSenkyoninJusho"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT123ZaigaiSenkyoninJusho">
+         "AfT123ZaigaiSenkyoninJusho"."shikibetsuCode" as "afT123ZaigaiSenkyoninJusho_shikibetsuCode",
+         "AfT123ZaigaiSenkyoninJusho"."shinseiNo" as "afT123ZaigaiSenkyoninJusho_shinseiNo",
+         "AfT123ZaigaiSenkyoninJusho"."jushoShuruiKubun" as "afT123ZaigaiSenkyoninJusho_jushoShuruiKubun",
+         "AfT123ZaigaiSenkyoninJusho"."insertDantaiCd" as "afT123ZaigaiSenkyoninJusho_insertDantaiCd",
+         "AfT123ZaigaiSenkyoninJusho"."insertTimestamp" as "afT123ZaigaiSenkyoninJusho_insertTimestamp",
+         "AfT123ZaigaiSenkyoninJusho"."insertReamsLoginId" as "afT123ZaigaiSenkyoninJusho_insertReamsLoginId",
+         "AfT123ZaigaiSenkyoninJusho"."insertContextId" as "afT123ZaigaiSenkyoninJusho_insertContextId",
+         "AfT123ZaigaiSenkyoninJusho"."isDeleted" as "afT123ZaigaiSenkyoninJusho_isDeleted",
+         "AfT123ZaigaiSenkyoninJusho"."updateCount" as "afT123ZaigaiSenkyoninJusho_updateCount",
+         "AfT123ZaigaiSenkyoninJusho"."lastUpdateTimestamp" as "afT123ZaigaiSenkyoninJusho_lastUpdateTimestamp",
+         "AfT123ZaigaiSenkyoninJusho"."lastUpdateReamsLoginId" as "afT123ZaigaiSenkyoninJusho_lastUpdateReamsLoginId",
+         "AfT123ZaigaiSenkyoninJusho"."yubinNo" as "afT123ZaigaiSenkyoninJusho_yubinNo",
+         "AfT123ZaigaiSenkyoninJusho"."zenkokuJushoCode" as "afT123ZaigaiSenkyoninJusho_zenkokuJushoCode",
+         "AfT123ZaigaiSenkyoninJusho"."jusho" as "afT123ZaigaiSenkyoninJusho_jusho",
+         "AfT123ZaigaiSenkyoninJusho"."banchi" as "afT123ZaigaiSenkyoninJusho_banchi",
+         "AfT123ZaigaiSenkyoninJusho"."katagakiCode" as "afT123ZaigaiSenkyoninJusho_katagakiCode",
+         "AfT123ZaigaiSenkyoninJusho"."katagaki" as "afT123ZaigaiSenkyoninJusho_katagaki",
+         "AfT123ZaigaiSenkyoninJusho"."dokyoKazokuShimei" as "afT123ZaigaiSenkyoninJusho_dokyoKazokuShimei",
+         "AfT123ZaigaiSenkyoninJusho"."tel" as "afT123ZaigaiSenkyoninJusho_tel",
+         "AfT123ZaigaiSenkyoninJusho"."fax" as "afT123ZaigaiSenkyoninJusho_fax",
+         "AfT123ZaigaiSenkyoninJusho"."mail" as "afT123ZaigaiSenkyoninJusho_mail",
+         "AfT123ZaigaiSenkyoninJusho"."kokugaiTenshutsuYMD" as "afT123ZaigaiSenkyoninJusho_kokugaiTenshutsuYMD",
+         "AfT123ZaigaiSenkyoninJusho"."kokunaiTennyuYMD" as "afT123ZaigaiSenkyoninJusho_kokunaiTennyuYMD"
+    </sql>
+
+
+    <!--テーブルAfT123ZaigaiSenkyoninJushoの項目をAfT123ZaigaiSenkyoninJushoEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT123ZaigaiSenkyoninJushoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT123ZaigaiSenkyoninJushoEntity" autoMapping="true">
+        <id property="shikibetsuCode" column="afT123ZaigaiSenkyoninJusho_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="shinseiNo" column="afT123ZaigaiSenkyoninJusho_shinseiNo" />
+        <id property="jushoShuruiKubun" column="afT123ZaigaiSenkyoninJusho_jushoShuruiKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="insertDantaiCd" column="afT123ZaigaiSenkyoninJusho_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT123ZaigaiSenkyoninJusho_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT123ZaigaiSenkyoninJusho_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT123ZaigaiSenkyoninJusho_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT123ZaigaiSenkyoninJusho_isDeleted" />
+        <result property="updateCount" column="afT123ZaigaiSenkyoninJusho_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT123ZaigaiSenkyoninJusho_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT123ZaigaiSenkyoninJusho_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="yubinNo" column="afT123ZaigaiSenkyoninJusho_yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="zenkokuJushoCode" column="afT123ZaigaiSenkyoninJusho_zenkokuJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ZenkokuJushoCodeTypeHandler"/>
+        <result property="jusho" column="afT123ZaigaiSenkyoninJusho_jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="banchi" column="afT123ZaigaiSenkyoninJusho_banchi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="katagakiCode" column="afT123ZaigaiSenkyoninJusho_katagakiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiCodeTypeHandler"/>
+        <result property="katagaki" column="afT123ZaigaiSenkyoninJusho_katagaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="dokyoKazokuShimei" column="afT123ZaigaiSenkyoninJusho_dokyoKazokuShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tel" column="afT123ZaigaiSenkyoninJusho_tel" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="fax" column="afT123ZaigaiSenkyoninJusho_fax" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="mail" column="afT123ZaigaiSenkyoninJusho_mail" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.MailAddressTypeHandler"/>
+        <result property="kokugaiTenshutsuYMD" column="afT123ZaigaiSenkyoninJusho_kokugaiTenshutsuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kokunaiTennyuYMD" column="afT123ZaigaiSenkyoninJusho_kokunaiTennyuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+    </resultMap>
+
+</mapper>

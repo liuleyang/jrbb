@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT510Ryojikanマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT510RyojikanMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT510Ryojikan">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT510RyojikanMapper.allColumns_AfT510Ryojikan" />
+     FROM
+         rgaf."AfT510Ryojikan"
+     WHERE
+         rgaf."AfT510Ryojikan"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT510Ryojikan">
+         "AfT510Ryojikan"."ryojikanCode" as "afT510Ryojikan_ryojikanCode",
+         "AfT510Ryojikan"."insertDantaiCd" as "afT510Ryojikan_insertDantaiCd",
+         "AfT510Ryojikan"."insertTimestamp" as "afT510Ryojikan_insertTimestamp",
+         "AfT510Ryojikan"."insertReamsLoginId" as "afT510Ryojikan_insertReamsLoginId",
+         "AfT510Ryojikan"."insertContextId" as "afT510Ryojikan_insertContextId",
+         "AfT510Ryojikan"."isDeleted" as "afT510Ryojikan_isDeleted",
+         "AfT510Ryojikan"."updateCount" as "afT510Ryojikan_updateCount",
+         "AfT510Ryojikan"."lastUpdateTimestamp" as "afT510Ryojikan_lastUpdateTimestamp",
+         "AfT510Ryojikan"."lastUpdateReamsLoginId" as "afT510Ryojikan_lastUpdateReamsLoginId",
+         "AfT510Ryojikan"."ryojikanName" as "afT510Ryojikan_ryojikanName",
+         "AfT510Ryojikan"."kanaRyojikanName" as "afT510Ryojikan_kanaRyojikanName",
+         "AfT510Ryojikan"."searchKanaRyojikanName" as "afT510Ryojikan_searchKanaRyojikanName",
+         "AfT510Ryojikan"."hyojijun" as "afT510Ryojikan_hyojijun"
+    </sql>
+
+
+    <!--テーブルAfT510Ryojikanの項目をAfT510RyojikanEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT510RyojikanEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT510RyojikanEntity" autoMapping="true">
+        <id property="ryojikanCode" column="afT510Ryojikan_ryojikanCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT510Ryojikan_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT510Ryojikan_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT510Ryojikan_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT510Ryojikan_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT510Ryojikan_isDeleted" />
+        <result property="updateCount" column="afT510Ryojikan_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT510Ryojikan_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT510Ryojikan_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="ryojikanName" column="afT510Ryojikan_ryojikanName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kanaRyojikanName" column="afT510Ryojikan_kanaRyojikanName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="searchKanaRyojikanName" column="afT510Ryojikan_searchKanaRyojikanName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="hyojijun" column="afT510Ryojikan_hyojijun" />
+    </resultMap>
+
+</mapper>

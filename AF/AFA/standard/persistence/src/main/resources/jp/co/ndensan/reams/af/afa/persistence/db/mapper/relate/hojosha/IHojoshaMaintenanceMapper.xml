@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0750-010 lis2 -->
+
+<mapper namespace ="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.hojosha.IHojoshaMaintenanceMapper">
+    <select resultOrdered="false" id="select補助者情報By抄本番号"  parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.hojoshamaintenance.HojoshaMaintenanceMybatisParameter" 
+            resultMap="resultMap_HojoshaMaintenanceEntity" fetchSize="500">
+       SELECT
+            <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT508HojoshaMapper.allColumns_AfT508Hojosha" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo" />
+        FROM
+            rgaf."AfT508Hojosha" AS "AfT508Hojosha"
+        left  join
+            rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+            on "AfT508Hojosha"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode" 
+        left  join
+            <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" /> 
+            as  "ShikibetsuTaisho"
+                on "AfT508Hojosha"."shikibetsuCode" = "ShikibetsuTaisho"."shikibetsuCode" 
+        WHERE
+            "AfT508Hojosha"."shohonNo" = #{抄本番号}
+            ORDER BY
+            "AfT508Hojosha"."shikibetsuCode"
+    </select>
+   <select resultOrdered="false" id="select宛名情報By識別コード"  parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.hojoshamaintenance.HojoshaMaintenanceMybatisParameter"
+           resultType="java.lang.Integer"  fetchSize="500">
+       SELECT
+          count(0)
+        FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" /> 
+        as
+       <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+       WHERE
+            <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = #{識別コード}
+    </select>
+    
+    <resultMap id ="resultMap_HojoshaMaintenanceEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.hojoshamaintenance.HojoshaMaintenanceEntity" autoMapping="true">
+        <id property="宛名PSM情報.meisho" column="uaFt200FindShikibetsuTaisho_meisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="補助者情報.shohonNo" column="afT508Hojosha_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="補助者情報.shikibetsuCode" column="afT508Hojosha_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="補助者情報.tohyojoCode" column="afT508Hojosha_tohyojoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="投票所情報.tohyojoName" column="afT502Tohyojo_tohyojoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <association property="宛名PSM情報" resultMap="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+        <association property="補助者情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT508HojoshaMapper.ResultMap_AfT508HojoshaEntity"/>
+        <association property="投票所情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"/>
+    </resultMap>
+</mapper>

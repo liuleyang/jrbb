@@ -1,0 +1,773 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SenkyokuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;selectedSenkyokuCode&quot;,&quot;controlName&quot;:&quot;txtSenkyokuCode&quot;},{&quot;key&quot;:&quot;selectedSenkyokuName&quot;,&quot;controlName&quot;:&quot;txtSenkyokuName&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtSenkyokuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSenkyokuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSenkyokuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnSenkyokuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyokuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyokuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSenkyokuCode_readOnly&quot;,&quot;editType&quot;:1}]},&quot;txtSenkyokuCode_labelLText&quot;:&quot;選挙区&quot;,&quot;txtSenkyokuCode_labelLWidth&quot;:&quot;&quot;,&quot;txtSenkyokuCode_required&quot;:false,&quot;btnSenkyokuCode_displayNone&quot;:false,&quot;txtSenkyokuName_displayNone&quot;:false,&quot;txtSenkyokuName_width&quot;:&quot;L&quot;,&quot;txtSenkyokuCode_readOnly&quot;:false}" data-control-name="AFA.SenkyokuCodeSelect" data-is-composite-control="true"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="SenkyokuCodeSelect" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;SenkyokuCodeSelect&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;SenkyokuCodeSelect&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;SenkyokuCodeSelect&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onBlur_txtSenkyokuCode&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SenkyokuCodeSelect/onBlur_txtSenkyokuCode&quot;},{&quot;eventName&quot;:&quot;onBeforeClick_btnDialog&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SenkyokuCodeSelect/onBeforeClick_btnDialog&quot;},{&quot;eventName&quot;:&quot;onClick_btnDialog&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SenkyokuCodeSelect/onClick_btnDialog&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnSenkyoShurui&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="SenkyokuCodeSelect_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="SenkyokuCodeSelect_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M UzCompositeChild" id="txtSenkyokuCode" style="width: 90px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBoxCode" data-obj="{&quot;fieldName&quot;:&quot;txtSenkyokuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxCode&quot;,&quot;width&quot;:&quot;35px&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtSenkyokuCode_core&quot;,&quot;maxLength&quot;:&quot;4&quot;,&quot;textKind&quot;:2,&quot;onBlur&quot;:&quot;onBlur_txtSenkyokuCode&quot;,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;選挙区&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtSenkyokuCode_labelL"><span>選挙区</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Off ui-autocomplete-input" id="txtSenkyokuCode_core" style="width: 35px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><input title="" class="UzButtonDialog FloatLeft JSControl controlMargin-M marginLeft-XS heightTextBoxMatchesFlag HeightTextBoxMatchesForImage UzCompositeChild" id="btnSenkyokuCode" style="margin-right: 0em;" type="image" alt="image" src="/ur/urz/image/UR_InputGuide.png" data-control-type="ButtonDialog" data-obj="{&quot;fieldName&quot;:&quot;btnSenkyokuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;ButtonDialog&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;btnSenkyokuCode&quot;,&quot;appearance&quot;:2,&quot;imageFileUrl&quot;:&quot;/ur/urz/image/UR_InputGuide.png&quot;,&quot;heightTextBoxMatches&quot;:true,&quot;displayChildDivName&quot;:&quot;AFA.SenkyokuSelectDialog&quot;,&quot;dataPassing&quot;:[{&quot;key&quot;:&quot;selectedSenkyokuCode&quot;,&quot;controlName&quot;:&quot;txtSenkyokuCode&quot;},{&quot;key&quot;:&quot;selectedSenkyokuName&quot;,&quot;controlName&quot;:&quot;txtSenkyokuName&quot;},{&quot;key&quot;:&quot;selectedSenkyoShurui&quot;,&quot;controlName&quot;:&quot;SenkyokuCodeSelect.txtHdnSenkyoShurui&quot;}],&quot;onOkClose&quot;:&quot;onClick_btnDialog&quot;,&quot;onBeforeOpenDialog&quot;:&quot;onBeforeClick_btnDialog&quot;}"><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtSenkyokuName" style="width: 511px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtSenkyokuName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;txtSenkyokuName_core&quot;,&quot;readOnly&quot;:true,&quot;maxLength&quot;:&quot;40&quot;,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input readonlyColor Width-L" id="txtSenkyokuName_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var SenkyokuCodeSelect_Design = (function (_super) {
+        __extends(SenkyokuCodeSelect_Design, _super);
+        function SenkyokuCodeSelect_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, SenkyokuCodeSelect_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(SenkyokuCodeSelect_Design.prototype, "txtSenkyokuCode_labelLText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(SenkyokuCodeSelect_Design.prototype, "txtSenkyokuCode_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(SenkyokuCodeSelect_Design.prototype, "txtSenkyokuCode_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[0]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(SenkyokuCodeSelect_Design.prototype, "btnSenkyokuCode_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[1]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(SenkyokuCodeSelect_Design.prototype, "txtSenkyokuName_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[2]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(SenkyokuCodeSelect_Design.prototype, "txtSenkyokuName_width", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"] = value;
+                } else {
+                    this.layout.items[0].items[2]["width"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(SenkyokuCodeSelect_Design.prototype, "txtSenkyokuCode_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[0]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        SenkyokuCodeSelect_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtSenkyokuCode_labelLText");
+            Uz.JSControlUtil.registProperty("txtSenkyokuCode_labelLWidth");
+            Uz.JSControlUtil.registProperty("txtSenkyokuCode_required");
+            Uz.JSControlUtil.registProperty("btnSenkyokuCode_displayNone");
+            Uz.JSControlUtil.registProperty("txtSenkyokuName_displayNone");
+            Uz.JSControlUtil.registProperty("txtSenkyokuName_width");
+            Uz.JSControlUtil.registProperty("txtSenkyokuCode_readOnly");
+        };
+
+        SenkyokuCodeSelect_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtSenkyokuCode_labelLText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLText"];
+            editablePropertyInfo["txtSenkyokuCode_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["txtSenkyokuCode_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["btnSenkyokuCode_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtSenkyokuName_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtSenkyokuName_width"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["width"];
+            editablePropertyInfo["txtSenkyokuCode_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+
+            return editablePropertyInfo;
+        };
+        SenkyokuCodeSelect_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "SenkyokuCodeSelect",
+                    "items": [
+                        {
+                            "fieldName": "txtSenkyokuCode",
+                            "items": [],
+                            "controlType": "TextBoxCode",
+                            "width": "32px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtSenkyokuCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": "4",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "onBlur_txtSenkyokuCode",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "選挙区",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": "4"
+                        },
+                        {
+                            "fieldName": "btnSenkyokuCode",
+                            "items": [],
+                            "controlType": "ButtonDialog",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "btnSenkyokuCode",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "onClick": "",
+                            "appearance": 2,
+                            "imageFileUrl": "/ur/urz/image/UR_InputGuide.png",
+                            "icon": 0,
+                            "heightTextBoxMatches": true,
+                            "displayChildDivName": "AFA.SenkyokuSelectDialog",
+                            "dataPassing": [
+                                {
+                                    "key": "selectedCode",
+                                    "controlName": "txtSenkyokuCode"
+                                },
+                                {
+                                    "key": "selectedName",
+                                    "controlName": "txtSenkyokuName"
+                                },
+                                {
+                                    "key": "selectedSenkyoShurui",
+                                    "controlName": "SenkyokuCodeSelect.txtHdnSenkyoShurui"
+                                }
+                            ],
+                            "visibleCloseButton": true,
+                            "onOkClose": "",
+                            "onBeforeOpenDialog": ""
+                        },
+                        {
+                            "fieldName": "txtSenkyokuName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtSenkyokuName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": "40",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "SenkyokuCodeSelect",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "SenkyokuCodeSelect"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        },
+                        {
+                            "eventName": "onBlur_txtSenkyokuCode",
+                            "requestUrl": "afa/af/afa/SenkyokuCodeSelect/onBlur_txtSenkyokuCode"
+                        }
+                    ],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "txtHdnSenkyoShurui",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "SenkyokuCodeSelect",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtSenkyokuCode",
+                    "publicChildProperty": "labelLText",
+                    "newPropertyName": "txtSenkyokuCode_labelLText"
+                },
+                {
+                    "publicChildFieldName": "txtSenkyokuCode",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "txtSenkyokuCode_labelLWidth"
+                },
+                {
+                    "publicChildFieldName": "txtSenkyokuCode",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtSenkyokuCode_required"
+                },
+                {
+                    "publicChildFieldName": "btnSenkyokuCode",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "btnSenkyokuCode_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtSenkyokuName",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "txtSenkyokuName_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtSenkyokuName",
+                    "publicChildProperty": "width",
+                    "newPropertyName": "txtSenkyokuName_width"
+                },
+                {
+                    "publicChildFieldName": "txtSenkyokuCode",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtSenkyokuCode_readOnly"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return SenkyokuCodeSelect_Design;
+    })(Uz.CommonChildDiv);
+    AFA.SenkyokuCodeSelect_Design = SenkyokuCodeSelect_Design;
+
+    (function (SenkyokuCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtSenkyokuCode = function () {
+                return "onBlur_txtSenkyokuCode";
+            };
+            return Events;
+        })();
+        SenkyokuCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SenkyokuCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SenkyokuCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.SenkyokuCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtSenkyokuCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtSenkyokuCode"));
+            };
+
+            Controls.prototype.btnSenkyokuCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnSenkyokuCode"));
+            };
+
+            Controls.prototype.txtSenkyokuName = function () {
+                return new UZA.TextBox(this.convFiledName("txtSenkyokuName"));
+            };
+            return Controls;
+        })();
+        SenkyokuCodeSelect.Controls = Controls;
+    })(AFA.SenkyokuCodeSelect || (AFA.SenkyokuCodeSelect = {}));
+    var SenkyokuCodeSelect = AFA.SenkyokuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SenkyokuCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SenkyokuCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SenkyokuCodeSelect.ModeController = ModeController;
+    })(AFA.SenkyokuCodeSelect || (AFA.SenkyokuCodeSelect = {}));
+    var SenkyokuCodeSelect = AFA.SenkyokuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SenkyokuCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new SenkyokuCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtSenkyokuCode_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtSenkyokuCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtSenkyokuCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("btnSenkyokuCode_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyokuName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyokuName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtSenkyokuCode_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_labelLText = function () {
+                return this.controls.txtSenkyokuCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_labelLText = function (value) {
+                this.controls.txtSenkyokuCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_labelLWidth = function () {
+                return this.controls.txtSenkyokuCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_labelLWidth = function (value) {
+                this.controls.txtSenkyokuCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_required = function () {
+                return this.controls.txtSenkyokuCode().required;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_required = function (value) {
+                this.controls.txtSenkyokuCode().required = value;
+            };
+
+            PublicProperties.prototype.getbtnSenkyokuCode_displayNone = function () {
+                return this.controls.btnSenkyokuCode().displayNone;
+            };
+
+            PublicProperties.prototype.setbtnSenkyokuCode_displayNone = function (value) {
+                this.controls.btnSenkyokuCode().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuName_displayNone = function () {
+                return this.controls.txtSenkyokuName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuName_displayNone = function (value) {
+                this.controls.txtSenkyokuName().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuName_width = function () {
+                return this.controls.txtSenkyokuName().width;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuName_width = function (value) {
+                this.controls.txtSenkyokuName().width = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_readOnly = function () {
+                return this.controls.txtSenkyokuCode().readOnly;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_readOnly = function (value) {
+                this.controls.txtSenkyokuCode().readOnly = value;
+            };
+            return PublicProperties;
+        })();
+        SenkyokuCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.SenkyokuCodeSelect || (AFA.SenkyokuCodeSelect = {}));
+    var SenkyokuCodeSelect = AFA.SenkyokuCodeSelect;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+       
+   
+   
+   
+   
+         
+       
+       
+     
+               
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['SENKYOKUCODESELECT'] = {};
+AFA['SENKYOKUCODESELECT'].SenkyokuCodeSelectRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_SenkyokuCodeSelect').getProperty();parameter0.txtSenkyokuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSenkyokuCode').getProperty();parameter0.btnSenkyokuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnSenkyokuCode').getProperty();parameter0.txtSenkyokuName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSenkyokuName').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (SenkyokuCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtSenkyokuCode = function () {
+                return "onBlur_txtSenkyokuCode";
+            };
+
+            Events.onClick_btnDialog = function () {
+                return "onClick_btnDialog";
+            };
+
+            Events.onBeforeClick_btnDialog = function () {
+                return "onBeforeClick_btnDialog";
+            };
+            return Events;
+        })();
+        SenkyokuCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SenkyokuCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SenkyokuCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.SenkyokuCodeSelect.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.SenkyokuCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtSenkyokuCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtSenkyokuCode"));
+            };
+
+            Controls.prototype.btnSenkyokuCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnSenkyokuCode"));
+            };
+
+            Controls.prototype.txtSenkyokuName = function () {
+                return new UZA.TextBox(this.convFiledName("txtSenkyokuName"));
+            };
+            return Controls;
+        })();
+        SenkyokuCodeSelect.Controls = Controls;
+    })(AFA.SenkyokuCodeSelect || (AFA.SenkyokuCodeSelect = {}));
+    var SenkyokuCodeSelect = AFA.SenkyokuCodeSelect;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (SenkyokuCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SenkyokuCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SenkyokuCodeSelect.ModeController = ModeController;
+    })(AFA.SenkyokuCodeSelect || (AFA.SenkyokuCodeSelect = {}));
+    var SenkyokuCodeSelect = AFA.SenkyokuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SenkyokuCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new SenkyokuCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtSenkyokuCode_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtSenkyokuCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtSenkyokuCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("btnSenkyokuCode_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyokuName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyokuName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtSenkyokuCode_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_labelLText = function () {
+                return this.controls.txtSenkyokuCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_labelLText = function (value) {
+                this.controls.txtSenkyokuCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_labelLWidth = function () {
+                return this.controls.txtSenkyokuCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_labelLWidth = function (value) {
+                this.controls.txtSenkyokuCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_required = function () {
+                return this.controls.txtSenkyokuCode().required;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_required = function (value) {
+                this.controls.txtSenkyokuCode().required = value;
+            };
+
+            PublicProperties.prototype.getbtnSenkyokuCode_displayNone = function () {
+                return this.controls.btnSenkyokuCode().displayNone;
+            };
+
+            PublicProperties.prototype.setbtnSenkyokuCode_displayNone = function (value) {
+                this.controls.btnSenkyokuCode().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuName_displayNone = function () {
+                return this.controls.txtSenkyokuName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuName_displayNone = function (value) {
+                this.controls.txtSenkyokuName().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuName_width = function () {
+                return this.controls.txtSenkyokuName().width;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuName_width = function (value) {
+                this.controls.txtSenkyokuName().width = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_readOnly = function () {
+                return this.controls.txtSenkyokuCode().readOnly;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_readOnly = function (value) {
+                this.controls.txtSenkyokuCode().readOnly = value;
+            };
+            return PublicProperties;
+        })();
+        SenkyokuCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.SenkyokuCodeSelect || (AFA.SenkyokuCodeSelect = {}));
+    var SenkyokuCodeSelect = AFA.SenkyokuCodeSelect;
+})(AFA || (AFA = {}));
+</script></div>

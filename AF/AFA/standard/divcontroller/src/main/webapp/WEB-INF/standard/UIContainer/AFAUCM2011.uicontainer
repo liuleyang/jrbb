@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCM2011",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "投票区保守（憲法改正国民投票）",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMM2010",
+     "toLayoutTitle": "投票区保守",
+     "toState": ""
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMM2010",
+     "layoutTitle": "投票区保守",
+     "eventName": "complete",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

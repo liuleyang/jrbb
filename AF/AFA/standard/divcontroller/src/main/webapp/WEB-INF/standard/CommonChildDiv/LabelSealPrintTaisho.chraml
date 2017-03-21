@@ -1,0 +1,150 @@
+<div class="JSControl UzCompositeControl FloatLeft Width-XS" id="defaultLayout" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;LabelSealPrintTaisho&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;100px&quot;,&quot;minHeight&quot;:&quot;200px&quot;,&quot;widthPercent&quot;:&quot;80&quot;,&quot;heightPercent&quot;:&quot;80&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.LabelSealPrintTaisho"><div class="StateChangable UzPanel JSControl FloatLeft UzPanelAndText marginBottom-Default panelMarginBottom-M Panel-Shadow UzCommonChildDivPanel Width-G6 UzCompositeChild" id="LabelSealPrintTaisho" style="margin: 0px; display: block;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;LabelSealPrintTaisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G6&quot;,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;LabelSealPrintTaisho&quot;,&quot;title&quot;:&quot;印刷指示&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;LabelSealPrintTaisho&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onChange_chkLabelFuto&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/LabelSealPrintTaisho/onChange_chkLabelFuto&quot;},{&quot;eventName&quot;:&quot;onChange_chkLabelNyujoken&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/LabelSealPrintTaisho/onChange_chkLabelNyujoken&quot;},{&quot;eventName&quot;:&quot;onChange_chkLabelSenseisho&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/LabelSealPrintTaisho/onChange_chkLabelSenseisho&quot;},{&quot;eventName&quot;:&quot;onChange_chkLabelShohon&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/LabelSealPrintTaisho/onChange_chkLabelShohon&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="LabelSealPrintTaisho_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">印刷指示</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="LabelSealPrintTaisho_panel_body_area"><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="chkFuzaishaTohyoShomeisho" style="width: 235px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkFuzaishaTohyoShomeisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkFuzaishaTohyoShomeisho_core&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;不在者投票証明書を印刷する&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkFuzaishaTohyoShomeisho_core"><input class="verticalSpace-M" id="chkFuzaishaTohyoShomeisho_1" type="checkbox" value="不在者投票証明書を印刷する" data-key="1"><label for="chkFuzaishaTohyoShomeisho_1" data-key="1">不在者投票証明書を印刷する</label></span></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="chkSenseisho" style="width: 155px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSenseisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;chkSenseisho_core&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;宣誓書を印刷する&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSenseisho_core"><input class="verticalSpace-M" id="chkSenseisho_1" type="checkbox" value="宣誓書を印刷する" data-key="1"><label for="chkSenseisho_1" data-key="1">宣誓書を印刷する</label></span></div><span title="" class="UzLabel word-wrap-break-word JSControl FloatLeft controlMargin-M Width- ClearFloat marginLeft-XS marginRight-XS text-align-left UzCompositeChild" id="lblLabelSeal" data-control-type="Label" data-obj="{&quot;fieldName&quot;:&quot;lblLabelSeal&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Label&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;lblLabelSeal&quot;,&quot;text&quot;:&quot;ラベルシール印刷指示&quot;,&quot;align&quot;:0}"><span>ラベルシール印刷指示</span></span><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="chkLabelSenseisho" style="width: 207px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkLabelSenseisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;200px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;chkLabelSenseisho_core&quot;,&quot;onChange&quot;:&quot;onChange_chkLabelSenseisho&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;宣誓書貼付用を印刷する&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft" id="chkLabelSenseisho_core" style="width: 200px;"><input class="verticalSpace-M" id="chkLabelSenseisho_1" type="checkbox" value="宣誓書貼付用を印刷する" data-key="1"><label for="chkLabelSenseisho_1" data-key="1">宣誓書貼付用を印刷する</label></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtMaisuSenseisho" style="width: 40px; height: 20px; position: relative;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtMaisuSenseisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;width&quot;:&quot;17px&quot;,&quot;selectControlID&quot;:&quot;txtMaisuSenseisho_core&quot;,&quot;maxLength&quot;:&quot;2&quot;,&quot;minLength&quot;:&quot;1&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;labelRText&quot;:&quot;枚&quot;,&quot;labelRWidth&quot;:&quot;&quot;,&quot;permitCharactor&quot;:&quot;+-,.\\&quot;}"><input class="UzTextBox CoreElement text-align-right ime-mode-Off ui-autocomplete-input" id="txtMaisuSenseisho_core" style="width: 17px;" type="text" placeholder="" autocomplete="off"><span class="word-wrap-break-word Label-R Width- text-align-left" id="txtMaisuSenseisho_labelR"><span>枚</span></span><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="chkLabelFuto" style="width: 207px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkLabelFuto&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;200px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;chkLabelFuto_core&quot;,&quot;onChange&quot;:&quot;onChange_chkLabelFuto&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;封筒貼付用を印刷する&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft" id="chkLabelFuto_core" style="width: 200px;"><input class="verticalSpace-M" id="chkLabelFuto_1" type="checkbox" value="封筒貼付用を印刷する" data-key="1"><label for="chkLabelFuto_1" data-key="1">封筒貼付用を印刷する</label></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtMaisuFuto" style="width: 40px; height: 20px;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtMaisuFuto&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;width&quot;:&quot;17px&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;txtMaisuFuto_core&quot;,&quot;maxLength&quot;:&quot;2&quot;,&quot;minLength&quot;:&quot;1&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;labelRText&quot;:&quot;枚&quot;,&quot;labelRWidth&quot;:&quot;&quot;,&quot;permitCharactor&quot;:&quot;+-,.\\&quot;}"><input class="UzTextBox CoreElement text-align-right ime-mode-Off ui-autocomplete-input" id="txtMaisuFuto_core" style="width: 17px;" type="text" placeholder="" autocomplete="off"><span class="word-wrap-break-word Label-R Width- text-align-left" id="txtMaisuFuto_labelR"><span>枚</span></span><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginRight-XS UzCompositeChild" id="chkSenkyo" style="width: 475px; height: 42px; margin-left: 50px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkSenkyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;50px&quot;,&quot;selectControlID&quot;:&quot;chkSenkyo_core&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;選挙略１&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;選挙略２&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;選挙略３&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;選挙略４&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;選挙略５&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;選挙略６&quot;},{&quot;key&quot;:&quot;7&quot;,&quot;value&quot;:&quot;選挙略７&quot;},{&quot;key&quot;:&quot;8&quot;,&quot;value&quot;:&quot;選挙略８&quot;},{&quot;key&quot;:&quot;9&quot;,&quot;value&quot;:&quot;選挙略９&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:5,&quot;maxCheckedItem&quot;:&quot;9&quot;,&quot;verticalSpace&quot;:&quot;S&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkSenkyo_core"><input class="verticalSpace-S" id="chkSenkyo_1" type="checkbox" value="選挙略１" data-key="1"><label for="chkSenkyo_1" data-key="1">選挙略１</label><input class="spaceSize-M verticalSpace-S" id="chkSenkyo_2" type="checkbox" value="選挙略２" data-key="2"><label for="chkSenkyo_2" data-key="2">選挙略２</label><input class="spaceSize-M verticalSpace-S" id="chkSenkyo_3" type="checkbox" value="選挙略３" data-key="3"><label for="chkSenkyo_3" data-key="3">選挙略３</label><input class="spaceSize-M verticalSpace-S" id="chkSenkyo_4" type="checkbox" value="選挙略４" data-key="4"><label for="chkSenkyo_4" data-key="4">選挙略４</label><input class="spaceSize-M verticalSpace-S" id="chkSenkyo_5" type="checkbox" value="選挙略５" data-key="5"><label for="chkSenkyo_5" data-key="5">選挙略５</label><br><input class="verticalSpace-S" id="chkSenkyo_6" type="checkbox" value="選挙略６" data-key="6"><label for="chkSenkyo_6" data-key="6">選挙略６</label><input class="spaceSize-M verticalSpace-S" id="chkSenkyo_7" type="checkbox" value="選挙略７" data-key="7"><label for="chkSenkyo_7" data-key="7">選挙略７</label><input class="spaceSize-M verticalSpace-S" id="chkSenkyo_8" type="checkbox" value="選挙略８" data-key="8"><label for="chkSenkyo_8" data-key="8">選挙略８</label><input class="spaceSize-M verticalSpace-S" id="chkSenkyo_9" type="checkbox" value="選挙略９" data-key="9"><label for="chkSenkyo_9" data-key="9">選挙略９</label></span></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="chkLabelShohon" style="width: 207px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkLabelShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;200px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;chkLabelShohon_core&quot;,&quot;onChange&quot;:&quot;onChange_chkLabelShohon&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;抄本貼付用を印刷する&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft" id="chkLabelShohon_core" style="width: 200px;"><input class="verticalSpace-M" id="chkLabelShohon_1" type="checkbox" value="抄本貼付用を印刷する" data-key="1"><label for="chkLabelShohon_1" data-key="1">抄本貼付用を印刷する</label></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtMaisuShohon" style="width: 40px; height: 20px;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtMaisuShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;width&quot;:&quot;17px&quot;,&quot;selectControlID&quot;:&quot;txtMaisuShohon_core&quot;,&quot;maxLength&quot;:&quot;2&quot;,&quot;minLength&quot;:&quot;1&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;labelRText&quot;:&quot;枚&quot;,&quot;labelRWidth&quot;:&quot;&quot;,&quot;permitCharactor&quot;:&quot;+-,.\\&quot;}"><input class="UzTextBox CoreElement text-align-right ime-mode-Off ui-autocomplete-input" id="txtMaisuShohon_core" style="width: 17px;" type="text" placeholder="" autocomplete="off"><span class="word-wrap-break-word Label-R Width- text-align-left" id="txtMaisuShohon_labelR"><span>枚</span></span><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzCheckBoxList JSControl FloatLeft controlMargin-M ClearFloat marginLeft-XL marginRight-XS UzCompositeChild" id="chkLabelNyujoken" style="width: 207px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkLabelNyujoken&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;200px&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;chkLabelNyujoken_core&quot;,&quot;onChange&quot;:&quot;onChange_chkLabelNyujoken&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;入場券貼付用を印刷する&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[],&quot;icon&quot;:[]}"><span class="checkBoxSpan FloatLeft" id="chkLabelNyujoken_core" style="width: 200px;"><input class="verticalSpace-M" id="chkLabelNyujoken_1" type="checkbox" value="入場券貼付用を印刷する" data-key="1"><label for="chkLabelNyujoken_1" data-key="1">入場券貼付用を印刷する</label></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtMaisuNyujoken" style="width: 40px; height: 20px;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtMaisuNyujoken&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;width&quot;:&quot;17px&quot;,&quot;selectControlID&quot;:&quot;txtMaisuNyujoken_core&quot;,&quot;maxLength&quot;:&quot;2&quot;,&quot;minLength&quot;:&quot;1&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;labelRText&quot;:&quot;枚&quot;,&quot;labelRWidth&quot;:&quot;&quot;,&quot;permitCharactor&quot;:&quot;+-,.\\&quot;}"><input class="UzTextBox CoreElement text-align-right ime-mode-Off ui-autocomplete-input" id="txtMaisuNyujoken_core" style="width: 17px;" type="text" placeholder="" autocomplete="off"><span class="word-wrap-break-word Label-R Width- text-align-left" id="txtMaisuNyujoken_labelR"><span>枚</span></span><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div>    
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['LABELSEALPRINTTAISHO'] = {};
+AFA['LABELSEALPRINTTAISHO'].LabelSealPrintTaishoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_LabelSealPrintTaisho').getProperty();parameter0.chkFuzaishaTohyoShomeisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkFuzaishaTohyoShomeisho').getProperty();parameter0.chkSenseisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSenseisho').getProperty();parameter0.lblLabelSeal = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblLabelSeal').getProperty();parameter0.chkLabelSenseisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkLabelSenseisho').getProperty();parameter0.txtMaisuSenseisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMaisuSenseisho').getProperty();parameter0.chkLabelFuto = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkLabelFuto').getProperty();parameter0.txtMaisuFuto = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMaisuFuto').getProperty();parameter0.chkSenkyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkSenkyo').getProperty();parameter0.chkLabelShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkLabelShohon').getProperty();parameter0.txtMaisuShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMaisuShohon').getProperty();parameter0.chkLabelNyujoken = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkLabelNyujoken').getProperty();parameter0.txtMaisuNyujoken = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMaisuNyujoken').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (LabelSealPrintTaisho) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_chkLabelSenseisho = function () {
+                return "onChange_chkLabelSenseisho";
+            };
+
+            Events.onChange_chkLabelFuto = function () {
+                return "onChange_chkLabelFuto";
+            };
+
+            Events.onChange_chkLabelShohon = function () {
+                return "onChange_chkLabelShohon";
+            };
+
+            Events.onChange_chkLabelNyujoken = function () {
+                return "onChange_chkLabelNyujoken";
+            };
+            return Events;
+        })();
+        LabelSealPrintTaisho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "LabelSealPrintTaisho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.LabelSealPrintTaisho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.LabelSealPrintTaisho.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.LabelSealPrintTaisho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.chkFuzaishaTohyoShomeisho = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkFuzaishaTohyoShomeisho"));
+            };
+
+            Controls.prototype.chkSenseisho = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSenseisho"));
+            };
+
+            Controls.prototype.lblLabelSeal = function () {
+                return new UZA.Label(this.convFiledName("lblLabelSeal"));
+            };
+
+            Controls.prototype.chkLabelSenseisho = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkLabelSenseisho"));
+            };
+
+            Controls.prototype.txtMaisuSenseisho = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtMaisuSenseisho"));
+            };
+
+            Controls.prototype.chkLabelFuto = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkLabelFuto"));
+            };
+
+            Controls.prototype.txtMaisuFuto = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtMaisuFuto"));
+            };
+
+            Controls.prototype.chkSenkyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSenkyo"));
+            };
+
+            Controls.prototype.chkLabelShohon = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkLabelShohon"));
+            };
+
+            Controls.prototype.txtMaisuShohon = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtMaisuShohon"));
+            };
+
+            Controls.prototype.chkLabelNyujoken = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkLabelNyujoken"));
+            };
+
+            Controls.prototype.txtMaisuNyujoken = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtMaisuNyujoken"));
+            };
+            return Controls;
+        })();
+        LabelSealPrintTaisho.Controls = Controls;
+    })(AFA.LabelSealPrintTaisho || (AFA.LabelSealPrintTaisho = {}));
+    var LabelSealPrintTaisho = AFA.LabelSealPrintTaisho;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (LabelSealPrintTaisho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new LabelSealPrintTaisho.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new LabelSealPrintTaisho.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        LabelSealPrintTaisho.ModeController = ModeController;
+    })(AFA.LabelSealPrintTaisho || (AFA.LabelSealPrintTaisho = {}));
+    var LabelSealPrintTaisho = AFA.LabelSealPrintTaisho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (LabelSealPrintTaisho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new LabelSealPrintTaisho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        LabelSealPrintTaisho.PublicProperties = PublicProperties;
+    })(AFA.LabelSealPrintTaisho || (AFA.LabelSealPrintTaisho = {}));
+    var LabelSealPrintTaisho = AFA.LabelSealPrintTaisho;
+})(AFA || (AFA = {}));
+</script></div>

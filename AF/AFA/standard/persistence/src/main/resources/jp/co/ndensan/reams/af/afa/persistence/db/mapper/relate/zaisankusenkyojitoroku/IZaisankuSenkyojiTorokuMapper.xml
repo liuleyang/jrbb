@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0600-010 lis -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zaisankusenkyojitoroku.IZaisankuSenkyojiTorokuMapper">
+    <select resultOrdered="false" id="select選挙情報"  resultMap="resultMap_ZaisankuSenkyojiTorokuEntity"
+            parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.zaisankusenkyojitoroku.ZaisankuSenkyojiTorokuParameter">
+        SELECT
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />
+            ,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo"/>
+            ,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT141ZaisankuJuminTohyoConditionMapper.allColumns_AfT141ZaisankuJuminTohyoCondition" />
+            
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+            INNER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+            ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+            AND "AfT111Senkyo"."senkyoNo" = '1'
+            INNER JOIN rgaf."AfT141ZaisankuJuminTohyoCondition" AS "AfT141ZaisankuJuminTohyoCondition"
+            ON "AfT100Shohon"."shohonNo" = "AfT141ZaisankuJuminTohyoCondition"."shohonNo"
+        WHERE
+            "AfT100Shohon"."shohonNo" = #{抄本番号}
+    </select>
+    
+    <resultMap id="resultMap_ZaisankuSenkyojiTorokuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.ZaisankuSenkyojiTorokuEntity" autoMapping="true">
+        <id property="aft100Entity.shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="aft111Entity.shohonNo" column="afT111Senkyo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="aft111Entity.senkyoNo" column="afT111Senkyo_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id property="aft141Entity.shohonNo" column="afT141ZaisankuJuminTohyoCondition_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <association property="aft100Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <association property="aft111Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property="aft141Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT141ZaisankuJuminTohyoConditionMapper.ResultMap_AfT141ZaisankuJuminTohyoConditionEntity"/>
+    </resultMap>
+</mapper>

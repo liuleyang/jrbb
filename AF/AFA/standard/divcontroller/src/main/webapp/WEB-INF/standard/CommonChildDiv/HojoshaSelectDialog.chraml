@@ -1,0 +1,582 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;HojoshaSelectDialog&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;hojoshaSelectDialogModel&quot;,&quot;controlName&quot;:&quot;HojoshaSelectDialog.HojoshaSelectDialogModel&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;onSelectBySelectButton_closeOK&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;CloseCancel&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;XL&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.HojoshaSelectDialog"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginTop-M panelMarginBottom-M StateChangable marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G2 UzCompositeChild" id="HojoshaSelectDialog" style="width: auto; margin-top: 0px; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;HojoshaSelectDialog&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;HojoshaSelectDialog&quot;,&quot;title&quot;:&quot;補助者選択&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;HojoshaSelectDialog&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaSelectDialog/onLoad&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;cancel&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaSelectDialog/cancel&quot;},{&quot;eventName&quot;:&quot;onSelectBySelectButton&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaSelectDialog/onSelectBySelectButton&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;HojoshaSelectDialogModel&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="HojoshaSelectDialog_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">補助者選択</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="HojoshaSelectDialog_panel_body_area"><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XS" id="ccdShohonName" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShohonName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShohonName&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlShohon_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;chkKakoShohon_displayNone&quot;,&quot;editType&quot;:1}]},&quot;ddlShohon_disabled&quot;:true,&quot;ddlShohon_required&quot;:false,&quot;ddlShohon_labelText&quot;:&quot;抄本名&quot;,&quot;ddlShohon_labelWidth&quot;:&quot;&quot;,&quot;ddlShohon_width&quot;:&quot;L&quot;,&quot;chkKakoShohon_displayNone&quot;:true}" data-is-composite-control="true" data-control-name="AFA.ShohonNameList"></div><div title="" class="UzDataGrid FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS Height-M UzCompositeChild" id="dgHojoshaSelect" style="width: 760px;" data-control-type="DataGrid" data-obj="{&quot;fieldName&quot;:&quot;dgHojoshaSelect&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DataGrid&quot;,&quot;width&quot;:&quot;760px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;dgHojoshaSelect&quot;,&quot;height&quot;:&quot;M&quot;,&quot;gridSetting&quot;:{&quot;rowHeight&quot;:25,&quot;isMultiSelectable&quot;:false,&quot;isShowHeader&quot;:true,&quot;isShowFilter&quot;:false,&quot;isShowFilterButton&quot;:true,&quot;isShowClearSortButton&quot;:false,&quot;isShowSelectedRowCount&quot;:false,&quot;isShowFooter&quot;:true,&quot;isShowRowState&quot;:false,&quot;columns&quot;:[{&quot;columnName&quot;:&quot;識別コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtShikibetsuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:130,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:true,&quot;authorityMode&quot;:0,&quot;dataName&quot;:&quot;txtShikibetsuCode&quot;},{&quot;columnName&quot;:&quot;補助者氏名&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtHojoshaName&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:320,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:true,&quot;authorityMode&quot;:0,&quot;dataName&quot;:&quot;txtHojoshaName&quot;},{&quot;columnName&quot;:&quot;投票所&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtTohyojoName&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:250,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;authorityMode&quot;:0,&quot;dataName&quot;:&quot;txtTohyojoName&quot;},{&quot;columnName&quot;:&quot;投票所コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:100,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;authorityMode&quot;:0,&quot;dataName&quot;:&quot;txtTohyojoCode&quot;},{&quot;columnName&quot;:&quot;抄本番号&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:100,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;authorityMode&quot;:0,&quot;dataName&quot;:&quot;txtShohonNo&quot;}],&quot;header&quot;:{&quot;combineColumns&quot;:[],&quot;frozenColumn&quot;:&quot;&quot;,&quot;headerHeight&quot;:0,&quot;groupHeaderHeight&quot;:0},&quot;isShowSelectButtonColumn&quot;:true,&quot;isShowModifyButtonColumn&quot;:false,&quot;isShowDeleteButtonColumn&quot;:false,&quot;isShowCancelButtonColumn&quot;:false,&quot;limitRowCount&quot;:0,&quot;selectedRowCount&quot;:0,&quot;selectLimitRowCount&quot;:0},&quot;confirmDialog&quot;:[{&quot;button&quot;:&quot;selectButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;modifyButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;deleteButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;cancelButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;}],&quot;onSelectByDblClick&quot;:&quot;onSelectBySelectButton&quot;,&quot;onSelectBySelectButton&quot;:&quot;onSelectBySelectButton&quot;,&quot;dataSource&quot;:[],&quot;filterList&quot;:[],&quot;gridAction&quot;:[]}"><div id="dgHojoshaSelect_grid_table" role="" style="width: 760px; height: 365px; position: relative;"></div><div id="dgHojoshaSelect_footer" style="width: 760px; height: 25px;"></div></div><button title="" class="UzButton JSControl controlMargin-M ClearFloat FloatRight marginLeft-XS marginRight-XS Width-XS UzCompositeChild" id="btnCancel" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnCancel&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;wrap&quot;:true,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;btnCancel&quot;,&quot;onClick&quot;:&quot;cancel&quot;,&quot;text&quot;:&quot;取消&quot;}"><span>取消</span></button></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFB;
+(function (AFB) {
+    var HojoshaSelectDialog_Design = (function (_super) {
+        __extends(HojoshaSelectDialog_Design, _super);
+        function HojoshaSelectDialog_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, HojoshaSelectDialog_Design.myLayout, fieldName);
+        }
+        HojoshaSelectDialog_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        HojoshaSelectDialog_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        HojoshaSelectDialog_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "HojoshaSelectDialog",
+                    "items": [
+                        {
+                            "fieldName": "ccdShohonName",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0px",
+                            "selectControlID": "ccdShohonName",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "ShohonNameList",
+                            "marginTop": "0px",
+                            "marginBottom": "0px",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [
+                                {
+                                    "eventName": "onChange_ddlShohon"
+                                }
+                            ],
+                            "publicEventsAlias": [
+                                {
+                                    "eventName": "onChange_ddlShohon",
+                                    "alias": "onChange_ccdShohonName"
+                                }
+                            ],
+                            "ddlShohon_disabled": false,
+                            "ddlShohon_labelText": "抄本名",
+                            "ddlShohon_labelWidth": "",
+                            "ddlShohon_width": "L",
+                            "chkKakoShohon_displayNone": true,
+                            "chkKakoShohon_selectedItems": []
+                        },
+                        {
+                            "fieldName": "dgHojoshaSelect",
+                            "items": [],
+                            "controlType": "DataGrid",
+                            "width": "760px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "dgHojoshaSelect",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "height": "M",
+                            "dataSource": [],
+                            "gridSetting": {
+                                "rowHeight": 25,
+                                "isMultiSelectable": false,
+                                "isShowHeader": true,
+                                "isShowFooter": true,
+                                "isShowFilter": false,
+                                "isShowFilterButton": true,
+                                "isShowRowState": false,
+                                "isShowSelectButtonColumn": true,
+                                "isShowModifyButtonColumn": false,
+                                "isShowDeleteButtonColumn": false,
+                                "limitRowCount": 0,
+                                "selectedRowCount": 0,
+                                "header": {
+                                    "combineColumns": [],
+                                    "frozenColumn": "",
+                                    "headerHeight": 0
+                                },
+                                "columns": [
+                                    {
+                                        "columnName": "識別コード",
+                                        "dataName": "txtShikibetsuCode",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 130,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": "txtShikibetsuCode"
+                                    },
+                                    {
+                                        "columnName": "補助者氏名",
+                                        "dataName": "txtHojoshaName",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 320,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": "txtHojoshaName"
+                                    },
+                                    {
+                                        "columnName": "投票所",
+                                        "dataName": "txtTohyojoName",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 250,
+                                        "visible": true,
+                                        "cellType": 0,
+                                        "cellDetails": {
+                                            "cellType": 0
+                                        },
+                                        "align": 0,
+                                        "resize": true,
+                                        "isPrivateInfo": false,
+                                        "sortKey": "txtTohyojoName"
+                                    },
+                                    {
+                                        "columnName": "投票所コード",
+                                        "dataName": "txtTohyojoCode",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 100,
+                                        "visible": false,
+                                        "cellType": 0,
+                                        "cellDetails": null,
+                                        "align": 0,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    },
+                                    {
+                                        "columnName": "抄本番号",
+                                        "dataName": "txtShohonNo",
+                                        "toolTip": "",
+                                        "bgColor": 0,
+                                        "width": 100,
+                                        "visible": false,
+                                        "cellType": 0,
+                                        "cellDetails": null,
+                                        "align": 0,
+                                        "resize": false,
+                                        "isPrivateInfo": false,
+                                        "sortKey": ""
+                                    }
+                                ]
+                            },
+                            "onSort": "",
+                            "onSelect": "",
+                            "onSelectByDblClick": "onSelectBySelectButton_closeOK",
+                            "onSelectBySelectButton": "onSelectBySelectButton_closeOK",
+                            "onSelectByModifyButton": "",
+                            "onSelectByDeleteButton": "",
+                            "onAfterRequest": "",
+                            "onAfterRequestByDblClick": "",
+                            "onAfterRequestBySelectButton": "",
+                            "onAfterRequestByModifyButton": "",
+                            "onAfterRequestByDeleteButton": "",
+                            "onOnlyRow": "",
+                            "onNoRow": "",
+                            "onMultiRows": "",
+                            "sortOrder": "",
+                            "isAscending": true,
+                            "filterList": [],
+                            "activeRowId": -1,
+                            "gridAction": []
+                        },
+                        {
+                            "fieldName": "btnCancel",
+                            "items": [],
+                            "controlType": "Button",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 2,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "btnCancel",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "取消",
+                            "onClick": "CloseCancel",
+                            "icon": 0,
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "appearance": 0,
+                            "imageFileUrl": "",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "heightTextBoxMatches": false
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "HojoshaSelectDialog",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "補助者選択",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "HojoshaSelectDialog"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": "afb/af/afb/HojoshaSelectDialog/onLoad"
+                        },
+                        {
+                            "eventName": "onChange_ccdShohonName",
+                            "requestUrl": "afb/af/afb/HojoshaSelectDialog/onChange_ccdShohonName"
+                        },
+                        {
+                            "eventName": "onSelectBySelectButton_closeOK",
+                            "requestUrl": "afb/af/afb/HojoshaSelectDialog/onSelectBySelectButton_closeOK"
+                        }
+                    ],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "txtHdnSelectedCode",
+                            "value": ""
+                        },
+                        {
+                            "propertyName": "txtHdnSelectedName",
+                            "value": ""
+                        },
+                        {
+                            "propertyName": "txtHdnSelectedShohonNo",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFB",
+            "controlName": "HojoshaSelectDialog",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [
+                {
+                    "key": "selectedCode",
+                    "controlName": "HojoshaSelectDialog.txtHdnSelectedCode"
+                },
+                {
+                    "key": "selectedName",
+                    "controlName": "HojoshaSelectDialog.txtHdnSelectedName"
+                },
+                {
+                    "key": "selectedShohonNo",
+                    "controlName": "HojoshaSelectDialog.txtHdnSelectedShohonNo"
+                }
+            ],
+            "dialogOkEventNameForDialog": "onSelectBySelectButton_closeOK",
+            "dialogCancelEventNameForDialog": "CloseCancel",
+            "canTransferEvent": true,
+            "heightForDialog": "XL",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return HojoshaSelectDialog_Design;
+    })(Uz.CommonChildDiv);
+    AFB.HojoshaSelectDialog_Design = HojoshaSelectDialog_Design;
+
+    (function (HojoshaSelectDialog) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onSelectBySelectButton_closeOK = function () {
+                return "onSelectBySelectButton_closeOK";
+            };
+
+            Events.CloseCancel = function () {
+                return "CloseCancel";
+            };
+            return Events;
+        })();
+        HojoshaSelectDialog.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "HojoshaSelectDialog";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFB.HojoshaSelectDialog.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.HojoshaSelectDialog = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdShohonName = function () {
+                return new AFA.ShohonNameList.ModeController("ccdShohonName");
+            };
+
+            Controls.prototype.dgHojoshaSelect = function () {
+                return new UZA.DataGrid(this.convFiledName("dgHojoshaSelect"));
+            };
+
+            Controls.prototype.btnCancel = function () {
+                return new UZA.Button(this.convFiledName("btnCancel"));
+            };
+            return Controls;
+        })();
+        HojoshaSelectDialog.Controls = Controls;
+    })(AFB.HojoshaSelectDialog || (AFB.HojoshaSelectDialog = {}));
+    var HojoshaSelectDialog = AFB.HojoshaSelectDialog;
+})(AFB || (AFB = {}));
+
+var AFB;
+(function (AFB) {
+    (function (HojoshaSelectDialog) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new HojoshaSelectDialog.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        HojoshaSelectDialog.ModeController = ModeController;
+    })(AFB.HojoshaSelectDialog || (AFB.HojoshaSelectDialog = {}));
+    var HojoshaSelectDialog = AFB.HojoshaSelectDialog;
+})(AFB || (AFB = {}));
+
+var AFB;
+(function (AFB) {
+    (function (HojoshaSelectDialog) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new HojoshaSelectDialog.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        HojoshaSelectDialog.PublicProperties = PublicProperties;
+    })(AFB.HojoshaSelectDialog || (AFB.HojoshaSelectDialog = {}));
+    var HojoshaSelectDialog = AFB.HojoshaSelectDialog;
+})(AFB || (AFB = {}));
+</script>
+  
+       
+   
+     
+       
+     
+   
+   
+   
+   
+       
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['HOJOSHASELECTDIALOG'] = {};
+AFA['HOJOSHASELECTDIALOG'].HojoshaSelectDialogRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_HojoshaSelectDialog').getProperty();parameter0.ccdShohonName = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShohonName').getPostParameter();parameter0.dgHojoshaSelect = Uz.JSControlUtil.getJSControl(parentFieldName + '_dgHojoshaSelect').getProperty();parameter0.btnCancel = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnCancel').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (HojoshaSelectDialog) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onSelectBySelectButton = function () {
+                return "onSelectBySelectButton";
+            };
+
+            Events.cancel = function () {
+                return "cancel";
+            };
+            return Events;
+        })();
+        HojoshaSelectDialog.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "HojoshaSelectDialog";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.HojoshaSelectDialog.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.HojoshaSelectDialog.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.HojoshaSelectDialog = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdShohonName = function () {
+                return new AFA.ShohonNameList.ModeController(this.convFiledName("ccdShohonName"));
+            };
+
+            Controls.prototype.dgHojoshaSelect = function () {
+                return new UZA.DataGrid(this.convFiledName("dgHojoshaSelect"));
+            };
+
+            Controls.prototype.btnCancel = function () {
+                return new UZA.Button(this.convFiledName("btnCancel"));
+            };
+            return Controls;
+        })();
+        HojoshaSelectDialog.Controls = Controls;
+    })(AFA.HojoshaSelectDialog || (AFA.HojoshaSelectDialog = {}));
+    var HojoshaSelectDialog = AFA.HojoshaSelectDialog;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (HojoshaSelectDialog) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new HojoshaSelectDialog.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        HojoshaSelectDialog.ModeController = ModeController;
+    })(AFA.HojoshaSelectDialog || (AFA.HojoshaSelectDialog = {}));
+    var HojoshaSelectDialog = AFA.HojoshaSelectDialog;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (HojoshaSelectDialog) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new HojoshaSelectDialog.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        HojoshaSelectDialog.PublicProperties = PublicProperties;
+    })(AFA.HojoshaSelectDialog || (AFA.HojoshaSelectDialog = {}));
+    var HojoshaSelectDialog = AFA.HojoshaSelectDialog;
+})(AFA || (AFA = {}));
+</script></div>

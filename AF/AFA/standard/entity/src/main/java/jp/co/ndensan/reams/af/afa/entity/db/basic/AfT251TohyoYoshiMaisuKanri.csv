@@ -1,0 +1,6 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+senkyoNo,AfUDD002SenkyoNo,SenkyoNo,,,,,選挙番号,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A
+tohyoYoshiMaisu,int4,int,,,,,投票用紙枚数,A
+tenjiYoshiMaisu,int4,int,,,,,点字投票用紙枚数,A
+kariFutoMaisu,int4,int,,,,,仮投票用封筒枚数,A

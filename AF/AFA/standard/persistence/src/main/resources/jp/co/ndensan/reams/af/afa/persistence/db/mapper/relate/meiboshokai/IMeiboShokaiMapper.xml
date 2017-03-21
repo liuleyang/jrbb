@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 名簿照会用のマッピング用XMLです。 -->
+<!-- @reamsid_L AF-0230-010 qiuxy -->
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.meiboshokai.IMeiboShokaiMapper">
+    <select resultOrdered="true" id="selectTohyoJokyoIchiran" resultMap="resultMap_MeiboShokaiEntity" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.meiboshokai.MeiboShokaiMapperParameter" fetchSize="500">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo" />
+        FROM
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        INNER JOIN
+        rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON
+        "AfT111Senkyo"."shohonNo" = "AfT201TohyoJokyo"."shohonNo" AND "AfT111Senkyo"."senkyoNo" = "AfT201TohyoJokyo"."senkyoNo"
+        WHERE
+        "AfT201TohyoJokyo"."shohonNo" = #{shohonNo} AND "AfT201TohyoJokyo"."shikibetsuCode" = #{shikibetsuCode} AND "AfT111Senkyo"."isDeleted" = FALSE AND "AfT201TohyoJokyo"."isDeleted" = FALSE
+        ORDER BY
+        "AfT201TohyoJokyo"."senkyoNo"
+    </select>
+
+    <resultMap id="resultMap_MeiboShokaiEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.meiboshokai.MeiboShokaiEntity" autoMapping="true">
+        <id column = "afT111Senkyo_shohonNo"/>
+        <id column = "afT111Senkyo_senkyoNo"/>
+        <association property = "senkyo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property = "tohyoJokyo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.ResultMap_AfT201TohyoJokyoEntity"/>
+    </resultMap>
+</mapper>

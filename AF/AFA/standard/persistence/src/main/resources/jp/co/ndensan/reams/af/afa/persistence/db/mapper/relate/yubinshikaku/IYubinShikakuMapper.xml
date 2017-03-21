@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0200-020 liuj2 -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.yubinshikaku.IYubinShikakuMapper">
+    <select resultOrdered="false" id="select郵便等投票資格情報" resultMap="resultMap_YubinShikakuEntity" fetchSize="500">
+        SELECT
+            AfT114."shikibetsuCode" AS shikibetsuCode1,
+            AfT114."tohyoShikakuShurui" AS tohyoShikakuShurui,
+            AfT114."seq" AS seq1,
+            AfT114."kofuYMD" AS kofuYMD,
+            AfT114."kofuNo" AS kofuNo,
+            AfT114."shikakuTorokuYMD" AS shikakuTorokuYMD,
+            AfT114."shikakuManryoYMD" AS shikakuManryoYMD,
+            AfT114."shikakuMasshoYMD" AS shikakuMasshoYMD,
+            AfT114."shikakuMasshoJiyuCode" AS shikakuMasshoJiyuCode,
+            AfT115."shikibetsuCode" AS shikibetsuCode2,
+            AfT115."seq" AS seq2,
+            AfT115."shogaiTechoAriFlag" AS shogaiTechoAriFlag,
+            AfT115."senshoTechoAriFlag" AS senshoTechoAriFlag,
+            AfT115."kaigoHokenshoAriFlag" AS kaigoHokenshoAriFlag,
+            AfT115."dairiInputKubun" AS dairiInputKubun,
+            AfT115."dairiShikibetsuCode" AS dairiShikibetsuCode,
+            AfT115."dairiKanjiShimei" AS dairiKanjiShimei,
+            AfT115."dairiKanaShimei" AS dairiKanaShimei,
+            AfT115."dairiSeinengappiYMD" AS dairiSeinengappiYMD,
+            AfT115."dairiSeibetsuCode" AS dairiSeibetsuCode,
+            AfT115."dairiYubinNo" AS dairiYubinNo,
+            AfT115."dairiJusho" AS dairiJusho
+        FROM
+            rgaf."AfV114FuzaishaTohyoShikaku" AfT114
+        INNER JOIN
+            rgaf."AfV115FuzaishaTohyoShikakuYubin" AfT115
+        ON  AfT115."shikibetsuCode" = AfT114."shikibetsuCode"
+        WHERE
+            AfT114."shikibetsuCode" = #{shikibetsuCode}
+        AND AfT114."tohyoShikakuShurui" = '1'
+    </select>
+    
+    <resultMap id="resultMap_YubinShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.yubinshikaku.YubinShikakuEntity" autoMapping="true">
+        <result property="不在者投票資格.shikibetsuCode" column="shikibetsuCode1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="不在者投票資格.tohyoShikakuShurui" column="tohyoShikakuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="不在者投票資格.seq" column="seq1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <result property="不在者投票資格.kofuYMD" column="kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="不在者投票資格.kofuNo" column="kofuNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="不在者投票資格.shikakuTorokuYMD" column="shikakuTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="不在者投票資格.shikakuManryoYMD" column="shikakuManryoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="不在者投票資格.shikakuMasshoYMD" column="shikakuMasshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="不在者投票資格.shikakuMasshoJiyuCode" column="shikakuMasshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="郵便投票資格付随情報.shikibetsuCode" column="shikibetsuCode2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="郵便投票資格付随情報.seq" column="seq2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <result property="郵便投票資格付随情報.shogaiTechoAriFlag" column="shogaiTechoAriFlag"/>
+        <result property="郵便投票資格付随情報.senshoTechoAriFlag" column="senshoTechoAriFlag"/>
+        <result property="郵便投票資格付随情報.kaigoHokenshoAriFlag" column="kaigoHokenshoAriFlag"/>
+        <result property="郵便投票資格付随情報.dairiInputKubun" column="dairiInputKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="郵便投票資格付随情報.dairiShikibetsuCode" column="dairiShikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="郵便投票資格付随情報.dairiKanjiShimei" column="dairiKanjiShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="郵便投票資格付随情報.dairiKanaShimei" column="dairiKanaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaKanaMeishoTypeHandler"/>
+        <result property="郵便投票資格付随情報.dairiSeinengappiYMD" column="dairiSeinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="郵便投票資格付随情報.dairiSeibetsuCode" column="dairiSeibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="郵便投票資格付随情報.dairiYubinNo" column="dairiYubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="郵便投票資格付随情報.dairiJusho" column="dairiJusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+    </resultMap>
+</mapper>

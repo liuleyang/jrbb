@@ -1,0 +1,887 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;KaikuFuzuiJoho&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.KaikuFuzuiJoho"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginTop-M panelMarginBottom-M StateChangable marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G11 UzCompositeChild" id="KaikuFuzuiJoho" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;KaikuFuzuiJoho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G11&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;KaikuFuzuiJoho&quot;,&quot;title&quot;:&quot;海区漁業調整委員会選挙資格情報&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KaikuFuzuiJoho&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onChange_ddlShohonData&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/KaikuFuzuiJoho/onChange_ddlShohonData&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHiddenShikibetsuCode&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHiddenShohon&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;hdnKaikuSenkyoFuzuiJoho&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KaikuFuzuiJoho_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">海区漁業調整委員会選挙資格情報</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KaikuFuzuiJoho_panel_body_area"><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XS" id="ccdShohonNameList" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShohonNameList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShohonNameList&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;,&quot;alias&quot;:&quot;onChange_ddlShohonData&quot;}],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlShohon_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;chkKakoShohon_displayNone&quot;,&quot;editType&quot;:1}]},&quot;ddlShohon_disabled&quot;:false,&quot;ddlShohon_required&quot;:false,&quot;ddlShohon_labelText&quot;:&quot;抄本&quot;,&quot;ddlShohon_labelWidth&quot;:&quot;S&quot;,&quot;ddlShohon_width&quot;:&quot;L&quot;,&quot;chkKakoShohon_displayNone&quot;:true}" data-is-composite-control="true" data-control-name="AFA.ShohonNameList"></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="txtGyogyoshaBango" style="width: 204px; height: 21px;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtGyogyoshaBango&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;width&quot;:&quot;80px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtGyogyoshaBango_core&quot;,&quot;labelLText&quot;:&quot;漁業者番号&quot;,&quot;maxLength&quot;:&quot;10&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;permitCharactor&quot;:&quot;+-,.&quot;}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtGyogyoshaBango_labelL"><span>漁業者番号</span></span><input class="UzTextBox CoreElement text-align-right ime-mode-Off ui-autocomplete-input" id="txtGyogyoshaBango_core" style="width: 80px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XS" id="ccdGyogyoKumiaiCode" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdGyogyoKumiaiCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdGyogyoKumiaiCode&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;KumiaiCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtKumiaiCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtKumiaiCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtKumiaiCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnKumiaiCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKumiaiName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKumiaiName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtKumiaiCode_readOnly&quot;,&quot;editType&quot;:1}]},&quot;txtKumiaiCode_labelLText&quot;:&quot;漁業組合&quot;,&quot;txtKumiaiCode_labelLWidth&quot;:&quot;S&quot;,&quot;txtKumiaiCode_required&quot;:false,&quot;btnKumiaiCode_displayNone&quot;:false,&quot;txtKumiaiName_displayNone&quot;:false,&quot;txtKumiaiName_width&quot;:&quot;L&quot;,&quot;txtKumiaiCode_readOnly&quot;:false}" data-is-composite-control="true" data-control-name="AFA.KumiaiCodeSelect"></div><span title="" class="UzLabel word-wrap-break-word FloatLeft JSControl controlMargin-M Width-S ClearFloat marginLeft-XS text-align-right UzCompositeChild" id="lblGyogyoNissu" style="margin-right: 0em;" data-control-type="Label" data-obj="{&quot;fieldName&quot;:&quot;lblGyogyoNissu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Label&quot;,&quot;width&quot;:&quot;S&quot;,&quot;wrap&quot;:true,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;lblGyogyoNissu&quot;,&quot;text&quot;:&quot;漁業日数&quot;}"><span>漁業日数</span></span><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum FloatLeft JSControl controlMargin-M marginRight-XS UzCompositeChild" id="txtGyogyoshaNissu" style="width: 135px; height: 21px; margin-left: 0em;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtGyogyoshaNissu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtGyogyoshaNissu_core&quot;,&quot;labelLText&quot;:&quot;（漁業者&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;labelRText&quot;:&quot;日&quot;,&quot;labelRWidth&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;5&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;permitCharactor&quot;:&quot;+-,.&quot;,&quot;maxValue&quot;:&quot;32767&quot;}"><span class="word-wrap-break-word Label-L Width- text-align-right" id="txtGyogyoshaNissu_labelL"><span>（漁業者</span></span><input class="UzTextBox CoreElement Width-XS text-align-right ime-mode-Off ui-autocomplete-input" id="txtGyogyoshaNissu_core" type="text" placeholder="" autocomplete="off"><span class="word-wrap-break-word Label-R Width- text-align-left" id="txtGyogyoshaNissu_labelR"><span>日</span></span><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxNum FloatLeft JSControl controlMargin-M marginLeft-M marginRight-XS UzCompositeChild" id="txtGyogyoJujishaNissu" style="width: 167px; height: 21px;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtGyogyoJujishaNissu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;marginLeft&quot;:&quot;M&quot;,&quot;selectControlID&quot;:&quot;txtGyogyoJujishaNissu_core&quot;,&quot;labelLText&quot;:&quot;漁業従事者&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;labelRText&quot;:&quot;日）&quot;,&quot;labelRWidth&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;5&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;permitCharactor&quot;:&quot;+-,.&quot;,&quot;maxValue&quot;:&quot;32767&quot;}"><span class="word-wrap-break-word Label-L Width- text-align-right" id="txtGyogyoJujishaNissu_labelL"><span>漁業従事者</span></span><input class="UzTextBox CoreElement Width-XS text-align-right ime-mode-Off ui-autocomplete-input" id="txtGyogyoJujishaNissu_core" type="text" placeholder="" autocomplete="off"><span class="word-wrap-break-word Label-R Width- text-align-left" id="txtGyogyoJujishaNissu_labelR"><span>日）</span></span><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft ClearFloat" id="ccdGyogyoShurui" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdGyogyoShurui&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:true,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdGyogyoShurui&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;URZ&quot;,&quot;controlName&quot;:&quot;CodeInput&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;key_SchemaName&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtSchemaName&quot;},{&quot;key&quot;:&quot;key_SubGyomuCode&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtSubGyomuCode&quot;},{&quot;key&quot;:&quot;key_CodeShubetsu&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCodeShubetsu&quot;},{&quot;key&quot;:&quot;key_Code&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCode&quot;},{&quot;key&quot;:&quot;key_CodeMeisho&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCodeMeisho&quot;},{&quot;key&quot;:&quot;key_CodeRyakusho&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCodeRyakusho&quot;},{&quot;key&quot;:&quot;key_Option1&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtOption1&quot;},{&quot;key&quot;:&quot;key_Option2&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtOption2&quot;},{&quot;key&quot;:&quot;key_Option3&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtOption3&quot;},{&quot;key&quot;:&quot;key_KijunYmd&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtKijunYmd&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCodeMeisho_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_displayChildDivName&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_jpControlName&quot;,&quot;editType&quot;:0}]},&quot;txtCode_required&quot;:false,&quot;txtCode_labelLWidth&quot;:&quot;S&quot;,&quot;txtCode_labelLText&quot;:&quot;漁業種類&quot;,&quot;txtCode_width&quot;:&quot;32px&quot;,&quot;txtCodeMeisho_width&quot;:&quot;150px&quot;,&quot;txtCode_displayChildDivName&quot;:&quot;URZ.CodeNyuryokuGuide&quot;,&quot;txtCode_jpControlName&quot;:&quot;&quot;}" data-is-composite-control="true" data-control-name="URZ.CodeInput"></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="ccdGyosenShubetsu" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdGyosenShubetsu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:true,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdGyosenShubetsu&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;URZ&quot;,&quot;controlName&quot;:&quot;CodeInput&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;key_SchemaName&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtSchemaName&quot;},{&quot;key&quot;:&quot;key_SubGyomuCode&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtSubGyomuCode&quot;},{&quot;key&quot;:&quot;key_CodeShubetsu&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCodeShubetsu&quot;},{&quot;key&quot;:&quot;key_Code&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCode&quot;},{&quot;key&quot;:&quot;key_CodeMeisho&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCodeMeisho&quot;},{&quot;key&quot;:&quot;key_CodeRyakusho&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtCodeRyakusho&quot;},{&quot;key&quot;:&quot;key_Option1&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtOption1&quot;},{&quot;key&quot;:&quot;key_Option2&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtOption2&quot;},{&quot;key&quot;:&quot;key_Option3&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtOption3&quot;},{&quot;key&quot;:&quot;key_KijunYmd&quot;,&quot;controlName&quot;:&quot;CodeInput.hdnTxtKijunYmd&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCodeMeisho_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_displayChildDivName&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtCode_jpControlName&quot;,&quot;editType&quot;:0}]},&quot;txtCode_required&quot;:false,&quot;txtCode_labelLWidth&quot;:&quot;S&quot;,&quot;txtCode_labelLText&quot;:&quot;使用漁船種別&quot;,&quot;txtCode_width&quot;:&quot;32px&quot;,&quot;txtCodeMeisho_width&quot;:&quot;150px&quot;,&quot;txtCode_displayChildDivName&quot;:&quot;URZ.CodeNyuryokuGuide&quot;,&quot;txtCode_jpControlName&quot;:&quot;&quot;}" data-is-composite-control="true" data-control-name="URZ.CodeInput"></div><div class="WithLabel TextBoxOuterDiv JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M ClearFloat UzCompositeChild" id="txtSenmei" style="width: 454px; height: 20px; display: block;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtSenmei&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;330px&quot;,&quot;displayNone&quot;:true,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtSenmei_core&quot;,&quot;labelLText&quot;:&quot;船名&quot;,&quot;maxLength&quot;:&quot;20&quot;,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtSenmei_labelL"><span>船名</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Hiragana" id="txtSenmei_core" style="width: 330px;" type="text" placeholder=""></div><div class="WithLabel TextBoxOuterDiv JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="txtTorokuBango" style="width: 367px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtTorokuBango&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;M&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;txtTorokuBango_core&quot;,&quot;labelLText&quot;:&quot;登録番号&quot;,&quot;maxLength&quot;:&quot;20&quot;,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtTorokuBango_labelL"><span>登録番号</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Hiragana Width-M" id="txtTorokuBango_core" type="text" placeholder=""></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var KaikuFuzuiJoho_Design = (function (_super) {
+        __extends(KaikuFuzuiJoho_Design, _super);
+        function KaikuFuzuiJoho_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, KaikuFuzuiJoho_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(KaikuFuzuiJoho_Design.prototype, "txtHojinJusho_marginLeft", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["marginLeft"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["marginLeft"] = value;
+                } else {
+                    this.layout.items[0].items[7]["marginLeft"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        KaikuFuzuiJoho_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtHojinJusho_marginLeft");
+        };
+
+        KaikuFuzuiJoho_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtHojinJusho_marginLeft"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).getEditablePropertyInfo()["marginLeft"];
+
+            return editablePropertyInfo;
+        };
+        KaikuFuzuiJoho_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "KaikuFuzuiJoho",
+                    "items": [
+                        {
+                            "fieldName": "ccdShohonNameList",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdShohonNameList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "ShohonNameList",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "ddlShohon_disabled": false,
+                            "ddlShohon_labelText": "抄本",
+                            "ddlShohon_labelWidth": "S",
+                            "ddlShohon_width": "L",
+                            "chkKakoShohon_displayNone": true,
+                            "chkKakoShohon_selectedItems": []
+                        },
+                        {
+                            "fieldName": "txtGyogyoshaBango",
+                            "items": [],
+                            "controlType": "TextBoxNum",
+                            "width": "80px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtGyogyoshaBango_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": "10",
+                            "minLength": 0,
+                            "textAlign": 2,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "漁業者番号",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "+-,.",
+                            "maxValue": 1.7976931348623157e+308,
+                            "minValue": 0,
+                            "isCurrency": false,
+                            "isComma": false,
+                            "decimalPointLength": 0
+                        },
+                        {
+                            "fieldName": "ccdGyogyoKumiaiCode",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0px",
+                            "selectControlID": "ccdGyogyoKumiaiCode",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "KumiaiCodeSelect",
+                            "marginTop": "0px",
+                            "marginBottom": "0px",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtKumiaiCode_labelLText": "漁業組合",
+                            "txtKumiaiCode_labelLWidth": "S",
+                            "txtKumiaiCode_required": false,
+                            "btnKumiaiCode_displayNone": false,
+                            "txtKumiaiName_displayNone": false,
+                            "txtKumiaiName_width": "L",
+                            "txtKumiaiCode_readOnly": false
+                        },
+                        {
+                            "fieldName": "ddlKaikuDaihyoshaKubun",
+                            "items": [],
+                            "controlType": "DropDownList",
+                            "width": "M",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ddlKaikuDaihyoshaKubun_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "labelLText": "代表者区分",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "selectedItem": "1",
+                            "dataSource": [
+                                {
+                                    "key": "1",
+                                    "value": "代表者"
+                                },
+                                {
+                                    "key": "2",
+                                    "value": "配偶者・親族"
+                                },
+                                {
+                                    "key": "3",
+                                    "value": "生産法人社員"
+                                }
+                            ],
+                            "isBlankLine": false,
+                            "disabledItem": []
+                        },
+                        {
+                            "fieldName": "txtKaikuHojinShikibetsuCode",
+                            "items": [],
+                            "controlType": "TextBoxShikibetsuCode",
+                            "width": "120px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "txtKaikuHojinShikibetsuCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 15,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "法人",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": 15
+                        },
+                        {
+                            "fieldName": "btnKaikuHojin",
+                            "items": [],
+                            "controlType": "ButtonDialog",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "btnKaikuHojin",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "onClick": "",
+                            "appearance": 2,
+                            "imageFileUrl": "/ur/urz/image/UR_InputGuide.png",
+                            "icon": 0,
+                            "heightTextBoxMatches": true,
+                            "displayChildDivName": "",
+                            "dataPassing": [],
+                            "visibleCloseButton": true,
+                            "onOkClose": "",
+                            "onBeforeOpenDialog": ""
+                        },
+                        {
+                            "fieldName": "txtKaikuHojinName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtKaikuHojinName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "txtHojinJusho",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "15.7em",
+                            "marginRight": "XS",
+                            "selectControlID": "txtHojinJusho_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "住所",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "lblGyogyoNissu",
+                            "items": [],
+                            "controlType": "Label",
+                            "width": "S",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "lblGyogyoNissu",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "required": false,
+                            "isPrivateInfo": false,
+                            "text": "漁業日数",
+                            "decorationClass": "",
+                            "align": 2
+                        },
+                        {
+                            "fieldName": "txtGyogyoshaNissu",
+                            "items": [],
+                            "controlType": "TextBoxNum",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "XS",
+                            "selectControlID": "txtGyogyoshaNissu_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 2,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "（漁業者",
+                            "labelRText": "日",
+                            "labelLWidth": "",
+                            "labelRWidth": "",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "+-,.",
+                            "maxValue": 1.7976931348623157e+308,
+                            "minValue": 0,
+                            "isCurrency": false,
+                            "isComma": false,
+                            "decimalPointLength": 0
+                        },
+                        {
+                            "fieldName": "txtGyogyoJujishaNissu",
+                            "items": [],
+                            "controlType": "TextBoxNum",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "M",
+                            "marginRight": "XS",
+                            "selectControlID": "txtGyogyoJujishaNissu_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 2,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "漁業従事者",
+                            "labelRText": "日）",
+                            "labelLWidth": "",
+                            "labelRWidth": "",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "+-,.",
+                            "maxValue": 1.7976931348623157e+308,
+                            "minValue": 0,
+                            "isCurrency": false,
+                            "isComma": false,
+                            "decimalPointLength": 0
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G11",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "KaikuFuzuiJoho",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "海区漁業調整委員会選挙資格付随情報",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "KaikuFuzuiJoho"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "focusPositionID": "restoreLayoutButton",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "KaikuFuzuiJoho",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtHojinJusho",
+                    "publicChildProperty": "marginLeft",
+                    "newPropertyName": "txtHojinJusho_marginLeft"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return KaikuFuzuiJoho_Design;
+    })(Uz.CommonChildDiv);
+    AFA.KaikuFuzuiJoho_Design = KaikuFuzuiJoho_Design;
+
+    (function (KaikuFuzuiJoho) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        KaikuFuzuiJoho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KaikuFuzuiJoho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KaikuFuzuiJoho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.KaikuFuzuiJoho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdShohonNameList = function () {
+                return new AFA.ShohonNameList.ModeController("ccdShohonNameList");
+            };
+
+            Controls.prototype.txtGyogyoshaBango = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyogyoshaBango"));
+            };
+
+            Controls.prototype.ccdGyogyoKumiaiCode = function () {
+                return new AFA.KumiaiCodeSelect.ModeController("ccdGyogyoKumiaiCode");
+            };
+
+            Controls.prototype.ddlKaikuDaihyoshaKubun = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlKaikuDaihyoshaKubun"));
+            };
+
+            Controls.prototype.txtKaikuHojinShikibetsuCode = function () {
+                return new UZA.TextBoxShikibetsuCode(this.convFiledName("txtKaikuHojinShikibetsuCode"));
+            };
+
+            Controls.prototype.btnKaikuHojin = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnKaikuHojin"));
+            };
+
+            Controls.prototype.txtKaikuHojinName = function () {
+                return new UZA.TextBox(this.convFiledName("txtKaikuHojinName"));
+            };
+
+            Controls.prototype.txtHojinJusho = function () {
+                return new UZA.TextBox(this.convFiledName("txtHojinJusho"));
+            };
+
+            Controls.prototype.lblGyogyoNissu = function () {
+                return new UZA.Label(this.convFiledName("lblGyogyoNissu"));
+            };
+
+            Controls.prototype.txtGyogyoshaNissu = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyogyoshaNissu"));
+            };
+
+            Controls.prototype.txtGyogyoJujishaNissu = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyogyoJujishaNissu"));
+            };
+            return Controls;
+        })();
+        KaikuFuzuiJoho.Controls = Controls;
+    })(AFA.KaikuFuzuiJoho || (AFA.KaikuFuzuiJoho = {}));
+    var KaikuFuzuiJoho = AFA.KaikuFuzuiJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KaikuFuzuiJoho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KaikuFuzuiJoho.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KaikuFuzuiJoho.ModeController = ModeController;
+    })(AFA.KaikuFuzuiJoho || (AFA.KaikuFuzuiJoho = {}));
+    var KaikuFuzuiJoho = AFA.KaikuFuzuiJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KaikuFuzuiJoho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new KaikuFuzuiJoho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        KaikuFuzuiJoho.PublicProperties = PublicProperties;
+    })(AFA.KaikuFuzuiJoho || (AFA.KaikuFuzuiJoho = {}));
+    var KaikuFuzuiJoho = AFA.KaikuFuzuiJoho;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+     
+   
+   
+     
+           
+         
+       
+   
+   
+   
+         
+     
+   
+       <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['KAIKUFUZUIJOHO'] = {};
+AFA['KAIKUFUZUIJOHO'].KaikuFuzuiJohoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KaikuFuzuiJoho').getProperty();parameter0.ccdShohonNameList = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShohonNameList').getPostParameter();parameter0.txtGyogyoshaBango = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtGyogyoshaBango').getProperty();parameter0.ccdGyogyoKumiaiCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdGyogyoKumiaiCode').getPostParameter();parameter0.lblGyogyoNissu = Uz.JSControlUtil.getJSControl(parentFieldName + '_lblGyogyoNissu').getProperty();parameter0.txtGyogyoshaNissu = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtGyogyoshaNissu').getProperty();parameter0.txtGyogyoJujishaNissu = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtGyogyoJujishaNissu').getProperty();parameter0.ccdGyogyoShurui = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdGyogyoShurui').getPostParameter();parameter0.ccdGyosenShubetsu = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdGyosenShubetsu').getPostParameter();parameter0.txtSenmei = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSenmei').getProperty();parameter0.txtTorokuBango = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTorokuBango').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (KaikuFuzuiJoho) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        KaikuFuzuiJoho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KaikuFuzuiJoho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KaikuFuzuiJoho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.KaikuFuzuiJoho.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.KaikuFuzuiJoho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdShohonNameList = function () {
+                return new AFA.ShohonNameList.ModeController(this.convFiledName("ccdShohonNameList"));
+            };
+
+            Controls.prototype.txtGyogyoshaBango = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyogyoshaBango"));
+            };
+
+            Controls.prototype.ccdGyogyoKumiaiCode = function () {
+                return new AFA.KumiaiCodeSelect.ModeController(this.convFiledName("ccdGyogyoKumiaiCode"));
+            };
+
+            Controls.prototype.lblGyogyoNissu = function () {
+                return new UZA.Label(this.convFiledName("lblGyogyoNissu"));
+            };
+
+            Controls.prototype.txtGyogyoshaNissu = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyogyoshaNissu"));
+            };
+
+            Controls.prototype.txtGyogyoJujishaNissu = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtGyogyoJujishaNissu"));
+            };
+
+            Controls.prototype.ccdGyogyoShurui = function () {
+                return new URZ.CodeInput.ModeController(this.convFiledName("ccdGyogyoShurui"));
+            };
+
+            Controls.prototype.ccdGyosenShubetsu = function () {
+                return new URZ.CodeInput.ModeController(this.convFiledName("ccdGyosenShubetsu"));
+            };
+
+            Controls.prototype.txtSenmei = function () {
+                return new UZA.TextBox(this.convFiledName("txtSenmei"));
+            };
+
+            Controls.prototype.txtTorokuBango = function () {
+                return new UZA.TextBox(this.convFiledName("txtTorokuBango"));
+            };
+            return Controls;
+        })();
+        KaikuFuzuiJoho.Controls = Controls;
+    })(AFA.KaikuFuzuiJoho || (AFA.KaikuFuzuiJoho = {}));
+    var KaikuFuzuiJoho = AFA.KaikuFuzuiJoho;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (KaikuFuzuiJoho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KaikuFuzuiJoho.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new KaikuFuzuiJoho.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KaikuFuzuiJoho.ModeController = ModeController;
+    })(AFA.KaikuFuzuiJoho || (AFA.KaikuFuzuiJoho = {}));
+    var KaikuFuzuiJoho = AFA.KaikuFuzuiJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KaikuFuzuiJoho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KaikuFuzuiJoho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        KaikuFuzuiJoho.PublicProperties = PublicProperties;
+    })(AFA.KaikuFuzuiJoho || (AFA.KaikuFuzuiJoho = {}));
+    var KaikuFuzuiJoho = AFA.KaikuFuzuiJoho;
+})(AFA || (AFA = {}));
+</script></div>

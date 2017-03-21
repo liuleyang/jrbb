@@ -1,0 +1,462 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtIinchoName_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtIinchoName_displayNone&quot;:false}" data-is-composite-control="true" data-control-name="AFA.SakuseiChohyoPrintNaiyo"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel UzCompositeChild" id="SakuseiChohyoPrintNaiyo" style="margin: 0px; width: 454px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;454px&quot;,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;SakuseiChohyoPrintNaiyo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="SakuseiChohyoPrintNaiyo_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="SakuseiChohyoPrintNaiyo_panel_body_area"><div title="" class="UzTextBoxDate TextBoxOuterDiv WithLabel FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtHakkoYMD" style="width: 252px; height: 20px;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtHakkoYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;S&quot;,&quot;selectControlID&quot;:&quot;txtHakkoYMD_core&quot;,&quot;labelLText&quot;:&quot;発行日&quot;,&quot;isShowCalendarOpenerIcon&quot;:true}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtHakkoYMD_labelL"><span>発行日</span></span><input class="UzTextBox CoreElement Width-S" id="txtHakkoYMD_core" type="text" placeholder="" data-wareki="" data-setcount="0" data-seireki="" data-orgtext="" data-mindate="" data-maxdate=""><img class="UzCalendarOpenerIcon" src="/uz/uza/image/UzCalendar.png"></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft ClearFloat marginLeft-XS" id="ccdHakkoBango" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdHakkoBango&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdHakkoBango&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;HakkoBango&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtHakkoNoDai_labelLWidth&quot;,&quot;editType&quot;:0}]},&quot;txtHakkoNoDai_labelLWidth&quot;:&quot;S&quot;}" data-is-composite-control="true" data-control-name="AFA.HakkoBango"></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="txtIinchoName" style="width: 444px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtIinchoName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;320px&quot;,&quot;disabled&quot;:true,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtIinchoName_core&quot;,&quot;labelLText&quot;:&quot;選管委員長名&quot;,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtIinchoName_labelL"><span>選管委員長名</span></span><input tabindex="-1" class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input disabledColor" id="txtIinchoName_core" style="width: 320px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var SakuseiChohyoPrintNaiyo_Design = (function (_super) {
+        __extends(SakuseiChohyoPrintNaiyo_Design, _super);
+        function SakuseiChohyoPrintNaiyo_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, SakuseiChohyoPrintNaiyo_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(SakuseiChohyoPrintNaiyo_Design.prototype, "txtIinchoName_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[2]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        SakuseiChohyoPrintNaiyo_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtIinchoName_displayNone");
+        };
+
+        SakuseiChohyoPrintNaiyo_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtIinchoName_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+
+            return editablePropertyInfo;
+        };
+        SakuseiChohyoPrintNaiyo_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "SakuseiChohyoPrintNaiyo",
+                    "items": [
+                        {
+                            "fieldName": "txtHakkoYMD",
+                            "items": [],
+                            "controlType": "TextBoxDate",
+                            "width": "S",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtHakkoYMD_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "placeHolder": "",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "発行日",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "ymdKubun": 2,
+                            "displayFormat": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "permitCharactor": "./_-"
+                        },
+                        {
+                            "fieldName": "ccdHakkoBango",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0px",
+                            "selectControlID": "ccdHakkoBango",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "HakkoBango",
+                            "marginTop": "0px",
+                            "marginBottom": "0px",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtHakkoNoDai_labelLWidth": "S"
+                        },
+                        {
+                            "fieldName": "txtIinchoName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "320px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtIinchoName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "placeHolder": "",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "選挙管理委員会<br>委員長名",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "textKind": 0,
+                            "isComboBox": false,
+                            "suggest": [],
+                            "permitCharactor": ""
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "454px",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0px",
+                    "marginRight": "0px",
+                    "selectControlID": "SakuseiChohyoPrintNaiyo",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0px",
+                    "marginBottom": "0px",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": false
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0px",
+            "marginRight": "0px",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "SakuseiChohyoPrintNaiyo",
+            "marginTop": "0px",
+            "marginBottom": "0px",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtIinchoName",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "txtIinchoName_displayNone"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return SakuseiChohyoPrintNaiyo_Design;
+    })(Uz.CommonChildDiv);
+    AFA.SakuseiChohyoPrintNaiyo_Design = SakuseiChohyoPrintNaiyo_Design;
+
+    (function (SakuseiChohyoPrintNaiyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        SakuseiChohyoPrintNaiyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SakuseiChohyoPrintNaiyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SakuseiChohyoPrintNaiyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.SakuseiChohyoPrintNaiyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtHakkoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtHakkoYMD"));
+            };
+
+            Controls.prototype.ccdHakkoBango = function () {
+                return new AFA.HakkoBango.ModeController("ccdHakkoBango");
+            };
+
+            Controls.prototype.txtIinchoName = function () {
+                return new UZA.TextBox(this.convFiledName("txtIinchoName"));
+            };
+            return Controls;
+        })();
+        SakuseiChohyoPrintNaiyo.Controls = Controls;
+    })(AFA.SakuseiChohyoPrintNaiyo || (AFA.SakuseiChohyoPrintNaiyo = {}));
+    var SakuseiChohyoPrintNaiyo = AFA.SakuseiChohyoPrintNaiyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SakuseiChohyoPrintNaiyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SakuseiChohyoPrintNaiyo.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SakuseiChohyoPrintNaiyo.ModeController = ModeController;
+    })(AFA.SakuseiChohyoPrintNaiyo || (AFA.SakuseiChohyoPrintNaiyo = {}));
+    var SakuseiChohyoPrintNaiyo = AFA.SakuseiChohyoPrintNaiyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SakuseiChohyoPrintNaiyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new SakuseiChohyoPrintNaiyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtIinchoName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtIinchoName_displayNone = function () {
+                return this.controls.txtIinchoName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtIinchoName_displayNone = function (value) {
+                this.controls.txtIinchoName().displayNone = value;
+            };
+            return PublicProperties;
+        })();
+        SakuseiChohyoPrintNaiyo.PublicProperties = PublicProperties;
+    })(AFA.SakuseiChohyoPrintNaiyo || (AFA.SakuseiChohyoPrintNaiyo = {}));
+    var SakuseiChohyoPrintNaiyo = AFA.SakuseiChohyoPrintNaiyo;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+  
+  
+  
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['SAKUSEICHOHYOPRINTNAIYO'] = {};
+AFA['SAKUSEICHOHYOPRINTNAIYO'].SakuseiChohyoPrintNaiyoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_SakuseiChohyoPrintNaiyo').getProperty();parameter0.txtHakkoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHakkoYMD').getProperty();parameter0.ccdHakkoBango = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdHakkoBango').getPostParameter();parameter0.txtIinchoName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtIinchoName').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (SakuseiChohyoPrintNaiyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        SakuseiChohyoPrintNaiyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SakuseiChohyoPrintNaiyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SakuseiChohyoPrintNaiyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.SakuseiChohyoPrintNaiyo.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.SakuseiChohyoPrintNaiyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtHakkoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtHakkoYMD"));
+            };
+
+            Controls.prototype.ccdHakkoBango = function () {
+                return new AFA.HakkoBango.ModeController(this.convFiledName("ccdHakkoBango"));
+            };
+
+            Controls.prototype.txtIinchoName = function () {
+                return new UZA.TextBox(this.convFiledName("txtIinchoName"));
+            };
+            return Controls;
+        })();
+        SakuseiChohyoPrintNaiyo.Controls = Controls;
+    })(AFA.SakuseiChohyoPrintNaiyo || (AFA.SakuseiChohyoPrintNaiyo = {}));
+    var SakuseiChohyoPrintNaiyo = AFA.SakuseiChohyoPrintNaiyo;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (SakuseiChohyoPrintNaiyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SakuseiChohyoPrintNaiyo.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SakuseiChohyoPrintNaiyo.ModeController = ModeController;
+    })(AFA.SakuseiChohyoPrintNaiyo || (AFA.SakuseiChohyoPrintNaiyo = {}));
+    var SakuseiChohyoPrintNaiyo = AFA.SakuseiChohyoPrintNaiyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SakuseiChohyoPrintNaiyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new SakuseiChohyoPrintNaiyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtIinchoName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtIinchoName_displayNone = function () {
+                return this.controls.txtIinchoName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtIinchoName_displayNone = function (value) {
+                this.controls.txtIinchoName().displayNone = value;
+            };
+            return PublicProperties;
+        })();
+        SakuseiChohyoPrintNaiyo.PublicProperties = PublicProperties;
+    })(AFA.SakuseiChohyoPrintNaiyo || (AFA.SakuseiChohyoPrintNaiyo = {}));
+    var SakuseiChohyoPrintNaiyo = AFA.SakuseiChohyoPrintNaiyo;
+})(AFA || (AFA = {}));
+</script></div>

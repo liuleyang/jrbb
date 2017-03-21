@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCJ1040",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "農業委員会委員選挙人名簿最新化",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFA1010030",
+     "toLayoutTitle": "選挙人名簿最新化",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFA1010030",
+     "layoutTitle": "選挙人名簿最新化",
+     "eventName": "バッチ起動",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

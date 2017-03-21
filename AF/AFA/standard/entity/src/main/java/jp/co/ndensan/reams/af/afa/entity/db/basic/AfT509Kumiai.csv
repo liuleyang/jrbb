@@ -1,0 +1,5 @@
+﻿kumiaiCode,varchar,RString,,,,,組合コード,A
+kumiaiName,varchar,RString,,,,,組合名称,A
+kanaKumiaiName,varchar,RString,,,,,カナ組合名称,A
+searchKumiaiName,varchar,RString,,,,,検索用カナ組合名称,A
+jusho,UDD046AtenaJusho,AtenaJusho,,,,,組合の住所等,A

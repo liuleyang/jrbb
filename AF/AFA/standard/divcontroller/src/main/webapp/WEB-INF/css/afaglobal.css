@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2014/06/10, 17:23:29
+    Author     : N1229 橋田 宏司
+*/
+
+.FontSizeS .UzTextBox {
+    font-size: x-small;
+    color: aqua;
+}
+
+.FontSizeL .UzTextBox {
+    font-size: x-large;
+    color: red;
+}
+    
+.ColorGrayTextBox .UzTextBox  {
+    background-color:blue !important;
+}
+.ColorYellowTextBox .UzTextBox {
+    background-color: yellow !important;
+}
+

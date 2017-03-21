@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @reamsid_L AF-0720-010 liuyj -->
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.tohyokutohyojo.ITohyokuTohyojoMapper">
+    <select resultOrdered="false" id="select投票区投票所対応情報" resultMap="resultMap_TohyokuTohyojo" fetchSize="500">
+        SELECT
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.allColumns_AfT501Tohyoku" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT504TohyokuRelationMapper.allColumns_AfT504TohyokuRelation" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper.allColumns_AfT503Senkyoku" />
+        FROM rgaf."AfT501Tohyoku" AS "AfT501Tohyoku"
+        LEFT JOIN rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation" 
+        ON "AfT504TohyokuRelation"."senkyoShurui"="AfT501Tohyoku"."senkyoShurui"
+        AND "AfT504TohyokuRelation"."tohyokuCode"="AfT501Tohyoku"."tohyokuCode"
+        LEFT JOIN rgaf."AfT502Tohyojo" AS "AfT502Tohyojo" ON
+            "AfT504TohyokuRelation"."tohyojoCode"="AfT502Tohyojo"."tohyojoCode"
+        LEFT JOIN rgaf."AfT503Senkyoku" AS "AfT503Senkyoku" ON
+            "AfT504TohyokuRelation"."senkyoShurui"="AfT503Senkyoku"."senkyoShurui"
+        AND "AfT504TohyokuRelation"."senkyokuCode"="AfT503Senkyoku"."senkyokuCode"
+        WHERE
+            "AfT501Tohyoku"."senkyoShurui"=#{選挙種類}
+        ORDER BY
+            "AfT501Tohyoku"."tohyokuCode"
+    </select>
+    <select resultOrdered="false" id="select投票区投票所対応情報By選挙種類がゼロ" resultMap="resultMap_TohyokuTohyojoZero" fetchSize="500">
+        SELECT
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT504TohyokuRelationMapper.allColumns_AfT504TohyokuRelation" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper.allColumns_AfT503Senkyoku" />, 
+            "UrT0159Tohyoku"."tohyokuCode" AS "tohyokuCode",
+            "UrT0159Tohyoku"."name" AS "name"
+        FROM  rgur."UrT0159Tohyoku" AS "UrT0159Tohyoku"
+        LEFT JOIN rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation" ON
+            "AfT504TohyokuRelation"."senkyoShurui"=#{選挙種類}
+        AND "AfT504TohyokuRelation"."tohyokuCode"="UrT0159Tohyoku"."tohyokuCode"
+        LEFT JOIN rgaf."AfT502Tohyojo" AS "AfT502Tohyojo" ON
+            "AfT504TohyokuRelation"."tohyojoCode" ="AfT502Tohyojo"."tohyojoCode"
+        LEFT JOIN rgaf."AfT503Senkyoku" AS "AfT503Senkyoku" ON
+            "AfT504TohyokuRelation"."senkyoShurui"="AfT503Senkyoku"."senkyoShurui"
+        AND "AfT504TohyokuRelation"."senkyokuCode"="AfT503Senkyoku"."senkyokuCode"
+        WHERE
+            "UrT0159Tohyoku"."lasdecCode"=#{導入団体コード}
+        AND  "UrT0159Tohyoku"."lasdecCodeRenban"=#{導入団体コード連番} 
+        AND  "UrT0159Tohyoku"."yukoKaishiYMD" <![CDATA[ <= ]]>#{システム日付}
+        AND  "UrT0159Tohyoku"."yukoShuryoYMD" <![CDATA[ >= ]]>#{システム日付}
+        ORDER BY
+            "UrT0159Tohyoku"."tohyokuCode"
+    </select>
+    <resultMap id="resultMap_TohyokuTohyojo" type="jp.co.ndensan.reams.af.afa.entity.db.relate.tohyokutohyojo.TohyokuTohyojoForMap" autoMapping="true">
+        <id property="tohyokuEntity.senkyoShurui" column="afT501Tohyoku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler" />
+        <id property="tohyokuEntity.tohyokuCode" column="afT501Tohyoku_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyojoEntity.tohyojoCode" column="afT502Tohyojo_tohyojoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="senkyokuEntity.senkyoShurui" column="afT503Senkyoku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="senkyokuEntity.senkyokuCode" column="afT503Senkyoku_senkyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyokuRelationEntity.senkyoShurui" column="afT504TohyokuRelation_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="tohyokuRelationEntity.tohyokuCode" column="afT504TohyokuRelation_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <association property="tohyokuEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.ResultMap_AfT501TohyokuEntity"/>
+        <association property="tohyojoEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"/>
+        <association property="senkyokuEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper.ResultMap_AfT503SenkyokuEntity"/>
+        <association property="tohyokuRelationEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT504TohyokuRelationMapper.ResultMap_AfT504TohyokuRelationEntity"/>
+    </resultMap>
+    
+    <resultMap id="resultMap_TohyokuTohyojoZero" type="jp.co.ndensan.reams.af.afa.entity.db.relate.tohyokutohyojo.TohyokuTohyojoZeroForMap" autoMapping="true">
+        <id property="tohyojoEntity.tohyojoCode" column="afT502Tohyojo_tohyojoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="senkyokuEntity.senkyoShurui" column="afT503Senkyoku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="senkyokuEntity.senkyokuCode" column="afT503Senkyoku_senkyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyokuRelationEntity.senkyoShurui" column="afT504TohyokuRelation_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="tohyokuRelationEntity.tohyokuCode" column="afT504TohyokuRelation_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="選挙種類" column="senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票区コード" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="漢字名称" column="name" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <association property="tohyokuEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.ResultMap_AfT501TohyokuEntity"/>
+        <association property="tohyojoEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"/>
+        <association property="senkyokuEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT503SenkyokuMapper.ResultMap_AfT503SenkyokuEntity"/>
+        <association property="tohyokuRelationEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT504TohyokuRelationMapper.ResultMap_AfT504TohyokuRelationEntity"/>
+    </resultMap>
+</mapper>

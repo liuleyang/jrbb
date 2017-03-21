@@ -1,0 +1,570 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyoJiyuCode&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtTohyoJiyuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoJiyuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlTohyoJiyu_required&quot;,&quot;editType&quot;:1}]},&quot;txtTohyoJiyuCode_required&quot;:false,&quot;txtTohyoJiyuCode_labelLWidth&quot;:&quot;&quot;,&quot;ddlTohyoJiyu_required&quot;:false}" data-is-composite-control="true" data-control-name="AFA.TohyoJiyuCode"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="TohyoJiyuCode" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;TohyoJiyuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;TohyoJiyuCode&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;TohyoJiyuCode&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onChange_ddlTohyoJiyu&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/TohyoJiyuCode/onChange_ddlTohyoJiyu&quot;},{&quot;eventName&quot;:&quot;onBlur_txtTohyoJiyuCode&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/TohyoJiyuCode/onBlur_txtTohyoJiyuCode&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;initialValue&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="TohyoJiyuCode_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="TohyoJiyuCode_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M UzCompositeChild" id="txtTohyoJiyuCode" style="width: 79px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBoxCode" data-obj="{&quot;fieldName&quot;:&quot;txtTohyoJiyuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxCode&quot;,&quot;width&quot;:&quot;8px&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtTohyoJiyuCode_core&quot;,&quot;onChange&quot;:&quot;onChange_txtTohyoJiyuCode&quot;,&quot;labelLText&quot;:&quot;投票事由&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;onBlur_txtTohyoJiyuCode&quot;,&quot;maxLength&quot;:&quot;1&quot;,&quot;textKind&quot;:2,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtTohyoJiyuCode_labelL"><span>投票事由</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Off ui-autocomplete-input" id="txtTohyoJiyuCode_core" style="width: 8px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzDropDownList WithLabel FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="ddlTohyoJiyu" style="width: 513px; height: 21px;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlTohyoJiyu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;ddlTohyoJiyu_core&quot;,&quot;onChange&quot;:&quot;onChange_ddlTohyoJiyu&quot;,&quot;selectedItem&quot;:&quot;1&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;仕事等による場合&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;旅行等による場合&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;病気、施設入所等による場合&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;交通至難等による場合&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;住所移転による場合&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;身体に重度の障害がある場合&quot;},{&quot;key&quot;:&quot;7&quot;,&quot;value&quot;:&quot;特定国外派遣組織に属する場合&quot;}]}"><select class="CoreElement Width-L" id="ddlTohyoJiyu_core"><option value="1">仕事等による場合</option><option value="2">旅行等による場合</option><option value="3">病気、施設入所等による場合</option><option value="4">交通至難等による場合</option><option value="5">住所移転による場合</option><option value="6">身体に重度の障害がある場合</option><option value="7">特定国外派遣組織に属する場合</option></select></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var TohyoJiyuCode_Design = (function (_super) {
+        __extends(TohyoJiyuCode_Design, _super);
+        function TohyoJiyuCode_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, TohyoJiyuCode_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(TohyoJiyuCode_Design.prototype, "txtTohyoJiyuCode_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[0]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyoJiyuCode_Design.prototype, "txtTohyoJiyuCode_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TohyoJiyuCode_Design.prototype, "ddlTohyoJiyu_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[1]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        TohyoJiyuCode_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtTohyoJiyuCode_required");
+            Uz.JSControlUtil.registProperty("txtTohyoJiyuCode_labelLWidth");
+            Uz.JSControlUtil.registProperty("ddlTohyoJiyu_required");
+        };
+
+        TohyoJiyuCode_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtTohyoJiyuCode_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["txtTohyoJiyuCode_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["ddlTohyoJiyu_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["required"];
+
+            return editablePropertyInfo;
+        };
+        TohyoJiyuCode_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "TohyoJiyuCode",
+                    "items": [
+                        {
+                            "fieldName": "txtTohyoJiyuCode",
+                            "items": [],
+                            "controlType": "TextBoxCode",
+                            "width": "8px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtTohyoJiyuCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": "1",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "onBlur_txtTohyoJiyuCode",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "投票事由",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": 1
+                        },
+                        {
+                            "fieldName": "ddlTohyoJiyu",
+                            "items": [],
+                            "controlType": "DropDownList",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "ddlTohyoJiyu_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "onChange_ddlTohyoJiyu",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "selectedItem": "1",
+                            "dataSource": [
+                                {
+                                    "key": "1",
+                                    "value": "仕事等による場合"
+                                },
+                                {
+                                    "key": "2",
+                                    "value": "旅行等による場合"
+                                },
+                                {
+                                    "key": "3",
+                                    "value": "病気、施設入所等による場合"
+                                },
+                                {
+                                    "key": "4",
+                                    "value": "交通至難等による場合"
+                                },
+                                {
+                                    "key": "5",
+                                    "value": "住所移転による場合"
+                                },
+                                {
+                                    "key": "6",
+                                    "value": "身体に重度の障害がある場合"
+                                },
+                                {
+                                    "key": "7",
+                                    "value": "特定国外派遣組織に属する場合"
+                                }
+                            ],
+                            "disabledItem": [],
+                            "isBlankLine": false
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "TohyoJiyuCode",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "TohyoJiyuCode"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        },
+                        {
+                            "eventName": "onChange_ddlTohyoJiyu",
+                            "requestUrl": "AFA/af/AFA/TohyoJiyuCode/onChange_ddlTohyoJiyu"
+                        },
+                        {
+                            "eventName": "onBlur_txtTohyoJiyuCode",
+                            "requestUrl": "AFA/af/AFA/TohyoJiyuCode/onBlur_txtTohyoJiyuCode"
+                        }
+                    ],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "initialValue",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "TohyoJiyuCode",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtTohyoJiyuCode",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtTohyoJiyuCode_required"
+                },
+                {
+                    "publicChildFieldName": "txtTohyoJiyuCode",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "txtTohyoJiyuCode_labelLWidth"
+                },
+                {
+                    "publicChildFieldName": "ddlTohyoJiyu",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "ddlTohyoJiyu_required"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return TohyoJiyuCode_Design;
+    })(Uz.CommonChildDiv);
+    AFA.TohyoJiyuCode_Design = TohyoJiyuCode_Design;
+
+    (function (TohyoJiyuCode) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtTohyoJiyuCode = function () {
+                return "onBlur_txtTohyoJiyuCode";
+            };
+
+            Events.onChange_ddlTohyoJiyu = function () {
+                return "onChange_ddlTohyoJiyu";
+            };
+            return Events;
+        })();
+        TohyoJiyuCode.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyoJiyuCode";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyoJiyuCode.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyoJiyuCode = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtTohyoJiyuCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtTohyoJiyuCode"));
+            };
+
+            Controls.prototype.ddlTohyoJiyu = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlTohyoJiyu"));
+            };
+            return Controls;
+        })();
+        TohyoJiyuCode.Controls = Controls;
+    })(AFA.TohyoJiyuCode || (AFA.TohyoJiyuCode = {}));
+    var TohyoJiyuCode = AFA.TohyoJiyuCode;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyoJiyuCode) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyoJiyuCode.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyoJiyuCode.ModeController = ModeController;
+    })(AFA.TohyoJiyuCode || (AFA.TohyoJiyuCode = {}));
+    var TohyoJiyuCode = AFA.TohyoJiyuCode;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyoJiyuCode) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TohyoJiyuCode.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtTohyoJiyuCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoJiyuCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlTohyoJiyu_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtTohyoJiyuCode_required = function () {
+                return this.controls.txtTohyoJiyuCode().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoJiyuCode_required = function (value) {
+                this.controls.txtTohyoJiyuCode().required = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoJiyuCode_labelLWidth = function () {
+                return this.controls.txtTohyoJiyuCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtTohyoJiyuCode_labelLWidth = function (value) {
+                this.controls.txtTohyoJiyuCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.getddlTohyoJiyu_required = function () {
+                return this.controls.ddlTohyoJiyu().required;
+            };
+
+            PublicProperties.prototype.setddlTohyoJiyu_required = function (value) {
+                this.controls.ddlTohyoJiyu().required = value;
+            };
+            return PublicProperties;
+        })();
+        TohyoJiyuCode.PublicProperties = PublicProperties;
+    })(AFA.TohyoJiyuCode || (AFA.TohyoJiyuCode = {}));
+    var TohyoJiyuCode = AFA.TohyoJiyuCode;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+    
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['TOHYOJIYUCODE'] = {};
+AFA['TOHYOJIYUCODE'].TohyoJiyuCodeRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_TohyoJiyuCode').getProperty();parameter0.txtTohyoJiyuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyoJiyuCode').getProperty();parameter0.ddlTohyoJiyu = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlTohyoJiyu').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (TohyoJiyuCode) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_txtTohyoJiyuCode = function () {
+                return "onChange_txtTohyoJiyuCode";
+            };
+
+            Events.onBlur_txtTohyoJiyuCode = function () {
+                return "onBlur_txtTohyoJiyuCode";
+            };
+
+            Events.onChange_ddlTohyoJiyu = function () {
+                return "onChange_ddlTohyoJiyu";
+            };
+            return Events;
+        })();
+        TohyoJiyuCode.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TohyoJiyuCode";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TohyoJiyuCode.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.TohyoJiyuCode.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.TohyoJiyuCode = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtTohyoJiyuCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtTohyoJiyuCode"));
+            };
+
+            Controls.prototype.ddlTohyoJiyu = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlTohyoJiyu"));
+            };
+            return Controls;
+        })();
+        TohyoJiyuCode.Controls = Controls;
+    })(AFA.TohyoJiyuCode || (AFA.TohyoJiyuCode = {}));
+    var TohyoJiyuCode = AFA.TohyoJiyuCode;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (TohyoJiyuCode) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TohyoJiyuCode.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TohyoJiyuCode.ModeController = ModeController;
+    })(AFA.TohyoJiyuCode || (AFA.TohyoJiyuCode = {}));
+    var TohyoJiyuCode = AFA.TohyoJiyuCode;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TohyoJiyuCode) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TohyoJiyuCode.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtTohyoJiyuCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoJiyuCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlTohyoJiyu_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtTohyoJiyuCode_required = function () {
+                return this.controls.txtTohyoJiyuCode().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoJiyuCode_required = function (value) {
+                this.controls.txtTohyoJiyuCode().required = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoJiyuCode_labelLWidth = function () {
+                return this.controls.txtTohyoJiyuCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtTohyoJiyuCode_labelLWidth = function (value) {
+                this.controls.txtTohyoJiyuCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.getddlTohyoJiyu_required = function () {
+                return this.controls.ddlTohyoJiyu().required;
+            };
+
+            PublicProperties.prototype.setddlTohyoJiyu_required = function (value) {
+                this.controls.ddlTohyoJiyu().required = value;
+            };
+            return PublicProperties;
+        })();
+        TohyoJiyuCode.PublicProperties = PublicProperties;
+    })(AFA.TohyoJiyuCode || (AFA.TohyoJiyuCode = {}));
+    var TohyoJiyuCode = AFA.TohyoJiyuCode;
+})(AFA || (AFA = {}));
+</script></div>

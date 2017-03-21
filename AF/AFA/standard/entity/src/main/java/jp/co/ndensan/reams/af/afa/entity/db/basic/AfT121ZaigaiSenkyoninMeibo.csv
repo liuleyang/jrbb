@@ -1,0 +1,8 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+groupCode,varchar,RString,,,,,グループコード,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A
+kokugaiBunruiCode,varchar,RString,,,,,国外分類コード,A
+satsu,varchar,RString,,,,,冊,A
+page,int4,int,,,,,頁,A
+gyo,int2,int,,,,,行,A
+shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A

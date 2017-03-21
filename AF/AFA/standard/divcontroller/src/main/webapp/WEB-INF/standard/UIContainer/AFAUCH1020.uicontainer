@@ -1,0 +1,56 @@
+﻿{
+ "uiContainerName": "AFAUCH1020",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "署名登録",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMH1020",
+     "toLayoutTitle": "請求代表者選択",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMH1020",
+     "layoutTitle": "請求代表者選択",
+     "eventName": "作成",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMH1030",
+     "toLayoutTitle": "署名登録",
+     "toState": "default"
+    },
+    {
+     "id": "3",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMH1030",
+     "layoutTitle": "署名登録",
+     "eventName": "更新",
+     "destroy": false,
+     "condition": ""
+    },
+    {
+     "id": "4",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMH1020",
+     "layoutTitle": "請求代表者選択",
+     "eventName": "メニューへ戻る",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

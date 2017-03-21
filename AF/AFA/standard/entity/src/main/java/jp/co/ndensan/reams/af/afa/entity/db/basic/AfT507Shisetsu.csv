@@ -1,0 +1,10 @@
+﻿shisetsuCode,varchar,RString,,,,,施設コード,A
+shisetsuShubetsu,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.施設種別.getCodeShubetsu(),Description,,施設種別,A
+shisetsuName,varchar,RString,,,,,施設名称,A
+kanaShisetsuName,varchar,RString,,,,,カナ施設名称,A
+searchKanaShisetsuName,varchar,RString,,,,,検索用カナ施設名称,A
+yubinNo,UDD003YubinNo,YubinNo,,,,,郵便番号,A
+jusho,UDD046AtenaJusho,AtenaJusho,,,,,住所,A
+shisetsuAtena,UDD042AtenaMeisho,AtenaMeisho,,,,,施設宛名,A
+telNo,UDD026TelNo,TelNo,,,,,電話番号,A
+faxNo,UDD026TelNo,TelNo,,,,,FAX番号,A

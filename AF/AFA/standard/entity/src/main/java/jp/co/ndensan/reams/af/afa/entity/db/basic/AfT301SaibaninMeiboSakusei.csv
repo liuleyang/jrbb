@@ -1,0 +1,5 @@
+﻿nendo,UDD053Year,RYear,,,,,年度,A
+shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+hozonSaki,varchar,RString,,,,,有権者情報保存先,A
+fileName,varchar,RString,,,,,有権者情報ファイル名,A
+meiboTorikomiZumiFlag,bool,boolean,,,,,予定者名簿取込済フラグ,A

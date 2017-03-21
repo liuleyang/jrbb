@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 抄本のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.tohyoroku.ITachiaininHikitsugiMapper">
+    <select resultOrdered="true" id="select立会人引継情報氏名" resultType="jp.co.ndensan.reams.uz.uza.lang.RString" fetchSize="500">
+        Select
+        "AfT206TachiaininHikitsugiJoho"."shimei"
+        From
+        rgaf."AfT206TachiaininHikitsugiJoho" AS "AfT206TachiaininHikitsugiJoho"
+        Where "AfT206TachiaininHikitsugiJoho"."shohonNo" = #{抄本番号}
+        AND "AfT206TachiaininHikitsugiJoho"."senkyoNo" = #{選挙番号}
+        AND "AfT206TachiaininHikitsugiJoho"."hokokuYMD" = #{報告年月日}
+        AND "AfT206TachiaininHikitsugiJoho"."shisetsuCode" = #{施設コード}
+        AND "AfT206TachiaininHikitsugiJoho"."tohyokuCode" = #{投票区コード}
+        AND "AfT206TachiaininHikitsugiJoho"."komokuShurui" = #{投票録項目種類}
+
+        GROUP BY "AfT206TachiaininHikitsugiJoho"."shimei"
+        ORDER BY "AfT206TachiaininHikitsugiJoho"."shimei"
+    </select>
+</mapper>

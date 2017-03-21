@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0320-011 lis -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zaigaisenkyoninjoho.IZaigaiSenkyoninJohoMapper">
+
+    <select resultOrdered="true" id="selectAfT122ZaigaiSenkyoShikakuCountByKofuNo"
+            resultType="java.lang.Integer"
+            parameterType="jp.co.ndensan.reams.uz.uza.lang.RString" fetchSize="500">
+        SELECT
+        COUNT(0)
+        FROM
+        rgaf."AfT122ZaigaiSenkyoShikaku" AfT122
+        WHERE
+        AfT122."kofuNo" = #{kofuNo}
+    </select>
+</mapper>

@@ -1,0 +1,9 @@
+﻿seikyuNo,int2,int,,,,,直接請求番号,A
+seikyuYMD,UDD015YMD,FlexibleDate,,,,,請求年月日,A
+seikyuMei,varchar,RString,,,,,請求名,A
+seikyuNaiyo,text,RString,,,,,請求内容,A
+kofuYMD,UDD015YMD,FlexibleDate,,,,,交付年月日,A
+teishutsuKigenYMD,UDD015YMD,FlexibleDate,,,,,提出期限年月日,A
+kofuSoshikiCode,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.交付組織コード.getCodeShubetsu(),Description,,交付組織コード,A
+torokuZumiFlag,bool,boolean,,,,,署名簿登録済フラグ,A
+shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A

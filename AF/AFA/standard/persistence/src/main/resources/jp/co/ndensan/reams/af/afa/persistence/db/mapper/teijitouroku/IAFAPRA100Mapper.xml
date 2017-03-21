@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0010-020 wangm -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFAPRA100Mapper">
+
+
+    <!--3.1　選挙人名簿抄本-->
+    <select resultOrdered="true" id="selectSenkyoninMeiboShohon" resultMap="resultMap_SenkyoninMeiboShohonEntity"
+            parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.teijitouroku.BatchMybatisParameter">
+
+        WITH masterCore as (
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon"/>
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.allColumns_AfT112SenkyoninMeibo"/>
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku"/>
+        FROM
+        rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        INNER JOIN rgaf."AfT100Shohon" AS "AfT100Shohon"
+        ON "AfT100Shohon"."shohonNo" = "AfT112SenkyoninMeibo"."shohonNo"
+        AND "AfT100Shohon"."shohonNo" = #{shohonNo}
+        INNER JOIN rgaf."AfV113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        ON "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT113SenkyoShikaku"."shikibetsuCode"
+        AND "AfT113SenkyoShikaku"."senkyoShurui" = (CASE WHEN "AfT100Shohon"."senkyoShurui" = '1' THEN '0' ELSE "AfT100Shohon"."senkyoShurui" END)
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101Mapper.whereSenkyoninMeiboSql" />
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101Mapper.andTohyokuSql" />
+        )
+        ,
+        masterPSM as (
+        SELECT * FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (
+        SELECT
+        ARRAY_AGG(CAST ("afT112SenkyoninMeibo_shikibetsuCode" AS TEXT))
+        FROM
+        masterCore
+        )
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        )
+        ,
+        master as (
+        (
+        SELECT
+        0 as "type"
+        ,
+        masterCore.*
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo"/>
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo" />
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.allColumns_AfT114FuzaishaTohyoShikaku" />
+        ,
+        <include refid="columns_ShikibetsuTaisho" />
+        FROM
+        masterCore
+        INNER JOIN masterPSM AS "ShikibetsuTaisho2"
+        ON "ShikibetsuTaisho2"."shikibetsuCode" = masterCore."afT112SenkyoninMeibo_shikibetsuCode"
+        LEFT OUTER JOIN rgaf."AfV114FuzaishaTohyoShikaku" AS "AfT114FuzaishaTohyoShikaku"
+        ON masterCore."afT112SenkyoninMeibo_shikibetsuCode" = "AfT114FuzaishaTohyoShikaku"."shikibetsuCode"
+        LEFT OUTER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON masterCore."afT100Shohon_shohonNo" = "AfT111Senkyo"."shohonNo"
+        LEFT OUTER JOIN rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON "AfT201TohyoJokyo"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        AND "AfT201TohyoJokyo"."senkyoNo" = "AfT111Senkyo"."senkyoNo"
+        AND "AfT201TohyoJokyo"."shikibetsuCode" = masterCore."afT112SenkyoninMeibo_shikibetsuCode"
+        LIMIT 1
+        )
+        UNION ALL
+        (
+        SELECT
+        1 as "type"
+        ,
+        masterCore.*
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo"/>
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo" />
+        ,
+        <include refid="allColumns_Empty_AfT114FuzaishaTohyoShikaku" />
+        ,
+        <include refid="columns_Empty_ShikibetsuTaisho" />
+        FROM
+        masterCore
+        INNER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON masterCore."afT100Shohon_shohonNo" = "AfT111Senkyo"."shohonNo"
+        LEFT OUTER JOIN rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON "AfT201TohyoJokyo"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        AND "AfT201TohyoJokyo"."senkyoNo" = "AfT111Senkyo"."senkyoNo"
+        AND "AfT201TohyoJokyo"."shikibetsuCode" = masterCore."afT112SenkyoninMeibo_shikibetsuCode"
+        )
+        UNION ALL
+        (
+        SELECT
+        2 as "type"
+        ,
+        masterCore.*
+        ,
+        <include refid="allColumns_Empty_AfT111Senkyo"/>
+        ,
+        <include refid="allColumns_Empty_AfT201TohyoJokyo" />
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.allColumns_AfT114FuzaishaTohyoShikaku" />
+        ,
+        <include refid="columns_Empty_ShikibetsuTaisho" />
+        FROM
+        masterCore
+        INNER JOIN rgaf."AfV114FuzaishaTohyoShikaku" AS "AfT114FuzaishaTohyoShikaku"
+        ON masterCore."afT112SenkyoninMeibo_shikibetsuCode" = "AfT114FuzaishaTohyoShikaku"."shikibetsuCode"
+        )
+        UNION ALL
+        (
+        SELECT
+        3 as "type"
+        ,
+        masterCore.*
+        ,
+        <include refid="allColumns_Empty_AfT111Senkyo"/>
+        ,
+        <include refid="allColumns_Empty_AfT201TohyoJokyo" />
+        ,
+        <include refid="allColumns_Empty_AfT114FuzaishaTohyoShikaku" />
+        ,
+        <include refid="columns_ShikibetsuTaisho" />
+        FROM
+        masterCore
+        INNER JOIN masterPSM AS "ShikibetsuTaisho2"
+        ON "ShikibetsuTaisho2"."shikibetsuCode" = masterCore."afT112SenkyoninMeibo_shikibetsuCode"
+        )
+        )
+
+
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.allColumns_AfT501Tohyoku"/>
+        ,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zenjitsuprint.IAFABTE504Mapper.allColumns_UrV0159Tohyoku"/>
+        ,
+        <include refid="allColumns_UrT0101ZenkokuJusho" />
+        ,
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.relate.cautionsha.IUaFt400FindeCautionShaMapper.columns"/>
+        ,
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+        ,
+        master.*
+        FROM
+        master
+        INNER JOIN <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (
+        SELECT
+        ARRAY_AGG(CAST ("afT112SenkyoninMeibo_shikibetsuCode" AS TEXT))
+        FROM
+        masterCore
+        )
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"
+        LEFT OUTER JOIN rgur."UrT0101ZenkokuJusho" AS "UrT0101ZenkokuJusho"
+        ON "UrT0101ZenkokuJusho"."todofukenJushoCode"
+        || "UrT0101ZenkokuJusho"."shichosonJushoCode"
+        || "UrT0101ZenkokuJusho"."ooazaJushoCode"
+        || "UrT0101ZenkokuJusho"."azaChoJushoCode" = <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."zenkokuJushoCode"
+        AND "UrT0101ZenkokuJusho"."isDeleted" = false
+
+        LEFT OUTER JOIN rgaf."AfT501Tohyoku" AS "AfT501Tohyoku"
+        ON master."afT100Shohon_senkyoShurui" = "AfT501Tohyoku"."senkyoShurui"
+        AND master."afT112SenkyoninMeibo_tohyokuCode" = "AfT501Tohyoku"."tohyokuCode"
+        LEFT OUTER JOIN rgur."UrV0159Tohyoku" AS "UrV0159Tohyoku"
+        ON master."afT112SenkyoninMeibo_tohyokuCode" = "UrV0159Tohyoku"."tohyokuCode"
+        AND "UrV0159Tohyoku"."yukoKaishiYMD" <![CDATA[ <= ]]> master."afT100Shohon_tohyoYMD"
+        AND master."afT100Shohon_tohyoYMD" <![CDATA[ <= ]]> "UrV0159Tohyoku"."yukoShuryoYMD"
+        LEFT JOIN
+        rgua."UaFt400FindCautionSha"(#{riyoKubun},#{chushutsuKubun},#{zenkaiChushutsu},#{konkaiChushutsu},#{chuiShuruiCode},#{yukoKigenKubun}) as "psm"
+        ON "psm"."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"
+        ${sort}
+
+    </select>
+
+    <resultMap id="resultMap_SenkyoninMeiboShohonEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.afabta101.SenkyoninMeiboShohonEntity" >
+        <id property="type" column="type"/>
+        <id column="ShikibetsuTaisho_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler" />
+        <id column="rirekiNo"/>
+        <id column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id column="afT111Senkyo_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id column="afT114FuzaishaTohyoShikaku_tohyoShikakuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <association property = "afT100Shohon" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <association property = "afT111Senkyo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property = "afT112SenkyoninMeibo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT112SenkyoninMeiboMapper.ResultMap_AfT112SenkyoninMeiboEntity"/>
+        <association property = "afT113SenkyoShikaku" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.ResultMap_AfT113SenkyoShikakuEntity"/>
+        <association property = "afT201TohyoJokyo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.ResultMap_AfT201TohyoJokyoEntity"/>
+        <association property = "uaft200" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+        <association property = "uaft200ForAll" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.UaFt200FindShikibetsuTaishoEntity_normal"/>
+        <association property="afT114" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.ResultMap_AfT114FuzaishaTohyoShikakuEntity"/>
+        <association property="afT501" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.ResultMap_AfT501TohyokuEntity"/>
+        <association property="urV0159" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zenjitsuprint.IAFABTE504Mapper.ResultMap_UrV0159TohyokuEntity"/>
+        <association property="urT0101" resultMap="resultMap_UrT0101ZenkokuJushoEntity"/>
+        <association property="uaft400" resultMap="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.relate.cautionsha.IUaFt400FindeCautionShaMapper.resultMap_UaFt400FindeCautionShaMapperEntity"/>
+    </resultMap>
+
+    <sql id="allColumns_UrT0101ZenkokuJusho">
+        "UrT0101ZenkokuJusho"."updateCount" AS "UrT0101ZenkokuJusho_updateCount"
+        ,"UrT0101ZenkokuJusho"."dataKubun" AS "UrT0101ZenkokuJusho_dataKubun"
+        ,"UrT0101ZenkokuJusho"."todofukenJushoCode" AS "UrT0101ZenkokuJusho_todofukenJushoCode"
+        ,"UrT0101ZenkokuJusho"."shichosonJushoCode" AS "UrT0101ZenkokuJusho_shichosonJushoCode"
+        ,"UrT0101ZenkokuJusho"."ooazaJushoCode" AS "UrT0101ZenkokuJusho_ooazaJushoCode"
+        ,"UrT0101ZenkokuJusho"."azaChoJushoCode" AS "UrT0101ZenkokuJusho_azaChoJushoCode"
+        ,"UrT0101ZenkokuJusho"."seireiShiteiToshiKubun" AS "UrT0101ZenkokuJusho_seireiShiteiToshiKubun"
+        ,"UrT0101ZenkokuJusho"."todofukenKanaKey" AS "UrT0101ZenkokuJusho_todofukenKanaKey"
+        ,"UrT0101ZenkokuJusho"."shichosonKanaKey" AS "UrT0101ZenkokuJusho_shichosonKanaKey"
+        ,"UrT0101ZenkokuJusho"."shiteiToshiKuKanaKey" AS "UrT0101ZenkokuJusho_shiteiToshiKuKanaKey"
+        ,"UrT0101ZenkokuJusho"."ooazaKanaKey" AS "UrT0101ZenkokuJusho_ooazaKanaKey"
+        ,"UrT0101ZenkokuJusho"."azaChoKanaKey" AS "UrT0101ZenkokuJusho_azaChoKanaKey"
+        ,"UrT0101ZenkokuJusho"."todofukenKanjiKey" AS "UrT0101ZenkokuJusho_todofukenKanjiKey"
+        ,"UrT0101ZenkokuJusho"."shichosonKanjiKey" AS "UrT0101ZenkokuJusho_shichosonKanjiKey"
+        ,"UrT0101ZenkokuJusho"."shiteiToshiKuKanjiKey" AS "UrT0101ZenkokuJusho_shiteiToshiKuKanjiKey"
+        ,"UrT0101ZenkokuJusho"."ooazaKanjiKey" AS "UrT0101ZenkokuJusho_ooazaKanjiKey"
+        ,"UrT0101ZenkokuJusho"."azaChoKanjiKey" AS "UrT0101ZenkokuJusho_azaChoKanjiKey"
+        ,"UrT0101ZenkokuJusho"."yubinNo" AS "UrT0101ZenkokuJusho_yubinNo"
+        ,"UrT0101ZenkokuJusho"."todofukenName" AS "UrT0101ZenkokuJusho_todofukenName"
+        ,"UrT0101ZenkokuJusho"."shichosonName" AS "UrT0101ZenkokuJusho_shichosonName"
+        ,"UrT0101ZenkokuJusho"."ooazaName" AS "UrT0101ZenkokuJusho_ooazaName"
+        ,"UrT0101ZenkokuJusho"."azaChoName" AS "UrT0101ZenkokuJusho_azaChoName"
+        ,"UrT0101ZenkokuJusho"."todofukenKanaName" AS "UrT0101ZenkokuJusho_todofukenKanaName"
+        ,"UrT0101ZenkokuJusho"."shichosonKanaName" AS "UrT0101ZenkokuJusho_shichosonKanaName"
+        ,"UrT0101ZenkokuJusho"."ooazaKanaName" AS "UrT0101ZenkokuJusho_ooazaKanaName"
+        ,"UrT0101ZenkokuJusho"."azaChoKanaName" AS "UrT0101ZenkokuJusho_azaChoKanaName"
+        ,"UrT0101ZenkokuJusho"."isKyotoTorimei" AS "UrT0101ZenkokuJusho_isKyotoTorimei"
+        ,"UrT0101ZenkokuJusho"."ooazaSento" AS "UrT0101ZenkokuJusho_ooazaSento"
+        ,"UrT0101ZenkokuJusho"."azaSentoKubun" AS "UrT0101ZenkokuJusho_azaSentoKubun"
+    </sql>
+
+    <resultMap id="resultMap_UrT0101ZenkokuJushoEntity" type="jp.co.ndensan.reams.ur.urz.entity.db.basic.zenkokujusho.UrT0101ZenkokuJushoEntity" autoMapping="true">
+        <result property="updateCount" column="UrT0101ZenkokuJusho_updateCount"/>
+        <result property="dataKubun" column="UrT0101ZenkokuJusho_dataKubun" typeHandler="jp.co.ndensan.reams.ur.urz.entity.typehandlers.ZenkokuJushoDataKubunTypeHandler"/>
+        <result property="todofukenJushoCode" column="UrT0101ZenkokuJusho_todofukenJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shichosonJushoCode" column="UrT0101ZenkokuJusho_shichosonJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="ooazaJushoCode" column="UrT0101ZenkokuJusho_ooazaJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="azaChoJushoCode" column="UrT0101ZenkokuJusho_azaChoJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="seireiShiteiToshiKubun" column="UrT0101ZenkokuJusho_seireiShiteiToshiKubun"/>
+        <result property="todofukenKanaKey" column="UrT0101ZenkokuJusho_todofukenKanaKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shichosonKanaKey" column="UrT0101ZenkokuJusho_shichosonKanaKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shiteiToshiKuKanaKey" column="UrT0101ZenkokuJusho_shiteiToshiKuKanaKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="ooazaKanaKey" column="UrT0101ZenkokuJusho_ooazaKanaKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="azaChoKanaKey" column="UrT0101ZenkokuJusho_azaChoKanaKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="todofukenKanjiKey" column="UrT0101ZenkokuJusho_todofukenKanjiKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shichosonKanjiKey" column="UrT0101ZenkokuJusho_shichosonKanjiKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shiteiToshiKuKanjiKey" column="UrT0101ZenkokuJusho_shiteiToshiKuKanjiKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="ooazaKanjiKey" column="UrT0101ZenkokuJusho_ooazaKanjiKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="azaChoKanjiKey" column="UrT0101ZenkokuJusho_azaChoKanjiKey" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="yubinNo" column="UrT0101ZenkokuJusho_yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="todofukenName" column="UrT0101ZenkokuJusho_todofukenName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shichosonName" column="UrT0101ZenkokuJusho_shichosonName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="ooazaName" column="UrT0101ZenkokuJusho_ooazaName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="azaChoName" column="UrT0101ZenkokuJusho_azaChoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="todofukenKanaName" column="UrT0101ZenkokuJusho_todofukenKanaName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shichosonKanaName" column="UrT0101ZenkokuJusho_shichosonKanaName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="ooazaKanaName" column="UrT0101ZenkokuJusho_ooazaKanaName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="azaChoKanaName" column="UrT0101ZenkokuJusho_azaChoKanaName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="isKyotoTorimei" column="UrT0101ZenkokuJusho_isKyotoTorimei"/>
+        <result property="ooazaSento" column="UrT0101ZenkokuJusho_ooazaSento" typeHandler="jp.co.ndensan.reams.ur.urz.entity.typehandlers.ZenkokuJushoOoazaSentoTypeHandler"/>
+        <result property="azaSentoKubun" column="UrT0101ZenkokuJusho_azaSentoKubun" typeHandler="jp.co.ndensan.reams.ur.urz.entity.typehandlers.ZenkokuJushoAzaSentoTypeHandler"/>
+    </resultMap>
+
+    <sql id="allColumns_Empty_AfT111Senkyo">
+        null as "afT111Senkyo_shohonNo",
+        null as "afT111Senkyo_senkyoNo",
+        null as "afT111Senkyo_insertDantaiCd",
+        null as "afT111Senkyo_insertTimestamp",
+        null as "afT111Senkyo_insertReamsLoginId",
+        null as "afT111Senkyo_insertContextId",
+        null as "afT111Senkyo_isDeleted",
+        null as "afT111Senkyo_updateCount",
+        null as "afT111Senkyo_lastUpdateTimestamp",
+        null as "afT111Senkyo_lastUpdateReamsLoginId",
+        null as "afT111Senkyo_senkyoLevel",
+        null as "afT111Senkyo_senkyoName",
+        null as "afT111Senkyo_senkyoRyakusho",
+        null as "afT111Senkyo_senkyoMark",
+        null as "afT111Senkyo_kijunYMD",
+        null as "afT111Senkyo_meiboTorokuYMD",
+        null as "afT111Senkyo_kokujiYMD",
+        null as "afT111Senkyo_tenshutsuKigenYMD",
+        null as "afT111Senkyo_tennyuKigenYMD",
+        null as "afT111Senkyo_tohyoUketsukeYMD",
+        null as "afT111Senkyo_mutohyoSenkyoFlag"
+    </sql>
+
+    <sql id="allColumns_Empty_AfT201TohyoJokyo">
+        null as "afT201TohyoJokyo_shohonNo",
+        null as "afT201TohyoJokyo_shikibetsuCode",
+        null as "afT201TohyoJokyo_senkyoNo",
+        null as "afT201TohyoJokyo_insertDantaiCd",
+        null as "afT201TohyoJokyo_insertTimestamp",
+        null as "afT201TohyoJokyo_insertReamsLoginId",
+        null as "afT201TohyoJokyo_insertContextId",
+        null as "afT201TohyoJokyo_isDeleted",
+        null as "afT201TohyoJokyo_updateCount",
+        null as "afT201TohyoJokyo_lastUpdateTimestamp",
+        null as "afT201TohyoJokyo_lastUpdateReamsLoginId",
+        null as "afT201TohyoJokyo_tohyoJokyo",
+        null as "afT201TohyoJokyo_tohyoJiyuCode",
+        null as "afT201TohyoJokyo_seikyuYMD",
+        null as "afT201TohyoJokyo_seikyuHoho",
+        null as "afT201TohyoJokyo_uketsukeNo",
+        null as "afT201TohyoJokyo_kofuYMD",
+        null as "afT201TohyoJokyo_kofuTime",
+        null as "afT201TohyoJokyo_kofuHoho",
+        null as "afT201TohyoJokyo_shisetsuCode",
+        null as "afT201TohyoJokyo_uketoriYMD",
+        null as "afT201TohyoJokyo_juriYMD",
+        null as "afT201TohyoJokyo_juriTime",
+        null as "afT201TohyoJokyo_juriHoho",
+        null as "afT201TohyoJokyo_juriShisetsuShubetsu",
+        null as "afT201TohyoJokyo_kikenYMD",
+        null as "afT201TohyoJokyo_henkanYMD",
+        null as "afT201TohyoJokyo_tenjiFlag",
+        null as "afT201TohyoJokyo_dairiTohyoAriFlag",
+        null as "afT201TohyoJokyo_hojoshaShikibetsuCode1",
+        null as "afT201TohyoJokyo_hojoshaShimei1",
+        null as "afT201TohyoJokyo_hojoshaShikibetsuCode2",
+        null as "afT201TohyoJokyo_hojoshaShimei2",
+        null as "afT201TohyoJokyo_kyohiJiyu",
+        null as "afT201TohyoJokyo_shomeishoPrintFlag",
+        null as "afT201TohyoJokyo_sochiZumiFlag",
+        null as "afT201TohyoJokyo_kijitsuFuzaiKubun",
+        null as "afT201TohyoJokyo_reamsClientId"
+    </sql>
+
+    <sql id="allColumns_Empty_AfT114FuzaishaTohyoShikaku">
+        null as "afT114FuzaishaTohyoShikaku_shikibetsuCode",
+        null as "afT114FuzaishaTohyoShikaku_tohyoShikakuShurui",
+        null as "afT114FuzaishaTohyoShikaku_seq",
+        null as "afT114FuzaishaTohyoShikaku_insertDantaiCd",
+        null as "afT114FuzaishaTohyoShikaku_insertTimestamp",
+        null as "afT114FuzaishaTohyoShikaku_insertReamsLoginId",
+        null as "afT114FuzaishaTohyoShikaku_insertContextId",
+        null as "afT114FuzaishaTohyoShikaku_isDeleted",
+        null as "afT114FuzaishaTohyoShikaku_updateCount",
+        null as "afT114FuzaishaTohyoShikaku_lastUpdateTimestamp",
+        null as "afT114FuzaishaTohyoShikaku_lastUpdateReamsLoginId",
+        null as "afT114FuzaishaTohyoShikaku_kofuYMD",
+        null as "afT114FuzaishaTohyoShikaku_kofuNo",
+        null as "afT114FuzaishaTohyoShikaku_shikakuTorokuYMD",
+        null as "afT114FuzaishaTohyoShikaku_shikakuManryoYMD",
+        null as "afT114FuzaishaTohyoShikaku_shikakuMasshoYMD",
+        null as "afT114FuzaishaTohyoShikaku_shikakuMasshoJiyuCode"
+    </sql>
+
+    <sql id="columns_Empty_ShikibetsuTaisho">
+        null as "shikibetsuCode",
+        null as "genLasdecCode",
+        null as "kyuLasdecCode",
+        null as "kyuLasdecCodeRenban",
+        null as "gyomuCode",
+        null as "rirekiNo",
+        null as "currentFlag",
+        null as "juminShubetsuCode",
+        null as "kojinNo",
+        null as "hojinNo",
+        null as "shoriYMD",
+        null as "idoJiyuCode",
+        null as "idoYMD",
+        null as "todokedeJiyuCode",
+        null as "todokedeYMD",
+        null as "idoRiyuCode",
+        null as "meisho",
+        null as "kanaMeisho",
+        null as "shimeiRiyoKubun",
+        null as "kannaiKangaiKubun",
+        null as "yubinNo",
+        null as "choikiCode",
+        null as "zenkokuJushoCode",
+        null as "jusho",
+        null as "banchiCode1",
+        null as "banchiCode2",
+        null as "banchiCode3",
+        null as "banchiCode4",
+        null as "banchi",
+        null as "katagaki",
+        null as "katagakiInjiFlag",
+        null as "gyoseikuCode",
+        null as "gyoseikuName",
+        null as "chikuCode1",
+        null as "chikuName1",
+        null as "chikuCode2",
+        null as "chikuName2",
+        null as "chikuCode3",
+        null as "chikuName3",
+        null as "shogakkokuCode",
+        null as "shogakkokuName",
+        null as "chugakkokuCode",
+        null as "chugakkokuName",
+        null as "tohyokuCode",
+        null as "tohyokuName",
+        null as "juminJotaiCode",
+        null as "setaiCode",
+        null as "seinengappiYMD",
+        null as "seinengappiFushoKubun",
+        null as "seibetsuCode",
+        null as "tsuzukigaraCode",
+        null as "tsuzukigara",
+        null as "kazokuNo",
+        null as "juminhyoHyojijun",
+        null as "kikaYMD",
+        null as "kanjiShimei",
+        null as "kanaShimei",
+        null as "juminhyoCode",
+        null as "honsekiZenkokuJushoCode",
+        null as "honsekiChoikiCode",
+        null as "honsekiJusho",
+        null as "honsekiBanchi",
+        null as "hittosha",
+        null as "gaikokujinShimei",
+        null as "gaikokujinHeikimei",
+        null as "gaikokujinKanaShimei",
+        null as "katakanaHyoki",
+        null as "tsushomei",
+        null as "kanaTsushomei",
+        null as "kokusekiChiikiCode",
+        null as "zairyuShikakuCode",
+        null as "zairyuKikanCode",
+        null as "zairyuKikantoManryoYMD",
+        null as "zairyuCardtoNo",
+        null as "zairyuCardtoYukoYMD",
+        null as "dai30Jono45niKiteisuruKubun",
+        null as "setainushiShikibetsuCode",
+        null as "setainushiMei",
+        null as "hojinKeitaiCode",
+        null as "hojinKeitaiMeisho",
+        null as "hojinKeitaiRyakusho",
+        null as "hojinMeishoHenshuKubun",
+        null as "hojinKeitaiRyakushoKubun",
+        null as "hojinMeisho",
+        null as "hojinKanaMeisho",
+        null as "hojinShitenMeisho",
+        null as "hojinShitenKanaMeisho",
+        null as "daihyoshaShikibetsuCode",
+        null as "daihyoshaShimei",
+        null as "daihyoshaKanaShimei",
+        null as "daihyoshaJuminShubetsu",
+        null as "daihyoshaNihonjinShimei",
+        null as "daihyoshaNihonjinKanaShimei",
+        null as "daihyoshaGaikokujinShimei",
+        null as "daihyoshaGaikokujinHeikimei",
+        null as "daihyoshaGaikokujinKanaShimei",
+        null as "daihyoshaTsushomei",
+        null as "daihyoshaShimeiRiyoKubun",
+        null as "daihyoshaKanaTsushomei",
+        null as "daihyoshaKannaiKangaiKubun",
+        null as "daihyoshaYubinNo",
+        null as "daihyoshaChoikiCode",
+        null as "daihyoshaZenkokuJushoCode",
+        null as "daihyoshaJusho",
+        null as "daihyoshaBanchiCode1",
+        null as "daihyoshaBanchiCode2",
+        null as "daihyoshaBanchiCode3",
+        null as "daihyoshaBanchiCode4",
+        null as "daihyoshaBanchi",
+        null as "daihyoshaKatagaki",
+        null as "ninkachiendantaiTorokuShikakuKubun",
+        null as "ninkachiendantaiNinkaYMD",
+        null as "kojinHojinKBN",
+        null as "kyoyushaMeisho",
+        null as "kyoyushaKanaMeisho",
+        null as "torokuJiyuCode",
+        null as "torokuIdoYMD",
+        null as "torokuTodokedeYMD",
+        null as "juteiJiyuCode",
+        null as "juteiIdoYMD",
+        null as "juteiTodokedeYMD",
+        null as "shojoJiyuCode",
+        null as "shojoIdoYMD",
+        null as "shojoTodokedeYMD",
+        null as "jutonaiYubinNo",
+        null as "jutonaiChoikiCode",
+        null as "jutonaiJusho",
+        null as "jutonaiBanchiCode1",
+        null as "jutonaiBanchiCode2",
+        null as "jutonaiBanchiCode3",
+        null as "jutonaiBanchiCode4",
+        null as "jutonaiBanchi",
+        null as "jutonaiKatagaki",
+        null as "jutonaiKatagakiInjiFlag",
+        null as "tennyumaeYubinNo",
+        null as "tennyumaeZenkokuJushoCode",
+        null as "tennyumaeJusho",
+        null as "tennyumaeBanchi",
+        null as "tennyumaeKatagaki",
+        null as "tennyumaeSetainushimei",
+        null as "tennyumaeKyusei",
+        null as "saishuJutochiYubinNo",
+        null as "saishuJutochiZenkokuJushoCode",
+        null as "saishuJutochiJusho",
+        null as "saishuJutochiBanchi",
+        null as "saishuJutochiKatagaki",
+        null as "saishuJutochiSetainushimei",
+        null as "tenshutsuYoteiIdoYMD",
+        null as "tenshutsuYoteiYubinNo",
+        null as "tenshutsuYoteiZenkokuJushoCode",
+        null as "tenshutsuYoteiJusho",
+        null as "tenshutsuYoteiBanchi",
+        null as "tenshutsuYoteiKatagaki",
+        null as "tenshutsuYoteiSetainushimei",
+        null as "tenshutsuKakuteiIdoYMD",
+        null as "tenshutsuKakuteiTsuchiYMD",
+        null as "tenshutsuKakuteiYubinNo",
+        null as "tenshutsuKakuteiZenkokuJushoCode",
+        null as "tenshutsuKakuteiJusho",
+        null as "tenshutsuKakuteiBanchi",
+        null as "tenshutsuKakuteiKatagaki",
+        null as "tenshutsuKakuteiSetainushimei",
+        null as "juminhyoUtsushiHakkoSeigyoKubun",
+        null as "renrakusaki1",
+        null as "kensakuRenrakusaki1",
+        null as "renrakusakiKubun1",
+        null as "renrakusaki2",
+        null as "kensakuRenrakusaki2",
+        null as "renrakusakiKubun2",
+        null as "renrakusaki3",
+        null as "kensakuRenrakusaki3",
+        null as "renrakusakiKubun3",
+        null as "mailAddress",
+        null as "biko",
+        null as "lastUpdateTimestamp",
+        null as "lastUpdateReamsLoginId",
+        null as "jutogaiKanriUpdateCount",
+        null as "jutogaiKanriTorokuNo",
+        null as "jutogaiKojinKihonUpdateCount",
+        null as "jutogaiKojinKihonTorokuNo",
+        null as "hojinUpdateCount",
+        null as "hojinTorokuNo",
+        null as "kyoyushaUpdateCount",
+        null as "kyoyushaTorokuNo",
+        null as "jutogaiNihonjinUpdateCount",
+        null as "jutogaiNihonjinTorokuNo",
+        null as "jutogaiGaikokujinUpdateCount",
+        null as "jutogaiGaikokujinTorokuNo",
+        null as "shimeiSearchTorokuNo",
+        null as "yusenShimeiUpdateCount",
+        null as "yusenShimeiTimestamp",
+        null as "kanaName",
+        null as "gaikokujinKanaName",
+        null as "kanaTsushoName",
+        null as "jukiTorokuNo"
+    </sql>
+
+    <sql id="columns_ShikibetsuTaisho">
+        "ShikibetsuTaisho2"."shikibetsuCode"                     as "shikibetsuCode",
+        "ShikibetsuTaisho2"."genLasdecCode"                      as "genLasdecCode",
+        "ShikibetsuTaisho2"."kyuLasdecCode"                      as "kyuLasdecCode",
+        "ShikibetsuTaisho2"."kyuLasdecCodeRenban"                as "kyuLasdecCodeRenban",
+        "ShikibetsuTaisho2"."gyomuCode"                          as "gyomuCode",
+        "ShikibetsuTaisho2"."rirekiNo"                           as "rirekiNo",
+        "ShikibetsuTaisho2"."currentFlag"                        as "currentFlag",
+        "ShikibetsuTaisho2"."juminShubetsuCode"                  as "juminShubetsuCode",
+        "ShikibetsuTaisho2"."kojinNo"                            as "kojinNo",
+        "ShikibetsuTaisho2"."hojinNo"                            as "hojinNo",
+        "ShikibetsuTaisho2"."shoriYMD"                           as "shoriYMD",
+        "ShikibetsuTaisho2"."idoJiyuCode"                        as "idoJiyuCode",
+        "ShikibetsuTaisho2"."idoYMD"                             as "idoYMD",
+        "ShikibetsuTaisho2"."todokedeJiyuCode"                   as "todokedeJiyuCode",
+        "ShikibetsuTaisho2"."todokedeYMD"                        as "todokedeYMD",
+        "ShikibetsuTaisho2"."idoRiyuCode"                        as "idoRiyuCode",
+        "ShikibetsuTaisho2"."meisho"                             as "meisho",
+        "ShikibetsuTaisho2"."kanaMeisho"                         as "kanaMeisho",
+        "ShikibetsuTaisho2"."shimeiRiyoKubun"                    as "shimeiRiyoKubun",
+        "ShikibetsuTaisho2"."kannaiKangaiKubun"                  as "kannaiKangaiKubun",
+        "ShikibetsuTaisho2"."yubinNo"                            as "yubinNo",
+        "ShikibetsuTaisho2"."choikiCode"                         as "choikiCode",
+        "ShikibetsuTaisho2"."zenkokuJushoCode"                   as "zenkokuJushoCode",
+        "ShikibetsuTaisho2"."jusho"                              as "jusho",
+        "ShikibetsuTaisho2"."banchiCode1"                        as "banchiCode1",
+        "ShikibetsuTaisho2"."banchiCode2"                        as "banchiCode2",
+        "ShikibetsuTaisho2"."banchiCode3"                        as "banchiCode3",
+        "ShikibetsuTaisho2"."banchiCode4"                        as "banchiCode4",
+        "ShikibetsuTaisho2"."banchi"                             as "banchi",
+        "ShikibetsuTaisho2"."katagaki"                           as "katagaki",
+        "ShikibetsuTaisho2"."katagakiInjiFlag"                   as "katagakiInjiFlag",
+        "ShikibetsuTaisho2"."gyoseikuCode"                       as "gyoseikuCode",
+        "ShikibetsuTaisho2"."gyoseikuName"                       as "gyoseikuName",
+        "ShikibetsuTaisho2"."chikuCode1"                         as "chikuCode1",
+        "ShikibetsuTaisho2"."chikuName1"                         as "chikuName1",
+        "ShikibetsuTaisho2"."chikuCode2"                         as "chikuCode2",
+        "ShikibetsuTaisho2"."chikuName2"                         as "chikuName2",
+        "ShikibetsuTaisho2"."chikuCode3"                         as "chikuCode3",
+        "ShikibetsuTaisho2"."chikuName3"                         as "chikuName3",
+        "ShikibetsuTaisho2"."shogakkokuCode"                     as "shogakkokuCode",
+        "ShikibetsuTaisho2"."shogakkokuName"                     as "shogakkokuName",
+        "ShikibetsuTaisho2"."chugakkokuCode"                     as "chugakkokuCode",
+        "ShikibetsuTaisho2"."chugakkokuName"                     as "chugakkokuName",
+        "ShikibetsuTaisho2"."tohyokuCode"                        as "tohyokuCode",
+        "ShikibetsuTaisho2"."tohyokuName"                        as "tohyokuName",
+        "ShikibetsuTaisho2"."juminJotaiCode"                     as "juminJotaiCode",
+        "ShikibetsuTaisho2"."setaiCode"                          as "setaiCode",
+        "ShikibetsuTaisho2"."seinengappiYMD"                     as "seinengappiYMD",
+        "ShikibetsuTaisho2"."seinengappiFushoKubun"              as "seinengappiFushoKubun",
+        "ShikibetsuTaisho2"."seibetsuCode"                       as "seibetsuCode",
+        "ShikibetsuTaisho2"."tsuzukigaraCode"                    as "tsuzukigaraCode",
+        "ShikibetsuTaisho2"."tsuzukigara"                        as "tsuzukigara",
+        "ShikibetsuTaisho2"."kazokuNo"                           as "kazokuNo",
+        "ShikibetsuTaisho2"."juminhyoHyojijun"                   as "juminhyoHyojijun",
+        "ShikibetsuTaisho2"."kikaYMD"                            as "kikaYMD",
+        "ShikibetsuTaisho2"."kanjiShimei"                        as "kanjiShimei",
+        "ShikibetsuTaisho2"."kanaShimei"                         as "kanaShimei",
+        "ShikibetsuTaisho2"."juminhyoCode"                       as "juminhyoCode",
+        "ShikibetsuTaisho2"."honsekiZenkokuJushoCode"            as "honsekiZenkokuJushoCode",
+        "ShikibetsuTaisho2"."honsekiChoikiCode"                  as "honsekiChoikiCode",
+        "ShikibetsuTaisho2"."honsekiJusho"                       as "honsekiJusho",
+        "ShikibetsuTaisho2"."honsekiBanchi"                      as "honsekiBanchi",
+        "ShikibetsuTaisho2"."hittosha"                           as "hittosha",
+        "ShikibetsuTaisho2"."gaikokujinShimei"                   as "gaikokujinShimei",
+        "ShikibetsuTaisho2"."gaikokujinHeikimei"                 as "gaikokujinHeikimei",
+        "ShikibetsuTaisho2"."gaikokujinKanaShimei"               as "gaikokujinKanaShimei",
+        "ShikibetsuTaisho2"."katakanaHyoki"                      as "katakanaHyoki",
+        "ShikibetsuTaisho2"."tsushomei"                          as "tsushomei",
+        "ShikibetsuTaisho2"."kanaTsushomei"                      as "kanaTsushomei",
+        "ShikibetsuTaisho2"."kokusekiChiikiCode"                 as "kokusekiChiikiCode",
+        "ShikibetsuTaisho2"."zairyuShikakuCode"                  as "zairyuShikakuCode",
+        "ShikibetsuTaisho2"."zairyuKikanCode"                    as "zairyuKikanCode",
+        "ShikibetsuTaisho2"."zairyuKikantoManryoYMD"             as "zairyuKikantoManryoYMD",
+        "ShikibetsuTaisho2"."zairyuCardtoNo"                     as "zairyuCardtoNo",
+        "ShikibetsuTaisho2"."zairyuCardtoYukoYMD"                as "zairyuCardtoYukoYMD",
+        "ShikibetsuTaisho2"."dai30Jono45niKiteisuruKubun"        as "dai30Jono45niKiteisuruKubun",
+        "ShikibetsuTaisho2"."setainushiShikibetsuCode"           as "setainushiShikibetsuCode",
+        "ShikibetsuTaisho2"."setainushiMei"                      as "setainushiMei",
+        "ShikibetsuTaisho2"."hojinKeitaiCode"                    as "hojinKeitaiCode",
+        "ShikibetsuTaisho2"."hojinKeitaiMeisho"                  as "hojinKeitaiMeisho",
+        "ShikibetsuTaisho2"."hojinKeitaiRyakusho"                as "hojinKeitaiRyakusho",
+        "ShikibetsuTaisho2"."hojinMeishoHenshuKubun"             as "hojinMeishoHenshuKubun",
+        "ShikibetsuTaisho2"."hojinKeitaiRyakushoKubun"           as "hojinKeitaiRyakushoKubun",
+        "ShikibetsuTaisho2"."hojinMeisho"                        as "hojinMeisho",
+        "ShikibetsuTaisho2"."hojinKanaMeisho"                    as "hojinKanaMeisho",
+        "ShikibetsuTaisho2"."hojinShitenMeisho"                  as "hojinShitenMeisho",
+        "ShikibetsuTaisho2"."hojinShitenKanaMeisho"              as "hojinShitenKanaMeisho",
+        "ShikibetsuTaisho2"."daihyoshaShikibetsuCode"            as "daihyoshaShikibetsuCode",
+        "ShikibetsuTaisho2"."daihyoshaShimei"                    as "daihyoshaShimei",
+        "ShikibetsuTaisho2"."daihyoshaKanaShimei"                as "daihyoshaKanaShimei",
+        "ShikibetsuTaisho2"."daihyoshaJuminShubetsu"             as "daihyoshaJuminShubetsu",
+        "ShikibetsuTaisho2"."daihyoshaNihonjinShimei"            as "daihyoshaNihonjinShimei",
+        "ShikibetsuTaisho2"."daihyoshaNihonjinKanaShimei"        as "daihyoshaNihonjinKanaShimei",
+        "ShikibetsuTaisho2"."daihyoshaGaikokujinShimei"          as "daihyoshaGaikokujinShimei",
+        "ShikibetsuTaisho2"."daihyoshaGaikokujinHeikimei"        as "daihyoshaGaikokujinHeikimei",
+        "ShikibetsuTaisho2"."daihyoshaGaikokujinKanaShimei"      as "daihyoshaGaikokujinKanaShimei",
+        "ShikibetsuTaisho2"."daihyoshaTsushomei"                 as "daihyoshaTsushomei",
+        "ShikibetsuTaisho2"."daihyoshaShimeiRiyoKubun"           as "daihyoshaShimeiRiyoKubun",
+        "ShikibetsuTaisho2"."daihyoshaKanaTsushomei"             as "daihyoshaKanaTsushomei",
+        "ShikibetsuTaisho2"."daihyoshaKannaiKangaiKubun"         as "daihyoshaKannaiKangaiKubun",
+        "ShikibetsuTaisho2"."daihyoshaYubinNo"                   as "daihyoshaYubinNo",
+        "ShikibetsuTaisho2"."daihyoshaChoikiCode"                as "daihyoshaChoikiCode",
+        "ShikibetsuTaisho2"."daihyoshaZenkokuJushoCode"          as "daihyoshaZenkokuJushoCode",
+        "ShikibetsuTaisho2"."daihyoshaJusho"                     as "daihyoshaJusho",
+        "ShikibetsuTaisho2"."daihyoshaBanchiCode1"               as "daihyoshaBanchiCode1",
+        "ShikibetsuTaisho2"."daihyoshaBanchiCode2"               as "daihyoshaBanchiCode2",
+        "ShikibetsuTaisho2"."daihyoshaBanchiCode3"               as "daihyoshaBanchiCode3",
+        "ShikibetsuTaisho2"."daihyoshaBanchiCode4"               as "daihyoshaBanchiCode4",
+        "ShikibetsuTaisho2"."daihyoshaBanchi"                    as "daihyoshaBanchi",
+        "ShikibetsuTaisho2"."daihyoshaKatagaki"                  as "daihyoshaKatagaki",
+        "ShikibetsuTaisho2"."ninkachiendantaiTorokuShikakuKubun" as "ninkachiendantaiTorokuShikakuKubun",
+        "ShikibetsuTaisho2"."ninkachiendantaiNinkaYMD"           as "ninkachiendantaiNinkaYMD",
+        "ShikibetsuTaisho2"."kojinHojinKBN"                      as "kojinHojinKBN",
+        "ShikibetsuTaisho2"."kyoyushaMeisho"                     as "kyoyushaMeisho",
+        "ShikibetsuTaisho2"."kyoyushaKanaMeisho"                 as "kyoyushaKanaMeisho",
+        "ShikibetsuTaisho2"."torokuJiyuCode"                     as "torokuJiyuCode",
+        "ShikibetsuTaisho2"."torokuIdoYMD"                       as "torokuIdoYMD",
+        "ShikibetsuTaisho2"."torokuTodokedeYMD"                  as "torokuTodokedeYMD",
+        "ShikibetsuTaisho2"."juteiJiyuCode"                      as "juteiJiyuCode",
+        "ShikibetsuTaisho2"."juteiIdoYMD"                        as "juteiIdoYMD",
+        "ShikibetsuTaisho2"."juteiTodokedeYMD"                   as "juteiTodokedeYMD",
+        "ShikibetsuTaisho2"."shojoJiyuCode"                      as "shojoJiyuCode",
+        "ShikibetsuTaisho2"."shojoIdoYMD"                        as "shojoIdoYMD",
+        "ShikibetsuTaisho2"."shojoTodokedeYMD"                   as "shojoTodokedeYMD",
+        "ShikibetsuTaisho2"."jutonaiYubinNo"                     as "jutonaiYubinNo",
+        "ShikibetsuTaisho2"."jutonaiChoikiCode"                  as "jutonaiChoikiCode",
+        "ShikibetsuTaisho2"."jutonaiJusho"                       as "jutonaiJusho",
+        "ShikibetsuTaisho2"."jutonaiBanchiCode1"                 as "jutonaiBanchiCode1",
+        "ShikibetsuTaisho2"."jutonaiBanchiCode2"                 as "jutonaiBanchiCode2",
+        "ShikibetsuTaisho2"."jutonaiBanchiCode3"                 as "jutonaiBanchiCode3",
+        "ShikibetsuTaisho2"."jutonaiBanchiCode4"                 as "jutonaiBanchiCode4",
+        "ShikibetsuTaisho2"."jutonaiBanchi"                      as "jutonaiBanchi",
+        "ShikibetsuTaisho2"."jutonaiKatagaki"                    as "jutonaiKatagaki",
+        "ShikibetsuTaisho2"."jutonaiKatagakiInjiFlag"            as "jutonaiKatagakiInjiFlag",
+        "ShikibetsuTaisho2"."tennyumaeYubinNo"                   as "tennyumaeYubinNo",
+        "ShikibetsuTaisho2"."tennyumaeZenkokuJushoCode"          as "tennyumaeZenkokuJushoCode",
+        "ShikibetsuTaisho2"."tennyumaeJusho"                     as "tennyumaeJusho",
+        "ShikibetsuTaisho2"."tennyumaeBanchi"                    as "tennyumaeBanchi",
+        "ShikibetsuTaisho2"."tennyumaeKatagaki"                  as "tennyumaeKatagaki",
+        "ShikibetsuTaisho2"."tennyumaeSetainushimei"             as "tennyumaeSetainushimei",
+        "ShikibetsuTaisho2"."tennyumaeKyusei"                    as "tennyumaeKyusei",
+        "ShikibetsuTaisho2"."saishuJutochiYubinNo"               as "saishuJutochiYubinNo",
+        "ShikibetsuTaisho2"."saishuJutochiZenkokuJushoCode"      as "saishuJutochiZenkokuJushoCode",
+        "ShikibetsuTaisho2"."saishuJutochiJusho"                 as "saishuJutochiJusho",
+        "ShikibetsuTaisho2"."saishuJutochiBanchi"                as "saishuJutochiBanchi",
+        "ShikibetsuTaisho2"."saishuJutochiKatagaki"              as "saishuJutochiKatagaki",
+        "ShikibetsuTaisho2"."saishuJutochiSetainushimei"         as "saishuJutochiSetainushimei",
+        "ShikibetsuTaisho2"."tenshutsuYoteiIdoYMD"               as "tenshutsuYoteiIdoYMD",
+        "ShikibetsuTaisho2"."tenshutsuYoteiYubinNo"              as "tenshutsuYoteiYubinNo",
+        "ShikibetsuTaisho2"."tenshutsuYoteiZenkokuJushoCode"     as "tenshutsuYoteiZenkokuJushoCode",
+        "ShikibetsuTaisho2"."tenshutsuYoteiJusho"                as "tenshutsuYoteiJusho",
+        "ShikibetsuTaisho2"."tenshutsuYoteiBanchi"               as "tenshutsuYoteiBanchi",
+        "ShikibetsuTaisho2"."tenshutsuYoteiKatagaki"             as "tenshutsuYoteiKatagaki",
+        "ShikibetsuTaisho2"."tenshutsuYoteiSetainushimei"        as "tenshutsuYoteiSetainushimei",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiIdoYMD"             as "tenshutsuKakuteiIdoYMD",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiTsuchiYMD"          as "tenshutsuKakuteiTsuchiYMD",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiYubinNo"            as "tenshutsuKakuteiYubinNo",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiZenkokuJushoCode"   as "tenshutsuKakuteiZenkokuJushoCode",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiJusho"              as "tenshutsuKakuteiJusho",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiBanchi"             as "tenshutsuKakuteiBanchi",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiKatagaki"           as "tenshutsuKakuteiKatagaki",
+        "ShikibetsuTaisho2"."tenshutsuKakuteiSetainushimei"      as "tenshutsuKakuteiSetainushimei",
+        "ShikibetsuTaisho2"."juminhyoUtsushiHakkoSeigyoKubun"    as "juminhyoUtsushiHakkoSeigyoKubun",
+        "ShikibetsuTaisho2"."renrakusaki1"                       as "renrakusaki1",
+        "ShikibetsuTaisho2"."kensakuRenrakusaki1"                as "kensakuRenrakusaki1",
+        "ShikibetsuTaisho2"."renrakusakiKubun1"                  as "renrakusakiKubun1",
+        "ShikibetsuTaisho2"."renrakusaki2"                       as "renrakusaki2",
+        "ShikibetsuTaisho2"."kensakuRenrakusaki2"                as "kensakuRenrakusaki2",
+        "ShikibetsuTaisho2"."renrakusakiKubun2"                  as "renrakusakiKubun2",
+        "ShikibetsuTaisho2"."renrakusaki3"                       as "renrakusaki3",
+        "ShikibetsuTaisho2"."kensakuRenrakusaki3"                as "kensakuRenrakusaki3",
+        "ShikibetsuTaisho2"."renrakusakiKubun3"                  as "renrakusakiKubun3",
+        "ShikibetsuTaisho2"."mailAddress"                        as "mailAddress",
+        "ShikibetsuTaisho2"."biko"                               as "biko",
+        "ShikibetsuTaisho2"."lastUpdateTimestamp"                as "lastUpdateTimestamp",
+        "ShikibetsuTaisho2"."lastUpdateReamsLoginId"             as "lastUpdateReamsLoginId",
+        "ShikibetsuTaisho2"."jutogaiKanriUpdateCount"            as "jutogaiKanriUpdateCount",
+        "ShikibetsuTaisho2"."jutogaiKanriTorokuNo"               as "jutogaiKanriTorokuNo",
+        "ShikibetsuTaisho2"."jutogaiKojinKihonUpdateCount"       as "jutogaiKojinKihonUpdateCount",
+        "ShikibetsuTaisho2"."jutogaiKojinKihonTorokuNo"          as "jutogaiKojinKihonTorokuNo",
+        "ShikibetsuTaisho2"."hojinUpdateCount"                   as "hojinUpdateCount",
+        "ShikibetsuTaisho2"."hojinTorokuNo"                      as "hojinTorokuNo",
+        "ShikibetsuTaisho2"."kyoyushaUpdateCount"                as "kyoyushaUpdateCount",
+        "ShikibetsuTaisho2"."kyoyushaTorokuNo"                   as "kyoyushaTorokuNo",
+        "ShikibetsuTaisho2"."jutogaiNihonjinUpdateCount"         as "jutogaiNihonjinUpdateCount",
+        "ShikibetsuTaisho2"."jutogaiNihonjinTorokuNo"            as "jutogaiNihonjinTorokuNo",
+        "ShikibetsuTaisho2"."jutogaiGaikokujinUpdateCount"       as "jutogaiGaikokujinUpdateCount",
+        "ShikibetsuTaisho2"."jutogaiGaikokujinTorokuNo"          as "jutogaiGaikokujinTorokuNo",
+        "ShikibetsuTaisho2"."shimeiSearchTorokuNo"               as "shimeiSearchTorokuNo",
+        "ShikibetsuTaisho2"."yusenShimeiUpdateCount"             as "yusenShimeiUpdateCount",
+        "ShikibetsuTaisho2"."yusenShimeiTimestamp"               as "yusenShimeiTimestamp",
+        "ShikibetsuTaisho2"."kanaName"                           as "kanaName",
+        "ShikibetsuTaisho2"."gaikokujinKanaName"                 as "gaikokujinKanaName",
+        "ShikibetsuTaisho2"."kanaTsushoName"                     as "kanaTsushoName",
+        "ShikibetsuTaisho2"."jukiTorokuNo"                       as "jukiTorokuNo"
+    </sql>
+
+</mapper>

@@ -1,0 +1,826 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;HojoshaNyuryoku&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;hojoshaNyuryokuModel&quot;,&quot;controlName&quot;:&quot;HojoshaNyuryoku.HojoshaNyuryokuModel&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;CloseOK&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;CloseCancel&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.HojoshaNyuryoku"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginTop-M panelMarginBottom-M StateChangable marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G6 UzCompositeChild" id="HojoshaNyuryoku" style="width: auto; margin-top: 0px; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;HojoshaNyuryoku&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G6&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;HojoshaNyuryoku&quot;,&quot;title&quot;:&quot;補助者入力&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;HojoshaNyuryoku&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/onload&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onClickChkDairiTohyo&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/onClickChkDairiTohyo&quot;},{&quot;eventName&quot;:&quot;cancel&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/cancel&quot;},{&quot;eventName&quot;:&quot;onOK&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/onOK&quot;},{&quot;eventName&quot;:&quot;onClickDialog1&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/onClickDialog1&quot;},{&quot;eventName&quot;:&quot;onClickDialog2&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/onClickDialog2&quot;},{&quot;eventName&quot;:&quot;onClickDialog1OK&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/onClickDialog1OK&quot;},{&quot;eventName&quot;:&quot;onClickDialog2OK&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/HojoshaNyuryoku/onClickDialog2OK&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnShohonNo&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnTohyokuCode&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;HojoshaSelectDialogModel&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;HojoshaNyuryokuModel&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="HojoshaNyuryoku_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">補助者入力</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="HojoshaNyuryoku_panel_body_area"><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="chkDairiTohyo" style="width: 90px; height: 19px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkDairiTohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;selectControlID&quot;:&quot;chkDairiTohyo_core&quot;,&quot;icon&quot;:[],&quot;onChange&quot;:&quot;onClickChkDairiTohyo&quot;,&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;key0&quot;,&quot;value&quot;:&quot;代理投票&quot;}],&quot;selectedItems&quot;:[{&quot;key&quot;:&quot;key0&quot;}],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;2&quot;,&quot;spaceSize&quot;:&quot;S&quot;,&quot;disabledItem&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkDairiTohyo_core"><input id="chkDairiTohyo_key0" type="checkbox" value="代理投票" data-key="key0"><label for="chkDairiTohyo_key0" data-key="key0">代理投票</label></span></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XL PrivateInfo UzCompositeChild" id="txtHojoshaShimei1" style="width: 330px; height: 21px; margin-right: 0em;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtHojoshaShimei1&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;M&quot;,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtHojoshaShimei1_core&quot;,&quot;maxLength&quot;:&quot;50&quot;,&quot;isPrivateInfo&quot;:true,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;補助者　1&quot;,&quot;labelLWidth&quot;:&quot;80px&quot;}"><span class="word-wrap-break-word Label-L text-align-right" id="txtHojoshaShimei1_labelL" style="width: 80px;"><span>補助者　1</span></span><input class="UzTextBox CoreElement Width-M text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtHojoshaShimei1_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><input title="" class="UzButtonDialog FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS heightTextBoxMatchesFlag HeightTextBoxMatchesForImage UzCompositeChild" id="btnHojosha1Search" style="width: 20px; height: 20px;" type="image" alt="image" src="/ur/urz/image/UR_InputGuide.png" data-control-type="ButtonDialog" data-obj="{&quot;fieldName&quot;:&quot;btnHojosha1Search&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;ButtonDialog&quot;,&quot;selectControlID&quot;:&quot;btnHojosha1Search&quot;,&quot;text&quot;:&quot;選択&quot;,&quot;appearance&quot;:2,&quot;imageFileUrl&quot;:&quot;/ur/urz/image/UR_InputGuide.png&quot;,&quot;heightTextBoxMatches&quot;:true,&quot;displayChildDivName&quot;:&quot;AFA.HojoshaSelectDialog&quot;,&quot;dataPassing&quot;:[{&quot;key&quot;:&quot;hojoshaSelectDialogModel&quot;,&quot;controlName&quot;:&quot;HojoshaNyuryoku.HojoshaSelectDialogModel&quot;}],&quot;onOkClose&quot;:&quot;onClickDialog1OK&quot;,&quot;onBeforeOpenDialog&quot;:&quot;onClickDialog1&quot;}"><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtHojosha1ShikibetsuCode" style="width: 52px; height: 21px;" data-control-type="TextBoxShikibetsuCode" data-obj="{&quot;fieldName&quot;:&quot;txtHojosha1ShikibetsuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxShikibetsuCode&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;txtHojosha1ShikibetsuCode_core&quot;,&quot;maxLength&quot;:15,&quot;placeHolder&quot;:&quot;識別1&quot;,&quot;textKind&quot;:2,&quot;suggest&quot;:[]}"><input class="UzTextBox CoreElement Width-XS text-align-left ime-mode-Off ui-autocomplete-input" id="txtHojosha1ShikibetsuCode_core" type="text" placeholder="識別1" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M ClearFloat PrivateInfo UzCompositeChild" id="txtHojoshaShimei2" style="width: 330px; height: 21px; margin-right: 0em; margin-left: 8em;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtHojoshaShimei2&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;M&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;8em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtHojoshaShimei2_core&quot;,&quot;maxLength&quot;:&quot;50&quot;,&quot;isPrivateInfo&quot;:true,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;補助者　2&quot;,&quot;labelLWidth&quot;:&quot;80px&quot;}"><span class="word-wrap-break-word Label-L text-align-right" id="txtHojoshaShimei2_labelL" style="width: 80px;"><span>補助者　2</span></span><input class="UzTextBox CoreElement Width-M text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtHojoshaShimei2_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><input title="" class="UzButtonDialog FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS heightTextBoxMatchesFlag HeightTextBoxMatchesForImage UzCompositeChild" id="btnHojosha2Search" style="width: 20px; height: 20px;" type="image" alt="image" src="/ur/urz/image/UR_InputGuide.png" data-control-type="ButtonDialog" data-obj="{&quot;fieldName&quot;:&quot;btnHojosha2Search&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;ButtonDialog&quot;,&quot;selectControlID&quot;:&quot;btnHojosha2Search&quot;,&quot;text&quot;:&quot;選択&quot;,&quot;appearance&quot;:2,&quot;imageFileUrl&quot;:&quot;/ur/urz/image/UR_InputGuide.png&quot;,&quot;heightTextBoxMatches&quot;:true,&quot;displayChildDivName&quot;:&quot;AFA.HojoshaSelectDialog&quot;,&quot;dataPassing&quot;:[{&quot;key&quot;:&quot;hojoshaSelectDialogModel&quot;,&quot;controlName&quot;:&quot;HojoshaNyuryoku.HojoshaSelectDialogModel&quot;}],&quot;onOkClose&quot;:&quot;onClickDialog2OK&quot;,&quot;onBeforeOpenDialog&quot;:&quot;onClickDialog2&quot;}"><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtHojosha2ShikibetsuCode" style="width: 52px; height: 21px;" data-control-type="TextBoxShikibetsuCode" data-obj="{&quot;fieldName&quot;:&quot;txtHojosha2ShikibetsuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxShikibetsuCode&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;txtHojosha2ShikibetsuCode_core&quot;,&quot;maxLength&quot;:15,&quot;placeHolder&quot;:&quot;識別2&quot;,&quot;textKind&quot;:2,&quot;suggest&quot;:[]}"><input class="UzTextBox CoreElement Width-XS text-align-left ime-mode-Off ui-autocomplete-input" id="txtHojosha2ShikibetsuCode_core" type="text" placeholder="識別2" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><button title="" class="UzButton JSControl controlMargin-M FloatRight marginLeft-XS marginRight-XS Width-XS ClearFloat UzCompositeChild" id="btnCancel" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnCancel&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;wrap&quot;:true,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;btnCancel&quot;,&quot;onClick&quot;:&quot;cancel&quot;,&quot;text&quot;:&quot;取消&quot;}"><span>取消</span></button><button title="" class="UzButton JSControl controlMargin-M FloatRight marginLeft-XS marginRight-XS Width-XS UzCompositeChild" id="btnOK" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnOK&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;btnOK&quot;,&quot;onClick&quot;:&quot;onOK&quot;,&quot;text&quot;:&quot;確定&quot;}"><span>確定</span></button></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var HojoshaNyuryoku_Design = (function (_super) {
+        __extends(HojoshaNyuryoku_Design, _super);
+        function HojoshaNyuryoku_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, HojoshaNyuryoku_Design.myLayout, fieldName);
+        }
+        HojoshaNyuryoku_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        HojoshaNyuryoku_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        HojoshaNyuryoku_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "HojoshaNyuryoku",
+                    "items": [
+                        {
+                            "fieldName": "chkDairiTohyo",
+                            "items": [],
+                            "controlType": "CheckBoxList",
+                            "width": "",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "chkDairiTohyo_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "onChange": "",
+                            "labelLText": "",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "selectedItem": null,
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "代理投票"
+                                }
+                            ],
+                            "onClick": "onClick_chkDairiTohyo",
+                            "selectedItems": [
+                                {
+                                    "key": "key0"
+                                }
+                            ],
+                            "newLineItemNumber": 1,
+                            "minCheckedItem": 0,
+                            "maxCheckedItem": "2",
+                            "spaceSize": "S",
+                            "isAllSelectable": false,
+                            "isAllSelectableBreakLine": false,
+                            "disabledItem": [],
+                            "icon": []
+                        },
+                        {
+                            "fieldName": "txtHojoshaShimei1",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "M",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XL",
+                            "marginRight": "0em",
+                            "selectControlID": "txtHojoshaShimei1_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": true,
+                            "maxLength": "50",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "補助者　1",
+                            "labelRText": "",
+                            "labelLWidth": "80px",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "btnHojosha1Search",
+                            "items": [],
+                            "controlType": "ButtonDialog",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "btnHojosha1Search",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "選択",
+                            "onClick": "",
+                            "icon": 0,
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "appearance": 2,
+                            "imageFileUrl": "/ur/urz/image/UR_InputGuide.png",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "heightTextBoxMatches": true,
+                            "displayChildDivName": "AFA.HojoshaSelectDialog",
+                            "dataPassing": [
+                                {
+                                    "key": "selectedCode",
+                                    "controlName": "txtHojosha1ShikibetsuCode"
+                                },
+                                {
+                                    "key": "selectedName",
+                                    "controlName": "txtHojoshaShimei1"
+                                },
+                                {
+                                    "key": "selectedShohonNo",
+                                    "controlName": "HojoshaNyuryoku.txtHdnShohonNo"
+                                }
+                            ],
+                            "visibleCloseButton": true,
+                            "onOkClose": "",
+                            "onBeforeOpenDialog": ""
+                        },
+                        {
+                            "fieldName": "txtHojosha1ShikibetsuCode",
+                            "items": [],
+                            "controlType": "TextBoxShikibetsuCode",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": true,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtHojosha1ShikibetsuCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 15,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "識別1",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": 15
+                        },
+                        {
+                            "fieldName": "txtHojoshaShimei2",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "M",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "7.9em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtHojoshaShimei2_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": true,
+                            "maxLength": "50",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "補助者　2",
+                            "labelRText": "",
+                            "labelLWidth": "80px",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "btnHojosha2Search",
+                            "items": [],
+                            "controlType": "ButtonDialog",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "btnHojosha2Search",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "選択",
+                            "onClick": "",
+                            "icon": 0,
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "appearance": 2,
+                            "imageFileUrl": "/ur/urz/image/UR_InputGuide.png",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "heightTextBoxMatches": true,
+                            "displayChildDivName": "AFA.HojoshaSelectDialog",
+                            "dataPassing": [
+                                {
+                                    "key": "selectedCode",
+                                    "controlName": "txtHojosha2ShikibetsuCode"
+                                },
+                                {
+                                    "key": "selectedName",
+                                    "controlName": "txtHojoshaShimei2"
+                                },
+                                {
+                                    "key": "selectedShohonNo",
+                                    "controlName": "HojoshaNyuryoku.txtHdnShohonNo"
+                                }
+                            ],
+                            "visibleCloseButton": true,
+                            "onOkClose": "",
+                            "onBeforeOpenDialog": ""
+                        },
+                        {
+                            "fieldName": "txtHojosha2ShikibetsuCode",
+                            "items": [],
+                            "controlType": "TextBoxShikibetsuCode",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": true,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtHojosha2ShikibetsuCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 15,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "識別2",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": 15
+                        },
+                        {
+                            "fieldName": "btnOK",
+                            "items": [],
+                            "controlType": "Button",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 2,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "btnOK",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "確定",
+                            "onClick": "CloseOK",
+                            "icon": 0,
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "appearance": 0,
+                            "imageFileUrl": "",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "heightTextBoxMatches": false
+                        },
+                        {
+                            "fieldName": "btnCancel",
+                            "items": [],
+                            "controlType": "Button",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 2,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "btnCancel",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "取消",
+                            "onClick": "CloseCancel",
+                            "icon": 0,
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "appearance": 0,
+                            "imageFileUrl": "",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "heightTextBoxMatches": false
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G6",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "HojoshaNyuryoku",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "補助者入力",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "HojoshaNyuryoku"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        },
+                        {
+                            "eventName": "onClick_chkDairiTohyo",
+                            "requestUrl": "AFA/af/AFA/HojoshaNyuryoku/onClick_chkDairiTohyo"
+                        }
+                    ],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "txtHdnShohonNo",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "HojoshaNyuryoku",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [
+                {
+                    "key": "dairiTohyoUmu",
+                    "controlName": "chkDairiTohyo"
+                },
+                {
+                    "key": "hojoshaShimei1",
+                    "controlName": "txtHojoshaShimei1"
+                },
+                {
+                    "key": "hojoshaShikibetsuCode1",
+                    "controlName": "txtHojosha1ShikibetsuCode"
+                },
+                {
+                    "key": "hojoshaShimei2",
+                    "controlName": "txtHojoshaShimei2"
+                },
+                {
+                    "key": "hojoshaShikibetsuCode2",
+                    "controlName": "txtHojosha2ShikibetsuCode"
+                },
+                {
+                    "key": "shohonNo",
+                    "controlName": "HojoshaNyuryoku.txtHdnShohonNo"
+                }
+            ],
+            "dialogOkEventNameForDialog": "CloseOK",
+            "dialogCancelEventNameForDialog": "CloseCancel",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return HojoshaNyuryoku_Design;
+    })(Uz.CommonChildDiv);
+    AFA.HojoshaNyuryoku_Design = HojoshaNyuryoku_Design;
+
+    (function (HojoshaNyuryoku) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClick_chkDairiTohyo = function () {
+                return "onClick_chkDairiTohyo";
+            };
+
+            Events.CloseOK = function () {
+                return "CloseOK";
+            };
+
+            Events.CloseCancel = function () {
+                return "CloseCancel";
+            };
+            return Events;
+        })();
+        HojoshaNyuryoku.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "HojoshaNyuryoku";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.HojoshaNyuryoku.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.HojoshaNyuryoku = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.chkDairiTohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkDairiTohyo"));
+            };
+
+            Controls.prototype.txtHojoshaShimei1 = function () {
+                return new UZA.TextBox(this.convFiledName("txtHojoshaShimei1"));
+            };
+
+            Controls.prototype.btnHojosha1Search = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnHojosha1Search"));
+            };
+
+            Controls.prototype.txtHojosha1ShikibetsuCode = function () {
+                return new UZA.TextBoxShikibetsuCode(this.convFiledName("txtHojosha1ShikibetsuCode"));
+            };
+
+            Controls.prototype.txtHojoshaShimei2 = function () {
+                return new UZA.TextBox(this.convFiledName("txtHojoshaShimei2"));
+            };
+
+            Controls.prototype.btnHojosha2Search = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnHojosha2Search"));
+            };
+
+            Controls.prototype.txtHojosha2ShikibetsuCode = function () {
+                return new UZA.TextBoxShikibetsuCode(this.convFiledName("txtHojosha2ShikibetsuCode"));
+            };
+
+            Controls.prototype.btnOK = function () {
+                return new UZA.Button(this.convFiledName("btnOK"));
+            };
+
+            Controls.prototype.btnCancel = function () {
+                return new UZA.Button(this.convFiledName("btnCancel"));
+            };
+            return Controls;
+        })();
+        HojoshaNyuryoku.Controls = Controls;
+    })(AFA.HojoshaNyuryoku || (AFA.HojoshaNyuryoku = {}));
+    var HojoshaNyuryoku = AFA.HojoshaNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (HojoshaNyuryoku) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new HojoshaNyuryoku.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        HojoshaNyuryoku.ModeController = ModeController;
+    })(AFA.HojoshaNyuryoku || (AFA.HojoshaNyuryoku = {}));
+    var HojoshaNyuryoku = AFA.HojoshaNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (HojoshaNyuryoku) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new HojoshaNyuryoku.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        HojoshaNyuryoku.PublicProperties = PublicProperties;
+    })(AFA.HojoshaNyuryoku || (AFA.HojoshaNyuryoku = {}));
+    var HojoshaNyuryoku = AFA.HojoshaNyuryoku;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['HOJOSHANYURYOKU'] = {};
+AFA['HOJOSHANYURYOKU'].HojoshaNyuryokuRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_HojoshaNyuryoku').getProperty();parameter0.chkDairiTohyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkDairiTohyo').getProperty();parameter0.txtHojoshaShimei1 = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHojoshaShimei1').getProperty();parameter0.btnHojosha1Search = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnHojosha1Search').getProperty();parameter0.txtHojosha1ShikibetsuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHojosha1ShikibetsuCode').getProperty();parameter0.txtHojoshaShimei2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHojoshaShimei2').getProperty();parameter0.btnHojosha2Search = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnHojosha2Search').getProperty();parameter0.txtHojosha2ShikibetsuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtHojosha2ShikibetsuCode').getProperty();parameter0.btnCancel = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnCancel').getProperty();parameter0.btnOK = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnOK').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (HojoshaNyuryoku) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClickChkDairiTohyo = function () {
+                return "onClickChkDairiTohyo";
+            };
+
+            Events.onClickDialog1OK = function () {
+                return "onClickDialog1OK";
+            };
+
+            Events.onClickDialog1 = function () {
+                return "onClickDialog1";
+            };
+
+            Events.onClickDialog2OK = function () {
+                return "onClickDialog2OK";
+            };
+
+            Events.onClickDialog2 = function () {
+                return "onClickDialog2";
+            };
+
+            Events.cancel = function () {
+                return "cancel";
+            };
+
+            Events.onOK = function () {
+                return "onOK";
+            };
+            return Events;
+        })();
+        HojoshaNyuryoku.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "HojoshaNyuryoku";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.HojoshaNyuryoku.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.HojoshaNyuryoku.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.HojoshaNyuryoku = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.chkDairiTohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkDairiTohyo"));
+            };
+
+            Controls.prototype.txtHojoshaShimei1 = function () {
+                return new UZA.TextBox(this.convFiledName("txtHojoshaShimei1"));
+            };
+
+            Controls.prototype.btnHojosha1Search = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnHojosha1Search"));
+            };
+
+            Controls.prototype.txtHojosha1ShikibetsuCode = function () {
+                return new UZA.TextBoxShikibetsuCode(this.convFiledName("txtHojosha1ShikibetsuCode"));
+            };
+
+            Controls.prototype.txtHojoshaShimei2 = function () {
+                return new UZA.TextBox(this.convFiledName("txtHojoshaShimei2"));
+            };
+
+            Controls.prototype.btnHojosha2Search = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnHojosha2Search"));
+            };
+
+            Controls.prototype.txtHojosha2ShikibetsuCode = function () {
+                return new UZA.TextBoxShikibetsuCode(this.convFiledName("txtHojosha2ShikibetsuCode"));
+            };
+
+            Controls.prototype.btnCancel = function () {
+                return new UZA.Button(this.convFiledName("btnCancel"));
+            };
+
+            Controls.prototype.btnOK = function () {
+                return new UZA.Button(this.convFiledName("btnOK"));
+            };
+            return Controls;
+        })();
+        HojoshaNyuryoku.Controls = Controls;
+    })(AFA.HojoshaNyuryoku || (AFA.HojoshaNyuryoku = {}));
+    var HojoshaNyuryoku = AFA.HojoshaNyuryoku;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (HojoshaNyuryoku) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new HojoshaNyuryoku.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        HojoshaNyuryoku.ModeController = ModeController;
+    })(AFA.HojoshaNyuryoku || (AFA.HojoshaNyuryoku = {}));
+    var HojoshaNyuryoku = AFA.HojoshaNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (HojoshaNyuryoku) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new HojoshaNyuryoku.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        HojoshaNyuryoku.PublicProperties = PublicProperties;
+    })(AFA.HojoshaNyuryoku || (AFA.HojoshaNyuryoku = {}));
+    var HojoshaNyuryoku = AFA.HojoshaNyuryoku;
+})(AFA || (AFA = {}));
+</script></div>

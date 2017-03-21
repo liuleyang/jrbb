@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @reamsid_L AF-0200-010 liuj2 -->
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.yubinshikakutoroku.IyubinshikakutorokuMapper">
+    <select resultOrdered="false" id="getShohonSenkyo"
+            resultType="jp.co.ndensan.reams.af.afa.entity.db.relate.reprintteiji.shohonsenkyo.ShohonSenkyoEntity"
+            fetchSize="500">
+        SELECT
+        "AfT100Shohon"."shohonNo",
+        "AfT100Shohon"."senkyoShurui"
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        WHERE "AfT100Shohon"."senkyoShurui" in ('0','1') 
+        AND "AfT111Senkyo"."kijunYMD" <![CDATA[<=]]> #{torokuYMD}
+        ORDER BY "AfT111Senkyo"."kijunYMD" DESC
+	LIMIT 1
+    </select>
+        <select resultOrdered="false" id="getSaisinShohonSenkyo"
+            resultType="jp.co.ndensan.reams.af.afa.entity.db.relate.reprintteiji.shohonsenkyo.ShohonSenkyoEntity"
+            fetchSize="500">
+        SELECT
+        "AfT100Shohon"."shohonNo",
+        "AfT100Shohon"."shohonName",
+        "AfT111Senkyo"."kijunYMD"   
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        ORDER BY "AfT111Senkyo"."kijunYMD" DESC
+	LIMIT 1
+    </select>
+</mapper>

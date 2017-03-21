@@ -1,0 +1,13 @@
+﻿tohyojoCode,varchar,RString,,,,,投票所コード,A
+tohyojoName,varchar,RString,,,,,投票所名称,A
+kanaTohyojoName,varchar,RString,,,,,カナ投票所名称,A
+searchKanaTohyojoName,varchar,RString,,,,,検索用カナ投票所名称,A
+tohyoStartTime,time,RTime,,,,,投票開始時刻,A
+tohyoStopTime,time,RTime,,,,,投票終了時刻,A
+zaigaiTohyoKanoFlag,bool,boolean,,,,,在外投票可能フラグ,A
+yubinNo,UDD003YubinNo,YubinNo,,,,,郵便番号,A
+jusho,UDD046AtenaJusho,AtenaJusho,,,,,住所,A
+tohyojoAtena,UDD042AtenaMeisho,AtenaMeisho,,,,,投票所宛名,A
+telNo,UDD026TelNo,TelNo,,,,,電話番号,A
+faxNo,UDD026TelNo,TelNo,,,,,FAX番号,A
+mapImage,text,RString,,,,,地図ファイル名,A

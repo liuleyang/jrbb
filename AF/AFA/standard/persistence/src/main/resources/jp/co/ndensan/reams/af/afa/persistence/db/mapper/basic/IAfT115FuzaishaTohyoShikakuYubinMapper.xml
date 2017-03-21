@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT115FuzaishaTohyoShikakuYubinマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT115FuzaishaTohyoShikakuYubinMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT115FuzaishaTohyoShikakuYubin">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT115FuzaishaTohyoShikakuYubinMapper.allColumns_AfT115FuzaishaTohyoShikakuYubin" />
+     FROM
+         rgaf."AfT115FuzaishaTohyoShikakuYubin"
+     WHERE
+         rgaf."AfT115FuzaishaTohyoShikakuYubin"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT115FuzaishaTohyoShikakuYubin">
+         "AfT115FuzaishaTohyoShikakuYubin"."shikibetsuCode" as "afT115FuzaishaTohyoShikakuYubin_shikibetsuCode",
+         "AfT115FuzaishaTohyoShikakuYubin"."seq" as "afT115FuzaishaTohyoShikakuYubin_seq",
+         "AfT115FuzaishaTohyoShikakuYubin"."insertDantaiCd" as "afT115FuzaishaTohyoShikakuYubin_insertDantaiCd",
+         "AfT115FuzaishaTohyoShikakuYubin"."insertTimestamp" as "afT115FuzaishaTohyoShikakuYubin_insertTimestamp",
+         "AfT115FuzaishaTohyoShikakuYubin"."insertReamsLoginId" as "afT115FuzaishaTohyoShikakuYubin_insertReamsLoginId",
+         "AfT115FuzaishaTohyoShikakuYubin"."insertContextId" as "afT115FuzaishaTohyoShikakuYubin_insertContextId",
+         "AfT115FuzaishaTohyoShikakuYubin"."isDeleted" as "afT115FuzaishaTohyoShikakuYubin_isDeleted",
+         "AfT115FuzaishaTohyoShikakuYubin"."updateCount" as "afT115FuzaishaTohyoShikakuYubin_updateCount",
+         "AfT115FuzaishaTohyoShikakuYubin"."lastUpdateTimestamp" as "afT115FuzaishaTohyoShikakuYubin_lastUpdateTimestamp",
+         "AfT115FuzaishaTohyoShikakuYubin"."lastUpdateReamsLoginId" as "afT115FuzaishaTohyoShikakuYubin_lastUpdateReamsLoginId",
+         "AfT115FuzaishaTohyoShikakuYubin"."shogaiTechoAriFlag" as "afT115FuzaishaTohyoShikakuYubin_shogaiTechoAriFlag",
+         "AfT115FuzaishaTohyoShikakuYubin"."senshoTechoAriFlag" as "afT115FuzaishaTohyoShikakuYubin_senshoTechoAriFlag",
+         "AfT115FuzaishaTohyoShikakuYubin"."kaigoHokenshoAriFlag" as "afT115FuzaishaTohyoShikakuYubin_kaigoHokenshoAriFlag",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiInputKubun" as "afT115FuzaishaTohyoShikakuYubin_dairiInputKubun",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiShikibetsuCode" as "afT115FuzaishaTohyoShikakuYubin_dairiShikibetsuCode",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiKanjiShimei" as "afT115FuzaishaTohyoShikakuYubin_dairiKanjiShimei",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiKanaShimei" as "afT115FuzaishaTohyoShikakuYubin_dairiKanaShimei",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiSeinengappiYMD" as "afT115FuzaishaTohyoShikakuYubin_dairiSeinengappiYMD",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiSeibetsuCode" as "afT115FuzaishaTohyoShikakuYubin_dairiSeibetsuCode",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiYubinNo" as "afT115FuzaishaTohyoShikakuYubin_dairiYubinNo",
+         "AfT115FuzaishaTohyoShikakuYubin"."dairiJusho" as "afT115FuzaishaTohyoShikakuYubin_dairiJusho"
+    </sql>
+
+
+    <!--テーブルAfT115FuzaishaTohyoShikakuYubinの項目をAfT115FuzaishaTohyoShikakuYubinEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT115FuzaishaTohyoShikakuYubinEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT115FuzaishaTohyoShikakuYubinEntity" autoMapping="true">
+        <id property="shikibetsuCode" column="afT115FuzaishaTohyoShikakuYubin_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="seq" column="afT115FuzaishaTohyoShikakuYubin_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <result property="insertDantaiCd" column="afT115FuzaishaTohyoShikakuYubin_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT115FuzaishaTohyoShikakuYubin_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT115FuzaishaTohyoShikakuYubin_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT115FuzaishaTohyoShikakuYubin_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT115FuzaishaTohyoShikakuYubin_isDeleted" />
+        <result property="updateCount" column="afT115FuzaishaTohyoShikakuYubin_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT115FuzaishaTohyoShikakuYubin_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT115FuzaishaTohyoShikakuYubin_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shogaiTechoAriFlag" column="afT115FuzaishaTohyoShikakuYubin_shogaiTechoAriFlag" />
+        <result property="senshoTechoAriFlag" column="afT115FuzaishaTohyoShikakuYubin_senshoTechoAriFlag" />
+        <result property="kaigoHokenshoAriFlag" column="afT115FuzaishaTohyoShikakuYubin_kaigoHokenshoAriFlag" />
+        <result property="dairiInputKubun" column="afT115FuzaishaTohyoShikakuYubin_dairiInputKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="dairiShikibetsuCode" column="afT115FuzaishaTohyoShikakuYubin_dairiShikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="dairiKanjiShimei" column="afT115FuzaishaTohyoShikakuYubin_dairiKanjiShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="dairiKanaShimei" column="afT115FuzaishaTohyoShikakuYubin_dairiKanaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaKanaMeishoTypeHandler"/>
+        <result property="dairiSeinengappiYMD" column="afT115FuzaishaTohyoShikakuYubin_dairiSeinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="dairiSeibetsuCode" column="afT115FuzaishaTohyoShikakuYubin_dairiSeibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="dairiYubinNo" column="afT115FuzaishaTohyoShikakuYubin_dairiYubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="dairiJusho" column="afT115FuzaishaTohyoShikakuYubin_dairiJusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+    </resultMap>
+
+</mapper>

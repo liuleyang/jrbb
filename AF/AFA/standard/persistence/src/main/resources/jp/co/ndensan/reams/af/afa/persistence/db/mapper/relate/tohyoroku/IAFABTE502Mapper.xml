@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @reamsid_L AF-0130-010 lit -->
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.tohyoroku.IAFABTE502Mapper">
+    <select resultOrdered="true" id="selectSenkyoninTohyoJokyoList" resultMap="resultMap_SenkyoninTohyoJokyoEntity"
+            parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.tohyoroku.TohyorokuMapperParameter">
+        SELECT
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.allColumns_AfT112SenkyoninMeibo"/>
+        FROM
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        INNER JOIN rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        ON "AfT100Shohon"."shohonNo" = "AfT112SenkyoninMeibo"."shohonNo"
+        INNER JOIN <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = "AfT112SenkyoninMeibo"."shikibetsuCode"
+
+        WHERE "AfT100Shohon"."shohonNo" = #{抄本番号}
+    </select>
+
+    <resultMap id="resultMap_SenkyoninTohyoJokyoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.SenkyoninTohyoJokyoEntity" autoMapping="true">
+        <id property="atenaPSMEntity.shikibetsuCode" column="ShikibetsuTaisho_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler" />
+        <association property="senkyoJohoEntity" resultMap="resultMap_SenkyoJohoEntity"/>
+        <association property="senkyoninMeiboEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT112SenkyoninMeiboMapper.ResultMap_AfT112SenkyoninMeiboEntity"/>
+        <association property="atenaPSMEntity" resultMap="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+    </resultMap>
+
+    <resultMap id="resultMap_SenkyoJohoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.SenkyoJohoEntity" autoMapping="true">
+        <association property="shohonEntity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <collection property="senkyoEntity"  resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity">
+        </collection>
+    </resultMap>
+</mapper>

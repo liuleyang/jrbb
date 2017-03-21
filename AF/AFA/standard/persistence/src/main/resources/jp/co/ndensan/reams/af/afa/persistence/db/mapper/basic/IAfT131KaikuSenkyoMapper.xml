@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT131KaikuSenkyoマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT131KaikuSenkyoMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT131KaikuSenkyo">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT131KaikuSenkyoMapper.allColumns_AfT131KaikuSenkyo" />
+     FROM
+         rgaf."AfT131KaikuSenkyo"
+     WHERE
+         rgaf."AfT131KaikuSenkyo"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT131KaikuSenkyo">
+         "AfT131KaikuSenkyo"."shohonNo" as "afT131KaikuSenkyo_shohonNo",
+         "AfT131KaikuSenkyo"."insertDantaiCd" as "afT131KaikuSenkyo_insertDantaiCd",
+         "AfT131KaikuSenkyo"."insertTimestamp" as "afT131KaikuSenkyo_insertTimestamp",
+         "AfT131KaikuSenkyo"."insertReamsLoginId" as "afT131KaikuSenkyo_insertReamsLoginId",
+         "AfT131KaikuSenkyo"."insertContextId" as "afT131KaikuSenkyo_insertContextId",
+         "AfT131KaikuSenkyo"."isDeleted" as "afT131KaikuSenkyo_isDeleted",
+         "AfT131KaikuSenkyo"."updateCount" as "afT131KaikuSenkyo_updateCount",
+         "AfT131KaikuSenkyo"."lastUpdateTimestamp" as "afT131KaikuSenkyo_lastUpdateTimestamp",
+         "AfT131KaikuSenkyo"."lastUpdateReamsLoginId" as "afT131KaikuSenkyo_lastUpdateReamsLoginId",
+         "AfT131KaikuSenkyo"."nendo" as "afT131KaikuSenkyo_nendo",
+         "AfT131KaikuSenkyo"."sakuseiYMD" as "afT131KaikuSenkyo_sakuseiYMD",
+         "AfT131KaikuSenkyo"."kakuteiYMD" as "afT131KaikuSenkyo_kakuteiYMD",
+         "AfT131KaikuSenkyo"."saishinkaYMD" as "afT131KaikuSenkyo_saishinkaYMD",
+         "AfT131KaikuSenkyo"."senkyojiTorokuFlag" as "afT131KaikuSenkyo_senkyojiTorokuFlag"
+    </sql>
+
+
+    <!--テーブルAfT131KaikuSenkyoの項目をAfT131KaikuSenkyoEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT131KaikuSenkyoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT131KaikuSenkyoEntity" autoMapping="true">
+        <id property="shohonNo" column="afT131KaikuSenkyo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="insertDantaiCd" column="afT131KaikuSenkyo_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT131KaikuSenkyo_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT131KaikuSenkyo_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT131KaikuSenkyo_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT131KaikuSenkyo_isDeleted" />
+        <result property="updateCount" column="afT131KaikuSenkyo_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT131KaikuSenkyo_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT131KaikuSenkyo_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="nendo" column="afT131KaikuSenkyo_nendo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RYearTypeHandler"/>
+        <result property="sakuseiYMD" column="afT131KaikuSenkyo_sakuseiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kakuteiYMD" column="afT131KaikuSenkyo_kakuteiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="saishinkaYMD" column="afT131KaikuSenkyo_saishinkaYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="senkyojiTorokuFlag" column="afT131KaikuSenkyo_senkyojiTorokuFlag" />
+    </resultMap>
+
+</mapper>

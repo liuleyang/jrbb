@@ -1,0 +1,1157 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;NogyoSakuseiChohyo&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;NogyoSakuseiChohyoCheckList_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone&quot;,&quot;editType&quot;:1}]},&quot;NogyoSakuseiChohyoCheckList_displayNone&quot;:false,&quot;NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone&quot;:false,&quot;NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone&quot;:false,&quot;NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone&quot;:false,&quot;NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone&quot;:false,&quot;NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone&quot;:false,&quot;NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone&quot;:false}" data-is-composite-control="true" data-control-name="AFA.NogyoSakuseiChohyo"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginTop-M panelMarginBottom-M StateChangable marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G9 UzCompositeChild" id="NogyoSakuseiChohyo" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G9&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyo&quot;,&quot;title&quot;:&quot;作成帳票&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">作成帳票</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyo_panel_body_area"><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginTop-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoCheckList" style="margin-top: 0px; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoCheckList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoCheckList&quot;,&quot;title&quot;:&quot;申請書チェックリスト&quot;,&quot;marginTop&quot;:&quot;XS&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoCheckList&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoCheckList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">申請書チェックリスト</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoCheckList_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoCheckList_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoMeiboShohon" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoMeiboShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoMeiboShohon&quot;,&quot;title&quot;:&quot;選挙人名簿抄本&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoMeiboShohon&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoMeiboShohon_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">選挙人名簿抄本</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoMeiboShohon_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoMeiboShohon_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoTorokushasuList" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoTorokushasuList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoTorokushasuList&quot;,&quot;title&quot;:&quot;登録者数リスト&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoTorokushasuList&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoTorokushasuList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">登録者数リスト</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoTorokushasuList_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoTorokushasuList_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoYukenshasuList" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoYukenshasuList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoYukenshasuList&quot;,&quot;title&quot;:&quot;有権者数リスト&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoYukenshasuList&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoYukenshasuList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">有権者数リスト</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoYukenshasuList_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoYukenshasuList_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoIdoTorokushaMeibo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoIdoTorokushaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoIdoTorokushaMeibo&quot;,&quot;title&quot;:&quot;登録者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoIdoTorokushaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoIdoTorokushaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">登録者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoIdoTorokushaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoIdoTorokushaMeibo_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoIdoMasshoshaMeibo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoIdoMasshoshaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoIdoMasshoshaMeibo&quot;,&quot;title&quot;:&quot;抹消者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoIdoMasshoshaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoIdoMasshoshaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">抹消者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoIdoMasshoshaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoIdoMasshoshaMeibo_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoIdoShikkenshaMeibo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoIdoShikkenshaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoIdoShikkenshaMeibo&quot;,&quot;title&quot;:&quot;失権者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoIdoShikkenshaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoIdoShikkenshaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">失権者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoIdoShikkenshaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoIdoShikkenshaMeibo_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoIdoHyojishaMeibo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoIdoHyojishaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoIdoHyojishaMeibo&quot;,&quot;title&quot;:&quot;表示者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoIdoHyojishaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoIdoHyojishaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">表示者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoIdoHyojishaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoIdoHyojishaMeibo_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoIdoTeiseishaMeibo" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoIdoTeiseishaMeibo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoIdoTeiseishaMeibo&quot;,&quot;title&quot;:&quot;訂正者名簿&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoIdoTeiseishaMeibo&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoIdoTeiseishaMeibo_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">訂正者名簿</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoIdoTeiseishaMeibo_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoIdoTeiseishaMeibo_panel_body_area" style="display: none;"></div></div><div title="" class="UzPanel Panel-Shadow UzPanelPublish FloatLeft JSControl Panel UzPanelAndText StateChangable PanelPublish ClearFloat marginLeft-XS marginRight-XS marginBottom-XS EmptyPanel Width-G4 UzCompositeChild" id="NogyoSakuseiChohyoIdoJukiIdoshaList" style="margin-top: 0em; margin-bottom: 0px;" data-control-type="PanelPublish" data-obj="{&quot;fieldName&quot;:&quot;NogyoSakuseiChohyoIdoJukiIdoshaList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;PanelPublish&quot;,&quot;width&quot;:&quot;G4&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;NogyoSakuseiChohyoIdoJukiIdoshaList&quot;,&quot;title&quot;:&quot;住基異動者リスト&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;XS&quot;,&quot;isOpen&quot;:false,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;NogyoSakuseiChohyoIdoJukiIdoshaList&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;canPost&quot;:true,&quot;isEmptyControl&quot;:true}"><div class="UzPanelHeader" id="NogyoSakuseiChohyoIdoJukiIdoshaList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-s" style="visibility: hidden;"></span><span class="textSpan">住基異動者リスト</span><div class="groupBoxBorder" style="display: none;"></div><span class="publishSpan">出力</span><input class="publishSpan" id="NogyoSakuseiChohyoIdoJukiIdoshaList_panel_checkbox" type="checkbox"></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="NogyoSakuseiChohyoIdoJukiIdoshaList_panel_body_area" style="display: none;"></div></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var NogyoSakuseiChohyo_Design = (function (_super) {
+        __extends(NogyoSakuseiChohyo_Design, _super);
+        function NogyoSakuseiChohyo_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, NogyoSakuseiChohyo_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(NogyoSakuseiChohyo_Design.prototype, "NogyoSakuseiChohyoCheckList_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[0]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(NogyoSakuseiChohyo_Design.prototype, "NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[4]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(NogyoSakuseiChohyo_Design.prototype, "NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[5]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(NogyoSakuseiChohyo_Design.prototype, "NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[6]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(NogyoSakuseiChohyo_Design.prototype, "NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[7]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(NogyoSakuseiChohyo_Design.prototype, "NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[8]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(NogyoSakuseiChohyo_Design.prototype, "NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[9]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        NogyoSakuseiChohyo_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("NogyoSakuseiChohyoCheckList_displayNone");
+            Uz.JSControlUtil.registProperty("NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone");
+            Uz.JSControlUtil.registProperty("NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone");
+            Uz.JSControlUtil.registProperty("NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone");
+            Uz.JSControlUtil.registProperty("NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone");
+            Uz.JSControlUtil.registProperty("NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone");
+            Uz.JSControlUtil.registProperty("NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone");
+        };
+
+        NogyoSakuseiChohyo_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["NogyoSakuseiChohyoCheckList_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+
+            return editablePropertyInfo;
+        };
+        NogyoSakuseiChohyo_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "NogyoSakuseiChohyo",
+                    "items": [
+                        {
+                            "fieldName": "NogyoSakuseiChohyoCheckList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoCheckList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "申請書チェックリスト",
+                            "marginTop": "XS",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoCheckList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoMeiboShohon",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoMeiboShohon",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "選挙人名簿抄本",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoMeiboShohon"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoTorokushasuList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoTorokushasuList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "登録者数リスト",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoTorokushasuList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoYukenshasuList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoYukenshasuList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "有権者数リスト",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoYukenshasuList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoIdoTorokushaMeibo",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoIdoTorokushaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "登録者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoIdoTorokushaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoIdoMasshoshaMeibo",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoIdoMasshoshaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "抹消者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoIdoMasshoshaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoIdoShikkenshaMeibo",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoIdoShikkenshaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "失権者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoIdoShikkenshaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoIdoHyojishaMeibo",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoIdoHyojishaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "表示者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoIdoHyojishaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoIdoTeiseishaMeibo",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoIdoTeiseishaMeibo",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "訂正者名簿",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoIdoTeiseishaMeibo"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        },
+                        {
+                            "fieldName": "NogyoSakuseiChohyoIdoJukiIdoshaList",
+                            "items": [],
+                            "controlType": "PanelPublish",
+                            "width": "G4",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "NogyoSakuseiChohyoIdoJukiIdoshaList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "住基異動者リスト",
+                            "marginTop": "0em",
+                            "marginBottom": "XS",
+                            "isOpen": false,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "NogyoSakuseiChohyoIdoJukiIdoshaList"
+                                }
+                            ],
+                            "requestSettings": [],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "canPost": true,
+                            "isPublish": true,
+                            "isEmptyControl": true
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G9",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": true,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "NogyoSakuseiChohyo",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "作成帳票",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "NogyoSakuseiChohyo"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "NogyoSakuseiChohyo",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "NogyoSakuseiChohyoCheckList",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "NogyoSakuseiChohyoCheckList_displayNone"
+                },
+                {
+                    "publicChildFieldName": "NogyoSakuseiChohyoIdoTorokushaMeibo",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone"
+                },
+                {
+                    "publicChildFieldName": "NogyoSakuseiChohyoIdoMasshoshaMeibo",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone"
+                },
+                {
+                    "publicChildFieldName": "NogyoSakuseiChohyoIdoShikkenshaMeibo",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone"
+                },
+                {
+                    "publicChildFieldName": "NogyoSakuseiChohyoIdoHyojishaMeibo",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone"
+                },
+                {
+                    "publicChildFieldName": "NogyoSakuseiChohyoIdoTeiseishaMeibo",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone"
+                },
+                {
+                    "publicChildFieldName": "NogyoSakuseiChohyoIdoJukiIdoshaList",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return NogyoSakuseiChohyo_Design;
+    })(Uz.CommonChildDiv);
+    AFA.NogyoSakuseiChohyo_Design = NogyoSakuseiChohyo_Design;
+
+    (function (NogyoSakuseiChohyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        NogyoSakuseiChohyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "NogyoSakuseiChohyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.NogyoSakuseiChohyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.NogyoSakuseiChohyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoCheckList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoCheckList"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoMeiboShohon = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoMeiboShohon"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoTorokushasuList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoTorokushasuList"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoYukenshasuList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoYukenshasuList"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoTorokushaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoTorokushaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoMasshoshaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoMasshoshaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoShikkenshaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoShikkenshaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoHyojishaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoHyojishaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoTeiseishaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoTeiseishaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoJukiIdoshaList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoJukiIdoshaList"));
+            };
+            return Controls;
+        })();
+        NogyoSakuseiChohyo.Controls = Controls;
+    })(AFA.NogyoSakuseiChohyo || (AFA.NogyoSakuseiChohyo = {}));
+    var NogyoSakuseiChohyo = AFA.NogyoSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (NogyoSakuseiChohyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new NogyoSakuseiChohyo.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        NogyoSakuseiChohyo.ModeController = ModeController;
+    })(AFA.NogyoSakuseiChohyo || (AFA.NogyoSakuseiChohyo = {}));
+    var NogyoSakuseiChohyo = AFA.NogyoSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (NogyoSakuseiChohyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new NogyoSakuseiChohyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("NogyoSakuseiChohyoCheckList_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoCheckList_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoCheckList().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoCheckList_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoCheckList().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoTorokushaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoTorokushaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoTorokushaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoTorokushaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoMasshoshaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoMasshoshaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoShikkenshaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoShikkenshaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoHyojishaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoHyojishaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoHyojishaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoHyojishaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoTeiseishaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoTeiseishaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoJukiIdoshaList().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoJukiIdoshaList().displayNone = value;
+            };
+            return PublicProperties;
+        })();
+        NogyoSakuseiChohyo.PublicProperties = PublicProperties;
+    })(AFA.NogyoSakuseiChohyo || (AFA.NogyoSakuseiChohyo = {}));
+    var NogyoSakuseiChohyo = AFA.NogyoSakuseiChohyo;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['NOGYOSAKUSEICHOHYO'] = {};
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyo').getProperty();parameter0.NogyoSakuseiChohyoCheckList = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoCheckList').getProperty();parameter0.NogyoSakuseiChohyoMeiboShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoMeiboShohon').getProperty();parameter0.NogyoSakuseiChohyoTorokushasuList = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoTorokushasuList').getProperty();parameter0.NogyoSakuseiChohyoYukenshasuList = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoYukenshasuList').getProperty();parameter0.NogyoSakuseiChohyoIdoTorokushaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoTorokushaMeibo').getProperty();parameter0.NogyoSakuseiChohyoIdoMasshoshaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoMasshoshaMeibo').getProperty();parameter0.NogyoSakuseiChohyoIdoShikkenshaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoShikkenshaMeibo').getProperty();parameter0.NogyoSakuseiChohyoIdoHyojishaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoHyojishaMeibo').getProperty();parameter0.NogyoSakuseiChohyoIdoTeiseishaMeibo = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoTeiseishaMeibo').getProperty();parameter0.NogyoSakuseiChohyoIdoJukiIdoshaList = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoJukiIdoshaList').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoCheckListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoCheckList').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoMeiboShohonRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoMeiboShohon').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoTorokushasuListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoTorokushasuList').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoYukenshasuListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoYukenshasuList').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoIdoTorokushaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoTorokushaMeibo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoIdoMasshoshaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoMasshoshaMeibo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoIdoShikkenshaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoShikkenshaMeibo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoIdoHyojishaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoHyojishaMeibo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoIdoTeiseishaMeiboRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoTeiseishaMeibo').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['NOGYOSAKUSEICHOHYO'].NogyoSakuseiChohyoIdoJukiIdoshaListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_NogyoSakuseiChohyoIdoJukiIdoshaList').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (NogyoSakuseiChohyo) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        NogyoSakuseiChohyo.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "NogyoSakuseiChohyo";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.NogyoSakuseiChohyo.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.NogyoSakuseiChohyo.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.NogyoSakuseiChohyo = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoCheckList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoCheckList"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoMeiboShohon = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoMeiboShohon"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoTorokushasuList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoTorokushasuList"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoYukenshasuList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoYukenshasuList"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoTorokushaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoTorokushaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoMasshoshaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoMasshoshaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoShikkenshaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoShikkenshaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoHyojishaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoHyojishaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoTeiseishaMeibo = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoTeiseishaMeibo"));
+            };
+
+            Controls.prototype.NogyoSakuseiChohyoIdoJukiIdoshaList = function () {
+                return new UZA.PanelPublish(this.convFiledName("NogyoSakuseiChohyoIdoJukiIdoshaList"));
+            };
+            return Controls;
+        })();
+        NogyoSakuseiChohyo.Controls = Controls;
+    })(AFA.NogyoSakuseiChohyo || (AFA.NogyoSakuseiChohyo = {}));
+    var NogyoSakuseiChohyo = AFA.NogyoSakuseiChohyo;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (NogyoSakuseiChohyo) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new NogyoSakuseiChohyo.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        NogyoSakuseiChohyo.ModeController = ModeController;
+    })(AFA.NogyoSakuseiChohyo || (AFA.NogyoSakuseiChohyo = {}));
+    var NogyoSakuseiChohyo = AFA.NogyoSakuseiChohyo;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (NogyoSakuseiChohyo) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new NogyoSakuseiChohyo.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("NogyoSakuseiChohyoCheckList_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoTorokushaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoHyojishaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("NogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoCheckList_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoCheckList().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoCheckList_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoCheckList().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoTorokushaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoTorokushaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoTorokushaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoTorokushaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoMasshoshaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoMasshoshaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoMasshoshaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoShikkenshaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoShikkenshaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoShikkenshaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoHyojishaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoHyojishaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoHyojishaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoHyojishaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoTeiseishaMeibo().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoTeiseishaMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoTeiseishaMeibo().displayNone = value;
+            };
+
+            PublicProperties.prototype.getNogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone = function () {
+                return this.controls.NogyoSakuseiChohyoIdoJukiIdoshaList().displayNone;
+            };
+
+            PublicProperties.prototype.setNogyoSakuseiChohyoIdoJukiIdoMeibo_displayNone = function (value) {
+                this.controls.NogyoSakuseiChohyoIdoJukiIdoshaList().displayNone = value;
+            };
+            return PublicProperties;
+        })();
+        NogyoSakuseiChohyo.PublicProperties = PublicProperties;
+    })(AFA.NogyoSakuseiChohyo || (AFA.NogyoSakuseiChohyo = {}));
+    var NogyoSakuseiChohyo = AFA.NogyoSakuseiChohyo;
+})(AFA || (AFA = {}));
+</script></div>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  @reamsid_L AF-0190-010 guancy-->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.shikakushokai.IShikakuShokaiMapper">
+
+    <select resultOrdered="false" id="select不在者投票資格リストByKey1" resultMap="resultMap_FuzaishaTohyoShikakuEntity"  fetchSize="500">
+        <include refid="selectFuzaishaTohyoShikakuEntity" />
+    </select>
+
+    <sql id="selectFuzaishaTohyoShikakuEntity">
+        SELECT
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.allColumns_AfT114FuzaishaTohyoShikaku" />
+            ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT115FuzaishaTohyoShikakuYubinMapper.allColumns_AfT115FuzaishaTohyoShikakuYubin" />
+        FROM
+        rgaf."AfT114FuzaishaTohyoShikaku" AS "AfT114FuzaishaTohyoShikaku"
+        LEFT JOIN
+        rgaf."AfT115FuzaishaTohyoShikakuYubin" AS "AfT115FuzaishaTohyoShikakuYubin"
+        ON
+        "AfT114FuzaishaTohyoShikaku"."shikibetsuCode" = "AfT115FuzaishaTohyoShikakuYubin"."shikibetsuCode"
+        AND
+        "AfT114FuzaishaTohyoShikaku"."seq" = "AfT115FuzaishaTohyoShikakuYubin"."seq"
+        WHERE
+        "AfT114FuzaishaTohyoShikaku"."shikibetsuCode" = #{識別コード}
+        ORDER BY
+        "AfT114FuzaishaTohyoShikaku"."tohyoShikakuShurui" ASC,
+        "AfT114FuzaishaTohyoShikaku"."seq" DESC 
+    </sql>
+    
+    <resultMap id="resultMap_FuzaishaTohyoShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.shikakushokai.FuzaishaTohyoShikakuEntity" autoMapping="true">
+        <id property="不在者投票資格Entity.shikibetsuCode" column="afT114FuzaishaTohyoShikaku_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="不在者投票資格Entity.tohyoShikakuShurui" column="afT114FuzaishaTohyoShikaku_tohyoShikakuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="不在者投票資格Entity.seq" column="afT114FuzaishaTohyoShikaku_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <association property="不在者投票資格Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.ResultMap_AfT114FuzaishaTohyoShikakuEntity"/>
+        <association property="郵便投票資格付随情報Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT115FuzaishaTohyoShikakuYubinMapper.ResultMap_AfT115FuzaishaTohyoShikakuYubinEntity"/>
+    </resultMap>
+</mapper>

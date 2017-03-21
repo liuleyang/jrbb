@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCM2080",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "領事官保守",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMM2080",
+     "toLayoutTitle": "領事官保守",
+     "toState": ""
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMM2080",
+     "layoutTitle": "領事官保守",
+     "eventName": "complete",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

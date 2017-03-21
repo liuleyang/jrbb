@@ -1,0 +1,8 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+shisetsuShubetsu,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.施設種別.getCodeShubetsu(),Description,,施設種別,A
+code,varchar,RString,,,,,コード,A
+kijitsuFuzaiKubun,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.期日前不在者区分.getCodeShubetsu(),Description,,期日前不在者区分,A
+currentNumber,int8,long,,,,,番号,A
+minNumber,int8,long,,,,,MIN番号,A
+maxNumber,int8,long,,,,,MAX番号,A
+effectiveDigit,int2,int,,,,,有効桁数,A

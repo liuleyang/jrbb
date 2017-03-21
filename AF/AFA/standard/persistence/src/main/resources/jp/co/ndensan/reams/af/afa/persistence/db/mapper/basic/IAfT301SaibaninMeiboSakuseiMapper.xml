@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT301SaibaninMeiboSakuseiマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT301SaibaninMeiboSakuseiMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT301SaibaninMeiboSakusei">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT301SaibaninMeiboSakuseiMapper.allColumns_AfT301SaibaninMeiboSakusei" />
+     FROM
+         rgaf."AfT301SaibaninMeiboSakusei"
+     WHERE
+         rgaf."AfT301SaibaninMeiboSakusei"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT301SaibaninMeiboSakusei">
+         "AfT301SaibaninMeiboSakusei"."nendo" as "afT301SaibaninMeiboSakusei_nendo",
+         "AfT301SaibaninMeiboSakusei"."insertDantaiCd" as "afT301SaibaninMeiboSakusei_insertDantaiCd",
+         "AfT301SaibaninMeiboSakusei"."insertTimestamp" as "afT301SaibaninMeiboSakusei_insertTimestamp",
+         "AfT301SaibaninMeiboSakusei"."insertReamsLoginId" as "afT301SaibaninMeiboSakusei_insertReamsLoginId",
+         "AfT301SaibaninMeiboSakusei"."insertContextId" as "afT301SaibaninMeiboSakusei_insertContextId",
+         "AfT301SaibaninMeiboSakusei"."isDeleted" as "afT301SaibaninMeiboSakusei_isDeleted",
+         "AfT301SaibaninMeiboSakusei"."updateCount" as "afT301SaibaninMeiboSakusei_updateCount",
+         "AfT301SaibaninMeiboSakusei"."lastUpdateTimestamp" as "afT301SaibaninMeiboSakusei_lastUpdateTimestamp",
+         "AfT301SaibaninMeiboSakusei"."lastUpdateReamsLoginId" as "afT301SaibaninMeiboSakusei_lastUpdateReamsLoginId",
+         "AfT301SaibaninMeiboSakusei"."shohonNo" as "afT301SaibaninMeiboSakusei_shohonNo",
+         "AfT301SaibaninMeiboSakusei"."hozonSaki" as "afT301SaibaninMeiboSakusei_hozonSaki",
+         "AfT301SaibaninMeiboSakusei"."fileName" as "afT301SaibaninMeiboSakusei_fileName",
+         "AfT301SaibaninMeiboSakusei"."meiboTorikomiZumiFlag" as "afT301SaibaninMeiboSakusei_meiboTorikomiZumiFlag"
+    </sql>
+
+
+    <!--テーブルAfT301SaibaninMeiboSakuseiの項目をAfT301SaibaninMeiboSakuseiEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT301SaibaninMeiboSakuseiEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT301SaibaninMeiboSakuseiEntity" autoMapping="true">
+        <id property="nendo" column="afT301SaibaninMeiboSakusei_nendo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RYearTypeHandler"/>
+        <result property="insertDantaiCd" column="afT301SaibaninMeiboSakusei_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT301SaibaninMeiboSakusei_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT301SaibaninMeiboSakusei_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT301SaibaninMeiboSakusei_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT301SaibaninMeiboSakusei_isDeleted" />
+        <result property="updateCount" column="afT301SaibaninMeiboSakusei_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT301SaibaninMeiboSakusei_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT301SaibaninMeiboSakusei_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shohonNo" column="afT301SaibaninMeiboSakusei_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="hozonSaki" column="afT301SaibaninMeiboSakusei_hozonSaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="fileName" column="afT301SaibaninMeiboSakusei_fileName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="meiboTorikomiZumiFlag" column="afT301SaibaninMeiboSakusei_meiboTorikomiZumiFlag" />
+    </resultMap>
+
+</mapper>

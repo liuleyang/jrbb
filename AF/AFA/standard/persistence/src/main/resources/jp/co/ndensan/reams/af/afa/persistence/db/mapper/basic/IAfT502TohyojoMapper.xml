@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT502Tohyojoマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper">
+
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT502Tohyojo">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo" />
+        FROM
+        rgaf."AfT502Tohyojo"
+        WHERE
+        rgaf."AfT502Tohyojo"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT502Tohyojo">
+        "AfT502Tohyojo"."tohyojoCode" as "afT502Tohyojo_tohyojoCode",
+        "AfT502Tohyojo"."insertDantaiCd" as "afT502Tohyojo_insertDantaiCd",
+        "AfT502Tohyojo"."insertTimestamp" as "afT502Tohyojo_insertTimestamp",
+        "AfT502Tohyojo"."insertReamsLoginId" as "afT502Tohyojo_insertReamsLoginId",
+        "AfT502Tohyojo"."insertContextId" as "afT502Tohyojo_insertContextId",
+        "AfT502Tohyojo"."isDeleted" as "afT502Tohyojo_isDeleted",
+        "AfT502Tohyojo"."updateCount" as "afT502Tohyojo_updateCount",
+        "AfT502Tohyojo"."lastUpdateTimestamp" as "afT502Tohyojo_lastUpdateTimestamp",
+        "AfT502Tohyojo"."lastUpdateReamsLoginId" as "afT502Tohyojo_lastUpdateReamsLoginId",
+        "AfT502Tohyojo"."tohyojoName" as "afT502Tohyojo_tohyojoName",
+        "AfT502Tohyojo"."kanaTohyojoName" as "afT502Tohyojo_kanaTohyojoName",
+        "AfT502Tohyojo"."searchKanaTohyojoName" as "afT502Tohyojo_searchKanaTohyojoName",
+        "AfT502Tohyojo"."tohyoStartTime" as "afT502Tohyojo_tohyoStartTime",
+        "AfT502Tohyojo"."tohyoStopTime" as "afT502Tohyojo_tohyoStopTime",
+        "AfT502Tohyojo"."zaigaiTohyoKanoFlag" as "afT502Tohyojo_zaigaiTohyoKanoFlag",
+        "AfT502Tohyojo"."yubinNo" as "afT502Tohyojo_yubinNo",
+        "AfT502Tohyojo"."jusho" as "afT502Tohyojo_jusho",
+        "AfT502Tohyojo"."tohyojoAtena" as "afT502Tohyojo_tohyojoAtena",
+        "AfT502Tohyojo"."telNo" as "afT502Tohyojo_felNo",
+        "AfT502Tohyojo"."faxNo" as "afT502Tohyojo_faxNo",
+        "AfT502Tohyojo"."mapImage" as "afT502Tohyojo_mapImage"
+    </sql>
+
+
+    <!--テーブルAfT502Tohyojoの項目をAfT502TohyojoEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT502TohyojoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT502TohyojoEntity" autoMapping="true">
+        <id property="tohyojoCode" column="afT502Tohyojo_tohyojoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT502Tohyojo_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT502Tohyojo_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT502Tohyojo_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT502Tohyojo_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT502Tohyojo_isDeleted" />
+        <result property="updateCount" column="afT502Tohyojo_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT502Tohyojo_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT502Tohyojo_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyojoName" column="afT502Tohyojo_tohyojoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kanaTohyojoName" column="afT502Tohyojo_kanaTohyojoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="searchKanaTohyojoName" column="afT502Tohyojo_searchKanaTohyojoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyoStartTime" column="afT502Tohyojo_tohyoStartTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="tohyoStopTime" column="afT502Tohyojo_tohyoStopTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="zaigaiTohyoKanoFlag" column="afT502Tohyojo_zaigaiTohyoKanoFlag" />
+        <result property="yubinNo" column="afT502Tohyojo_yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="jusho" column="afT502Tohyojo_jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="tohyojoAtena" column="afT502Tohyojo_tohyojoAtena" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="telNo" column="afT502Tohyojo_telNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.TelNoTypeHandler"/>
+        <result property="faxNo" column="afT502Tohyojo_faxNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.TelNoTypeHandler"/>
+        <result property="mapImage" column="afT502Tohyojo_mapImage" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

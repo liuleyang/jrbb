@@ -1,0 +1,11 @@
+﻿senkyoShurui,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.選挙種類.getCodeShubetsu(),Description,,選挙種類,A
+choikiCode,UDD007ChoikiCode,ChoikiCode,,,,,町域コード,A
+kaishiBanchi1BanchiCode,UDD006BanchiCode,BanchiCode,,,,,開始番地1,A
+kaishiBanchi2BanchiCode,UDD006BanchiCode,BanchiCode,,,,,開始番地2,A
+kaishiBanchi3BanchiCode,UDD006BanchiCode,BanchiCode,,,,,開始番地3,A
+kaishiBanchi4BanchiCode,UDD006BanchiCode,BanchiCode,,,,,開始番地4,A
+shuiryoBanchi1BanchiCode,UDD006BanchiCode,BanchiCode,,,,,終了番地1,A
+shuiryoBanchi2BanchiCode,UDD006BanchiCode,BanchiCode,,,,,終了番地2,A
+shuiryoBanchi3BanchiCode,UDD006BanchiCode,BanchiCode,,,,,終了番地3,A
+shuiryoBanchi4BanchiCode,UDD006BanchiCode,BanchiCode,,,,,終了番地4,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A

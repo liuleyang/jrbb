@@ -1,0 +1,5 @@
+﻿ryojikanCode,varchar,RString,,,,,領事官コード,A
+ryojikanName,varchar,RString,,,,,領事官名称,A
+kanaRyojikanName,varchar,RString,,,,,カナ領事官名称,A
+searchKanaRyojikanName,varchar,RString,,,,,検索用カナ領事官名称,A
+hyojijun,int2,int,,,,,表示順,A

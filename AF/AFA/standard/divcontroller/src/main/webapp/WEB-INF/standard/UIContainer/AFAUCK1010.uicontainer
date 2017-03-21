@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCK1010",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "海区漁業調整委員会委員選挙人名簿作成",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMK1010",
+     "toLayoutTitle": "海区漁業調整委員会委員選挙人名簿作成",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMK1010",
+     "layoutTitle": "海区漁業調整委員会委員選挙人名簿作成",
+     "eventName": "バッチ起動",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT508Hojoshaマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT508HojoshaMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT508Hojosha">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT508HojoshaMapper.allColumns_AfT508Hojosha" />
+     FROM
+         rgaf."AfT508Hojosha"
+     WHERE
+         rgaf."AfT508Hojosha"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT508Hojosha">
+         "AfT508Hojosha"."shohonNo" as "afT508Hojosha_shohonNo",
+         "AfT508Hojosha"."shikibetsuCode" as "afT508Hojosha_shikibetsuCode",
+         "AfT508Hojosha"."insertDantaiCd" as "afT508Hojosha_insertDantaiCd",
+         "AfT508Hojosha"."insertTimestamp" as "afT508Hojosha_insertTimestamp",
+         "AfT508Hojosha"."insertReamsLoginId" as "afT508Hojosha_insertReamsLoginId",
+         "AfT508Hojosha"."insertContextId" as "afT508Hojosha_insertContextId",
+         "AfT508Hojosha"."isDeleted" as "afT508Hojosha_isDeleted",
+         "AfT508Hojosha"."updateCount" as "afT508Hojosha_updateCount",
+         "AfT508Hojosha"."lastUpdateTimestamp" as "afT508Hojosha_lastUpdateTimestamp",
+         "AfT508Hojosha"."lastUpdateReamsLoginId" as "afT508Hojosha_lastUpdateReamsLoginId",
+         "AfT508Hojosha"."tohyojoCode" as "afT508Hojosha_tohyojoCode"
+    </sql>
+
+
+    <!--テーブルAfT508Hojoshaの項目をAfT508HojoshaEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT508HojoshaEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT508HojoshaEntity" autoMapping="true">
+        <id property="shohonNo" column="afT508Hojosha_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="shikibetsuCode" column="afT508Hojosha_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="insertDantaiCd" column="afT508Hojosha_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT508Hojosha_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT508Hojosha_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT508Hojosha_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT508Hojosha_isDeleted" />
+        <result property="updateCount" column="afT508Hojosha_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT508Hojosha_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT508Hojosha_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyojoCode" column="afT508Hojosha_tohyojoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

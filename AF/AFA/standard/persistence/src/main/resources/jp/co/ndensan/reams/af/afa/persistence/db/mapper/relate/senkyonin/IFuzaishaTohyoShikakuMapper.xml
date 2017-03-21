@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 不在者投票資格のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.IFuzaishaTohyoShikakuMapper">
+
+    <select resultOrdered="true" id="select不在者投票資格ByKey" resultMap="resultMap_FuzaishaTohyoShikakuEntity" fetchSize="500">
+        <include refid="selectFuzaishaTohyoShikakuEntity" />
+    </select>
+
+    <select resultOrdered="true" id="select不在者投票資格リストBy主キー1" resultMap="resultMap_FuzaishaTohyoShikakuEntity" fetchSize="500">
+        <include refid="selectFuzaishaTohyoShikakuEntity" />
+    </select>
+
+    <sql id="selectFuzaishaTohyoShikakuEntity">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.allColumns_AfT114FuzaishaTohyoShikaku" />
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT115FuzaishaTohyoShikakuYubinMapper.allColumns_AfT115FuzaishaTohyoShikakuYubin" />
+        FROM
+        rgaf."AfT114FuzaishaTohyoShikaku" AS "AfT114FuzaishaTohyoShikaku"
+        LEFT OUTER JOIN
+        rgaf."AfT115FuzaishaTohyoShikakuYubin" AS "AfT115FuzaishaTohyoShikakuYubin"
+        ON
+        "AfT114FuzaishaTohyoShikaku"."shikibetsuCode" = "AfT115FuzaishaTohyoShikakuYubin"."shikibetsuCode"
+
+    </sql>
+    <resultMap id="resultMap_FuzaishaTohyoShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.senkyonin.fuzaishatohyoshikaku.FuzaishaTohyoShikakuEntity" autoMapping="true">
+        <association property="不在者投票資格Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.resultMap_AfT114FuzaishaTohyoShikakuEntity"/>
+        <collection property="郵便投票資格付随情報Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT115FuzaishaTohyoShikakuYubinMapper.resultMap_AfT114FuzaishaTohyoShikakuEntity"/>
+    </resultMap>
+</mapper>

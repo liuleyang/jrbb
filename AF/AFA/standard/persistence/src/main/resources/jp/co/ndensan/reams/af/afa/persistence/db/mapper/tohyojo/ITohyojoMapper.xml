@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0710-020 liuyj -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.tohyojo.ITohyojoMapper">
+    <select resultOrdered="false" id="selectTohyojo"  resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"
+            parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.tohyojo.TohyojoMybatisParameter">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo"/>
+        FROM
+        rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+        INNER JOIN rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+        ON "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"
+        WHERE
+        "AfT504TohyokuRelation"."senkyoShurui" = #{senkyoShurui}
+        AND "AfT504TohyokuRelation"."tohyokuCode" = #{tohyokuCode}
+    </select>
+
+
+</mapper>

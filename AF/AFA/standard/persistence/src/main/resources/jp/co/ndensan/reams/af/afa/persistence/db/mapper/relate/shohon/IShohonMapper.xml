@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 抄本のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.shohon.IShohonMapper">
+
+    <select resultOrdered="true" id="select抄本By番号" resultMap="resultMap_ShohonEntity" fetchSize="500">
+        <include refid="selectShohonEntity" />
+    </select>
+
+    <sql id="selectShohonEntity">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        WHERE "AfT100Shohon"."shohonNo" = #{抄本番号}
+    </sql>
+
+    <resultMap id="resultMap_ShohonEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.shohon.shohon.ShohonEntity" autoMapping="true">
+        <id property="抄本Entity.shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <association property="抄本Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <collection property="選挙Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+    </resultMap>
+
+    <select resultOrdered="true" id="select最後定時登録" resultType="jp.co.ndensan.reams.uz.uza.lang.FlexibleDate" fetchSize="500">
+        SELECT
+        MAX(AfT100Shohon."tohyoYMD") as "afT100Shohon_tohyoYMD"
+        FROM rgaf."AfT100Shohon" AS AfT100Shohon
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS AfT111Senkyo
+        ON AfT100Shohon."shohonNo" = AfT111Senkyo."shohonNo"
+        AND AfT100Shohon."tohyoYMD" = AfT111Senkyo."kijunYMD"
+        WHERE
+        <if test="isシミュレーション">
+            AfT100Shohon."shohonNo" <![CDATA[>=]]> 10000
+        </if>
+        <if test="!isシミュレーション">
+            AfT100Shohon."shohonNo" <![CDATA[<]]> 10000
+        </if>
+    </select>
+
+
+
+    <select resultOrdered="true" id="select抄本DDL" resultType="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT100ShohonEntity" fetchSize="500">
+        SELECT
+        AfT100Shohon.*
+        FROM rgaf."AfT100Shohon" AS AfT100Shohon
+        <if test="is海区">
+            INNER JOIN rgaf."AfT131KaikuSenkyo" AS AfT131KaikuSenkyo
+            ON AfT100Shohon."shohonNo" = AfT131KaikuSenkyo."shohonNo"
+            <if test="選挙時登録フラグ != null">
+                AND AfT131KaikuSenkyo."senkyojiTorokuFlag" = #{選挙時登録フラグ}
+            </if>
+        </if>
+        <where>
+            <if test="isシミュレーション">
+                AfT100Shohon."shohonNo" <![CDATA[>=]]> 10000
+            </if>
+            <if test="!isシミュレーション">
+                AfT100Shohon."shohonNo" <![CDATA[<]]> 10000
+            </if>
+            <if test="is過去分のみ">
+                AND AfT100Shohon."tohyoYMD" <![CDATA[<]]> #{kijunYmd}
+
+            </if>
+            <if test="!is過去分のみ">
+                <if test="!is過去分も含める">
+                    AND AfT100Shohon."tohyoYMD" <![CDATA[>=]]> #{kijunYmd}
+                </if>
+            </if>
+            <if test ="名簿調製用連携の選挙種類List != null and !名簿調製用連携の選挙種類List.isEmpty()">
+                <foreach item="選挙種類" index="index" collection="名簿調製用連携の選挙種類List" 
+                         open='AND AfT100Shohon."senkyoShurui" IN(' separator="," close=")">
+                    #{選挙種類}
+                </foreach>
+            </if>
+            <if test ="名簿調製用連携の選挙種類List == null or 名簿調製用連携の選挙種類List.isEmpty()">
+                <if test="isUseSenkyoShurui">
+                    AND  AfT100Shohon."senkyoShurui" = #{senkyoShurui}
+                </if>
+            </if>  
+            <if test="isNotEq定時登録">
+                AND  AfT100Shohon."senkyoShurui" != '0'
+            </if>
+        </where>
+        ORDER BY
+        AfT100Shohon."tohyoYMD" desc,
+        AfT100Shohon."senkyoShurui" asc
+    </select>
+
+</mapper>

@@ -1,0 +1,374 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;KojinJoho&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;KojinJoho_title&quot;,&quot;editType&quot;:0}]},&quot;KojinJoho_title&quot;:&quot;住民情報&quot;}" data-is-composite-control="true" data-control-name="AFA.KojinJoho"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginBottom-M StateChangable marginBottom-Default UzCommonChildDivPanel Width-G11 UzCompositeChild" id="KojinJoho" style="margin: 0em 0em 0px;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;KojinJoho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G11&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;KojinJoho&quot;,&quot;title&quot;:&quot;住民情報&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KojinJoho&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KojinJoho_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">住民情報</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="KojinJoho_panel_body_area"><div title="" class="JSControl UzCompositeControl ClearFloat FloatLeft Width-XS" id="ccdKojinJohoUR" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdKojinJohoUR&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdKojinJohoUR&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;UAX&quot;,&quot;controlName&quot;:&quot;AtenaShokaiSimple&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;&quot;,&quot;controlName&quot;:&quot;&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[{&quot;modeKey&quot;:&quot;JuminShubetsuDisplay&quot;,&quot;modeValue&quot;:&quot;個人&quot;},{&quot;modeKey&quot;:&quot;DisplayType&quot;,&quot;modeValue&quot;:&quot;二行タイプ&quot;}],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;canOpenAndClose&quot;:false,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;title&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;canOpenAndClose&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;AtenaShokaiSimple_eraseBorder&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;AtenaShokaiSimple_width&quot;,&quot;editType&quot;:0}]},&quot;AtenaShokaiSimple_eraseBorder&quot;:true,&quot;AtenaShokaiSimple_width&quot;:&quot;1200px&quot;}" data-is-composite-control="true" data-control-name="UAX.AtenaShokaiSimple"></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var KojinJoho_Design = (function (_super) {
+        __extends(KojinJoho_Design, _super);
+        function KojinJoho_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, KojinJoho_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(KojinJoho_Design.prototype, "KojinJoho_title", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"])["title"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"])["title"] = value;
+                } else {
+                    this.layout.items[0]["title"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        KojinJoho_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("KojinJoho_title");
+        };
+
+        KojinJoho_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["KojinJoho_title"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"]).getEditablePropertyInfo()["title"];
+
+            return editablePropertyInfo;
+        };
+        KojinJoho_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "KojinJoho",
+                    "items": [
+                        {
+                            "fieldName": "ccdKojinJohoUR",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdKojinJohoUR",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "title": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "URA",
+                            "controlName": "AtenaShokaiSimple",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [
+                                {
+                                    "key": "",
+                                    "controlName": ""
+                                }
+                            ],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "canOpenAndClose": false,
+                            "AtenaShokaiSimple_eraseBorder": true
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G12",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "KojinJoho",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "住民情報",
+                    "marginTop": "0em",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "KojinJoho"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "focusPositionID": "restoreLayoutButton",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "KojinJoho",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "KojinJoho",
+                    "publicChildProperty": "title",
+                    "newPropertyName": "KojinJoho_title"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return KojinJoho_Design;
+    })(Uz.CommonChildDiv);
+    AFA.KojinJoho_Design = KojinJoho_Design;
+
+    (function (KojinJoho) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        KojinJoho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KojinJoho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KojinJoho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.KojinJoho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdKojinJohoUR = function () {
+                return new UAX.AtenaShokaiSimple.ModeController("ccdKojinJohoUR");
+            };
+            return Controls;
+        })();
+        KojinJoho.Controls = Controls;
+    })(AFA.KojinJoho || (AFA.KojinJoho = {}));
+    var KojinJoho = AFA.KojinJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KojinJoho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KojinJoho.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KojinJoho.ModeController = ModeController;
+    })(AFA.KojinJoho || (AFA.KojinJoho = {}));
+    var KojinJoho = AFA.KojinJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KojinJoho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new KojinJoho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("KojinJoho_title", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getKojinJoho_title = function () {
+                return this.controls.KojinJoho().title;
+            };
+
+            PublicProperties.prototype.setKojinJoho_title = function (value) {
+                this.controls.KojinJoho().title = value;
+            };
+            return PublicProperties;
+        })();
+        KojinJoho.PublicProperties = PublicProperties;
+    })(AFA.KojinJoho || (AFA.KojinJoho = {}));
+    var KojinJoho = AFA.KojinJoho;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+       
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['KOJINJOHO'] = {};
+AFA['KOJINJOHO'].KojinJohoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KojinJoho').getProperty();parameter0.ccdKojinJohoUR = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdKojinJohoUR').getPostParameter();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (KojinJoho) {
+        var Events = (function () {
+            function Events() {
+            }
+            return Events;
+        })();
+        KojinJoho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KojinJoho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KojinJoho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.KojinJoho.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.KojinJoho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdKojinJohoUR = function () {
+                return new UAX.AtenaShokaiSimple.ModeController(this.convFiledName("ccdKojinJohoUR"));
+            };
+            return Controls;
+        })();
+        KojinJoho.Controls = Controls;
+    })(AFA.KojinJoho || (AFA.KojinJoho = {}));
+    var KojinJoho = AFA.KojinJoho;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (KojinJoho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KojinJoho.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KojinJoho.ModeController = ModeController;
+    })(AFA.KojinJoho || (AFA.KojinJoho = {}));
+    var KojinJoho = AFA.KojinJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KojinJoho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new KojinJoho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("KojinJoho_title", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getKojinJoho_title = function () {
+                return this.controls.KojinJoho().title;
+            };
+
+            PublicProperties.prototype.setKojinJoho_title = function (value) {
+                this.controls.KojinJoho().title = value;
+            };
+            return PublicProperties;
+        })();
+        KojinJoho.PublicProperties = PublicProperties;
+    })(AFA.KojinJoho || (AFA.KojinJoho = {}));
+    var KojinJoho = AFA.KojinJoho;
+})(AFA || (AFA = {}));
+</script></div>

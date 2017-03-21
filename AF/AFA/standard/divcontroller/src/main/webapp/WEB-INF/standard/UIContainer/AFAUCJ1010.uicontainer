@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCJ1010",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "農業委員会委員選挙人名簿作成",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFA1010010",
+     "toLayoutTitle": "農業委員会委員選挙人名簿作成",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFA1010010",
+     "layoutTitle": "農業委員会委員選挙人名簿作成",
+     "eventName": "バッチ起動",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1358 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SearchSimpleTojitsuDialog&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[{&quot;key&quot;:&quot;selectedShikibetsuCode&quot;,&quot;controlName&quot;:&quot;SearchSimpleTojitsuDialog.txtHdnShikibetsuCode&quot;},{&quot;key&quot;:&quot;selectedSenkyoShurui&quot;,&quot;controlName&quot;:&quot;SearchSimpleTojitsuDialog.txtHdnSenkyoShurui&quot;},{&quot;key&quot;:&quot;selectedShohonNo&quot;,&quot;controlName&quot;:&quot;SearchSimpleTojitsuDialog.txtHdnShohonNo&quot;},{&quot;key&quot;:&quot;selectedTohyokuCode&quot;,&quot;controlName&quot;:&quot;SearchSimpleTojitsuDialog.txtHdnTohyokuCode&quot;}],&quot;dialogOkEventNameForDialog&quot;:&quot;onSelect_dgSearchKekkaList&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;CloseCancel&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.SearchSimpleTojitsuDialog"><div title="" class="UzPanel FloatLeft JSControl Panel panelMarginTop-M panelMarginBottom-M StateChangable marginRight-Default marginTop-Default marginBottom-Default UzCommonChildDivPanel Width-G10 UzCompositeChild" id="SearchSimpleTojitsuDialog" style="margin-top: 0px; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;SearchSimpleTojitsuDialog&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G10&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;SearchSimpleTojitsuDialog&quot;,&quot;title&quot;:&quot;&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;SearchSimpleTojitsuDialog&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SearchSimpleTojitsuDialog/onLoad&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onClick_btnReSearch&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SearchSimpleTojitsuDialog/onClick_btnReSearch&quot;},{&quot;eventName&quot;:&quot;onClick_btnSearch&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SearchSimpleTojitsuDialog/onClick_btnSearch&quot;},{&quot;eventName&quot;:&quot;onClick_btnClear&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SearchSimpleTojitsuDialog/onClick_btnClear&quot;},{&quot;eventName&quot;:&quot;onSelect_dgSearchKekkaList&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SearchSimpleTojitsuDialog/onSelect_dgSearchKekkaList&quot;},{&quot;eventName&quot;:&quot;onClick_btnkHyoji&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/SearchSimpleTojitsuDialog/onClick_btnkHyoji&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnSenkyoShurui&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnShohonNo&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnShikibetsuCode&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;txtHdnTohyokuCode&quot;,&quot;value&quot;:&quot;&quot;},{&quot;propertyName&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;createFile&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="SearchSimpleTojitsuDialog_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="SearchSimpleTojitsuDialog_panel_body_area"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText StateChangable Width-G10 UzCompositeChild" id="SearchTojitsuJoken" style="margin: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;SearchTojitsuJoken&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G10&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;SearchTojitsuJoken&quot;,&quot;title&quot;:&quot;検索条件指定&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;SearchTojitsuJoken&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onClick_btnClear&quot;,&quot;requestUrl&quot;:&quot;&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;onLoadProperty&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="SearchTojitsuJoken_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">検索条件指定</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="SearchTojitsuJoken_panel_body_area"><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="ccdShohon" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShohon&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlShohon_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;chkKakoShohon_displayNone&quot;,&quot;editType&quot;:1}]},&quot;ddlShohon_disabled&quot;:true,&quot;ddlShohon_required&quot;:false,&quot;ddlShohon_labelText&quot;:&quot;抄本&quot;,&quot;ddlShohon_labelWidth&quot;:&quot;S&quot;,&quot;ddlShohon_width&quot;:&quot;L&quot;,&quot;chkKakoShohon_displayNone&quot;:true}" data-is-composite-control="true" data-control-name="AFA.ShohonNameList"></div><div class="UzHorizontalLine JSControl controlMargin-M Width-Default ClearFloat UzCompositeChild" id="lin3" data-control-type="HorizontalLine" data-obj="{&quot;fieldName&quot;:&quot;lin3&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;HorizontalLine&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;lin3&quot;}"></div><div class="WithLabel TextBoxOuterDiv JSControl FloatLeft marginRight-XS controlMargin-M ClearFloat UzCompositeChild" id="txtMeisho" style="width: 629px; height: 20px; margin-left: 0px; position: relative;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtMeisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;L&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;txtMeisho_core&quot;,&quot;labelLText&quot;:&quot;名称&quot;,&quot;placeHolder&quot;:&quot;漢字氏名またはカナ氏名を入力してください。&quot;,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtMeisho_labelL"><span>名称</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Hiragana Width-L" id="txtMeisho_core" type="text" placeholder="漢字氏名またはカナ氏名を入力してください。"></div><div class="UzDropDownList WithLabel JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="ddlMeishoKensaku" style="width: 120px; height: 20px; position: relative;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlMeishoKensaku&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;S&quot;,&quot;selectControlID&quot;:&quot;ddlMeishoKensaku_core&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;前方一致&quot;},{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;部分一致&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;後方一致&quot;}],&quot;selectedItem&quot;:&quot;0&quot;,&quot;disabledItem&quot;:[]}"><select class="CoreElement Width-S" id="ddlMeishoKensaku_core"><option value="0">前方一致</option><option value="1">部分一致</option><option value="2">後方一致</option></select></div><div class="UzTextBoxDate TextBoxOuterDiv WithLabel UzTextBoxFlexibleDate JSControl FloatLeft marginRight-XS controlMargin-M ClearFloat UzCompositeChild" id="txtSeinengappi" style="width: 236px; height: 20px; margin-left: 0px; position: relative;" data-control-type="TextBoxFlexibleDate" data-obj="{&quot;fieldName&quot;:&quot;txtSeinengappi&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxFlexibleDate&quot;,&quot;width&quot;:&quot;S&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;txtSeinengappi_core&quot;,&quot;labelLText&quot;:&quot;生年月日&quot;}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtSeinengappi_labelL"><span>生年月日</span></span><input class="UzTextBox CoreElement Width-S" id="txtSeinengappi_core" type="text" placeholder="" data-ymd="2" data-fmt="0" data-wareki-hirekijyou="" data-maxdate="" data-mindate="" data-orgtext="" data-seireki="" data-setcount="0" data-wareki=""></div><div class="UzDropDownList WithLabel JSControl FloatLeft marginLeft-XS marginRight-XS controlMargin-M UzCompositeChild" id="txtSeibetsu" style="width: 174px; height: 20px; position: relative;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;txtSeibetsu&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;S&quot;,&quot;selectControlID&quot;:&quot;txtSeibetsu_core&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;指定なし&quot;},{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;男&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;女&quot;}],&quot;selectedItem&quot;:&quot;0&quot;,&quot;labelLText&quot;:&quot;性別&quot;,&quot;labelLWidth&quot;:&quot;XS&quot;,&quot;disabledItem&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-XS" id="txtSeibetsu_labelL"><span>性別</span></span><select class="CoreElement Width-S" id="txtSeibetsu_core"><option value="0">指定なし</option><option value="1">男</option><option value="2">女</option></select></div><div title="" class="UzHorizontalLine JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="lin1" data-control-type="HorizontalLine" data-obj="{&quot;fieldName&quot;:&quot;lin1&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;HorizontalLine&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;lin1&quot;}"></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft ClearFloat" id="ccdTohyokuCode" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdTohyokuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdTohyokuCode&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TohyokuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;txtTohyokuCode_labelLText&quot;:&quot;投票区&quot;,&quot;txtTohyokuCode_labelLWidth&quot;:&quot;S&quot;,&quot;txtTohyokuCode_required&quot;:false,&quot;btnTohyokuCode_displayNone&quot;:false,&quot;txtTohyokuName_displayNone&quot;:false,&quot;txtTohyokuName_width&quot;:&quot;XS&quot;,&quot;txtTohyokuCode_readOnly&quot;:false,&quot;txtTohyokuCode_labelLAlign&quot;:2,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnTohyokuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyokuCode_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyokuCode_labelLAlign&quot;,&quot;editType&quot;:0}]}}" data-is-composite-control="true" data-control-name="AFA.TohyokuCodeSelect"></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="ccdMeiboBango" style="margin: 0em 0px;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdMeiboBango&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;ccdMeiboBango&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;MeiboBango&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtSatsu_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSatsu_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSatsu_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSatsu_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtPage_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtPage_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtGyo_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtGyo_displayNone&quot;,&quot;editType&quot;:1}]},&quot;txtSatsu_displayNone&quot;:false,&quot;txtSatsu_readOnly&quot;:false,&quot;txtSatsu_labelLWidth&quot;:&quot;XS&quot;,&quot;txtSatsu_required&quot;:false,&quot;txtPage_readOnly&quot;:false,&quot;txtPage_required&quot;:false,&quot;txtGyo_readOnly&quot;:false,&quot;txtGyo_displayNone&quot;:false}" data-is-composite-control="true" data-control-name="AFA.MeiboBango"></div><div title="" class="UzHorizontalLine JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="lin2" data-control-type="HorizontalLine" data-obj="{&quot;fieldName&quot;:&quot;lin2&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;HorizontalLine&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;lin2&quot;}"></div><div class="WithLabel TextBoxOuterDiv UzTextBoxNum JSControl controlMargin-M FloatRight marginLeft-XS marginRight-XS UzCompositeChild" id="txtMaxDisplayCount" style="width: 171px; height: 23px; position: relative;" data-control-type="TextBoxNum" data-obj="{&quot;fieldName&quot;:&quot;txtMaxDisplayCount&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxNum&quot;,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;txtMaxDisplayCount_core&quot;,&quot;required&quot;:true,&quot;labelLText&quot;:&quot;最大表示件数&quot;,&quot;textAlign&quot;:2,&quot;textKind&quot;:2,&quot;suggest&quot;:[],&quot;permitCharactor&quot;:&quot;+-,.\\&quot;}"><span class="word-wrap-break-word Label-L text-align-right Width-S" id="txtMaxDisplayCount_labelL"><span class="requireMark">*</span><span>最大表示件数</span></span><input class="UzTextBox CoreElement Width-XS ime-mode-Off text-align-right required" id="txtMaxDisplayCount_core" type="text" placeholder=""></div><button title="" class="UzButton FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnCancel" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnCancel&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;btnCancel&quot;,&quot;onClick&quot;:&quot;CloseCancel&quot;,&quot;text&quot;:&quot;取消&quot;}"><span>取消</span></button><button title="" class="UzButton FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnClear" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnClear&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;selectControlID&quot;:&quot;btnClear&quot;,&quot;onClick&quot;:&quot;onClick_btnClear&quot;,&quot;text&quot;:&quot;条件をクリア&quot;}"><span>条件をクリア</span></button><button title="" class="UzButton JSControl controlMargin-M Width-S FloatRight marginLeft-XS marginRight-XS UzCompositeChild" id="btnSearch" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnSearch&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;float&quot;:2,&quot;selectControlID&quot;:&quot;btnSearch&quot;,&quot;onClick&quot;:&quot;onClick_btnSearch&quot;,&quot;text&quot;:&quot;検索する&quot;}"><span>検索する</span></button><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft ClearFloat" id="ccdSearchTojitsuSaikinShoriTaisho" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdSearchTojitsuSaikinShoriTaisho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdSearchTojitsuSaikinShoriTaisho&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;URZ&quot;,&quot;controlName&quot;:&quot;SaikinShorishaRireki&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onClick_btnSaikinShorishaHyoji&quot;}],&quot;publicEventsAlias&quot;:[{&quot;eventName&quot;:&quot;onClick_btnSaikinShorishaHyoji&quot;,&quot;alias&quot;:&quot;onClick_btnkHyoji&quot;}],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;anchorPosition&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;SaikinShorishaRireki_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;SaikinShorishaRireki_marginLeft&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlSaikinShorisha_marginLeft&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;btnSaikinShorishaHyoji_width&quot;,&quot;editType&quot;:0}]},&quot;SaikinShorishaRireki_width&quot;:&quot;819px&quot;,&quot;SaikinShorishaRireki_marginLeft&quot;:&quot;XS&quot;,&quot;ddlSaikinShorisha_marginLeft&quot;:&quot;XL&quot;,&quot;btnSaikinShorishaHyoji_width&quot;:&quot;S&quot;}" data-is-composite-control="true" data-control-name="URZ.SaikinShorishaRireki"></div></div></div><div class="StateChangable UzPanel JSControl FloatLeft UzPanelAndText Panel-Shadow ClearFloat Width-G10 UzCompositeChild" id="SearchTojitsuKekkaList" style="margin: 0px; position: relative;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;SearchTojitsuKekkaList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G10&quot;,&quot;wrap&quot;:true,&quot;marginLeft&quot;:&quot;0px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;SearchTojitsuKekkaList&quot;,&quot;title&quot;:&quot;検索結果一覧&quot;,&quot;marginTop&quot;:&quot;0px&quot;,&quot;marginBottom&quot;:&quot;0px&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;SearchTojitsuKekkaList&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onSelect_dgSearchKekkaList&quot;,&quot;requestUrl&quot;:&quot;&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnShikibetsuCode&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;BasicControlArea&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="SearchTojitsuKekkaList_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">検索結果一覧</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="SearchTojitsuKekkaList_panel_body_area"><div title="" class="UzDataGrid FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS Height-M UzCompositeChild" id="dgSearchTojitsuKekkaList" style="width: 1020px;" data-control-type="DataGrid" data-obj="{&quot;fieldName&quot;:&quot;dgSearchTojitsuKekkaList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DataGrid&quot;,&quot;width&quot;:&quot;1020px&quot;,&quot;selectControlID&quot;:&quot;dgSearchTojitsuKekkaList&quot;,&quot;height&quot;:&quot;M&quot;,&quot;gridSetting&quot;:{&quot;rowHeight&quot;:25,&quot;isMultiSelectable&quot;:false,&quot;isShowHeader&quot;:true,&quot;isShowFilter&quot;:false,&quot;isShowFilterButton&quot;:false,&quot;isShowClearSortButton&quot;:false,&quot;isShowSelectedRowCount&quot;:false,&quot;isShowFooter&quot;:false,&quot;isShowRowState&quot;:false,&quot;columns&quot;:[{&quot;columnName&quot;:&quot;氏名&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtKanaShimei&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0,&quot;isSetValueToToolTip&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtShimei&quot;},{&quot;columnName&quot;:&quot;カナ氏名&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtKanaShimei&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtKanaShimei&quot;},{&quot;columnName&quot;:&quot;生年月日&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtSeinengappiYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:90,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0,&quot;isSetValueToToolTip&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSeinengappiYMD&quot;},{&quot;columnName&quot;:&quot;生年月日西暦&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtSeinengappiYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:7,&quot;cellDetails&quot;:{&quot;cellType&quot;:7,&quot;disabled&quot;:false,&quot;readOnly&quot;:false,&quot;required&quot;:false,&quot;ymdKubun&quot;:2,&quot;displayFormat&quot;:0,&quot;onChange&quot;:&quot;&quot;,&quot;onFocus&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;&quot;,&quot;placeHolder&quot;:&quot;&quot;,&quot;decorationClass&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false,&quot;isShowCalendarOpenerIcon&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSeinengappiYMDseireki&quot;},{&quot;columnName&quot;:&quot;性別&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtSeibetsu&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:40,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:1,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSeibetsu&quot;},{&quot;columnName&quot;:&quot;住所&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtJusho&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:200,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtJusho&quot;},{&quot;columnName&quot;:&quot;住民種別&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtJuminShubetsuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:80,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtJuminShubetsu&quot;},{&quot;columnName&quot;:&quot;住民種別コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtJuminShubetsuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtJuminShubetsuCode&quot;},{&quot;columnName&quot;:&quot;識別コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtShikibetsuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:120,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtShikibetsuCode&quot;},{&quot;columnName&quot;:&quot;選挙資格&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtSenkyoShikakuKubun&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:80,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSenkyoShikaku&quot;},{&quot;columnName&quot;:&quot;選挙資格区分&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtSenkyoShikakuKubun&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSenkyoShikakuKubun&quot;},{&quot;columnName&quot;:&quot;投票区&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtTohyokuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:60,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:2,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtTohyokuCode&quot;},{&quot;columnName&quot;:&quot;名簿番号&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtMeiboBango&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:80,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:2,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtMeiboBango&quot;},{&quot;columnName&quot;:&quot;登録日&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtMeiboTorokuYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:90,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtMeiboTorokuYMD&quot;},{&quot;columnName&quot;:&quot;登録日西暦&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtMeiboTorokuYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:7,&quot;cellDetails&quot;:{&quot;cellType&quot;:7,&quot;disabled&quot;:false,&quot;readOnly&quot;:false,&quot;required&quot;:false,&quot;ymdKubun&quot;:2,&quot;displayFormat&quot;:0,&quot;onChange&quot;:&quot;&quot;,&quot;onFocus&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;&quot;,&quot;placeHolder&quot;:&quot;&quot;,&quot;decorationClass&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false,&quot;isShowCalendarOpenerIcon&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtMeiboTorokuYMDseireki&quot;},{&quot;columnName&quot;:&quot;表示日&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtHyojiYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:90,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0,&quot;isSetValueToToolTip&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHyojiYMD&quot;},{&quot;columnName&quot;:&quot;表示日西暦&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtHyojiYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:7,&quot;cellDetails&quot;:{&quot;cellType&quot;:7,&quot;disabled&quot;:false,&quot;readOnly&quot;:false,&quot;required&quot;:false,&quot;ymdKubun&quot;:2,&quot;displayFormat&quot;:0,&quot;onChange&quot;:&quot;&quot;,&quot;onFocus&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;&quot;,&quot;placeHolder&quot;:&quot;&quot;,&quot;decorationClass&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false,&quot;isShowCalendarOpenerIcon&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHyojiYMDseireki&quot;},{&quot;columnName&quot;:&quot;表示事由&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtHyojiJiyuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHyojiJiyu&quot;},{&quot;columnName&quot;:&quot;表示事由コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtHyojiJiyuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtHyojiJiyuCode&quot;},{&quot;columnName&quot;:&quot;抹消日&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtMasshoYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:90,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:{&quot;cellType&quot;:0,&quot;isSetValueToToolTip&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtMasshoYMD&quot;},{&quot;columnName&quot;:&quot;抹消日西暦&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtMasshoYMDseireki&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:7,&quot;cellDetails&quot;:{&quot;cellType&quot;:7,&quot;disabled&quot;:false,&quot;readOnly&quot;:false,&quot;required&quot;:false,&quot;ymdKubun&quot;:2,&quot;displayFormat&quot;:0,&quot;onChange&quot;:&quot;&quot;,&quot;onFocus&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;&quot;,&quot;placeHolder&quot;:&quot;&quot;,&quot;decorationClass&quot;:&quot;&quot;,&quot;isSetValueToToolTip&quot;:false,&quot;isShowCalendarOpenerIcon&quot;:false},&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtMasshoYMDseireki&quot;},{&quot;columnName&quot;:&quot;抹消事由&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtMasshoJiyuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:150,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtMasshoJiyu&quot;},{&quot;columnName&quot;:&quot;抹消事由コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtMasshoJiyuCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:0,&quot;visible&quot;:false,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:true,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtMasshoJiyuCode&quot;},{&quot;columnName&quot;:&quot;世帯コード&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtSetaiCode&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:120,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtSetaiCode&quot;},{&quot;columnName&quot;:&quot;投票資格&quot;,&quot;headerHtml&quot;:&quot;&quot;,&quot;string&quot;:&quot;&quot;,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;sortKey&quot;:&quot;txtTohyoShikaku&quot;,&quot;bgColor&quot;:0,&quot;width&quot;:80,&quot;visible&quot;:true,&quot;cellType&quot;:0,&quot;cellDetails&quot;:null,&quot;align&quot;:0,&quot;resize&quot;:false,&quot;isPrivateInfo&quot;:false,&quot;isKeyItem&quot;:false,&quot;authorityMode&quot;:0,&quot;groupName&quot;:&quot;&quot;,&quot;dataName&quot;:&quot;txtTohyoShikaku&quot;}],&quot;header&quot;:{&quot;combineColumns&quot;:[],&quot;frozenColumn&quot;:&quot;txtShimei&quot;,&quot;headerHeight&quot;:0,&quot;groupHeaderHeight&quot;:0},&quot;isShowSelectButtonColumn&quot;:true,&quot;isShowModifyButtonColumn&quot;:false,&quot;isShowDeleteButtonColumn&quot;:false,&quot;isShowCancelButtonColumn&quot;:false,&quot;isErrorAndWarningColumn&quot;:false,&quot;limitRowCount&quot;:0,&quot;selectedRowCount&quot;:0,&quot;selectLimitRowCount&quot;:0},&quot;confirmDialog&quot;:[{&quot;button&quot;:&quot;selectButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;modifyButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;deleteButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;},{&quot;button&quot;:&quot;cancelButton&quot;,&quot;showDialog&quot;:false,&quot;title&quot;:&quot;&quot;,&quot;messageBody&quot;:&quot;&quot;,&quot;okButtonValue&quot;:&quot;&quot;,&quot;cancelButtonValue&quot;:&quot;&quot;}],&quot;onSelect&quot;:&quot;onSelect_dgSearchKekkaList&quot;,&quot;onSelectByDblClick&quot;:&quot;onSelect_dgSearchKekkaList&quot;,&quot;onSelectBySelectButton&quot;:&quot;onSelect_dgSearchKekkaList&quot;,&quot;dataSource&quot;:[],&quot;filterList&quot;:[],&quot;gridAction&quot;:[],&quot;selectedItems&quot;:[]}"><div id="dgSearchTojitsuKekkaList_grid_table" role="" style="width: 1020px; height: 390px; position: relative;"></div><div id="dgSearchTojitsuKekkaList_footer" style="width: 1020px; height: 0px;"></div></div><button title="" class="UzButton FloatLeft JSControl controlMargin-M Width-S UzCompositeChild" id="btnCancel2" style="margin-right: 0px; margin-left: 786px; opacity: 0.8;" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnCancel2&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;marginLeft&quot;:&quot;786px&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;btnCancel2&quot;,&quot;onClick&quot;:&quot;CloseCancel&quot;,&quot;text&quot;:&quot;取消&quot;}"><span>取消</span></button><button title="" class="UzButton FloatLeft JSControl controlMargin-M marginLeft-XS Width-S UzCompositeChild" id="btnReSearch" style="margin-right: 0px;" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnReSearch&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;marginRight&quot;:&quot;0px&quot;,&quot;selectControlID&quot;:&quot;btnReSearch&quot;,&quot;onClick&quot;:&quot;onClick_btnReSearch&quot;,&quot;text&quot;:&quot;再検索する&quot;}"><span>再検索する</span></button></div></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var SearchSimpleJuminDialog_Design = (function (_super) {
+        __extends(SearchSimpleJuminDialog_Design, _super);
+        function SearchSimpleJuminDialog_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, SearchSimpleJuminDialog_Design.myLayout, fieldName);
+        }
+        SearchSimpleJuminDialog_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+        };
+
+        SearchSimpleJuminDialog_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+
+            return editablePropertyInfo;
+        };
+        SearchSimpleJuminDialog_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "SearchSimpleJuminDialog",
+                    "items": [
+                        {
+                            "fieldName": "SearchSimpleJoken",
+                            "items": [
+                                {
+                                    "fieldName": "ccdSearchSimpleJukiJoho",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0em",
+                                    "marginRight": "0em",
+                                    "selectControlID": "ccdSearchSimpleJukiJoho",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "URA",
+                                    "controlName": "AtenaFinder",
+                                    "marginTop": "0em",
+                                    "marginBottom": "0em",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "AtenaFinder_title": "",
+                                    "AtenaFinder_canOpenAndClose": true,
+                                    "AtenaFinder_width": "823px",
+                                    "AtenaFinderShosai_title": "詳細条件",
+                                    "AtenaFinderShosai_width": "815px",
+                                    "AtenaFinder_eraseBorder": true,
+                                    "txtBanchiCode4_displayNone": true
+                                },
+                                {
+                                    "fieldName": "lin1",
+                                    "items": [],
+                                    "controlType": "HorizontalLine",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "lin1",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "size": "Default"
+                                },
+                                {
+                                    "fieldName": "ccdTohyokuCode",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0em",
+                                    "marginRight": "0em",
+                                    "selectControlID": "ccdTohyokuCode",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "AFA",
+                                    "controlName": "TohyokuCodeSelect",
+                                    "marginTop": "0em",
+                                    "marginBottom": "0em",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [],
+                                    "publicEventsAlias": [],
+                                    "txtTohyokuCode_labelLText": "投票区",
+                                    "txtTohyokuCode_labelLWidth": "S",
+                                    "txtTohyokuCode_required": false,
+                                    "btnTohyokuCode_displayNone": false,
+                                    "txtTohyokuName_displayNone": false,
+                                    "txtTohyokuName_width": "L",
+                                    "txtTohyokuCode_readOnly": false,
+                                    "txtTohyokuCode_labelLAlign": 2
+                                },
+                                {
+                                    "fieldName": "chkSearchSenkyoShikaku",
+                                    "items": [],
+                                    "controlType": "CheckBoxList",
+                                    "width": "",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0em",
+                                    "marginRight": "XS",
+                                    "selectControlID": "chkSearchSenkyoShikaku_core",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "onChange": "",
+                                    "labelLText": "選挙資格",
+                                    "labelLWidth": "S",
+                                    "labelLAlign": 2,
+                                    "selectedItem": null,
+                                    "dataSource": [
+                                        {
+                                            "key": "1",
+                                            "value": "有権者"
+                                        },
+                                        {
+                                            "key": "2",
+                                            "value": "表示者"
+                                        },
+                                        {
+                                            "key": "3",
+                                            "value": "抹消者"
+                                        },
+                                        {
+                                            "key": "4",
+                                            "value": "公民権停止者"
+                                        }
+                                    ],
+                                    "onClick": "",
+                                    "icon": [],
+                                    "selectedItems": [],
+                                    "newLineItemNumber": 4,
+                                    "minCheckedItem": 0,
+                                    "maxCheckedItem": "4",
+                                    "spaceSize": "M",
+                                    "isAllSelectable": false,
+                                    "isAllSelectableBreakLine": false,
+                                    "disabledItem": []
+                                },
+                                {
+                                    "fieldName": "lin2",
+                                    "items": [],
+                                    "controlType": "HorizontalLine",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "lin2",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "size": "Default"
+                                },
+                                {
+                                    "fieldName": "btnCancel",
+                                    "items": [],
+                                    "controlType": "Button",
+                                    "width": "S",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "btnCancel",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "text": "取消",
+                                    "imageWidth": "",
+                                    "imageHeight": "",
+                                    "onBeforeClick": "",
+                                    "onAfterClick": "",
+                                    "onClick": "CloseCancel",
+                                    "appearance": 0,
+                                    "imageFileUrl": "",
+                                    "icon": 0,
+                                    "heightTextBoxMatches": false
+                                },
+                                {
+                                    "fieldName": "btnPrev",
+                                    "items": [],
+                                    "controlType": "Button",
+                                    "width": "S",
+                                    "visible": true,
+                                    "displayNone": true,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "btnPrev",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "text": "直前検索結果",
+                                    "imageWidth": "",
+                                    "imageHeight": "",
+                                    "onBeforeClick": "",
+                                    "onAfterClick": "",
+                                    "onClick": "",
+                                    "appearance": 0,
+                                    "imageFileUrl": "",
+                                    "icon": 0,
+                                    "heightTextBoxMatches": false
+                                },
+                                {
+                                    "fieldName": "btnClear",
+                                    "items": [],
+                                    "controlType": "Button",
+                                    "width": "S",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "btnClear",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "text": "条件をクリア",
+                                    "imageWidth": "",
+                                    "imageHeight": "",
+                                    "onBeforeClick": "",
+                                    "onAfterClick": "",
+                                    "onClick": "onClick_btnClear",
+                                    "appearance": 0,
+                                    "imageFileUrl": "",
+                                    "icon": 0,
+                                    "heightTextBoxMatches": false
+                                },
+                                {
+                                    "fieldName": "btnSearch",
+                                    "items": [],
+                                    "controlType": "Button",
+                                    "width": "S",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "btnSearch",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "text": "検索する",
+                                    "imageWidth": "",
+                                    "imageHeight": "",
+                                    "onBeforeClick": "",
+                                    "onAfterClick": "",
+                                    "onClick": "onClick_btnSearch",
+                                    "appearance": 0,
+                                    "imageFileUrl": "",
+                                    "icon": 0,
+                                    "heightTextBoxMatches": false
+                                },
+                                {
+                                    "fieldName": "ccdSearchSimpleSaikinShoriTaisho",
+                                    "items": [],
+                                    "controlType": "CommonChildDiv",
+                                    "width": "XS",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "0em",
+                                    "marginRight": "0em",
+                                    "selectControlID": "ccdSearchSimpleSaikinShoriTaisho",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "relation": [],
+                                    "packageName": "",
+                                    "businessId": "URZ",
+                                    "controlName": "SaikinShorishaRireki",
+                                    "marginTop": "M",
+                                    "marginBottom": "0em",
+                                    "originalProperty": [],
+                                    "dataPassingForDialog": [],
+                                    "dialogOkEventNameForDialog": "",
+                                    "dialogCancelEventNameForDialog": "",
+                                    "canTransferEvent": true,
+                                    "heightForDialog": "M",
+                                    "firstFocusFieldName": "",
+                                    "lastFocusFieldName": "",
+                                    "modes": [],
+                                    "publicEvents": [
+                                        {
+                                            "eventName": "onClick_btnSaikinShorishaHyoji"
+                                        },
+                                        {
+                                            "eventName": "onBeforeClick_btnSaikinShorishaHyoji"
+                                        },
+                                        {
+                                            "eventName": "onAfterClick_btnSaikinShorishaHyoji"
+                                        }
+                                    ],
+                                    "publicEventsAlias": [],
+                                    "isOneCondition": "0",
+                                    "SaikinShorishaRireki_width": "819px",
+                                    "SaikinShorishaRireki_marginLeft": "XS",
+                                    "ddlSaikinShorisha_marginLeft": "XL",
+                                    "btnSaikinShorishaHyoji_width": "S"
+                                }
+                            ],
+                            "controlType": "Panel",
+                            "width": "G9",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "SearchSimpleJoken",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "検索条件指定",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "isOpen": true,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "SearchSimpleJoken"
+                                }
+                            ],
+                            "requestSettings": [
+                                {
+                                    "eventName": "onLoad",
+                                    "requestUrl": ""
+                                },
+                                {
+                                    "eventName": "onClick_btnClear",
+                                    "requestUrl": "afa/af/afa/SearchSimpleJoken/onClick_btnClear"
+                                }
+                            ],
+                            "hiddenInput": [],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "onLoadProperty",
+                            "canPost": true
+                        },
+                        {
+                            "fieldName": "SearchSimpleKekkaList",
+                            "items": [
+                                {
+                                    "fieldName": "dgSearchSimpleKekkaList",
+                                    "items": [],
+                                    "controlType": "DataGrid",
+                                    "width": "819px",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "dgSearchSimpleKekkaList",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "readOnly": false,
+                                    "height": "M",
+                                    "dataSource": [],
+                                    "gridSetting": {
+                                        "rowHeight": 25,
+                                        "isMultiSelectable": false,
+                                        "isShowHeader": true,
+                                        "isShowFooter": false,
+                                        "isShowFilter": false,
+                                        "isShowFilterButton": false,
+                                        "isShowRowState": false,
+                                        "isShowSelectButtonColumn": true,
+                                        "isShowModifyButtonColumn": false,
+                                        "isShowDeleteButtonColumn": false,
+                                        "limitRowCount": 0,
+                                        "selectedRowCount": 0,
+                                        "header": {
+                                            "combineColumns": [],
+                                            "frozenColumn": "txtShimei",
+                                            "headerHeight": 0
+                                        },
+                                        "columns": [
+                                            {
+                                                "columnName": "氏名",
+                                                "dataName": "txtShimei",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 150,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": {
+                                                    "cellType": 0
+                                                },
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtShimei"
+                                            },
+                                            {
+                                                "columnName": "生年月日",
+                                                "dataName": "txtSeinengappiYMD",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 90,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": {
+                                                    "cellType": 0
+                                                },
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtSeinengappiYMD"
+                                            },
+                                            {
+                                                "columnName": "性別",
+                                                "dataName": "txtSeibetsu",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 40,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": {
+                                                    "cellType": 0
+                                                },
+                                                "align": 1,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtSeibetsu"
+                                            },
+                                            {
+                                                "columnName": "住所",
+                                                "dataName": "txtJusho",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 200,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": {
+                                                    "cellType": 0
+                                                },
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtJusho"
+                                            },
+                                            {
+                                                "columnName": "住民種別",
+                                                "dataName": "txtJuminShubetsu",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 80,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": {
+                                                    "cellType": 0
+                                                },
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtJuminShubetsu"
+                                            },
+                                            {
+                                                "columnName": "識別コード",
+                                                "dataName": "txtShikibetsuCode",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 120,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtShikibetsuCode"
+                                            },
+                                            {
+                                                "columnName": "選挙資格",
+                                                "dataName": "txtSenkyoShikaku",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 80,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtSenkyoShikaku"
+                                            },
+                                            {
+                                                "columnName": "投票区",
+                                                "dataName": "txtTohyokuCode",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 60,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 2,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtTohyokuCode"
+                                            },
+                                            {
+                                                "columnName": "名簿番号",
+                                                "dataName": "txtMeiboBango",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 80,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 2,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtMeiboBango"
+                                            },
+                                            {
+                                                "columnName": "登録日",
+                                                "dataName": "txtMeiboTorokuYMD",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 90,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtMeiboTorokuYMD"
+                                            },
+                                            {
+                                                "columnName": "表示日",
+                                                "dataName": "txtHyojiYMD",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 90,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtHyojiYMD"
+                                            },
+                                            {
+                                                "columnName": "表示事由",
+                                                "dataName": "txtHyojiJiyu",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 150,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtHyojiJiyu"
+                                            },
+                                            {
+                                                "columnName": "抹消日",
+                                                "dataName": "txtMasshoYMD",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 90,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtMasshoYMD"
+                                            },
+                                            {
+                                                "columnName": "抹消事由",
+                                                "dataName": "txtMasshoJiyu",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 150,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtMasshoJiyu"
+                                            },
+                                            {
+                                                "columnName": "世帯コード",
+                                                "dataName": "txtSetaiCode",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 120,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtSetaiCode"
+                                            },
+                                            {
+                                                "columnName": "投票資格",
+                                                "dataName": "txtTohyoShikaku",
+                                                "toolTip": "",
+                                                "bgColor": 0,
+                                                "width": 80,
+                                                "visible": true,
+                                                "cellType": 0,
+                                                "cellDetails": null,
+                                                "align": 0,
+                                                "resize": true,
+                                                "isPrivateInfo": false,
+                                                "sortKey": "txtTohyoShikaku"
+                                            }
+                                        ]
+                                    },
+                                    "onSort": "",
+                                    "onSelect": "",
+                                    "onSelectByDblClick": "onSelect_dgSearchKekkaList",
+                                    "onSelectBySelectButton": "onSelect_dgSearchKekkaList",
+                                    "onSelectByModifyButton": "",
+                                    "onSelectByDeleteButton": "",
+                                    "onAfterRequest": "",
+                                    "onAfterRequestByDblClick": "",
+                                    "onAfterRequestBySelectButton": "",
+                                    "onAfterRequestByModifyButton": "",
+                                    "onAfterRequestByDeleteButton": "",
+                                    "onOnlyRow": "",
+                                    "onNoRow": "",
+                                    "onMultiRows": "",
+                                    "sortOrder": "txtJusho",
+                                    "isAscending": true,
+                                    "filterList": [],
+                                    "activeRowId": -1,
+                                    "gridAction": [],
+                                    "selectedItems": []
+                                },
+                                {
+                                    "fieldName": "btnCancel2",
+                                    "items": [],
+                                    "controlType": "Button",
+                                    "width": "S",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": true,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "36em",
+                                    "marginRight": "XS",
+                                    "selectControlID": "btnCancel2",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "text": "取消",
+                                    "imageWidth": "",
+                                    "imageHeight": "",
+                                    "onBeforeClick": "",
+                                    "onAfterClick": "",
+                                    "onClick": "CloseCancel",
+                                    "appearance": 0,
+                                    "imageFileUrl": "",
+                                    "icon": 0,
+                                    "heightTextBoxMatches": false
+                                },
+                                {
+                                    "fieldName": "btnReSearch",
+                                    "items": [],
+                                    "controlType": "Button",
+                                    "width": "S",
+                                    "visible": true,
+                                    "displayNone": false,
+                                    "disabled": false,
+                                    "accessKey": "",
+                                    "nextFocusFieldName": "",
+                                    "wrap": false,
+                                    "dependencies": [],
+                                    "float": 0,
+                                    "toolTip": "",
+                                    "authorityMode": 0,
+                                    "marginLeft": "XS",
+                                    "marginRight": "XS",
+                                    "selectControlID": "btnReSearch",
+                                    "helpMessageID": "",
+                                    "jpControlName": "",
+                                    "text": "再検索する",
+                                    "imageWidth": "",
+                                    "imageHeight": "",
+                                    "onBeforeClick": "",
+                                    "onAfterClick": "",
+                                    "onClick": "onClick_btnReSearch",
+                                    "appearance": 0,
+                                    "imageFileUrl": "",
+                                    "icon": 0,
+                                    "heightTextBoxMatches": false
+                                }
+                            ],
+                            "controlType": "Panel",
+                            "width": "G9",
+                            "visible": true,
+                            "displayNone": true,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "SearchSimpleKekkaList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "onLoad": "",
+                            "title": "検索結果一覧",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "isOpen": true,
+                            "canOpenAndClose": false,
+                            "postParameterPanelNames": [
+                                {
+                                    "postParameterPanelNames": "SearchSimpleKekkaList"
+                                }
+                            ],
+                            "requestSettings": [
+                                {
+                                    "eventName": "onLoad",
+                                    "requestUrl": ""
+                                },
+                                {
+                                    "eventName": "onSelect_dgSearchKekkaList",
+                                    "requestUrl": "afa/af/afa/SearchSimpleKekkaList/onSelect_dgSearchKekkaList"
+                                }
+                            ],
+                            "hiddenInput": [
+                                {
+                                    "propertyName": "txtHdnShikibetsuCode",
+                                    "value": ""
+                                }
+                            ],
+                            "onOpen": "",
+                            "onClose": "",
+                            "session": {},
+                            "eraseBorder": false,
+                            "backgroundColor": 0,
+                            "widthAuto": false,
+                            "panelDisplay": 0,
+                            "isGroupBox": false,
+                            "readOnly": false,
+                            "height": "Auto",
+                            "focusPositionID": "restoreLayoutButton",
+                            "canPost": true
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G9",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "SearchSimpleJuminDialog",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "Default",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "SearchSimpleJuminDialog"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": "afa/af/afa/SearchSimpleJuminDialog/onLoad"
+                        },
+                        {
+                            "eventName": "onClick_btnReSearch",
+                            "requestUrl": "afa/af/afa/SearchSimpleJuminDialog/onClick_btnReSearch"
+                        },
+                        {
+                            "eventName": "onClick_btnSearch",
+                            "requestUrl": "afa/af/afa/SearchSimpleJuminDialog/onClick_btnSearch"
+                        }
+                    ],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "txtHdnSenkyoShurui",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "focusPositionID": "createFile",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "SearchSimpleJuminDialog",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [],
+            "dataPassingForDialog": [
+                {
+                    "key": "selectedShikibetsuCode",
+                    "controlName": "SearchSimpleKekkaList.txtHdnShikibetsuCode"
+                },
+                {
+                    "key": "selectedSenkyoShurui",
+                    "controlName": "SearchSimpleJuminDialog.txtHdnSenkyoShurui"
+                }
+            ],
+            "dialogOkEventNameForDialog": "onSelect_dgSearchKekkaList",
+            "dialogCancelEventNameForDialog": "CloseCancel",
+            "canTransferEvent": true,
+            "heightForDialog": "XL",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return SearchSimpleJuminDialog_Design;
+    })(Uz.CommonChildDiv);
+    AFA.SearchSimpleJuminDialog_Design = SearchSimpleJuminDialog_Design;
+
+    (function (SearchSimpleJuminDialog) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.CloseCancel = function () {
+                return "CloseCancel";
+            };
+
+            Events.onClick_btnClear = function () {
+                return "onClick_btnClear";
+            };
+
+            Events.onClick_btnSearch = function () {
+                return "onClick_btnSearch";
+            };
+
+            Events.onSelect_dgSearchKekkaList = function () {
+                return "onSelect_dgSearchKekkaList";
+            };
+
+            Events.onClick_btnReSearch = function () {
+                return "onClick_btnReSearch";
+            };
+            return Events;
+        })();
+        SearchSimpleJuminDialog.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SearchSimpleJuminDialog";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SearchSimpleJuminDialog.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.SearchSimpleJuminDialog = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.SearchSimpleJoken = function () {
+                return new UZA.Panel(this.convFiledName("SearchSimpleJoken"));
+            };
+
+            Controls.prototype.ccdSearchSimpleJukiJoho = function () {
+                return new UAX.AtenaFinder.ModeController("ccdSearchSimpleJukiJoho");
+            };
+
+            Controls.prototype.lin1 = function () {
+                return new UZA.HorizontalLine(this.convFiledName("lin1"));
+            };
+
+            Controls.prototype.ccdTohyokuCode = function () {
+                return new AFA.TohyokuCodeSelect.ModeController("ccdTohyokuCode");
+            };
+
+            Controls.prototype.chkSearchSenkyoShikaku = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkSearchSenkyoShikaku"));
+            };
+
+            Controls.prototype.lin2 = function () {
+                return new UZA.HorizontalLine(this.convFiledName("lin2"));
+            };
+
+            Controls.prototype.btnCancel = function () {
+                return new UZA.Button(this.convFiledName("btnCancel"));
+            };
+
+            Controls.prototype.btnPrev = function () {
+                return new UZA.Button(this.convFiledName("btnPrev"));
+            };
+
+            Controls.prototype.btnClear = function () {
+                return new UZA.Button(this.convFiledName("btnClear"));
+            };
+
+            Controls.prototype.btnSearch = function () {
+                return new UZA.Button(this.convFiledName("btnSearch"));
+            };
+
+            Controls.prototype.ccdSearchSimpleSaikinShoriTaisho = function () {
+                return new URZ.SaikinShorishaRireki.ModeController("ccdSearchSimpleSaikinShoriTaisho");
+            };
+
+            Controls.prototype.SearchSimpleKekkaList = function () {
+                return new UZA.Panel(this.convFiledName("SearchSimpleKekkaList"));
+            };
+
+            Controls.prototype.dgSearchSimpleKekkaList = function () {
+                return new UZA.DataGrid(this.convFiledName("dgSearchSimpleKekkaList"));
+            };
+
+            Controls.prototype.btnCancel2 = function () {
+                return new UZA.Button(this.convFiledName("btnCancel2"));
+            };
+
+            Controls.prototype.btnReSearch = function () {
+                return new UZA.Button(this.convFiledName("btnReSearch"));
+            };
+            return Controls;
+        })();
+        SearchSimpleJuminDialog.Controls = Controls;
+    })(AFA.SearchSimpleJuminDialog || (AFA.SearchSimpleJuminDialog = {}));
+    var SearchSimpleJuminDialog = AFA.SearchSimpleJuminDialog;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SearchSimpleJuminDialog) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SearchSimpleJuminDialog.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SearchSimpleJuminDialog.ModeController = ModeController;
+    })(AFA.SearchSimpleJuminDialog || (AFA.SearchSimpleJuminDialog = {}));
+    var SearchSimpleJuminDialog = AFA.SearchSimpleJuminDialog;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SearchSimpleJuminDialog) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new SearchSimpleJuminDialog.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        SearchSimpleJuminDialog.PublicProperties = PublicProperties;
+    })(AFA.SearchSimpleJuminDialog || (AFA.SearchSimpleJuminDialog = {}));
+    var SearchSimpleJuminDialog = AFA.SearchSimpleJuminDialog;
+})(AFA || (AFA = {}));
+</script>
+  
+    
+  
+    
+  
+  
+  
+  
+       
+   
+   
+   
+     
+   
+   
+       
+                           
+   
+   
+   
+   
+   
+   
+     
+   
+   
+   
+   
+   
+   
+   
+     
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['SEARCHSIMPLETOJITSUDIALOG'] = {};
+AFA['SEARCHSIMPLETOJITSUDIALOG'].SearchSimpleTojitsuDialogRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_SearchSimpleTojitsuDialog').getProperty();parameter0.SearchTojitsuJoken = Uz.JSControlUtil.getJSControl(parentFieldName + '_SearchTojitsuJoken').getProperty();parameter0.SearchTojitsuJoken.ccdShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShohon').getPostParameter();parameter0.SearchTojitsuJoken.lin3 = Uz.JSControlUtil.getJSControl(parentFieldName + '_lin3').getProperty();parameter0.SearchTojitsuJoken.txtMeisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMeisho').getProperty();parameter0.SearchTojitsuJoken.ddlMeishoKensaku = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlMeishoKensaku').getProperty();parameter0.SearchTojitsuJoken.txtSeinengappi = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSeinengappi').getProperty();parameter0.SearchTojitsuJoken.txtSeibetsu = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSeibetsu').getProperty();parameter0.SearchTojitsuJoken.lin1 = Uz.JSControlUtil.getJSControl(parentFieldName + '_lin1').getProperty();parameter0.SearchTojitsuJoken.ccdTohyokuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdTohyokuCode').getPostParameter();parameter0.SearchTojitsuJoken.ccdMeiboBango = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdMeiboBango').getPostParameter();parameter0.SearchTojitsuJoken.lin2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_lin2').getProperty();parameter0.SearchTojitsuJoken.txtMaxDisplayCount = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMaxDisplayCount').getProperty();parameter0.SearchTojitsuJoken.btnCancel = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnCancel').getProperty();parameter0.SearchTojitsuJoken.btnClear = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnClear').getProperty();parameter0.SearchTojitsuJoken.btnSearch = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnSearch').getProperty();parameter0.SearchTojitsuJoken.ccdSearchTojitsuSaikinShoriTaisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdSearchTojitsuSaikinShoriTaisho').getPostParameter();parameter0.SearchTojitsuKekkaList = Uz.JSControlUtil.getJSControl(parentFieldName + '_SearchTojitsuKekkaList').getProperty();parameter0.SearchTojitsuKekkaList.dgSearchTojitsuKekkaList = Uz.JSControlUtil.getJSControl(parentFieldName + '_dgSearchTojitsuKekkaList').getProperty();parameter0.SearchTojitsuKekkaList.btnCancel2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnCancel2').getProperty();parameter0.SearchTojitsuKekkaList.btnReSearch = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnReSearch').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['SEARCHSIMPLETOJITSUDIALOG'].SearchTojitsuJokenRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_SearchTojitsuJoken').getProperty();parameter0.ccdShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShohon').getPostParameter();parameter0.lin3 = Uz.JSControlUtil.getJSControl(parentFieldName + '_lin3').getProperty();parameter0.txtMeisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMeisho').getProperty();parameter0.ddlMeishoKensaku = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlMeishoKensaku').getProperty();parameter0.txtSeinengappi = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSeinengappi').getProperty();parameter0.txtSeibetsu = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSeibetsu').getProperty();parameter0.lin1 = Uz.JSControlUtil.getJSControl(parentFieldName + '_lin1').getProperty();parameter0.ccdTohyokuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdTohyokuCode').getPostParameter();parameter0.ccdMeiboBango = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdMeiboBango').getPostParameter();parameter0.lin2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_lin2').getProperty();parameter0.txtMaxDisplayCount = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtMaxDisplayCount').getProperty();parameter0.btnCancel = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnCancel').getProperty();parameter0.btnClear = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnClear').getProperty();parameter0.btnSearch = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnSearch').getProperty();parameter0.ccdSearchTojitsuSaikinShoriTaisho = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdSearchTojitsuSaikinShoriTaisho').getPostParameter();paramArray.push(parameter0);
+return paramArray;
+ };
+AFA['SEARCHSIMPLETOJITSUDIALOG'].SearchTojitsuKekkaListRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_SearchTojitsuKekkaList').getProperty();parameter0.dgSearchTojitsuKekkaList = Uz.JSControlUtil.getJSControl(parentFieldName + '_dgSearchTojitsuKekkaList').getProperty();parameter0.btnCancel2 = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnCancel2').getProperty();parameter0.btnReSearch = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnReSearch').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (SearchSimpleTojitsuDialog) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.CloseCancel = function () {
+                return "CloseCancel";
+            };
+
+            Events.onClick_btnClear = function () {
+                return "onClick_btnClear";
+            };
+
+            Events.onClick_btnSearch = function () {
+                return "onClick_btnSearch";
+            };
+
+            Events.onSelect_dgSearchKekkaList = function () {
+                return "onSelect_dgSearchKekkaList";
+            };
+
+            Events.onClick_btnReSearch = function () {
+                return "onClick_btnReSearch";
+            };
+            return Events;
+        })();
+        SearchSimpleTojitsuDialog.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SearchSimpleTojitsuDialog";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SearchSimpleTojitsuDialog.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.SearchSimpleTojitsuDialog.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.SearchSimpleTojitsuDialog = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.SearchTojitsuJoken = function () {
+                return new UZA.Panel(this.convFiledName("SearchTojitsuJoken"));
+            };
+
+            Controls.prototype.ccdShohon = function () {
+                return new AFA.ShohonNameList.ModeController(this.convFiledName("ccdShohon"));
+            };
+
+            Controls.prototype.lin3 = function () {
+                return new UZA.HorizontalLine(this.convFiledName("lin3"));
+            };
+
+            Controls.prototype.txtMeisho = function () {
+                return new UZA.TextBox(this.convFiledName("txtMeisho"));
+            };
+
+            Controls.prototype.ddlMeishoKensaku = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlMeishoKensaku"));
+            };
+
+            Controls.prototype.txtSeinengappi = function () {
+                return new UZA.TextBoxFlexibleDate(this.convFiledName("txtSeinengappi"));
+            };
+
+            Controls.prototype.txtSeibetsu = function () {
+                return new UZA.DropDownList(this.convFiledName("txtSeibetsu"));
+            };
+
+            Controls.prototype.lin1 = function () {
+                return new UZA.HorizontalLine(this.convFiledName("lin1"));
+            };
+
+            Controls.prototype.ccdTohyokuCode = function () {
+                return new AFA.TohyokuCodeSelect.ModeController(this.convFiledName("ccdTohyokuCode"));
+            };
+
+            Controls.prototype.ccdMeiboBango = function () {
+                return new AFA.MeiboBango.ModeController(this.convFiledName("ccdMeiboBango"));
+            };
+
+            Controls.prototype.lin2 = function () {
+                return new UZA.HorizontalLine(this.convFiledName("lin2"));
+            };
+
+            Controls.prototype.txtMaxDisplayCount = function () {
+                return new UZA.TextBoxNum(this.convFiledName("txtMaxDisplayCount"));
+            };
+
+            Controls.prototype.btnCancel = function () {
+                return new UZA.Button(this.convFiledName("btnCancel"));
+            };
+
+            Controls.prototype.btnClear = function () {
+                return new UZA.Button(this.convFiledName("btnClear"));
+            };
+
+            Controls.prototype.btnSearch = function () {
+                return new UZA.Button(this.convFiledName("btnSearch"));
+            };
+
+            Controls.prototype.ccdSearchTojitsuSaikinShoriTaisho = function () {
+                return new URZ.SaikinShorishaRireki.ModeController(this.convFiledName("ccdSearchTojitsuSaikinShoriTaisho"));
+            };
+
+            Controls.prototype.SearchTojitsuKekkaList = function () {
+                return new UZA.Panel(this.convFiledName("SearchTojitsuKekkaList"));
+            };
+
+            Controls.prototype.dgSearchTojitsuKekkaList = function () {
+                return new UZA.DataGrid(this.convFiledName("dgSearchTojitsuKekkaList"));
+            };
+
+            Controls.prototype.btnCancel2 = function () {
+                return new UZA.Button(this.convFiledName("btnCancel2"));
+            };
+
+            Controls.prototype.btnReSearch = function () {
+                return new UZA.Button(this.convFiledName("btnReSearch"));
+            };
+            return Controls;
+        })();
+        SearchSimpleTojitsuDialog.Controls = Controls;
+    })(AFA.SearchSimpleTojitsuDialog || (AFA.SearchSimpleTojitsuDialog = {}));
+    var SearchSimpleTojitsuDialog = AFA.SearchSimpleTojitsuDialog;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (SearchSimpleTojitsuDialog) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SearchSimpleTojitsuDialog.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new SearchSimpleTojitsuDialog.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SearchSimpleTojitsuDialog.ModeController = ModeController;
+    })(AFA.SearchSimpleTojitsuDialog || (AFA.SearchSimpleTojitsuDialog = {}));
+    var SearchSimpleTojitsuDialog = AFA.SearchSimpleTojitsuDialog;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SearchSimpleTojitsuDialog) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SearchSimpleTojitsuDialog.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        SearchSimpleTojitsuDialog.PublicProperties = PublicProperties;
+    })(AFA.SearchSimpleTojitsuDialog || (AFA.SearchSimpleTojitsuDialog = {}));
+    var SearchSimpleTojitsuDialog = AFA.SearchSimpleTojitsuDialog;
+})(AFA || (AFA = {}));
+</script></div>

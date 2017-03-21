@@ -1,0 +1,9 @@
+﻿nendo,UDD053Year,RYear,,,,,年度,A
+senkanRenban,int4,int,,,,,選管連番,A
+shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A
+shimei,UDD042AtenaMeisho,AtenaMeisho,,,,,氏名,A
+seinengappiYMD,UDD015YMD,FlexibleDate,,,,,生年月日,A
+yubinNo,UDD003YubinNo,YubinNo,,,,,郵便番号,A
+jusho,text,RString,,,,,住所,A
+honsekichi,text,RString,,,,,本籍地,A
+saibaninShinsainKubun,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.裁判員審査員区分.getCodeShubetsu(),,,裁判員審査員区分,A

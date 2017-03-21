@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--@reamsid_L AF-0450-010 jihb-->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.jumintohyojitoroku.IJuminTohyojiTorokuMapper">
+ <select resultOrdered="false" id="select抄本情報By抄本番号" resultMap="resultMap_ShohonJohoEntity"  fetchSize="500">
+        <include refid="selectShohonJohoEntity" />
+    </select>
+
+    <sql id="selectShohonJohoEntity">
+        SELECT
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />
+           ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />
+           ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT141ZaisankuJuminTohyoConditionMapper.allColumns_AfT141ZaisankuJuminTohyoCondition" />
+        FROM
+           rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+           rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON
+         "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        INNER JOIN
+         rgaf."AfT141ZaisankuJuminTohyoCondition" AS "AfT141ZaisankuJuminTohyoCondition"
+        ON
+         "AfT100Shohon"."shohonNo" = "AfT141ZaisankuJuminTohyoCondition"."shohonNo"
+        WHERE
+        "AfT100Shohon"."shohonNo" = #{抄本番号}
+    </sql>
+    
+    <resultMap id="resultMap_ShohonJohoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.jumintohyojitoroku.ShohonJohoEntity" autoMapping="true">
+        <id property="抄本Entity.shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <association property="抄本Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <association property="選挙Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property="財産区抽出条件Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT141ZaisankuJuminTohyoConditionMapper.ResultMap_AfT141ZaisankuJuminTohyoConditionEntity"/>
+    </resultMap>
+</mapper>

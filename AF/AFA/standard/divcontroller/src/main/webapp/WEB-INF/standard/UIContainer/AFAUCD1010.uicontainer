@@ -1,0 +1,74 @@
+﻿{
+ "uiContainerName": "AFAUCD1010",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "選挙資格照会（定時・選挙時）",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMC1000",
+     "layoutTitle": "住民検索（資格）",
+     "eventName": "決定",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMD1010",
+     "toLayoutTitle": "資格照会",
+     "toState": "default"
+    },
+    {
+     "id": "3",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMD1010",
+     "layoutTitle": "資格照会",
+     "eventName": "再検索",
+     "destroy": false,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "再検索状態"
+    },
+    {
+     "id": "4",
+     "type": "ordinal",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMD1010",
+     "layoutTitle": "資格照会",
+     "eventName": "戻る",
+     "destroy": true,
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMC1000",
+     "toLayoutTitle": "住民検索（資格）",
+     "toState": "検索結果状態"
+    },
+    {
+     "id": "5",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMD1010",
+     "layoutTitle": "資格照会",
+     "eventName": "終了",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT114FuzaishaTohyoShikakuマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT114FuzaishaTohyoShikaku">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT114FuzaishaTohyoShikakuMapper.allColumns_AfT114FuzaishaTohyoShikaku" />
+     FROM
+         rgaf."AfT114FuzaishaTohyoShikaku"
+     WHERE
+         rgaf."AfT114FuzaishaTohyoShikaku"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT114FuzaishaTohyoShikaku">
+         "AfT114FuzaishaTohyoShikaku"."shikibetsuCode" as "afT114FuzaishaTohyoShikaku_shikibetsuCode",
+         "AfT114FuzaishaTohyoShikaku"."tohyoShikakuShurui" as "afT114FuzaishaTohyoShikaku_tohyoShikakuShurui",
+         "AfT114FuzaishaTohyoShikaku"."seq" as "afT114FuzaishaTohyoShikaku_seq",
+         "AfT114FuzaishaTohyoShikaku"."insertDantaiCd" as "afT114FuzaishaTohyoShikaku_insertDantaiCd",
+         "AfT114FuzaishaTohyoShikaku"."insertTimestamp" as "afT114FuzaishaTohyoShikaku_insertTimestamp",
+         "AfT114FuzaishaTohyoShikaku"."insertReamsLoginId" as "afT114FuzaishaTohyoShikaku_insertReamsLoginId",
+         "AfT114FuzaishaTohyoShikaku"."insertContextId" as "afT114FuzaishaTohyoShikaku_insertContextId",
+         "AfT114FuzaishaTohyoShikaku"."isDeleted" as "afT114FuzaishaTohyoShikaku_isDeleted",
+         "AfT114FuzaishaTohyoShikaku"."updateCount" as "afT114FuzaishaTohyoShikaku_updateCount",
+         "AfT114FuzaishaTohyoShikaku"."lastUpdateTimestamp" as "afT114FuzaishaTohyoShikaku_lastUpdateTimestamp",
+         "AfT114FuzaishaTohyoShikaku"."lastUpdateReamsLoginId" as "afT114FuzaishaTohyoShikaku_lastUpdateReamsLoginId",
+         "AfT114FuzaishaTohyoShikaku"."kofuYMD" as "afT114FuzaishaTohyoShikaku_kofuYMD",
+         "AfT114FuzaishaTohyoShikaku"."kofuNo" as "afT114FuzaishaTohyoShikaku_kofuNo",
+         "AfT114FuzaishaTohyoShikaku"."shikakuTorokuYMD" as "afT114FuzaishaTohyoShikaku_shikakuTorokuYMD",
+         "AfT114FuzaishaTohyoShikaku"."shikakuManryoYMD" as "afT114FuzaishaTohyoShikaku_shikakuManryoYMD",
+         "AfT114FuzaishaTohyoShikaku"."shikakuMasshoYMD" as "afT114FuzaishaTohyoShikaku_shikakuMasshoYMD",
+         "AfT114FuzaishaTohyoShikaku"."shikakuMasshoJiyuCode" as "afT114FuzaishaTohyoShikaku_shikakuMasshoJiyuCode"
+    </sql>
+
+
+    <!--テーブルAfT114FuzaishaTohyoShikakuの項目をAfT114FuzaishaTohyoShikakuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT114FuzaishaTohyoShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT114FuzaishaTohyoShikakuEntity" autoMapping="true">
+        <id property="shikibetsuCode" column="afT114FuzaishaTohyoShikaku_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="tohyoShikakuShurui" column="afT114FuzaishaTohyoShikaku_tohyoShikakuShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="seq" column="afT114FuzaishaTohyoShikaku_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <result property="insertDantaiCd" column="afT114FuzaishaTohyoShikaku_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT114FuzaishaTohyoShikaku_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT114FuzaishaTohyoShikaku_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT114FuzaishaTohyoShikaku_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT114FuzaishaTohyoShikaku_isDeleted" />
+        <result property="updateCount" column="afT114FuzaishaTohyoShikaku_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT114FuzaishaTohyoShikaku_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT114FuzaishaTohyoShikaku_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kofuYMD" column="afT114FuzaishaTohyoShikaku_kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kofuNo" column="afT114FuzaishaTohyoShikaku_kofuNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shikakuTorokuYMD" column="afT114FuzaishaTohyoShikaku_shikakuTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shikakuManryoYMD" column="afT114FuzaishaTohyoShikaku_shikakuManryoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shikakuMasshoYMD" column="afT114FuzaishaTohyoShikaku_shikakuMasshoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shikakuMasshoJiyuCode" column="afT114FuzaishaTohyoShikaku_shikakuMasshoJiyuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+    </resultMap>
+
+</mapper>

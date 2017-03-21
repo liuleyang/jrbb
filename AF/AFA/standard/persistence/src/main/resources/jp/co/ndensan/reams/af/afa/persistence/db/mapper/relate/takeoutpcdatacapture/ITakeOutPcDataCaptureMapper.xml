@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0795-010 wanghj-->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.takeoutpcdatacapture.ITakeOutPcDataCaptureMapper">
+ <select resultOrdered="false" id="select端末用データBy投票日" resultMap="resultMap_TakeOutPcDataEntity"  fetchSize="500">
+     SELECT
+      <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />
+      ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />
+        FROM
+           rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+           rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON
+         "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        WHERE
+        "AfT100Shohon"."tohyoYMD" = #{投票日}
+        ORDER BY
+         "AfT100Shohon"."shohonNo" ,"AfT111Senkyo"."senkyoNo"
+    </select>
+    
+    <select resultOrdered="false" id="select投票日"  resultType="jp.co.ndensan.reams.af.afa.entity.db.relate.takeoutpcdatacapture.AfT252Entity"
+            fetchSize="500">
+        SELECT DISTINCT
+        "AfT100Shohon"."tohyoYMD"
+        FROM
+        rgaf."AfT100Shohon" AS "AfT100Shohon"        
+        INNER JOIN rgaf."AfT252MochidashiPcJotaiKanri" AS "AfT252MochidashiPcJotaiKanri"
+        ON "AfT100Shohon"."shohonNo" = "AfT252MochidashiPcJotaiKanri"."shohonNo"
+        WHERE "AfT100Shohon"."tohyoYMD"<![CDATA[<=]]>  #{kijunDate}
+        AND "AfT252MochidashiPcJotaiKanri"."dataCreateKubun" = '1'
+        AND "AfT252MochidashiPcJotaiKanri"."dataImportKubun" = '0'
+        ORDER BY
+         "AfT100Shohon"."tohyoYMD" ASC
+    </select>
+    
+    <select resultOrdered="false" id="select持出端末引継データ" resultType="jp.co.ndensan.reams.af.afa.entity.db.relate.takeoutpcdatacapture.AfT252Entity"
+            fetchSize="500">
+        SELECT
+         "AfT252MochidashiPcJotaiKanri"."tohyokuCode",
+        "AfT252MochidashiPcJotaiKanri"."dataCreateKubun",
+        "AfT252MochidashiPcJotaiKanri"."dataCreateYMD",
+        "AfT252MochidashiPcJotaiKanri"."systemSendKubun",
+        "AfT252MochidashiPcJotaiKanri"."systemSendYMD",
+         "AfT252MochidashiPcJotaiKanri"."dataSendKubun",
+        "AfT252MochidashiPcJotaiKanri"."dataSendYMD",
+        "AfT252MochidashiPcJotaiKanri"."dataImportKubun",
+        "AfT252MochidashiPcJotaiKanri"."dataImportYMD",
+        "AfT501Tohyoku"."tohyokuName",
+        "AfT502Tohyojo"."tohyojoName"
+        FROM 
+        rgaf."AfT252MochidashiPcJotaiKanri" AS "AfT252MochidashiPcJotaiKanri"
+        INNER JOIN
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        ON "AfT252MochidashiPcJotaiKanri"."shohonNo" = "AfT100Shohon"."shohonNo"
+        INNER JOIN
+        rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+        ON "AfT504TohyokuRelation"."senkyoShurui" = "AfT100Shohon"."senkyoShurui"
+        AND "AfT504TohyokuRelation"."tohyokuCode" = "AfT252MochidashiPcJotaiKanri"."tohyokuCode"
+        INNER JOIN
+        rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+        ON "AfT502Tohyojo"."tohyojoCode" = "AfT504TohyokuRelation"."tohyojoCode"
+       INNER JOIN
+        rgaf."AfT501Tohyoku" AS "AfT501Tohyoku"
+        ON "AfT501Tohyoku"."senkyoShurui" = "AfT100Shohon"."senkyoShurui"
+        AND "AfT501Tohyoku"."tohyokuCode" = "AfT252MochidashiPcJotaiKanri"."tohyokuCode"
+        WHERE "AfT252MochidashiPcJotaiKanri"."shohonNo" IN 
+           <foreach item="shohonNo" collection="shohonNoList" open="(" separator="," close=")">
+                    #{shohonNo}
+            </foreach>
+    </select>
+    
+    <resultMap id="resultMap_TakeOutPcDataEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.takeoutpcdatacapture.TakeOutPcDataCaptureEntity" autoMapping="true">
+        <id property="抄本Entity.shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <association property="抄本Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <collection property="選挙Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+    </resultMap>
+</mapper>

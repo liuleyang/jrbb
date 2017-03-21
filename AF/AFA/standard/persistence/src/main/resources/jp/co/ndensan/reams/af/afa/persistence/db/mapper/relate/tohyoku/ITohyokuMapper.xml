@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 抄本のマッピング用XMLです。 -->
+<!-- @reamsid_L AF-0290-020 lit -->
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.tohyoku.ITohyokuMapper">
+    <resultMap id="resultMap_TohyokuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.tohyoku.TohyokuEntity" autoMapping="true">
+        <id property="投票区Entity.senkyoShurui" column="afT501Tohyoku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="投票区Entity.tohyokuCode" column="afT501Tohyoku_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <association property="投票区Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.ResultMap_AfT501TohyokuEntity"/>
+        <collection property="投票所Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"/>
+    </resultMap>
+
+    <resultMap id="resultMap_UrTohyokuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.tohyoku.UrTohyokuEntity" autoMapping="true">
+        <id property="投票区Entity.tohyokuCode" column="UrV0159Tohyoku_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.TohyokuCodeTypeHandler"/>
+        <id property="投票区Entity.lasdecCode" column="UrV0159Tohyoku_lasdecCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.LasdecCodeTypeHandler"/>
+        <id property="投票区Entity.lasdecCodeRenban" column="UrV0159Tohyoku_lasdecCodeRenban"/>
+        <id property="投票区Entity.yukoKaishiYMD" column="UrV0159Tohyoku_yukoKaishiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <association property="投票区Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zenjitsuprint.IAFABTE504Mapper.ResultMap_UrV0159TohyokuEntity"/>
+        <collection property="投票所Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"/>
+    </resultMap>
+
+    <select resultOrdered="true" id="select投票区" resultMap="resultMap_TohyokuEntity" fetchSize="500">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.allColumns_AfT501Tohyoku"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo"/>
+        FROM rgaf."AfT501Tohyoku" AS "AfT501Tohyoku"
+        LEFT OUTER JOIN rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+        ON "AfT501Tohyoku"."senkyoShurui" = "AfT504TohyokuRelation"."senkyoShurui"
+        AND "AfT501Tohyoku"."tohyokuCode" = "AfT504TohyokuRelation"."tohyokuCode"
+        LEFT OUTER JOIN  rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+        ON "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"
+        WHERE
+        "AfT501Tohyoku"."senkyoShurui" = #{senkyoShurui}
+        <if test="tohyokuFrom.toString() != ''">
+            AND "AfT501Tohyoku"."tohyokuCode" <![CDATA[ >= ]]> #{tohyokuFrom}
+        </if>
+        <if test="tohyokuTo.toString() != ''">
+            AND "AfT501Tohyoku"."tohyokuCode" <![CDATA[ <= ]]> #{tohyokuTo}
+        </if>
+        ORDER BY "AfT501Tohyoku"."tohyokuCode" ASC
+    </select>
+
+    <select resultOrdered="true" id="selectUR投票区" resultMap="resultMap_UrTohyokuEntity" fetchSize="500">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zenjitsuprint.IAFABTE504Mapper.allColumns_UrV0159Tohyoku"/>
+        ,<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo"/>
+        FROM rgur."UrV0159Tohyoku" AS "UrV0159Tohyoku"
+        LEFT OUTER JOIN rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+        ON "UrV0159Tohyoku"."tohyokuCode" = "AfT504TohyokuRelation"."tohyokuCode"
+        LEFT OUTER JOIN  rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+        ON "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"
+        WHERE
+        "AfT504TohyokuRelation"."senkyoShurui" = #{senkyoShurui}
+        <if test="null != yukoKaishiYMD and yukoKaishiYMD.toString() != ''">
+            AND "UrV0159Tohyoku"."yukoKaishiYMD" <![CDATA[ <= ]]> #{yukoKaishiYMD}
+            AND "UrV0159Tohyoku"."yukoShuryoYMD" <![CDATA[ >= ]]> #{yukoKaishiYMD}
+        </if>
+        <if test="null != lasdecCode and lasdecCode.toString() != ''">
+            AND "UrV0159Tohyoku"."lasdecCode" = #{lasdecCode}
+        </if>
+        <if test="null != lasdecCodeRenban">
+            AND "UrV0159Tohyoku"."lasdecCodeRenban" = #{lasdecCodeRenban}
+        </if>
+        <if test="tohyokuFrom.toString() != ''">
+            AND "UrV0159Tohyoku"."tohyokuCode" <![CDATA[ >= ]]> #{tohyokuFrom}
+        </if>
+        <if test="tohyokuTo.toString() != ''">
+            AND "UrV0159Tohyoku"."tohyokuCode" <![CDATA[ <= ]]> #{tohyokuTo}
+        </if>
+        ORDER BY "UrV0159Tohyoku"."tohyokuCode" ASC
+    </select>
+
+    <select resultOrdered="true" id="select全投票区" resultType="jp.co.ndensan.reams.uz.uza.lang.RString" fetchSize="500">
+        SELECT DISTINCT
+        *
+        FROM
+        (
+        SELECT
+        "AfT501Tohyoku"."tohyokuCode" AS "tohyokuCode"
+        FROM rgaf."AfT501Tohyoku" AS "AfT501Tohyoku"
+        WHERE
+        "AfT501Tohyoku"."senkyoShurui" = #{senkyoShurui}
+        <if test="tohyokuFrom.toString() != ''">
+            AND "AfT501Tohyoku"."tohyokuCode" <![CDATA[ >= ]]> #{tohyokuFrom}
+        </if>
+        <if test="tohyokuTo.toString() != ''">
+            AND "AfT501Tohyoku"."tohyokuCode" <![CDATA[ <= ]]> #{tohyokuTo}
+        </if>
+
+        UNION ALL
+
+        SELECT
+        "UrV0159Tohyoku"."tohyokuCode" AS "tohyokuCode"
+        FROM rgur."UrV0159Tohyoku" AS "UrV0159Tohyoku"
+        LEFT OUTER JOIN rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+        ON "UrV0159Tohyoku"."tohyokuCode" = "AfT504TohyokuRelation"."tohyokuCode"
+        WHERE
+        "AfT504TohyokuRelation"."senkyoShurui" = #{senkyoShurui}
+        <if test="null != yukoKaishiYMD and yukoKaishiYMD.toString() != ''">
+            AND "UrV0159Tohyoku"."yukoKaishiYMD" <![CDATA[ <= ]]> #{yukoKaishiYMD}
+            AND "UrV0159Tohyoku"."yukoShuryoYMD" <![CDATA[ >= ]]> #{yukoKaishiYMD}
+        </if>
+        <if test="tohyokuFrom.toString() != ''">
+            AND "UrV0159Tohyoku"."tohyokuCode" <![CDATA[ >= ]]> #{tohyokuFrom}
+        </if>
+        <if test="tohyokuTo.toString() != ''">
+            AND "UrV0159Tohyoku"."tohyokuCode" <![CDATA[ <= ]]> #{tohyokuTo}
+        </if>
+        ) AS master
+        ORDER BY master."tohyokuCode" ASC
+
+    </select>
+
+</mapper>

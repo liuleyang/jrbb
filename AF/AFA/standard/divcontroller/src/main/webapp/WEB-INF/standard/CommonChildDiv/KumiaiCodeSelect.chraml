@@ -1,0 +1,759 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;KumiaiCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;txtKumiaiCode_labelLText&quot;:&quot;組合コード&quot;,&quot;txtKumiaiCode_labelLWidth&quot;:&quot;&quot;,&quot;txtKumiaiCode_required&quot;:false,&quot;btnKumiaiCode_displayNone&quot;:false,&quot;txtKumiaiName_displayNone&quot;:false,&quot;txtKumiaiName_width&quot;:&quot;L&quot;,&quot;txtKumiaiCode_readOnly&quot;:false,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtKumiaiCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtKumiaiCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtKumiaiCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnKumiaiCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKumiaiName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKumiaiName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtKumiaiCode_readOnly&quot;,&quot;editType&quot;:1}]}}" data-is-composite-control="true" data-control-name="AFA.KumiaiCodeSelect"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="KumiaiCodeSelect" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;KumiaiCodeSelect&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;KumiaiCodeSelect&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;KumiaiCodeSelect&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onBlur_txtSenkyokuCode&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/KumiaiCodeSelect/onBlur_txtKumiaiCode&quot;},{&quot;eventName&quot;:&quot;onBeforeOpenDialog_checkBtnKumiaiCode&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/KumiaiCodeSelect/onBeforeOpenDialog_checkBtnKumiaiCode&quot;}],&quot;hiddenInput&quot;:[{&quot;propertyName&quot;:&quot;txtHdnSenkyoShurui&quot;,&quot;value&quot;:&quot;&quot;}],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="KumiaiCodeSelect_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="KumiaiCodeSelect_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M UzCompositeChild" id="txtKumiaiCode" style="width: 143px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBoxCode" data-obj="{&quot;fieldName&quot;:&quot;txtKumiaiCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxCode&quot;,&quot;width&quot;:&quot;56px&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtKumiaiCode_core&quot;,&quot;labelLText&quot;:&quot;組合コード&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;onBlur&quot;:&quot;onBlur_txtSenkyokuCode&quot;,&quot;labelRWidth&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;7&quot;,&quot;textKind&quot;:2,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtKumiaiCode_labelL"><span>組合コード</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Off ui-autocomplete-input" id="txtKumiaiCode_core" style="width: 56px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><input title="" class="UzButtonDialog FloatLeft JSControl controlMargin-M marginLeft-XS heightTextBoxMatchesFlag HeightTextBoxMatchesForImage UzCompositeChild" id="btnKumiaiCode" style="margin-right: 0em;" type="image" alt="image" src="/ur/urz/image/UR_InputGuide.png" data-control-type="ButtonDialog" data-obj="{&quot;fieldName&quot;:&quot;btnKumiaiCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;ButtonDialog&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;btnKumiaiCode&quot;,&quot;appearance&quot;:2,&quot;imageFileUrl&quot;:&quot;/ur/urz/image/UR_InputGuide.png&quot;,&quot;heightTextBoxMatches&quot;:true,&quot;displayChildDivName&quot;:&quot;AFA.KumiaiSelectDialog&quot;,&quot;dataPassing&quot;:[{&quot;key&quot;:&quot;selectedCode&quot;,&quot;controlName&quot;:&quot;txtKumiaiCode&quot;},{&quot;key&quot;:&quot;selectedName&quot;,&quot;controlName&quot;:&quot;txtKumiaiName&quot;}],&quot;onBeforeOpenDialog&quot;:&quot;onBeforeOpenDialog_checkBtnKumiaiCode&quot;}"><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtKumiaiName" style="width: 511px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtKumiaiName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;txtKumiaiName_core&quot;,&quot;readOnly&quot;:true,&quot;maxLength&quot;:&quot;40&quot;,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input readonlyColor Width-L" id="txtKumiaiName_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var KumiaiCodeSelect_Design = (function (_super) {
+        __extends(KumiaiCodeSelect_Design, _super);
+        function KumiaiCodeSelect_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, KumiaiCodeSelect_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(KumiaiCodeSelect_Design.prototype, "txtKumiaiCode_labelLText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(KumiaiCodeSelect_Design.prototype, "txtKumiaiCode_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(KumiaiCodeSelect_Design.prototype, "txtKumiaiCode_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[0]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(KumiaiCodeSelect_Design.prototype, "btnKumiaiCode_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[1]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(KumiaiCodeSelect_Design.prototype, "txtKumiaiName_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[2]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(KumiaiCodeSelect_Design.prototype, "txtKumiaiName_width", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"] = value;
+                } else {
+                    this.layout.items[0].items[2]["width"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(KumiaiCodeSelect_Design.prototype, "txtKumiaiCode_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[0]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        KumiaiCodeSelect_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtKumiaiCode_labelLText");
+            Uz.JSControlUtil.registProperty("txtKumiaiCode_labelLWidth");
+            Uz.JSControlUtil.registProperty("txtKumiaiCode_required");
+            Uz.JSControlUtil.registProperty("btnKumiaiCode_displayNone");
+            Uz.JSControlUtil.registProperty("txtKumiaiName_displayNone");
+            Uz.JSControlUtil.registProperty("txtKumiaiName_width");
+            Uz.JSControlUtil.registProperty("txtKumiaiCode_readOnly");
+        };
+
+        KumiaiCodeSelect_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtKumiaiCode_labelLText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLText"];
+            editablePropertyInfo["txtKumiaiCode_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["txtKumiaiCode_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["btnKumiaiCode_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtKumiaiName_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtKumiaiName_width"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["width"];
+            editablePropertyInfo["txtKumiaiCode_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+
+            return editablePropertyInfo;
+        };
+        KumiaiCodeSelect_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "KumiaiCodeSelect",
+                    "items": [
+                        {
+                            "fieldName": "txtKumiaiCode",
+                            "items": [],
+                            "controlType": "TextBoxCode",
+                            "width": "56px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtKumiaiCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": "4",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "onBlur_txtSenkyokuCode",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "組合コード",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": "4"
+                        },
+                        {
+                            "fieldName": "btnKumiaiCode",
+                            "items": [],
+                            "controlType": "ButtonDialog",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "btnKumiaiCode",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "onClick": "",
+                            "appearance": 2,
+                            "imageFileUrl": "/ur/urz/image/UR_InputGuide.png",
+                            "icon": 0,
+                            "heightTextBoxMatches": true,
+                            "displayChildDivName": "AFA.KumiaiSelectDialog",
+                            "dataPassing": [
+                                {
+                                    "key": "selectedCode",
+                                    "controlName": "txtKumiaiCode"
+                                },
+                                {
+                                    "key": "selectedName",
+                                    "controlName": "txtKumiaiName"
+                                },
+                                {
+                                    "key": "selectedSenkyoShurui",
+                                    "controlName": "KumiaiCodeSelect.txtHdnSenkyoShurui"
+                                }
+                            ],
+                            "visibleCloseButton": true,
+                            "onOkClose": "",
+                            "onBeforeOpenDialog": ""
+                        },
+                        {
+                            "fieldName": "txtKumiaiName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtKumiaiName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": "40",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "KumiaiCodeSelect",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "KumiaiCodeSelect"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        },
+                        {
+                            "eventName": "onBlur_txtSenkyokuCode",
+                            "requestUrl": "afa/af/afa/SenkyokuCodeSelect/onBlur_txtSenkyokuCode"
+                        }
+                    ],
+                    "hiddenInput": [
+                        {
+                            "propertyName": "txtHdnSenkyoShurui",
+                            "value": ""
+                        }
+                    ],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "KumiaiCodeSelect",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtKumiaiCode",
+                    "publicChildProperty": "labelLText",
+                    "newPropertyName": "txtKumiaiCode_labelLText"
+                },
+                {
+                    "publicChildFieldName": "txtKumiaiCode",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "txtKumiaiCode_labelLWidth"
+                },
+                {
+                    "publicChildFieldName": "txtKumiaiCode",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtKumiaiCode_required"
+                },
+                {
+                    "publicChildFieldName": "btnKumiaiCode",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "btnKumiaiCode_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtKumiaiName",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "txtKumiaiName_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtKumiaiName",
+                    "publicChildProperty": "width",
+                    "newPropertyName": "txtKumiaiName_width"
+                },
+                {
+                    "publicChildFieldName": "txtKumiaiCode",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtKumiaiCode_readOnly"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return KumiaiCodeSelect_Design;
+    })(Uz.CommonChildDiv);
+    AFA.KumiaiCodeSelect_Design = KumiaiCodeSelect_Design;
+
+    (function (KumiaiCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtSenkyokuCode = function () {
+                return "onBlur_txtSenkyokuCode";
+            };
+            return Events;
+        })();
+        KumiaiCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KumiaiCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KumiaiCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.KumiaiCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtKumiaiCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtKumiaiCode"));
+            };
+
+            Controls.prototype.btnKumiaiCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnKumiaiCode"));
+            };
+
+            Controls.prototype.txtKumiaiName = function () {
+                return new UZA.TextBox(this.convFiledName("txtKumiaiName"));
+            };
+            return Controls;
+        })();
+        KumiaiCodeSelect.Controls = Controls;
+    })(AFA.KumiaiCodeSelect || (AFA.KumiaiCodeSelect = {}));
+    var KumiaiCodeSelect = AFA.KumiaiCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KumiaiCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KumiaiCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KumiaiCodeSelect.ModeController = ModeController;
+    })(AFA.KumiaiCodeSelect || (AFA.KumiaiCodeSelect = {}));
+    var KumiaiCodeSelect = AFA.KumiaiCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KumiaiCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new KumiaiCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtKumiaiCode_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtKumiaiCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtKumiaiCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("btnKumiaiCode_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKumiaiName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKumiaiName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtKumiaiCode_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_labelLText = function () {
+                return this.controls.txtKumiaiCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_labelLText = function (value) {
+                this.controls.txtKumiaiCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_labelLWidth = function () {
+                return this.controls.txtKumiaiCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_labelLWidth = function (value) {
+                this.controls.txtKumiaiCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_required = function () {
+                return this.controls.txtKumiaiCode().required;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_required = function (value) {
+                this.controls.txtKumiaiCode().required = value;
+            };
+
+            PublicProperties.prototype.getbtnKumiaiCode_displayNone = function () {
+                return this.controls.btnKumiaiCode().displayNone;
+            };
+
+            PublicProperties.prototype.setbtnKumiaiCode_displayNone = function (value) {
+                this.controls.btnKumiaiCode().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiName_displayNone = function () {
+                return this.controls.txtKumiaiName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtKumiaiName_displayNone = function (value) {
+                this.controls.txtKumiaiName().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiName_width = function () {
+                return this.controls.txtKumiaiName().width;
+            };
+
+            PublicProperties.prototype.settxtKumiaiName_width = function (value) {
+                this.controls.txtKumiaiName().width = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_readOnly = function () {
+                return this.controls.txtKumiaiCode().readOnly;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_readOnly = function (value) {
+                this.controls.txtKumiaiCode().readOnly = value;
+            };
+            return PublicProperties;
+        })();
+        KumiaiCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.KumiaiCodeSelect || (AFA.KumiaiCodeSelect = {}));
+    var KumiaiCodeSelect = AFA.KumiaiCodeSelect;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+     
+   
+   
+     
+   
+   
+     
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['KUMIAICODESELECT'] = {};
+AFA['KUMIAICODESELECT'].KumiaiCodeSelectRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_KumiaiCodeSelect').getProperty();parameter0.txtKumiaiCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtKumiaiCode').getProperty();parameter0.btnKumiaiCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnKumiaiCode').getProperty();parameter0.txtKumiaiName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtKumiaiName').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (KumiaiCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtSenkyokuCode = function () {
+                return "onBlur_txtSenkyokuCode";
+            };
+
+            Events.onBeforeOpenDialog_checkBtnKumiaiCode = function () {
+                return "onBeforeOpenDialog_checkBtnKumiaiCode";
+            };
+            return Events;
+        })();
+        KumiaiCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "KumiaiCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.KumiaiCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.KumiaiCodeSelect.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.KumiaiCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtKumiaiCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtKumiaiCode"));
+            };
+
+            Controls.prototype.btnKumiaiCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnKumiaiCode"));
+            };
+
+            Controls.prototype.txtKumiaiName = function () {
+                return new UZA.TextBox(this.convFiledName("txtKumiaiName"));
+            };
+            return Controls;
+        })();
+        KumiaiCodeSelect.Controls = Controls;
+    })(AFA.KumiaiCodeSelect || (AFA.KumiaiCodeSelect = {}));
+    var KumiaiCodeSelect = AFA.KumiaiCodeSelect;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (KumiaiCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new KumiaiCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        KumiaiCodeSelect.ModeController = ModeController;
+    })(AFA.KumiaiCodeSelect || (AFA.KumiaiCodeSelect = {}));
+    var KumiaiCodeSelect = AFA.KumiaiCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (KumiaiCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new KumiaiCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtKumiaiCode_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtKumiaiCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtKumiaiCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("btnKumiaiCode_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKumiaiName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKumiaiName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtKumiaiCode_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_labelLText = function () {
+                return this.controls.txtKumiaiCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_labelLText = function (value) {
+                this.controls.txtKumiaiCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_labelLWidth = function () {
+                return this.controls.txtKumiaiCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_labelLWidth = function (value) {
+                this.controls.txtKumiaiCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_required = function () {
+                return this.controls.txtKumiaiCode().required;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_required = function (value) {
+                this.controls.txtKumiaiCode().required = value;
+            };
+
+            PublicProperties.prototype.getbtnKumiaiCode_displayNone = function () {
+                return this.controls.btnKumiaiCode().displayNone;
+            };
+
+            PublicProperties.prototype.setbtnKumiaiCode_displayNone = function (value) {
+                this.controls.btnKumiaiCode().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiName_displayNone = function () {
+                return this.controls.txtKumiaiName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtKumiaiName_displayNone = function (value) {
+                this.controls.txtKumiaiName().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiName_width = function () {
+                return this.controls.txtKumiaiName().width;
+            };
+
+            PublicProperties.prototype.settxtKumiaiName_width = function (value) {
+                this.controls.txtKumiaiName().width = value;
+            };
+
+            PublicProperties.prototype.gettxtKumiaiCode_readOnly = function () {
+                return this.controls.txtKumiaiCode().readOnly;
+            };
+
+            PublicProperties.prototype.settxtKumiaiCode_readOnly = function (value) {
+                this.controls.txtKumiaiCode().readOnly = value;
+            };
+            return PublicProperties;
+        })();
+        KumiaiCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.KumiaiCodeSelect || (AFA.KumiaiCodeSelect = {}));
+    var KumiaiCodeSelect = AFA.KumiaiCodeSelect;
+})(AFA || (AFA = {}));
+</script></div>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT141ZaisankuJuminTohyoConditionマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT141ZaisankuJuminTohyoConditionMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT141ZaisankuJuminTohyoCondition">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT141ZaisankuJuminTohyoConditionMapper.allColumns_AfT141ZaisankuJuminTohyoCondition" />
+     FROM
+         rgaf."AfT141ZaisankuJuminTohyoCondition"
+     WHERE
+         rgaf."AfT141ZaisankuJuminTohyoCondition"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT141ZaisankuJuminTohyoCondition">
+         "AfT141ZaisankuJuminTohyoCondition"."shohonNo" as "afT141ZaisankuJuminTohyoCondition_shohonNo",
+         "AfT141ZaisankuJuminTohyoCondition"."insertDantaiCd" as "afT141ZaisankuJuminTohyoCondition_insertDantaiCd",
+         "AfT141ZaisankuJuminTohyoCondition"."insertTimestamp" as "afT141ZaisankuJuminTohyoCondition_insertTimestamp",
+         "AfT141ZaisankuJuminTohyoCondition"."insertReamsLoginId" as "afT141ZaisankuJuminTohyoCondition_insertReamsLoginId",
+         "AfT141ZaisankuJuminTohyoCondition"."insertContextId" as "afT141ZaisankuJuminTohyoCondition_insertContextId",
+         "AfT141ZaisankuJuminTohyoCondition"."isDeleted" as "afT141ZaisankuJuminTohyoCondition_isDeleted",
+         "AfT141ZaisankuJuminTohyoCondition"."updateCount" as "afT141ZaisankuJuminTohyoCondition_updateCount",
+         "AfT141ZaisankuJuminTohyoCondition"."lastUpdateTimestamp" as "afT141ZaisankuJuminTohyoCondition_lastUpdateTimestamp",
+         "AfT141ZaisankuJuminTohyoCondition"."lastUpdateReamsLoginId" as "afT141ZaisankuJuminTohyoCondition_lastUpdateReamsLoginId",
+         "AfT141ZaisankuJuminTohyoCondition"."nenreiKeisanKijunYMD" as "afT141ZaisankuJuminTohyoCondition_nenreiKeisanKijunYMD",
+         "AfT141ZaisankuJuminTohyoCondition"."nenrei" as "afT141ZaisankuJuminTohyoCondition_nenrei",
+         "AfT141ZaisankuJuminTohyoCondition"."birthdayFukumuFlag" as "afT141ZaisankuJuminTohyoCondition_birthdayFukumuFlag",
+         "AfT141ZaisankuJuminTohyoCondition"."kyojuNensu" as "afT141ZaisankuJuminTohyoCondition_kyojuNensu",
+         "AfT141ZaisankuJuminTohyoCondition"."juteiFirstYMD" as "afT141ZaisankuJuminTohyoCondition_juteiFirstYMD",
+         "AfT141ZaisankuJuminTohyoCondition"."juteiLastYMD" as "afT141ZaisankuJuminTohyoCondition_juteiLastYMD",
+         "AfT141ZaisankuJuminTohyoCondition"."japaneseFlag" as "afT141ZaisankuJuminTohyoCondition_japaneseFlag",
+         "AfT141ZaisankuJuminTohyoCondition"."foreignerFlag" as "afT141ZaisankuJuminTohyoCondition_foreignerFlag",
+         "AfT141ZaisankuJuminTohyoCondition"."juminFlag" as "afT141ZaisankuJuminTohyoCondition_juminFlag",
+         "AfT141ZaisankuJuminTohyoCondition"."tenshutsushaFlag" as "afT141ZaisankuJuminTohyoCondition_tenshutsushaFlag",
+         "AfT141ZaisankuJuminTohyoCondition"."tennyushaFlag" as "afT141ZaisankuJuminTohyoCondition_tennyushaFlag",
+         "AfT141ZaisankuJuminTohyoCondition"."teishishaFukumuFlag" as "afT141ZaisankuJuminTohyoCondition_teishishaFukumuFlag"
+    </sql>
+
+
+    <!--テーブルAfT141ZaisankuJuminTohyoConditionの項目をAfT141ZaisankuJuminTohyoConditionEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT141ZaisankuJuminTohyoConditionEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT141ZaisankuJuminTohyoConditionEntity" autoMapping="true">
+        <id property="shohonNo" column="afT141ZaisankuJuminTohyoCondition_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="insertDantaiCd" column="afT141ZaisankuJuminTohyoCondition_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT141ZaisankuJuminTohyoCondition_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT141ZaisankuJuminTohyoCondition_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT141ZaisankuJuminTohyoCondition_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT141ZaisankuJuminTohyoCondition_isDeleted" />
+        <result property="updateCount" column="afT141ZaisankuJuminTohyoCondition_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT141ZaisankuJuminTohyoCondition_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT141ZaisankuJuminTohyoCondition_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="nenreiKeisanKijunYMD" column="afT141ZaisankuJuminTohyoCondition_nenreiKeisanKijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="nenrei" column="afT141ZaisankuJuminTohyoCondition_nenrei" />
+        <result property="birthdayFukumuFlag" column="afT141ZaisankuJuminTohyoCondition_birthdayFukumuFlag" />
+        <result property="kyojuNensu" column="afT141ZaisankuJuminTohyoCondition_kyojuNensu" />
+        <result property="juteiFirstYMD" column="afT141ZaisankuJuminTohyoCondition_juteiFirstYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="juteiLastYMD" column="afT141ZaisankuJuminTohyoCondition_juteiLastYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="japaneseFlag" column="afT141ZaisankuJuminTohyoCondition_japaneseFlag" />
+        <result property="foreignerFlag" column="afT141ZaisankuJuminTohyoCondition_foreignerFlag" />
+        <result property="juminFlag" column="afT141ZaisankuJuminTohyoCondition_juminFlag" />
+        <result property="tenshutsushaFlag" column="afT141ZaisankuJuminTohyoCondition_tenshutsushaFlag" />
+        <result property="tennyushaFlag" column="afT141ZaisankuJuminTohyoCondition_tennyushaFlag" />
+        <result property="teishishaFukumuFlag" column="afT141ZaisankuJuminTohyoCondition_teishishaFukumuFlag" />
+    </resultMap>
+
+</mapper>

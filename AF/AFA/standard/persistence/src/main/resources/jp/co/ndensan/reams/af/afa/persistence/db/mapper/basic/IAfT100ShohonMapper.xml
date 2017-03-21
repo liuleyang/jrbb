@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT100Shohonマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper">
+
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT100Shohon">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />
+        FROM
+        rgaf."AfT100Shohon"
+        WHERE
+        rgaf."AfT100Shohon"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT100Shohon">
+        "AfT100Shohon"."shohonNo" as "afT100Shohon_shohonNo",
+        "AfT100Shohon"."insertDantaiCd" as "afT100Shohon_insertDantaiCd",
+        "AfT100Shohon"."insertTimestamp" as "afT100Shohon_insertTimestamp",
+        "AfT100Shohon"."insertReamsLoginId" as "afT100Shohon_insertReamsLoginId",
+        "AfT100Shohon"."insertContextId" as "afT100Shohon_insertContextId",
+        "AfT100Shohon"."isDeleted" as "afT100Shohon_isDeleted",
+        "AfT100Shohon"."updateCount" as "afT100Shohon_updateCount",
+        "AfT100Shohon"."lastUpdateTimestamp" as "afT100Shohon_lastUpdateTimestamp",
+        "AfT100Shohon"."lastUpdateReamsLoginId" as "afT100Shohon_lastUpdateReamsLoginId",
+        "AfT100Shohon"."senkyoShurui" as "afT100Shohon_senkyoShurui",
+        "AfT100Shohon"."shohonName" as "afT100Shohon_shohonName",
+        "AfT100Shohon"."tohyoYMD" as "afT100Shohon_tohyoYMD",
+        "AfT100Shohon"."kiteiNenreiTotatsuYMD" as "afT100Shohon_kiteiNenreiTotatsuYMD",
+        "AfT100Shohon"."shoriYMD" as "afT100Shohon_shoriYMD",
+        "AfT100Shohon"."nyujokenReportIndex" as "afT100Shohon_nyujokenReportIndex",
+        "AfT100Shohon"."simulationShohonNo" as "afT100Shohon_simulationShohonNo"
+    </sql>
+
+
+    <!--テーブルAfT100Shohonの項目をAfT100ShohonEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT100ShohonEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT100ShohonEntity" autoMapping="true">
+        <id property="shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="insertDantaiCd" column="afT100Shohon_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT100Shohon_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT100Shohon_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT100Shohon_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT100Shohon_isDeleted" />
+        <result property="updateCount" column="afT100Shohon_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT100Shohon_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT100Shohon_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="senkyoShurui" column="afT100Shohon_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shohonName" column="afT100Shohon_shohonName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyoYMD" column="afT100Shohon_tohyoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kiteiNenreiTotatsuYMD" column="afT100Shohon_kiteiNenreiTotatsuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shoriYMD" column="afT100Shohon_shoriYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="nyujokenReportIndex" column="afT100Shohon_nyujokenReportIndex" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"/>
+        <result property="simulationShohonNo" column="afT100Shohon_simulationShohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,694 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;RyojikanCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[]}}" data-is-composite-control="true" data-control-name="AFA.RyojikanCodeSelect"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="RyojikanCodeSelect" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;RyojikanCodeSelect&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;RyojikanCodeSelect&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;RyojikanCodeSelect&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onBlur_txtRyojikanCode&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/RyojikanCodeSelect/onBlur_txtRyojikanCode&quot;},{&quot;eventName&quot;:&quot;onBeforeOpenDialog_checkRyojikanSelect&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/RyojikanCodeSelect/onBeforeOpenDialog_checkRyojikanSelect&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="RyojikanCodeSelect_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="RyojikanCodeSelect_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv UzTextBoxCode FloatLeft JSControl controlMargin-M UzCompositeChild" id="txtRyojikanCode" style="width: 80px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBoxCode" data-obj="{&quot;fieldName&quot;:&quot;txtRyojikanCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxCode&quot;,&quot;width&quot;:&quot;25px&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtRyojikanCode_core&quot;,&quot;maxLength&quot;:&quot;3&quot;,&quot;textKind&quot;:2,&quot;onBlur&quot;:&quot;onBlur_txtRyojikanCode&quot;,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;領事官&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtRyojikanCode_labelL"><span>領事官</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Off ui-autocomplete-input" id="txtRyojikanCode_core" style="width: 25px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><input title="" class="UzButtonDialog FloatLeft JSControl controlMargin-M marginLeft-XS heightTextBoxMatchesFlag HeightTextBoxMatchesForImage UzCompositeChild" id="btnRyojikanCode" style="margin-right: 0em; display: block;" type="image" alt="image" src="/ur/urz/image/UR_InputGuide.png" data-control-type="ButtonDialog" data-obj="{&quot;fieldName&quot;:&quot;btnRyojikanCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;ButtonDialog&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;btnRyojikanCode&quot;,&quot;text&quot;:&quot;選択&quot;,&quot;appearance&quot;:2,&quot;imageFileUrl&quot;:&quot;/ur/urz/image/UR_InputGuide.png&quot;,&quot;heightTextBoxMatches&quot;:true,&quot;displayChildDivName&quot;:&quot;AFA.RyojikanSelectDialog&quot;,&quot;dataPassing&quot;:[{&quot;key&quot;:&quot;selectedCode&quot;,&quot;controlName&quot;:&quot;txtRyojikanCode&quot;},{&quot;key&quot;:&quot;selectedName&quot;,&quot;controlName&quot;:&quot;txtRyojikanName&quot;}],&quot;onBeforeOpenDialog&quot;:&quot;onBeforeOpenDialog_checkRyojikanSelect&quot;}"><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtRyojikanName" style="width: 511px; height: 20px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtRyojikanName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;txtRyojikanName_core&quot;,&quot;readOnly&quot;:true,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input readonlyColor Width-L" id="txtRyojikanName_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var ShisetsuCodeSelect_Design = (function (_super) {
+        __extends(ShisetsuCodeSelect_Design, _super);
+        function ShisetsuCodeSelect_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, ShisetsuCodeSelect_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(ShisetsuCodeSelect_Design.prototype, "txtShsietsuCode_labelLText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShisetsuCodeSelect_Design.prototype, "txtShisetsuCode_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShisetsuCodeSelect_Design.prototype, "txtShisetsuCode_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[0]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShisetsuCodeSelect_Design.prototype, "btnShisetsuCode_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[1]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShisetsuCodeSelect_Design.prototype, "txtShisetsuName_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[2]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShisetsuCodeSelect_Design.prototype, "txtShisetsuName_width", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["width"] = value;
+                } else {
+                    this.layout.items[0].items[2]["width"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(ShisetsuCodeSelect_Design.prototype, "txtShisetsuCode_labelLAlign", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLAlign"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLAlign"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLAlign"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        ShisetsuCodeSelect_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtShsietsuCode_labelLText");
+            Uz.JSControlUtil.registProperty("txtShisetsuCode_labelLWidth");
+            Uz.JSControlUtil.registProperty("txtShisetsuCode_required");
+            Uz.JSControlUtil.registProperty("btnShisetsuCode_displayNone");
+            Uz.JSControlUtil.registProperty("txtShisetsuName_displayNone");
+            Uz.JSControlUtil.registProperty("txtShisetsuName_width");
+            Uz.JSControlUtil.registProperty("txtShisetsuCode_labelLAlign");
+        };
+
+        ShisetsuCodeSelect_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtShsietsuCode_labelLText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLText"];
+            editablePropertyInfo["txtShisetsuCode_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["txtShisetsuCode_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["btnShisetsuCode_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtShisetsuName_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtShisetsuName_width"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["width"];
+            editablePropertyInfo["txtShisetsuCode_labelLAlign"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLAlign"];
+
+            return editablePropertyInfo;
+        };
+        ShisetsuCodeSelect_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "ShisetsuCodeSelect",
+                    "items": [
+                        {
+                            "fieldName": "txtShisetsuCode",
+                            "items": [],
+                            "controlType": "TextBoxCode",
+                            "width": "35px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtShisetsuCode_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": "4",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "onBlur_txtShisetsuCode",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "施設コード",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": "",
+                            "formatLength": "4"
+                        },
+                        {
+                            "fieldName": "btnShisetsuCode",
+                            "items": [],
+                            "controlType": "ButtonDialog",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "btnShisetsuCode",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "text": "選択",
+                            "imageWidth": "",
+                            "imageHeight": "",
+                            "onBeforeClick": "",
+                            "onAfterClick": "",
+                            "onClick": "",
+                            "appearance": 2,
+                            "imageFileUrl": "/ur/urz/image/UR_InputGuide.png",
+                            "icon": 0,
+                            "heightTextBoxMatches": true,
+                            "displayChildDivName": "AFA.ShisetsuSelectDialog",
+                            "dataPassing": [
+                                {
+                                    "key": "selectedCode",
+                                    "controlName": "txtShisetsuCode"
+                                },
+                                {
+                                    "key": "selectedName",
+                                    "controlName": "txtShisetsuName"
+                                }
+                            ],
+                            "visibleCloseButton": true,
+                            "onOkClose": "",
+                            "onBeforeOpenDialog": ""
+                        },
+                        {
+                            "fieldName": "txtShisetsuName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtShisetsuName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 0,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": "",
+                            "permitCharactor": ""
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "ShisetsuCodeSelect",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "ShisetsuCodeSelect"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        },
+                        {
+                            "eventName": "onBlur_txtShisetsuCode",
+                            "requestUrl": "AFA/af/AFA/ShisetsuCodeSelect/onBlur_txtShisetsuCode"
+                        }
+                    ],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "ShisetsuCodeSelect",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtShisetsuCode",
+                    "publicChildProperty": "labelLText",
+                    "newPropertyName": "txtShsietsuCode_labelLText"
+                },
+                {
+                    "publicChildFieldName": "txtShisetsuCode",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "txtShisetsuCode_labelLWidth"
+                },
+                {
+                    "publicChildFieldName": "txtShisetsuCode",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtShisetsuCode_required"
+                },
+                {
+                    "publicChildFieldName": "btnShisetsuCode",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "btnShisetsuCode_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtShisetsuName",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "txtShisetsuName_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtShisetsuName",
+                    "publicChildProperty": "width",
+                    "newPropertyName": "txtShisetsuName_width"
+                },
+                {
+                    "publicChildFieldName": "txtShisetsuCode",
+                    "publicChildProperty": "labelLAlign",
+                    "newPropertyName": "txtShisetsuCode_labelLAlign"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return ShisetsuCodeSelect_Design;
+    })(Uz.CommonChildDiv);
+    AFA.ShisetsuCodeSelect_Design = ShisetsuCodeSelect_Design;
+
+    (function (ShisetsuCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtShisetsuCode = function () {
+                return "onBlur_txtShisetsuCode";
+            };
+            return Events;
+        })();
+        ShisetsuCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "ShisetsuCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.ShisetsuCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.ShisetsuCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtShisetsuCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtShisetsuCode"));
+            };
+
+            Controls.prototype.btnShisetsuCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnShisetsuCode"));
+            };
+
+            Controls.prototype.txtShisetsuName = function () {
+                return new UZA.TextBox(this.convFiledName("txtShisetsuName"));
+            };
+            return Controls;
+        })();
+        ShisetsuCodeSelect.Controls = Controls;
+    })(AFA.ShisetsuCodeSelect || (AFA.ShisetsuCodeSelect = {}));
+    var ShisetsuCodeSelect = AFA.ShisetsuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShisetsuCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new ShisetsuCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        ShisetsuCodeSelect.ModeController = ModeController;
+    })(AFA.ShisetsuCodeSelect || (AFA.ShisetsuCodeSelect = {}));
+    var ShisetsuCodeSelect = AFA.ShisetsuCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (ShisetsuCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new ShisetsuCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtShsietsuCode_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtShisetsuCode_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtShisetsuCode_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("btnShisetsuCode_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShisetsuName_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShisetsuName_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtShisetsuCode_labelLAlign", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtShsietsuCode_labelLText = function () {
+                return this.controls.txtShisetsuCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtShsietsuCode_labelLText = function (value) {
+                this.controls.txtShisetsuCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtShisetsuCode_labelLWidth = function () {
+                return this.controls.txtShisetsuCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtShisetsuCode_labelLWidth = function (value) {
+                this.controls.txtShisetsuCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtShisetsuCode_required = function () {
+                return this.controls.txtShisetsuCode().required;
+            };
+
+            PublicProperties.prototype.settxtShisetsuCode_required = function (value) {
+                this.controls.txtShisetsuCode().required = value;
+            };
+
+            PublicProperties.prototype.getbtnShisetsuCode_displayNone = function () {
+                return this.controls.btnShisetsuCode().displayNone;
+            };
+
+            PublicProperties.prototype.setbtnShisetsuCode_displayNone = function (value) {
+                this.controls.btnShisetsuCode().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtShisetsuName_displayNone = function () {
+                return this.controls.txtShisetsuName().displayNone;
+            };
+
+            PublicProperties.prototype.settxtShisetsuName_displayNone = function (value) {
+                this.controls.txtShisetsuName().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtShisetsuName_width = function () {
+                return this.controls.txtShisetsuName().width;
+            };
+
+            PublicProperties.prototype.settxtShisetsuName_width = function (value) {
+                this.controls.txtShisetsuName().width = value;
+            };
+
+            PublicProperties.prototype.gettxtShisetsuCode_labelLAlign = function () {
+                return this.controls.txtShisetsuCode().labelLAlign;
+            };
+
+            PublicProperties.prototype.settxtShisetsuCode_labelLAlign = function (value) {
+                this.controls.txtShisetsuCode().labelLAlign = value;
+            };
+            return PublicProperties;
+        })();
+        ShisetsuCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.ShisetsuCodeSelect || (AFA.ShisetsuCodeSelect = {}));
+    var ShisetsuCodeSelect = AFA.ShisetsuCodeSelect;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+     
+   
+   
+   
+     
+   
+   
+     
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['RYOJIKANCODESELECT'] = {};
+AFA['RYOJIKANCODESELECT'].RyojikanCodeSelectRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_RyojikanCodeSelect').getProperty();parameter0.txtRyojikanCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtRyojikanCode').getProperty();parameter0.btnRyojikanCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnRyojikanCode').getProperty();parameter0.txtRyojikanName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtRyojikanName').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (RyojikanCodeSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtRyojikanCode = function () {
+                return "onBlur_txtRyojikanCode";
+            };
+
+            Events.onBeforeOpenDialog_checkRyojikanSelect = function () {
+                return "onBeforeOpenDialog_checkRyojikanSelect";
+            };
+            return Events;
+        })();
+        RyojikanCodeSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "RyojikanCodeSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.RyojikanCodeSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.RyojikanCodeSelect.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.RyojikanCodeSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtRyojikanCode = function () {
+                return new UZA.TextBoxCode(this.convFiledName("txtRyojikanCode"));
+            };
+
+            Controls.prototype.btnRyojikanCode = function () {
+                return new UZA.ButtonDialog(this.convFiledName("btnRyojikanCode"));
+            };
+
+            Controls.prototype.txtRyojikanName = function () {
+                return new UZA.TextBox(this.convFiledName("txtRyojikanName"));
+            };
+            return Controls;
+        })();
+        RyojikanCodeSelect.Controls = Controls;
+    })(AFA.RyojikanCodeSelect || (AFA.RyojikanCodeSelect = {}));
+    var RyojikanCodeSelect = AFA.RyojikanCodeSelect;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (RyojikanCodeSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new RyojikanCodeSelect.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+
+            ModeController.prototype.PublicProperties = function () {
+                return new RyojikanCodeSelect.PublicProperties(this.fieldName);
+            };
+            return ModeController;
+        })();
+        RyojikanCodeSelect.ModeController = ModeController;
+    })(AFA.RyojikanCodeSelect || (AFA.RyojikanCodeSelect = {}));
+    var RyojikanCodeSelect = AFA.RyojikanCodeSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (RyojikanCodeSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new RyojikanCodeSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                return editTypes;
+            };
+            return PublicProperties;
+        })();
+        RyojikanCodeSelect.PublicProperties = PublicProperties;
+    })(AFA.RyojikanCodeSelect || (AFA.RyojikanCodeSelect = {}));
+    var RyojikanCodeSelect = AFA.RyojikanCodeSelect;
+})(AFA || (AFA = {}));
+</script></div>

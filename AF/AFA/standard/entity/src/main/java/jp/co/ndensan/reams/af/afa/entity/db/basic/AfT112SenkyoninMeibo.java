@@ -1,0 +1,120 @@
+package jp.co.ndensan.reams.af.afa.entity.db.basic;
+
+import jp.co.ndensan.reams.uz.uza.util.db.IColumnDefinition;
+
+/**
+ * 各種選挙の選挙人名簿、投票人名簿を保持する。テーブルの項目定義クラスです。
+ */
+public enum AfT112SenkyoninMeibo implements IColumnDefinition {
+// <editor-fold defaultstate="collapsed" desc="Created By POJO Tool ver 1.4.2">
+
+    /**
+     * insertDantaiCd
+     */
+    insertDantaiCd(2147483647, 0),
+    /**
+     * insertTimestamp
+     */
+    insertTimestamp(29, 0),
+    /**
+     * insertReamsLoginId
+     */
+    insertReamsLoginId(2147483647, 0),
+    /**
+     * insertContextId
+     */
+    insertContextId(2147483647, 0),
+    /**
+     * isDeleted
+     */
+    isDeleted(1, 0),
+    /**
+     * updateCount
+     */
+    updateCount(10, 0),
+    /**
+     * lastUpdateTimestamp
+     */
+    lastUpdateTimestamp(29, 0),
+    /**
+     * lastUpdateReamsLoginId
+     */
+    lastUpdateReamsLoginId(2147483647, 0),
+    /**
+     * 抄本番号
+     */
+    shohonNo(2147483647, 0),
+    /**
+     * グループコード
+     * <br/>抄本を有権者、表示者でまとめる場合は、選挙資格区分をセット。 居住、非居住でまとめる場合は、居住区分をセット。 指定なしの場合は’0’をセット。
+     */
+    groupCode(1, 0),
+    /**
+     * 投票区コード
+     */
+    tohyokuCode(4, 0),
+    /**
+     * 冊
+     * <br/>分冊する場合使用する。（1からの連番） 指定なしの場合は’00’をセット。
+     */
+    satsu(2, 0),
+    /**
+     * 頁
+     * <br/>最大6桁を想定
+     */
+    page(10, 0),
+    /**
+     * 行
+     */
+    gyo(5, 0),
+    /**
+     * 履歴番号
+     */
+    seq(19, 0),
+    /**
+     * 識別コード
+     */
+    shikibetsuCode(2147483647, 0),
+    /**
+     * 投票区変更抹消フラグ
+     * <br/>定時登録の場合、転居前のレコードをTrueにする。
+     */
+    tohyokuHenkoMasshoFlag(1, 0),
+    /**
+     * 連番
+     * <br/>最初に名簿を作成した時の総頁をセットする。
+     */
+    renban(10, 0),
+    /**
+     * 枝番
+     */
+    edaban(5, 0);
+
+    private final int maxLength;
+    private final int scale;
+
+    private AfT112SenkyoninMeibo(int maxLength, int scale) {
+        this.maxLength = maxLength;
+        this.scale = scale;
+    }
+
+    /**
+     * 項目の最大長のgetメソッドです。
+     *
+     * @return 項目の最大長
+     */
+    public int getMaxLength() {
+        return maxLength;
+    }
+
+    /**
+     * 小数点以下の桁数のgetメソッドです。
+     *
+     * @return 小数点以下の桁数
+     */
+    public int getScale() {
+        return scale;
+    }
+
+// </editor-fold>
+}

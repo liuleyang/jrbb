@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0070-031 liss -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.kijitsumaetohyo.IShikakuhanteiMapper">
+    <select resultOrdered="true" id="selectNewTenshutsuYmd"
+            resultType="jp.co.ndensan.reams.uz.uza.lang.FlexibleDate">
+        SELECT
+        <if test="selectKijun == 1">
+            MAX(<include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shojoTodokedeYMD") as "newTenshutsuYmd"
+        </if>
+        <if test="selectKijun == 2">
+            MAX(<include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shojoIdoYMD") as "newTenshutsuYmd"
+        </if>
+        FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />
+        AS
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        WHERE
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = #{shikibetsuCd}
+    </select>
+
+    <select resultOrdered="true" id="selectNewTennyuYmd"
+            resultType="jp.co.ndensan.reams.uz.uza.lang.FlexibleDate">
+        SELECT
+        <if test="selectKijun == 1">
+            MAX(<include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."torokuTodokedeYMD") as "newTennyuYmd"
+        </if>
+        <if test="selectKijun == 2">
+            MAX(<include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."torokuIdoYMD") as "newTennyuYmd"
+        </if>
+        FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />
+        AS
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        WHERE
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = #{shikibetsuCd}
+        AND
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."rirekiNo"  <![CDATA[<=]]> #{seq}
+
+    </select>
+
+    <select resultOrdered="true" id="selectNewTenshutsuYmdSeq" resultType="java.lang.Integer">
+        SELECT
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."rirekiNo"
+        FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />
+        AS
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        WHERE
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = #{shikibetsuCd}
+        <if test="selectKijun == 1">
+            AND
+            <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shojoTodokedeYMD"  = #{tenshutsuYmd}
+        </if>
+        <if test="selectKijun == 2">
+            AND
+            <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shojoIdoYMD"  = #{tenshutsuYmd}
+        </if>
+    </select>
+
+</mapper>

@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCJ1030",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "農業委員会委員選挙選挙時登録",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFA1010020",
+     "toLayoutTitle": "農業委員会委員選挙時登録",
+     "toState": "default"
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFA1010020",
+     "layoutTitle": "農業委員会委員選挙時登録",
+     "eventName": "バッチ起動",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

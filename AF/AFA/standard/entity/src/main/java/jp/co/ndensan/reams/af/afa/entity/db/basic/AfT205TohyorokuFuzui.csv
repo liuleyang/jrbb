@@ -1,0 +1,15 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+senkyoNo,AfUDD002SenkyoNo,SenkyoNo,,,,,選挙番号,A
+hokokuYMD,UDD015YMD,FlexibleDate,,,,,報告年月日,A
+shisetsuCode,varchar,RString,,,,,施設コード,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A
+komokuShurui,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.投票録項目種類.getCodeShubetsu(),Description,,投票録項目種類,A
+renban,int2,int,,,,,連番,A
+toha,varchar,RString,,,,,党派,A
+shimei,UDD042AtenaMeisho,AtenaMeisho,,,,,氏名,A
+sennninYMD,UDD015YMD,FlexibleDate,,,,,選任年月日,A
+tachiaiStartTime,time,RTime,,,,,立会時間（開始時刻）,A
+tachiaiStopTime,time,RTime,,,,,立会時間（終了時刻）,A
+sankaiTime,time,RTime,,,,,参会時刻,A
+jishokuTime,time,RTime,,,,,辞職時刻,A
+jiyu,varchar,RString,,,,,事由,A

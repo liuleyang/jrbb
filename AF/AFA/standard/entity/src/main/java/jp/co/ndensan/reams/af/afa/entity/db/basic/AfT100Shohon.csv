@@ -1,0 +1,8 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+senkyoShurui,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.選挙種類.getCodeShubetsu(),Description,,選挙種類,A
+shohonName,varchar,RString,,,,,抄本名,A
+tohyoYMD,UDD015YMD,FlexibleDate,,,,,投票年月日,A
+kiteiNenreiTotatsuYMD,UDD015YMD,FlexibleDate,,,,,規定年齢到達年月日,A
+shoriYMD,UDD015YMD,FlexibleDate,,,,,処理年月日,A
+nyujokenReportIndex,numeric,Decimal,,,,,入場券発行固有番号,A
+shimulationShohonNo,AfUDD001ShohonNo,ShohonNo,,,,,研修用抄本番号,A

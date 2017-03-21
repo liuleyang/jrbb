@@ -1,0 +1,4 @@
+﻿senkyoShurui,UDD035Code,Code,,,,,コード種別：3620（選挙種類）,A
+tohyokuCode,varchar,RString,,,,,tohyokuCode,A
+tanmatsuId,text,RString,,,,,tanmatsuId,A
+biko,text,RString,,,,,biko,A

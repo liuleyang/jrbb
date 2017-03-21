@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT204Tohyorokuマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT204TohyorokuMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT204Tohyoroku">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT204TohyorokuMapper.allColumns_AfT204Tohyoroku" />
+     FROM
+         rgaf."AfT204Tohyoroku"
+     WHERE
+         rgaf."AfT204Tohyoroku"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT204Tohyoroku">
+         "AfT204Tohyoroku"."shohonNo" as "afT204Tohyoroku_shohonNo",
+         "AfT204Tohyoroku"."senkyoNo" as "afT204Tohyoroku_senkyoNo",
+         "AfT204Tohyoroku"."hokokuYMD" as "afT204Tohyoroku_hokokuYMD",
+         "AfT204Tohyoroku"."shisetsuCode" as "afT204Tohyoroku_shisetsuCode",
+         "AfT204Tohyoroku"."tohyokuCode" as "afT204Tohyoroku_tohyokuCode",
+         "AfT204Tohyoroku"."insertDantaiCd" as "afT204Tohyoroku_insertDantaiCd",
+         "AfT204Tohyoroku"."insertTimestamp" as "afT204Tohyoroku_insertTimestamp",
+         "AfT204Tohyoroku"."insertReamsLoginId" as "afT204Tohyoroku_insertReamsLoginId",
+         "AfT204Tohyoroku"."insertContextId" as "afT204Tohyoroku_insertContextId",
+         "AfT204Tohyoroku"."isDeleted" as "afT204Tohyoroku_isDeleted",
+         "AfT204Tohyoroku"."updateCount" as "afT204Tohyoroku_updateCount",
+         "AfT204Tohyoroku"."lastUpdateTimestamp" as "afT204Tohyoroku_lastUpdateTimestamp",
+         "AfT204Tohyoroku"."lastUpdateReamsLoginId" as "afT204Tohyoroku_lastUpdateReamsLoginId",
+         "AfT204Tohyoroku"."secchiJokyo" as "afT204Tohyoroku_secchiJokyo",
+         "AfT204Tohyoroku"."kaisetsuBasho" as "afT204Tohyoroku_kaisetsuBasho",
+         "AfT204Tohyoroku"."secchiFirstYMD" as "afT204Tohyoroku_secchiFirstYMD",
+         "AfT204Tohyoroku"."secchiLastYMD" as "afT204Tohyoroku_secchiLastYMD",
+         "AfT204Tohyoroku"."kaiheiStartTime" as "afT204Tohyoroku_kaiheiStartTime",
+         "AfT204Tohyoroku"."kaiheiStopTime" as "afT204Tohyoroku_kaiheiStopTime",
+         "AfT204Tohyoroku"."shokiNinzu" as "afT204Tohyoroku_shokiNinzu",
+         "AfT204Tohyoroku"."shokuinNinzu" as "afT204Tohyoroku_shokuinNinzu",
+         "AfT204Tohyoroku"."sonotaNinzu" as "afT204Tohyoroku_sonotaNinzu"
+    </sql>
+
+
+    <!--テーブルAfT204Tohyorokuの項目をAfT204TohyorokuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT204TohyorokuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT204TohyorokuEntity" autoMapping="true">
+        <id property="shohonNo" column="afT204Tohyoroku_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="senkyoNo" column="afT204Tohyoroku_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <id property="hokokuYMD" column="afT204Tohyoroku_hokokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <id property="shisetsuCode" column="afT204Tohyoroku_shisetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="tohyokuCode" column="afT204Tohyoroku_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT204Tohyoroku_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT204Tohyoroku_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT204Tohyoroku_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT204Tohyoroku_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT204Tohyoroku_isDeleted" />
+        <result property="updateCount" column="afT204Tohyoroku_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT204Tohyoroku_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT204Tohyoroku_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="secchiJokyo" column="afT204Tohyoroku_secchiJokyo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kaisetsuBasho" column="afT204Tohyoroku_kaisetsuBasho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="secchiFirstYMD" column="afT204Tohyoroku_secchiFirstYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="secchiLastYMD" column="afT204Tohyoroku_secchiLastYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kaiheiStartTime" column="afT204Tohyoroku_kaiheiStartTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="kaiheiStopTime" column="afT204Tohyoroku_kaiheiStopTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="shokiNinzu" column="afT204Tohyoroku_shokiNinzu" />
+        <result property="shokuinNinzu" column="afT204Tohyoroku_shokuinNinzu" />
+        <result property="sonotaNinzu" column="afT204Tohyoroku_sonotaNinzu" />
+    </resultMap>
+
+</mapper>

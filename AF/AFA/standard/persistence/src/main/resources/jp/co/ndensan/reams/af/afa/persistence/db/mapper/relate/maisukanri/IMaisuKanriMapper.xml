@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0660-010 zhanggs -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.maisukanri.IMaisuKanriMapper">
+    <select resultOrdered="true" id="select投票用紙枚数リスト"  parameterType="jp.co.ndensan.reams.af.afa.entity.db.relate.maisukanri.MaisuKanriJouhou" 
+             resultMap="resultMap_MaisuKanriEntity"  fetchSize="500">
+       
+      SELECT  
+      <if test='選挙種類.toString() =="0" or 選挙種類.toString() =="1" '>
+          DISTINCT
+          "tohyoku"."tohyokuCode" as "tohyokuCode",  
+            <include refid="allColumns_AfT251TohyoYoshiMaisuKanri" />,
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT251TohyoYoshiMaisuKanriMapper.allColumns_AfT251TohyoYoshiMaisuKanri"/>
+         FROM     
+             rgur."UrT0159Tohyoku" AS "tohyoku" 
+          LEFT OUTER JOIN 
+              rgaf."AfT251TohyoYoshiMaisuKanri" AS "AfT251TohyoYoshiMaisuKanri"
+          ON 
+               "tohyoku"."tohyokuCode"="AfT251TohyoYoshiMaisuKanri"."tohyokuCode" 
+          AND  "AfT251TohyoYoshiMaisuKanri"."shohonNo" = #{抄本番号}
+          AND  "AfT251TohyoYoshiMaisuKanri"."senkyoNo" = #{選挙番号}  
+      </if>
+      <if test='選挙種類.toString() != "0" and 選挙種類.toString() != "1" '> 
+          "tohyoku"."tohyokuCode" as "tohyokuCode",  
+          <include refid="allColumns_AfT251TohyoYoshiMaisuKanri" />,
+          <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT251TohyoYoshiMaisuKanriMapper.allColumns_AfT251TohyoYoshiMaisuKanri"/>
+       FROM     
+            rgaf."AfT501Tohyoku" AS "tohyoku" 
+         LEFT OUTER JOIN  
+           rgaf."AfT251TohyoYoshiMaisuKanri" AS "AfT251TohyoYoshiMaisuKanri"
+         ON 
+              "tohyoku"."tohyokuCode"="AfT251TohyoYoshiMaisuKanri"."tohyokuCode" 
+          AND  "AfT251TohyoYoshiMaisuKanri"."shohonNo" = #{抄本番号}
+          AND  "AfT251TohyoYoshiMaisuKanri"."senkyoNo" = #{選挙番号}  
+       WHERE
+          "tohyoku"."senkyoShurui"= #{選挙種類}
+      </if> 
+     ORDER BY 
+        "tohyoku"."tohyokuCode"      
+  </select>
+       
+    <sql id="allColumns_AfT251TohyoYoshiMaisuKanri">
+         "AfT251TohyoYoshiMaisuKanri"."tohyoYoshiMaisu" as "afT251TohyoYoshiMaisuKanri_tohyoYoshiMaisu",
+         "AfT251TohyoYoshiMaisuKanri"."tenjiYoshiMaisu" as "afT251TohyoYoshiMaisuKanri_tenjiYoshiMaisu",
+         "AfT251TohyoYoshiMaisuKanri"."kariFutoMaisu" as "afT251TohyoYoshiMaisuKanri_kariFutoMaisu"
+    </sql>  
+     <resultMap id="resultMap_MaisuKanriEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.maisukanri.MaisuKanriJouhou" autoMapping="true">
+        <result property="投票区コード" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票用紙枚数" column="afT251TohyoYoshiMaisuKanri_tohyoYoshiMaisu" />
+        <result property="点字投票用紙枚数" column="afT251TohyoYoshiMaisuKanri_tenjiYoshiMaisu" />
+        <result property="仮投票用封筒枚数" column="afT251TohyoYoshiMaisuKanri_kariFutoMaisu" />
+        <association property="afT251Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT251TohyoYoshiMaisuKanriMapper.ResultMap_AfT251TohyoYoshiMaisuKanriEntity"/>
+    </resultMap>
+      
+</mapper>

@@ -1,0 +1,532 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;BarCodeNyuryoku&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onBlur_txtBarCode&quot;},{&quot;eventName&quot;:&quot;onClick_btnBarCode&quot;},{&quot;eventName&quot;:&quot;onChange_txtBarCode&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtBarCode_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtBarCode_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtBarCode_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtBarCode_helpMessageID&quot;,&quot;editType&quot;:0}]},&quot;txtBarCode_labelText&quot;:&quot;バーコード&quot;,&quot;txtBarCode_labelWidth&quot;:&quot;&quot;,&quot;txtBarCode_width&quot;:&quot;M&quot;,&quot;txtBarCode_helpMessageID&quot;:&quot;AFAbarCodeMessage&quot;}" data-is-composite-control="true" data-control-name="AFA.BarCodeNyuryoku"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="BarCodeNyuryoku" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;BarCodeNyuryoku&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;BarCodeNyuryoku&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;BarCodeNyuryoku&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onActive&quot;,&quot;requestUrl&quot;:&quot;&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="BarCodeNyuryoku_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="BarCodeNyuryoku_panel_body_area"><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M PrivateInfo UzCompositeChild" id="txtBarCode" style="width: 330px; height: 20px; margin-right: 0em; margin-left: 0em;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtBarCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;M&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;txtBarCode_core&quot;,&quot;helpMessageID&quot;:&quot;AFAbarCodeMessage&quot;,&quot;isPrivateInfo&quot;:true,&quot;onChange&quot;:&quot;onChange_txtBarCode&quot;,&quot;labelLText&quot;:&quot;バーコード&quot;,&quot;labelLWidth&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;25&quot;,&quot;textKind&quot;:5,&quot;onBlur&quot;:&quot;onBlur_txtBarCode&quot;,&quot;suggest&quot;:[]}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="txtBarCode_labelL"><span>バーコード</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Off ui-autocomplete-input ime-mode-Number Width-M" id="txtBarCode_core" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><button class="UzButton JSControl FloatLeft controlMargin-M marginLeft-XS marginRight-XS Width-S UzCompositeChild" id="btnBarCode" type="button" data-control-type="Button" data-obj="{&quot;fieldName&quot;:&quot;btnBarCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Button&quot;,&quot;width&quot;:&quot;S&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;btnBarCode&quot;,&quot;text&quot;:&quot;【隠】実行&quot;,&quot;onClick&quot;:&quot;onClick_btnBarCode&quot;}"><span>【隠】実行</span></button><span class="UzLabel word-wrap-break-word JSControl FloatLeft marginLeft-XS marginRight-XS Width-XS controlMargin-M text-align-right UzCompositeChild" id="length" data-control-type="Label" data-obj="{&quot;fieldName&quot;:&quot;length&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Label&quot;,&quot;displayNone&quot;:true,&quot;selectControlID&quot;:&quot;length&quot;,&quot;text&quot;:&quot;19&quot;}"><span>19</span></span></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var BarCodeNyuryoku_Design = (function (_super) {
+        __extends(BarCodeNyuryoku_Design, _super);
+        function BarCodeNyuryoku_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, BarCodeNyuryoku_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(BarCodeNyuryoku_Design.prototype, "txtBarCode_labelText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLText"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(BarCodeNyuryoku_Design.prototype, "txtBarCode_labelWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(BarCodeNyuryoku_Design.prototype, "txtBarCode_width", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["width"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["width"] = value;
+                } else {
+                    this.layout.items[0].items[0]["width"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(BarCodeNyuryoku_Design.prototype, "txtBarCode_helpMessageID", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["helpMessageID"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["helpMessageID"] = value;
+                } else {
+                    this.layout.items[0].items[0]["helpMessageID"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        BarCodeNyuryoku_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("txtBarCode_labelText");
+            Uz.JSControlUtil.registProperty("txtBarCode_labelWidth");
+            Uz.JSControlUtil.registProperty("txtBarCode_width");
+            Uz.JSControlUtil.registProperty("txtBarCode_helpMessageID");
+        };
+
+        BarCodeNyuryoku_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["txtBarCode_labelText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLText"];
+            editablePropertyInfo["txtBarCode_labelWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+            editablePropertyInfo["txtBarCode_width"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["width"];
+            editablePropertyInfo["txtBarCode_helpMessageID"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["helpMessageID"];
+
+            return editablePropertyInfo;
+        };
+        BarCodeNyuryoku_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "BarCodeNyuryoku",
+                    "items": [
+                        {
+                            "fieldName": "txtBarCode",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "M",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "0em",
+                            "selectControlID": "txtBarCode_core",
+                            "helpMessageID": "AFAbarCodeMessage",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "placeHolder": "",
+                            "textKind": 2,
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "isComboBox": false,
+                            "onFocus": "",
+                            "onBlur": "onBlur_txtBarCode",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "suggest": [],
+                            "value": "",
+                            "labelLText": "バーコード",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "decorationClass": ""
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "BarCodeNyuryoku",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "BarCodeNyuryoku"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "BarCodeNyuryoku",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "txtBarCode",
+                    "publicChildProperty": "labelLText",
+                    "newPropertyName": "txtBarCode_labelText"
+                },
+                {
+                    "publicChildFieldName": "txtBarCode",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "txtBarCode_labelWidth"
+                },
+                {
+                    "publicChildFieldName": "txtBarCode",
+                    "publicChildProperty": "width",
+                    "newPropertyName": "txtBarCode_width"
+                },
+                {
+                    "publicChildFieldName": "txtBarCode",
+                    "publicChildProperty": "helpMessageID",
+                    "newPropertyName": "txtBarCode_helpMessageID"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return BarCodeNyuryoku_Design;
+    })(Uz.CommonChildDiv);
+    AFA.BarCodeNyuryoku_Design = BarCodeNyuryoku_Design;
+
+    (function (BarCodeNyuryoku) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onBlur_txtBarCode = function () {
+                return "onBlur_txtBarCode";
+            };
+            return Events;
+        })();
+        BarCodeNyuryoku.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "BarCodeNyuryoku";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.BarCodeNyuryoku.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.BarCodeNyuryoku = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtBarCode = function () {
+                return new UZA.TextBox(this.convFiledName("txtBarCode"));
+            };
+            return Controls;
+        })();
+        BarCodeNyuryoku.Controls = Controls;
+    })(AFA.BarCodeNyuryoku || (AFA.BarCodeNyuryoku = {}));
+    var BarCodeNyuryoku = AFA.BarCodeNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (BarCodeNyuryoku) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new BarCodeNyuryoku.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        BarCodeNyuryoku.ModeController = ModeController;
+    })(AFA.BarCodeNyuryoku || (AFA.BarCodeNyuryoku = {}));
+    var BarCodeNyuryoku = AFA.BarCodeNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (BarCodeNyuryoku) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new BarCodeNyuryoku.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtBarCode_labelText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtBarCode_labelWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtBarCode_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtBarCode_helpMessageID", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_labelText = function () {
+                return this.controls.txtBarCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtBarCode_labelText = function (value) {
+                this.controls.txtBarCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_labelWidth = function () {
+                return this.controls.txtBarCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtBarCode_labelWidth = function (value) {
+                this.controls.txtBarCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_width = function () {
+                return this.controls.txtBarCode().width;
+            };
+
+            PublicProperties.prototype.settxtBarCode_width = function (value) {
+                this.controls.txtBarCode().width = value;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_helpMessageID = function () {
+                return this.controls.txtBarCode().helpMessageID;
+            };
+
+            PublicProperties.prototype.settxtBarCode_helpMessageID = function (value) {
+                this.controls.txtBarCode().helpMessageID = value;
+            };
+            return PublicProperties;
+        })();
+        BarCodeNyuryoku.PublicProperties = PublicProperties;
+    })(AFA.BarCodeNyuryoku || (AFA.BarCodeNyuryoku = {}));
+    var BarCodeNyuryoku = AFA.BarCodeNyuryoku;
+})(AFA || (AFA = {}));
+</script>
+  
+  
+  
+   
+         
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['BARCODENYURYOKU'] = {};
+AFA['BARCODENYURYOKU'].BarCodeNyuryokuRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_BarCodeNyuryoku').getProperty();parameter0.txtBarCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtBarCode').getProperty();parameter0.btnBarCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_btnBarCode').getProperty();parameter0.length = Uz.JSControlUtil.getJSControl(parentFieldName + '_length').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (BarCodeNyuryoku) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_txtBarCode = function () {
+                return "onChange_txtBarCode";
+            };
+
+            Events.onBlur_txtBarCode = function () {
+                return "onBlur_txtBarCode";
+            };
+
+            Events.onClick_btnBarCode = function () {
+                return "onClick_btnBarCode";
+            };
+            return Events;
+        })();
+        BarCodeNyuryoku.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "BarCodeNyuryoku";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.BarCodeNyuryoku.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.BarCodeNyuryoku.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.BarCodeNyuryoku = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.txtBarCode = function () {
+                return new UZA.TextBox(this.convFiledName("txtBarCode"));
+            };
+
+            Controls.prototype.btnBarCode = function () {
+                return new UZA.Button(this.convFiledName("btnBarCode"));
+            };
+
+            Controls.prototype.length = function () {
+                return new UZA.Label(this.convFiledName("length"));
+            };
+            return Controls;
+        })();
+        BarCodeNyuryoku.Controls = Controls;
+    })(AFA.BarCodeNyuryoku || (AFA.BarCodeNyuryoku = {}));
+    var BarCodeNyuryoku = AFA.BarCodeNyuryoku;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (BarCodeNyuryoku) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new BarCodeNyuryoku.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        BarCodeNyuryoku.ModeController = ModeController;
+    })(AFA.BarCodeNyuryoku || (AFA.BarCodeNyuryoku = {}));
+    var BarCodeNyuryoku = AFA.BarCodeNyuryoku;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (BarCodeNyuryoku) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new BarCodeNyuryoku.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("txtBarCode_labelText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtBarCode_labelWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtBarCode_width", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtBarCode_helpMessageID", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_labelText = function () {
+                return this.controls.txtBarCode().labelLText;
+            };
+
+            PublicProperties.prototype.settxtBarCode_labelText = function (value) {
+                this.controls.txtBarCode().labelLText = value;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_labelWidth = function () {
+                return this.controls.txtBarCode().labelLWidth;
+            };
+
+            PublicProperties.prototype.settxtBarCode_labelWidth = function (value) {
+                this.controls.txtBarCode().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_width = function () {
+                return this.controls.txtBarCode().width;
+            };
+
+            PublicProperties.prototype.settxtBarCode_width = function (value) {
+                this.controls.txtBarCode().width = value;
+            };
+
+            PublicProperties.prototype.gettxtBarCode_helpMessageID = function () {
+                return this.controls.txtBarCode().helpMessageID;
+            };
+
+            PublicProperties.prototype.settxtBarCode_helpMessageID = function (value) {
+                this.controls.txtBarCode().helpMessageID = value;
+            };
+            return PublicProperties;
+        })();
+        BarCodeNyuryoku.PublicProperties = PublicProperties;
+    })(AFA.BarCodeNyuryoku || (AFA.BarCodeNyuryoku = {}));
+    var BarCodeNyuryoku = AFA.BarCodeNyuryoku;
+})(AFA || (AFA = {}));
+</script></div>

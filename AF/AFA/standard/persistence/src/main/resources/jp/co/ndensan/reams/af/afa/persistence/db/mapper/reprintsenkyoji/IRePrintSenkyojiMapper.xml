@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0060-010 liss -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.reprintsenkyoji.IRePrintSenkyojiMapper">
+    <select resultOrdered="true" id="selectShohonList"
+            resultType="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT100ShohonEntity">
+        SELECT
+        "AfT100Shohon"."shohonNo" ,
+        "AfT100Shohon"."insertDantaiCd" ,
+        "AfT100Shohon"."insertTimestamp" ,
+        "AfT100Shohon"."insertReamsLoginId" ,
+        "AfT100Shohon"."insertContextId" ,
+        "AfT100Shohon"."isDeleted" ,
+        "AfT100Shohon"."updateCount" ,
+        "AfT100Shohon"."lastUpdateTimestamp",
+        "AfT100Shohon"."lastUpdateReamsLoginId",
+        "AfT100Shohon"."senkyoShurui" ,
+        "AfT100Shohon"."shohonName" ,
+        "AfT100Shohon"."tohyoYMD" ,
+        "AfT100Shohon"."kiteiNenreiTotatsuYMD" ,
+        "AfT100Shohon"."shoriYMD" ,
+        "AfT100Shohon"."nyujokenReportIndex"
+        FROM rgaf."AfT100Shohon" AS "AfT100Shohon"
+        WHERE "AfT100Shohon"."senkyoShurui"= '1'
+        AND "AfT100Shohon"."shohonNo" <![CDATA[<]]> 10000
+        ORDER BY "AfT100Shohon"."tohyoYMD" DESC
+    </select>
+
+    <select resultOrdered="true" id="selectSenkyoList"
+            resultType="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT111SenkyoEntity">
+        SELECT
+        "AfT111Senkyo"."shohonNo" ,
+        "AfT111Senkyo"."senkyoNo" ,
+        "AfT111Senkyo"."insertDantaiCd" ,
+        "AfT111Senkyo"."insertTimestamp" ,
+        "AfT111Senkyo"."insertReamsLoginId" ,
+        "AfT111Senkyo"."insertContextId" ,
+        "AfT111Senkyo"."isDeleted" ,
+        "AfT111Senkyo"."updateCount" ,
+        "AfT111Senkyo"."lastUpdateTimestamp",
+        "AfT111Senkyo"."lastUpdateReamsLoginId",
+        "AfT111Senkyo"."senkyoLevel" ,
+        "AfT111Senkyo"."senkyoName" ,
+        "AfT111Senkyo"."senkyoRyakusho" ,
+        "AfT111Senkyo"."senkyoMark" ,
+        "AfT111Senkyo"."kijunYMD" ,
+        "AfT111Senkyo"."meiboTorokuYMD" ,
+        "AfT111Senkyo"."kokujiYMD" ,
+        "AfT111Senkyo"."tenshutsuKigenYMD" ,
+        "AfT111Senkyo"."tennyuKigenYMD" ,
+        "AfT111Senkyo"."tohyoUketsukeYMD" ,
+        "AfT111Senkyo"."mutohyoSenkyoFlag"
+        FROM rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        WHERE "AfT111Senkyo"."shohonNo" = #{抄本番号}
+        ORDER BY "AfT111Senkyo"."senkyoNo"
+    </select>
+
+
+</mapper>

@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCM2050",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "施設保守",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMM2050",
+     "toLayoutTitle": "不在者投票管理施設保守",
+     "toState": ""
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMM2050",
+     "layoutTitle": "不在者投票管理施設保守",
+     "eventName": "complete",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

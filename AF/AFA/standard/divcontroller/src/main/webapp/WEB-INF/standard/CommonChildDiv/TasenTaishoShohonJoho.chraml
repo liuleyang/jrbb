@@ -1,0 +1,1792 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;TasenTaishoShohonJoho&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;TasenTaishoShohonJoho_title&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtShiyoShohon_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;radShori_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ccdShohonNameList_wrap&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdShohonNameList_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKijunYMD_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtKijunYMD_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoYMD_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoYMD_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;chkMutohyo_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyokuCode_readOnly&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;btnSenkyokuCode_displayNone&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtTohyoKaishiYMD_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtTohyoKaishiYMD_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ccdSenkyoShurui_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShohonName_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtShohonName_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyoName_readOnly&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyoName_required&quot;,&quot;editType&quot;:1}]},&quot;TasenTaishoShohonJoho_title&quot;:&quot;対象抄本情報&quot;,&quot;txtShiyoShohon_displayNone&quot;:false,&quot;radShori_displayNone&quot;:false,&quot;ccdShohonNameList_disabled&quot;:true,&quot;ccdShohonNameList_required&quot;:false,&quot;ccdShohonNameList_labelLText&quot;:&quot;&quot;,&quot;ccdShohonNameList_wrap&quot;:false,&quot;ccdShohonNameList_displayNone&quot;:false,&quot;txtKijunYMD_readOnly&quot;:false,&quot;txtKijunYMD_required&quot;:false,&quot;txtTohyoYMD_readOnly&quot;:false,&quot;txtTohyoYMD_required&quot;:false,&quot;chkMutohyo_displayNone&quot;:false,&quot;txtTohyoKaishiYMD_readOnly&quot;:false,&quot;txtTohyoKaishiYMD_required&quot;:false,&quot;ccdSenkyoShurui_displayNone&quot;:true,&quot;txtShohonName_readOnly&quot;:false,&quot;txtShohonName_required&quot;:false,&quot;txtSenkyoName_readOnly&quot;:false,&quot;txtSenkyoName_required&quot;:false}" data-is-composite-control="true" data-control-name="AFA.TasenTaishoShohonJoho"><div title="" class="UzPanel Panel-Shadow FloatLeft JSControl Panel UzPanelAndText panelMarginBottom-M StateChangable marginRight-Default marginBottom-Default UzCommonChildDivPanel Width-G10 UzCompositeChild" id="TasenTaishoShohonJoho" style="margin-top: 0em; margin-bottom: 0px; margin-left: 0em;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;TasenTaishoShohonJoho&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G10&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;Default&quot;,&quot;selectControlID&quot;:&quot;TasenTaishoShohonJoho&quot;,&quot;title&quot;:&quot;対象抄本情報&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;canOpenAndClose&quot;:false,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;TasenTaishoShohonJoho&quot;}],&quot;requestSettings&quot;:[{&quot;eventName&quot;:&quot;onLoad&quot;,&quot;requestUrl&quot;:&quot;&quot;},{&quot;eventName&quot;:&quot;onClick_radShori&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/TasenTaishoShohonJoho/onClick_radShori&quot;},{&quot;eventName&quot;:&quot;onChange_ccdShohonNameList&quot;,&quot;requestUrl&quot;:&quot;afa/af/afa/TasenTaishoShohonJoho/onChange_ccdShohonNameList&quot;}],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;widthAuto&quot;:false,&quot;focusPositionID&quot;:&quot;restoreLayoutButton&quot;,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="TasenTaishoShohonJoho_panel_header_area" style="width: auto; display: block;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: hidden;"></span><span class="textSpan">対象抄本情報</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPadding-M ui-droppable ui-sortable" id="TasenTaishoShohonJoho_panel_body_area"><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XS" id="ccdSenkyoShurui" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdSenkyoShurui&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:true,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdSenkyoShurui&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SenkyoShuruiSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlSenkyoShurui&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlSenkyoShurui_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlSenkyoShurui_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlSenkyoShurui_required&quot;,&quot;editType&quot;:1}]},&quot;ddlSenkyoShurui_labelLWidth&quot;:&quot;&quot;,&quot;ddlSenkyoShurui_disabled&quot;:false,&quot;ddlSenkyoShurui_required&quot;:false}" data-is-composite-control="true" data-control-name="AFA.SenkyoShuruiSelect"></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtShiyoShohon" style="width: 511px; height: 21px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtShiyoShohon&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;L&quot;,&quot;selectControlID&quot;:&quot;txtShiyoShohon_core&quot;,&quot;readOnly&quot;:true,&quot;placeHolder&quot;:&quot;平成xx年3月31日確定の名簿抄本から作成します。&quot;,&quot;suggest&quot;:[]}"><input tabindex="-1" class="UzTextBox CoreElement Width-L text-align-left ime-mode-Hiragana ui-autocomplete-input readonlyColor" id="txtShiyoShohon_core" type="text" placeholder="平成xx年3月31日確定の名簿抄本から作成します。" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzRadioButton FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="radShori" style="width: 167px; height: 25px;" data-control-type="RadioButton" data-obj="{&quot;fieldName&quot;:&quot;radShori&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;RadioButton&quot;,&quot;width&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;radShori_core&quot;,&quot;required&quot;:true,&quot;onClick&quot;:&quot;onClick_radShori&quot;,&quot;icon&quot;:[],&quot;selectedItem&quot;:&quot;1&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;新規処理&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;再処理&quot;}],&quot;disabledItem&quot;:[]}"><span class="buttonSpan FloatLeft Width- required" id="radShori_core"><input class="verticalSpace-M" id="radShori_1" type="radio" value="新規処理" data-key="1"><label for="radShori_1" data-key="1">新規処理</label><input class="spaceSize-M verticalSpace-M" id="radShori_2" type="radio" value="再処理" data-key="2"><label for="radShori_2" data-key="2">再処理</label></span></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft marginLeft-XS" id="ccdShohonNameList" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdShohonNameList&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdShohonNameList&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;ShohonNameList&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlShohon&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlShohon_disabled&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;ddlShohon_labelText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_labelWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;ddlShohon_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;chkKakoShohon_displayNone&quot;,&quot;editType&quot;:1}]},&quot;ddlShohon_disabled&quot;:true,&quot;ddlShohon_required&quot;:false,&quot;ddlShohon_labelText&quot;:&quot;&quot;,&quot;ddlShohon_labelWidth&quot;:&quot;S&quot;,&quot;ddlShohon_width&quot;:&quot;L&quot;,&quot;chkKakoShohon_displayNone&quot;:true}" data-is-composite-control="true" data-control-name="AFA.ShohonNameList"></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="txtShohonName" style="width: 784px; height: 21px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtShohonName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;660px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtShohonName_core&quot;,&quot;maxLength&quot;:&quot;40&quot;,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;抄本名&quot;}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtShohonName_labelL"><span>抄本名</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtShohonName_core" style="width: 660px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="WithLabel TextBoxOuterDiv FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="txtSenkyoName" style="width: 784px; height: 21px;" data-control-type="TextBox" data-obj="{&quot;fieldName&quot;:&quot;txtSenkyoName&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBox&quot;,&quot;width&quot;:&quot;660px&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtSenkyoName_core&quot;,&quot;maxLength&quot;:&quot;40&quot;,&quot;suggest&quot;:[],&quot;labelLText&quot;:&quot;選挙名&quot;}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtSenkyoName_labelL"><span>選挙名</span></span><input class="UzTextBox CoreElement text-align-left ime-mode-Hiragana ui-autocomplete-input" id="txtSenkyoName_core" style="width: 660px;" type="text" placeholder="" autocomplete="off"><span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span></div><div title="" class="UzTextBoxDate TextBoxOuterDiv WithLabel FloatLeft JSControl controlMargin-M ClearFloat marginLeft-XS marginRight-XS UzCompositeChild" id="txtKijunYMD" style="width: 236px; height: 21px;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtKijunYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;S&quot;,&quot;wrap&quot;:true,&quot;selectControlID&quot;:&quot;txtKijunYMD_core&quot;,&quot;labelLText&quot;:&quot;基準日&quot;}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtKijunYMD_labelL"><span>基準日</span></span><input class="UzTextBox CoreElement Width-S" id="txtKijunYMD_core" type="text" placeholder="" data-maxdate="" data-mindate="" data-orgtext="" data-seireki="" data-setcount="0" data-wareki=""></div><div title="" class="UzTextBoxDate TextBoxOuterDiv WithLabel FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtTohyoYMD" style="width: 236px; height: 21px;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtTohyoYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;S&quot;,&quot;selectControlID&quot;:&quot;txtTohyoYMD_core&quot;,&quot;textKind&quot;:2,&quot;labelLText&quot;:&quot;投票日&quot;}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtTohyoYMD_labelL"><span>投票日</span></span><input class="UzTextBox CoreElement Width-S" id="txtTohyoYMD_core" type="text" placeholder="" data-maxdate="" data-mindate="" data-orgtext="" data-seireki="" data-setcount="0" data-wareki=""></div><div title="" class="UzTextBoxDate TextBoxOuterDiv WithLabel FloatLeft JSControl controlMargin-M marginLeft-XS marginRight-XS UzCompositeChild" id="txtTohyoUketsukeYMD" style="width: 236px; height: 21px;" data-control-type="TextBoxDate" data-obj="{&quot;fieldName&quot;:&quot;txtTohyoUketsukeYMD&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;TextBoxDate&quot;,&quot;width&quot;:&quot;S&quot;,&quot;selectControlID&quot;:&quot;txtTohyoUketsukeYMD_core&quot;,&quot;textKind&quot;:2,&quot;labelLText&quot;:&quot;受付開始日&quot;}"><span class="word-wrap-break-word Label-L Width-S text-align-right" id="txtTohyoUketsukeYMD_labelL"><span>受付開始日</span></span><input class="UzTextBox CoreElement Width-S" id="txtTohyoUketsukeYMD_core" type="text" placeholder="" data-maxdate="" data-mindate="" data-orgtext="" data-seireki="" data-setcount="0" data-wareki=""></div><div title="" class="UzCheckBoxList FloatLeft JSControl controlMargin-M marginLeft-XL marginRight-XS UzCompositeChild" id="chkMutohyo" style="width: 107px; height: 25px;" data-control-type="CheckBoxList" data-obj="{&quot;fieldName&quot;:&quot;chkMutohyo&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CheckBoxList&quot;,&quot;width&quot;:&quot;&quot;,&quot;marginLeft&quot;:&quot;XL&quot;,&quot;selectControlID&quot;:&quot;chkMutohyo_core&quot;,&quot;icon&quot;:[],&quot;selectedItem&quot;:null,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;無投票選挙&quot;}],&quot;selectedItems&quot;:[],&quot;newLineItemNumber&quot;:1,&quot;maxCheckedItem&quot;:&quot;1&quot;,&quot;disabledItem&quot;:[]}"><span class="checkBoxSpan FloatLeft Width-" id="chkMutohyo_core"><input class="verticalSpace-M" id="chkMutohyo_0" type="checkbox" value="無投票選挙" data-key="0"><label for="chkMutohyo_0" data-key="0">無投票選挙</label></span></div><div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft ClearFloat marginLeft-XS" id="ccdSenkyokuCode" style="margin-top: 0em; margin-right: 0em; margin-bottom: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;ccdSenkyokuCode&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:true,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;XS&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ccdSenkyokuCode&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SenkyokuCodeSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCloseEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;enterKeyAssignedControl&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;txtSenkyokuCode_labelLText&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSenkyokuCode_labelLWidth&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSenkyokuCode_required&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;btnSenkyokuCode_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyokuName_displayNone&quot;,&quot;editType&quot;:1},{&quot;propertyName&quot;:&quot;txtSenkyokuName_width&quot;,&quot;editType&quot;:0},{&quot;propertyName&quot;:&quot;txtSenkyokuCode_readOnly&quot;,&quot;editType&quot;:1}]},&quot;txtSenkyokuCode_labelLText&quot;:&quot;選挙区&quot;,&quot;txtSenkyokuCode_labelLWidth&quot;:&quot;S&quot;,&quot;txtSenkyokuCode_required&quot;:false,&quot;btnSenkyokuCode_displayNone&quot;:false,&quot;txtSenkyokuName_displayNone&quot;:false,&quot;txtSenkyokuName_width&quot;:&quot;L&quot;,&quot;txtSenkyokuCode_readOnly&quot;:false}" data-is-composite-control="true" data-control-name="AFA.SenkyokuCodeSelect"></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var TasenTaishoShohonJoho_Design = (function (_super) {
+        __extends(TasenTaishoShohonJoho_Design, _super);
+        function TasenTaishoShohonJoho_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, TasenTaishoShohonJoho_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "TasenTaishoShohonJoho_title", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"])["title"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"])["title"] = value;
+                } else {
+                    this.layout.items[0]["title"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtShiyoShohon_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[1]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "radShori_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[2]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "ccdShohonNameList_disabled", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["ddlShohon_disabled"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["ddlShohon_disabled"] = value;
+                } else {
+                    this.layout.items[0].items[3]["ddlShohon_disabled"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "ccdShohonNameList_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["ddlShohon_required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["ddlShohon_required"] = value;
+                } else {
+                    this.layout.items[0].items[3]["ddlShohon_required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "ccdShohonNameList_labelLText", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["ddlShohon_labelText"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["ddlShohon_labelText"] = value;
+                } else {
+                    this.layout.items[0].items[3]["ddlShohon_labelText"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtKijunYMD_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[6]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtKijunYMD_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[6]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtTohyoYMD_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[7]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtTohyoYMD_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[7]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "chkMutohyo_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[9]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtSenkyokuCode_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"])["txtSenkyokuCode_readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"])["txtSenkyokuCode_readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[10]["txtSenkyokuCode_readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "btnSenkyokuCode_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"])["btnSenkyokuCode_displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"])["btnSenkyokuCode_displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[10]["btnSenkyokuCode_displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "ccdShohonNameList_wrap", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["wrap"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["wrap"] = value;
+                } else {
+                    this.layout.items[0].items[3]["wrap"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtTohyoKaishiYMD_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[8]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtTohyoKaishiYMD_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[8]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "ccdSenkyoShurui_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[0]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "ccdShohonNameList_displayNone", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["displayNone"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"])["displayNone"] = value;
+                } else {
+                    this.layout.items[0].items[3]["displayNone"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtShohonName_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[4]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtShohonName_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[4]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtSenkyoName_readOnly", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"])["readOnly"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"])["readOnly"] = value;
+                } else {
+                    this.layout.items[0].items[5]["readOnly"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        Object.defineProperty(TasenTaishoShohonJoho_Design.prototype, "txtSenkyoName_required", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"])["required"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"])["required"] = value;
+                } else {
+                    this.layout.items[0].items[5]["required"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        TasenTaishoShohonJoho_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("TasenTaishoShohonJoho_title");
+            Uz.JSControlUtil.registProperty("txtShiyoShohon_displayNone");
+            Uz.JSControlUtil.registProperty("radShori_displayNone");
+            Uz.JSControlUtil.registProperty("ccdShohonNameList_disabled");
+            Uz.JSControlUtil.registProperty("ccdShohonNameList_required");
+            Uz.JSControlUtil.registProperty("ccdShohonNameList_labelLText");
+            Uz.JSControlUtil.registProperty("txtKijunYMD_readOnly");
+            Uz.JSControlUtil.registProperty("txtKijunYMD_required");
+            Uz.JSControlUtil.registProperty("txtTohyoYMD_readOnly");
+            Uz.JSControlUtil.registProperty("txtTohyoYMD_required");
+            Uz.JSControlUtil.registProperty("chkMutohyo_displayNone");
+            Uz.JSControlUtil.registProperty("txtSenkyokuCode_readOnly");
+            Uz.JSControlUtil.registProperty("btnSenkyokuCode_displayNone");
+            Uz.JSControlUtil.registProperty("ccdShohonNameList_wrap");
+            Uz.JSControlUtil.registProperty("txtTohyoKaishiYMD_readOnly");
+            Uz.JSControlUtil.registProperty("txtTohyoKaishiYMD_required");
+            Uz.JSControlUtil.registProperty("ccdSenkyoShurui_displayNone");
+            Uz.JSControlUtil.registProperty("ccdShohonNameList_displayNone");
+            Uz.JSControlUtil.registProperty("txtShohonName_readOnly");
+            Uz.JSControlUtil.registProperty("txtShohonName_required");
+            Uz.JSControlUtil.registProperty("txtSenkyoName_readOnly");
+            Uz.JSControlUtil.registProperty("txtSenkyoName_required");
+        };
+
+        TasenTaishoShohonJoho_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["TasenTaishoShohonJoho_title"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"]).getEditablePropertyInfo()["title"];
+            editablePropertyInfo["txtShiyoShohon_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[1]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["radShori_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[2]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["ccdShohonNameList_disabled"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).getEditablePropertyInfo()["ddlShohon_disabled"];
+            editablePropertyInfo["ccdShohonNameList_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).getEditablePropertyInfo()["ddlShohon_required"];
+            editablePropertyInfo["ccdShohonNameList_labelLText"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).getEditablePropertyInfo()["ddlShohon_labelText"];
+            editablePropertyInfo["txtKijunYMD_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtKijunYMD_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[6]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["txtTohyoYMD_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtTohyoYMD_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[7]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["chkMutohyo_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[9]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtSenkyokuCode_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"]).getEditablePropertyInfo()["txtSenkyokuCode_readOnly"];
+            editablePropertyInfo["btnSenkyokuCode_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[10]["fieldName"]).getEditablePropertyInfo()["btnSenkyokuCode_displayNone"];
+            editablePropertyInfo["ccdShohonNameList_wrap"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).getEditablePropertyInfo()["wrap"];
+            editablePropertyInfo["txtTohyoKaishiYMD_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtTohyoKaishiYMD_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[8]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["ccdSenkyoShurui_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["ccdShohonNameList_displayNone"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[3]["fieldName"]).getEditablePropertyInfo()["displayNone"];
+            editablePropertyInfo["txtShohonName_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtShohonName_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[4]["fieldName"]).getEditablePropertyInfo()["required"];
+            editablePropertyInfo["txtSenkyoName_readOnly"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]).getEditablePropertyInfo()["readOnly"];
+            editablePropertyInfo["txtSenkyoName_required"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[5]["fieldName"]).getEditablePropertyInfo()["required"];
+
+            return editablePropertyInfo;
+        };
+        TasenTaishoShohonJoho_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "TasenTaishoShohonJoho",
+                    "items": [
+                        {
+                            "fieldName": "ccdSenkyoShurui",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": true,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdSenkyoShurui",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "SenkyoShuruiSelect",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "ddlSenkyoShurui_labelLWidth": ""
+                        },
+                        {
+                            "fieldName": "txtShiyoShohon",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "L",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtShiyoShohon_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": true,
+                            "required": false,
+                            "placeHolder": "平成xx年3月31日確定の名簿抄本から作成します。",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "maxLength": 100000000,
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "textKind": 0,
+                            "isComboBox": false,
+                            "suggest": [],
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "radShori",
+                            "items": [],
+                            "controlType": "RadioButton",
+                            "width": "",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "radShori_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": true,
+                            "onChange": "",
+                            "labelLText": "",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "selectedItem": "key0",
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "新規処理"
+                                },
+                                {
+                                    "key": "key1",
+                                    "value": "再処理"
+                                }
+                            ],
+                            "onClick": "onClick_radShori",
+                            "newLineItemNumber": 2,
+                            "spaceSize": "M",
+                            "disabledItem": [],
+                            "icon": []
+                        },
+                        {
+                            "fieldName": "ccdShohonNameList",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0px",
+                            "selectControlID": "ccdShohonNameList",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "ShohonNameList",
+                            "marginTop": "0px",
+                            "marginBottom": "0px",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [
+                                {
+                                    "eventName": "onChange_ddlShohon"
+                                }
+                            ],
+                            "publicEventsAlias": [
+                                {
+                                    "eventName": "onChange_ddlShohon",
+                                    "alias": "onChange_ccdShohonNameList"
+                                }
+                            ],
+                            "ddlShohon_disabled": true,
+                            "ddlShohon_labelText": "",
+                            "ddlShohon_labelWidth": "S",
+                            "ddlShohon_width": "L",
+                            "chkKakoShohon_displayNone": true,
+                            "chkKakoShohon_selectedItems": []
+                        },
+                        {
+                            "fieldName": "txtShohonName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "660px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtShohonName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "placeHolder": "",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "抄本名",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "maxLength": "40",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "textKind": 0,
+                            "isComboBox": false,
+                            "suggest": [],
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "txtSenkyoName",
+                            "items": [],
+                            "controlType": "TextBox",
+                            "width": "660px",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtSenkyoName_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "placeHolder": "",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "選挙名",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "maxLength": "40",
+                            "minLength": 0,
+                            "textAlign": 0,
+                            "textKind": 0,
+                            "isComboBox": false,
+                            "suggest": [],
+                            "permitCharactor": ""
+                        },
+                        {
+                            "fieldName": "txtKijunYMD",
+                            "items": [],
+                            "controlType": "TextBoxDate",
+                            "width": "S",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtKijunYMD_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "placeHolder": "",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "基準日",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "ymdKubun": 2,
+                            "displayFormat": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "permitCharactor": "./_-"
+                        },
+                        {
+                            "fieldName": "txtTohyoYMD",
+                            "items": [],
+                            "controlType": "TextBoxDate",
+                            "width": "S",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtTohyoYMD_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "placeHolder": "",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "投票日",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "ymdKubun": 2,
+                            "displayFormat": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "textKind": 2,
+                            "permitCharactor": "./_-"
+                        },
+                        {
+                            "fieldName": "txtTohyoUketsukeYMD",
+                            "items": [],
+                            "controlType": "TextBoxDate",
+                            "width": "S",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "XS",
+                            "selectControlID": "txtTohyoUketsukeYMD_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "placeHolder": "",
+                            "isPrivateInfo": false,
+                            "isPassword": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "",
+                            "onKeyPress": "",
+                            "text": "",
+                            "labelLText": "受付開始日",
+                            "labelRText": "",
+                            "labelLWidth": "S",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "ymdKubun": 2,
+                            "displayFormat": 0,
+                            "value": "",
+                            "decorationClass": "",
+                            "textKind": 2,
+                            "permitCharactor": "./_-"
+                        },
+                        {
+                            "fieldName": "chkMutohyo",
+                            "items": [],
+                            "controlType": "CheckBoxList",
+                            "width": "",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XL",
+                            "marginRight": "XS",
+                            "selectControlID": "chkMutohyo_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "required": false,
+                            "onChange": "",
+                            "labelLText": "",
+                            "labelLWidth": "S",
+                            "labelLAlign": 2,
+                            "selectedItem": null,
+                            "dataSource": [
+                                {
+                                    "key": "key0",
+                                    "value": "無投票選挙"
+                                }
+                            ],
+                            "onClick": "",
+                            "selectedItems": [],
+                            "newLineItemNumber": 1,
+                            "minCheckedItem": 0,
+                            "maxCheckedItem": "1",
+                            "spaceSize": "M",
+                            "isAllSelectable": false,
+                            "isAllSelectableBreakLine": false,
+                            "disabledItem": [],
+                            "icon": []
+                        },
+                        {
+                            "fieldName": "ccdSenkyokuCode",
+                            "items": [],
+                            "controlType": "CommonChildDiv",
+                            "width": "XS",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": true,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "XS",
+                            "marginRight": "0em",
+                            "selectControlID": "ccdSenkyokuCode",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "relation": [],
+                            "packageName": "",
+                            "businessId": "AFA",
+                            "controlName": "SenkyokuCodeSelect",
+                            "marginTop": "0em",
+                            "marginBottom": "0em",
+                            "originalProperty": [],
+                            "dataPassingForDialog": [],
+                            "dialogOkEventNameForDialog": "",
+                            "dialogCancelEventNameForDialog": "",
+                            "canTransferEvent": true,
+                            "heightForDialog": "M",
+                            "firstFocusFieldName": "",
+                            "lastFocusFieldName": "",
+                            "modes": [],
+                            "publicEvents": [],
+                            "publicEventsAlias": [],
+                            "txtSenkyokuCode_labelLText": "選挙区",
+                            "txtSenkyokuCode_labelLWidth": "S",
+                            "txtSenkyokuCode_required": false,
+                            "btnSenkyokuCode_displayNone": false,
+                            "txtSenkyokuName_displayNone": false,
+                            "txtSenkyokuName_width": "L",
+                            "txtSenkyokuCode_readOnly": false
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G10",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "Default",
+                    "selectControlID": "TasenTaishoShohonJoho",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "対象抄本情報",
+                    "marginTop": "0em",
+                    "marginBottom": "Default",
+                    "isOpen": true,
+                    "canOpenAndClose": false,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "TasenTaishoShohonJoho"
+                        }
+                    ],
+                    "requestSettings": [
+                        {
+                            "eventName": "onLoad",
+                            "requestUrl": ""
+                        },
+                        {
+                            "eventName": "onClick_radShori",
+                            "requestUrl": "afa/af/afa/TasenTaishoShohonJoho/onClick_radShori"
+                        },
+                        {
+                            "eventName": "onChange_ccdShohonNameList",
+                            "requestUrl": "afa/af/afa/TasenTaishoShohonJoho/onChange_ccdShohonNameList"
+                        }
+                    ],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": false,
+                    "backgroundColor": 0,
+                    "widthAuto": false,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "focusPositionID": "restoreLayoutButton",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "TasenTaishoShohonJoho",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "TasenTaishoShohonJoho",
+                    "publicChildProperty": "title",
+                    "newPropertyName": "TasenTaishoShohonJoho_title"
+                },
+                {
+                    "publicChildFieldName": "txtShiyoShohon",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "txtShiyoShohon_displayNone"
+                },
+                {
+                    "publicChildFieldName": "radShori",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "radShori_displayNone"
+                },
+                {
+                    "publicChildFieldName": "ccdShohonNameList",
+                    "publicChildProperty": "ddlShohon_disabled",
+                    "newPropertyName": "ccdShohonNameList_disabled"
+                },
+                {
+                    "publicChildFieldName": "ccdShohonNameList",
+                    "publicChildProperty": "ddlShohon_required",
+                    "newPropertyName": "ccdShohonNameList_required"
+                },
+                {
+                    "publicChildFieldName": "ccdShohonNameList",
+                    "publicChildProperty": "ddlShohon_labelText",
+                    "newPropertyName": "ccdShohonNameList_labelLText"
+                },
+                {
+                    "publicChildFieldName": "txtKijunYMD",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtKijunYMD_readOnly"
+                },
+                {
+                    "publicChildFieldName": "txtKijunYMD",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtKijunYMD_required"
+                },
+                {
+                    "publicChildFieldName": "txtTohyoYMD",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtTohyoYMD_readOnly"
+                },
+                {
+                    "publicChildFieldName": "txtTohyoYMD",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtTohyoYMD_required"
+                },
+                {
+                    "publicChildFieldName": "chkMutohyo",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "chkMutohyo_displayNone"
+                },
+                {
+                    "publicChildFieldName": "ccdSenkyokuCode",
+                    "publicChildProperty": "txtSenkyokuCode_readOnly",
+                    "newPropertyName": "txtSenkyokuCode_readOnly"
+                },
+                {
+                    "publicChildFieldName": "ccdSenkyokuCode",
+                    "publicChildProperty": "btnSenkyokuCode_displayNone",
+                    "newPropertyName": "btnSenkyokuCode_displayNone"
+                },
+                {
+                    "publicChildFieldName": "ccdShohonNameList",
+                    "publicChildProperty": "wrap",
+                    "newPropertyName": "ccdShohonNameList_wrap"
+                },
+                {
+                    "publicChildFieldName": "txtTohyoUketsukeYMD",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtTohyoKaishiYMD_readOnly"
+                },
+                {
+                    "publicChildFieldName": "txtTohyoUketsukeYMD",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtTohyoKaishiYMD_required"
+                },
+                {
+                    "publicChildFieldName": "ccdSenkyoShurui",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "ccdSenkyoShurui_displayNone"
+                },
+                {
+                    "publicChildFieldName": "ccdShohonNameList",
+                    "publicChildProperty": "displayNone",
+                    "newPropertyName": "ccdShohonNameList_displayNone"
+                },
+                {
+                    "publicChildFieldName": "txtShohonName",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtShohonName_readOnly"
+                },
+                {
+                    "publicChildFieldName": "txtShohonName",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtShohonName_required"
+                },
+                {
+                    "publicChildFieldName": "txtSenkyoName",
+                    "publicChildProperty": "readOnly",
+                    "newPropertyName": "txtSenkyoName_readOnly"
+                },
+                {
+                    "publicChildFieldName": "txtSenkyoName",
+                    "publicChildProperty": "required",
+                    "newPropertyName": "txtSenkyoName_required"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [],
+            "publicEventsAlias": []
+        };
+        return TasenTaishoShohonJoho_Design;
+    })(Uz.CommonChildDiv);
+    AFA.TasenTaishoShohonJoho_Design = TasenTaishoShohonJoho_Design;
+
+    (function (TasenTaishoShohonJoho) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClick_radShori = function () {
+                return "onClick_radShori";
+            };
+            return Events;
+        })();
+        TasenTaishoShohonJoho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TasenTaishoShohonJoho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TasenTaishoShohonJoho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.TasenTaishoShohonJoho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdSenkyoShurui = function () {
+                return new AFA.SenkyoShuruiSelect.ModeController("ccdSenkyoShurui");
+            };
+
+            Controls.prototype.txtShiyoShohon = function () {
+                return new UZA.TextBox(this.convFiledName("txtShiyoShohon"));
+            };
+
+            Controls.prototype.radShori = function () {
+                return new UZA.RadioButton(this.convFiledName("radShori"));
+            };
+
+            Controls.prototype.ccdShohonNameList = function () {
+                return new AFA.ShohonNameList.ModeController("ccdShohonNameList");
+            };
+
+            Controls.prototype.txtShohonName = function () {
+                return new UZA.TextBox(this.convFiledName("txtShohonName"));
+            };
+
+            Controls.prototype.txtSenkyoName = function () {
+                return new UZA.TextBox(this.convFiledName("txtSenkyoName"));
+            };
+
+            Controls.prototype.txtKijunYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtKijunYMD"));
+            };
+
+            Controls.prototype.txtTohyoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoYMD"));
+            };
+
+            Controls.prototype.txtTohyoUketsukeYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoUketsukeYMD"));
+            };
+
+            Controls.prototype.chkMutohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMutohyo"));
+            };
+
+            Controls.prototype.ccdSenkyokuCode = function () {
+                return new AFA.SenkyokuCodeSelect.ModeController("ccdSenkyokuCode");
+            };
+            return Controls;
+        })();
+        TasenTaishoShohonJoho.Controls = Controls;
+    })(AFA.TasenTaishoShohonJoho || (AFA.TasenTaishoShohonJoho = {}));
+    var TasenTaishoShohonJoho = AFA.TasenTaishoShohonJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TasenTaishoShohonJoho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TasenTaishoShohonJoho.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TasenTaishoShohonJoho.ModeController = ModeController;
+    })(AFA.TasenTaishoShohonJoho || (AFA.TasenTaishoShohonJoho = {}));
+    var TasenTaishoShohonJoho = AFA.TasenTaishoShohonJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TasenTaishoShohonJoho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TasenTaishoShohonJoho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("TasenTaishoShohonJoho_title", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtShiyoShohon_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("radShori_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_disabled", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ccdShohonNameList_required", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ccdShohonNameList_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ccdShohonNameList_wrap", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKijunYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKijunYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("chkMutohyo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyokuCode_readOnly", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("btnSenkyokuCode_displayNone", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyoKaishiYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoKaishiYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdSenkyoShurui_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShohonName_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShohonName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyoName_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyoName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getTasenTaishoShohonJoho_title = function () {
+                return this.controls.TasenTaishoShohonJoho().title;
+            };
+
+            PublicProperties.prototype.setTasenTaishoShohonJoho_title = function (value) {
+                this.controls.TasenTaishoShohonJoho().title = value;
+            };
+
+            PublicProperties.prototype.gettxtShiyoShohon_displayNone = function () {
+                return this.controls.txtShiyoShohon().displayNone;
+            };
+
+            PublicProperties.prototype.settxtShiyoShohon_displayNone = function (value) {
+                this.controls.txtShiyoShohon().displayNone = value;
+            };
+
+            PublicProperties.prototype.getradShori_displayNone = function () {
+                return this.controls.radShori().displayNone;
+            };
+
+            PublicProperties.prototype.setradShori_displayNone = function (value) {
+                this.controls.radShori().displayNone = value;
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_disabled = function () {
+                return new AFA.ShohonNameList.PublicProperties("ccdShohonNameList").getddlShohon_disabled;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_disabled = function (value) {
+                new AFA.ShohonNameList.PublicProperties("ccdShohonNameList").setddlShohon_disabled(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_required = function () {
+                return new AFA.ShohonNameList.PublicProperties("ccdShohonNameList").getddlShohon_required;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_required = function (value) {
+                new AFA.ShohonNameList.PublicProperties("ccdShohonNameList").setddlShohon_required(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_labelLText = function () {
+                return new AFA.ShohonNameList.PublicProperties("ccdShohonNameList").getddlShohon_labelText;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_labelLText = function (value) {
+                new AFA.ShohonNameList.PublicProperties("ccdShohonNameList").setddlShohon_labelText(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_wrap = function () {
+                return new AFA.ShohonNameList.ModeController("ccdShohonNameList").Properties().wrap;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_wrap = function (value) {
+                new AFA.ShohonNameList.ModeController("ccdShohonNameList").Properties().wrap = value;
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_displayNone = function () {
+                return new AFA.ShohonNameList.ModeController("ccdShohonNameList").Properties().displayNone;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_displayNone = function (value) {
+                new AFA.ShohonNameList.ModeController("ccdShohonNameList").Properties().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtKijunYMD_readOnly = function () {
+                return this.controls.txtKijunYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtKijunYMD_readOnly = function (value) {
+                this.controls.txtKijunYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtKijunYMD_required = function () {
+                return this.controls.txtKijunYMD().required;
+            };
+
+            PublicProperties.prototype.settxtKijunYMD_required = function (value) {
+                this.controls.txtKijunYMD().required = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoYMD_readOnly = function () {
+                return this.controls.txtTohyoYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyoYMD_readOnly = function (value) {
+                this.controls.txtTohyoYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoYMD_required = function () {
+                return this.controls.txtTohyoYMD().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoYMD_required = function (value) {
+                this.controls.txtTohyoYMD().required = value;
+            };
+
+            PublicProperties.prototype.getchkMutohyo_displayNone = function () {
+                return this.controls.chkMutohyo().displayNone;
+            };
+
+            PublicProperties.prototype.setchkMutohyo_displayNone = function (value) {
+                this.controls.chkMutohyo().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_readOnly = function () {
+                return new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").gettxtSenkyokuCode_readOnly;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_readOnly = function (value) {
+                new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").settxtSenkyokuCode_readOnly(value);
+            };
+
+            PublicProperties.prototype.getbtnSenkyokuCode_displayNone = function () {
+                return new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").getbtnSenkyokuCode_displayNone;
+            };
+
+            PublicProperties.prototype.setbtnSenkyokuCode_displayNone = function (value) {
+                new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").setbtnSenkyokuCode_displayNone(value);
+            };
+
+            PublicProperties.prototype.gettxtTohyoKaishiYMD_readOnly = function () {
+                return this.controls.txtTohyoUketsukeYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyoKaishiYMD_readOnly = function (value) {
+                this.controls.txtTohyoUketsukeYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoKaishiYMD_required = function () {
+                return this.controls.txtTohyoUketsukeYMD().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoKaishiYMD_required = function (value) {
+                this.controls.txtTohyoUketsukeYMD().required = value;
+            };
+
+            PublicProperties.prototype.getccdSenkyoShurui_displayNone = function () {
+                return new AFA.SenkyoShuruiSelect.ModeController("ccdSenkyoShurui").Properties().displayNone;
+            };
+
+            PublicProperties.prototype.setccdSenkyoShurui_displayNone = function (value) {
+                new AFA.SenkyoShuruiSelect.ModeController("ccdSenkyoShurui").Properties().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtShohonName_readOnly = function () {
+                return this.controls.txtShohonName().readOnly;
+            };
+
+            PublicProperties.prototype.settxtShohonName_readOnly = function (value) {
+                this.controls.txtShohonName().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtShohonName_required = function () {
+                return this.controls.txtShohonName().required;
+            };
+
+            PublicProperties.prototype.settxtShohonName_required = function (value) {
+                this.controls.txtShohonName().required = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyoName_readOnly = function () {
+                return this.controls.txtSenkyoName().readOnly;
+            };
+
+            PublicProperties.prototype.settxtSenkyoName_readOnly = function (value) {
+                this.controls.txtSenkyoName().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyoName_required = function () {
+                return this.controls.txtSenkyoName().required;
+            };
+
+            PublicProperties.prototype.settxtSenkyoName_required = function (value) {
+                this.controls.txtSenkyoName().required = value;
+            };
+            return PublicProperties;
+        })();
+        TasenTaishoShohonJoho.PublicProperties = PublicProperties;
+    })(AFA.TasenTaishoShohonJoho || (AFA.TasenTaishoShohonJoho = {}));
+    var TasenTaishoShohonJoho = AFA.TasenTaishoShohonJoho;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['TASENTAISHOSHOHONJOHO'] = {};
+AFA['TASENTAISHOSHOHONJOHO'].TasenTaishoShohonJohoRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_TasenTaishoShohonJoho').getProperty();parameter0.ccdSenkyoShurui = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdSenkyoShurui').getPostParameter();parameter0.txtShiyoShohon = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtShiyoShohon').getProperty();parameter0.radShori = Uz.JSControlUtil.getJSControl(parentFieldName + '_radShori').getProperty();parameter0.ccdShohonNameList = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdShohonNameList').getPostParameter();parameter0.txtShohonName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtShohonName').getProperty();parameter0.txtSenkyoName = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtSenkyoName').getProperty();parameter0.txtKijunYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtKijunYMD').getProperty();parameter0.txtTohyoYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyoYMD').getProperty();parameter0.txtTohyoUketsukeYMD = Uz.JSControlUtil.getJSControl(parentFieldName + '_txtTohyoUketsukeYMD').getProperty();parameter0.chkMutohyo = Uz.JSControlUtil.getJSControl(parentFieldName + '_chkMutohyo').getProperty();parameter0.ccdSenkyokuCode = Uz.JSControlUtil.getJSControl(parentFieldName + '_ccdSenkyokuCode').getPostParameter();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (TasenTaishoShohonJoho) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onClick_radShori = function () {
+                return "onClick_radShori";
+            };
+            return Events;
+        })();
+        TasenTaishoShohonJoho.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "TasenTaishoShohonJoho";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.TasenTaishoShohonJoho.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.TasenTaishoShohonJoho.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.TasenTaishoShohonJoho = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ccdSenkyoShurui = function () {
+                return new AFA.SenkyoShuruiSelect.ModeController(this.convFiledName("ccdSenkyoShurui"));
+            };
+
+            Controls.prototype.txtShiyoShohon = function () {
+                return new UZA.TextBox(this.convFiledName("txtShiyoShohon"));
+            };
+
+            Controls.prototype.radShori = function () {
+                return new UZA.RadioButton(this.convFiledName("radShori"));
+            };
+
+            Controls.prototype.ccdShohonNameList = function () {
+                return new AFA.ShohonNameList.ModeController(this.convFiledName("ccdShohonNameList"));
+            };
+
+            Controls.prototype.txtShohonName = function () {
+                return new UZA.TextBox(this.convFiledName("txtShohonName"));
+            };
+
+            Controls.prototype.txtSenkyoName = function () {
+                return new UZA.TextBox(this.convFiledName("txtSenkyoName"));
+            };
+
+            Controls.prototype.txtKijunYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtKijunYMD"));
+            };
+
+            Controls.prototype.txtTohyoYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoYMD"));
+            };
+
+            Controls.prototype.txtTohyoUketsukeYMD = function () {
+                return new UZA.TextBoxDate(this.convFiledName("txtTohyoUketsukeYMD"));
+            };
+
+            Controls.prototype.chkMutohyo = function () {
+                return new UZA.CheckBoxList(this.convFiledName("chkMutohyo"));
+            };
+
+            Controls.prototype.ccdSenkyokuCode = function () {
+                return new AFA.SenkyokuCodeSelect.ModeController(this.convFiledName("ccdSenkyokuCode"));
+            };
+            return Controls;
+        })();
+        TasenTaishoShohonJoho.Controls = Controls;
+    })(AFA.TasenTaishoShohonJoho || (AFA.TasenTaishoShohonJoho = {}));
+    var TasenTaishoShohonJoho = AFA.TasenTaishoShohonJoho;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (TasenTaishoShohonJoho) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new TasenTaishoShohonJoho.Controls(fieldName);
+            }
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        TasenTaishoShohonJoho.ModeController = ModeController;
+    })(AFA.TasenTaishoShohonJoho || (AFA.TasenTaishoShohonJoho = {}));
+    var TasenTaishoShohonJoho = AFA.TasenTaishoShohonJoho;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (TasenTaishoShohonJoho) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new TasenTaishoShohonJoho.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("TasenTaishoShohonJoho_title", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtShiyoShohon_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("radShori_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_disabled", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_labelLText", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ccdShohonNameList_wrap", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdShohonNameList_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKijunYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtKijunYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("chkMutohyo_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyokuCode_readOnly", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("btnSenkyokuCode_displayNone", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("txtTohyoKaishiYMD_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtTohyoKaishiYMD_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ccdSenkyoShurui_displayNone", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShohonName_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtShohonName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyoName_readOnly", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("txtSenkyoName_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getTasenTaishoShohonJoho_title = function () {
+                return this.controls.TasenTaishoShohonJoho().title;
+            };
+
+            PublicProperties.prototype.setTasenTaishoShohonJoho_title = function (value) {
+                this.controls.TasenTaishoShohonJoho().title = value;
+            };
+
+            PublicProperties.prototype.gettxtShiyoShohon_displayNone = function () {
+                return this.controls.txtShiyoShohon().displayNone;
+            };
+
+            PublicProperties.prototype.settxtShiyoShohon_displayNone = function (value) {
+                this.controls.txtShiyoShohon().displayNone = value;
+            };
+
+            PublicProperties.prototype.getradShori_displayNone = function () {
+                return this.controls.radShori().displayNone;
+            };
+
+            PublicProperties.prototype.setradShori_displayNone = function (value) {
+                this.controls.radShori().displayNone = value;
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_disabled = function () {
+                return this.controls.ccdShohonNameList().PublicProperties().getddlShohon_disabled();
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_disabled = function (value) {
+                this.controls.ccdShohonNameList().PublicProperties().setddlShohon_disabled(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_required = function () {
+                return this.controls.ccdShohonNameList().PublicProperties().getddlShohon_required();
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_required = function (value) {
+                this.controls.ccdShohonNameList().PublicProperties().setddlShohon_required(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_labelLText = function () {
+                return this.controls.ccdShohonNameList().PublicProperties().getddlShohon_labelText();
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_labelLText = function (value) {
+                this.controls.ccdShohonNameList().PublicProperties().setddlShohon_labelText(value);
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_wrap = function () {
+                return this.controls.ccdShohonNameList().Properties().wrap;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_wrap = function (value) {
+                this.controls.ccdShohonNameList().Properties().wrap = value;
+            };
+
+            PublicProperties.prototype.getccdShohonNameList_displayNone = function () {
+                return this.controls.ccdShohonNameList().Properties().displayNone;
+            };
+
+            PublicProperties.prototype.setccdShohonNameList_displayNone = function (value) {
+                this.controls.ccdShohonNameList().Properties().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtKijunYMD_readOnly = function () {
+                return this.controls.txtKijunYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtKijunYMD_readOnly = function (value) {
+                this.controls.txtKijunYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtKijunYMD_required = function () {
+                return this.controls.txtKijunYMD().required;
+            };
+
+            PublicProperties.prototype.settxtKijunYMD_required = function (value) {
+                this.controls.txtKijunYMD().required = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoYMD_readOnly = function () {
+                return this.controls.txtTohyoYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyoYMD_readOnly = function (value) {
+                this.controls.txtTohyoYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoYMD_required = function () {
+                return this.controls.txtTohyoYMD().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoYMD_required = function (value) {
+                this.controls.txtTohyoYMD().required = value;
+            };
+
+            PublicProperties.prototype.getchkMutohyo_displayNone = function () {
+                return this.controls.chkMutohyo().displayNone;
+            };
+
+            PublicProperties.prototype.setchkMutohyo_displayNone = function (value) {
+                this.controls.chkMutohyo().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyokuCode_readOnly = function () {
+                return new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").gettxtSenkyokuCode_readOnly;
+            };
+
+            PublicProperties.prototype.settxtSenkyokuCode_readOnly = function (value) {
+                new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").settxtSenkyokuCode_readOnly(value);
+            };
+
+            PublicProperties.prototype.getbtnSenkyokuCode_displayNone = function () {
+                return new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").getbtnSenkyokuCode_displayNone;
+            };
+
+            PublicProperties.prototype.setbtnSenkyokuCode_displayNone = function (value) {
+                new AFA.SenkyokuCodeSelect.PublicProperties("ccdSenkyokuCode").setbtnSenkyokuCode_displayNone(value);
+            };
+
+            PublicProperties.prototype.gettxtTohyoKaishiYMD_readOnly = function () {
+                return this.controls.txtTohyoUketsukeYMD().readOnly;
+            };
+
+            PublicProperties.prototype.settxtTohyoKaishiYMD_readOnly = function (value) {
+                this.controls.txtTohyoUketsukeYMD().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtTohyoKaishiYMD_required = function () {
+                return this.controls.txtTohyoUketsukeYMD().required;
+            };
+
+            PublicProperties.prototype.settxtTohyoKaishiYMD_required = function (value) {
+                this.controls.txtTohyoUketsukeYMD().required = value;
+            };
+
+            PublicProperties.prototype.getccdSenkyoShurui_displayNone = function () {
+                return new AFA.SenkyoShuruiSelect.ModeController("ccdSenkyoShurui").Properties().displayNone;
+            };
+
+            PublicProperties.prototype.setccdSenkyoShurui_displayNone = function (value) {
+                new AFA.SenkyoShuruiSelect.ModeController("ccdSenkyoShurui").Properties().displayNone = value;
+            };
+
+            PublicProperties.prototype.gettxtShohonName_readOnly = function () {
+                return this.controls.txtShohonName().readOnly;
+            };
+
+            PublicProperties.prototype.settxtShohonName_readOnly = function (value) {
+                this.controls.txtShohonName().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtShohonName_required = function () {
+                return this.controls.txtShohonName().required;
+            };
+
+            PublicProperties.prototype.settxtShohonName_required = function (value) {
+                this.controls.txtShohonName().required = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyoName_readOnly = function () {
+                return this.controls.txtSenkyoName().readOnly;
+            };
+
+            PublicProperties.prototype.settxtSenkyoName_readOnly = function (value) {
+                this.controls.txtSenkyoName().readOnly = value;
+            };
+
+            PublicProperties.prototype.gettxtSenkyoName_required = function () {
+                return this.controls.txtSenkyoName().required;
+            };
+
+            PublicProperties.prototype.settxtSenkyoName_required = function (value) {
+                this.controls.txtSenkyoName().required = value;
+            };
+            return PublicProperties;
+        })();
+        TasenTaishoShohonJoho.PublicProperties = PublicProperties;
+    })(AFA.TasenTaishoShohonJoho || (AFA.TasenTaishoShohonJoho = {}));
+    var TasenTaishoShohonJoho = AFA.TasenTaishoShohonJoho;
+})(AFA || (AFA = {}));
+</script></div>

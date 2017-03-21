@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT506JushoRelationマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT506JushoRelationMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT506JushoRelation">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT506JushoRelationMapper.allColumns_AfT506JushoRelation" />
+     FROM
+         rgaf."AfT506JushoRelation"
+     WHERE
+         rgaf."AfT506JushoRelation"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT506JushoRelation">
+         "AfT506JushoRelation"."senkyoShurui" as "afT506JushoRelation_senkyoShurui",
+         "AfT506JushoRelation"."choikiCode" as "afT506JushoRelation_choikiCode",
+         "AfT506JushoRelation"."kaishiBanchi1BanchiCode" as "afT506JushoRelation_kaishiBanchi1BanchiCode",
+         "AfT506JushoRelation"."kaishiBanchi2BanchiCode" as "afT506JushoRelation_kaishiBanchi2BanchiCode",
+         "AfT506JushoRelation"."kaishiBanchi3BanchiCode" as "afT506JushoRelation_kaishiBanchi3BanchiCode",
+         "AfT506JushoRelation"."kaishiBanchi4BanchiCode" as "afT506JushoRelation_kaishiBanchi4BanchiCode",
+         "AfT506JushoRelation"."insertDantaiCd" as "afT506JushoRelation_insertDantaiCd",
+         "AfT506JushoRelation"."insertTimestamp" as "afT506JushoRelation_insertTimestamp",
+         "AfT506JushoRelation"."insertReamsLoginId" as "afT506JushoRelation_insertReamsLoginId",
+         "AfT506JushoRelation"."insertContextId" as "afT506JushoRelation_insertContextId",
+         "AfT506JushoRelation"."isDeleted" as "afT506JushoRelation_isDeleted",
+         "AfT506JushoRelation"."updateCount" as "afT506JushoRelation_updateCount",
+         "AfT506JushoRelation"."lastUpdateTimestamp" as "afT506JushoRelation_lastUpdateTimestamp",
+         "AfT506JushoRelation"."lastUpdateReamsLoginId" as "afT506JushoRelation_lastUpdateReamsLoginId",
+         "AfT506JushoRelation"."shuiryoBanchi1BanchiCode" as "afT506JushoRelation_shuiryoBanchi1BanchiCode",
+         "AfT506JushoRelation"."shuiryoBanchi2BanchiCode" as "afT506JushoRelation_shuiryoBanchi2BanchiCode",
+         "AfT506JushoRelation"."shuiryoBanchi3BanchiCode" as "afT506JushoRelation_shuiryoBanchi3BanchiCode",
+         "AfT506JushoRelation"."shuiryoBanchi4BanchiCode" as "afT506JushoRelation_shuiryoBanchi4BanchiCode",
+         "AfT506JushoRelation"."tohyokuCode" as "afT506JushoRelation_tohyokuCode"
+    </sql>
+
+
+    <!--テーブルAfT506JushoRelationの項目をAfT506JushoRelationEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT506JushoRelationEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT506JushoRelationEntity" autoMapping="true">
+        <id property="senkyoShurui" column="afT506JushoRelation_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="choikiCode" column="afT506JushoRelation_choikiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChoikiCodeTypeHandler"/>
+        <id property="kaishiBanchi1BanchiCode" column="afT506JushoRelation_kaishiBanchi1BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <id property="kaishiBanchi2BanchiCode" column="afT506JushoRelation_kaishiBanchi2BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <id property="kaishiBanchi3BanchiCode" column="afT506JushoRelation_kaishiBanchi3BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <id property="kaishiBanchi4BanchiCode" column="afT506JushoRelation_kaishiBanchi4BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <result property="insertDantaiCd" column="afT506JushoRelation_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT506JushoRelation_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT506JushoRelation_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT506JushoRelation_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT506JushoRelation_isDeleted" />
+        <result property="updateCount" column="afT506JushoRelation_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT506JushoRelation_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT506JushoRelation_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shuiryoBanchi1BanchiCode" column="afT506JushoRelation_shuiryoBanchi1BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <result property="shuiryoBanchi2BanchiCode" column="afT506JushoRelation_shuiryoBanchi2BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <result property="shuiryoBanchi3BanchiCode" column="afT506JushoRelation_shuiryoBanchi3BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <result property="shuiryoBanchi4BanchiCode" column="afT506JushoRelation_shuiryoBanchi4BanchiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BanchiCodeTypeHandler"/>
+        <result property="tohyokuCode" column="afT506JushoRelation_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

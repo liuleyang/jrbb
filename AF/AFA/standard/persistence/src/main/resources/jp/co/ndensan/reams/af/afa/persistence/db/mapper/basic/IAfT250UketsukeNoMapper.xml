@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT250UketsukeNoマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT250UketsukeNoMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT250UketsukeNo">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT250UketsukeNoMapper.allColumns_AfT250UketsukeNo" />
+     FROM
+         rgaf."AfT250UketsukeNo"
+     WHERE
+         rgaf."AfT250UketsukeNo"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT250UketsukeNo">
+         "AfT250UketsukeNo"."shohonNo" as "afT250UketsukeNo_shohonNo",
+         "AfT250UketsukeNo"."shisetsuShubetsu" as "afT250UketsukeNo_shisetsuShubetsu",
+         "AfT250UketsukeNo"."code" as "afT250UketsukeNo_code",
+         "AfT250UketsukeNo"."kijitsuFuzaiKubun" as "afT250UketsukeNo_kijitsuFuzaiKubun",
+         "AfT250UketsukeNo"."insertDantaiCd" as "afT250UketsukeNo_insertDantaiCd",
+         "AfT250UketsukeNo"."insertTimestamp" as "afT250UketsukeNo_insertTimestamp",
+         "AfT250UketsukeNo"."insertReamsLoginId" as "afT250UketsukeNo_insertReamsLoginId",
+         "AfT250UketsukeNo"."insertContextId" as "afT250UketsukeNo_insertContextId",
+         "AfT250UketsukeNo"."isDeleted" as "afT250UketsukeNo_isDeleted",
+         "AfT250UketsukeNo"."updateCount" as "afT250UketsukeNo_updateCount",
+         "AfT250UketsukeNo"."lastUpdateTimestamp" as "afT250UketsukeNo_lastUpdateTimestamp",
+         "AfT250UketsukeNo"."lastUpdateReamsLoginId" as "afT250UketsukeNo_lastUpdateReamsLoginId",
+         "AfT250UketsukeNo"."currentNumber" as "afT250UketsukeNo_currentNumber",
+         "AfT250UketsukeNo"."minNumber" as "afT250UketsukeNo_minNumber",
+         "AfT250UketsukeNo"."maxNumber" as "afT250UketsukeNo_maxNumber",
+         "AfT250UketsukeNo"."effectiveDigit" as "afT250UketsukeNo_effectiveDigit"
+    </sql>
+
+
+    <!--テーブルAfT250UketsukeNoの項目をAfT250UketsukeNoEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT250UketsukeNoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT250UketsukeNoEntity" autoMapping="true">
+        <id property="shohonNo" column="afT250UketsukeNo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="shisetsuShubetsu" column="afT250UketsukeNo_shisetsuShubetsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="code" column="afT250UketsukeNo_code" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <id property="kijitsuFuzaiKubun" column="afT250UketsukeNo_kijitsuFuzaiKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="insertDantaiCd" column="afT250UketsukeNo_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT250UketsukeNo_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT250UketsukeNo_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT250UketsukeNo_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT250UketsukeNo_isDeleted" />
+        <result property="updateCount" column="afT250UketsukeNo_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT250UketsukeNo_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT250UketsukeNo_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="currentNumber" column="afT250UketsukeNo_currentNumber" />
+        <result property="minNumber" column="afT250UketsukeNo_minNumber" />
+        <result property="maxNumber" column="afT250UketsukeNo_maxNumber" />
+        <result property="effectiveDigit" column="afT250UketsukeNo_effectiveDigit" />
+    </resultMap>
+
+</mapper>

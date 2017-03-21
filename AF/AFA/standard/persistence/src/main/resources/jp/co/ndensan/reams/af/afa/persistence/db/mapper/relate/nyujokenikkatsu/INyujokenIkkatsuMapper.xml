@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0160-020 guyq -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.nyujokenikkatsu.INyujokenIkkatsuMapper">
+<sql id="masterData_atena">
+    <!-- 宛名 -->
+        ATENA as (
+        select 
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.columns_ShikibetsuTaisho" /> 
+        from <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+          ( 
+          SELECT
+            ARRAY_AGG(CAST ("shikibetsuCode" AS TEXT)) 
+          FROM
+            SHIKIBETSUCODES
+          )
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" /> 
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.multi.IUaFt200FindShikibetsuTaishoFunctionMultiParameterMapper.as_ShikibetsuTaisho" />
+        order by "ShikibetsuTaisho_shikibetsuCode"
+        )
+ </sql>
+ <sql id="masterData_shkibetsuCode">
+        <!-- 宛名識別コード -->
+        SHIKIBETSUCODES as (
+        select distinct rgaf."AfV112SenkyoninMeibo"."shikibetsuCode" as "shikibetsuCode" from 
+        rgaf."AfV112SenkyoninMeibo")
+</sql>
+    <select resultOrdered="true" id="select選挙人情報リスト" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter" 
+            resultMap="resultMap_SenkyoninEntity"  fetchSize="500">
+        WITH <include refid="masterData_shkibetsuCode" />,
+             <include refid="masterData_atena" />
+        (SELECT
+        ATENA."ShikibetsuTaisho_jutonaiJusho" AS "jutonaiJusho",
+        ATENA."ShikibetsuTaisho_meisho" AS "meisho",
+        ATENA."ShikibetsuTaisho_kanaMeisho" AS "kanaMeisho",
+        ATENA."ShikibetsuTaisho_seinengappiYMD" AS "seinengappiYMD",
+        ATENA."ShikibetsuTaisho_seibetsuCode" AS "seibetsuCode",
+        ATENA."ShikibetsuTaisho_shikibetsuCode" AS "shikibetsuCode",
+        ATENA."ShikibetsuTaisho_gyoseikuCode" AS "gyoseikuCode",
+        ATENA."ShikibetsuTaisho_gyoseikuName" AS "gyoseikuName",
+        ATENA."ShikibetsuTaisho_chikuCode1" AS "chikuCode1",
+        ATENA."ShikibetsuTaisho_chikuName1" AS "chikuName1",
+        ATENA."ShikibetsuTaisho_chikuCode2" AS "chikuCode2",
+        ATENA."ShikibetsuTaisho_chikuName2" AS "chikuName2",
+        ATENA."ShikibetsuTaisho_chikuCode3" AS "chikuCode3",
+        ATENA."ShikibetsuTaisho_chikuName3" AS "chikuName3",
+        ATENA."ShikibetsuTaisho_setaiCode" AS "setaiCode",
+        ATENA."ShikibetsuTaisho_tsuzukigaraCode" AS "tsuzukigaraCode",
+        ATENA."ShikibetsuTaisho_zenkokuJushoCode" AS "zenkokuJushoCode",
+        ATENA."ShikibetsuTaisho_jutonaiChoikiCode" AS "jutonaiChoikiCode",
+        ATENA."ShikibetsuTaisho_jutonaiBanchi" AS "jutonaiBanchi",
+        ATENA."ShikibetsuTaisho_jutonaiKatagaki" AS "jutonaiKatagaki",
+        ATENA."ShikibetsuTaisho_juminShubetsuCode" AS "juminShubetsuCode",
+        ATENA."ShikibetsuTaisho_juminhyoHyojijun" AS "juminhyoHyojijun",
+        ATENA."ShikibetsuTaisho_jusho" AS "PSMjusho",
+        ATENA."ShikibetsuTaisho_banchi" AS "banchi",
+        ATENA."ShikibetsuTaisho_katagaki" AS "katagaki",
+        ATENA."ShikibetsuTaisho_yubinNo" AS "yubinNo",
+        ATENA."ShikibetsuTaisho_torokuTodokedeYMD" AS "torokuTodokedeYMD",
+        ATENA."ShikibetsuTaisho_setainushiMei" AS "setainushiMei",
+        ATENA."ShikibetsuTaisho_jutonaiYubinNo" AS "PSMyubinNo",
+        ATENA."ShikibetsuTaisho_shojoTodokedeYMD" AS "shojoTodokedeYMD",
+        ATENA."ShikibetsuTaisho_shojoIdoYMD" AS "shojoIdoYMD",
+        ATENA."ShikibetsuTaisho_torokuIdoYMD" AS "torokuIdoYMD",
+        <if test='選挙種類.toString() == "0" or 選挙種類.toString() == "1"'>
+            "UrV0159Tohyoku"."tohyokuCode" AS "tohyokuCode",
+            "UrV0159Tohyoku"."name" AS "tohyokuName",
+        </if>
+        <if test='選挙種類.toString() != "0" and 選挙種類.toString() != "1"'>
+            "AfT501Tohyoku"."tohyokuCode" AS "tohyokuCode",
+            "AfT501Tohyoku"."tohyokuName" AS "tohyokuName",
+        </if>
+        "AfT502Tohyojo"."tohyojoCode" AS "tohyojoCode",
+        "AfT502Tohyojo"."tohyojoName" AS "tohyojoName",
+        "AfT502Tohyojo"."tohyoStartTime" AS "tohyoStartTime",
+        "AfT502Tohyojo"."tohyoStopTime" AS "tohyoStopTime",
+        "AfT502Tohyojo"."jusho" AS "jusho",
+        "AfT112SenkyoninMeibo"."page" AS "page",
+        "AfT112SenkyoninMeibo"."gyo" AS "gyo"
+        FROM
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON
+        "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        INNER JOIN
+        rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        ON
+        "AfT111Senkyo"."shohonNo" = "AfT112SenkyoninMeibo"."shohonNo"
+        AND "AfT112SenkyoninMeibo"."seq" =  (
+        SELECT
+        MAX(AfT112Temp."seq")
+        FROM
+        rgaf."AfV112SenkyoninMeibo" AfT112Temp
+        )
+        INNER JOIN
+        rgaf."AfV113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        ON
+        "AfT100Shohon"."senkyoShurui" = "AfT113SenkyoShikaku"."senkyoShurui"
+        AND "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT113SenkyoShikaku"."shikibetsuCode"
+        AND "AfT113SenkyoShikaku"."seq" = (
+        SELECT
+        MAX(AfT113Temp."seq")
+        FROM
+        rgaf."AfV113SenkyoShikaku" AfT113Temp
+        )
+        INNER JOIN
+        ATENA
+        ON 
+        "AfT112SenkyoninMeibo"."shikibetsuCode" = ATENA."ShikibetsuTaisho_shikibetsuCode"
+        <if test='選挙種類.toString() == "0" or 選挙種類.toString() == "1"'>
+            INNER JOIN  
+            rgur."UrV0159Tohyoku" AS "UrV0159Tohyoku"
+            ON 
+            "AfT112SenkyoninMeibo"."tohyokuCode" = "UrV0159Tohyoku"."tohyokuCode"
+            <if test='null != 地方公共団体コード and 地方公共団体コード.toString() != ""'>
+                AND "UrV0159Tohyoku"."lasdecCode" = #{地方公共団体コード}
+            </if>
+            <if test="連番 != 0 ">
+                AND "UrV0159Tohyoku"."lasdecCodeRenban" = #{連番}
+            </if>
+            <![CDATA[ and "UrV0159Tohyoku"."yukoKaishiYMD" <= #{システム日付}  ]]>
+            <![CDATA[ and  #{システム日付} <= "UrV0159Tohyoku"."yukoShuryoYMD" ]]>     
+            INNER JOIN
+            rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+            ON
+            "AfT504TohyokuRelation"."tohyokuCode" = "UrV0159Tohyoku"."tohyokuCode"
+            AND "AfT504TohyokuRelation"."senkyoShurui" = #{選挙種類}
+            INNER JOIN
+            rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+            ON
+            "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"  
+        </if>
+        <if test='選挙種類.toString() != "0" and 選挙種類.toString() != "1"'>
+            INNER JOIN
+            rgaf."AfT501Tohyoku" AS "AfT501Tohyoku"
+            ON
+            "AfT501Tohyoku"."tohyokuCode" = "AfT112SenkyoninMeibo"."tohyokuCode"
+            AND "AfT501Tohyoku"."senkyoShurui" = "AfT100Shohon"."senkyoShurui"
+            INNER JOIN
+            rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+            ON
+            "AfT504TohyokuRelation"."tohyokuCode" = "AfT501Tohyoku"."tohyokuCode"
+            AND "AfT504TohyokuRelation"."senkyoShurui" = "AfT501Tohyoku"."senkyoShurui"
+            INNER JOIN
+            rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+            ON
+            "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"
+        </if>
+        WHERE 
+        "AfT100Shohon"."shohonNo" = #{shohonNo}
+        ${出力順})
+    </select>
+    
+    <resultMap id="resultMap_SenkyoninEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.nyujokenkobetsu.NyujokenKobetsuJouhou" autoMapping="true">
+        <result property="住所" column="jutonaiJusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="名称" column="meisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="カナ名称" column="kanaMeisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="生年月日" column="seinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="性別コード" column="seibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="識別コード" column="shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="行政区コード" column="gyoseikuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.GyoseikuCodeTypeHandler"/>
+        <result property="行政区名" column="gyoseikuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="地区コード１" column="chikuCode1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="地区コード２" column="chikuCode2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="地区コード３" column="chikuCode3" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="地区名１" column="chikuName1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="地区名２" column="chikuName2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="地区名３" column="chikuName3" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="世帯コード" column="setaiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.SetaiCodeTypeHandler"/>
+        <result property="続柄コード" column="tsuzukigaraCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.TsuzukigaraCodeTypeHandler"/>
+        <result property="全国住所コード" column="zenkokuJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ZenkokuJushoCodeTypeHandler"/>
+        <result property="町域コード" column="jutonaiChoikiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChoikiCodeTypeHandler"/>
+        <result property="番地" column="jutonaiBanchi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="方書" column="jutonaiKatagaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="住民種別コード" column="juminShubetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="住民票表示順" column="juminhyoHyojijun" />
+        <result property="転出先住所" column="PSMjusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="転出先番地" column="banchi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="転出先方書" column="katagaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="転出先郵便番号" column="yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="登録届出年月日" column="torokuTodokedeYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="世帯主名" column="setainushiMei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="郵便番号" column="PSMyubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="投票区コード" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票区名" column="tohyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票所コード" column="tohyojoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票所名" column="tohyojoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票開始時刻" column="tohyoStartTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="投票終了時刻" column="tohyoStopTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="投票所の住所" column="jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="頁" column="page" />
+        <result property="行" column="gyo" />
+        <result property="転出期限日" column="tenshutsuKigenYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="転入期限日" column="tennyuKigenYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="年齢到達期限日" column="kiteiNenreiTotatsuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="前回基準日" column="kijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="消除届出年月日" column="shojoTodokedeYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="消除異動年月日" column="shojoIdoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="登録異動年月日" column="torokuIdoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="名簿基準年月日" column="kijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+    </resultMap>
+    <select resultOrdered="true" id="select抄本の前回基準日" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter" 
+            resultMap="resultMap_SenkyoninEntity"  fetchSize="500">
+        SELECT
+        MAX("AfT111Senkyo"."kijunYMD") AS "kijunYMD"
+        FROM
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON
+        "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        WHERE 
+        "AfT111Senkyo"."shohonNo"<![CDATA[ <> ]]> #{shohonNo}
+        AND "AfT111Senkyo"."kijunYMD"<![CDATA[ < ]]> #{kijunYMD}
+        AND "AfT100Shohon"."senkyoShurui" = #{選挙種類}
+    </select>
+    <select resultOrdered="true" id="select選挙の転入期限日" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter" 
+            resultMap="resultMap_SenkyoninEntity"  fetchSize="500">
+        SELECT
+        MAX("AfT111Senkyo"."tennyuKigenYMD") as "tennyuKigenYMD",
+        MAX("AfT111Senkyo"."tenshutsuKigenYMD") as "tenshutsuKigenYMD"
+        FROM
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        WHERE 
+        "AfT111Senkyo"."shohonNo" = #{shohonNo}       
+    </select>
+    <select resultOrdered="true" id="select宛名識別対象" resultMap="ResultMap_IdoSearchJuminShikakuEntity" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter" fetchSize="500">
+        SELECT
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />     
+        FROM
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" /> 
+        AS "ShikibetsuTaisho" 
+        WHERE "ShikibetsuTaisho"."shikibetsuCode"= #{識別コード} 
+    </select>
+    <resultMap id="ResultMap_IdoSearchJuminShikakuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.IdoSearchJuminShikakuEntity" autoMapping="true">
+        <association property = "shikibetsuTaisho" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+    </resultMap>
+    <select  resultOrdered="true"  id="selectSenkyoninMeiciJyohouTempTable" resultMap="resultMap_SenkyoninEntity" 
+             parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter">
+        SELECT
+        "ShikibetsuTaisho"."jutonaiJusho" AS "jutonaiJusho",
+        "ShikibetsuTaisho"."meisho" AS "meisho",
+        "ShikibetsuTaisho"."kanaMeisho" AS "kanaMeisho",
+        "ShikibetsuTaisho"."seinengappiYMD" AS "seinengappiYMD",
+        "ShikibetsuTaisho"."seibetsuCode" AS "seibetsuCode",
+        "ShikibetsuTaisho"."shikibetsuCode" AS "shikibetsuCode",
+        "ShikibetsuTaisho"."gyoseikuCode" AS "gyoseikuCode",
+        "ShikibetsuTaisho"."gyoseikuName" AS "gyoseikuName",
+        "ShikibetsuTaisho"."chikuCode1" AS "chikuCode1",
+        "ShikibetsuTaisho"."chikuName1" AS "chikuName1",
+        "ShikibetsuTaisho"."chikuCode2" AS "chikuCode2",
+        "ShikibetsuTaisho"."chikuName2" AS "chikuName2",
+        "ShikibetsuTaisho"."chikuCode3" AS "chikuCode3",
+        "ShikibetsuTaisho"."chikuName3" AS "chikuName3",
+        "ShikibetsuTaisho"."setaiCode" AS "setaiCode",
+        "ShikibetsuTaisho"."tsuzukigaraCode" AS "tsuzukigaraCode",
+        "ShikibetsuTaisho"."zenkokuJushoCode" AS "zenkokuJushoCode",
+        "ShikibetsuTaisho"."jutonaiChoikiCode" AS "jutonaiChoikiCode",
+        "ShikibetsuTaisho"."jutonaiBanchi" AS "jutonaiBanchi",
+        "ShikibetsuTaisho"."jutonaiKatagaki" AS "jutonaiKatagaki",
+        "ShikibetsuTaisho"."juminShubetsuCode" AS "juminShubetsuCode",
+        "ShikibetsuTaisho"."juminhyoHyojijun" AS "juminhyoHyojijun",
+        "ShikibetsuTaisho"."jusho" AS "psmJusho",
+        "ShikibetsuTaisho"."banchi" AS "banchi",
+        "ShikibetsuTaisho"."katagaki" AS "katagaki",
+        "ShikibetsuTaisho"."teshuYubinNo" AS "teshuYubinNo",
+        "ShikibetsuTaisho"."torokuTodokedeYMD" AS "torokuTodokedeYMD",
+        "ShikibetsuTaisho"."setainushiMei" AS "setainushiMei",
+        "ShikibetsuTaisho"."yubinNo" AS "yubinNo",
+        "ShikibetsuTaisho"."tohyokuCode" AS "tohyokuCode",
+        "ShikibetsuTaisho"."tohyokuName" AS "tohyokuName",
+        "ShikibetsuTaisho"."tohyojoCode" AS "tohyojoCode",
+        "ShikibetsuTaisho"."tohyojoName" AS "tohyojoName",
+        "ShikibetsuTaisho"."tohyoStartTime" AS "tohyoStartTime",
+        "ShikibetsuTaisho"."tohyoStopTime" AS "tohyoStopTime",
+        "ShikibetsuTaisho"."jusho" AS "jusho",
+        "ShikibetsuTaisho"."page" AS "page",
+        "ShikibetsuTaisho"."gyo" AS "gyo",
+        "ShikibetsuTaisho2"."shojoTodokedeYMD" AS "shojoTodokedeYMD",
+        "ShikibetsuTaisho2"."shojoIdoYMD" AS "shojoIdoYMD"
+        FROM "${table}" AS "ShikibetsuTaisho" 
+        LEFT JOIN 
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.tableName_PsmParamClassShikibetsuTaisho" />  
+        AS "ShikibetsuTaisho2"
+        ON 
+        "ShikibetsuTaisho2"."shikibetsuCode" = "ShikibetsuTaisho"."shikibetsuCode"
+        WHERE "ShikibetsuTaisho"."groupKubun" =#{groupKubun}     
+        <if test='出力順 ==null or 出力順.toString()==""'>
+            ORDER BY 
+            "ShikibetsuTaisho"."setaiCode",
+            "ShikibetsuTaisho"."juminhyoHyojijun"
+        </if>
+        <if test='出力順 !=null and 出力順.toString() !=""'>
+            ${出力順}
+        </if>  
+       
+    </select>
+    <select resultOrdered="true" id="selectNyujokenMaisuhyoTempTable" resultMap="resultMap_NyujokenMaisuhyoEntity"
+            parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter">
+        SELECT
+        "AFAPRB212NyujokenMaisuhyo"."shuukeiTanni" AS "shuukeiTanni",
+        "AFAPRB212NyujokenMaisuhyo"."shuukeiCode" AS "shuukeiCode",
+        "AFAPRB212NyujokenMaisuhyo"."shuukeiName" AS "shuukeiName",
+        SUM("AFAPRB212NyujokenMaisuhyo"."shuukeiSetaisuSuji") AS "shuukeiSetaisuSuji",      
+        SUM("AFAPRB212NyujokenMaisuhyo"."shuukeiMeisuSuji") AS "shuukeiMeisuSuji",
+        SUM("AFAPRB212NyujokenMaisuhyo"."shuukeiNinSuji") AS "shuukeiNinSuji"       
+        FROM "${table}" AS "AFAPRB212NyujokenMaisuhyo" 
+        GROUP BY
+        "AFAPRB212NyujokenMaisuhyo"."shuukeiTanni",
+        "AFAPRB212NyujokenMaisuhyo"."shuukeiCode",
+        "AFAPRB212NyujokenMaisuhyo"."shuukeiName"
+        ORDER BY
+        "AFAPRB212NyujokenMaisuhyo"."shuukeiCode"       
+    </select> 
+    <resultMap id="resultMap_NyujokenMaisuhyoEntity" type="jp.co.ndensan.reams.af.afa.entity.xml.nyujokenikkatsu.AFABTB201NyujokenMaisuhyoEntity" autoMapping="true">
+        <result property="shuukeiTanni" column="shuukeiTanni" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shuukeiCode" column="shuukeiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shuukeiName" column="shuukeiName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="shuukeiSetaisuSuji" column="shuukeiSetaisuSuji" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"/>
+        <result property="shuukeiMeisuSuji" column="shuukeiMeisuSuji" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"/>
+        <result property="shuukeiNinSuji" column="shuukeiNinSuji" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"/>   
+    </resultMap> 
+    <select  resultOrdered="true"  id="selectNninIjoSetaiListTempTable" resultMap="resultMap_SoufusakiJouhouEntity" 
+             parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter">
+        SELECT
+        "AFABTB201SoufusakiJouhou"."yubinNo" AS "yubinNo",
+        "AFABTB201SoufusakiJouhou"."gyoseikuCode" AS "gyoseikuCode",
+        "AFABTB201SoufusakiJouhou"."zenkokuJushoCode" AS "zenkokuJushoCode",
+        "AFABTB201SoufusakiJouhou"."chikuCode1" AS "chikuCode1",      
+        "AFABTB201SoufusakiJouhou"."chikuName1" AS "chikuName1",
+        "AFABTB201SoufusakiJouhou"."setaiCode" AS "setaiCode",
+        "AFABTB201SoufusakiJouhou"."setaiName" AS "setaiName",
+        "AFABTB201SoufusakiJouhou"."jusho" AS "jusho",
+        "AFABTB201SoufusakiJouhou"."banchi" AS "banchi",  
+        "AFABTB201SoufusakiJouhou"."katagaki" AS "katagaki",
+        "AFABTB201SoufusakiJouhou"."gyoseikuName" AS "gyoseikuName",
+        "AFABTB201SoufusakiJouhou"."meisho" AS "meisho",
+        "AFABTB201SoufusakiJouhou"."tohyokuCode" AS "tohyokuCode",
+        "AFABTB201SoufusakiJouhou"."page" AS "page",
+        "AFABTB201SoufusakiJouhou"."gyo" AS "gyo",
+        "AFABTB201NninIjoSetaiList"."setaiSuji" AS "setaiSuji"          
+        FROM "${table1}" AS "AFABTB201NninIjoSetaiList" 
+        LEFT JOIN
+        "${table}" AS "AFABTB201SoufusakiJouhou"
+        ON "AFABTB201NninIjoSetaiList"."setaiCode"="AFABTB201SoufusakiJouhou"."setaiCode"
+        AND "AFABTB201NninIjoSetaiList"."groupKubun"="AFABTB201SoufusakiJouhou"."groupKubun"
+        <if test='出力順 !=null and 出力順.toString() !=""'>
+            ${出力順}
+        </if>     
+    </select>
+    <resultMap id="resultMap_SoufusakiJouhouEntity" type="jp.co.ndensan.reams.af.afa.entity.xml.nyujokenikkatsu.AFABTB201SoufusakiJouhouEntity" autoMapping="true">
+        <result property="yubinNo" column="yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="gyoseikuCode" column="gyoseikuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.GyoseikuCodeTypeHandler"/>
+        <result property="zenkokuJushoCode" column="zenkokuJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ZenkokuJushoCodeTypeHandler"/>
+        <result property="chikuCode1" column="chikuCode1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="chikuName1" column="chikuName1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="setaiCode" column="setaiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.SetaiCodeTypeHandler"/>
+        <result property="setainushiMei" column="setainushiMei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="jusho" column="jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="banchi" column="banchi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="katagaki" column="katagaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="gyoseikuName" column="gyoseikuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="meisho" column="meisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="page" column="page" />
+        <result property="gyo" column="gyo" />   
+        <result property="setaiSuji" column="setaiSuji" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"/>
+    </resultMap> 
+    <select  resultOrdered="true"  id="selectMeiciJyohouSoufusakiTempTable" resultMap="resultMap_MeiciJyohouSoufusakiEntity" 
+             parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter">
+        SELECT
+        "SenkyoninMeiciJyohou"."jutonaiJusho" AS "jutonaiJusho",
+        "SenkyoninMeiciJyohou"."meisho" AS "meisho",
+        "SenkyoninMeiciJyohou"."kanaMeisho" AS "kanaMeisho",
+        "SenkyoninMeiciJyohou"."seinengappiYMD" AS "seinengappiYMD",
+        "SenkyoninMeiciJyohou"."seibetsuCode" AS "seibetsuCode",
+        "SenkyoninMeiciJyohou"."shikibetsuCode" AS "shikibetsuCode",
+        "SenkyoninMeiciJyohou"."gyoseikuCode" AS "gyoseikuCode",
+        "SenkyoninMeiciJyohou"."gyoseikuName" AS "gyoseikuName",
+        "SenkyoninMeiciJyohou"."chikuCode1" AS "chikuCode1",
+        "SenkyoninMeiciJyohou"."chikuName1" AS "chikuName1",
+        "SenkyoninMeiciJyohou"."chikuCode2" AS "chikuCode2",
+        "SenkyoninMeiciJyohou"."chikuName2" AS "chikuName2",
+        "SenkyoninMeiciJyohou"."chikuCode3" AS "chikuCode3",
+        "SenkyoninMeiciJyohou"."chikuName3" AS "chikuName3",
+        "SenkyoninMeiciJyohou"."setaiCode" AS "setaiCode",
+        "SenkyoninMeiciJyohou"."tsuzukigaraCode" AS "tsuzukigaraCode",
+        "SenkyoninMeiciJyohou"."zenkokuJushoCode" AS "zenkokuJushoCode",
+        "SenkyoninMeiciJyohou"."jutonaiChoikiCode" AS "jutonaiChoikiCode",
+        "SenkyoninMeiciJyohou"."jutonaiBanchi" AS "jutonaiBanchi",
+        "SenkyoninMeiciJyohou"."jutonaiKatagaki" AS "jutonaiKatagaki",
+        "SenkyoninMeiciJyohou"."juminShubetsuCode" AS "juminShubetsuCode",
+        "SenkyoninMeiciJyohou"."juminhyoHyojijun" AS "juminhyoHyojijun",
+        "SenkyoninMeiciJyohou"."jusho" AS "psmJusho",
+        "SenkyoninMeiciJyohou"."banchi" AS "banchi",
+        "SenkyoninMeiciJyohou"."katagaki" AS "katagaki",
+        "SenkyoninMeiciJyohou"."teshuYubinNo" AS "teshuYubinNo",
+        "SenkyoninMeiciJyohou"."torokuTodokedeYMD" AS "torokuTodokedeYMD",
+        "SenkyoninMeiciJyohou"."setainushiMei" AS "setainushiMei",
+        "SenkyoninMeiciJyohou"."yubinNo" AS "yubinNo",
+        "SenkyoninMeiciJyohou"."tohyokuCode" AS "tohyokuCode",
+        "SenkyoninMeiciJyohou"."tohyokuName" AS "tohyokuName",
+        "SenkyoninMeiciJyohou"."tohyojoCode" AS "tohyojoCode",
+        "SenkyoninMeiciJyohou"."tohyojoName" AS "tohyojoName",
+        "SenkyoninMeiciJyohou"."tohyoStartTime" AS "tohyoStartTime",
+        "SenkyoninMeiciJyohou"."tohyoStopTime" AS "tohyoStopTime",
+        "SenkyoninMeiciJyohou"."jusho" AS "jusho",
+        "SenkyoninMeiciJyohou"."page" AS "page",
+        "SenkyoninMeiciJyohou"."gyo" AS "gyo",
+        "AFABTB201SoufusakiJouhou"."yubinNo" AS "soufuSakiyubinNo",
+        "AFABTB201SoufusakiJouhou"."gyoseikuCode" AS "soufuSakigyoseikuCode",
+        "AFABTB201SoufusakiJouhou"."zenkokuJushoCode" AS "soufuSakiZenkokuJushoCode",
+        "AFABTB201SoufusakiJouhou"."chikuCode1" AS "soufuSakiChikuCode1",      
+        "AFABTB201SoufusakiJouhou"."chikuName1" AS "soufuSakiChikuName1",
+        "AFABTB201SoufusakiJouhou"."setaiCode" AS "soufuSakiSetaiCode",
+        "AFABTB201SoufusakiJouhou"."setaiName" AS "soufuSakiSetaiName",
+        "AFABTB201SoufusakiJouhou"."jusho" AS "soufuSakiJusho",
+        "AFABTB201SoufusakiJouhou"."banchi" AS "soufuSakiBanchi",  
+        "AFABTB201SoufusakiJouhou"."katagaki" AS "soufuSakiKatagaki",
+        "AFABTB201SoufusakiJouhou"."gyoseikuName" AS "soufuSakiGyoseikuName",
+        "AFABTB201SoufusakiJouhou"."meisho" AS "soufuSakiMeisho",
+        "AFABTB201SoufusakiJouhou"."tohyokuCode" AS "soufuSakiTohyokuCode",
+        "AFABTB201SoufusakiJouhou"."page" AS "soufuSakiPage",
+        "AFABTB201SoufusakiJouhou"."gyo" AS "soufuSakiGyo"
+        FROM "${table}" AS "SenkyoninMeiciJyohou" 
+        LEFT JOIN "${table1}" AS "AFABTB201SoufusakiJouhou" 
+        ON "AFABTB201SoufusakiJouhou"."groupKubun"="SenkyoninMeiciJyohou"."groupKubun"
+        AND "AFABTB201SoufusakiJouhou"."setaiCode"="SenkyoninMeiciJyohou"."setaiCode"
+        WHERE "SenkyoninMeiciJyohou"."groupKubun" =#{groupKubun}
+        ORDER BY 
+        "SenkyoninMeiciJyohou"."setaiCode",
+        "SenkyoninMeiciJyohou"."juminhyoHyojijun"
+    </select>
+    <resultMap id="resultMap_MeiciJyohouSoufusakiEntity" type="jp.co.ndensan.reams.af.afa.entity.xml.nyujokenikkatsu.AFABTB201MeiciJyohouSoufusakiEntity" autoMapping="true">
+        <result property="住所" column="jutonaiJusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="名称" column="meisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="カナ名称" column="kanaMeisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="生年月日" column="seinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="性別コード" column="seibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="識別コード" column="shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <result property="行政区コード" column="gyoseikuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.GyoseikuCodeTypeHandler"/>
+        <result property="行政区名" column="gyoseikuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="地区コード１" column="chikuCode1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="地区コード２" column="chikuCode2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="地区コード３" column="chikuCode3" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="地区名１" column="chikuName1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="地区名２" column="chikuName2" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="地区名３" column="chikuName3" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="世帯コード" column="setaiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.SetaiCodeTypeHandler"/>
+        <result property="続柄コード" column="tsuzukigaraCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.TsuzukigaraCodeTypeHandler"/>
+        <result property="全国住所コード" column="zenkokuJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ZenkokuJushoCodeTypeHandler"/>
+        <result property="町域コード" column="jutonaiChoikiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChoikiCodeTypeHandler"/>
+        <result property="番地" column="jutonaiBanchi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="方書" column="jutonaiKatagaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="住民種別コード" column="juminShubetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="住民票表示順" column="juminhyoHyojijun" />
+        <result property="転出先住所" column="PSMjusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="転出先番地" column="banchi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="転出先方書" column="katagaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="転出先郵便番号" column="yubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="登録届出年月日" column="torokuTodokedeYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="世帯主名" column="setainushiMei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="郵便番号" column="PSMyubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="投票区コード" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票区名" column="tohyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票所コード" column="tohyojoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票所名" column="tohyojoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="投票開始時刻" column="tohyoStartTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="投票終了時刻" column="tohyoStopTime" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RTimeTypeHandler"/>
+        <result property="投票所の住所" column="jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="頁" column="page" />
+        <result property="行" column="gyo" />
+        <result property="転出期限日" column="tenshutsuKigenYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="転入期限日" column="tennyuKigenYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="年齢到達期限日" column="kiteiNenreiTotatsuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="前回基準日" column="kijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="消除届出年月日" column="shojoTodokedeYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="消除異動年月日" column="shojoIdoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="送付先郵便番号" column="soufuSakiyubinNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.YubinNoTypeHandler"/>
+        <result property="送付先行政区コード" column="soufuSakigyoseikuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.GyoseikuCodeTypeHandler"/>
+        <result property="送付先全国住所コード" column="soufuSakiZenkokuJushoCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ZenkokuJushoCodeTypeHandler"/>
+        <result property="送付先地区コード1" column="soufuSakiChikuCode1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChikuCodeTypeHandler"/>
+        <result property="送付先地区名1" column="soufuSakiChikuName1" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="送付先世帯コード" column="soufuSakiSetaiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.SetaiCodeTypeHandler"/>
+        <result property="送付先世帯主名" column="soufuSakiSetaiName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="送付先住所" column="soufuSakiJusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+        <result property="送付先番地" column="soufuSakiBanchi" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaBanchiTypeHandler"/>
+        <result property="送付先方書" column="soufuSakiKatagaki" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.KatagakiTypeHandler"/>
+        <result property="送付先行政区名" column="soufuSakiGyoseikuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="送付先宛名" column="soufuSakiMeisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="送付先投票区コード" column="soufuSakiTohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="送付先名簿_頁" column="soufuSakiPage" />
+        <result property="送付先名簿_行" column="soufuSakiGyo" />   
+    </resultMap> 
+    <select  resultOrdered="true"  id="selectAfT100ShohonTable" resultMap="resultMap_AfT100ShohonEntity" 
+             parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter">
+        SELECT
+        "AfT100Shohon"."shohonNo" as "afT100Shohon_shohonNo",
+        "AfT100Shohon"."insertDantaiCd" as "afT100Shohon_insertDantaiCd",
+        "AfT100Shohon"."insertTimestamp" as "afT100Shohon_insertTimestamp",
+        "AfT100Shohon"."insertReamsLoginId" as "afT100Shohon_insertReamsLoginId",
+        "AfT100Shohon"."insertContextId" as "afT100Shohon_insertContextId",
+        "AfT100Shohon"."isDeleted" as "afT100Shohon_isDeleted",
+        "AfT100Shohon"."updateCount" as "afT100Shohon_updateCount",
+        "AfT100Shohon"."lastUpdateTimestamp" as "afT100Shohon_lastUpdateTimestamp",
+        "AfT100Shohon"."lastUpdateReamsLoginId" as "afT100Shohon_lastUpdateReamsLoginId",
+        "AfT100Shohon"."senkyoShurui" as "afT100Shohon_senkyoShurui",
+        "AfT100Shohon"."shohonName" as "afT100Shohon_shohonName",
+        "AfT100Shohon"."tohyoYMD" as "afT100Shohon_tohyoYMD",
+        "AfT100Shohon"."kiteiNenreiTotatsuYMD" as "afT100Shohon_kiteiNenreiTotatsuYMD",
+        "AfT100Shohon"."shoriYMD" as "afT100Shohon_shoriYMD",
+        "AfT100Shohon"."nyujokenReportIndex" as "afT100Shohon_nyujokenReportIndex"
+        FROM
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        WHERE
+        "AfT100Shohon"."isDeleted" = FALSE
+        AND "AfT100Shohon"."shohonNo"=#{shohonNo}
+    </select>
+    <resultMap id="resultMap_AfT100ShohonEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT100ShohonEntity" autoMapping="true">
+        <id property="shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="insertDantaiCd" column="afT100Shohon_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT100Shohon_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT100Shohon_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT100Shohon_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT100Shohon_isDeleted" />
+        <result property="updateCount" column="afT100Shohon_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT100Shohon_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT100Shohon_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="senkyoShurui" column="afT100Shohon_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="shohonName" column="afT100Shohon_shohonName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyoYMD" column="afT100Shohon_tohyoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kiteiNenreiTotatsuYMD" column="afT100Shohon_kiteiNenreiTotatsuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="shoriYMD" column="afT100Shohon_shoriYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="nyujokenReportIndex" column="afT100Shohon_nyujokenReportIndex" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.DecimalTypeHandler"/>
+    </resultMap>
+        
+    <select resultOrdered="true" id="select投票区一覧" resultMap="resultMap_NyujokenIkkatsuMybatisTokyo"  fetchSize="500" >
+        SELECT
+        "Tohyoku"."tohyokuCode",
+        "Tohyoku"."tohyokuName"
+        FROM rgaf."AfT501Tohyoku"   AS "Tohyoku" 
+        WHERE 
+        "Tohyoku"."senkyoShurui" = #{選挙種類}
+        ORDER BY
+        "Tohyoku"."tohyokuCode" asc
+    </select> 
+    <resultMap id="resultMap_NyujokenIkkatsuMybatisTokyo" type="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisTokyo" autoMapping="true">
+        <result property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyokuName" column="tohyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap> 
+      
+    <select resultOrdered="true" id="select選挙人明細情報リスト" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter" 
+            resultMap="resultMap_SenkyoninMeiciEntity"  fetchSize="500">
+        WITH master AS ( 
+        SELECT            
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku" />,
+        <if test='選挙種類.toString() == "0" or 選挙種類.toString() == "1"'>
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zenjitsuprint.IAFABTE504Mapper.allColumns_UrV0159Tohyoku" />,
+        </if>
+        <if test='選挙種類.toString() != "0" and 選挙種類.toString() != "1"'>
+            <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.allColumns_AfT501Tohyoku"/>,
+        </if>
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.allColumns_AfT502Tohyojo"/>,   
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.allColumns_AfT112SenkyoninMeibo"/>
+        FROM
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON
+        "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+        INNER JOIN
+        rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        ON
+        "AfT111Senkyo"."shohonNo" = "AfT112SenkyoninMeibo"."shohonNo"
+        INNER JOIN
+        rgaf."AfV113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        <!--        ON
+           "AfT100Shohon"."senkyoShurui" = "AfT113SenkyoShikaku"."senkyoShurui"
+        AND "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT113SenkyoShikaku"."shikibetsuCode"-->
+        ON
+        "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT113SenkyoShikaku"."shikibetsuCode"
+        <if test='選挙種類.toString() == "0" or 選挙種類.toString() == "1"'>
+            AND "AfT113SenkyoShikaku"."senkyoShurui" = '0'
+        </if>
+        <if test='選挙種類.toString() != "0" and 選挙種類.toString() != "1"'>
+            AND "AfT100Shohon"."senkyoShurui" = "AfT113SenkyoShikaku"."senkyoShurui"  
+        </if>
+        <if test='選挙種類.toString() == "0" or 選挙種類.toString() == "1"'>
+            INNER JOIN  
+            rgur."UrV0159Tohyoku" AS "UrV0159Tohyoku"
+            ON 
+            "AfT112SenkyoninMeibo"."tohyokuCode" = "UrV0159Tohyoku"."tohyokuCode"
+            <if test='null != 地方公共団体コード and 地方公共団体コード.toString() != ""'>
+                AND "UrV0159Tohyoku"."lasdecCode" = #{地方公共団体コード}
+            </if>
+            <if test="連番 != 0 ">
+                AND "UrV0159Tohyoku"."lasdecCodeRenban" = #{連番}
+            </if>
+            <![CDATA[ and "UrV0159Tohyoku"."yukoKaishiYMD" <= #{システム日付}  ]]>
+            <![CDATA[ and  #{システム日付} <= "UrV0159Tohyoku"."yukoShuryoYMD" ]]>     
+            INNER JOIN
+            rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+            ON
+            "AfT504TohyokuRelation"."tohyokuCode" = "UrV0159Tohyoku"."tohyokuCode"
+            AND "AfT504TohyokuRelation"."senkyoShurui" = #{選挙種類}
+            INNER JOIN
+            rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+            ON
+            "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"  
+        </if>
+        <if test='選挙種類.toString() != "0" and 選挙種類.toString() != "1"'>
+            INNER JOIN
+            rgaf."AfT501Tohyoku" AS "AfT501Tohyoku"
+            ON
+            "AfT501Tohyoku"."tohyokuCode" = "AfT112SenkyoninMeibo"."tohyokuCode"
+            AND "AfT501Tohyoku"."senkyoShurui" = "AfT100Shohon"."senkyoShurui"
+            INNER JOIN
+            rgaf."AfT504TohyokuRelation" AS "AfT504TohyokuRelation"
+            ON
+            "AfT504TohyokuRelation"."tohyokuCode" = "AfT501Tohyoku"."tohyokuCode"
+            AND "AfT504TohyokuRelation"."senkyoShurui" = "AfT501Tohyoku"."senkyoShurui"
+            INNER JOIN
+            rgaf."AfT502Tohyojo" AS "AfT502Tohyojo"
+            ON
+            "AfT504TohyokuRelation"."tohyojoCode" = "AfT502Tohyojo"."tohyojoCode"
+        </if>
+        WHERE 
+        "AfT100Shohon"."shohonNo" = #{shohonNo}
+        AND
+        "AfT111Senkyo"."shohonNo" = #{shohonNo}
+        AND
+        "AfT112SenkyoninMeibo"."shohonNo" = #{shohonNo}
+        )
+        select 
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />,
+        master.*
+        From  master
+        INNER JOIN 
+        <include refid="tableName_PsmParamClassShikibetsuTaisho_Label_First" />  
+        ( 
+        SELECT
+        ARRAY_AGG(CAST (master."afT112SenkyoninMeibo_shikibetsuCode" AS TEXT)) 
+        FROM
+        master
+        )
+        <include refid="tableName_PsmParamClassShikibetsuTaisho_Label_Second" />  
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        on <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"        
+        <if test='出力順 == null or 出力順.toString()==""'>
+            ORDER BY	
+            "ShikibetsuTaisho"."setaiCode",
+            "ShikibetsuTaisho"."juminhyoHyojijun"   
+        </if>
+        <if test='出力順 != null and 出力順.toString() !=""'>
+            ${出力順}
+        </if> 
+    </select>
+    <resultMap id="resultMap_SenkyoninMeiciEntity" type="jp.co.ndensan.reams.af.afa.entity.xml.nyujokenikkatsu.NyujokenIkkatsuEntity" autoMapping="true">
+        <id property="宛名PSM情報.shikibetsuCode" column="ShikibetsuTaisho_shikibetsuCode"  typeHandler="ShikibetsuCodeTypeHandler" />
+        <id property="選挙資格情報.senkyoShurui" column="afT113SenkyoShikaku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="選挙資格情報.shikibetsuCode" column="afT113SenkyoShikaku_shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>
+        <id property="選挙資格情報.seq" column="afT113SenkyoShikaku_seq" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.BigSerialTypeHandler"/>
+        <association property="投票区情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.ResultMap_AfT501TohyokuEntity"/>
+        <association property="ur投票区情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zenjitsuprint.IAFABTE504Mapper.ResultMap_UrV0159TohyokuEntity"/>
+        <association property="投票所情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT502TohyojoMapper.ResultMap_AfT502TohyojoEntity"/>
+        <association property="選挙人名簿情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfV112SenkyoninMeiboMapper.ResultMap_AfT112SenkyoninMeiboEntity"/>
+        <association property="宛名PSM情報" resultMap="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+        <association property="選挙資格情報" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.ResultMap_AfT113SenkyoShikakuEntity"/>
+    </resultMap>
+    <sql id="tableName_PsmParamClassShikibetsuTaisho_Label">
+        rgua."UaFt200FindShikibetsuTaisho"(
+        #{uaft200_dataShutokuKubun},
+        #{uaft200_kijunYMD},
+        #{uaft200_jutogaiYusenFlag},
+        #{uaft200_gyomuCode},
+        #{uaft200_setaiinShutoku},
+        <if test="uaft200_isUseTableColumn">
+            ${uaft200_shikibetsuCode},
+        </if>
+        <if test="!uaft200_isUseTableColumn">
+            #{uaft200_shikibetsuCode},
+        </if>
+        #{uaft200_setaiCode},
+        #{uaft200_kojinNo},
+        #{uaft200_hojinNo},
+        #{uaft200_juminhyoCode},
+        #{uaft200_zairyuCardtoNo},
+        #{uaft200_shimei},
+        #{uaft200_shimeiBunkatsu1},
+        #{uaft200_shimeiBunkatsu2},
+        #{uaft200_shimeiBunkatsu3},
+        #{uaft200_shimei_joken},
+        #{uaft200_shimei_rirekiumu},
+        #{uaft200_seinengappiYmd},
+        #{uaft200_seibetsuCode},
+        #{uaft200_choikiCode},
+        #{uaft200_choiki},
+        #{uaft200_zenkokuJushoCode},
+        #{uaft200_zenkokuJusho},
+        #{uaft200_jushoMeisho_Joken},
+        #{uaft200_jusho_rirekiumu},
+        #{uaft200_gyoseikuCode},
+        #{uaft200_chikuCode1},
+        #{uaft200_chikuCode2},
+        #{uaft200_chikuCode3},
+        #{uaft200_banchiCode1},
+        #{uaft200_banchiCode2},
+        #{uaft200_banchiCode3},
+        #{uaft200_banchiCode4},
+        #{uaft200_katagakiMeisho},
+        #{uaft200_katagaki_Joken},
+        #{uaft200_yubinNo},
+        #{uaft200_juminJutonaiNihonjin},
+        #{uaft200_juminJutonaiGaikokujin},
+        #{uaft200_juminJutogaiNihonjin},
+        #{uaft200_juminJutogaiGaikokujin},
+        #{uaft200_jumin_Hojin},
+        #{uaft200_jumin_Kyoyusha},
+        #{uaft200_juminJotaiJumin},
+        #{uaft200_juminJotaiJutogai},
+        #{uaft200_juminJotaiShojosha},
+        #{uaft200_juminJotaiTenshutsusha},
+        #{uaft200_juminJotaiShibosha},
+        #{uaft200_renrakusaki},
+        #{uaft200_hojinKeitaiCode},
+        #{uaft200_daihyoShikibetsuCode},
+        #{uaft200_daihyoShimei},
+        #{uaft200_daihyoShimeiBunkatsu1},
+        #{uaft200_daihyoShimeiBunkatsu2},
+        #{uaft200_daihyoShimeiBunkatsu3},
+        #{uaft200_daihyoShimei_joken},
+        #{uaft200_daihyoShimei_rirekiumu},
+        #{uaft200_kokusekiChiikiCode},
+        #{uaft200_lasdecCode},
+        #{uaft200_sakujoShutoku},
+        #{uaft200_doitsuninYusen},
+        #{uaft200_kosekiShutoku},
+        #{uaft200_choikiCode_ST},
+        #{uaft200_choikiCode_ED},
+        #{uaft200_zenkokuJushoCode_ST},
+        #{uaft200_zenkokuJushoCode_ED},
+        #{uaft200_gyoseikuCode_ST},
+        #{uaft200_gyoseikuCode_ED},
+        #{uaft200_chikuCode1_ST},
+        #{uaft200_chikuCode1_ED},
+        #{uaft200_chikuCode2_ST},
+        #{uaft200_chikuCode2_ED},
+        #{uaft200_chikuCode3_ST},
+        #{uaft200_chikuCode3_ED},
+        #{uaft200_shikibetsuCode_ST},
+        #{uaft200_shikibetsuCode_ED},
+        #{uaft200_setaiCode_ST},
+        #{uaft200_setaiCode_ED},
+        #{uaft200_yubinNo_ST},
+        #{uaft200_yubinNo_ED},
+        <foreach item="shikibetsuCodeList" index="index" collection="uaft200_shikibetsuCodeList"
+                 open="'{ " separator="," close="}'">
+            ${shikibetsuCodeList}
+        </foreach>
+        )
+    </sql>
+    <select  resultOrdered="true"  id="selectSoufusakiJouhouTempTable" resultMap="resultMap_JyohouSoufusakiEntity" 
+             parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter">
+        SELECT
+        "SenkyoninMeiciJyohou"."setaiCode" AS "setaiCode",
+        "SenkyoninMeiciJyohou"."meisho" AS "meisho",
+        "SenkyoninMeiciJyohou"."jutonaiJusho" AS "jutonaiJusho",
+        "SenkyoninMeiciJyohou"."shikibetsuCode" AS "shikibetsuCode", 
+        "SenkyoninMeiciJyohou"."setaiName" AS "setaiName",       
+        "SenkyoninMeiciJyohou"."tohyokuCode" AS "tohyokuCode",
+        "SenkyoninMeiciJyohou"."satsu" AS "satsu",
+        "SenkyoninMeiciJyohou"."page" AS "page",
+        "SenkyoninMeiciJyohou"."gyo" AS "gyo"
+        FROM "${table}" AS "SenkyoninMeiciJyohou" 
+        WHERE "SenkyoninMeiciJyohou"."groupKubun" =#{groupKubun}
+        AND "SenkyoninMeiciJyohou"."setaiCode" =#{setaiCode}
+        ${出力順}
+    </select>
+    <select  resultOrdered="true"  id="selectJyohouSoufusakiTempTable" resultMap="resultMap_JyohouSoufusakiEntity" 
+             parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter">
+        SELECT
+        "SenkyoninMeiciJyohou"."setaiCode" AS "setaiCode",
+        "SenkyoninMeiciJyohou"."meisho" AS "meisho",
+        "SenkyoninMeiciJyohou"."jutonaiJusho" AS "jutonaiJusho",
+        "SenkyoninMeiciJyohou"."shikibetsuCode" AS "shikibetsuCode",  
+        "SenkyoninMeiciJyohou"."setaiName" AS "setaiName",      
+        "SenkyoninMeiciJyohou"."tohyokuCode" AS "tohyokuCode",
+        "SenkyoninMeiciJyohou"."satsu" AS "satsu",
+        "SenkyoninMeiciJyohou"."page" AS "page",
+        "SenkyoninMeiciJyohou"."gyo" AS "gyo"	  
+        FROM 
+        "${table}" AS "SenkyoninMeiciJyohou"
+        WHERE 
+        "SenkyoninMeiciJyohou"."groupKubun" =#{groupKubun}
+        ${出力順}
+    </select>
+    <resultMap id="resultMap_JyohouSoufusakiEntity" type="jp.co.ndensan.reams.af.afa.entity.xml.nyujokenikkatsu.AFABTB201MeiciJyohouSoufusakiEntity" autoMapping="true"> 
+        <result property="住所" column="jutonaiJusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="名称" column="meisho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="識別コード" column="shikibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ShikibetsuCodeTypeHandler"/>  
+        <result property="世帯コード" column="setaiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.SetaiCodeTypeHandler"/> 
+        <result property="世帯主名" column="setaiName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>  
+        <result property="投票区コード" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="冊" column="satsu" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="頁" column="page" />
+        <result property="行" column="gyo" />    
+    </resultMap>
+    <select resultOrdered="true" id="select選挙の名簿基準年月日" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisParameter" 
+            resultMap="resultMap_SenkyoninEntity"  fetchSize="500">
+        SELECT
+        MAX("AfT111Senkyo"."kijunYMD") AS "kijunYMD"
+        FROM
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        WHERE 
+        "AfT111Senkyo"."shohonNo" = #{shohonNo}       
+    </select>
+    <select resultOrdered="true" id="select投票区一覧明細" resultMap="resultMap_NyujokenIkkatsuMybatisTokyoMeiSho"  fetchSize="500" >
+        SELECT
+        "Tohyoku"."tohyokuCode" AS "tohyokuCode",
+        "Tohyoku"."name" AS "name"
+        FROM rgur."UrT0159Tohyoku"   AS "Tohyoku" 
+        ORDER BY
+        "Tohyoku"."tohyokuCode" asc
+    </select> 
+    <resultMap id="resultMap_NyujokenIkkatsuMybatisTokyoMeiSho" type="jp.co.ndensan.reams.af.afa.definition.mybatisprm.nyujokenikkatsu.NyujokenIkkatsuMybatisTokyo" autoMapping="true">
+        <result property="tohyokuCode" column="tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyokuName" column="name" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap> 
+    <sql id="tableName_PsmParamClassShikibetsuTaisho_Label_First">
+        rgua."UaFt200FindShikibetsuTaisho"(
+        #{uaft200_dataShutokuKubun},
+        #{uaft200_kijunYMD},
+        #{uaft200_jutogaiYusenFlag},
+        #{uaft200_gyomuCode},
+        #{uaft200_setaiinShutoku},
+        <if test="uaft200_isUseTableColumn">
+            ${uaft200_shikibetsuCode},
+        </if>
+        <if test="!uaft200_isUseTableColumn">
+            #{uaft200_shikibetsuCode},
+        </if>
+        #{uaft200_setaiCode},
+        #{uaft200_kojinNo},
+        #{uaft200_hojinNo},
+        #{uaft200_juminhyoCode},
+        #{uaft200_zairyuCardtoNo},
+        #{uaft200_shimei},
+        #{uaft200_shimeiBunkatsu1},
+        #{uaft200_shimeiBunkatsu2},
+        #{uaft200_shimeiBunkatsu3},
+        #{uaft200_shimei_joken},
+        #{uaft200_shimei_rirekiumu},
+        #{uaft200_seinengappiYmd},
+        #{uaft200_seibetsuCode},
+        #{uaft200_choikiCode},
+        #{uaft200_choiki},
+        #{uaft200_zenkokuJushoCode},
+        #{uaft200_zenkokuJusho},
+        #{uaft200_jushoMeisho_Joken},
+        #{uaft200_jusho_rirekiumu},
+        #{uaft200_gyoseikuCode},
+        #{uaft200_chikuCode1},
+        #{uaft200_chikuCode2},
+        #{uaft200_chikuCode3},
+        #{uaft200_banchiCode1},
+        #{uaft200_banchiCode2},
+        #{uaft200_banchiCode3},
+        #{uaft200_banchiCode4},
+        #{uaft200_katagakiMeisho},
+        #{uaft200_katagaki_Joken},
+        #{uaft200_yubinNo},
+        #{uaft200_juminJutonaiNihonjin},
+        #{uaft200_juminJutonaiGaikokujin},
+        #{uaft200_juminJutogaiNihonjin},
+        #{uaft200_juminJutogaiGaikokujin},
+        #{uaft200_jumin_Hojin},
+        #{uaft200_jumin_Kyoyusha},
+        #{uaft200_juminJotaiJumin},
+        #{uaft200_juminJotaiJutogai},
+        #{uaft200_juminJotaiShojosha},
+        #{uaft200_juminJotaiTenshutsusha},
+        #{uaft200_juminJotaiShibosha},
+        #{uaft200_renrakusaki},
+        #{uaft200_hojinKeitaiCode},
+        #{uaft200_daihyoShikibetsuCode},
+        #{uaft200_daihyoShimei},
+        #{uaft200_daihyoShimeiBunkatsu1},
+        #{uaft200_daihyoShimeiBunkatsu2},
+        #{uaft200_daihyoShimeiBunkatsu3},
+        #{uaft200_daihyoShimei_joken},
+        #{uaft200_daihyoShimei_rirekiumu},
+        #{uaft200_kokusekiChiikiCode},
+        #{uaft200_lasdecCode},
+        #{uaft200_sakujoShutoku},
+        #{uaft200_doitsuninYusen},
+        #{uaft200_kosekiShutoku},
+        #{uaft200_choikiCode_ST},
+        #{uaft200_choikiCode_ED},
+        #{uaft200_zenkokuJushoCode_ST},
+        #{uaft200_zenkokuJushoCode_ED},
+        #{uaft200_gyoseikuCode_ST},
+        #{uaft200_gyoseikuCode_ED},
+        #{uaft200_chikuCode1_ST},
+        #{uaft200_chikuCode1_ED},
+        #{uaft200_chikuCode2_ST},
+        #{uaft200_chikuCode2_ED},
+        #{uaft200_chikuCode3_ST},
+        #{uaft200_chikuCode3_ED},
+        #{uaft200_shikibetsuCode_ST},
+        #{uaft200_shikibetsuCode_ED},
+        #{uaft200_setaiCode_ST},
+        #{uaft200_setaiCode_ED},
+        #{uaft200_yubinNo_ST},
+        #{uaft200_yubinNo_ED},
+    </sql> 
+    
+    <sql id="tableName_PsmParamClassShikibetsuTaisho_Label_Second">
+        )
+    </sql> 
+</mapper>

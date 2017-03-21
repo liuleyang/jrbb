@@ -1,0 +1,11 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+groupCode,varchar,RString,,,,,グループコード,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A
+satsu,varchar,RString,,,,,冊,A
+page,int4,int,,,,,頁,A
+gyo,int2,int,,,,,行,A
+seq,bigserial,BigSerial,,,,,履歴番号,A
+shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A
+tohyokuHenkoMasshoFlag,bool,boolean,,,,,投票区変更抹消フラグ,A
+renban,int4,int,,,,,連番,A
+edaban,int2,int,,,,,枝番,A

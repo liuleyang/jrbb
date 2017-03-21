@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT111Senkyoマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT111Senkyo">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />
+        FROM
+        rgaf."AfT111Senkyo"
+        WHERE
+        rgaf."AfT111Senkyo"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT111Senkyo">
+        "AfT111Senkyo"."shohonNo" as "afT111Senkyo_shohonNo",
+        "AfT111Senkyo"."senkyoNo" as "afT111Senkyo_senkyoNo",
+        "AfT111Senkyo"."insertDantaiCd" as "afT111Senkyo_insertDantaiCd",
+        "AfT111Senkyo"."insertTimestamp" as "afT111Senkyo_insertTimestamp",
+        "AfT111Senkyo"."insertReamsLoginId" as "afT111Senkyo_insertReamsLoginId",
+        "AfT111Senkyo"."insertContextId" as "afT111Senkyo_insertContextId",
+        "AfT111Senkyo"."isDeleted" as "afT111Senkyo_isDeleted",
+        "AfT111Senkyo"."updateCount" as "afT111Senkyo_updateCount",
+        "AfT111Senkyo"."lastUpdateTimestamp" as "afT111Senkyo_lastUpdateTimestamp",
+        "AfT111Senkyo"."lastUpdateReamsLoginId" as "afT111Senkyo_lastUpdateReamsLoginId",
+        "AfT111Senkyo"."senkyoLevel" as "afT111Senkyo_senkyoLevel",
+        "AfT111Senkyo"."senkyoName" as "afT111Senkyo_senkyoName",
+        "AfT111Senkyo"."senkyoRyakusho" as "afT111Senkyo_senkyoRyakusho",
+        "AfT111Senkyo"."senkyoMark" as "afT111Senkyo_senkyoMark",
+        "AfT111Senkyo"."kijunYMD" as "afT111Senkyo_kijunYMD",
+        "AfT111Senkyo"."meiboTorokuYMD" as "afT111Senkyo_meiboTorokuYMD",
+        "AfT111Senkyo"."kokujiYMD" as "afT111Senkyo_kokujiYMD",
+        "AfT111Senkyo"."tenshutsuKigenYMD" as "afT111Senkyo_tenshutsuKigenYMD",
+        "AfT111Senkyo"."tennyuKigenYMD" as "afT111Senkyo_tennyuKigenYMD",
+        "AfT111Senkyo"."tohyoUketsukeYMD" as "afT111Senkyo_tohyoUketsukeYMD",
+        "AfT111Senkyo"."mutohyoSenkyoFlag" as "afT111Senkyo_mutohyoSenkyoFlag"
+    </sql>
+
+
+    <!--テーブルAfT111Senkyoの項目をAfT111SenkyoEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT111SenkyoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT111SenkyoEntity" autoMapping="true">
+        <id property="shohonNo" column="afT111Senkyo_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="senkyoNo" column="afT111Senkyo_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <result property="insertDantaiCd" column="afT111Senkyo_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT111Senkyo_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT111Senkyo_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT111Senkyo_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT111Senkyo_isDeleted" />
+        <result property="updateCount" column="afT111Senkyo_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT111Senkyo_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT111Senkyo_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="senkyoLevel" column="afT111Senkyo_senkyoLevel" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="senkyoName" column="afT111Senkyo_senkyoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="senkyoRyakusho" column="afT111Senkyo_senkyoRyakusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="senkyoMark" column="afT111Senkyo_senkyoMark" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kijunYMD" column="afT111Senkyo_kijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="meiboTorokuYMD" column="afT111Senkyo_meiboTorokuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="kokujiYMD" column="afT111Senkyo_kokujiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="tenshutsuKigenYMD" column="afT111Senkyo_tenshutsuKigenYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="tennyuKigenYMD" column="afT111Senkyo_tennyuKigenYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="tohyoUketsukeYMD" column="afT111Senkyo_tohyoUketsukeYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="mutohyoSenkyoFlag" column="afT111Senkyo_mutohyoSenkyoFlag" />
+    </resultMap>
+
+</mapper>

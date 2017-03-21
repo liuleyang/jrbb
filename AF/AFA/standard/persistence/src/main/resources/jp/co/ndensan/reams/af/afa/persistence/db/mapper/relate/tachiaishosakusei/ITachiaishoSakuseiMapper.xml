@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- @reamsid_L AF-0120-010 xul -->
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.tachiaishosakusei.ITachiaishoSakuseiMapper">
+    <select resultOrdered="false" id="select選挙名By抄本番号" resultMap="ResultMap_SenkyoEntity" >
+        SELECT
+            AfT111Senkyo."senkyoName" AS "senkyoName",
+            AfT111Senkyo."senkyoNo" AS "senkyoNo",
+            AfT111Senkyo."mutohyoSenkyoFlag" AS "mutohyoSenkyoFlag"
+        FROM
+            rgaf."AfT100Shohon" AfT100Shohon
+        INNER JOIN rgaf."AfT111Senkyo" AfT111Senkyo
+        ON AfT100Shohon."shohonNo" = AfT111Senkyo."shohonNo"
+        WHERE
+            AfT100Shohon."shohonNo" = #{shohonNo}
+        ORDER BY
+            AfT111Senkyo."senkyoNo" ASC
+    </select>
+    
+    <resultMap id="ResultMap_SenkyoEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT111SenkyoEntity" autoMapping="true">
+        <id property="senkyoNo" column="afT111Senkyo_senkyoNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.SenkyoNoTypeHandler"/>
+        <result property="senkyoName" column="afT111Senkyo_senkyoName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="mutohyoSenkyoFlag" column="afT111Senkyo_mutohyoSenkyoFlag" />
+    </resultMap>
+</mapper>

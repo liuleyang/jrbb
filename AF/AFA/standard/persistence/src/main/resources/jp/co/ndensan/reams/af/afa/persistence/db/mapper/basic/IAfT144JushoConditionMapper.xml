@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT144JushoConditionマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT144JushoConditionMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT144JushoCondition">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT144JushoConditionMapper.allColumns_AfT144JushoCondition" />
+     FROM
+         rgaf."AfT144JushoCondition"
+     WHERE
+         rgaf."AfT144JushoCondition"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT144JushoCondition">
+         "AfT144JushoCondition"."shohonNo" as "afT144JushoCondition_shohonNo",
+         "AfT144JushoCondition"."choikiCode" as "afT144JushoCondition_choikiCode",
+         "AfT144JushoCondition"."insertDantaiCd" as "afT144JushoCondition_insertDantaiCd",
+         "AfT144JushoCondition"."insertTimestamp" as "afT144JushoCondition_insertTimestamp",
+         "AfT144JushoCondition"."insertReamsLoginId" as "afT144JushoCondition_insertReamsLoginId",
+         "AfT144JushoCondition"."insertContextId" as "afT144JushoCondition_insertContextId",
+         "AfT144JushoCondition"."isDeleted" as "afT144JushoCondition_isDeleted",
+         "AfT144JushoCondition"."updateCount" as "afT144JushoCondition_updateCount",
+         "AfT144JushoCondition"."lastUpdateTimestamp" as "afT144JushoCondition_lastUpdateTimestamp",
+         "AfT144JushoCondition"."lastUpdateReamsLoginId" as "afT144JushoCondition_lastUpdateReamsLoginId"
+    </sql>
+
+
+    <!--テーブルAfT144JushoConditionの項目をAfT144JushoConditionEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT144JushoConditionEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT144JushoConditionEntity" autoMapping="true">
+        <id property="shohonNo" column="afT144JushoCondition_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <id property="choikiCode" column="afT144JushoCondition_choikiCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.ChoikiCodeTypeHandler"/>
+        <result property="insertDantaiCd" column="afT144JushoCondition_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT144JushoCondition_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT144JushoCondition_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT144JushoCondition_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT144JushoCondition_isDeleted" />
+        <result property="updateCount" column="afT144JushoCondition_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT144JushoCondition_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT144JushoCondition_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 施設バーコード一括受理用のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+
+<!-- @reamsid_L AF-0240-010 qiuxy -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.barcodejuri.IBarCodeJuriMapper">
+
+    <select resultOrdered="true" id="selectBarCodeJuriIchiran" resultMap="ResultMap_BarCodeJuriEntity" parameterType="jp.co.ndensan.reams.af.afa.definition.mybatis.param.barcodejuri.BarCodeJuriMapperParameter" fetchSize="500">
+        WITH master AS (
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.allColumns_AfT111Senkyo" />,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT112SenkyoninMeiboMapper.allColumns_AfT112SenkyoninMeibo" />,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku" />
+        FROM
+        rgaf."AfV112SenkyoninMeibo" AS "AfT112SenkyoninMeibo"
+        INNER JOIN
+        rgaf."AfT100Shohon" AS "AfT100Shohon"
+        ON
+        "AfT112SenkyoninMeibo"."shohonNo" = "AfT100Shohon"."shohonNo"
+        INNER JOIN
+        rgaf."AfT111Senkyo" AS "AfT111Senkyo"
+        ON
+        "AfT111Senkyo"."shohonNo" = "AfT100Shohon"."shohonNo"
+        INNER JOIN
+        rgaf."AfV113SenkyoShikaku" AS "AfT113SenkyoShikaku"
+        ON
+        <if test="senkyoShurui == 1">
+            "AfT113SenkyoShikaku"."senkyoShurui" = '0'
+        </if>
+        <if test="senkyoShurui != 1">
+            "AfT113SenkyoShikaku"."senkyoShurui" = #{senkyoShurui}
+        </if>
+        AND "AfT112SenkyoninMeibo"."shikibetsuCode" = "AfT113SenkyoShikaku"."shikibetsuCode"
+        WHERE
+        "AfT112SenkyoninMeibo"."shohonNo" = #{shohonNo}
+        AND "AfT112SenkyoninMeibo"."shikibetsuCode" = #{shikibetsuCode}
+        AND "AfT111Senkyo"."senkyoNo" = #{senkyoNo}
+        AND "AfT112SenkyoninMeibo"."tohyokuHenkoMasshoFlag" = FALSE
+        )
+        SELECT
+        master.*,
+        <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.columns_ShikibetsuTaisho" />,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.allColumns_AfT201TohyoJokyo" />
+        FROM
+        master
+        INNER JOIN <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_First" />
+        (
+        SELECT
+        ARRAY_AGG(CAST (master."afT112SenkyoninMeibo_shikibetsuCode" AS TEXT))
+        FROM
+        master
+        )
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.teijitouroku.IAFABTA101PSMMapper.tableName_PsmParamClassWithoutShikibetsuCodeList_Second" />
+        AS <include refid="jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.as_ShikibetsuTaisho" />
+        ON master."afT112SenkyoninMeibo_shikibetsuCode" = "ShikibetsuTaisho"."shikibetsuCode"
+        LEFT JOIN
+        rgaf."AfT201TohyoJokyo" AS "AfT201TohyoJokyo"
+        ON
+        "AfT201TohyoJokyo"."shohonNo" = master."afT100Shohon_shohonNo"
+        AND "AfT201TohyoJokyo"."shikibetsuCode" = master."afT112SenkyoninMeibo_shikibetsuCode"
+        AND "AfT201TohyoJokyo"."senkyoNo" = master."afT111Senkyo_senkyoNo"
+
+    </select>
+
+
+    <resultMap id="ResultMap_BarCodeJuriEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.barcodejuri.BarCodeJuriEntity" autoMapping="true">
+        <association property = "senkyoninMeibo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT112SenkyoninMeiboMapper.ResultMap_AfT112SenkyoninMeiboEntity"/>
+        <association property = "shohon" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <association property = "senkyoShikaku" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.ResultMap_AfT113SenkyoShikakuEntity"/>
+        <association property = "tohyoJokyo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT201TohyoJokyoMapper.ResultMap_AfT201TohyoJokyoEntity"/>
+        <association property = "senkyo" resultMap = "jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT111SenkyoMapper.ResultMap_AfT111SenkyoEntity"/>
+        <association property = "shikibetsuTaisho" resultMap = "jp.co.ndensan.reams.ua.uax.persistence.db.mapper.IUaFt200FindShikibetsuTaishoFunctionMapper.UaFt200FindShikibetsuTaishoEntity"/>
+    </resultMap>
+</mapper>

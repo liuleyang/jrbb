@@ -1,0 +1,235 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package jp.co.ndensan.reams.af.afa.persistence.db.basic;
+
+import java.util.List;
+import static java.util.Objects.requireNonNull;
+import jp.co.ndensan.reams.af.afa.entity.db.basic.AfT123ZaigaiSenkyoninJusho;
+import jp.co.ndensan.reams.af.afa.entity.db.basic.AfT123ZaigaiSenkyoninJushoEntity;
+import jp.co.ndensan.reams.af.afa.persistence.IDeletable;
+import jp.co.ndensan.reams.af.afa.persistence.IInsertOrUpdatable;
+import jp.co.ndensan.reams.af.afa.persistence.IPhysicalDeletable;
+import jp.co.ndensan.reams.ur.urz.definition.message.UrSystemErrorMessages;
+import jp.co.ndensan.reams.uz.uza.biz.Code;
+import jp.co.ndensan.reams.uz.uza.biz.ShikibetsuCode;
+import jp.co.ndensan.reams.uz.uza.core.mybatis.SqlSession;
+import jp.co.ndensan.reams.uz.uza.util.db.DbAccessorNormalType;
+import static jp.co.ndensan.reams.uz.uza.util.db.Restrictions.and;
+import static jp.co.ndensan.reams.uz.uza.util.db.Restrictions.by;
+import static jp.co.ndensan.reams.uz.uza.util.db.Restrictions.eq;
+import jp.co.ndensan.reams.uz.uza.util.db.util.DbAccessors;
+import jp.co.ndensan.reams.uz.uza.util.di.InjectSession;
+import jp.co.ndensan.reams.uz.uza.util.di.Transaction;
+
+/**
+ * 在外選挙人国内住所情報テーブルへのデータアクセスを提供する実装クラスです。
+ *
+ * @reamsid_L AF-0325-034 guyq
+ */
+public class AfT123ZaigaiSenkyoninJushoDac
+        implements IInsertOrUpdatable<AfT123ZaigaiSenkyoninJushoEntity>,
+        IDeletable<AfT123ZaigaiSenkyoninJushoEntity>,
+        IPhysicalDeletable<AfT123ZaigaiSenkyoninJushoEntity>,
+        ISaveable<AfT123ZaigaiSenkyoninJushoEntity> {
+
+    @InjectSession
+    private SqlSession session;
+
+    /**
+     * 指定された識別コード、申請番号、住所種類区分に該当する、在外選挙人国内住所情報エンティティを取得します。
+     *
+     * @param shikibetsuCode 識別コード
+     * @param shinseiNo 申請番号
+     * @param jushoShuruiKubun 住所種類区分
+     * @return 該当した在外選挙人国内住所情報エンティティ
+     */
+    @Transaction
+    public AfT123ZaigaiSenkyoninJushoEntity select(ShikibetsuCode shikibetsuCode, int shinseiNo, Code jushoShuruiKubun) {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.
+                select().
+                table(AfT123ZaigaiSenkyoninJusho.class).
+                where(and(eq(AfT123ZaigaiSenkyoninJusho.shikibetsuCode, shikibetsuCode),
+                                eq(AfT123ZaigaiSenkyoninJusho.shinseiNo, shinseiNo),
+                                eq(AfT123ZaigaiSenkyoninJusho.jushoShuruiKubun, jushoShuruiKubun))).
+                toObject(AfT123ZaigaiSenkyoninJushoEntity.class);
+    }
+
+    /**
+     * 指定された識別コード、申請番号に該当する、在外選挙人国内住所情報エンティティを取得します。
+     *
+     * @param shikibetsuCode 識別コード
+     * @param shinseiNo 申請番号
+     * @return 該当した在外選挙人国内住所情報エンティティ
+     */
+    @Transaction
+    public List<AfT123ZaigaiSenkyoninJushoEntity> select(ShikibetsuCode shikibetsuCode, int shinseiNo) {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.
+                select().
+                table(AfT123ZaigaiSenkyoninJusho.class).
+                where(and(eq(AfT123ZaigaiSenkyoninJusho.shikibetsuCode, shikibetsuCode),
+                                eq(AfT123ZaigaiSenkyoninJusho.shinseiNo, shinseiNo))).
+                order(by(AfT123ZaigaiSenkyoninJusho.jushoShuruiKubun)).
+                toList(AfT123ZaigaiSenkyoninJushoEntity.class);
+    }
+
+    /**
+     * 指定された識別コードに該当する、在外選挙人国内住所情報エンティティを取得します。
+     *
+     * @param shikibetsuCode 識別コード
+     * @return 該当した在外選挙人国内住所情報エンティティリスト
+     */
+    @Transaction
+    public List<AfT123ZaigaiSenkyoninJushoEntity> select(ShikibetsuCode shikibetsuCode) {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.
+                select().
+                table(AfT123ZaigaiSenkyoninJusho.class).
+                where(eq(AfT123ZaigaiSenkyoninJusho.shikibetsuCode, shikibetsuCode)).
+                order(by(AfT123ZaigaiSenkyoninJusho.shinseiNo),
+                        by(AfT123ZaigaiSenkyoninJusho.jushoShuruiKubun)).
+                toList(AfT123ZaigaiSenkyoninJushoEntity.class);
+    }
+
+    /**
+     * 在外選挙人国内住所情報エンティティを取得します。
+     *
+     * @return 該当した在外選挙人国内住所情報エンティティリスト
+     */
+    @Transaction
+    public List<AfT123ZaigaiSenkyoninJushoEntity> select() {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.
+                select().
+                table(AfT123ZaigaiSenkyoninJusho.class).
+                order(by(AfT123ZaigaiSenkyoninJusho.shikibetsuCode),
+                        by(AfT123ZaigaiSenkyoninJusho.shinseiNo),
+                        by(AfT123ZaigaiSenkyoninJusho.jushoShuruiKubun)).
+                toList(AfT123ZaigaiSenkyoninJushoEntity.class);
+    }
+
+    @Override
+    @Transaction
+    public int insertOrUpdate(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        return exists(entity) ? update(entity) : insert(entity);
+    }
+
+    /**
+     * エンティティの複数件登録、更新を行います。
+     *
+     * @param entities 対象のエンティティリスト
+     * @return 処理件数
+     */
+    @Transaction
+    public int insertOrUpdate(List<AfT123ZaigaiSenkyoninJushoEntity> entities) {
+        int count = 0;
+        for (AfT123ZaigaiSenkyoninJushoEntity entity : entities) {
+            count += insertOrUpdate(entity);
+        }
+        return count;
+    }
+
+    @Override
+    @Transaction
+    public int delete(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.delete(entity).execute();
+    }
+
+    /**
+     * エンティティの複数件削除を行います。
+     *
+     * @param entities 対象のエンティティリスト
+     * @return 削除件数
+     */
+    @Transaction
+    public int delete(List<AfT123ZaigaiSenkyoninJushoEntity> entities) {
+        int count = 0;
+        for (AfT123ZaigaiSenkyoninJushoEntity entity : entities) {
+            count += delete(entity);
+        }
+        return count;
+    }
+
+    private int insert(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.insert(entity).execute();
+    }
+
+    private int update(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.update(entity).execute();
+    }
+
+    private boolean exists(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        return (select(entity.getShikibetsuCode(), entity.getShinseiNo(), entity.getJushoShuruiKubun()) != null);
+    }
+
+    @Override
+    @Transaction
+    public int deletePhysical(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.deletePhysical(entity).execute();
+    }
+
+    /**
+     * エンティティの複数件の実削除を行います。
+     *
+     * @param entities 対象のエンティティリスト
+     * @return 削除件数
+     */
+    @Transaction
+    public int deletePhysical(List<AfT123ZaigaiSenkyoninJushoEntity> entities) {
+        int count = 0;
+        for (AfT123ZaigaiSenkyoninJushoEntity entity : entities) {
+            count += deletePhysical(entity);
+        }
+        return count;
+    }
+
+    /**
+     * エンティティを登録します。
+     *
+     * @param entity 対象のエンティティ
+     * @return 登録件数
+     */
+    @Transaction
+    @Override
+    public int save(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        requireNonNull(entity, UrSystemErrorMessages.値がnull.getReplacedMessage("在外選挙人国内住所情報エンティティ"));
+        return DbAccessors.saveBy(new DbAccessorNormalType(session), entity);
+    }
+
+    /**
+     * 在外選挙人国内住所情報エンティティを登録します。
+     *
+     *
+     * @param entity 対象のエンティティ
+     * @return int
+     */
+    @Transaction
+    public int insertZaigaiSenkyoninJusho(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        requireNonNull(entity, UrSystemErrorMessages.値がnull.getReplacedMessage("在外選挙人国内住所情報エンティティ"));
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.insert(entity).execute();
+    }
+
+    /**
+     * 在外選挙人国内住所情報エンティティを更新します。
+     *
+     *
+     * @param entity 対象のエンティティ
+     * @return int
+     */
+    @Transaction
+    public int updateZaigaiSenkyoninJusho(AfT123ZaigaiSenkyoninJushoEntity entity) {
+        requireNonNull(entity, UrSystemErrorMessages.値がnull.getReplacedMessage("在外選挙人国内住所情報エンティティ"));
+        DbAccessorNormalType accessor = new DbAccessorNormalType(session);
+        return accessor.update(entity).execute();
+    }
+
+}

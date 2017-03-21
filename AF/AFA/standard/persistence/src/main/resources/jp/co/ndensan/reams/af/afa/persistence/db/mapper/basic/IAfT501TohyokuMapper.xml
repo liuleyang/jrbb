@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： AfT501Tohyokuマスタとエンティティのマッピング用XMLです。 -->
+<!-- 作者：  -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper">
+    
+    <!-- 概要： 削除されたデータ以外を全件取得するSQLです。 -->
+    <sql id="noDeleted_AfT501Tohyoku">
+     SELECT
+         <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT501TohyokuMapper.allColumns_AfT501Tohyoku" />
+     FROM
+         rgaf."AfT501Tohyoku"
+     WHERE
+         rgaf."AfT501Tohyoku"."isDeleted" = FALSE
+    </sql>
+
+    <sql id="allColumns_AfT501Tohyoku">
+         "AfT501Tohyoku"."senkyoShurui" as "afT501Tohyoku_senkyoShurui",
+         "AfT501Tohyoku"."tohyokuCode" as "afT501Tohyoku_tohyokuCode",
+         "AfT501Tohyoku"."insertDantaiCd" as "afT501Tohyoku_insertDantaiCd",
+         "AfT501Tohyoku"."insertTimestamp" as "afT501Tohyoku_insertTimestamp",
+         "AfT501Tohyoku"."insertReamsLoginId" as "afT501Tohyoku_insertReamsLoginId",
+         "AfT501Tohyoku"."insertContextId" as "afT501Tohyoku_insertContextId",
+         "AfT501Tohyoku"."isDeleted" as "afT501Tohyoku_isDeleted",
+         "AfT501Tohyoku"."updateCount" as "afT501Tohyoku_updateCount",
+         "AfT501Tohyoku"."lastUpdateTimestamp" as "afT501Tohyoku_lastUpdateTimestamp",
+         "AfT501Tohyoku"."lastUpdateReamsLoginId" as "afT501Tohyoku_lastUpdateReamsLoginId",
+         "AfT501Tohyoku"."tohyokuName" as "afT501Tohyoku_tohyokuName",
+         "AfT501Tohyoku"."kanaTohyokuName" as "afT501Tohyoku_kanaTohyokuName",
+         "AfT501Tohyoku"."searchKanaTohyokuName" as "afT501Tohyoku_searchKanaTohyokuName",
+         "AfT501Tohyoku"."hyojijun" as "afT501Tohyoku_hyojijun"
+    </sql>
+
+
+    <!--テーブルAfT501Tohyokuの項目をAfT501TohyokuEntityの項目にマッピングします。-->
+    <resultMap id="ResultMap_AfT501TohyokuEntity" type="jp.co.ndensan.reams.af.afa.entity.db.basic.AfT501TohyokuEntity" autoMapping="true">
+        <id property="senkyoShurui" column="afT501Tohyoku_senkyoShurui" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <id property="tohyokuCode" column="afT501Tohyoku_tohyokuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertDantaiCd" column="afT501Tohyoku_insertDantaiCd" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertTimestamp" column="afT501Tohyoku_insertTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="insertReamsLoginId" column="afT501Tohyoku_insertReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="insertContextId" column="afT501Tohyoku_insertContextId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.UUIDTypeHandler"/>
+        <result property="isDeleted" column="afT501Tohyoku_isDeleted" />
+        <result property="updateCount" column="afT501Tohyoku_updateCount" />
+        <result property="lastUpdateTimestamp" column="afT501Tohyoku_lastUpdateTimestamp" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RDateTimeTypeHandler"/>
+        <result property="lastUpdateReamsLoginId" column="afT501Tohyoku_lastUpdateReamsLoginId" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="tohyokuName" column="afT501Tohyoku_tohyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="kanaTohyokuName" column="afT501Tohyoku_kanaTohyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="searchKanaTohyokuName" column="afT501Tohyoku_searchKanaTohyokuName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="hyojijun" column="afT501Tohyoku_hyojijun" />
+    </resultMap>
+
+</mapper>

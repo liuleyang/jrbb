@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package jp.co.ndensan.reams.af.afa.business.report.AFAPRE101;
+
+import jp.co.ndensan.reams.af.afa.entity.report.AFAPRE101.SenseishoSource;
+import jp.co.ndensan.reams.uz.uza.report.ReportEditorJoiner;
+
+/**
+ * {@link SenseishoSource}を編集します。
+ *
+ * @reamsid_L AF-0070-020 liss
+ */
+class SenseishoBuilder implements ISenseishoBuilder {
+
+    private final ISenseishoEditor editor;
+
+    /**
+     * インスタンスを生成します。
+     *
+     * @param editor ISenseishoEditor
+     */
+    public SenseishoBuilder(ISenseishoEditor editor) {
+        this.editor = editor;
+    }
+
+    @Override
+    public SenseishoSource build() {
+        return ReportEditorJoiner.from(new SenseishoSource()).join(editor).buildSource();
+    }
+}

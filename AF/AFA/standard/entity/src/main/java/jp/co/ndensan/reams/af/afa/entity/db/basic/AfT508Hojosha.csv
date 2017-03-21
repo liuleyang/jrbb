@@ -1,0 +1,3 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A
+tohyojoCode,varchar,RString,,,,,投票所コード,A

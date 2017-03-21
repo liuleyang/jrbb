@@ -1,0 +1,417 @@
+<div title="" class="JSControl UzCompositeControl  Width-XS FloatLeft" id="defaultLayout" style="margin: 0em;" data-control-type="CommonChildDiv" data-obj="{&quot;fieldName&quot;:&quot;defaultLayout&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;CommonChildDiv&quot;,&quot;width&quot;:&quot;XS&quot;,&quot;visible&quot;:true,&quot;displayNone&quot;:false,&quot;disabled&quot;:false,&quot;accessKey&quot;:&quot;&quot;,&quot;nextFocusFieldName&quot;:&quot;&quot;,&quot;wrap&quot;:false,&quot;float&quot;:0,&quot;toolTip&quot;:&quot;&quot;,&quot;authorityMode&quot;:0,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;defaultLayout&quot;,&quot;helpMessageID&quot;:&quot;&quot;,&quot;jpControlName&quot;:&quot;&quot;,&quot;authorityID&quot;:&quot;&quot;,&quot;relation&quot;:[],&quot;packageName&quot;:&quot;&quot;,&quot;businessId&quot;:&quot;AFA&quot;,&quot;controlName&quot;:&quot;SenkyoShuruiSelect&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;dataPassingForDialog&quot;:[],&quot;dialogOkEventNameForDialog&quot;:&quot;&quot;,&quot;dialogCancelEventNameForDialog&quot;:&quot;&quot;,&quot;heightForDialog&quot;:&quot;M&quot;,&quot;firstFocusFieldName&quot;:&quot;&quot;,&quot;lastFocusFieldName&quot;:&quot;&quot;,&quot;modes&quot;:[],&quot;publicEvents&quot;:[{&quot;eventName&quot;:&quot;onChange_ddlSenkyoShurui&quot;}],&quot;publicEventsAlias&quot;:[],&quot;responsiveType&quot;:0,&quot;minWidth&quot;:&quot;&quot;,&quot;minHeight&quot;:&quot;&quot;,&quot;widthPercent&quot;:&quot;&quot;,&quot;heightPercent&quot;:&quot;&quot;,&quot;EditTypes&quot;:{&quot;_editTypes&quot;:[{&quot;propertyName&quot;:&quot;ddlSenkyoShurui_labelLWidth&quot;,&quot;editType&quot;:0}]},&quot;ddlSenkyoShurui_labelLWidth&quot;:&quot;&quot;}" data-control-name="AFA.SenkyoShuruiSelect" data-is-composite-control="true"><div title="" class="UzPanel FloatLeft JSControl Panel StateChangable UzCommonChildDivPanel Width-G2 UzCompositeChild" id="SenkyoShuruiSelect" style="margin: 0em; width: auto;" data-control-type="Panel" data-obj="{&quot;fieldName&quot;:&quot;SenkyoShuruiSelect&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;Panel&quot;,&quot;width&quot;:&quot;G2&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;marginRight&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;SenkyoShuruiSelect&quot;,&quot;title&quot;:&quot;&quot;,&quot;marginTop&quot;:&quot;0em&quot;,&quot;marginBottom&quot;:&quot;0em&quot;,&quot;postParameterPanelNames&quot;:[{&quot;postParameterPanelNames&quot;:&quot;SenkyoShuruiSelect&quot;}],&quot;requestSettings&quot;:[],&quot;hiddenInput&quot;:[],&quot;session&quot;:{},&quot;eraseBorder&quot;:true,&quot;canPost&quot;:true}"><div class="UzPanelHeader" id="SenkyoShuruiSelect_panel_header_area" style="width: auto; display: none;"><span class="closeIconSpan ui-icon ui-icon-circle-close" style="display: none;"></span><span class="iconSpan ui-icon ui-icon-circle-triangle-n" style="visibility: visible;"></span><span class="textSpan">タイトル</span><div class="groupBoxBorder" style="display: none;"></div></div><div class="UzPanelBody ui-widget-content panelPaddingDelete Panel-EraseBoder ui-droppable ui-sortable" id="SenkyoShuruiSelect_panel_body_area"><div title="" class="UzDropDownList WithLabel FloatLeft JSControl controlMargin-M marginRight-XS UzCompositeChild" id="ddlSenkyoShurui" style="width: 317px; height: 20px; margin-left: 0em;" data-control-type="DropDownList" data-obj="{&quot;fieldName&quot;:&quot;ddlSenkyoShurui&quot;,&quot;items&quot;:[],&quot;controlType&quot;:&quot;DropDownList&quot;,&quot;width&quot;:&quot;M&quot;,&quot;marginLeft&quot;:&quot;0em&quot;,&quot;selectControlID&quot;:&quot;ddlSenkyoShurui_core&quot;,&quot;onChange&quot;:&quot;onChange_ddlSenkyoShurui&quot;,&quot;selectedItem&quot;:&quot;1&quot;,&quot;dataSource&quot;:[{&quot;key&quot;:&quot;0&quot;,&quot;value&quot;:&quot;定時登録&quot;},{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;国政選挙・地方選挙&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;憲法改正国民投票&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;農業委員会委員選挙&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;海区漁業調整委員会委員選挙&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;財産区議会議員選挙&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;住民投票&quot;}],&quot;labelLText&quot;:&quot;選挙種類&quot;,&quot;labelLWidth&quot;:&quot;&quot;}"><span class="word-wrap-break-word Label-L text-align-right Width-" id="ddlSenkyoShurui_labelL"><span>選挙種類</span></span><select class="CoreElement Width-M" id="ddlSenkyoShurui_core"><option value="0">定時登録</option><option value="1">国政選挙・地方選挙</option><option value="2">憲法改正国民投票</option><option value="3">農業委員会委員選挙</option><option value="4">海区漁業調整委員会委員選挙</option><option value="5">財産区議会議員選挙</option><option value="6">住民投票</option></select></div></div></div> 
+<script type="text/javascript">var __extends = this.__extends || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    __.prototype = b.prototype;
+    d.prototype = new __();
+};
+var AFA;
+(function (AFA) {
+    var SenkyoShuruiSelect_Design = (function (_super) {
+        __extends(SenkyoShuruiSelect_Design, _super);
+        function SenkyoShuruiSelect_Design($parentElement, isDesignMode, fieldName) {
+            _super.call(this, $parentElement, isDesignMode, SenkyoShuruiSelect_Design.myLayout, fieldName);
+        }
+        Object.defineProperty(SenkyoShuruiSelect_Design.prototype, "ddlSenkyoShurui_labelLWidth", {
+            get: function () {
+                return Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"];
+            },
+            set: function (value) {
+                if ($("#" + this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).length > 0 && Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]) != undefined) {
+                    Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"])["labelLWidth"] = value;
+                } else {
+                    this.layout.items[0].items[0]["labelLWidth"] = value;
+                    this.raisePropertyChanged(this.layout);
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+
+
+        SenkyoShuruiSelect_Design.prototype.registProperty = function () {
+            _super.prototype.registProperty.call(this);
+            Uz.JSControlUtil.registProperty("ddlSenkyoShurui_labelLWidth");
+        };
+
+        SenkyoShuruiSelect_Design.prototype.getEditablePropertyInfo = function () {
+            var editablePropertyInfo = _super.prototype.getEditablePropertyInfo.call(this);
+            editablePropertyInfo["ddlSenkyoShurui_labelLWidth"] = Uz.JSControlUtil.getJSControl(this.fieldName + "_" + this.layout.items[0]["fieldName"] + "_" + this.layout.items[0].items[0]["fieldName"]).getEditablePropertyInfo()["labelLWidth"];
+
+            return editablePropertyInfo;
+        };
+        SenkyoShuruiSelect_Design.myLayout = {
+            "fieldName": "defaultLayout",
+            "items": [
+                {
+                    "fieldName": "SenkyoShuruiSelect",
+                    "items": [
+                        {
+                            "fieldName": "ddlSenkyoShurui",
+                            "items": [],
+                            "controlType": "DropDownList",
+                            "width": "M",
+                            "visible": true,
+                            "displayNone": false,
+                            "disabled": false,
+                            "accessKey": "",
+                            "nextFocusFieldName": "",
+                            "wrap": false,
+                            "dependencies": [],
+                            "float": 0,
+                            "toolTip": "",
+                            "authorityMode": 0,
+                            "marginLeft": "0em",
+                            "marginRight": "XS",
+                            "selectControlID": "ddlSenkyoShurui_core",
+                            "helpMessageID": "",
+                            "jpControlName": "",
+                            "readOnly": false,
+                            "onFocus": "",
+                            "onBlur": "",
+                            "onChange": "onChange_ddlSenkyoShurui",
+                            "labelLText": "選挙種類",
+                            "labelRText": "",
+                            "labelLWidth": "",
+                            "labelRWidth": "S",
+                            "labelLAlign": 2,
+                            "labelRAlign": 0,
+                            "selectedItem": "1",
+                            "dataSource": [
+                                {
+                                    "key": "0",
+                                    "value": "定時登録"
+                                },
+                                {
+                                    "key": "1",
+                                    "value": "国政選挙・地方選挙"
+                                },
+                                {
+                                    "key": "2",
+                                    "value": "憲法改正国民投票"
+                                },
+                                {
+                                    "key": "3",
+                                    "value": "農業委員会委員選挙"
+                                },
+                                {
+                                    "key": "4",
+                                    "value": "海区漁業調整委員会委員選挙"
+                                },
+                                {
+                                    "key": "5",
+                                    "value": "財産区議会議員選挙"
+                                },
+                                {
+                                    "key": "6",
+                                    "value": "住民投票"
+                                }
+                            ],
+                            "isBlankLine": false
+                        }
+                    ],
+                    "controlType": "Panel",
+                    "width": "G2",
+                    "visible": true,
+                    "displayNone": false,
+                    "disabled": false,
+                    "accessKey": "",
+                    "nextFocusFieldName": "",
+                    "wrap": false,
+                    "dependencies": [],
+                    "float": 0,
+                    "toolTip": "",
+                    "authorityMode": 0,
+                    "marginLeft": "0em",
+                    "marginRight": "0em",
+                    "selectControlID": "SenkyoShuruiSelect",
+                    "helpMessageID": "",
+                    "jpControlName": "",
+                    "onLoad": "",
+                    "title": "",
+                    "marginTop": "0em",
+                    "marginBottom": "0em",
+                    "isOpen": true,
+                    "canOpenAndClose": true,
+                    "postParameterPanelNames": [
+                        {
+                            "postParameterPanelNames": "SenkyoShuruiSelect"
+                        }
+                    ],
+                    "requestSettings": [],
+                    "hiddenInput": [],
+                    "onOpen": "",
+                    "onClose": "",
+                    "session": {},
+                    "eraseBorder": true,
+                    "backgroundColor": 0,
+                    "widthAuto": true,
+                    "panelDisplay": 0,
+                    "isGroupBox": false,
+                    "readOnly": false,
+                    "height": "Auto",
+                    "canPost": true
+                }
+            ],
+            "controlType": "CommonChildDiv",
+            "width": "XS",
+            "visible": true,
+            "displayNone": false,
+            "disabled": false,
+            "accessKey": "",
+            "nextFocusFieldName": "",
+            "wrap": false,
+            "dependencies": [],
+            "float": 0,
+            "toolTip": "",
+            "authorityMode": 0,
+            "marginLeft": "0em",
+            "marginRight": "0em",
+            "selectControlID": "defaultLayout",
+            "helpMessageID": "",
+            "jpControlName": "",
+            "relation": [],
+            "packageName": "",
+            "businessId": "AFA",
+            "controlName": "SenkyoShuruiSelect",
+            "marginTop": "0em",
+            "marginBottom": "0em",
+            "originalProperty": [
+                {
+                    "publicChildFieldName": "ddlSenkyoShurui",
+                    "publicChildProperty": "labelLWidth",
+                    "newPropertyName": "ddlSenkyoShurui_labelLWidth"
+                }
+            ],
+            "dataPassingForDialog": [],
+            "dialogOkEventNameForDialog": "",
+            "dialogCancelEventNameForDialog": "",
+            "canTransferEvent": true,
+            "heightForDialog": "M",
+            "firstFocusFieldName": "",
+            "lastFocusFieldName": "",
+            "modes": [],
+            "publicEvents": [
+                {
+                    "eventName": "onChange_ddlSenkyoShurui"
+                }
+            ],
+            "publicEventsAlias": []
+        };
+        return SenkyoShuruiSelect_Design;
+    })(Uz.CommonChildDiv);
+    AFA.SenkyoShuruiSelect_Design = SenkyoShuruiSelect_Design;
+
+    (function (SenkyoShuruiSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_ddlSenkyoShurui = function () {
+                return "onChange_ddlSenkyoShurui";
+            };
+            return Events;
+        })();
+        SenkyoShuruiSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SenkyoShuruiSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SenkyoShuruiSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + fieldName;
+            };
+
+            Controls.prototype.SenkyoShuruiSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ddlSenkyoShurui = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlSenkyoShurui"));
+            };
+            return Controls;
+        })();
+        SenkyoShuruiSelect.Controls = Controls;
+    })(AFA.SenkyoShuruiSelect || (AFA.SenkyoShuruiSelect = {}));
+    var SenkyoShuruiSelect = AFA.SenkyoShuruiSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SenkyoShuruiSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SenkyoShuruiSelect.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SenkyoShuruiSelect.ModeController = ModeController;
+    })(AFA.SenkyoShuruiSelect || (AFA.SenkyoShuruiSelect = {}));
+    var SenkyoShuruiSelect = AFA.SenkyoShuruiSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SenkyoShuruiSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new SenkyoShuruiSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("ddlSenkyoShurui_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getddlSenkyoShurui_labelLWidth = function () {
+                return this.controls.ddlSenkyoShurui().labelLWidth;
+            };
+
+            PublicProperties.prototype.setddlSenkyoShurui_labelLWidth = function (value) {
+                this.controls.ddlSenkyoShurui().labelLWidth = value;
+            };
+            return PublicProperties;
+        })();
+        SenkyoShuruiSelect.PublicProperties = PublicProperties;
+    })(AFA.SenkyoShuruiSelect || (AFA.SenkyoShuruiSelect = {}));
+    var SenkyoShuruiSelect = AFA.SenkyoShuruiSelect;
+})(AFA || (AFA = {}));
+</script>
+  
+   
+   
+   
+   
+   <script class="RamlConvert" type="text/javascript">
+var AFA= AFA? AFA: {};
+AFA['SENKYOSHURUISELECT'] = {};
+AFA['SENKYOSHURUISELECT'].SenkyoShuruiSelectRequest = function(parentFieldName){ 
+var paramArray = [];var parameter0 = Uz.JSControlUtil.getJSControl(parentFieldName + '_SenkyoShuruiSelect').getProperty();parameter0.ddlSenkyoShurui = Uz.JSControlUtil.getJSControl(parentFieldName + '_ddlSenkyoShurui').getProperty();paramArray.push(parameter0);
+return paramArray;
+ };
+</script><script>var AFA;
+(function (AFA) {
+    (function (SenkyoShuruiSelect) {
+        var Events = (function () {
+            function Events() {
+            }
+            Events.onChange_ddlSenkyoShurui = function () {
+                return "onChange_ddlSenkyoShurui";
+            };
+            return Events;
+        })();
+        SenkyoShuruiSelect.Events = Events;
+
+        var Controls = (function () {
+            function Controls(fieldName) {
+                this._myName = fieldName;
+            }
+            Controls.myType = function () {
+                return "SenkyoShuruiSelect";
+            };
+
+            Controls.prototype.convFiledNameSelf = function () {
+                return this._myName + "_" + AFA.SenkyoShuruiSelect.Controls.myType();
+            };
+
+            Controls.prototype.convFiledName = function (fieldName) {
+                return this._myName + "_" + AFA.SenkyoShuruiSelect.Controls.myType() + "_" + fieldName;
+            };
+
+            Controls.prototype.SenkyoShuruiSelect = function () {
+                return new UZA.Panel(this.convFiledNameSelf());
+            };
+
+            Controls.prototype.ddlSenkyoShurui = function () {
+                return new UZA.DropDownList(this.convFiledName("ddlSenkyoShurui"));
+            };
+            return Controls;
+        })();
+        SenkyoShuruiSelect.Controls = Controls;
+    })(AFA.SenkyoShuruiSelect || (AFA.SenkyoShuruiSelect = {}));
+    var SenkyoShuruiSelect = AFA.SenkyoShuruiSelect;
+})(AFA || (AFA = {}));
+var AFA;
+(function (AFA) {
+    (function (SenkyoShuruiSelect) {
+        var ModeController = (function () {
+            function ModeController(fieldName) {
+                this.fieldName = fieldName;
+                this.controls = new SenkyoShuruiSelect.Controls(fieldName);
+            }
+            ModeController.prototype.priorities = function () {
+                return [];
+            };
+
+            ModeController.prototype.Properties = function () {
+                return new UZA.CommonChildDiv(this.fieldName);
+            };
+            return ModeController;
+        })();
+        SenkyoShuruiSelect.ModeController = ModeController;
+    })(AFA.SenkyoShuruiSelect || (AFA.SenkyoShuruiSelect = {}));
+    var SenkyoShuruiSelect = AFA.SenkyoShuruiSelect;
+})(AFA || (AFA = {}));
+
+var AFA;
+(function (AFA) {
+    (function (SenkyoShuruiSelect) {
+        var PublicProperties = (function () {
+            function PublicProperties(fieldName) {
+                this.controls = new SenkyoShuruiSelect.Controls(fieldName);
+            }
+            PublicProperties.prototype.getEditTypes = function () {
+                var editTypes = new UZA.EditTypeForPublicProperty();
+
+                editTypes.addEditType("ddlSenkyoShurui_labelLWidth", UZA.EditTypeEnumForPublicProperty.StringType);
+                editTypes.addEditType("ddlSenkyoShurui_disabled", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                editTypes.addEditType("ddlSenkyoShurui_required", UZA.EditTypeEnumForPublicProperty.BooleanType);
+                return editTypes;
+            };
+
+            PublicProperties.prototype.getddlSenkyoShurui_labelLWidth = function () {
+                return this.controls.ddlSenkyoShurui().labelLWidth;
+            };
+
+            PublicProperties.prototype.setddlSenkyoShurui_labelLWidth = function (value) {
+                this.controls.ddlSenkyoShurui().labelLWidth = value;
+            };
+
+            PublicProperties.prototype.getddlSenkyoShurui_disabled = function () {
+                return this.controls.ddlSenkyoShurui().disabled;
+            };
+
+            PublicProperties.prototype.setddlSenkyoShurui_disabled = function (value) {
+                this.controls.ddlSenkyoShurui().disabled = value;
+            };
+
+            PublicProperties.prototype.getddlSenkyoShurui_required = function () {
+                return this.controls.ddlSenkyoShurui().required;
+            };
+
+            PublicProperties.prototype.setddlSenkyoShurui_required = function (value) {
+                this.controls.ddlSenkyoShurui().required = value;
+            };
+            return PublicProperties;
+        })();
+        SenkyoShuruiSelect.PublicProperties = PublicProperties;
+    })(AFA.SenkyoShuruiSelect || (AFA.SenkyoShuruiSelect = {}));
+    var SenkyoShuruiSelect = AFA.SenkyoShuruiSelect;
+})(AFA || (AFA = {}));
+</script></div>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- @reamsid_L AF-0320-014 xul -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.zaigaikofurireki.IZaigaiKofuRirekiMapper">
+    <select resultOrdered="false" id="select交付履歴情報" resultMap="resultMap_ZaigaiKofuRirekiEntity" fetchSize="500">
+        SELECT
+            AfT122."kofuNo" AS kofuNo,
+            AfT122."kofuYMD" AS kofuYMD,
+            AfT122."shuseiKubun" AS shuseiKubun,
+            AfT122."shuseiYMD" AS shuseiYMD,
+            AfT124."shinseishaShimei" AS shinseishaShimei,
+            AfT124."seinengappiYMD" AS seinengappiYMD,
+            AfT124."seibetsuCode" AS seibetsuCode,
+            AfT123."jusho" AS jusho
+        FROM
+            rgaf."AfT122ZaigaiSenkyoShikaku" AfT122
+        INNER JOIN
+            rgaf."AfT124ZaigaiSenkyoninShinsei" AfT124
+        ON  AfT122."shinseiNo" = AfT124."shinseiNo"
+        LEFT JOIN
+            rgaf."AfT123ZaigaiSenkyoninJusho" AfT123
+        ON  AfT123."shikibetsuCode" = AfT122."shikibetsuCode"
+        AND AfT123."shinseiNo" = AfT122."shinseiNo"
+        AND AfT123."jushoShuruiKubun" = '4'
+        WHERE
+            AfT122."shikibetsuCode" = #{shikibetsuCode}
+        ORDER BY
+            AfT122."kofuYMD" DESC
+    </select>
+    
+    <resultMap id="resultMap_ZaigaiKofuRirekiEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.zaigaikofurirekidialog.ZaigaiKofuRirekiEntity" autoMapping="true">
+        <result property="在外選挙資格.kofuNo" column="kofuNo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="在外選挙資格.kofuYMD" column="kofuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙資格.shuseiKubun" column="shuseiKubun" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.CodeTypeHandler"/>
+        <result property="在外選挙資格.shuseiYMD" column="shuseiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.shinseishaShimei" column="shinseishaShimei" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaMeishoTypeHandler"/>
+        <result property="在外選挙人申請情報.seinengappiYMD" column="seinengappiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="在外選挙人申請情報.seibetsuCode" column="seibetsuCode" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="在外選挙人住所情報.jusho" column="jusho" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.AtenaJushoTypeHandler"/>
+    </resultMap>
+</mapper>

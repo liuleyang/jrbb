@@ -1,0 +1,32 @@
+﻿{
+ "uiContainerName": "AFAUCM1020",
+ "displayWizard": false,
+ "subGyomuCode": "AFA",
+ "steps": [
+  {
+   "id": 1,
+   "name": "コードマスタ保守",
+   "transitionList": [
+    {
+     "id": "1",
+     "type": "start",
+     "condition": "",
+     "toLayoutSubGyomuCode": "AFA",
+     "toLayoutName": "AFAGMM1020",
+     "toLayoutTitle": "コードマスタ保守",
+     "toState": ""
+    },
+    {
+     "id": "2",
+     "type": "end",
+     "layoutSubGyomuCode": "AFA",
+     "layoutName": "AFAGMM1020",
+     "layoutTitle": "コードマスタ保守",
+     "eventName": "complete",
+     "destroy": false,
+     "condition": ""
+    }
+   ]
+  }
+ ]
+}

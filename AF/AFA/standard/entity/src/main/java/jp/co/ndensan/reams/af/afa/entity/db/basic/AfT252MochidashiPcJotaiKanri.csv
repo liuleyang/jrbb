@@ -1,0 +1,10 @@
+﻿shohonNo,AfUDD001ShohonNo,ShohonNo,,,,,抄本番号,A
+tohyokuCode,varchar,RString,,,,,投票区コード,A
+dataCreateKubun,UDD035Code,Code,,,,,データ作成区分,A
+dataCreateYMD,UDD018YMDHMS,YMDHMS,,,,,データ作成日時,A
+systemSendKubun,UDD035Code,Code,,,,,AP受渡区分,A
+systemSendYMD,UDD018YMDHMS,YMDHMS,,,,,AP受渡日時,A
+dataSendKubun,UDD035Code,Code,,,,,データ受渡区分,A
+dataSendYMD,UDD018YMDHMS,YMDHMS,,,,,データ受渡日時,A
+dataImportKubun,UDD035Code,Code,,,,,データ取込区分,A
+dataImportYMD,UDD018YMDHMS,YMDHMS,,,,,データ取込日時,A

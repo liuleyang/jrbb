@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 概要： 抄本のマッピング用XMLです。 -->
+
+<!-- どのマッパーインターフェースと対応するかを指定する -->
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.IShohonMapper">
+
+    <select resultOrdered="true" id="select抄本ByKey" resultMap="resultMap_ShohonEntity" fetchSize="500">
+        <include refid="selectShohonEntity" />
+    </select>
+
+    <select resultOrdered="true" id="select抄本リストBy主キー1" resultMap="resultMap_ShohonEntity" fetchSize="500">
+        <include refid="selectShohonEntity" />
+    </select>
+
+    <sql id="selectShohonEntity">
+        SELECT
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.allColumns_AfT100Shohon" />,
+        Senkyo.*,
+        SenkyoninMeibo.*,
+        <include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.allColumns_AfT113SenkyoShikaku" />
+        FROM
+        rgaf."AfT100Shohon" AS AfT100Shohon
+        INNER JOIN
+        (<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.ISenkyoMapper.selectSenkyoEntity" />) AS Senkyo
+        ON
+        AfT100Shohon."shohonNo" = Senkyo."shohonNo"
+        INNER JOIN
+        (<include refid="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.ISenkyoninMeiboMapper.selectSenkyoninMeiboEntity" />) AS SenkyoninMeibo
+        ON
+        AfT100Shohon."shohonNo" = SenkyoninMeibo."shohonNo"
+        INNER JOIN
+        rgaf."AfT113SenkyoShikaku" AS AfT113SenkyoShikaku
+        ON AfT100Shohon."senkyoShurui" = AfT113SenkyoShikaku."senkyoShurui"
+        <where>
+            <if test="uses抄本番号 != null">
+                AND AfT100Shohon."afT100Shohon_shohonNo" = #{抄本番号}
+            </if>
+        </where>
+    </sql>
+
+    <resultMap id="resultMap_ShohonEntity" type="jp.co.ndensan.reams.af.afa.entity.db.relate.senkyonin.shohon.ShohonEntity" autoMapping="true">
+        <id property="抄本Entity.shohonNo" column="afT100Shohon_shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <association property="抄本Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT100ShohonMapper.ResultMap_AfT100ShohonEntity"/>
+        <collection property="選挙Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.ISenkyoMapper.resultMap_SenkyoEntity" />
+        <collection property="選挙人名簿Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.senkyonin.ISenkyoninMeiboMapper.resultMap_SenkyoninMeiboEntity"/>
+        <collection property="選挙資格Entity" resultMap="jp.co.ndensan.reams.af.afa.persistence.db.mapper.basic.IAfT113SenkyoShikakuMapper.ResultMap_AfT113SenkyoShikakuEntity"/>
+    </resultMap>
+
+</mapper>

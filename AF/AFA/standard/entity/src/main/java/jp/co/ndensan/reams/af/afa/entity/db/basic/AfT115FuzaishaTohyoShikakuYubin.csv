@@ -1,0 +1,13 @@
+﻿shikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,識別コード,A
+seq,bigserial,BigSerial,,,,,履歴番号,A
+shogaiTechoAriFlag,bool,boolean,,,,,身体障害者手帳有フラグ,A
+senshoTechoAriFlag,bool,boolean,,,,,戦傷病者手帳有フラグ,A
+kaigoHokenshoAriFlag,bool,boolean,,,,,介護保険被保険者証有フラグ,A
+dairiInputKubun,UDD035Code,Code,SubGyomuCode.AFA選挙本体,AFACodeShubetsu.代理記載者入力区分.getCodeShubetsu(),Description,,代理記載者入力区分,A
+dairiShikibetsuCode,UDD001ShikibetsuCode,ShikibetsuCode,,,,,代理記載者識別コード,A
+dairiKanjiShimei,UDD042AtenaMeisho,AtenaMeisho,,,,,代理記載者漢字氏名,A
+dairiKanaShimei,UDD043AtenaKanaMeisho,AtenaKanaMeisho,,,,,代理記載者カナ氏名,A
+dairiSeinengappiYMD,UDD015YMD,FlexibleDate,,,,,代理記載者生年月日,A
+dairiSeibetsuCode,varchar,RString,,,,,代理記載者性別コード,A
+dairiYubinNo,UDD003YubinNo,YubinNo,,,,,代理記載者郵便番号,A
+dairiJusho,UDD046AtenaJusho,AtenaJusho,,,,,代理記載者住所,A

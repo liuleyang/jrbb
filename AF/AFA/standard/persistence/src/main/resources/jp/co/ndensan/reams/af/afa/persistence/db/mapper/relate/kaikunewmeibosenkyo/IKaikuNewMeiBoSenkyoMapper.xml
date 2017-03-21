@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--@reamsid_L AF-0480-010 liuj-->
+
+<mapper namespace="jp.co.ndensan.reams.af.afa.persistence.db.mapper.relate.kaikunewmeibosenkyo.IKaikuNewMeiBoSenkyoMapper">
+    <select resultOrdered="true" id="select検索結果一覧" resultMap="resultMap_ShohonJohoEntity"  fetchSize="500">
+        select
+            "AfT100Shohon"."shohonNo" as "shohonNo",
+            "AfT100Shohon"."shohonName" as "shohonName",
+            "AfT100Shohon"."kiteiNenreiTotatsuYMD" as "kiteiNenreiTotatsuYMD",
+            "AfT100Shohon"."tohyoYMD" as "tohyoYMD",
+            "AfT100Shohon"."shoriYMD" as "shoriYMD",
+            "AfT111Senkyo"."kijunYMD" as "kijunYMD",
+            "AfT131KaikuSenkyo"."kakuteiYMD" as "kakuteiYMD",
+            "AfT131KaikuSenkyo"."nendo" as "nendo",
+            "AfT131KaikuSenkyo"."saishinkaYMD" as "saishinkaYMD",
+            "AfT131KaikuSenkyo"."senkyojiTorokuFlag" as "senkyojiTorokuFlag"
+         from rgaf."AfT100Shohon" as "AfT100Shohon"
+         inner join rgaf."AfT111Senkyo" as "AfT111Senkyo"
+             on "AfT100Shohon"."shohonNo" = "AfT111Senkyo"."shohonNo"
+          inner join rgaf."AfT131KaikuSenkyo" as "AfT131KaikuSenkyo"
+            on "AfT100Shohon"."shohonNo" = "AfT131KaikuSenkyo"."shohonNo"
+          where "AfT111Senkyo"."senkyoNo" = '4'
+            and "AfT131KaikuSenkyo"."nendo" = #{年度}
+            or "AfT131KaikuSenkyo"."nendo" = #{年度加}
+          order by "AfT100Shohon"."shohonNo" DESC
+    </select>
+    <resultMap id="resultMap_ShohonJohoEntity" type="jp.co.ndensan.reams.af.afa.definition.mybatis.param.kaikunewmeibosenkyo.KaikuNewMeiBoSenkyoMapperParam" autoMapping="true">
+        <result property="抄本番号" column="shohonNo" typeHandler="jp.co.ndensan.reams.af.afa.entity.typehandlers.ShohonNoTypeHandler"/>
+        <result property="抄本名" column="shohonName" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RStringTypeHandler"/>
+        <result property="規定年齢到達年月日" column="kiteiNenreiTotatsuYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="投票年月日" column="tohyoYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="処理年月日" column="shoriYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="名簿基準年月日" column="kijunYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="名簿確定年月日" column="kakuteiYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="年度" column="nendo" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.RYearTypeHandler"/>
+        <result property="名簿最新化年月日" column="saishinkaYMD" typeHandler="jp.co.ndensan.reams.uz.uza.util.db.typehandlers.FlexibleDateTypeHandler"/>
+        <result property="選挙時登録フラグ" column="senkyojiTorokuFlag" typeHandler="org.apache.ibatis.type.BooleanTypeHandler"/>
+    </resultMap>
+</mapper>
