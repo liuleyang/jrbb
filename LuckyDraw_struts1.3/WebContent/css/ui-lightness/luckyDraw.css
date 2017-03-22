@@ -1,0 +1,81 @@
+/*
+ * 
+ */
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-top: 120px;
+}
+
+.table-area {
+    margin-top:40px;
+}
+
+.right-btn {
+    float: right;
+}
+
+.center-btn {
+    width: 100%;
+}
+
+.file-input {
+    height: 30px;
+}
+
+thead {
+    background-color: #337AB7;
+    color: white;
+}
+
+.table>thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table>tbody>tr>td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18pt;
+}
+
+#prize-table>tbody>tr>td {
+	color: white;
+}
+
+.add-prize {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin-bottom: 3px;
+}
+
+.first {
+    color: blue;
+    background-color: #fff;
+    border-color: #ccc;
+    margin-bottom: 3px;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+.name-list {
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    font-size: 16pt;
+    visibility:hidden;
+}
+
+
+
+
